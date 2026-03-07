@@ -1,4 +1,4 @@
-name: Create new installer
+name: Create portable release
 on:
   release:
     types: [published]
@@ -14,18 +14,49 @@ jobs:
   release:
     runs-on: windows-latest
     steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-              with:
-                repository: 'PathOfBuildingCommunity/PathOfBuilding-Installer'
-                ref: 'master'
-                ssh-key: '${{ secrets.POB_INSTALLER_KEY }}'
-            - name: Install NSIS
-              run: |
-                choco install nsis --yes
-                echo "C:\Program Files (x86)\NSIS" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
-            - name: Create installer
-              run: 'python3 make_release.py --game-version 1'
-            - name: Upload artifact
-              run: >
-                gh release upload ${{ github.event.release.tag_name || github.event.inputs.tag_name }} (Get-ChildItem Dist -File).FullName --clobber -R ${{ github.repository }};
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
+
+      - name: Build portable zip
+        shell: pwsh
+        run: |
+          $tag = "${{ github.event.release.tag_name || github.event.inputs.tag_name }}"
+          $version = $tag -replace '^v', ''
+          $distDir = "PathOfBuilding-kor-${version}"
+
+          # Create distribution directory
+          New-Item -ItemType Directory -Path $distDir -Force
+
+          # Copy runtime (exe, dlls, lua libs, fonts)
+          Copy-Item -Path "runtime/*" -Destination $distDir -Recurse -Force
+
+          # Copy source code
+          New-Item -ItemType Directory -Path "$distDir/lua" -Force
+          Copy-Item -Path "src/*" -Destination "$distDir/lua" -Recurse -Force
+
+          # Copy Korean data
+          if (Test-Path "kor-db") {
+            Copy-Item -Path "kor-db" -Destination "$distDir/kor-db" -Recurse -Force
+          }
+
+          # Copy root files
+          @("changelog.txt", "help.txt", "LICENSE.md", "manifest.xml", "manifest.cfg") | ForEach-Object {
+            if (Test-Path $_) { Copy-Item -Path $_ -Destination $distDir -Force }
+          }
+
+          # Create zip
+          $zipName = "PathOfBuilding-kor-${version}-win64.zip"
+          Compress-Archive -Path $distDir -DestinationPath $zipName -Force
+
+          Write-Host "Created: $zipName"
+          Get-ChildItem $zipName
+
+      - name: Upload to release
+        shell: pwsh
+        run: |
+          $tag = "${{ github.event.release.tag_name || github.event.inputs.tag_name }}"
+          $version = $tag -replace '^v', ''
+          $zipName = "PathOfBuilding-kor-${version}-win64.zip"
+          gh release upload $tag $zipName --clobber -R ${{ github.repository }}
