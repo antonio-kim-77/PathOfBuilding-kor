@@ -1,26 +1,26 @@
 return {
     ["classes"]= {
         {
-            ["name"]= "Scion",
+            ["name"]= "사이온",
             ["base_str"]= 20,
             ["base_dex"]= 20,
             ["base_int"]= 20,
             ["ascendancies"]= {
                 {
                     ["id"]= "Ascendant",
-                    ["name"]= "Ascendant"
+                    ["name"]= "어센던트"
                 }
             }
         },
         {
-            ["name"]= "Marauder",
+            ["name"]= "머라우더",
             ["base_str"]= 32,
             ["base_dex"]= 14,
             ["base_int"]= 14,
             ["ascendancies"]= {
                 {
                     ["id"]= "Juggernaut",
-                    ["name"]= "Juggernaut",
+                    ["name"]= "저거넛",
                     ["flavourText"]= "     What divides the conqueror \n from the conquered? Perseverance.",
                     ["flavourTextColour"]= "af5a32",
                     ["flavourTextRect"]= {
@@ -32,7 +32,7 @@ return {
                 },
                 {
                     ["id"]= "Berserker",
-                    ["name"]= "Berserker",
+                    ["name"]= "버서커",
                     ["flavourText"]= "The savage path is \nalways swift and sure.",
                     ["flavourTextColour"]= "af5a32",
                     ["flavourTextRect"]= {
@@ -44,7 +44,7 @@ return {
                 },
                 {
                     ["id"]= "Chieftain",
-                    ["name"]= "Chieftain",
+                    ["name"]= "치프틴",
                     ["flavourText"]= "   The Ancestors speak \nthrough your clenched fists.",
                     ["flavourTextColour"]= "af5a32",
                     ["flavourTextRect"]= {
@@ -57,14 +57,14 @@ return {
             }
         },
         {
-            ["name"]= "Ranger",
+            ["name"]= "레인저",
             ["base_str"]= 14,
             ["base_dex"]= 32,
             ["base_int"]= 14,
             ["ascendancies"]= {
                 {
                     ["id"]= "Raider",
-                    ["name"]= "Raider",
+                    ["name"]= "레이더",
                     ["flavourText"]= "No hunt is complete without\nthe gutting and the skinning.",
                     ["flavourTextColour"]= "7cb376",
                     ["flavourTextRect"]= {
@@ -76,7 +76,7 @@ return {
                 },
                 {
                     ["id"]= "Deadeye",
-                    ["name"]= "Deadeye",
+                    ["name"]= "데드아이",
                     ["flavourText"]= "A woman can change the world \nwith a single well-placed arrow.",
                     ["flavourTextColour"]= "7cb376",
                     ["flavourTextRect"]= {
@@ -88,7 +88,7 @@ return {
                 },
                 {
                     ["id"]= "Pathfinder",
-                    ["name"]= "Pathfinder",
+                    ["name"]= "패스파인더",
                     ["flavourText"]= "There are venoms and virtues aplenty in \n the wilds, if you know where to look.",
                     ["flavourTextColour"]= "7cb376",
                     ["flavourTextRect"]= {
@@ -101,14 +101,14 @@ return {
             }
         },
         {
-            ["name"]= "Witch",
+            ["name"]= "위치",
             ["base_str"]= 14,
             ["base_dex"]= 14,
             ["base_int"]= 32,
             ["ascendancies"]= {
                 {
                     ["id"]= "Occultist",
-                    ["name"]= "Occultist",
+                    ["name"]= "오컬티스트",
                     ["flavourText"]= " Throw off the chains\nof fear and embrace that\n which was forbidden.",
                     ["flavourTextColour"]= "9ac3c9",
                     ["flavourTextRect"]= {
@@ -120,7 +120,7 @@ return {
                 },
                 {
                     ["id"]= "Elementalist",
-                    ["name"]= "Elementalist",
+                    ["name"]= "엘리멘탈리스트",
                     ["flavourText"]= "Feed a storm with savage intent \nand not even the strongest walls\nwill hold it back.",
                     ["flavourTextColour"]= "9ac3c9",
                     ["flavourTextRect"]= {
@@ -132,7 +132,7 @@ return {
                 },
                 {
                     ["id"]= "Necromancer",
-                    ["name"]= "Necromancer",
+                    ["name"]= "네크로맨서",
                     ["flavourText"]= "Embrace the serene\npower that is undeath.",
                     ["flavourTextColour"]= "9ac3c9",
                     ["flavourTextRect"]= {
@@ -145,14 +145,14 @@ return {
             }
         },
         {
-            ["name"]= "Duelist",
+            ["name"]= "듀얼리스트",
             ["base_str"]= 23,
             ["base_dex"]= 23,
             ["base_int"]= 14,
             ["ascendancies"]= {
                 {
                     ["id"]= "Slayer",
-                    ["name"]= "Slayer",
+                    ["name"]= "슬레이어",
                     ["flavourText"]= " No judge. No jury.\nJust the executioner.",
                     ["flavourTextColour"]= "96afc8",
                     ["flavourTextRect"]= {
@@ -164,7 +164,7 @@ return {
                 },
                 {
                     ["id"]= "Gladiator",
-                    ["name"]= "Gladiator",
+                    ["name"]= "글래디에이터",
                     ["flavourText"]= "Raise your hand to the \nroaring crowd and pledge \nyour allegiance to glory.",
                     ["flavourTextColour"]= "96afc8",
                     ["flavourTextRect"]= {
@@ -176,7 +176,7 @@ return {
                 },
                 {
                     ["id"]= "Champion",
-                    ["name"]= "Champion",
+                    ["name"]= "챔피언",
                     ["flavourText"]= "Champion that which \n you love. He who fights\n for nothing, dies\n for nothing.",
                     ["flavourTextColour"]= "96afc8",
                     ["flavourTextRect"]= {
@@ -189,14 +189,14 @@ return {
             }
         },
         {
-            ["name"]= "Templar",
+            ["name"]= "템플러",
             ["base_str"]= 23,
             ["base_dex"]= 14,
             ["base_int"]= 23,
             ["ascendancies"]= {
                 {
                     ["id"]= "Inquisitor",
-                    ["name"]= "Inquisitor",
+                    ["name"]= "인퀴지터",
                     ["flavourText"]= " Truth is elusive, yet God has\nprovided us with all the tools \n necessary to find it.",
                     ["flavourTextColour"]= "cfbd8a",
                     ["flavourTextRect"]= {
@@ -208,7 +208,7 @@ return {
                 },
                 {
                     ["id"]= "Hierophant",
-                    ["name"]= "Hierophant",
+                    ["name"]= "하이로펀트",
                     ["flavourText"]= "Drink deeply from God's\n chalice, for the faithful\n will never find it empty.",
                     ["flavourTextColour"]= "cfbd8a",
                     ["flavourTextRect"]= {
@@ -220,7 +220,7 @@ return {
                 },
                 {
                     ["id"]= "Guardian",
-                    ["name"]= "Guardian",
+                    ["name"]= "가디언",
                     ["flavourText"]= "When bound by faith\n and respect, the flock\n will overwhelm the wolf.",
                     ["flavourTextColour"]= "cfbd8a",
                     ["flavourTextRect"]= {
@@ -233,14 +233,14 @@ return {
             }
         },
         {
-            ["name"]= "Shadow",
+            ["name"]= "쉐도우",
             ["base_str"]= 14,
             ["base_dex"]= 23,
             ["base_int"]= 23,
             ["ascendancies"]= {
                 {
                     ["id"]= "Assassin",
-                    ["name"]= "Assassin",
+                    ["name"]= "어쌔신",
                     ["flavourText"]= "Death is a banquet. \n It's up to the murderer \n to write the menu.",
                     ["flavourTextColour"]= "72818d",
                     ["flavourTextRect"]= {
@@ -252,7 +252,7 @@ return {
                 },
                 {
                     ["id"]= "Trickster",
-                    ["name"]= "Trickster",
+                    ["name"]= "트릭스터",
                     ["flavourText"]= "  Everyone knows how to die. \n Some just need a little nudge \nto get them started.",
                     ["flavourTextColour"]= "72818d",
                     ["flavourTextRect"]= {
@@ -264,7 +264,7 @@ return {
                 },
                 {
                     ["id"]= "Saboteur",
-                    ["name"]= "Saboteur",
+                    ["name"]= "사보추어",
                     ["flavourText"]= "The artist need not be present \n to make a lasting impression.",
                     ["flavourTextColour"]= "72818d",
                     ["flavourTextRect"]= {
@@ -9261,7 +9261,7 @@ return {
         },
         [5865]= {
             ["skill"]= 5865,
-            ["name"]= "Physical Damage, Life Leeched per Second",
+            ["name"]= "물리 피해, 초당 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgLeech.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9280,7 +9280,7 @@ return {
         },
         [38999]= {
             ["skill"]= 38999,
-            ["name"]= "Flawless Savagery",
+            ["name"]= "완벽한 야만성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/CloakedAgony.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9304,7 +9304,7 @@ return {
         },
         [24528]= {
             ["skill"]= 24528,
-            ["name"]= "Crave the Slaughter",
+            ["name"]= "살육의 갈망",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/CombatFrenzy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9331,7 +9331,7 @@ return {
         },
         [59920]= {
             ["skill"]= 59920,
-            ["name"]= "Aspect of Carnage",
+            ["name"]= "학살의 위상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/AspectOfCarnage.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9349,7 +9349,7 @@ return {
         },
         [63673]= {
             ["skill"]= 63673,
-            ["name"]= "Physical Damage, Critical Strike Chance",
+            ["name"]= "물리 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgCrit.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9368,7 +9368,7 @@ return {
         },
         [29630]= {
             ["skill"]= 29630,
-            ["name"]= "Blitz",
+            ["name"]= "전격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/Blitz.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9391,7 +9391,7 @@ return {
         },
         [48904]= {
             ["skill"]= 48904,
-            ["name"]= "Physical Damage, Critical Strike Chance",
+            ["name"]= "물리 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgCrit.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9410,7 +9410,7 @@ return {
         },
         [8592]= {
             ["skill"]= 8592,
-            ["name"]= "Physical Damage, Attack Speed",
+            ["name"]= "물리 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgAttackSpeed.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9429,7 +9429,7 @@ return {
         },
         [63583]= {
             ["skill"]= 63583,
-            ["name"]= "Physical Damage, Attack Speed",
+            ["name"]= "물리 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgAttackSpeed.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9448,7 +9448,7 @@ return {
         },
         [42861]= {
             ["skill"]= 42861,
-            ["name"]= "Physical Damage, Attack Speed",
+            ["name"]= "물리 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgAttackSpeed.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9467,7 +9467,7 @@ return {
         },
         [50024]= {
             ["skill"]= 50024,
-            ["name"]= "Physical Damage, Warcry Speed",
+            ["name"]= "물리 피해, 함성 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DmgWarcry.png",
             ["ascendancyName"]= "Berserker",
             ["stats"]= {
@@ -9486,7 +9486,7 @@ return {
         },
         [32251]= {
             ["skill"]= 32251,
-            ["name"]= "War Bringer",
+            ["name"]= "전쟁 인도자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/WarBringer.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9511,7 +9511,7 @@ return {
         },
         [57560]= {
             ["skill"]= 57560,
-            ["name"]= "Rite of Ruin",
+            ["name"]= "폐허의 의식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/RiteOfRuin.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9536,7 +9536,7 @@ return {
         },
         [9271]= {
             ["skill"]= 9271,
-            ["name"]= "Defy Pain",
+            ["name"]= "고통 무시",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Berserker/DefyPain.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Berserker",
@@ -9556,7 +9556,7 @@ return {
         },
         [29294]= {
             ["skill"]= 29294,
-            ["name"]= "Berserker",
+            ["name"]= "버서커",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Berserker",
             ["isAscendancyStart"]= true,
@@ -9577,7 +9577,7 @@ return {
         },
         [14996]= {
             ["skill"]= 14996,
-            ["name"]= "Life Regeneration, Fire Damage",
+            ["name"]= "생명력 재생, 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenFireDamage.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9596,7 +9596,7 @@ return {
         },
         [61355]= {
             ["skill"]= 61355,
-            ["name"]= "Ramako, Sun's Light",
+            ["name"]= "태양의 빛, 라마코",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/RamakoSunsLight.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9620,7 +9620,7 @@ return {
         },
         [42659]= {
             ["skill"]= 42659,
-            ["name"]= "Life Regeneration, Fire Damage",
+            ["name"]= "생명력 재생, 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenFireDamage.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9639,7 +9639,7 @@ return {
         },
         [50692]= {
             ["skill"]= 50692,
-            ["name"]= "Ngamahu, Flame's Advance",
+            ["name"]= "불꽃의 진보, 나마후",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/NgamahuFlamesAdvance.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9659,7 +9659,7 @@ return {
         },
         [1731]= {
             ["skill"]= 1731,
-            ["name"]= "Hinekora, Death's Fury",
+            ["name"]= "죽음의 광분, 히네코라",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/HinekoraDeathsFury.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9683,7 +9683,7 @@ return {
         },
         [24704]= {
             ["skill"]= 24704,
-            ["name"]= "Chieftain",
+            ["name"]= "치프틴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Chieftain",
             ["isAscendancyStart"]= true,
@@ -9706,7 +9706,7 @@ return {
         },
         [47486]= {
             ["skill"]= 47486,
-            ["name"]= "Life Regeneration, Endurance Charge on Kill",
+            ["name"]= "생명력 재생, 처치 시 인내 충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenStrength.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9725,7 +9725,7 @@ return {
         },
         [48480]= {
             ["skill"]= 48480,
-            ["name"]= "Tasalio, Cleansing Water",
+            ["name"]= "물을 정화하는 자, 타살리오",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/TasalioCleansingWater.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9749,7 +9749,7 @@ return {
         },
         [53095]= {
             ["skill"]= 53095,
-            ["name"]= "Tukohama, War's Herald",
+            ["name"]= "전쟁의 전령, 투코하마",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/TukomahaWarsHerald.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9771,7 +9771,7 @@ return {
         },
         [5029]= {
             ["skill"]= 5029,
-            ["name"]= "Tawhoa, Forest's Strength",
+            ["name"]= "타호아, 숲의 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/TawhoaForestsStrength.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9788,7 +9788,7 @@ return {
         },
         [9190]= {
             ["skill"]= 9190,
-            ["name"]= "Life Regeneration, Fire Resistance",
+            ["name"]= "생명력 재생, 화염 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenFireResistance.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9807,7 +9807,7 @@ return {
         },
         [32249]= {
             ["skill"]= 32249,
-            ["name"]= "Valako, Storm's Embrace",
+            ["name"]= "폭풍으로 감싸는 자, 발라코",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/ValakoStormsEmbrace.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9830,7 +9830,7 @@ return {
         },
         [10238]= {
             ["skill"]= 10238,
-            ["name"]= "Life Regeneration, Fire Damage",
+            ["name"]= "생명력 재생, 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenFireDamage.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9849,7 +9849,7 @@ return {
         },
         [982]= {
             ["skill"]= 982,
-            ["name"]= "Life Regeneration, Area of Effect",
+            ["name"]= "생명력 재생, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenStrength.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9868,7 +9868,7 @@ return {
         },
         [9971]= {
             ["skill"]= 9971,
-            ["name"]= "Life Regeneration, Fire Damage",
+            ["name"]= "생명력 재생, 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenFireDamage.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9887,7 +9887,7 @@ return {
         },
         [5643]= {
             ["skill"]= 5643,
-            ["name"]= "Life Regeneration, Totem Placement Speed",
+            ["name"]= "생명력 재생, 토템 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenTotemPlacementSpeed.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9906,7 +9906,7 @@ return {
         },
         [6028]= {
             ["skill"]= 6028,
-            ["name"]= "Life Regeneration, Totem Placement Speed",
+            ["name"]= "생명력 재생, 토템 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/LifeRegenTotemPlacementSpeed.png",
             ["ascendancyName"]= "Chieftain",
             ["stats"]= {
@@ -9925,7 +9925,7 @@ return {
         },
         [31667]= {
             ["skill"]= 31667,
-            ["name"]= "Arohongui, Moon's Presence",
+            ["name"]= "달의 존재, 아로홍구이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Chieftain/ArohunguiMoonsPresence.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Chieftain",
@@ -9945,7 +9945,7 @@ return {
         },
         [43193]= {
             ["skill"]= 43193,
-            ["name"]= "Elemental Damage, Attack and Cast Speed",
+            ["name"]= "원소 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageAttackCasteSpeed.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -9964,7 +9964,7 @@ return {
         },
         [32816]= {
             ["skill"]= 32816,
-            ["name"]= "Pious Path",
+            ["name"]= "경건한 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/GloryOfTheSavant.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -9985,7 +9985,7 @@ return {
         },
         [27055]= {
             ["skill"]= 27055,
-            ["name"]= "Elemental Damage, Attack and Cast Speed",
+            ["name"]= "원소 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageAttackCasteSpeed.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10004,7 +10004,7 @@ return {
         },
         [13851]= {
             ["skill"]= 13851,
-            ["name"]= "Instruments of Zeal",
+            ["name"]= "열의의 도구",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/InstrumentsofZeal.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -10027,7 +10027,7 @@ return {
         },
         [19417]= {
             ["skill"]= 19417,
-            ["name"]= "Instruments of Virtue",
+            ["name"]= "미덕의 도구",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/InstrumentsOfVirtue.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -10050,7 +10050,7 @@ return {
         },
         [57222]= {
             ["skill"]= 57222,
-            ["name"]= "Elemental Damage, Life Regeneration",
+            ["name"]= "원소 피해, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageAvoidElementalStatusEffects.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10069,7 +10069,7 @@ return {
         },
         [10635]= {
             ["skill"]= 10635,
-            ["name"]= "Elemental Damage, Life Regeneration",
+            ["name"]= "원소 피해, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageAvoidElementalStatusEffects.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10088,7 +10088,7 @@ return {
         },
         [60769]= {
             ["skill"]= 60769,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageElementalPenetration.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10107,7 +10107,7 @@ return {
         },
         [662]= {
             ["skill"]= 662,
-            ["name"]= "Elemental Damage, Critical Strike Multiplier",
+            ["name"]= "원소 피해, 치명타 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageCasteSpeed.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10126,7 +10126,7 @@ return {
         },
         [37486]= {
             ["skill"]= 37486,
-            ["name"]= "Elemental Damage, Critical Strike Multiplier",
+            ["name"]= "원소 피해, 치명타 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/IncreasedElementalDamageCasteSpeed.png",
             ["ascendancyName"]= "Inquisitor",
             ["stats"]= {
@@ -10145,7 +10145,7 @@ return {
         },
         [48214]= {
             ["skill"]= 48214,
-            ["name"]= "Inevitable Judgement",
+            ["name"]= "피할 수 없는 심판",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/ElementalForce.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -10166,7 +10166,7 @@ return {
         },
         [40059]= {
             ["skill"]= 40059,
-            ["name"]= "Augury of Penitence",
+            ["name"]= "참회의 조짐",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/ElementalDomination.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -10184,7 +10184,7 @@ return {
         },
         [61871]= {
             ["skill"]= 61871,
-            ["name"]= "Inquisitor",
+            ["name"]= "인퀴지터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Inquisitor",
             ["isAscendancyStart"]= true,
@@ -10204,7 +10204,7 @@ return {
         },
         [39790]= {
             ["skill"]= 39790,
-            ["name"]= "Sanctuary",
+            ["name"]= "성역",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/Sanctify.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Inquisitor",
@@ -10227,7 +10227,7 @@ return {
         },
         [53884]= {
             ["skill"]= 53884,
-            ["name"]= "Righteous Providence",
+            ["name"]= "정의로운 섭리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inquistitor/ElementalMastery.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 50,
@@ -10249,7 +10249,7 @@ return {
         },
         [63417]= {
             ["skill"]= 63417,
-            ["name"]= "Armour, Movement Speed",
+            ["name"]= "방어도, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourMovementSpeed.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10268,7 +10268,7 @@ return {
         },
         [51998]= {
             ["skill"]= 51998,
-            ["name"]= "Armour, Life Regeneration",
+            ["name"]= "방어도, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourLifeRegeneration.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10287,7 +10287,7 @@ return {
         },
         [5819]= {
             ["skill"]= 5819,
-            ["name"]= "Unstoppable",
+            ["name"]= "폭주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Unstoppable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10307,7 +10307,7 @@ return {
         },
         [53816]= {
             ["skill"]= 53816,
-            ["name"]= "Unbreakable",
+            ["name"]= "무적",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Unbreakable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10327,7 +10327,7 @@ return {
         },
         [23972]= {
             ["skill"]= 23972,
-            ["name"]= "Armour, Endurance Charge Duration",
+            ["name"]= "방어도, 인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourAttackDamage.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10345,7 +10345,7 @@ return {
         },
         [44297]= {
             ["skill"]= 44297,
-            ["name"]= "Undeniable",
+            ["name"]= "명명백백",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Undeniable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10364,7 +10364,7 @@ return {
         },
         [1734]= {
             ["skill"]= 1734,
-            ["name"]= "Unflinching",
+            ["name"]= "불굴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Unflinching.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10390,7 +10390,7 @@ return {
         },
         [56789]= {
             ["skill"]= 56789,
-            ["name"]= "Unrelenting",
+            ["name"]= "분투",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Unrelenting.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10409,7 +10409,7 @@ return {
         },
         [49153]= {
             ["skill"]= 49153,
-            ["name"]= "Armour, Endurance Charge Duration",
+            ["name"]= "방어도, 인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourAttackDamage.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10428,7 +10428,7 @@ return {
         },
         [32115]= {
             ["skill"]= 32115,
-            ["name"]= "Armour, Attack Speed",
+            ["name"]= "방어도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourAttackSpeed.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10447,7 +10447,7 @@ return {
         },
         [62349]= {
             ["skill"]= 62349,
-            ["name"]= "Armour, Stun Duration",
+            ["name"]= "방어도, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/IncreasedArmourStunDuration.png",
             ["ascendancyName"]= "Juggernaut",
             ["stats"]= {
@@ -10466,7 +10466,7 @@ return {
         },
         [62595]= {
             ["skill"]= 62595,
-            ["name"]= "Unyielding",
+            ["name"]= "완고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Juggernaut/Unyielding.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Juggernaut",
@@ -10486,7 +10486,7 @@ return {
         },
         [17765]= {
             ["skill"]= 17765,
-            ["name"]= "Juggernaut",
+            ["name"]= "저거넛",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Juggernaut",
             ["isAscendancyStart"]= true,
@@ -10506,7 +10506,7 @@ return {
         },
         [44797]= {
             ["skill"]= 44797,
-            ["name"]= "Mana Regeneration, Arcane Surge Effect",
+            ["name"]= "마나 재생, 비전 쇄도 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10528,7 +10528,7 @@ return {
         },
         [34434]= {
             ["skill"]= 34434,
-            ["name"]= "Ritual of Awakening",
+            ["name"]= "각성의 의식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/AncestralZeal.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10547,7 +10547,7 @@ return {
         },
         [25651]= {
             ["skill"]= 25651,
-            ["name"]= "Conviction of Power",
+            ["name"]= "힘의 신념",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/DiscipleOfRuin.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10566,7 +10566,7 @@ return {
         },
         [60462]= {
             ["skill"]= 60462,
-            ["name"]= "Illuminated Devotion",
+            ["name"]= "빛나는 헌신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ItemAugment.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10588,7 +10588,7 @@ return {
         },
         [33167]= {
             ["skill"]= 33167,
-            ["name"]= "Mana Regeneration, Arcane Surge Effect",
+            ["name"]= "마나 재생, 비전 쇄도 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10610,7 +10610,7 @@ return {
         },
         [40510]= {
             ["skill"]= 40510,
-            ["name"]= "Arcane Blessing",
+            ["name"]= "비전의 축복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ArcaneSurge.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10633,7 +10633,7 @@ return {
         },
         [38387]= {
             ["skill"]= 38387,
-            ["name"]= "Mana Regeneration, Brand Damage",
+            ["name"]= "마나 재생, 낙인 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10655,7 +10655,7 @@ return {
         },
         [51492]= {
             ["skill"]= 51492,
-            ["name"]= "Sign of Purpose",
+            ["name"]= "의지력의 징표",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/SignOfPurpose.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10673,7 +10673,7 @@ return {
         },
         [26714]= {
             ["skill"]= 26714,
-            ["name"]= "Mana Regeneration, Totem Placement Speed",
+            ["name"]= "마나 재생, 토템 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10692,7 +10692,7 @@ return {
         },
         [14870]= {
             ["skill"]= 14870,
-            ["name"]= "Mana Regeneration, Totem Placement Speed",
+            ["name"]= "마나 재생, 토템 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10711,7 +10711,7 @@ return {
         },
         [29994]= {
             ["skill"]= 29994,
-            ["name"]= "Mana Regeneration, Mana",
+            ["name"]= "마나 재생, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10729,7 +10729,7 @@ return {
         },
         [11046]= {
             ["skill"]= 11046,
-            ["name"]= "Mana Regeneration, Mana",
+            ["name"]= "마나 재생, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10748,7 +10748,7 @@ return {
         },
         [22637]= {
             ["skill"]= 22637,
-            ["name"]= "Mana Regeneration, Mana",
+            ["name"]= "마나 재생, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/ManaRegen.png",
             ["ascendancyName"]= "Hierophant",
             ["stats"]= {
@@ -10767,7 +10767,7 @@ return {
         },
         [922]= {
             ["skill"]= 922,
-            ["name"]= "Divine Guidance",
+            ["name"]= "신성한 인도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/MindOverBody.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10791,7 +10791,7 @@ return {
         },
         [29026]= {
             ["skill"]= 29026,
-            ["name"]= "Sanctuary of Thought",
+            ["name"]= "사고의 성역",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/MindOverBeing.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10811,7 +10811,7 @@ return {
         },
         [1105]= {
             ["skill"]= 1105,
-            ["name"]= "Pursuit of Faith",
+            ["name"]= "믿음의 추구",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hierophant/SpiritualEmpowerment.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Hierophant",
@@ -10832,7 +10832,7 @@ return {
         },
         [30940]= {
             ["skill"]= 30940,
-            ["name"]= "Hierophant",
+            ["name"]= "하이로펀트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Hierophant",
             ["isAscendancyStart"]= true,
@@ -10853,7 +10853,7 @@ return {
         },
         [32992]= {
             ["skill"]= 32992,
-            ["name"]= "Armour and Energy Shield, Block Chance",
+            ["name"]= "방어도, 에너지 보호막, 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ArmourEnergyShieldStaves.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -10873,7 +10873,7 @@ return {
         },
         [61372]= {
             ["skill"]= 61372,
-            ["name"]= "Harmony of Purpose",
+            ["name"]= "의지력의 조화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/HarmonyOfPurpose.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -10892,7 +10892,7 @@ return {
         },
         [64768]= {
             ["skill"]= 64768,
-            ["name"]= "Unwavering Faith",
+            ["name"]= "변함없는 믿음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/UnwaveringFaith.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -10913,7 +10913,7 @@ return {
         },
         [16745]= {
             ["skill"]= 16745,
-            ["name"]= "Armour and Energy Shield, Minion Damage",
+            ["name"]= "방어도 및 에너지 보호막, 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/Minion Damage Armour and Energy Shield.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -10933,7 +10933,7 @@ return {
         },
         [4494]= {
             ["skill"]= 4494,
-            ["name"]= "Radiant Crusade",
+            ["name"]= "찬란한 성전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/Radient Crusade.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -10957,7 +10957,7 @@ return {
         },
         [40010]= {
             ["skill"]= 40010,
-            ["name"]= "Armour and Energy Shield, Minion Damage",
+            ["name"]= "방어도 및 에너지 보호막, 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/Minion Damage Armour and Energy Shield.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -10977,7 +10977,7 @@ return {
         },
         [19641]= {
             ["skill"]= 19641,
-            ["name"]= "Unwavering Crusade",
+            ["name"]= "변함없는 성전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/Unwavering Crusade.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -11001,7 +11001,7 @@ return {
         },
         [55146]= {
             ["skill"]= 55146,
-            ["name"]= "Time of Need",
+            ["name"]= "긴요한 시기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/TimeOfNeed.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -11019,7 +11019,7 @@ return {
         },
         [42264]= {
             ["skill"]= 42264,
-            ["name"]= "Radiant Faith",
+            ["name"]= "찬란한 믿음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/RadientFaith.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -11039,7 +11039,7 @@ return {
         },
         [39728]= {
             ["skill"]= 39728,
-            ["name"]= "Bastion of Hope",
+            ["name"]= "희망의 보루",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ShieldMastery.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Guardian",
@@ -11062,7 +11062,7 @@ return {
         },
         [32364]= {
             ["skill"]= 32364,
-            ["name"]= "Armour and Energy Shield, Life Regeneration",
+            ["name"]= "방어도 및 에너지 보호막, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ArmourEnergyShieldDefenseFromShields.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -11082,7 +11082,7 @@ return {
         },
         [37419]= {
             ["skill"]= 37419,
-            ["name"]= "Armour and Energy Shield, Aura Effect",
+            ["name"]= "방어도 및 에너지 보호막, 오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ArmourEnergyShieldManaPool.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -11102,7 +11102,7 @@ return {
         },
         [46952]= {
             ["skill"]= 46952,
-            ["name"]= "Armour and Energy Shield, Charge Duration",
+            ["name"]= "방어도, 에너지 보호막, 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ArmourEnergyMeleeDamage.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -11122,7 +11122,7 @@ return {
         },
         [20050]= {
             ["skill"]= 20050,
-            ["name"]= "Armour and Energy Shield, Aura Effect",
+            ["name"]= "방어도 및 에너지 보호막, 오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Guardian/ArmourEnergyShieldManaPool.png",
             ["ascendancyName"]= "Guardian",
             ["stats"]= {
@@ -11142,7 +11142,7 @@ return {
         },
         [409]= {
             ["skill"]= 409,
-            ["name"]= "Guardian",
+            ["name"]= "가디언",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Guardian",
             ["isAscendancyStart"]= true,
@@ -11163,7 +11163,7 @@ return {
         },
         [49951]= {
             ["skill"]= 49951,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11177,7 +11177,7 @@ return {
         },
         [4194]= {
             ["skill"]= 4194,
-            ["name"]= "Berserker",
+            ["name"]= "버서커",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Berserker.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11210,7 +11210,7 @@ return {
         },
         [57052]= {
             ["skill"]= 57052,
-            ["name"]= "Chieftain",
+            ["name"]= "치프틴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Chieftain.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11236,7 +11236,7 @@ return {
         },
         [42144]= {
             ["skill"]= 42144,
-            ["name"]= "Hierophant",
+            ["name"]= "하이로펀트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Hierophant.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11261,7 +11261,7 @@ return {
         },
         [28018]= {
             ["skill"]= 28018,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11276,7 +11276,7 @@ return {
         },
         [36931]= {
             ["skill"]= 36931,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -11297,7 +11297,7 @@ return {
         },
         [61072]= {
             ["skill"]= 61072,
-            ["name"]= "Juggernaut",
+            ["name"]= "저거넛",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Juggernaut.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11322,7 +11322,7 @@ return {
         },
         [33875]= {
             ["skill"]= 33875,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11341,7 +11341,7 @@ return {
         },
         [30690]= {
             ["skill"]= 30690,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11360,7 +11360,7 @@ return {
         },
         [193]= {
             ["skill"]= 193,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 40,
             ["ascendancyName"]= "Ascendant",
@@ -11379,7 +11379,7 @@ return {
         },
         [61437]= {
             ["skill"]= 61437,
-            ["name"]= "Marauder Ascendancy",
+            ["name"]= "머라우더 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11403,7 +11403,7 @@ return {
         },
         [24755]= {
             ["skill"]= 24755,
-            ["name"]= "Path of the Marauder",
+            ["name"]= "머라우더의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Str.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11425,7 +11425,7 @@ return {
         },
         [41534]= {
             ["skill"]= 41534,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11444,7 +11444,7 @@ return {
         },
         [22551]= {
             ["skill"]= 22551,
-            ["name"]= "Strength and Intelligence",
+            ["name"]= "힘과 지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrengthintelligence.png",
             ["grantedStrength"]= 20,
             ["grantedIntelligence"]= 20,
@@ -11464,7 +11464,7 @@ return {
         },
         [15435]= {
             ["skill"]= 15435,
-            ["name"]= "Templar Ascendancy",
+            ["name"]= "템플러 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11488,7 +11488,7 @@ return {
         },
         [54877]= {
             ["skill"]= 54877,
-            ["name"]= "Path of the Templar",
+            ["name"]= "템플러의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/StrInt.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11510,7 +11510,7 @@ return {
         },
         [57429]= {
             ["skill"]= 57429,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11529,7 +11529,7 @@ return {
         },
         [43962]= {
             ["skill"]= 43962,
-            ["name"]= "Inquisitor",
+            ["name"]= "인퀴지터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Inquisitor.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11554,7 +11554,7 @@ return {
         },
         [22046]= {
             ["skill"]= 22046,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11568,7 +11568,7 @@ return {
         },
         [30919]= {
             ["skill"]= 30919,
-            ["name"]= "Guardian",
+            ["name"]= "가디언",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Guardian.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11594,7 +11594,7 @@ return {
         },
         [3854]= {
             ["skill"]= 3854,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11608,7 +11608,7 @@ return {
         },
         [43195]= {
             ["skill"]= 43195,
-            ["name"]= "Slayer",
+            ["name"]= "슬레이어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Slayer.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11633,7 +11633,7 @@ return {
         },
         [34774]= {
             ["skill"]= 34774,
-            ["name"]= "Gladiator",
+            ["name"]= "글래디에이터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Gladiator.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11658,7 +11658,7 @@ return {
         },
         [5624]= {
             ["skill"]= 5624,
-            ["name"]= "Crusader",
+            ["name"]= "성전사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MindPact.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -11682,7 +11682,7 @@ return {
         },
         [39598]= {
             ["skill"]= 39598,
-            ["name"]= "Champion",
+            ["name"]= "챔피언",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Champion.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -11709,7 +11709,7 @@ return {
         },
         [53203]= {
             ["skill"]= 53203,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11724,7 +11724,7 @@ return {
         },
         [14993]= {
             ["skill"]= 14993,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -11745,7 +11745,7 @@ return {
         },
         [25441]= {
             ["skill"]= 25441,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -11760,7 +11760,7 @@ return {
         },
         [24970]= {
             ["skill"]= 24970,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -11781,7 +11781,7 @@ return {
         },
         [35754]= {
             ["skill"]= 35754,
-            ["name"]= "Ascendant",
+            ["name"]= "어센던트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Ascendant",
             ["isAscendancyStart"]= true,
@@ -11803,7 +11803,7 @@ return {
         },
         [17445]= {
             ["skill"]= 17445,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11822,7 +11822,7 @@ return {
         },
         [41996]= {
             ["skill"]= 41996,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11841,7 +11841,7 @@ return {
         },
         [607]= {
             ["skill"]= 607,
-            ["name"]= "Strength and Dexterity",
+            ["name"]= "힘과 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrengthdexterity.png",
             ["grantedStrength"]= 20,
             ["grantedDexterity"]= 20,
@@ -11861,7 +11861,7 @@ return {
         },
         [24798]= {
             ["skill"]= 24798,
-            ["name"]= "Duelist Ascendancy",
+            ["name"]= "듀얼리스트 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11885,7 +11885,7 @@ return {
         },
         [63357]= {
             ["skill"]= 63357,
-            ["name"]= "Path of the Duelist",
+            ["name"]= "듀얼리스트의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/StrDex.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11907,7 +11907,7 @@ return {
         },
         [2521]= {
             ["skill"]= 2521,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -11926,7 +11926,7 @@ return {
         },
         [56722]= {
             ["skill"]= 56722,
-            ["name"]= "Path of the Witch",
+            ["name"]= "위치의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Int.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11948,7 +11948,7 @@ return {
         },
         [58029]= {
             ["skill"]= 58029,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 40,
             ["ascendancyName"]= "Ascendant",
@@ -11967,7 +11967,7 @@ return {
         },
         [51782]= {
             ["skill"]= 51782,
-            ["name"]= "Witch Ascendancy",
+            ["name"]= "위치 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -11991,7 +11991,7 @@ return {
         },
         [62162]= {
             ["skill"]= 62162,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -12010,7 +12010,7 @@ return {
         },
         [8281]= {
             ["skill"]= 8281,
-            ["name"]= "Elementalist",
+            ["name"]= "엘리멘탈리스트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Elementalist.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12033,7 +12033,7 @@ return {
         },
         [52282]= {
             ["skill"]= 52282,
-            ["name"]= "Tenacity",
+            ["name"]= "끈질김",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodPact.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -12057,7 +12057,7 @@ return {
         },
         [10099]= {
             ["skill"]= 10099,
-            ["name"]= "Necromancer",
+            ["name"]= "네크로맨서",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Necromancer.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12083,7 +12083,7 @@ return {
         },
         [12597]= {
             ["skill"]= 12597,
-            ["name"]= "Occultist",
+            ["name"]= "오컬티스트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Occultist.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12106,7 +12106,7 @@ return {
         },
         [8656]= {
             ["skill"]= 8656,
-            ["name"]= "Raider",
+            ["name"]= "레이더",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Raider.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12132,7 +12132,7 @@ return {
         },
         [42546]= {
             ["skill"]= 42546,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -12151,7 +12151,7 @@ return {
         },
         [45403]= {
             ["skill"]= 45403,
-            ["name"]= "Dexterity and Intelligence",
+            ["name"]= "민첩과 지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligencedexterity.png",
             ["grantedDexterity"]= 20,
             ["grantedIntelligence"]= 20,
@@ -12171,7 +12171,7 @@ return {
         },
         [772]= {
             ["skill"]= 772,
-            ["name"]= "Shadow Ascendancy",
+            ["name"]= "쉐도우 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -12195,7 +12195,7 @@ return {
         },
         [53992]= {
             ["skill"]= 53992,
-            ["name"]= "Path of the Shadow",
+            ["name"]= "쉐도우의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/DexInt.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -12217,7 +12217,7 @@ return {
         },
         [43336]= {
             ["skill"]= 43336,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -12236,7 +12236,7 @@ return {
         },
         [9327]= {
             ["skill"]= 9327,
-            ["name"]= "Pathfinder",
+            ["name"]= "패스파인더",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Pathfinder.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12260,7 +12260,7 @@ return {
         },
         [7618]= {
             ["skill"]= 7618,
-            ["name"]= "Path of the Ranger",
+            ["name"]= "레인저의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Dex.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -12282,7 +12282,7 @@ return {
         },
         [42671]= {
             ["skill"]= 42671,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -12301,7 +12301,7 @@ return {
         },
         [38689]= {
             ["skill"]= 38689,
-            ["name"]= "Passive Point",
+            ["name"]= "패시브 포인트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/SkillPoint.png",
             ["ascendancyName"]= "Ascendant",
             ["grantedPassivePoints"]= 1,
@@ -12320,7 +12320,7 @@ return {
         },
         [31598]= {
             ["skill"]= 31598,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 40,
             ["ascendancyName"]= "Ascendant",
@@ -12339,7 +12339,7 @@ return {
         },
         [49532]= {
             ["skill"]= 49532,
-            ["name"]= "Ranger Ascendancy",
+            ["name"]= "레인저 전직",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Ascendancy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Ascendant",
@@ -12363,7 +12363,7 @@ return {
         },
         [49080]= {
             ["skill"]= 49080,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -12385,7 +12385,7 @@ return {
         },
         [17219]= {
             ["skill"]= 17219,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -12408,7 +12408,7 @@ return {
         },
         [44169]= {
             ["skill"]= 44169,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -12431,7 +12431,7 @@ return {
         },
         [30275]= {
             ["skill"]= 30275,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -12447,7 +12447,7 @@ return {
         },
         [34567]= {
             ["skill"]= 34567,
-            ["name"]= "Deadeye",
+            ["name"]= "데드아이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Deadeye.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12471,7 +12471,7 @@ return {
         },
         [43122]= {
             ["skill"]= 43122,
-            ["name"]= "Assassin",
+            ["name"]= "어쌔신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Assassin.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12495,7 +12495,7 @@ return {
         },
         [6778]= {
             ["skill"]= 6778,
-            ["name"]= "Trickster",
+            ["name"]= "트릭스터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Trickster.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12519,7 +12519,7 @@ return {
         },
         [58827]= {
             ["skill"]= 58827,
-            ["name"]= "Saboteur",
+            ["name"]= "사보추어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Ascendants/Saboteur.png",
             ["ascendancyName"]= "Ascendant",
             ["isMultipleChoiceOption"]= true,
@@ -12545,7 +12545,7 @@ return {
         },
         [7092]= {
             ["skill"]= 7092,
-            ["name"]= "Physical and Lightning Damage",
+            ["name"]= "물리, 번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DivineWrath.png",
             ["stats"]= {
                 "8% increased Lightning Damage",
@@ -12563,7 +12563,7 @@ return {
         },
         [31153]= {
             ["skill"]= 31153,
-            ["name"]= "Physical and Fire Damage",
+            ["name"]= "물리, 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DivineFury.png",
             ["stats"]= {
                 "8% increased Fire Damage",
@@ -12581,7 +12581,7 @@ return {
         },
         [11016]= {
             ["skill"]= 11016,
-            ["name"]= "Physical and Elemental Damage",
+            ["name"]= "물리, 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "8% increased Elemental Damage",
@@ -12599,7 +12599,7 @@ return {
         },
         [29061]= {
             ["skill"]= 29061,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -12618,7 +12618,7 @@ return {
         },
         [55993]= {
             ["skill"]= 55993,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "12% increased Elemental Damage"
@@ -12636,7 +12636,7 @@ return {
         },
         [41251]= {
             ["skill"]= 41251,
-            ["name"]= "Elemental Damage and Ailment Effect",
+            ["name"]= "원소 피해, 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage",
@@ -12657,7 +12657,7 @@ return {
         },
         [8198]= {
             ["skill"]= 8198,
-            ["name"]= "Elemental Damage and Penetration",
+            ["name"]= "원소 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "6% increased Elemental Damage",
@@ -12675,7 +12675,7 @@ return {
         },
         [63824]= {
             ["skill"]= 63824,
-            ["name"]= "Elemental Damage Mastery",
+            ["name"]= "원소 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalMastery2.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -12687,7 +12687,7 @@ return {
         },
         [13164]= {
             ["skill"]= 13164,
-            ["name"]= "Divine Judgement",
+            ["name"]= "신성한 심판",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CelestialPunishment.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12709,7 +12709,7 @@ return {
         },
         [44347]= {
             ["skill"]= 44347,
-            ["name"]= "Divine Fury",
+            ["name"]= "신성한 광분",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DivineFury.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12735,7 +12735,7 @@ return {
         },
         [14665]= {
             ["skill"]= 14665,
-            ["name"]= "Divine Wrath",
+            ["name"]= "신성한 진노",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DivineWrath.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12761,7 +12761,7 @@ return {
         },
         [35260]= {
             ["skill"]= 35260,
-            ["name"]= "Minion Damage and Accuracy",
+            ["name"]= "소환수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage",
@@ -12779,7 +12779,7 @@ return {
         },
         [38989]= {
             ["skill"]= 38989,
-            ["name"]= "Minion Damage and Accuracy",
+            ["name"]= "소환수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage",
@@ -12796,7 +12796,7 @@ return {
         },
         [26481]= {
             ["skill"]= 26481,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 12% increased Damage"
@@ -12813,7 +12813,7 @@ return {
         },
         [41190]= {
             ["skill"]= 41190,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 12% increased Damage"
@@ -12830,7 +12830,7 @@ return {
         },
         [25816]= {
             ["skill"]= 25816,
-            ["name"]= "Minion and Damage Mastery",
+            ["name"]= "소환수, 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -12842,7 +12842,7 @@ return {
         },
         [19103]= {
             ["skill"]= 19103,
-            ["name"]= "Righteous Army",
+            ["name"]= "정의로운 군대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RighteousArmy.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12868,7 +12868,7 @@ return {
         },
         [15046]= {
             ["skill"]= 15046,
-            ["name"]= "Redemption",
+            ["name"]= "구원",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Redemption.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12895,7 +12895,7 @@ return {
         },
         [4177]= {
             ["skill"]= 4177,
-            ["name"]= "Spiritual Aid",
+            ["name"]= "영적 도움",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpiritualAid.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12920,7 +12920,7 @@ return {
         },
         [29106]= {
             ["skill"]= 29106,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -12937,7 +12937,7 @@ return {
         },
         [25332]= {
             ["skill"]= 25332,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -12954,7 +12954,7 @@ return {
         },
         [40645]= {
             ["skill"]= 40645,
-            ["name"]= "Bone Breaker",
+            ["name"]= "뼈 분쇄기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -12984,7 +12984,7 @@ return {
         },
         [46127]= {
             ["skill"]= 46127,
-            ["name"]= "Mace Damage and Stun Duration",
+            ["name"]= "철퇴 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "16% increased Physical Damage with Maces or Sceptres",
@@ -13006,7 +13006,7 @@ return {
         },
         [20966]= {
             ["skill"]= 20966,
-            ["name"]= "Mace Damage",
+            ["name"]= "철퇴 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -13028,7 +13028,7 @@ return {
         },
         [8500]= {
             ["skill"]= 8500,
-            ["name"]= "Mace Damage and Stun Duration",
+            ["name"]= "철퇴 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "16% increased Physical Damage with Maces or Sceptres",
@@ -13049,7 +13049,7 @@ return {
         },
         [30547]= {
             ["skill"]= 30547,
-            ["name"]= "Mace Damage and Area of Effect",
+            ["name"]= "철퇴 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedmace.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -13071,7 +13071,7 @@ return {
         },
         [15163]= {
             ["skill"]= 15163,
-            ["name"]= "Mace Damage and Area of Effect",
+            ["name"]= "철퇴 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedmace.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -13092,7 +13092,7 @@ return {
         },
         [57266]= {
             ["skill"]= 57266,
-            ["name"]= "Mace Damage and Reduced Enemy Stun Threshold",
+            ["name"]= "철퇴 피해, 적 기절 한계치 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunmace.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -13115,7 +13115,7 @@ return {
         },
         [38023]= {
             ["skill"]= 38023,
-            ["name"]= "Mace Damage and Reduced Enemy Stun Threshold",
+            ["name"]= "철퇴 피해, 적 기절 한계치 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunmace.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -13137,7 +13137,7 @@ return {
         },
         [30697]= {
             ["skill"]= 30697,
-            ["name"]= "Mace Mastery",
+            ["name"]= "철퇴 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMace.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -13149,7 +13149,7 @@ return {
         },
         [16703]= {
             ["skill"]= 16703,
-            ["name"]= "Skull Cracking",
+            ["name"]= "해골 부수기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/skullcracking.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13179,7 +13179,7 @@ return {
         },
         [51559]= {
             ["skill"]= 51559,
-            ["name"]= "Smashing Strikes",
+            ["name"]= "박살내는 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunstaff.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13209,7 +13209,7 @@ return {
         },
         [54667]= {
             ["skill"]= 54667,
-            ["name"]= "Staff Block, Attack and Cast Speed",
+            ["name"]= "지팡이 막기, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstaff.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while wielding a Staff",
@@ -13232,7 +13232,7 @@ return {
         },
         [18990]= {
             ["skill"]= 18990,
-            ["name"]= "Staff Block, Attack and Cast Speed",
+            ["name"]= "지팡이 막기, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstaff.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while wielding a Staff",
@@ -13255,7 +13255,7 @@ return {
         },
         [48282]= {
             ["skill"]= 48282,
-            ["name"]= "Staff Critical Strike Chance",
+            ["name"]= "지팡이 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/staffspeed.png",
             ["stats"]= {
                 "30% increased Global Critical Strike Chance while wielding a Staff"
@@ -13275,7 +13275,7 @@ return {
         },
         [16754]= {
             ["skill"]= 16754,
-            ["name"]= "Staff Critical Strike Chance",
+            ["name"]= "지팡이 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/staffspeed.png",
             ["stats"]= {
                 "30% increased Global Critical Strike Chance while wielding a Staff"
@@ -13295,7 +13295,7 @@ return {
         },
         [39761]= {
             ["skill"]= 39761,
-            ["name"]= "Counterweight",
+            ["name"]= "균형추",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffCrit.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13321,7 +13321,7 @@ return {
         },
         [37639]= {
             ["skill"]= 37639,
-            ["name"]= "Staff Damage and Stun Duration",
+            ["name"]= "지팡이 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "Staff Attacks deal 15% increased Damage with Hits and Ailments",
@@ -13343,7 +13343,7 @@ return {
         },
         [47427]= {
             ["skill"]= 47427,
-            ["name"]= "Staff Damage and Stun Duration",
+            ["name"]= "지팡이 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "Staff Attacks deal 15% increased Damage with Hits and Ailments",
@@ -13364,7 +13364,7 @@ return {
         },
         [6814]= {
             ["skill"]= 6814,
-            ["name"]= "Staff Mastery",
+            ["name"]= "지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStaff.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -13376,7 +13376,7 @@ return {
         },
         [42917]= {
             ["skill"]= 42917,
-            ["name"]= "Whirling Barrier",
+            ["name"]= "소용돌이 방어막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/whirlingstaff.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13404,7 +13404,7 @@ return {
         },
         [25367]= {
             ["skill"]= 25367,
-            ["name"]= "Blade Master",
+            ["name"]= "검의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blademaster.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13433,7 +13433,7 @@ return {
         },
         [33082]= {
             ["skill"]= 33082,
-            ["name"]= "Razor's Edge",
+            ["name"]= "예리한 날",
             ["icon"]= "Art/2DArt/SkillIcons/passives/razorsedge.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13461,7 +13461,7 @@ return {
         },
         [7082]= {
             ["skill"]= 7082,
-            ["name"]= "Sword Damage",
+            ["name"]= "검 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "12% increased Physical Damage with Swords",
@@ -13483,7 +13483,7 @@ return {
         },
         [62042]= {
             ["skill"]= 62042,
-            ["name"]= "Sword Damage and Ailment Damage",
+            ["name"]= "검 피해, 상태 이상 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterysword.png",
             ["stats"]= {
                 "15% increased Physical Damage with Swords",
@@ -13504,7 +13504,7 @@ return {
         },
         [4336]= {
             ["skill"]= 4336,
-            ["name"]= "Sword Damage and Bleed Chance",
+            ["name"]= "검 피해, 출혈 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterysword.png",
             ["stats"]= {
                 "15% increased Physical Damage with Swords",
@@ -13527,7 +13527,7 @@ return {
         },
         [55166]= {
             ["skill"]= 55166,
-            ["name"]= "Sword Damage and Attack Speed",
+            ["name"]= "검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedsworddex.png",
             ["stats"]= {
                 "10% increased Physical Damage with Swords",
@@ -13549,7 +13549,7 @@ return {
         },
         [49415]= {
             ["skill"]= 49415,
-            ["name"]= "Sword Damage and Attack Speed",
+            ["name"]= "검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedsworddex.png",
             ["stats"]= {
                 "10% increased Physical Damage with Swords",
@@ -13571,7 +13571,7 @@ return {
         },
         [48290]= {
             ["skill"]= 48290,
-            ["name"]= "Sword Mastery",
+            ["name"]= "검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupSword.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -13583,7 +13583,7 @@ return {
         },
         [9976]= {
             ["skill"]= 9976,
-            ["name"]= "Axe Damage and Bleed Chance",
+            ["name"]= "도끼 피해, 출혈 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "15% increased Physical Damage with Axes",
@@ -13606,7 +13606,7 @@ return {
         },
         [20018]= {
             ["skill"]= 20018,
-            ["name"]= "Axe Damage and Bleed Chance",
+            ["name"]= "도끼 피해, 출혈 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "15% increased Physical Damage with Axes",
@@ -13629,7 +13629,7 @@ return {
         },
         [6113]= {
             ["skill"]= 6113,
-            ["name"]= "Axe Damage and Bleed Duration",
+            ["name"]= "도끼 피해, 출혈 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "15% increased Physical Damage with Axes",
@@ -13651,7 +13651,7 @@ return {
         },
         [12407]= {
             ["skill"]= 12407,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "12% increased Physical Damage with Axes",
@@ -13673,7 +13673,7 @@ return {
         },
         [25682]= {
             ["skill"]= 25682,
-            ["name"]= "Axe Damage",
+            ["name"]= "도끼 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "14% increased Physical Damage with Axes",
@@ -13695,7 +13695,7 @@ return {
         },
         [49571]= {
             ["skill"]= 49571,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "12% increased Physical Damage with Axes",
@@ -13717,7 +13717,7 @@ return {
         },
         [57953]= {
             ["skill"]= 57953,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "12% increased Physical Damage with Axes",
@@ -13739,7 +13739,7 @@ return {
         },
         [590]= {
             ["skill"]= 590,
-            ["name"]= "Axe Mastery",
+            ["name"]= "도끼 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupAxe.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -13751,7 +13751,7 @@ return {
         },
         [4940]= {
             ["skill"]= 4940,
-            ["name"]= "Cleaving",
+            ["name"]= "쪼개기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/hatchetmaster.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13781,7 +13781,7 @@ return {
         },
         [23038]= {
             ["skill"]= 23038,
-            ["name"]= "Slaughter",
+            ["name"]= "살육",
             ["icon"]= "Art/2DArt/SkillIcons/passives/fellingtheweak.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -13809,7 +13809,7 @@ return {
         },
         [31961]= {
             ["skill"]= 31961,
-            ["name"]= "Resolute Technique",
+            ["name"]= "확고한 기술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneResoluteTechnique.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -13828,7 +13828,7 @@ return {
         },
         [26712]= {
             ["skill"]= 26712,
-            ["name"]= "Armour",
+            ["name"]= "방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "8% increased Armour"
@@ -13845,7 +13845,7 @@ return {
         },
         [35288]= {
             ["skill"]= 35288,
-            ["name"]= "Armour",
+            ["name"]= "방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "8% increased Armour"
@@ -13862,7 +13862,7 @@ return {
         },
         [55190]= {
             ["skill"]= 55190,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -13882,7 +13882,7 @@ return {
         },
         [40849]= {
             ["skill"]= 40849,
-            ["name"]= "Persistence",
+            ["name"]= "끈기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShrugOff.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -13903,7 +13903,7 @@ return {
         },
         [41970]= {
             ["skill"]= 41970,
-            ["name"]= "Ancestral Bond",
+            ["name"]= "선대의 유대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemmax.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -13923,7 +13923,7 @@ return {
         },
         [42343]= {
             ["skill"]= 42343,
-            ["name"]= "Runebinder",
+            ["name"]= "룬 결속사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandKeystone.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -13942,7 +13942,7 @@ return {
         },
         [22757]= {
             ["skill"]= 22757,
-            ["name"]= "Totem Placement Speed and Brand Range",
+            ["name"]= "토템 설치 속도, 낙인 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandplacementspeed.png",
             ["stats"]= {
                 "15% increased Totem Placement speed",
@@ -13960,7 +13960,7 @@ return {
         },
         [49939]= {
             ["skill"]= 49939,
-            ["name"]= "Totem Life and Elemental Resistances, Brand Duration",
+            ["name"]= "토템 생명력, 원소 저항, 낙인 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandlife.png",
             ["stats"]= {
                 "15% increased Totem Life",
@@ -13979,7 +13979,7 @@ return {
         },
         [23083]= {
             ["skill"]= 23083,
-            ["name"]= "Totem and Brand Damage",
+            ["name"]= "토템 및 낙인 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "14% increased Totem Damage",
@@ -14001,7 +14001,7 @@ return {
         },
         [43486]= {
             ["skill"]= 43486,
-            ["name"]= "Totem Mastery",
+            ["name"]= "토템 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryTotem.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14013,7 +14013,7 @@ return {
         },
         [10771]= {
             ["skill"]= 10771,
-            ["name"]= "Totem Attack and Cast Speed, Brand Cast Speed",
+            ["name"]= "토템 공격 및 시전 속도, 낙인 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandattackspeed.png",
             ["stats"]= {
                 "Spells Cast by Totems have 5% increased Cast Speed",
@@ -14034,7 +14034,7 @@ return {
         },
         [44922]= {
             ["skill"]= 44922,
-            ["name"]= "Shield Damage and Defences",
+            ["name"]= "방패 피해, 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "14% increased Physical Attack Damage while holding a Shield",
@@ -14057,7 +14057,7 @@ return {
         },
         [48813]= {
             ["skill"]= 48813,
-            ["name"]= "Shield Damage and Block",
+            ["name"]= "방패 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "12% increased Physical Attack Damage while holding a Shield",
@@ -14079,7 +14079,7 @@ return {
         },
         [10851]= {
             ["skill"]= 10851,
-            ["name"]= "Shield Damage and Block",
+            ["name"]= "방패 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "10% increased Physical Attack Damage while holding a Shield",
@@ -14101,7 +14101,7 @@ return {
         },
         [861]= {
             ["skill"]= 861,
-            ["name"]= "Aggressive Bastion",
+            ["name"]= "공격적인 보루",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14128,7 +14128,7 @@ return {
         },
         [788]= {
             ["skill"]= 788,
-            ["name"]= "Shield Mastery",
+            ["name"]= "방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14140,7 +14140,7 @@ return {
         },
         [26270]= {
             ["skill"]= 26270,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -14164,7 +14164,7 @@ return {
         },
         [29199]= {
             ["skill"]= 29199,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -14183,7 +14183,7 @@ return {
         },
         [23027]= {
             ["skill"]= 23027,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14205,7 +14205,7 @@ return {
         },
         [44202]= {
             ["skill"]= 44202,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14224,7 +14224,7 @@ return {
         },
         [63282]= {
             ["skill"]= 63282,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14244,7 +14244,7 @@ return {
         },
         [29353]= {
             ["skill"]= 29353,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14265,7 +14265,7 @@ return {
         },
         [59928]= {
             ["skill"]= 59928,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14286,7 +14286,7 @@ return {
         },
         [63723]= {
             ["skill"]= 63723,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14307,7 +14307,7 @@ return {
         },
         [5233]= {
             ["skill"]= 5233,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -14329,7 +14329,7 @@ return {
         },
         [60619]= {
             ["skill"]= 60619,
-            ["name"]= "Galvanic Hammer",
+            ["name"]= "충격의 망치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/galvanichammer.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14352,7 +14352,7 @@ return {
         },
         [20467]= {
             ["skill"]= 20467,
-            ["name"]= "Mace Critical Strike Chance and Multiplier",
+            ["name"]= "철퇴 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Maces or Sceptres",
@@ -14370,7 +14370,7 @@ return {
         },
         [5068]= {
             ["skill"]= 5068,
-            ["name"]= "Mace Critical Strike Chance and Multiplier",
+            ["name"]= "철퇴 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Maces or Sceptres",
@@ -14388,7 +14388,7 @@ return {
         },
         [18379]= {
             ["skill"]= 18379,
-            ["name"]= "Mace Critical Strike Chance and Multiplier",
+            ["name"]= "철퇴 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Maces or Sceptres",
@@ -14406,7 +14406,7 @@ return {
         },
         [39657]= {
             ["skill"]= 39657,
-            ["name"]= "Pain Forger",
+            ["name"]= "고통의 대장장이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14432,7 +14432,7 @@ return {
         },
         [24677]= {
             ["skill"]= 24677,
-            ["name"]= "Mace Elemental Damage and Accuracy",
+            ["name"]= "철퇴 원소 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceElemental.png",
             ["stats"]= {
                 "8% increased Accuracy Rating with Maces or Sceptres",
@@ -14450,7 +14450,7 @@ return {
         },
         [61950]= {
             ["skill"]= 61950,
-            ["name"]= "Mace Elemental Damage and Accuracy",
+            ["name"]= "철퇴 원소 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceElemental.png",
             ["stats"]= {
                 "8% increased Accuracy Rating with Maces or Sceptres",
@@ -14468,7 +14468,7 @@ return {
         },
         [27134]= {
             ["skill"]= 27134,
-            ["name"]= "Mace Damage",
+            ["name"]= "철퇴 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 14% increased Damage with Hits and Ailments"
@@ -14488,7 +14488,7 @@ return {
         },
         [46413]= {
             ["skill"]= 46413,
-            ["name"]= "Sceptre Mastery",
+            ["name"]= "셉터 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupScepter.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14500,7 +14500,7 @@ return {
         },
         [9403]= {
             ["skill"]= 9403,
-            ["name"]= "Mortal Conviction",
+            ["name"]= "필사의 신념",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mortalconviction.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -14522,7 +14522,7 @@ return {
         },
         [37999]= {
             ["skill"]= 37999,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -14540,7 +14540,7 @@ return {
         },
         [55854]= {
             ["skill"]= 55854,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "12% increased Physical Damage"
@@ -14558,7 +14558,7 @@ return {
         },
         [1572]= {
             ["skill"]= 1572,
-            ["name"]= "Physical Damage Over Time Multiplier",
+            ["name"]= "물리 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimenode3.png",
             ["stats"]= {
                 "+6% to Physical Damage over Time Multiplier"
@@ -14575,7 +14575,7 @@ return {
         },
         [47421]= {
             ["skill"]= 47421,
-            ["name"]= "Physical Damage Over Time Multiplier",
+            ["name"]= "물리 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimenode3.png",
             ["stats"]= {
                 "+6% to Physical Damage over Time Multiplier"
@@ -14592,7 +14592,7 @@ return {
         },
         [38538]= {
             ["skill"]= 38538,
-            ["name"]= "Physical Damage and Overwhelm",
+            ["name"]= "물리 피해, 압도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
             ["stats"]= {
                 "Overwhelm 5% Physical Damage Reduction",
@@ -14613,7 +14613,7 @@ return {
         },
         [23760]= {
             ["skill"]= 23760,
-            ["name"]= "Physical Damage and Overwhelm",
+            ["name"]= "물리 피해, 압도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
             ["stats"]= {
                 "Overwhelm 5% Physical Damage Reduction",
@@ -14634,7 +14634,7 @@ return {
         },
         [26564]= {
             ["skill"]= 26564,
-            ["name"]= "Vanquisher",
+            ["name"]= "정복자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimenotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14660,7 +14660,7 @@ return {
         },
         [30567]= {
             ["skill"]= 30567,
-            ["name"]= "Physical Damage Mastery",
+            ["name"]= "물리 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14672,7 +14672,7 @@ return {
         },
         [21929]= {
             ["skill"]= 21929,
-            ["name"]= "Armour and Mana",
+            ["name"]= "방어도, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "14% increased Armour",
@@ -14689,7 +14689,7 @@ return {
         },
         [38836]= {
             ["skill"]= 38836,
-            ["name"]= "Armour and Mana",
+            ["name"]= "방어도, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "14% increased Armour",
@@ -14707,7 +14707,7 @@ return {
         },
         [27137]= {
             ["skill"]= 27137,
-            ["name"]= "Sanctum of Thought",
+            ["name"]= "사상의 지성소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Unwavering.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14730,7 +14730,7 @@ return {
         },
         [62017]= {
             ["skill"]= 62017,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increased armor.png",
             ["stats"]= {
                 "8% increased Armour",
@@ -14747,7 +14747,7 @@ return {
         },
         [55676]= {
             ["skill"]= 55676,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increased armor.png",
             ["stats"]= {
                 "8% increased Armour",
@@ -14765,7 +14765,7 @@ return {
         },
         [33287]= {
             ["skill"]= 33287,
-            ["name"]= "Juggernaut",
+            ["name"]= "저거넛",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increased armor.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14790,7 +14790,7 @@ return {
         },
         [15835]= {
             ["skill"]= 15835,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14802,7 +14802,7 @@ return {
         },
         [18974]= {
             ["skill"]= 18974,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -14814,7 +14814,7 @@ return {
         },
         [44429]= {
             ["skill"]= 44429,
-            ["name"]= "Life and Elemental Resistances",
+            ["name"]= "생명력, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -14831,7 +14831,7 @@ return {
         },
         [30380]= {
             ["skill"]= 30380,
-            ["name"]= "Life and Elemental Resistances",
+            ["name"]= "생명력, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -14849,7 +14849,7 @@ return {
         },
         [53118]= {
             ["skill"]= 53118,
-            ["name"]= "Barbarism",
+            ["name"]= "포악성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/titanicmight.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14877,7 +14877,7 @@ return {
         },
         [26196]= {
             ["skill"]= 26196,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -14892,7 +14892,7 @@ return {
         },
         [57539]= {
             ["skill"]= 57539,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "10% increased maximum Life"
@@ -14909,7 +14909,7 @@ return {
         },
         [38508]= {
             ["skill"]= 38508,
-            ["name"]= "Endurance Charge Duration",
+            ["name"]= "인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "18% increased Endurance Charge Duration"
@@ -14926,7 +14926,7 @@ return {
         },
         [26725]= {
             ["skill"]= 26725,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -14942,7 +14942,7 @@ return {
         },
         [48109]= {
             ["skill"]= 48109,
-            ["name"]= "Life Regeneration per Endurance Charge",
+            ["name"]= "인내 충전당 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "Regenerate 0.2% of Life per second per Endurance Charge"
@@ -14959,7 +14959,7 @@ return {
         },
         [37326]= {
             ["skill"]= 37326,
-            ["name"]= "Stamina",
+            ["name"]= "지구력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -14982,7 +14982,7 @@ return {
         },
         [62429]= {
             ["skill"]= 62429,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -15000,7 +15000,7 @@ return {
         },
         [62363]= {
             ["skill"]= 62363,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -15018,7 +15018,7 @@ return {
         },
         [40766]= {
             ["skill"]= 40766,
-            ["name"]= "Endurance Charge Duration",
+            ["name"]= "인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "18% increased Endurance Charge Duration"
@@ -15035,7 +15035,7 @@ return {
         },
         [401]= {
             ["skill"]= 401,
-            ["name"]= "Endurance Charge Duration",
+            ["name"]= "인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "18% increased Endurance Charge Duration"
@@ -15052,7 +15052,7 @@ return {
         },
         [36949]= {
             ["skill"]= 36949,
-            ["name"]= "Devotion",
+            ["name"]= "헌신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/titanicmight.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15078,7 +15078,7 @@ return {
         },
         [6712]= {
             ["skill"]= 6712,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "6% increased maximum Life"
@@ -15094,7 +15094,7 @@ return {
         },
         [10031]= {
             ["skill"]= 10031,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "6% increased maximum Life"
@@ -15111,7 +15111,7 @@ return {
         },
         [11730]= {
             ["skill"]= 11730,
-            ["name"]= "Endurance",
+            ["name"]= "인내",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15133,7 +15133,7 @@ return {
         },
         [40508]= {
             ["skill"]= 40508,
-            ["name"]= "Armour and Energy Shield",
+            ["name"]= "방어도, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "8% increased Armour",
@@ -15151,7 +15151,7 @@ return {
         },
         [46897]= {
             ["skill"]= 46897,
-            ["name"]= "Armour and Energy Shield",
+            ["name"]= "방어도, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "8% increased Armour",
@@ -15169,7 +15169,7 @@ return {
         },
         [35958]= {
             ["skill"]= 35958,
-            ["name"]= "Faith and Steel",
+            ["name"]= "신뢰와 강철",
             ["icon"]= "Art/2DArt/SkillIcons/passives/bodysoul.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15195,7 +15195,7 @@ return {
         },
         [34173]= {
             ["skill"]= 34173,
-            ["name"]= "Overcharge",
+            ["name"]= "과충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15218,7 +15218,7 @@ return {
         },
         [27575]= {
             ["skill"]= 27575,
-            ["name"]= "Power Charge Duration",
+            ["name"]= "권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "18% increased Power Charge Duration"
@@ -15234,7 +15234,7 @@ return {
         },
         [5696]= {
             ["skill"]= 5696,
-            ["name"]= "Power Charge Duration",
+            ["name"]= "권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "18% increased Power Charge Duration"
@@ -15251,7 +15251,7 @@ return {
         },
         [58831]= {
             ["skill"]= 58831,
-            ["name"]= "Disemboweling",
+            ["name"]= "창자 뽑기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/deadlyprecision.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15275,7 +15275,7 @@ return {
         },
         [18368]= {
             ["skill"]= 18368,
-            ["name"]= "Melee Critical Mastery",
+            ["name"]= "근접 치명타 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCrit.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -15287,7 +15287,7 @@ return {
         },
         [56355]= {
             ["skill"]= 56355,
-            ["name"]= "Melee Critical Strike Chance",
+            ["name"]= "근접 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Melee Critical Strike Chance",
@@ -15305,7 +15305,7 @@ return {
         },
         [39023]= {
             ["skill"]= 39023,
-            ["name"]= "Melee Critical Strike Chance",
+            ["name"]= "근접 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Melee Critical Strike Chance",
@@ -15323,7 +15323,7 @@ return {
         },
         [37501]= {
             ["skill"]= 37501,
-            ["name"]= "Melee Critical Strike Chance",
+            ["name"]= "근접 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeChanceNode.png",
             ["stats"]= {
                 "25% increased Melee Critical Strike Chance"
@@ -15341,7 +15341,7 @@ return {
         },
         [15678]= {
             ["skill"]= 15678,
-            ["name"]= "Melee Critical Strike Multiplier",
+            ["name"]= "근접 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeMultiplierNode.png",
             ["stats"]= {
                 "+12% to Melee Critical Strike Multiplier"
@@ -15358,7 +15358,7 @@ return {
         },
         [12247]= {
             ["skill"]= 12247,
-            ["name"]= "Damage with Life Cost Skills and Reduced Life Cost",
+            ["name"]= "생명력 비용 스킬 피해, 생명력 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SkillscostingLifenode.png",
             ["stats"]= {
                 "5% reduced Life Cost of Skills",
@@ -15376,7 +15376,7 @@ return {
         },
         [56359]= {
             ["skill"]= 56359,
-            ["name"]= "Cannibalistic Rite",
+            ["name"]= "식인 의식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CannibalisticRite.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15402,7 +15402,7 @@ return {
         },
         [16087]= {
             ["skill"]= 16087,
-            ["name"]= "Physical Damage Mastery",
+            ["name"]= "물리 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -15414,7 +15414,7 @@ return {
         },
         [7285]= {
             ["skill"]= 7285,
-            ["name"]= "Damage with Life Cost Skills",
+            ["name"]= "생명력 비용 스킬 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SkillscostingLifenode.png",
             ["stats"]= {
                 "12% increased Damage with Skills that Cost Life"
@@ -15431,7 +15431,7 @@ return {
         },
         [62702]= {
             ["skill"]= 62702,
-            ["name"]= "Damage with Life Cost Skills",
+            ["name"]= "생명력 비용 스킬 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SkillscostingLifenode.png",
             ["stats"]= {
                 "16% increased Damage with Skills that Cost Life"
@@ -15448,7 +15448,7 @@ return {
         },
         [224]= {
             ["skill"]= 224,
-            ["name"]= "Exerted Attack Damage",
+            ["name"]= "격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EmpoweredAttackWarcryNode1.png",
             ["stats"]= {
                 "Exerted Attacks deal 20% increased Damage"
@@ -15465,7 +15465,7 @@ return {
         },
         [43833]= {
             ["skill"]= 43833,
-            ["name"]= "Warcry Cooldown Recovery",
+            ["name"]= "함성 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CooldownWarcryNode1.png",
             ["stats"]= {
                 "12% increased Warcry Cooldown Recovery Rate"
@@ -15482,7 +15482,7 @@ return {
         },
         [58004]= {
             ["skill"]= 58004,
-            ["name"]= "Warcry Speed and Exerted Attack Damage",
+            ["name"]= "함성 속도, 격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpeedWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Speed",
@@ -15500,7 +15500,7 @@ return {
         },
         [1308]= {
             ["skill"]= 1308,
-            ["name"]= "Warcry Speed and Exerted Attack Damage",
+            ["name"]= "함성 속도, 격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpeedWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Speed",
@@ -15518,7 +15518,7 @@ return {
         },
         [14001]= {
             ["skill"]= 14001,
-            ["name"]= "Escalation",
+            ["name"]= "격화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EscalationNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15545,7 +15545,7 @@ return {
         },
         [35335]= {
             ["skill"]= 35335,
-            ["name"]= "Warcry Mastery",
+            ["name"]= "함성 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WarcryMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -15557,7 +15557,7 @@ return {
         },
         [35070]= {
             ["skill"]= 35070,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -15571,7 +15571,7 @@ return {
         },
         [56143]= {
             ["skill"]= 56143,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "10% increased maximum Life"
@@ -15588,7 +15588,7 @@ return {
         },
         [22472]= {
             ["skill"]= 22472,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -15606,7 +15606,7 @@ return {
         },
         [57167]= {
             ["skill"]= 57167,
-            ["name"]= "Mana and Arcane Surge Effect",
+            ["name"]= "마나, 비전 쇄도 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -15627,7 +15627,7 @@ return {
         },
         [28076]= {
             ["skill"]= 28076,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -15645,7 +15645,7 @@ return {
         },
         [51108]= {
             ["skill"]= 51108,
-            ["name"]= "Arcane Capacitor",
+            ["name"]= "비전의 축전기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaandArcaneSurge.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15673,7 +15673,7 @@ return {
         },
         [47387]= {
             ["skill"]= 47387,
-            ["name"]= "Mana Mastery",
+            ["name"]= "마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -15685,7 +15685,7 @@ return {
         },
         [34171]= {
             ["skill"]= 34171,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -15703,7 +15703,7 @@ return {
         },
         [57279]= {
             ["skill"]= 57279,
-            ["name"]= "Blood Magic",
+            ["name"]= "혈마법",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneBloodMagic.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -15723,7 +15723,7 @@ return {
         },
         [64395]= {
             ["skill"]= 64395,
-            ["name"]= "Blunt Trauma",
+            ["name"]= "둔탁한 외상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/hammerblows.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15751,7 +15751,7 @@ return {
         },
         [33983]= {
             ["skill"]= 33983,
-            ["name"]= "Staff Critical Strike Chance and Multiplier",
+            ["name"]= "지팡이 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Staves",
@@ -15772,7 +15772,7 @@ return {
         },
         [45486]= {
             ["skill"]= 45486,
-            ["name"]= "Staff Critical Strike Chance and Accuracy",
+            ["name"]= "지팡이 치명타 확률, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "8% increased Accuracy Rating with Staves",
@@ -15793,7 +15793,7 @@ return {
         },
         [15716]= {
             ["skill"]= 15716,
-            ["name"]= "Staff Critical Strike Chance and Multiplier",
+            ["name"]= "지팡이 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Staves",
@@ -15814,7 +15814,7 @@ return {
         },
         [22728]= {
             ["skill"]= 22728,
-            ["name"]= "Staff Elemental Damage and Penetration",
+            ["name"]= "지팡이 원소 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "10% increased Elemental Damage with Staves",
@@ -15835,7 +15835,7 @@ return {
         },
         [46715]= {
             ["skill"]= 46715,
-            ["name"]= "Staff Elemental Damage",
+            ["name"]= "지팡이 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "16% increased Elemental Damage with Staves"
@@ -15855,7 +15855,7 @@ return {
         },
         [46672]= {
             ["skill"]= 46672,
-            ["name"]= "Staff Elemental Damage and Penetration",
+            ["name"]= "지팡이 원소 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "10% increased Elemental Damage with Staves",
@@ -15876,7 +15876,7 @@ return {
         },
         [56094]= {
             ["skill"]= 56094,
-            ["name"]= "One with the River",
+            ["name"]= "강과의 일체",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -15901,7 +15901,7 @@ return {
         },
         [15453]= {
             ["skill"]= 15453,
-            ["name"]= "Staff Mastery",
+            ["name"]= "지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStaff.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -15913,7 +15913,7 @@ return {
         },
         [63425]= {
             ["skill"]= 63425,
-            ["name"]= "Zealot's Oath",
+            ["name"]= "맹신자의 서약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/liferegentoenergyshield.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -15932,7 +15932,7 @@ return {
         },
         [64210]= {
             ["skill"]= 64210,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -15954,7 +15954,7 @@ return {
         },
         [22285]= {
             ["skill"]= 22285,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -15973,7 +15973,7 @@ return {
         },
         [60472]= {
             ["skill"]= 60472,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -15991,7 +15991,7 @@ return {
         },
         [864]= {
             ["skill"]= 864,
-            ["name"]= "Impale Effect with Two Handed Weapons",
+            ["name"]= "양손 무기 꿰뚫기 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImapleNode.png",
             ["stats"]= {
                 "10% increased Effect of Impales you inflict with Two Handed Weapons"
@@ -16011,7 +16011,7 @@ return {
         },
         [61388]= {
             ["skill"]= 61388,
-            ["name"]= "Impale Duration and Chance with Two Handed Weapons",
+            ["name"]= "양손 무기 꿰뚫기 지속시간, 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImapleNode.png",
             ["stats"]= {
                 "10% chance to Impale Enemies on Hit with Two Handed Weapons",
@@ -16031,7 +16031,7 @@ return {
         },
         [24858]= {
             ["skill"]= 24858,
-            ["name"]= "Harpooner",
+            ["name"]= "작살꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedweaponImpalesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16057,7 +16057,7 @@ return {
         },
         [40114]= {
             ["skill"]= 40114,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -16071,7 +16071,7 @@ return {
         },
         [4398]= {
             ["skill"]= 4398,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16083,7 +16083,7 @@ return {
         },
         [7374]= {
             ["skill"]= 7374,
-            ["name"]= "Life and Reduced Cost",
+            ["name"]= "생명력, 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndReducedManaCost.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -16101,7 +16101,7 @@ return {
         },
         [3533]= {
             ["skill"]= 3533,
-            ["name"]= "Life and Reduced Cost",
+            ["name"]= "생명력, 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndReducedManaCost.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -16119,7 +16119,7 @@ return {
         },
         [11088]= {
             ["skill"]= 11088,
-            ["name"]= "Life and Reduced Cost",
+            ["name"]= "생명력, 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndReducedManaCost.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -16137,7 +16137,7 @@ return {
         },
         [65108]= {
             ["skill"]= 65108,
-            ["name"]= "Tireless",
+            ["name"]= "끈기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Unrelenting.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16159,7 +16159,7 @@ return {
         },
         [64426]= {
             ["skill"]= 64426,
-            ["name"]= "Shield Spell Block and Elemental Resistances with a Shield",
+            ["name"]= "방패 주문 막기, 방패 착용 시 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalResistance2.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while holding a Shield",
@@ -16177,7 +16177,7 @@ return {
         },
         [62214]= {
             ["skill"]= 62214,
-            ["name"]= "Shield Spell Block and Elemental Resistances with a Shield",
+            ["name"]= "방패 주문 막기, 방패 착용 시 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalResistance2.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while holding a Shield",
@@ -16195,7 +16195,7 @@ return {
         },
         [1593]= {
             ["skill"]= 1593,
-            ["name"]= "Shield Block and Defences",
+            ["name"]= "방패 막기, 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "40% increased Defences from Equipped Shield",
@@ -16216,7 +16216,7 @@ return {
         },
         [56305]= {
             ["skill"]= 56305,
-            ["name"]= "Shield Mastery",
+            ["name"]= "방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16228,7 +16228,7 @@ return {
         },
         [20832]= {
             ["skill"]= 20832,
-            ["name"]= "Sanctuary",
+            ["name"]= "성역",
             ["icon"]= "Art/2DArt/SkillIcons/passives/barricade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16251,7 +16251,7 @@ return {
         },
         [5935]= {
             ["skill"]= 5935,
-            ["name"]= "Aura Area of Effect",
+            ["name"]= "오라 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraareaofeffect.png",
             ["stats"]= {
                 "12% increased Area of Effect of Aura Skills"
@@ -16269,7 +16269,7 @@ return {
         },
         [9392]= {
             ["skill"]= 9392,
-            ["name"]= "Aura Effect",
+            ["name"]= "오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraeffect.png",
             ["stats"]= {
                 "6% increased effect of Non-Curse Auras from your Skills"
@@ -16286,7 +16286,7 @@ return {
         },
         [32932]= {
             ["skill"]= 32932,
-            ["name"]= "Sovereignty",
+            ["name"]= "주권",
             ["icon"]= "Art/2DArt/SkillIcons/passives/sovereignty.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16310,7 +16310,7 @@ return {
         },
         [25814]= {
             ["skill"]= 25814,
-            ["name"]= "Aura Mastery",
+            ["name"]= "오라 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryAuras.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16322,7 +16322,7 @@ return {
         },
         [21974]= {
             ["skill"]= 21974,
-            ["name"]= "Reduced Reservation",
+            ["name"]= "점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manareservationreduction.png",
             ["stats"]= {
                 "4% reduced Reservation of Skills"
@@ -16339,7 +16339,7 @@ return {
         },
         [25831]= {
             ["skill"]= 25831,
-            ["name"]= "Reduced Reservation",
+            ["name"]= "점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manareservationreduction.png",
             ["stats"]= {
                 "4% reduced Reservation of Skills"
@@ -16356,7 +16356,7 @@ return {
         },
         [3644]= {
             ["skill"]= 3644,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -16377,7 +16377,7 @@ return {
         },
         [63422]= {
             ["skill"]= 63422,
-            ["name"]= "Lust for Carnage",
+            ["name"]= "학살의 욕망",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LustforCarnage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16403,7 +16403,7 @@ return {
         },
         [28311]= {
             ["skill"]= 28311,
-            ["name"]= "Life Leech Speed and Attack Speed",
+            ["name"]= "생명력 흡수 속도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleech.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -16421,7 +16421,7 @@ return {
         },
         [62108]= {
             ["skill"]= 62108,
-            ["name"]= "Life Leech and Attack Speed",
+            ["name"]= "생명력 흡수, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleech.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -16441,7 +16441,7 @@ return {
         },
         [53987]= {
             ["skill"]= 53987,
-            ["name"]= "Warcry Buff Effect",
+            ["name"]= "함성 버프 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Buff Effect"
@@ -16458,7 +16458,7 @@ return {
         },
         [11792]= {
             ["skill"]= 11792,
-            ["name"]= "Warcry Speed and Duration",
+            ["name"]= "함성 속도, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode2.png",
             ["stats"]= {
                 "15% increased Warcry Duration",
@@ -16476,7 +16476,7 @@ return {
         },
         [47426]= {
             ["skill"]= 47426,
-            ["name"]= "Warcry Cooldown Recovery and Duration",
+            ["name"]= "함성 재사용 대기시간 회복, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode3.png",
             ["stats"]= {
                 "15% increased Warcry Duration",
@@ -16494,7 +16494,7 @@ return {
         },
         [10594]= {
             ["skill"]= 10594,
-            ["name"]= "Warcry Speed and Area of Effect",
+            ["name"]= "함성 속도, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode2.png",
             ["stats"]= {
                 "15% increased Warcry Speed",
@@ -16512,7 +16512,7 @@ return {
         },
         [57992]= {
             ["skill"]= 57992,
-            ["name"]= "Warcry Cooldown Recovery and Area of Effect",
+            ["name"]= "함성 재사용 대기시간 회복, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode3.png",
             ["stats"]= {
                 "12% increased Warcry Cooldown Recovery Rate",
@@ -16530,7 +16530,7 @@ return {
         },
         [38284]= {
             ["skill"]= 38284,
-            ["name"]= "Warcry Mastery",
+            ["name"]= "함성 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WarcryMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16542,7 +16542,7 @@ return {
         },
         [31257]= {
             ["skill"]= 31257,
-            ["name"]= "Natural Authority",
+            ["name"]= "자연의 권위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NaturalAuthorityNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16570,7 +16570,7 @@ return {
         },
         [40907]= {
             ["skill"]= 40907,
-            ["name"]= "Unwavering Stance",
+            ["name"]= "변함없는 자세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneUnwaveringStance.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -16590,7 +16590,7 @@ return {
         },
         [2550]= {
             ["skill"]= 2550,
-            ["name"]= "Arsonist",
+            ["name"]= "방화범",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arsonist.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16615,7 +16615,7 @@ return {
         },
         [54396]= {
             ["skill"]= 54396,
-            ["name"]= "Fire Damage and Burning Damage Multiplier",
+            ["name"]= "화염 피해, 화상 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "+3% to Fire Damage over Time Multiplier",
@@ -16632,7 +16632,7 @@ return {
         },
         [1550]= {
             ["skill"]= 1550,
-            ["name"]= "Fire Damage and Life Regeneration",
+            ["name"]= "화염 피해, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "8% increased Fire Damage",
@@ -16650,7 +16650,7 @@ return {
         },
         [14923]= {
             ["skill"]= 14923,
-            ["name"]= "Fire Mastery",
+            ["name"]= "화염 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16662,7 +16662,7 @@ return {
         },
         [25168]= {
             ["skill"]= 25168,
-            ["name"]= "Weapon Fire Damage",
+            ["name"]= "무기 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeFireNode.png",
             ["stats"]= {
                 "20% of Physical Damage Converted to Fire Damage",
@@ -16680,7 +16680,7 @@ return {
         },
         [5430]= {
             ["skill"]= 5430,
-            ["name"]= "Magmatic Strikes",
+            ["name"]= "마그마 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeFireNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16704,7 +16704,7 @@ return {
         },
         [39713]= {
             ["skill"]= 39713,
-            ["name"]= "Glancing Blows",
+            ["name"]= "비껴내기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GlancingBlows.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -16723,7 +16723,7 @@ return {
         },
         [57746]= {
             ["skill"]= 57746,
-            ["name"]= "Channelling Damage",
+            ["name"]= "집중 유지 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingDamage.png",
             ["stats"]= {
                 "Channelling Skills deal 14% increased Damage"
@@ -16740,7 +16740,7 @@ return {
         },
         [57044]= {
             ["skill"]= 57044,
-            ["name"]= "Channelling Damage and Speed",
+            ["name"]= "집중 유지 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingSpeed.png",
             ["stats"]= {
                 "Channelling Skills have 3% increased Attack and Cast Speed",
@@ -16757,7 +16757,7 @@ return {
         },
         [62490]= {
             ["skill"]= 62490,
-            ["name"]= "Channelling Damage and Infusion Effect",
+            ["name"]= "집중 유지 피해, 주입 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingDamage.png",
             ["stats"]= {
                 "Channelling Skills deal 10% increased Damage",
@@ -16775,7 +16775,7 @@ return {
         },
         [51355]= {
             ["skill"]= 51355,
-            ["name"]= "Channelling Damage and Infusion Effect",
+            ["name"]= "집중 유지 피해, 주입 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingDamage.png",
             ["stats"]= {
                 "Channelling Skills deal 10% increased Damage",
@@ -16793,7 +16793,7 @@ return {
         },
         [18823]= {
             ["skill"]= 18823,
-            ["name"]= "Channelling Mastery",
+            ["name"]= "집중 유지 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryChannelling.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16805,7 +16805,7 @@ return {
         },
         [10511]= {
             ["skill"]= 10511,
-            ["name"]= "Singular Focus",
+            ["name"]= "단일한 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CombatFocusNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16830,7 +16830,7 @@ return {
         },
         [58355]= {
             ["skill"]= 58355,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -16846,7 +16846,7 @@ return {
         },
         [61666]= {
             ["skill"]= 61666,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -16868,7 +16868,7 @@ return {
         },
         [23090]= {
             ["skill"]= 23090,
-            ["name"]= "Call to Arms",
+            ["name"]= "소집",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CallToArms.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -16887,7 +16887,7 @@ return {
         },
         [2957]= {
             ["skill"]= 2957,
-            ["name"]= "Armour",
+            ["name"]= "방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "+150 to Armour",
@@ -16905,7 +16905,7 @@ return {
         },
         [64221]= {
             ["skill"]= 64221,
-            ["name"]= "Armour and Endurance Charges",
+            ["name"]= "방어도, 인내 충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "12% increased Armour",
@@ -16923,7 +16923,7 @@ return {
         },
         [39678]= {
             ["skill"]= 39678,
-            ["name"]= "Armour",
+            ["name"]= "방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "14% increased Armour"
@@ -16941,7 +16941,7 @@ return {
         },
         [54629]= {
             ["skill"]= 54629,
-            ["name"]= "Inexorable",
+            ["name"]= "막을 수 없는",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourChargeNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -16966,7 +16966,7 @@ return {
         },
         [58407]= {
             ["skill"]= 58407,
-            ["name"]= "Armour Mastery",
+            ["name"]= "방어도 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupArmour.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -16978,7 +16978,7 @@ return {
         },
         [27475]= {
             ["skill"]= 27475,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -16992,7 +16992,7 @@ return {
         },
         [7444]= {
             ["skill"]= 7444,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -17016,7 +17016,7 @@ return {
         },
         [31931]= {
             ["skill"]= 31931,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17036,7 +17036,7 @@ return {
         },
         [15064]= {
             ["skill"]= 15064,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17057,7 +17057,7 @@ return {
         },
         [15631]= {
             ["skill"]= 15631,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17078,7 +17078,7 @@ return {
         },
         [50422]= {
             ["skill"]= 50422,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17100,7 +17100,7 @@ return {
         },
         [44967]= {
             ["skill"]= 44967,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17119,7 +17119,7 @@ return {
         },
         [10221]= {
             ["skill"]= 10221,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17140,7 +17140,7 @@ return {
         },
         [6446]= {
             ["skill"]= 6446,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17160,7 +17160,7 @@ return {
         },
         [55649]= {
             ["skill"]= 55649,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17179,7 +17179,7 @@ return {
         },
         [53793]= {
             ["skill"]= 53793,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17200,7 +17200,7 @@ return {
         },
         [40653]= {
             ["skill"]= 40653,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -17221,7 +17221,7 @@ return {
         },
         [10575]= {
             ["skill"]= 10575,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -17242,7 +17242,7 @@ return {
         },
         [58402]= {
             ["skill"]= 58402,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -17263,7 +17263,7 @@ return {
         },
         [65112]= {
             ["skill"]= 65112,
-            ["name"]= "Melee Damage while Fortified",
+            ["name"]= "방어 상승 중 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "Attacks with Melee Weapons deal 12% increased Damage with Ailments",
@@ -17285,7 +17285,7 @@ return {
         },
         [14384]= {
             ["skill"]= 14384,
-            ["name"]= "Melee Damage while Fortified",
+            ["name"]= "방어 상승 중 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "Attacks with Melee Weapons deal 14% increased Damage with Ailments",
@@ -17306,7 +17306,7 @@ return {
         },
         [25781]= {
             ["skill"]= 25781,
-            ["name"]= "Armour while Fortified",
+            ["name"]= "방어 상승 중 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "20% increased Armour while you have Fortify"
@@ -17323,7 +17323,7 @@ return {
         },
         [33625]= {
             ["skill"]= 33625,
-            ["name"]= "Fortify Mastery",
+            ["name"]= "방어 상승 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -17335,7 +17335,7 @@ return {
         },
         [13922]= {
             ["skill"]= 13922,
-            ["name"]= "Steadfast",
+            ["name"]= "확고한",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17363,7 +17363,7 @@ return {
         },
         [58218]= {
             ["skill"]= 58218,
-            ["name"]= "Purity of Flesh",
+            ["name"]= "육체의 정화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17385,7 +17385,7 @@ return {
         },
         [5743]= {
             ["skill"]= 5743,
-            ["name"]= "Life and Chaos Resistance",
+            ["name"]= "생명력, 카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -17404,7 +17404,7 @@ return {
         },
         [9386]= {
             ["skill"]= 9386,
-            ["name"]= "Life and Chaos Resistance",
+            ["name"]= "생명력, 카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -17422,7 +17422,7 @@ return {
         },
         [14057]= {
             ["skill"]= 14057,
-            ["name"]= "Life and Chaos Resistance",
+            ["name"]= "생명력, 카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -17439,7 +17439,7 @@ return {
         },
         [32262]= {
             ["skill"]= 32262,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -17451,7 +17451,7 @@ return {
         },
         [23215]= {
             ["skill"]= 23215,
-            ["name"]= "Curse Effect on You and Consecrated Ground Effect",
+            ["name"]= "자신에 대한 저주 효과, 신성한 대지 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CursemitigationclusterNode.png",
             ["stats"]= {
                 "5% reduced Effect of Curses on you",
@@ -17469,7 +17469,7 @@ return {
         },
         [54954]= {
             ["skill"]= 54954,
-            ["name"]= "Curse Effect on You and Consecrated Ground Effect",
+            ["name"]= "자신에 대한 저주 효과, 신성한 대지 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CursemitigationclusterNode.png",
             ["stats"]= {
                 "5% reduced Effect of Curses on you",
@@ -17487,7 +17487,7 @@ return {
         },
         [4854]= {
             ["skill"]= 4854,
-            ["name"]= "Asylum",
+            ["name"]= "피난처",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CursemitigationclusterNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17510,7 +17510,7 @@ return {
         },
         [46842]= {
             ["skill"]= 46842,
-            ["name"]= "Arcane Potency",
+            ["name"]= "비전의 잠재력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arcanepotency.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17532,7 +17532,7 @@ return {
         },
         [63398]= {
             ["skill"]= 63398,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance for Spells"
@@ -17549,7 +17549,7 @@ return {
         },
         [36452]= {
             ["skill"]= 36452,
-            ["name"]= "Spell Critical Strike Multiplier",
+            ["name"]= "주문 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpellMultiplyer2.png",
             ["stats"]= {
                 "+10% to Critical Strike Multiplier for Spells"
@@ -17566,7 +17566,7 @@ return {
         },
         [30693]= {
             ["skill"]= 30693,
-            ["name"]= "Divine Fervour",
+            ["name"]= "신성한 열정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/catalyse.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17594,7 +17594,7 @@ return {
         },
         [33435]= {
             ["skill"]= 33435,
-            ["name"]= "Holy Dominion",
+            ["name"]= "신성한 지배력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementalist.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17627,7 +17627,7 @@ return {
         },
         [44799]= {
             ["skill"]= 44799,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -17646,7 +17646,7 @@ return {
         },
         [58453]= {
             ["skill"]= 58453,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -17665,7 +17665,7 @@ return {
         },
         [21262]= {
             ["skill"]= 21262,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -17683,7 +17683,7 @@ return {
         },
         [12536]= {
             ["skill"]= 12536,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -17701,7 +17701,7 @@ return {
         },
         [54694]= {
             ["skill"]= 54694,
-            ["name"]= "Light of Divinity",
+            ["name"]= "신성의 빛",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightOfDivinity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17728,7 +17728,7 @@ return {
         },
         [55706]= {
             ["skill"]= 55706,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -17743,7 +17743,7 @@ return {
         },
         [12613]= {
             ["skill"]= 12613,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -17764,7 +17764,7 @@ return {
         },
         [59728]= {
             ["skill"]= 59728,
-            ["name"]= "Area of Effect Damage",
+            ["name"]= "효과 범위 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/areaofeffect.png",
             ["stats"]= {
                 "10% increased Area Damage"
@@ -17781,7 +17781,7 @@ return {
         },
         [62303]= {
             ["skill"]= 62303,
-            ["name"]= "Mana and Reduced Mana Cost",
+            ["name"]= "마나, 마나 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manastr.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -17799,7 +17799,7 @@ return {
         },
         [6718]= {
             ["skill"]= 6718,
-            ["name"]= "Elemental Resistance",
+            ["name"]= "원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/crystalskin.png",
             ["stats"]= {
                 "+5% to all Elemental Resistances"
@@ -17816,7 +17816,7 @@ return {
         },
         [31928]= {
             ["skill"]= 31928,
-            ["name"]= "Armour and Elemental Resistances",
+            ["name"]= "방어도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "14% increased Armour",
@@ -17833,7 +17833,7 @@ return {
         },
         [61868]= {
             ["skill"]= 61868,
-            ["name"]= "Armour and Elemental Resistances",
+            ["name"]= "방어도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "14% increased Armour",
@@ -17851,7 +17851,7 @@ return {
         },
         [10542]= {
             ["skill"]= 10542,
-            ["name"]= "Diamond Skin",
+            ["name"]= "다이아몬드 피부",
             ["icon"]= "Art/2DArt/SkillIcons/passives/armourmastery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17875,7 +17875,7 @@ return {
         },
         [31033]= {
             ["skill"]= 31033,
-            ["name"]= "Solidity",
+            ["name"]= "견고함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17899,7 +17899,7 @@ return {
         },
         [32482]= {
             ["skill"]= 32482,
-            ["name"]= "Shield Block and Defences",
+            ["name"]= "방패 막기, 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "25% increased Defences from Equipped Shield",
@@ -17920,7 +17920,7 @@ return {
         },
         [59861]= {
             ["skill"]= 59861,
-            ["name"]= "Shield Block and Defences",
+            ["name"]= "방패 막기, 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "25% increased Defences from Equipped Shield",
@@ -17940,7 +17940,7 @@ return {
         },
         [34130]= {
             ["skill"]= 34130,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -17958,7 +17958,7 @@ return {
         },
         [14606]= {
             ["skill"]= 14606,
-            ["name"]= "Butchery",
+            ["name"]= "도살",
             ["icon"]= "Art/2DArt/SkillIcons/passives/butchery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -17988,7 +17988,7 @@ return {
         },
         [10282]= {
             ["skill"]= 10282,
-            ["name"]= "One Handed Melee Damage",
+            ["name"]= "한손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/onehanddamage.png",
             ["stats"]= {
                 "16% increased Physical Damage with One Handed Melee Weapons",
@@ -18009,7 +18009,7 @@ return {
         },
         [39786]= {
             ["skill"]= 39786,
-            ["name"]= "One Handed Melee Damage",
+            ["name"]= "한손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/onehanddamage.png",
             ["stats"]= {
                 "16% increased Physical Damage with One Handed Melee Weapons",
@@ -18030,7 +18030,7 @@ return {
         },
         [35663]= {
             ["skill"]= 35663,
-            ["name"]= "Strong Arm",
+            ["name"]= "튼튼한 팔",
             ["icon"]= "Art/2DArt/SkillIcons/passives/strongarm.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18060,7 +18060,7 @@ return {
         },
         [60169]= {
             ["skill"]= 60169,
-            ["name"]= "Two Handed Melee Damage",
+            ["name"]= "양손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "16% increased Physical Damage with Two Handed Melee Weapons",
@@ -18081,7 +18081,7 @@ return {
         },
         [2454]= {
             ["skill"]= 2454,
-            ["name"]= "Two Handed Melee Damage",
+            ["name"]= "양손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "16% increased Physical Damage with Two Handed Melee Weapons",
@@ -18102,7 +18102,7 @@ return {
         },
         [38777]= {
             ["skill"]= 38777,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "Attacks with Melee Weapons deal 12% increased Damage with Ailments",
@@ -18124,7 +18124,7 @@ return {
         },
         [25531]= {
             ["skill"]= 25531,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 15,
             ["stats"]= {
@@ -18142,7 +18142,7 @@ return {
         },
         [19884]= {
             ["skill"]= 19884,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 15,
             ["stats"]= {
@@ -18160,7 +18160,7 @@ return {
         },
         [49772]= {
             ["skill"]= 49772,
-            ["name"]= "Utmost Might",
+            ["name"]= "최대한의 완력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18183,7 +18183,7 @@ return {
         },
         [64166]= {
             ["skill"]= 64166,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -18199,7 +18199,7 @@ return {
         },
         [51198]= {
             ["skill"]= 51198,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -18221,7 +18221,7 @@ return {
         },
         [32245]= {
             ["skill"]= 32245,
-            ["name"]= "Expertise",
+            ["name"]= "전문 지식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/grace.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18243,7 +18243,7 @@ return {
         },
         [50197]= {
             ["skill"]= 50197,
-            ["name"]= "Ancestral Knowledge",
+            ["name"]= "선대의 지식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/savant.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18265,7 +18265,7 @@ return {
         },
         [18361]= {
             ["skill"]= 18361,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -18279,7 +18279,7 @@ return {
         },
         [27119]= {
             ["skill"]= 27119,
-            ["name"]= "Tribal Fury",
+            ["name"]= "부족의 광분",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StrikeSkillsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18301,7 +18301,7 @@ return {
         },
         [29797]= {
             ["skill"]= 29797,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "12% increased Melee Damage"
@@ -18318,7 +18318,7 @@ return {
         },
         [46356]= {
             ["skill"]= 46356,
-            ["name"]= "Strikes Mastery",
+            ["name"]= "타격 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryMeleeStrikeskills.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18330,7 +18330,7 @@ return {
         },
         [18009]= {
             ["skill"]= 18009,
-            ["name"]= "Melee Damage and Strike Range",
+            ["name"]= "근접 피해, 공격 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StrikeRangeNode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -18351,7 +18351,7 @@ return {
         },
         [2092]= {
             ["skill"]= 2092,
-            ["name"]= "Melee Damage and Strike Range",
+            ["name"]= "근접 피해, 공격 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StrikeRangeNode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -18372,7 +18372,7 @@ return {
         },
         [25175]= {
             ["skill"]= 25175,
-            ["name"]= "Melee Damage and Splash Area of Effect",
+            ["name"]= "근접 피해, 튀김 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeSplashNode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -18390,7 +18390,7 @@ return {
         },
         [53791]= {
             ["skill"]= 53791,
-            ["name"]= "Melee Damage and Splash Area of Effect",
+            ["name"]= "근접 피해, 튀김 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeSplashNode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -18408,7 +18408,7 @@ return {
         },
         [14930]= {
             ["skill"]= 14930,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -18432,7 +18432,7 @@ return {
         },
         [41599]= {
             ["skill"]= 41599,
-            ["name"]= "Staff Damage, Stun Duration and Block",
+            ["name"]= "지팡이 피해, 기절 지속시간, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "Staff Attacks deal 12% increased Damage with Hits and Ailments",
@@ -18456,7 +18456,7 @@ return {
         },
         [55926]= {
             ["skill"]= 55926,
-            ["name"]= "Staff Damage, Stun Duration and Block",
+            ["name"]= "지팡이 피해, 기절 지속시간, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "Staff Attacks deal 12% increased Damage with Hits and Ailments",
@@ -18479,7 +18479,7 @@ return {
         },
         [1761]= {
             ["skill"]= 1761,
-            ["name"]= "Staff Damage, Armour and Stun Threshold",
+            ["name"]= "지팡이 피해, 방어도, 기절 한계치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "Staff Attacks deal 15% increased Damage with Hits and Ailments",
@@ -18502,7 +18502,7 @@ return {
         },
         [36859]= {
             ["skill"]= 36859,
-            ["name"]= "Steelwood Stance",
+            ["name"]= "철목 자세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNotable3.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18532,7 +18532,7 @@ return {
         },
         [38333]= {
             ["skill"]= 38333,
-            ["name"]= "Staff Mastery",
+            ["name"]= "지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStaff.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18544,7 +18544,7 @@ return {
         },
         [50225]= {
             ["skill"]= 50225,
-            ["name"]= "Mace Critical Strike Multiplier",
+            ["name"]= "철퇴 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "+15% to Critical Strike Multiplier with Maces or Sceptres"
@@ -18561,7 +18561,7 @@ return {
         },
         [24155]= {
             ["skill"]= 24155,
-            ["name"]= "Mace Damage and Critical Strike Chance",
+            ["name"]= "철퇴 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "8% increased Physical Damage with Maces or Sceptres",
@@ -18584,7 +18584,7 @@ return {
         },
         [15086]= {
             ["skill"]= 15086,
-            ["name"]= "Mace Damage and Critical Strike Chance",
+            ["name"]= "철퇴 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macecritdmgspeed.png",
             ["stats"]= {
                 "10% increased Physical Damage with Maces or Sceptres",
@@ -18606,7 +18606,7 @@ return {
         },
         [55772]= {
             ["skill"]= 55772,
-            ["name"]= "Blacksmith's Clout",
+            ["name"]= "대장장이의 영향력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18634,7 +18634,7 @@ return {
         },
         [27354]= {
             ["skill"]= 27354,
-            ["name"]= "Mace Mastery",
+            ["name"]= "철퇴 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMace.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18646,7 +18646,7 @@ return {
         },
         [44941]= {
             ["skill"]= 44941,
-            ["name"]= "Avatar of Fire",
+            ["name"]= "불의 화신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneAvatarOfFire.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -18665,7 +18665,7 @@ return {
         },
         [54415]= {
             ["skill"]= 54415,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -18683,7 +18683,7 @@ return {
         },
         [57923]= {
             ["skill"]= 57923,
-            ["name"]= "Stun Duration",
+            ["name"]= "기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunstr.png",
             ["stats"]= {
                 "25% increased Stun Duration on Enemies"
@@ -18700,7 +18700,7 @@ return {
         },
         [46756]= {
             ["skill"]= 46756,
-            ["name"]= "Stun Duration",
+            ["name"]= "기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunstr.png",
             ["stats"]= {
                 "20% increased Stun Duration on Enemies"
@@ -18718,7 +18718,7 @@ return {
         },
         [17038]= {
             ["skill"]= 17038,
-            ["name"]= "Stun Duration",
+            ["name"]= "기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunstr.png",
             ["stats"]= {
                 "25% increased Stun Duration on Enemies"
@@ -18735,7 +18735,7 @@ return {
         },
         [13910]= {
             ["skill"]= 13910,
-            ["name"]= "Stun Mastery",
+            ["name"]= "기절 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStun.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18747,7 +18747,7 @@ return {
         },
         [38922]= {
             ["skill"]= 38922,
-            ["name"]= "Stun Mastery",
+            ["name"]= "기절 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StunMastery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18776,7 +18776,7 @@ return {
         },
         [56982]= {
             ["skill"]= 56982,
-            ["name"]= "Stun Threshold Reduction",
+            ["name"]= "기절 한계치 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunstr.png",
             ["stats"]= {
                 "5% reduced Enemy Stun Threshold"
@@ -18795,7 +18795,7 @@ return {
         },
         [50570]= {
             ["skill"]= 50570,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -18813,7 +18813,7 @@ return {
         },
         [40291]= {
             ["skill"]= 40291,
-            ["name"]= "Fire Damage and Area of Effect",
+            ["name"]= "화염 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "8% increased Fire Damage",
@@ -18831,7 +18831,7 @@ return {
         },
         [885]= {
             ["skill"]= 885,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "12% increased Fire Damage"
@@ -18849,7 +18849,7 @@ return {
         },
         [37163]= {
             ["skill"]= 37163,
-            ["name"]= "Fire Damage and Cast Speed",
+            ["name"]= "화염 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "8% increased Fire Damage",
@@ -18866,7 +18866,7 @@ return {
         },
         [24324]= {
             ["skill"]= 24324,
-            ["name"]= "Explosive Impact",
+            ["name"]= "폭발적인 충격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -18892,7 +18892,7 @@ return {
         },
         [1403]= {
             ["skill"]= 1403,
-            ["name"]= "Fire Mastery",
+            ["name"]= "화염 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18904,7 +18904,7 @@ return {
         },
         [5916]= {
             ["skill"]= 5916,
-            ["name"]= "Fire Damage and Burning Damage Multiplier",
+            ["name"]= "화염 피해, 화상 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "+4% to Fire Damage over Time Multiplier",
@@ -18922,7 +18922,7 @@ return {
         },
         [4713]= {
             ["skill"]= 4713,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "12% increased Fire Damage"
@@ -18940,7 +18940,7 @@ return {
         },
         [21524]= {
             ["skill"]= 21524,
-            ["name"]= "Fire Mastery",
+            ["name"]= "화염 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -18952,7 +18952,7 @@ return {
         },
         [6245]= {
             ["skill"]= 6245,
-            ["name"]= "Chance to Ignite and Ignite Speed",
+            ["name"]= "점화 확률, 점화 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "10% chance to Ignite",
@@ -18974,7 +18974,7 @@ return {
         },
         [29049]= {
             ["skill"]= 29049,
-            ["name"]= "Holy Fire",
+            ["name"]= "신성한 불꽃",
             ["icon"]= "Art/2DArt/SkillIcons/passives/pyromaniac.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19004,7 +19004,7 @@ return {
         },
         [46726]= {
             ["skill"]= 46726,
-            ["name"]= "Mana and Reduced Mana Cost",
+            ["name"]= "마나, 마나 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manastr.png",
             ["stats"]= {
                 "5% increased maximum Mana",
@@ -19022,7 +19022,7 @@ return {
         },
         [38516]= {
             ["skill"]= 38516,
-            ["name"]= "Righteous Decree",
+            ["name"]= "정의로운 법령",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Righteous Decree.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19046,7 +19046,7 @@ return {
         },
         [31819]= {
             ["skill"]= 31819,
-            ["name"]= "Mana and Reduced Mana Cost",
+            ["name"]= "마나, 마나 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manastr.png",
             ["stats"]= {
                 "5% increased maximum Mana",
@@ -19065,7 +19065,7 @@ return {
         },
         [61308]= {
             ["skill"]= 61308,
-            ["name"]= "Amplify",
+            ["name"]= "증폭",
             ["icon"]= "Art/2DArt/SkillIcons/passives/amplify.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19089,7 +19089,7 @@ return {
         },
         [40927]= {
             ["skill"]= 40927,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -19107,7 +19107,7 @@ return {
         },
         [15365]= {
             ["skill"]= 15365,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -19125,7 +19125,7 @@ return {
         },
         [26661]= {
             ["skill"]= 26661,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -19140,7 +19140,7 @@ return {
         },
         [16218]= {
             ["skill"]= 16218,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -19161,7 +19161,7 @@ return {
         },
         [21941]= {
             ["skill"]= 21941,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -19179,7 +19179,7 @@ return {
         },
         [10532]= {
             ["skill"]= 10532,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -19202,7 +19202,7 @@ return {
         },
         [23756]= {
             ["skill"]= 23756,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -19225,7 +19225,7 @@ return {
         },
         [46519]= {
             ["skill"]= 46519,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -19248,7 +19248,7 @@ return {
         },
         [28650]= {
             ["skill"]= 28650,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -19265,7 +19265,7 @@ return {
         },
         [6359]= {
             ["skill"]= 6359,
-            ["name"]= "Armour and Life",
+            ["name"]= "방어도, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -19283,7 +19283,7 @@ return {
         },
         [7335]= {
             ["skill"]= 7335,
-            ["name"]= "Armour and Life Regeneration",
+            ["name"]= "방어도, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "12% increased Armour",
@@ -19301,7 +19301,7 @@ return {
         },
         [59290]= {
             ["skill"]= 59290,
-            ["name"]= "Armour Mastery",
+            ["name"]= "방어도 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupArmour.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -19313,7 +19313,7 @@ return {
         },
         [21413]= {
             ["skill"]= 21413,
-            ["name"]= "Combat Stamina",
+            ["name"]= "전투 지구력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CombatStamina.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19338,7 +19338,7 @@ return {
         },
         [3167]= {
             ["skill"]= 3167,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.5% of Life per second"
@@ -19356,7 +19356,7 @@ return {
         },
         [46340]= {
             ["skill"]= 46340,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -19374,7 +19374,7 @@ return {
         },
         [24824]= {
             ["skill"]= 24824,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -19392,7 +19392,7 @@ return {
         },
         [9505]= {
             ["skill"]= 9505,
-            ["name"]= "Minion Attack Speed and Accuracy",
+            ["name"]= "소환수 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -19410,7 +19410,7 @@ return {
         },
         [42668]= {
             ["skill"]= 42668,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -19429,7 +19429,7 @@ return {
         },
         [65259]= {
             ["skill"]= 65259,
-            ["name"]= "Minion Mastery",
+            ["name"]= "소환수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -19441,7 +19441,7 @@ return {
         },
         [43689]= {
             ["skill"]= 43689,
-            ["name"]= "Spiritual Command",
+            ["name"]= "영적 명령",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpiritualCommand.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19467,7 +19467,7 @@ return {
         },
         [19261]= {
             ["skill"]= 19261,
-            ["name"]= "Warcry Cooldown Recovery",
+            ["name"]= "함성 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CooldownWarcryNode1.png",
             ["stats"]= {
                 "12% increased Warcry Cooldown Recovery Rate"
@@ -19483,7 +19483,7 @@ return {
         },
         [64181]= {
             ["skill"]= 64181,
-            ["name"]= "Warcry Cooldown Recovery and Area of Effect",
+            ["name"]= "함성 재사용 대기시간 회복, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CooldownWarcryNode1.png",
             ["stats"]= {
                 "12% increased Warcry Cooldown Recovery Rate",
@@ -19501,7 +19501,7 @@ return {
         },
         [49445]= {
             ["skill"]= 49445,
-            ["name"]= "Deep Breaths",
+            ["name"]= "깊은 호흡",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeepBreathsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19524,7 +19524,7 @@ return {
         },
         [30160]= {
             ["skill"]= 30160,
-            ["name"]= "Fending",
+            ["name"]= "밀쳐내기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/fending.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19549,7 +19549,7 @@ return {
         },
         [1252]= {
             ["skill"]= 1252,
-            ["name"]= "Knockback Chance",
+            ["name"]= "밀어내기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/knockback.png",
             ["stats"]= {
                 "6% chance to Knock Enemies Back on hit"
@@ -19569,7 +19569,7 @@ return {
         },
         [65456]= {
             ["skill"]= 65456,
-            ["name"]= "Knockback Distance",
+            ["name"]= "밀어내기 거리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/knockback.png",
             ["stats"]= {
                 "25% increased Knockback Distance"
@@ -19586,7 +19586,7 @@ return {
         },
         [44624]= {
             ["skill"]= 44624,
-            ["name"]= "Axe Damage",
+            ["name"]= "도끼 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "14% increased Physical Damage with Axes",
@@ -19608,7 +19608,7 @@ return {
         },
         [31604]= {
             ["skill"]= 31604,
-            ["name"]= "Axe Damage",
+            ["name"]= "도끼 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "16% increased Physical Damage with Axes",
@@ -19629,7 +19629,7 @@ return {
         },
         [65131]= {
             ["skill"]= 65131,
-            ["name"]= "Axe Damage and Area of Effect",
+            ["name"]= "도끼 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "12% increased Physical Damage with Axes",
@@ -19651,7 +19651,7 @@ return {
         },
         [5065]= {
             ["skill"]= 5065,
-            ["name"]= "Axe Damage and Area of Effect",
+            ["name"]= "도끼 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "12% increased Physical Damage with Axes",
@@ -19673,7 +19673,7 @@ return {
         },
         [59565]= {
             ["skill"]= 59565,
-            ["name"]= "Axe Mastery",
+            ["name"]= "도끼 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupAxe.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -19685,7 +19685,7 @@ return {
         },
         [26023]= {
             ["skill"]= 26023,
-            ["name"]= "Splitting Strikes",
+            ["name"]= "분열하는 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/cleavage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19717,7 +19717,7 @@ return {
         },
         [6289]= {
             ["skill"]= 6289,
-            ["name"]= "Bloodless",
+            ["name"]= "무혈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleechimmunity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19739,7 +19739,7 @@ return {
         },
         [48287]= {
             ["skill"]= 48287,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -19757,7 +19757,7 @@ return {
         },
         [5197]= {
             ["skill"]= 5197,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -19774,7 +19774,7 @@ return {
         },
         [64587]= {
             ["skill"]= 64587,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -19791,7 +19791,7 @@ return {
         },
         [42875]= {
             ["skill"]= 42875,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -19803,7 +19803,7 @@ return {
         },
         [15599]= {
             ["skill"]= 15599,
-            ["name"]= "Attack and Cast Speed, Accuracy",
+            ["name"]= "공격 및 시전 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "6% increased Global Accuracy Rating",
@@ -19820,7 +19820,7 @@ return {
         },
         [44529]= {
             ["skill"]= 44529,
-            ["name"]= "Attack and Cast Speed, Accuracy",
+            ["name"]= "공격 및 시전 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "6% increased Global Accuracy Rating",
@@ -19838,7 +19838,7 @@ return {
         },
         [41472]= {
             ["skill"]= 41472,
-            ["name"]= "Discipline and Training",
+            ["name"]= "수양과 훈련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newtitanicmight.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19864,7 +19864,7 @@ return {
         },
         [61471]= {
             ["skill"]= 61471,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -19881,7 +19881,7 @@ return {
         },
         [1203]= {
             ["skill"]= 1203,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -19897,7 +19897,7 @@ return {
         },
         [6237]= {
             ["skill"]= 6237,
-            ["name"]= "Precision",
+            ["name"]= "정밀함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/precision.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19923,7 +19923,7 @@ return {
         },
         [24383]= {
             ["skill"]= 24383,
-            ["name"]= "Warrior's Blood",
+            ["name"]= "전사의 피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trollblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -19955,7 +19955,7 @@ return {
         },
         [39768]= {
             ["skill"]= 39768,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "6% increased Global Accuracy Rating",
@@ -19973,7 +19973,7 @@ return {
         },
         [32739]= {
             ["skill"]= 32739,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "6% increased Global Accuracy Rating",
@@ -19991,7 +19991,7 @@ return {
         },
         [61198]= {
             ["skill"]= 61198,
-            ["name"]= "Heart of the Warrior",
+            ["name"]= "전사의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heartofthegladiator.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20017,7 +20017,7 @@ return {
         },
         [20551]= {
             ["skill"]= 20551,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -20034,7 +20034,7 @@ return {
         },
         [5152]= {
             ["skill"]= 5152,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -20051,7 +20051,7 @@ return {
         },
         [12795]= {
             ["skill"]= 12795,
-            ["name"]= "Versatility",
+            ["name"]= "융통성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/precision.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20079,7 +20079,7 @@ return {
         },
         [58449]= {
             ["skill"]= 58449,
-            ["name"]= "Born to Fight",
+            ["name"]= "타고난 싸움꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/borntofight.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20109,7 +20109,7 @@ return {
         },
         [44908]= {
             ["skill"]= 44908,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -20129,7 +20129,7 @@ return {
         },
         [2913]= {
             ["skill"]= 2913,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -20148,7 +20148,7 @@ return {
         },
         [50862]= {
             ["skill"]= 50862,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -20171,7 +20171,7 @@ return {
         },
         [44606]= {
             ["skill"]= 44606,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -20190,7 +20190,7 @@ return {
         },
         [26523]= {
             ["skill"]= 26523,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -20210,7 +20210,7 @@ return {
         },
         [26866]= {
             ["skill"]= 26866,
-            ["name"]= "Sanctity",
+            ["name"]= "존엄성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/bodysoul.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20242,7 +20242,7 @@ return {
         },
         [29712]= {
             ["skill"]= 29712,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -20265,7 +20265,7 @@ return {
         },
         [48679]= {
             ["skill"]= 48679,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -20288,7 +20288,7 @@ return {
         },
         [9408]= {
             ["skill"]= 9408,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -20311,7 +20311,7 @@ return {
         },
         [43989]= {
             ["skill"]= 43989,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -20328,7 +20328,7 @@ return {
         },
         [6764]= {
             ["skill"]= 6764,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -20348,7 +20348,7 @@ return {
         },
         [40366]= {
             ["skill"]= 40366,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -20369,7 +20369,7 @@ return {
         },
         [50382]= {
             ["skill"]= 50382,
-            ["name"]= "Dual Wield Cast Speed",
+            ["name"]= "쌍수 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeOffensive.png",
             ["stats"]= {
                 "4% increased Cast Speed while Dual Wielding"
@@ -20387,7 +20387,7 @@ return {
         },
         [6616]= {
             ["skill"]= 6616,
-            ["name"]= "Dual Wield Cast Speed and Movement Skill Cooldown Recovery",
+            ["name"]= "쌍수 시전 속도, 이동 스킬 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeOffensive.png",
             ["stats"]= {
                 "3% increased Cast Speed while Dual Wielding",
@@ -20405,7 +20405,7 @@ return {
         },
         [48093]= {
             ["skill"]= 48093,
-            ["name"]= "Dual Wield Cast Speed and Movement Skill Cooldown Recovery",
+            ["name"]= "쌍수 시전 속도, 이동 스킬 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeOffensive.png",
             ["stats"]= {
                 "3% increased Cast Speed while Dual Wielding",
@@ -20423,7 +20423,7 @@ return {
         },
         [44824]= {
             ["skill"]= 44824,
-            ["name"]= "Dark Arts",
+            ["name"]= "암흑 기술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20453,7 +20453,7 @@ return {
         },
         [16743]= {
             ["skill"]= 16743,
-            ["name"]= "Dual Wield Spell Damage and Movement Speed",
+            ["name"]= "쌍수 주문 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeOffensive.png",
             ["stats"]= {
                 "10% increased Spell Damage while Dual Wielding",
@@ -20471,7 +20471,7 @@ return {
         },
         [34560]= {
             ["skill"]= 34560,
-            ["name"]= "Dual Wield Spell Damage and Movement Speed",
+            ["name"]= "쌍수 주문 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeOffensive.png",
             ["stats"]= {
                 "10% increased Spell Damage while Dual Wielding",
@@ -20489,7 +20489,7 @@ return {
         },
         [19833]= {
             ["skill"]= 19833,
-            ["name"]= "Arcane Dual Wield Mastery",
+            ["name"]= "비전 쌍수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -20501,7 +20501,7 @@ return {
         },
         [37898]= {
             ["skill"]= 37898,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -20517,7 +20517,7 @@ return {
         },
         [23984]= {
             ["skill"]= 23984,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -20539,7 +20539,7 @@ return {
         },
         [49254]= {
             ["skill"]= 49254,
-            ["name"]= "Retribution",
+            ["name"]= "응징",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Retribution.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20571,7 +20571,7 @@ return {
         },
         [2491]= {
             ["skill"]= 2491,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -20592,7 +20592,7 @@ return {
         },
         [18901]= {
             ["skill"]= 18901,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "Attacks with Melee Weapons deal 4% increased Damage with Ailments",
@@ -20612,7 +20612,7 @@ return {
         },
         [62319]= {
             ["skill"]= 62319,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "Attacks with Melee Weapons deal 4% increased Damage with Ailments",
@@ -20632,7 +20632,7 @@ return {
         },
         [18663]= {
             ["skill"]= 18663,
-            ["name"]= "Minion Instability",
+            ["name"]= "소환수 불안정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneMinionInstability.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -20651,7 +20651,7 @@ return {
         },
         [48713]= {
             ["skill"]= 48713,
-            ["name"]= "Minion Damage and Area of Effect",
+            ["name"]= "소환수 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaofEffectofMinionsNode.png",
             ["stats"]= {
                 "Minions deal 6% increased Damage",
@@ -20668,7 +20668,7 @@ return {
         },
         [7898]= {
             ["skill"]= 7898,
-            ["name"]= "Minion Damage and Area of Effect",
+            ["name"]= "소환수 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaofEffectofMinionsNode.png",
             ["stats"]= {
                 "Minions deal 6% increased Damage",
@@ -20686,7 +20686,7 @@ return {
         },
         [35685]= {
             ["skill"]= 35685,
-            ["name"]= "Fearsome Force",
+            ["name"]= "무시무시한 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaofEffectofMinionsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20714,7 +20714,7 @@ return {
         },
         [36915]= {
             ["skill"]= 36915,
-            ["name"]= "Sacrifice",
+            ["name"]= "희생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/graveexpectations.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20739,7 +20739,7 @@ return {
         },
         [34880]= {
             ["skill"]= 34880,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life"
@@ -20756,7 +20756,7 @@ return {
         },
         [10904]= {
             ["skill"]= 10904,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 12% increased maximum Life"
@@ -20774,7 +20774,7 @@ return {
         },
         [55563]= {
             ["skill"]= 55563,
-            ["name"]= "Minion Life Regeneration",
+            ["name"]= "소환수 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions Regenerate 1.5% of Life per second"
@@ -20791,7 +20791,7 @@ return {
         },
         [1609]= {
             ["skill"]= 1609,
-            ["name"]= "Minion Life Leech",
+            ["name"]= "소환수 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions Leech 0.6% of Damage as Life"
@@ -20811,7 +20811,7 @@ return {
         },
         [61991]= {
             ["skill"]= 61991,
-            ["name"]= "Minion Mastery",
+            ["name"]= "소환수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMinions.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -20823,7 +20823,7 @@ return {
         },
         [49412]= {
             ["skill"]= 49412,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -20844,7 +20844,7 @@ return {
         },
         [23904]= {
             ["skill"]= 23904,
-            ["name"]= "Two Hand Mastery",
+            ["name"]= "양손 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupTwoHands.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -20856,7 +20856,7 @@ return {
         },
         [15438]= {
             ["skill"]= 15438,
-            ["name"]= "Two Handed Melee Damage and Stun Duration",
+            ["name"]= "양손 근접 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -20877,7 +20877,7 @@ return {
         },
         [8426]= {
             ["skill"]= 8426,
-            ["name"]= "Two Handed Melee Damage and Reduced Enemy Stun Threshold",
+            ["name"]= "양손 근접 피해, 적 기절 한계치 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "14% increased Physical Damage with Two Handed Melee Weapons",
@@ -20900,7 +20900,7 @@ return {
         },
         [29034]= {
             ["skill"]= 29034,
-            ["name"]= "Two Handed Melee Damage and Stun Duration",
+            ["name"]= "양손 근접 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "14% increased Physical Damage with Two Handed Melee Weapons",
@@ -20922,7 +20922,7 @@ return {
         },
         [35436]= {
             ["skill"]= 35436,
-            ["name"]= "Kinetic Impacts",
+            ["name"]= "운동 충격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -20951,7 +20951,7 @@ return {
         },
         [49698]= {
             ["skill"]= 49698,
-            ["name"]= "Staff Attack Speed and Accuracy",
+            ["name"]= "지팡이 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "4% increased Attack Speed with Staves",
@@ -20972,7 +20972,7 @@ return {
         },
         [18146]= {
             ["skill"]= 18146,
-            ["name"]= "Staff Attack Speed and Accuracy",
+            ["name"]= "지팡이 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "4% increased Attack Speed with Staves",
@@ -20993,7 +20993,7 @@ return {
         },
         [12013]= {
             ["skill"]= 12013,
-            ["name"]= "Staff Attack Speed and Accuracy",
+            ["name"]= "지팡이 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagestaff.png",
             ["stats"]= {
                 "4% increased Attack Speed with Staves",
@@ -21014,7 +21014,7 @@ return {
         },
         [64077]= {
             ["skill"]= 64077,
-            ["name"]= "Ophidian Aim",
+            ["name"]= "뱀의 조준",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21043,7 +21043,7 @@ return {
         },
         [25396]= {
             ["skill"]= 25396,
-            ["name"]= "Staff Mastery",
+            ["name"]= "지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStaff.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21055,7 +21055,7 @@ return {
         },
         [22391]= {
             ["skill"]= 22391,
-            ["name"]= "Mace Mastery",
+            ["name"]= "철퇴 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMace.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21067,7 +21067,7 @@ return {
         },
         [43822]= {
             ["skill"]= 43822,
-            ["name"]= "Mace Damage and Stun Duration",
+            ["name"]= "철퇴 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "12% increased Physical Damage with Maces or Sceptres",
@@ -21090,7 +21090,7 @@ return {
         },
         [2411]= {
             ["skill"]= 2411,
-            ["name"]= "Mace Damage and Stun Duration",
+            ["name"]= "철퇴 피해, 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -21112,7 +21112,7 @@ return {
         },
         [35992]= {
             ["skill"]= 35992,
-            ["name"]= "Mace Damage and Reduced Enemy Stun Threshold",
+            ["name"]= "철퇴 피해, 적 기절 한계치 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "14% increased Physical Damage with Maces or Sceptres",
@@ -21135,7 +21135,7 @@ return {
         },
         [5126]= {
             ["skill"]= 5126,
-            ["name"]= "Spinecruncher",
+            ["name"]= "척추 분쇄자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stunmace.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21165,7 +21165,7 @@ return {
         },
         [34400]= {
             ["skill"]= 34400,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -21188,7 +21188,7 @@ return {
         },
         [27308]= {
             ["skill"]= 27308,
-            ["name"]= "Gravepact",
+            ["name"]= "엄숙한 계약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/gravepact.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21212,7 +21212,7 @@ return {
         },
         [54267]= {
             ["skill"]= 54267,
-            ["name"]= "Minion Damage and Accuracy",
+            ["name"]= "소환수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage",
@@ -21230,7 +21230,7 @@ return {
         },
         [23185]= {
             ["skill"]= 23185,
-            ["name"]= "Minion Damage and Accuracy",
+            ["name"]= "소환수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions deal 12% increased Damage",
@@ -21248,7 +21248,7 @@ return {
         },
         [43133]= {
             ["skill"]= 43133,
-            ["name"]= "Minion Damage and Accuracy",
+            ["name"]= "소환수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionAccuracyDamage.png",
             ["stats"]= {
                 "Minions deal 12% increased Damage",
@@ -21266,7 +21266,7 @@ return {
         },
         [49957]= {
             ["skill"]= 49957,
-            ["name"]= "Minion Mastery",
+            ["name"]= "소환수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMinions.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21278,7 +21278,7 @@ return {
         },
         [42800]= {
             ["skill"]= 42800,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -21298,7 +21298,7 @@ return {
         },
         [487]= {
             ["skill"]= 487,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -21319,7 +21319,7 @@ return {
         },
         [24720]= {
             ["skill"]= 24720,
-            ["name"]= "Imbalanced Guard",
+            ["name"]= "불안정한 방어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SacredBastionKeystone.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -21342,7 +21342,7 @@ return {
         },
         [65159]= {
             ["skill"]= 65159,
-            ["name"]= "Totem Attack and Cast Speed",
+            ["name"]= "토템 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandattackspeed.png",
             ["stats"]= {
                 "Spells Cast by Totems have 5% increased Cast Speed",
@@ -21360,7 +21360,7 @@ return {
         },
         [31520]= {
             ["skill"]= 31520,
-            ["name"]= "Totem Attack and Cast Speed",
+            ["name"]= "토템 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandattackspeed.png",
             ["stats"]= {
                 "Spells Cast by Totems have 5% increased Cast Speed",
@@ -21378,7 +21378,7 @@ return {
         },
         [4300]= {
             ["skill"]= 4300,
-            ["name"]= "Totem Damage and Placement Speed",
+            ["name"]= "토템 피해, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "14% increased Totem Damage",
@@ -21397,7 +21397,7 @@ return {
         },
         [63635]= {
             ["skill"]= 63635,
-            ["name"]= "Primal Manifestation",
+            ["name"]= "원시의 현신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemicmastery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21422,7 +21422,7 @@ return {
         },
         [35910]= {
             ["skill"]= 35910,
-            ["name"]= "Totem Life, Duration and Elemental Resistances",
+            ["name"]= "토템 생명력, 지속시간, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandlife.png",
             ["stats"]= {
                 "10% increased Totem Life",
@@ -21441,7 +21441,7 @@ return {
         },
         [44354]= {
             ["skill"]= 44354,
-            ["name"]= "Totem Mastery",
+            ["name"]= "토템 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryTotem.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21453,7 +21453,7 @@ return {
         },
         [11190]= {
             ["skill"]= 11190,
-            ["name"]= "Totem Life, Duration and Physical Damage Reduction",
+            ["name"]= "토템 생명력, 지속시간, 물리 피해 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandlife.png",
             ["stats"]= {
                 "10% increased Totem Life",
@@ -21472,7 +21472,7 @@ return {
         },
         [17735]= {
             ["skill"]= 17735,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -21493,7 +21493,7 @@ return {
         },
         [63963]= {
             ["skill"]= 63963,
-            ["name"]= "Cold Damage and Cold Ailment Effect",
+            ["name"]= "냉기 피해, 냉기 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "10% increased Cold Damage",
@@ -21513,7 +21513,7 @@ return {
         },
         [58763]= {
             ["skill"]= 58763,
-            ["name"]= "Cold and Lightning Damage",
+            ["name"]= "냉기, 번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HalfColdHalfLightning.png",
             ["stats"]= {
                 "8% increased Cold Damage",
@@ -21532,7 +21532,7 @@ return {
         },
         [32455]= {
             ["skill"]= 32455,
-            ["name"]= "Storm Weaver",
+            ["name"]= "태풍술사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Storm Weaver.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21561,7 +21561,7 @@ return {
         },
         [38599]= {
             ["skill"]= 38599,
-            ["name"]= "Elemental Damage Mastery",
+            ["name"]= "원소 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdLightningMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21573,7 +21573,7 @@ return {
         },
         [7153]= {
             ["skill"]= 7153,
-            ["name"]= "Lightning Damage and Lightning Ailment Effect",
+            ["name"]= "번개 피해, 번개 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Lightning Damage",
@@ -21593,7 +21593,7 @@ return {
         },
         [13201]= {
             ["skill"]= 13201,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -21608,7 +21608,7 @@ return {
         },
         [2311]= {
             ["skill"]= 2311,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -21630,7 +21630,7 @@ return {
         },
         [48128]= {
             ["skill"]= 48128,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -21644,7 +21644,7 @@ return {
         },
         [4568]= {
             ["skill"]= 4568,
-            ["name"]= "Physical and Minion Damage",
+            ["name"]= "물리 및 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 8% increased Damage",
@@ -21662,7 +21662,7 @@ return {
         },
         [420]= {
             ["skill"]= 420,
-            ["name"]= "Physical and Minion Damage",
+            ["name"]= "물리 및 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 8% increased Damage",
@@ -21679,7 +21679,7 @@ return {
         },
         [9294]= {
             ["skill"]= 9294,
-            ["name"]= "Physical and Minion Damage",
+            ["name"]= "물리 및 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 8% increased Damage",
@@ -21697,7 +21697,7 @@ return {
         },
         [33923]= {
             ["skill"]= 33923,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -21714,7 +21714,7 @@ return {
         },
         [59005]= {
             ["skill"]= 59005,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -21731,7 +21731,7 @@ return {
         },
         [61217]= {
             ["skill"]= 61217,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -21748,7 +21748,7 @@ return {
         },
         [9995]= {
             ["skill"]= 9995,
-            ["name"]= "Aura Area of Effect",
+            ["name"]= "오라 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraareaofeffect.png",
             ["stats"]= {
                 "12% increased Area of Effect of Aura Skills"
@@ -21765,7 +21765,7 @@ return {
         },
         [34513]= {
             ["skill"]= 34513,
-            ["name"]= "Aura Effect",
+            ["name"]= "오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraeffect.png",
             ["stats"]= {
                 "6% increased effect of Non-Curse Auras from your Skills"
@@ -21783,7 +21783,7 @@ return {
         },
         [23554]= {
             ["skill"]= 23554,
-            ["name"]= "Aura Mastery",
+            ["name"]= "오라 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryAuras.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -21795,7 +21795,7 @@ return {
         },
         [63033]= {
             ["skill"]= 63033,
-            ["name"]= "Bannerman",
+            ["name"]= "깃발수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BannersNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21817,7 +21817,7 @@ return {
         },
         [41082]= {
             ["skill"]= 41082,
-            ["name"]= "Aura Duration",
+            ["name"]= "오라 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraareaofeffect.png",
             ["stats"]= {
                 "Non-Curse Aura Skills have 30% increased Duration"
@@ -21834,7 +21834,7 @@ return {
         },
         [33718]= {
             ["skill"]= 33718,
-            ["name"]= "Champion of the Cause",
+            ["name"]= "대의의 용사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -21857,7 +21857,7 @@ return {
         },
         [29005]= {
             ["skill"]= 29005,
-            ["name"]= "Armour and Energy Shield",
+            ["name"]= "방어도, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -21875,7 +21875,7 @@ return {
         },
         [39631]= {
             ["skill"]= 39631,
-            ["name"]= "Armour and Energy Shield",
+            ["name"]= "방어도, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -21893,7 +21893,7 @@ return {
         },
         [17251]= {
             ["skill"]= 17251,
-            ["name"]= "Armour and Energy Shield",
+            ["name"]= "방어도, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -21910,7 +21910,7 @@ return {
         },
         [31758]= {
             ["skill"]= 31758,
-            ["name"]= "Mana and Life Regeneration",
+            ["name"]= "마나, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "15% increased Mana Regeneration Rate",
@@ -21928,7 +21928,7 @@ return {
         },
         [42837]= {
             ["skill"]= 42837,
-            ["name"]= "Mana and Life Regeneration",
+            ["name"]= "마나, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "15% increased Mana Regeneration Rate",
@@ -21946,7 +21946,7 @@ return {
         },
         [23456]= {
             ["skill"]= 23456,
-            ["name"]= "Mana and Life Regeneration",
+            ["name"]= "마나, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "15% increased Mana Regeneration Rate",
@@ -21964,7 +21964,7 @@ return {
         },
         [52502]= {
             ["skill"]= 52502,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "6% increased Elemental Damage"
@@ -21981,7 +21981,7 @@ return {
         },
         [20987]= {
             ["skill"]= 20987,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "6% increased Elemental Damage"
@@ -21998,7 +21998,7 @@ return {
         },
         [7960]= {
             ["skill"]= 7960,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -22018,7 +22018,7 @@ return {
         },
         [7828]= {
             ["skill"]= 7828,
-            ["name"]= "Melee Attack Speed",
+            ["name"]= "근접 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "5% increased Melee Attack Speed"
@@ -22035,7 +22035,7 @@ return {
         },
         [40535]= {
             ["skill"]= 40535,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "12% increased Melee Physical Damage"
@@ -22053,7 +22053,7 @@ return {
         },
         [30335]= {
             ["skill"]= 30335,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "16% increased Melee Physical Damage"
@@ -22070,7 +22070,7 @@ return {
         },
         [32480]= {
             ["skill"]= 32480,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "12% increased Melee Physical Damage"
@@ -22088,7 +22088,7 @@ return {
         },
         [38706]= {
             ["skill"]= 38706,
-            ["name"]= "Way of the Warrior",
+            ["name"]= "전사의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EyesOfThePowerful.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -22112,7 +22112,7 @@ return {
         },
         [15868]= {
             ["skill"]= 15868,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedarmorandlife.png",
             ["stats"]= {
                 "6% increased Armour",
@@ -22131,7 +22131,7 @@ return {
         },
         [36047]= {
             ["skill"]= 36047,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedarmorandlife.png",
             ["stats"]= {
                 "12% increased Armour",
@@ -22149,7 +22149,7 @@ return {
         },
         [63048]= {
             ["skill"]= 63048,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedarmorandlife.png",
             ["stats"]= {
                 "6% increased Armour",
@@ -22168,7 +22168,7 @@ return {
         },
         [50264]= {
             ["skill"]= 50264,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.8% of Life per second"
@@ -22185,7 +22185,7 @@ return {
         },
         [22702]= {
             ["skill"]= 22702,
-            ["name"]= "Serpent Stance",
+            ["name"]= "독사의 자세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/serpentstance.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22212,7 +22212,7 @@ return {
         },
         [53957]= {
             ["skill"]= 53957,
-            ["name"]= "Staff Critical Strike Chance and Multiplier",
+            ["name"]= "지팡이 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/critstrchnc.png",
             ["stats"]= {
                 "20% increased Global Critical Strike Chance while wielding a Staff",
@@ -22233,7 +22233,7 @@ return {
         },
         [24229]= {
             ["skill"]= 24229,
-            ["name"]= "Staff Critical Strike Chance",
+            ["name"]= "지팡이 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/critstrchnc.png",
             ["stats"]= {
                 "20% increased Global Critical Strike Chance while wielding a Staff"
@@ -22253,7 +22253,7 @@ return {
         },
         [4977]= {
             ["skill"]= 4977,
-            ["name"]= "Staff Critical Strike Chance and Multiplier",
+            ["name"]= "지팡이 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/critstrchnc.png",
             ["stats"]= {
                 "20% increased Global Critical Strike Chance while wielding a Staff",
@@ -22273,7 +22273,7 @@ return {
         },
         [16512]= {
             ["skill"]= 16512,
-            ["name"]= "Staff Mastery",
+            ["name"]= "지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupStaff.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -22285,7 +22285,7 @@ return {
         },
         [35556]= {
             ["skill"]= 35556,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22303,7 +22303,7 @@ return {
         },
         [39916]= {
             ["skill"]= 39916,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22320,7 +22320,7 @@ return {
         },
         [23881]= {
             ["skill"]= 23881,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22338,7 +22338,7 @@ return {
         },
         [9511]= {
             ["skill"]= 9511,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22356,7 +22356,7 @@ return {
         },
         [36678]= {
             ["skill"]= 36678,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -22380,7 +22380,7 @@ return {
         },
         [61050]= {
             ["skill"]= 61050,
-            ["name"]= "Sword Damage and Critical Strike Multiplier",
+            ["name"]= "검 피해, 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedsworddex.png",
             ["stats"]= {
                 "10% increased Physical Damage with Swords",
@@ -22402,7 +22402,7 @@ return {
         },
         [64024]= {
             ["skill"]= 64024,
-            ["name"]= "Sword Damage and Critical Strike Multiplier",
+            ["name"]= "검 피해, 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedsworddex.png",
             ["stats"]= {
                 "10% increased Physical Damage with Swords",
@@ -22424,7 +22424,7 @@ return {
         },
         [35053]= {
             ["skill"]= 35053,
-            ["name"]= "Sword Damage and Critical Strike Chance",
+            ["name"]= "검 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "8% increased Physical Damage with Swords",
@@ -22447,7 +22447,7 @@ return {
         },
         [43514]= {
             ["skill"]= 43514,
-            ["name"]= "Sword Attack Speed and Critical Strike Chance",
+            ["name"]= "검 공격 속도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "3% increased Attack Speed with Swords",
@@ -22464,7 +22464,7 @@ return {
         },
         [57839]= {
             ["skill"]= 57839,
-            ["name"]= "Blade of Cunning",
+            ["name"]= "교활한 검",
             ["icon"]= "Art/2DArt/SkillIcons/passives/legendaryswordsman.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22493,7 +22493,7 @@ return {
         },
         [17754]= {
             ["skill"]= 17754,
-            ["name"]= "Sword Mastery",
+            ["name"]= "검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupSword.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -22505,7 +22505,7 @@ return {
         },
         [7956]= {
             ["skill"]= 7956,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -22519,7 +22519,7 @@ return {
         },
         [7162]= {
             ["skill"]= 7162,
-            ["name"]= "Armour and Elemental Resistances",
+            ["name"]= "방어도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -22537,7 +22537,7 @@ return {
         },
         [9695]= {
             ["skill"]= 9695,
-            ["name"]= "Armour and Elemental Resistances",
+            ["name"]= "방어도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "10% increased Armour",
@@ -22554,7 +22554,7 @@ return {
         },
         [42009]= {
             ["skill"]= 42009,
-            ["name"]= "Soul of Steel",
+            ["name"]= "강철의 영혼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/armourmastery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22580,7 +22580,7 @@ return {
         },
         [6981]= {
             ["skill"]= 6981,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22598,7 +22598,7 @@ return {
         },
         [36543]= {
             ["skill"]= 36543,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -22616,7 +22616,7 @@ return {
         },
         [43988]= {
             ["skill"]= 43988,
-            ["name"]= "Doomsday",
+            ["name"]= "최후의 날",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DoomsdayKeystone.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -22635,7 +22635,7 @@ return {
         },
         [14151]= {
             ["skill"]= 14151,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -22653,7 +22653,7 @@ return {
         },
         [27564]= {
             ["skill"]= 27564,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -22671,7 +22671,7 @@ return {
         },
         [30439]= {
             ["skill"]= 30439,
-            ["name"]= "Lava Lash",
+            ["name"]= "용암 채찍",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lavalash.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22694,7 +22694,7 @@ return {
         },
         [8879]= {
             ["skill"]= 8879,
-            ["name"]= "Weapon Fire Damage",
+            ["name"]= "무기 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "12% increased Fire Damage with Attack Skills"
@@ -22710,7 +22710,7 @@ return {
         },
         [14419]= {
             ["skill"]= 14419,
-            ["name"]= "Weapon Fire Damage",
+            ["name"]= "무기 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "12% increased Fire Damage with Attack Skills"
@@ -22726,7 +22726,7 @@ return {
         },
         [651]= {
             ["skill"]= 651,
-            ["name"]= "Elemental Resistance",
+            ["name"]= "원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/crystalskin.png",
             ["stats"]= {
                 "+5% to all Elemental Resistances",
@@ -22749,7 +22749,7 @@ return {
         },
         [9149]= {
             ["skill"]= 9149,
-            ["name"]= "Chill and Freeze Resistance",
+            ["name"]= "냉각, 동결 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/avoidchilling.png",
             ["stats"]= {
                 "30% reduced Effect of Chill on you",
@@ -22770,7 +22770,7 @@ return {
         },
         [43057]= {
             ["skill"]= 43057,
-            ["name"]= "Ignite Resistance",
+            ["name"]= "점화 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/avoidburning.png",
             ["stats"]= {
                 "30% reduced Ignite Duration on you"
@@ -22787,7 +22787,7 @@ return {
         },
         [3398]= {
             ["skill"]= 3398,
-            ["name"]= "Shock Resistance",
+            ["name"]= "감전 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningdex.png",
             ["stats"]= {
                 "30% reduced Effect of Shock on you"
@@ -22804,7 +22804,7 @@ return {
         },
         [11820]= {
             ["skill"]= 11820,
-            ["name"]= "Anointed Flesh",
+            ["name"]= "도유받은 육체",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalAilmentResistance.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22834,7 +22834,7 @@ return {
         },
         [56671]= {
             ["skill"]= 56671,
-            ["name"]= "Chaos Damage and Withered Expiry Rate",
+            ["name"]= "카오스 피해, 시듦 만료 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -22855,7 +22855,7 @@ return {
         },
         [47949]= {
             ["skill"]= 47949,
-            ["name"]= "Chaos Damage",
+            ["name"]= "카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "12% increased Chaos Damage"
@@ -22873,7 +22873,7 @@ return {
         },
         [48971]= {
             ["skill"]= 48971,
-            ["name"]= "Chaos Damage Penetration",
+            ["name"]= "카오스 피해 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "Damage Penetrates 4% Chaos Resistance"
@@ -22890,7 +22890,7 @@ return {
         },
         [29629]= {
             ["skill"]= 29629,
-            ["name"]= "Chaos Damage Penetration",
+            ["name"]= "카오스 피해 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "Damage Penetrates 4% Chaos Resistance"
@@ -22907,7 +22907,7 @@ return {
         },
         [26620]= {
             ["skill"]= 26620,
-            ["name"]= "Corruption",
+            ["name"]= "타락",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -22935,7 +22935,7 @@ return {
         },
         [46644]= {
             ["skill"]= 46644,
-            ["name"]= "Chaos Mastery",
+            ["name"]= "카오스 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryChaos.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -22947,7 +22947,7 @@ return {
         },
         [44362]= {
             ["skill"]= 44362,
-            ["name"]= "Chaos Damage and Withered Expiry Rate",
+            ["name"]= "카오스 피해, 시듦 만료 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -22968,7 +22968,7 @@ return {
         },
         [17352]= {
             ["skill"]= 17352,
-            ["name"]= "Mana and Life",
+            ["name"]= "마나, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -22987,7 +22987,7 @@ return {
         },
         [56029]= {
             ["skill"]= 56029,
-            ["name"]= "Agility",
+            ["name"]= "민첩함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/grace.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23009,7 +23009,7 @@ return {
         },
         [33988]= {
             ["skill"]= 33988,
-            ["name"]= "Melee Damage",
+            ["name"]= "근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "12% increased Melee Physical Damage"
@@ -23026,7 +23026,7 @@ return {
         },
         [35724]= {
             ["skill"]= 35724,
-            ["name"]= "Damage",
+            ["name"]= "피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "12% increased Damage"
@@ -23044,7 +23044,7 @@ return {
         },
         [33631]= {
             ["skill"]= 33631,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -23058,7 +23058,7 @@ return {
         },
         [33740]= {
             ["skill"]= 33740,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -23075,7 +23075,7 @@ return {
         },
         [15405]= {
             ["skill"]= 15405,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -23094,7 +23094,7 @@ return {
         },
         [13009]= {
             ["skill"]= 13009,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -23113,7 +23113,7 @@ return {
         },
         [22627]= {
             ["skill"]= 22627,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedarmorandlife.png",
             ["stats"]= {
                 "6% increased Armour",
@@ -23131,7 +23131,7 @@ return {
         },
         [34601]= {
             ["skill"]= 34601,
-            ["name"]= "Proficiency",
+            ["name"]= "숙달",
             ["icon"]= "Art/2DArt/SkillIcons/passives/grace.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23153,7 +23153,7 @@ return {
         },
         [12250]= {
             ["skill"]= 12250,
-            ["name"]= "Energy Shield and Mana",
+            ["name"]= "에너지 보호막, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -23170,7 +23170,7 @@ return {
         },
         [2301]= {
             ["skill"]= 2301,
-            ["name"]= "Energy Shield and Mana Mastery",
+            ["name"]= "에너지 보호막, 마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEnergyShieldMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -23182,7 +23182,7 @@ return {
         },
         [38701]= {
             ["skill"]= 38701,
-            ["name"]= "Energy Shield and Mana",
+            ["name"]= "에너지 보호막, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -23200,7 +23200,7 @@ return {
         },
         [18767]= {
             ["skill"]= 18767,
-            ["name"]= "Energy Shield and Mana",
+            ["name"]= "에너지 보호막, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -23218,7 +23218,7 @@ return {
         },
         [48298]= {
             ["skill"]= 48298,
-            ["name"]= "Insightfulness",
+            ["name"]= "통찰력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Inspiration.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23243,7 +23243,7 @@ return {
         },
         [5462]= {
             ["skill"]= 5462,
-            ["name"]= "Staff Area of Effect",
+            ["name"]= "지팡이 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeOffensive.png",
             ["stats"]= {
                 "10% increased Area of Effect while wielding a Staff"
@@ -23263,7 +23263,7 @@ return {
         },
         [7364]= {
             ["skill"]= 7364,
-            ["name"]= "Staff Area of Effect and Attack and Cast Speed",
+            ["name"]= "지팡이 효과 범위, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeOffensive.png",
             ["stats"]= {
                 "4% increased Attack Speed with Staves",
@@ -23285,7 +23285,7 @@ return {
         },
         [65273]= {
             ["skill"]= 65273,
-            ["name"]= "Enigmatic Reach",
+            ["name"]= "수수께끼의 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23312,7 +23312,7 @@ return {
         },
         [14056]= {
             ["skill"]= 14056,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -23336,7 +23336,7 @@ return {
         },
         [39841]= {
             ["skill"]= 39841,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -23358,7 +23358,7 @@ return {
         },
         [11700]= {
             ["skill"]= 11700,
-            ["name"]= "Melee Area of Effect and Damage",
+            ["name"]= "근접 효과 범위, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeAoENode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -23376,7 +23376,7 @@ return {
         },
         [50969]= {
             ["skill"]= 50969,
-            ["name"]= "Melee Area of Effect and Damage",
+            ["name"]= "근접 효과 범위, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeAoENode.png",
             ["stats"]= {
                 "10% increased Melee Damage",
@@ -23394,7 +23394,7 @@ return {
         },
         [20835]= {
             ["skill"]= 20835,
-            ["name"]= "Brinkmanship",
+            ["name"]= "벼랑 끝 전술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeAoENotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23422,7 +23422,7 @@ return {
         },
         [59494]= {
             ["skill"]= 59494,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -23439,7 +23439,7 @@ return {
         },
         [16380]= {
             ["skill"]= 16380,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -23457,7 +23457,7 @@ return {
         },
         [2225]= {
             ["skill"]= 2225,
-            ["name"]= "Eagle Eye",
+            ["name"]= "독수리의 눈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/eagleeye.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23480,7 +23480,7 @@ return {
         },
         [50515]= {
             ["skill"]= 50515,
-            ["name"]= "Attack Damage and Speed while Fortified",
+            ["name"]= "방어 상승 중 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "3% increased Attack Speed while you have Fortify",
@@ -23497,7 +23497,7 @@ return {
         },
         [18552]= {
             ["skill"]= 18552,
-            ["name"]= "Attack Damage while Fortified and Fortify Duration",
+            ["name"]= "방어 상승 중 공격 피해, 방어 상승 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "25% increased Fortify Duration",
@@ -23515,7 +23515,7 @@ return {
         },
         [56370]= {
             ["skill"]= 56370,
-            ["name"]= "Attack Damage and Speed while Fortified",
+            ["name"]= "방어 상승 중 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNode.png",
             ["stats"]= {
                 "4% increased Attack Speed while you have Fortify",
@@ -23533,7 +23533,7 @@ return {
         },
         [25414]= {
             ["skill"]= 25414,
-            ["name"]= "Fortify Mastery",
+            ["name"]= "방어 상승 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -23545,7 +23545,7 @@ return {
         },
         [1340]= {
             ["skill"]= 1340,
-            ["name"]= "Rampart",
+            ["name"]= "성벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FortifyNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23572,7 +23572,7 @@ return {
         },
         [42760]= {
             ["skill"]= 42760,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -23595,7 +23595,7 @@ return {
         },
         [5456]= {
             ["skill"]= 5456,
-            ["name"]= "Might",
+            ["name"]= "완력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/oxblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23617,7 +23617,7 @@ return {
         },
         [20844]= {
             ["skill"]= 20844,
-            ["name"]= "Wand Attack Speed and Accuracy",
+            ["name"]= "마법봉 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "5% increased Attack Speed with Wands",
@@ -23635,7 +23635,7 @@ return {
         },
         [62217]= {
             ["skill"]= 62217,
-            ["name"]= "Wand Attack Speed and Accuracy",
+            ["name"]= "마법봉 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "5% increased Attack Speed with Wands",
@@ -23652,7 +23652,7 @@ return {
         },
         [56066]= {
             ["skill"]= 56066,
-            ["name"]= "Wand Elemental Damage",
+            ["name"]= "마법봉 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Wands"
@@ -23670,7 +23670,7 @@ return {
         },
         [54043]= {
             ["skill"]= 54043,
-            ["name"]= "Wand Elemental Damage and Penetration",
+            ["name"]= "마법봉 원소 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "10% increased Elemental Damage with Wands",
@@ -23688,7 +23688,7 @@ return {
         },
         [30926]= {
             ["skill"]= 30926,
-            ["name"]= "Wand Elemental Damage and Penetration",
+            ["name"]= "마법봉 원소 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "10% increased Elemental Damage with Wands",
@@ -23706,7 +23706,7 @@ return {
         },
         [63944]= {
             ["skill"]= 63944,
-            ["name"]= "Prism Weave",
+            ["name"]= "빛의 매듭",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23731,7 +23731,7 @@ return {
         },
         [11765]= {
             ["skill"]= 11765,
-            ["name"]= "Wand Mastery",
+            ["name"]= "마법봉 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupWand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -23743,7 +23743,7 @@ return {
         },
         [34098]= {
             ["skill"]= 34098,
-            ["name"]= "Mind Over Matter",
+            ["name"]= "물질보다 정신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heroicspirit.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -23762,7 +23762,7 @@ return {
         },
         [19897]= {
             ["skill"]= 19897,
-            ["name"]= "Death Attunement",
+            ["name"]= "죽음의 조율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/deathattunement.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23788,7 +23788,7 @@ return {
         },
         [2320]= {
             ["skill"]= 2320,
-            ["name"]= "Minion and Damage Mastery",
+            ["name"]= "소환수, 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMinions.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -23800,7 +23800,7 @@ return {
         },
         [43716]= {
             ["skill"]= 43716,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 12% increased Damage"
@@ -23817,7 +23817,7 @@ return {
         },
         [34144]= {
             ["skill"]= 34144,
-            ["name"]= "Minion Damage and Life Leech",
+            ["name"]= "소환수 피해, 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage",
@@ -23838,7 +23838,7 @@ return {
         },
         [52412]= {
             ["skill"]= 52412,
-            ["name"]= "Minion Life and Damage",
+            ["name"]= "소환수 생명력, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 8% increased maximum Life",
@@ -23856,7 +23856,7 @@ return {
         },
         [4247]= {
             ["skill"]= 4247,
-            ["name"]= "Minion Life and Life Regeneration",
+            ["name"]= "소환수 생명력, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life",
@@ -23874,7 +23874,7 @@ return {
         },
         [17412]= {
             ["skill"]= 17412,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 12% increased maximum Life"
@@ -23891,7 +23891,7 @@ return {
         },
         [54657]= {
             ["skill"]= 54657,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "4% increased Cast Speed"
@@ -23907,7 +23907,7 @@ return {
         },
         [34157]= {
             ["skill"]= 34157,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "4% increased Cast Speed"
@@ -23923,7 +23923,7 @@ return {
         },
         [9432]= {
             ["skill"]= 9432,
-            ["name"]= "Mental Rapidity",
+            ["name"]= "신속한 정신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MentalRapidity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -23946,7 +23946,7 @@ return {
         },
         [63965]= {
             ["skill"]= 63965,
-            ["name"]= "Damage and Mana",
+            ["name"]= "피해, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "14% increased Damage",
@@ -23966,7 +23966,7 @@ return {
         },
         [20228]= {
             ["skill"]= 20228,
-            ["name"]= "Mana Regeneration and Life",
+            ["name"]= "마나 재생, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "+14 to maximum Life",
@@ -23986,7 +23986,7 @@ return {
         },
         [61525]= {
             ["skill"]= 61525,
-            ["name"]= "TEMPLAR",
+            ["name"]= "템플러",
             ["icon"]= "Art/2DArt/SkillIcons/passives/axedmgspeed.png",
             ["stats"]= {},
             ["classStartIndex"]= 5,
@@ -24005,7 +24005,7 @@ return {
         },
         [22703]= {
             ["skill"]= 22703,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -24023,7 +24023,7 @@ return {
         },
         [18025]= {
             ["skill"]= 18025,
-            ["name"]= "Hard Knocks",
+            ["name"]= "고난",
             ["icon"]= "Art/2DArt/SkillIcons/passives/savant.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24045,7 +24045,7 @@ return {
         },
         [50904]= {
             ["skill"]= 50904,
-            ["name"]= "Life and Armour",
+            ["name"]= "생명력, 방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedarmorandlife.png",
             ["stats"]= {
                 "16% increased Armour",
@@ -24065,7 +24065,7 @@ return {
         },
         [47175]= {
             ["skill"]= 47175,
-            ["name"]= "MARAUDER",
+            ["name"]= "머라우더",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blankStr.png",
             ["stats"]= {},
             ["classStartIndex"]= 1,
@@ -24083,7 +24083,7 @@ return {
         },
         [31628]= {
             ["skill"]= 31628,
-            ["name"]= "Melee Damage and Life",
+            ["name"]= "근접 피해, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "+16 to maximum Life",
@@ -24103,7 +24103,7 @@ return {
         },
         [24914]= {
             ["skill"]= 24914,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -24124,7 +24124,7 @@ return {
         },
         [10016]= {
             ["skill"]= 10016,
-            ["name"]= "Executioner",
+            ["name"]= "사형 집행자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/reaver.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24152,7 +24152,7 @@ return {
         },
         [1909]= {
             ["skill"]= 1909,
-            ["name"]= "Two Handed Melee Damage and Attack Speed",
+            ["name"]= "양손 근접 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handedspeed.png",
             ["stats"]= {
                 "10% increased Physical Damage with Two Handed Melee Weapons",
@@ -24174,7 +24174,7 @@ return {
         },
         [42062]= {
             ["skill"]= 42062,
-            ["name"]= "Two Hand Mastery",
+            ["name"]= "양손 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupTwoHands.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -24186,7 +24186,7 @@ return {
         },
         [8533]= {
             ["skill"]= 8533,
-            ["name"]= "Two Handed Melee Damage",
+            ["name"]= "양손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "14% increased Physical Damage with Two Handed Melee Weapons",
@@ -24208,7 +24208,7 @@ return {
         },
         [11515]= {
             ["skill"]= 11515,
-            ["name"]= "Two Handed Melee Damage and Area of Effect",
+            ["name"]= "양손 근접 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -24230,7 +24230,7 @@ return {
         },
         [35362]= {
             ["skill"]= 35362,
-            ["name"]= "Two Handed Melee Damage and Area of Effect",
+            ["name"]= "양손 근접 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -24252,7 +24252,7 @@ return {
         },
         [56381]= {
             ["skill"]= 56381,
-            ["name"]= "Two Handed Melee Damage and Attack Speed",
+            ["name"]= "양손 근접 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handedspeed.png",
             ["stats"]= {
                 "10% increased Physical Damage with Two Handed Melee Weapons",
@@ -24274,7 +24274,7 @@ return {
         },
         [49318]= {
             ["skill"]= 49318,
-            ["name"]= "Wrecking Ball",
+            ["name"]= "파괴구",
             ["icon"]= "Art/2DArt/SkillIcons/passives/wreckingball.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24300,7 +24300,7 @@ return {
         },
         [7440]= {
             ["skill"]= 7440,
-            ["name"]= "Combat Control",
+            ["name"]= "전투 제어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GenericWarcryNode3.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24321,7 +24321,7 @@ return {
         },
         [31984]= {
             ["skill"]= 31984,
-            ["name"]= "Energy Shield, Curse Effect",
+            ["name"]= "에너지 보호막, 저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/IncreasedEnergyShieldManaReservation.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24340,7 +24340,7 @@ return {
         },
         [37492]= {
             ["skill"]= 37492,
-            ["name"]= "Vile Bastion",
+            ["name"]= "끔찍한 보루",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/SoulCatalyst.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24362,7 +24362,7 @@ return {
         },
         [27096]= {
             ["skill"]= 27096,
-            ["name"]= "Void Beacon",
+            ["name"]= "공허의 등불",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/VoidBeacon.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24384,7 +24384,7 @@ return {
         },
         [62504]= {
             ["skill"]= 62504,
-            ["name"]= "Forbidden Power",
+            ["name"]= "금지된 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/VowOfDamnation.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24404,7 +24404,7 @@ return {
         },
         [31316]= {
             ["skill"]= 31316,
-            ["name"]= "Energy Shield, Chaos Damage",
+            ["name"]= "에너지 보호막, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/EnergyShieldChaos.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24423,7 +24423,7 @@ return {
         },
         [43242]= {
             ["skill"]= 43242,
-            ["name"]= "Energy Shield, Cold Damage",
+            ["name"]= "에너지 보호막, 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/EnergyShieldCold.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24442,7 +24442,7 @@ return {
         },
         [25309]= {
             ["skill"]= 25309,
-            ["name"]= "Withering Presence",
+            ["name"]= "고사시키는 존재",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/WitheringPresence.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24465,7 +24465,7 @@ return {
         },
         [47630]= {
             ["skill"]= 47630,
-            ["name"]= "Frigid Wake",
+            ["name"]= "차디찬 각성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/FrigidWake.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24491,7 +24491,7 @@ return {
         },
         [17018]= {
             ["skill"]= 17018,
-            ["name"]= "Energy Shield, Curse Effect",
+            ["name"]= "에너지 보호막, 저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/IncreasedEnergyShieldManaReservation.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24510,7 +24510,7 @@ return {
         },
         [32417]= {
             ["skill"]= 32417,
-            ["name"]= "Energy Shield, Cold and Chaos Damage",
+            ["name"]= "에너지 보호막, 냉기 및 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/IncreasedEnergyShieldAttackAndCastSpeed.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24530,7 +24530,7 @@ return {
         },
         [6728]= {
             ["skill"]= 6728,
-            ["name"]= "Energy Shield, Power Charge Duration",
+            ["name"]= "에너지 보호막, 권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/IncreasedEnergyShieldCriticalStrikeChance.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24549,7 +24549,7 @@ return {
         },
         [48124]= {
             ["skill"]= 48124,
-            ["name"]= "Energy Shield, Energy Shield Recharge Rate",
+            ["name"]= "에너지 보호막, 에너지 보호막 재충전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/IncreasedEnergyShieldMaximumMana.png",
             ["ascendancyName"]= "Occultist",
             ["stats"]= {
@@ -24568,7 +24568,7 @@ return {
         },
         [37127]= {
             ["skill"]= 37127,
-            ["name"]= "Profane Bloom",
+            ["name"]= "부정한 꽃",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/LotusExtract.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24586,7 +24586,7 @@ return {
         },
         [31344]= {
             ["skill"]= 31344,
-            ["name"]= "Malediction",
+            ["name"]= "저주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/FatefulEchoes.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Occultist",
@@ -24608,7 +24608,7 @@ return {
         },
         [18378]= {
             ["skill"]= 18378,
-            ["name"]= "Occultist",
+            ["name"]= "오컬티스트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Occultist",
             ["isAscendancyStart"]= true,
@@ -24629,7 +24629,7 @@ return {
         },
         [31080]= {
             ["skill"]= 31080,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -24648,7 +24648,7 @@ return {
         },
         [17818]= {
             ["skill"]= 17818,
-            ["name"]= "Crimson Dance",
+            ["name"]= "진홍색 춤",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CrimsonDance.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -24667,7 +24667,7 @@ return {
         },
         [24256]= {
             ["skill"]= 24256,
-            ["name"]= "Dynamo",
+            ["name"]= "정력가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaGuardNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24692,7 +24692,7 @@ return {
         },
         [34906]= {
             ["skill"]= 34906,
-            ["name"]= "Mana and Guard Skill Duration",
+            ["name"]= "마나, 방어 스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -24711,7 +24711,7 @@ return {
         },
         [41026]= {
             ["skill"]= 41026,
-            ["name"]= "Mana and Guard Skill Cooldown Recovery",
+            ["name"]= "마나, 방어 스킬 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "10% increased maximum Mana",
@@ -24729,7 +24729,7 @@ return {
         },
         [21330]= {
             ["skill"]= 21330,
-            ["name"]= "Quick Recovery",
+            ["name"]= "빠른 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/QuickRecovery.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24752,7 +24752,7 @@ return {
         },
         [39648]= {
             ["skill"]= 39648,
-            ["name"]= "Mana Regeneration and Life",
+            ["name"]= "마나 재생, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -24769,7 +24769,7 @@ return {
         },
         [17821]= {
             ["skill"]= 17821,
-            ["name"]= "Mana Regeneration and Life",
+            ["name"]= "마나 재생, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -24787,7 +24787,7 @@ return {
         },
         [22088]= {
             ["skill"]= 22088,
-            ["name"]= "Elemental Overload",
+            ["name"]= "원소 과부하",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneElementalOverload.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -24806,7 +24806,7 @@ return {
         },
         [60398]= {
             ["skill"]= 60398,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -24829,7 +24829,7 @@ return {
         },
         [19732]= {
             ["skill"]= 19732,
-            ["name"]= "The Agnostic",
+            ["name"]= "불가지론자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MiracleMaker.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -24848,7 +24848,7 @@ return {
         },
         [38664]= {
             ["skill"]= 38664,
-            ["name"]= "Melee Critical Strike Chance",
+            ["name"]= "근접 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Melee Critical Strike Chance"
@@ -24866,7 +24866,7 @@ return {
         },
         [56460]= {
             ["skill"]= 56460,
-            ["name"]= "Melee Critical Strike Multiplier",
+            ["name"]= "근접 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeMultiplierNode.png",
             ["stats"]= {
                 "+10% to Melee Critical Strike Multiplier"
@@ -24882,7 +24882,7 @@ return {
         },
         [61636]= {
             ["skill"]= 61636,
-            ["name"]= "Melee Critical Strike Chance",
+            ["name"]= "근접 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikeChanceNode.png",
             ["stats"]= {
                 "25% increased Melee Critical Strike Chance"
@@ -24898,7 +24898,7 @@ return {
         },
         [54977]= {
             ["skill"]= 54977,
-            ["name"]= "Melee Critical Mastery",
+            ["name"]= "근접 치명타 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCrit.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -24910,7 +24910,7 @@ return {
         },
         [37647]= {
             ["skill"]= 37647,
-            ["name"]= "Dismembering",
+            ["name"]= "절단",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeleeCriticalStrikesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24938,7 +24938,7 @@ return {
         },
         [27301]= {
             ["skill"]= 27301,
-            ["name"]= "Martial Experience",
+            ["name"]= "무도 경험",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MartialExperience.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -24968,7 +24968,7 @@ return {
         },
         [51287]= {
             ["skill"]= 51287,
-            ["name"]= "Two Hand Mastery",
+            ["name"]= "양손 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupTwoHands.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -24980,7 +24980,7 @@ return {
         },
         [64816]= {
             ["skill"]= 64816,
-            ["name"]= "Two Handed Melee Damage and Leech",
+            ["name"]= "양손 근접 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -25004,7 +25004,7 @@ return {
         },
         [6884]= {
             ["skill"]= 6884,
-            ["name"]= "Two Handed Melee Damage and Life Leech Speed",
+            ["name"]= "양손 근접 피해, 생명력 흡수 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -25026,7 +25026,7 @@ return {
         },
         [34959]= {
             ["skill"]= 34959,
-            ["name"]= "Two Handed Melee Damage and Life Leech Speed",
+            ["name"]= "양손 근접 피해, 생명력 흡수 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -25047,7 +25047,7 @@ return {
         },
         [27140]= {
             ["skill"]= 27140,
-            ["name"]= "Two Handed Melee Damage and Leech",
+            ["name"]= "양손 근접 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracy2h.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -25069,7 +25069,7 @@ return {
         },
         [48556]= {
             ["skill"]= 48556,
-            ["name"]= "Thunderous Salvos",
+            ["name"]= "우레의 일제 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/UnleashNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25091,7 +25091,7 @@ return {
         },
         [23511]= {
             ["skill"]= 23511,
-            ["name"]= "Seal Generation Speed",
+            ["name"]= "봉인 생성 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/UnleashNode.png",
             ["stats"]= {
                 "Skills Supported by Unleash have 10% increased Seal gain frequency"
@@ -25107,7 +25107,7 @@ return {
         },
         [59778]= {
             ["skill"]= 59778,
-            ["name"]= "Seal Generation Speed",
+            ["name"]= "봉인 생성 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/UnleashNode.png",
             ["stats"]= {
                 "Skills Supported by Unleash have 10% increased Seal gain frequency"
@@ -25124,7 +25124,7 @@ return {
         },
         [60648]= {
             ["skill"]= 60648,
-            ["name"]= "Mana Flasks",
+            ["name"]= "마나 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "10% increased Mana Recovery from Flasks",
@@ -25141,7 +25141,7 @@ return {
         },
         [42981]= {
             ["skill"]= 42981,
-            ["name"]= "Mana Flasks",
+            ["name"]= "마나 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "10% increased Mana Recovery from Flasks",
@@ -25159,7 +25159,7 @@ return {
         },
         [53802]= {
             ["skill"]= 53802,
-            ["name"]= "Essence Extraction",
+            ["name"]= "에센스 추출",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaFlasksOften.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25185,7 +25185,7 @@ return {
         },
         [43374]= {
             ["skill"]= 43374,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -25208,7 +25208,7 @@ return {
         },
         [6741]= {
             ["skill"]= 6741,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -25229,7 +25229,7 @@ return {
         },
         [48958]= {
             ["skill"]= 48958,
-            ["name"]= "Bleeding Mastery",
+            ["name"]= "출혈 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -25241,7 +25241,7 @@ return {
         },
         [26294]= {
             ["skill"]= 26294,
-            ["name"]= "Bloodletting",
+            ["name"]= "출혈 과다",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Blood2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25270,7 +25270,7 @@ return {
         },
         [17833]= {
             ["skill"]= 17833,
-            ["name"]= "Bleed Damage Multiplier",
+            ["name"]= "출혈 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Blood2.png",
             ["stats"]= {
                 "+4% to Damage over Time Multiplier for Bleeding"
@@ -25287,7 +25287,7 @@ return {
         },
         [11568]= {
             ["skill"]= 11568,
-            ["name"]= "Bleed Damage Multiplier",
+            ["name"]= "출혈 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Blood2.png",
             ["stats"]= {
                 "+4% to Damage over Time Multiplier for Bleeding"
@@ -25304,7 +25304,7 @@ return {
         },
         [23199]= {
             ["skill"]= 23199,
-            ["name"]= "Bleed Damage and Chance",
+            ["name"]= "출혈 피해, 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Blood2.png",
             ["stats"]= {
                 "Attacks have 10% chance to cause Bleeding",
@@ -25326,7 +25326,7 @@ return {
         },
         [60887]= {
             ["skill"]= 60887,
-            ["name"]= "Bleed Chance",
+            ["name"]= "출혈 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Blood2.png",
             ["stats"]= {
                 "Attacks have 15% chance to cause Bleeding"
@@ -25346,7 +25346,7 @@ return {
         },
         [33179]= {
             ["skill"]= 33179,
-            ["name"]= "Attack Speed, Physical Damage",
+            ["name"]= "공격 속도, 물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADOneHand.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25365,7 +25365,7 @@ return {
         },
         [8419]= {
             ["skill"]= 8419,
-            ["name"]= "Painforged",
+            ["name"]= "고통에 단련된",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADPainForged.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25391,7 +25391,7 @@ return {
         },
         [63490]= {
             ["skill"]= 63490,
-            ["name"]= "Violent Retaliation",
+            ["name"]= "폭력적 보복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADViolentRetaliation.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25411,7 +25411,7 @@ return {
         },
         [2598]= {
             ["skill"]= 2598,
-            ["name"]= "Versatile Combatant",
+            ["name"]= "유연한 전투원",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADVersitileCombatant.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25428,7 +25428,7 @@ return {
         },
         [14726]= {
             ["skill"]= 14726,
-            ["name"]= "Attack Speed, Movement Speed",
+            ["name"]= "공격 속도, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADSpeedAoE.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25447,7 +25447,7 @@ return {
         },
         [758]= {
             ["skill"]= 758,
-            ["name"]= "Arena Challenger",
+            ["name"]= "투기장의 도전자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADBloodAndSand.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25467,7 +25467,7 @@ return {
         },
         [48760]= {
             ["skill"]= 48760,
-            ["name"]= "Attack Speed, Physical Damage",
+            ["name"]= "공격 속도, 물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADOneHand.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25486,7 +25486,7 @@ return {
         },
         [37623]= {
             ["skill"]= 37623,
-            ["name"]= "Attack Speed, Block Chance",
+            ["name"]= "공격 속도, 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADBlockChance.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25505,7 +25505,7 @@ return {
         },
         [3651]= {
             ["skill"]= 3651,
-            ["name"]= "Attack Speed and One Handed Damage",
+            ["name"]= "공격 속도, 한손 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADOneHand.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25524,7 +25524,7 @@ return {
         },
         [24538]= {
             ["skill"]= 24538,
-            ["name"]= "Attack Speed, Block Chance",
+            ["name"]= "공격 속도, 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADBlockChance.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25543,7 +25543,7 @@ return {
         },
         [1675]= {
             ["skill"]= 1675,
-            ["name"]= "Attack Speed, Block Chance",
+            ["name"]= "공격 속도, 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADBlockChance.png",
             ["ascendancyName"]= "Gladiator",
             ["stats"]= {
@@ -25562,7 +25562,7 @@ return {
         },
         [27864]= {
             ["skill"]= 27864,
-            ["name"]= "Gratuitous Violence",
+            ["name"]= "불필요한 폭력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADViolence.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25580,7 +25580,7 @@ return {
         },
         [15616]= {
             ["skill"]= 15616,
-            ["name"]= "Blood in the Eyes",
+            ["name"]= "눈에 피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADBloodInEyes.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25607,7 +25607,7 @@ return {
         },
         [52575]= {
             ["skill"]= 52575,
-            ["name"]= "Outmatch and Outlast",
+            ["name"]= "압도하고 오래 버티기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Gladiator/GLADOutmatchOutlast.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Gladiator",
@@ -25627,7 +25627,7 @@ return {
         },
         [32730]= {
             ["skill"]= 32730,
-            ["name"]= "Gladiator",
+            ["name"]= "글래디에이터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Gladiator",
             ["isAscendancyStart"]= true,
@@ -25647,7 +25647,7 @@ return {
         },
         [16775]= {
             ["skill"]= 16775,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -25667,7 +25667,7 @@ return {
         },
         [46910]= {
             ["skill"]= 46910,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -25688,7 +25688,7 @@ return {
         },
         [30302]= {
             ["skill"]= 30302,
-            ["name"]= "Blade Sovereign",
+            ["name"]= "칼날의 군주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CallOfSteelNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25711,7 +25711,7 @@ return {
         },
         [13498]= {
             ["skill"]= 13498,
-            ["name"]= "Call of Steel Speed and Area",
+            ["name"]= "강철의 부름 속도, 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CallOfSteelNode.png",
             ["stats"]= {
                 "Call of Steel deals Reflected Damage with 15% increased Area of Effect",
@@ -25729,7 +25729,7 @@ return {
         },
         [53292]= {
             ["skill"]= 53292,
-            ["name"]= "Impale Effect",
+            ["name"]= "꿰뚫기 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImapleNode.png",
             ["stats"]= {
                 "5% increased Impale Effect"
@@ -25746,7 +25746,7 @@ return {
         },
         [40841]= {
             ["skill"]= 40841,
-            ["name"]= "Impale Chance and Physical Attack Damage",
+            ["name"]= "꿰뚫기 확률, 물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleNode2.png",
             ["stats"]= {
                 "10% increased Attack Physical Damage",
@@ -25768,7 +25768,7 @@ return {
         },
         [11596]= {
             ["skill"]= 11596,
-            ["name"]= "Impale Mastery",
+            ["name"]= "꿰뚫기 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -25780,7 +25780,7 @@ return {
         },
         [9194]= {
             ["skill"]= 9194,
-            ["name"]= "Swift Skewering",
+            ["name"]= "신속한 꿰기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25808,7 +25808,7 @@ return {
         },
         [42900]= {
             ["skill"]= 42900,
-            ["name"]= "Totem Damage and Placement Speed",
+            ["name"]= "토템 피해, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "10% increased Totem Damage",
@@ -25825,7 +25825,7 @@ return {
         },
         [24157]= {
             ["skill"]= 24157,
-            ["name"]= "Totem Damage and Placement Speed",
+            ["name"]= "토템 피해, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "10% increased Totem Damage",
@@ -25843,7 +25843,7 @@ return {
         },
         [53757]= {
             ["skill"]= 53757,
-            ["name"]= "Shamanistic Fury",
+            ["name"]= "주술사의 광분",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shamsnisticfury.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -25865,7 +25865,7 @@ return {
         },
         [63447]= {
             ["skill"]= 63447,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -25888,7 +25888,7 @@ return {
         },
         [23659]= {
             ["skill"]= 23659,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -25905,7 +25905,7 @@ return {
         },
         [367]= {
             ["skill"]= 367,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -25922,7 +25922,7 @@ return {
         },
         [33864]= {
             ["skill"]= 33864,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -25940,7 +25940,7 @@ return {
         },
         [35706]= {
             ["skill"]= 35706,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -25956,7 +25956,7 @@ return {
         },
         [58103]= {
             ["skill"]= 58103,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -25973,7 +25973,7 @@ return {
         },
         [2897]= {
             ["skill"]= 2897,
-            ["name"]= "Energy Shield Mastery",
+            ["name"]= "에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -25985,7 +25985,7 @@ return {
         },
         [50029]= {
             ["skill"]= 50029,
-            ["name"]= "Unnatural Calm",
+            ["name"]= "기이한 고요",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arcane focus.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26011,7 +26011,7 @@ return {
         },
         [55332]= {
             ["skill"]= 55332,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26031,7 +26031,7 @@ return {
         },
         [14021]= {
             ["skill"]= 14021,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26051,7 +26051,7 @@ return {
         },
         [57257]= {
             ["skill"]= 57257,
-            ["name"]= "The Impaler",
+            ["name"]= "꿰뚫는 자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleKeystone.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -26071,7 +26071,7 @@ return {
         },
         [17569]= {
             ["skill"]= 17569,
-            ["name"]= "Totem and Brand Critical Strike Chance",
+            ["name"]= "토템 및 낙인 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandrange.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance with Totem Skills",
@@ -26092,7 +26092,7 @@ return {
         },
         [33779]= {
             ["skill"]= 33779,
-            ["name"]= "Totem and Brand Damage and Critical Strike Chance",
+            ["name"]= "토템 및 낙인 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandrange.png",
             ["stats"]= {
                 "10% increased Totem Damage",
@@ -26117,7 +26117,7 @@ return {
         },
         [45366]= {
             ["skill"]= 45366,
-            ["name"]= "Totem and Brand Critical Strike Multiplier",
+            ["name"]= "토템 및 낙인 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "+20% to Critical Strike Multiplier with Totem Skills",
@@ -26138,7 +26138,7 @@ return {
         },
         [20142]= {
             ["skill"]= 20142,
-            ["name"]= "Totem and Brand Critical Strike Multiplier",
+            ["name"]= "토템 및 낙인 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbranddamage.png",
             ["stats"]= {
                 "+20% to Critical Strike Multiplier with Totem Skills",
@@ -26159,7 +26159,7 @@ return {
         },
         [44562]= {
             ["skill"]= 44562,
-            ["name"]= "Shaman's Dominion",
+            ["name"]= "주술사의 지배",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemandbrandrange.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26189,7 +26189,7 @@ return {
         },
         [59036]= {
             ["skill"]= 59036,
-            ["name"]= "Totem Mastery",
+            ["name"]= "토템 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBrandTotem.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -26201,7 +26201,7 @@ return {
         },
         [14003]= {
             ["skill"]= 14003,
-            ["name"]= "Curse and Power Charge Mastery",
+            ["name"]= "저주, 권능 충전 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseChargeMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -26213,7 +26213,7 @@ return {
         },
         [20077]= {
             ["skill"]= 20077,
-            ["name"]= "Hex Area of Effect and Faster Doom Gain",
+            ["name"]= "저주 효과 범위, 파멸 획득 가속",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "10% increased Area of Effect of Hex Skills",
@@ -26231,7 +26231,7 @@ return {
         },
         [39986]= {
             ["skill"]= 39986,
-            ["name"]= "Hex Master",
+            ["name"]= "사술의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneHexMaster.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26254,7 +26254,7 @@ return {
         },
         [42436]= {
             ["skill"]= 42436,
-            ["name"]= "Hex Area of Effect and Faster Doom Gain",
+            ["name"]= "저주 효과 범위, 파멸 획득 가속",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "10% increased Area of Effect of Hex Skills",
@@ -26272,7 +26272,7 @@ return {
         },
         [34225]= {
             ["skill"]= 34225,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -26289,7 +26289,7 @@ return {
         },
         [12888]= {
             ["skill"]= 12888,
-            ["name"]= "Mana Regeneration per Power Charge",
+            ["name"]= "권능 충전당 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "8% increased Mana Regeneration Rate per Power Charge"
@@ -26306,7 +26306,7 @@ return {
         },
         [16954]= {
             ["skill"]= 16954,
-            ["name"]= "Critical Strike Chance per Power Charge",
+            ["name"]= "권능 충전당 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "8% increased Critical Strike Chance per Power Charge"
@@ -26323,7 +26323,7 @@ return {
         },
         [12783]= {
             ["skill"]= 12783,
-            ["name"]= "Critical Strike Multiplier per Power Charge",
+            ["name"]= "권능 충전당 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "+5% to Critical Strike Multiplier per Power Charge"
@@ -26340,7 +26340,7 @@ return {
         },
         [9261]= {
             ["skill"]= 9261,
-            ["name"]= "Disciple of the Forbidden",
+            ["name"]= "금지된 자의 신봉자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PowerChargeNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26363,7 +26363,7 @@ return {
         },
         [31875]= {
             ["skill"]= 31875,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -26384,7 +26384,7 @@ return {
         },
         [57053]= {
             ["skill"]= 57053,
-            ["name"]= "Physical Damage Mastery",
+            ["name"]= "물리 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -26396,7 +26396,7 @@ return {
         },
         [59306]= {
             ["skill"]= 59306,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
             ["stats"]= {
                 "14% increased Physical Damage"
@@ -26413,7 +26413,7 @@ return {
         },
         [34207]= {
             ["skill"]= 34207,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "12% increased Physical Damage"
@@ -26431,7 +26431,7 @@ return {
         },
         [19609]= {
             ["skill"]= 19609,
-            ["name"]= "Physical Damage and Physical Damage Over Time Multiplier",
+            ["name"]= "물리 피해, 물리 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimenode3.png",
             ["stats"]= {
                 "+4% to Physical Damage over Time Multiplier",
@@ -26449,7 +26449,7 @@ return {
         },
         [45803]= {
             ["skill"]= 45803,
-            ["name"]= "Veteran Soldier",
+            ["name"]= "노련한 전사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimenotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26472,7 +26472,7 @@ return {
         },
         [28878]= {
             ["skill"]= 28878,
-            ["name"]= "Relentless",
+            ["name"]= "냉혹",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeHybrid.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26494,7 +26494,7 @@ return {
         },
         [50858]= {
             ["skill"]= 50858,
-            ["name"]= "Admonisher",
+            ["name"]= "경고자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AdmonisherNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26517,7 +26517,7 @@ return {
         },
         [61602]= {
             ["skill"]= 61602,
-            ["name"]= "Warcry Speed",
+            ["name"]= "함성 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpeedWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Speed"
@@ -26533,7 +26533,7 @@ return {
         },
         [15451]= {
             ["skill"]= 15451,
-            ["name"]= "Warcry Speed and Cooldown Recovery",
+            ["name"]= "함성 속도, 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpeedWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Speed",
@@ -26551,7 +26551,7 @@ return {
         },
         [50557]= {
             ["skill"]= 50557,
-            ["name"]= "Minion and Damage Mastery",
+            ["name"]= "소환수, 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -26563,7 +26563,7 @@ return {
         },
         [35702]= {
             ["skill"]= 35702,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage"
@@ -26579,7 +26579,7 @@ return {
         },
         [22062]= {
             ["skill"]= 22062,
-            ["name"]= "Minion Damage and Duration",
+            ["name"]= "소환수 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DurationofMinionsNode.png",
             ["stats"]= {
                 "Minions deal 8% increased Damage",
@@ -26597,7 +26597,7 @@ return {
         },
         [15081]= {
             ["skill"]= 15081,
-            ["name"]= "Minion Duration, Attack and Cast Speed",
+            ["name"]= "소환수 지속시간, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DurationofMinionsNode.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -26616,7 +26616,7 @@ return {
         },
         [7688]= {
             ["skill"]= 7688,
-            ["name"]= "Enduring Bond",
+            ["name"]= "지속되는 유대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DurationofMinionsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26643,7 +26643,7 @@ return {
         },
         [29110]= {
             ["skill"]= 29110,
-            ["name"]= "One Hand Mastery",
+            ["name"]= "한손 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupOneHand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -26655,7 +26655,7 @@ return {
         },
         [37887]= {
             ["skill"]= 37887,
-            ["name"]= "One Handed Melee Damage and Life Leech",
+            ["name"]= "한손 근접 피해, 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/OneHandedPhysicalAndLeechNode.png",
             ["stats"]= {
                 "12% increased Physical Damage with One Handed Melee Weapons",
@@ -26679,7 +26679,7 @@ return {
         },
         [17934]= {
             ["skill"]= 17934,
-            ["name"]= "One Handed Melee Damage and Attack Speed",
+            ["name"]= "한손 근접 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/OneHandedPhysicalAndLeechNode.png",
             ["stats"]= {
                 "12% increased Physical Damage with One Handed Melee Weapons",
@@ -26701,7 +26701,7 @@ return {
         },
         [29359]= {
             ["skill"]= 29359,
-            ["name"]= "One Handed Melee Damage and Life Leech",
+            ["name"]= "한손 근접 피해, 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/OneHandedPhysicalAndLeechNode.png",
             ["stats"]= {
                 "12% increased Physical Damage with One Handed Melee Weapons",
@@ -26725,7 +26725,7 @@ return {
         },
         [63727]= {
             ["skill"]= 63727,
-            ["name"]= "Gladiator's Perseverance",
+            ["name"]= "검투사의 인내",
             ["icon"]= "Art/2DArt/SkillIcons/passives/OneHandedPhysicalAndLeechNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -26756,7 +26756,7 @@ return {
         },
         [47251]= {
             ["skill"]= 47251,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26774,7 +26774,7 @@ return {
         },
         [7388]= {
             ["skill"]= 7388,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26793,7 +26793,7 @@ return {
         },
         [36634]= {
             ["skill"]= 36634,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -26807,7 +26807,7 @@ return {
         },
         [30691]= {
             ["skill"]= 30691,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26826,7 +26826,7 @@ return {
         },
         [28475]= {
             ["skill"]= 28475,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -26840,7 +26840,7 @@ return {
         },
         [30733]= {
             ["skill"]= 30733,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -26859,7 +26859,7 @@ return {
         },
         [49178]= {
             ["skill"]= 49178,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -26878,7 +26878,7 @@ return {
         },
         [10490]= {
             ["skill"]= 10490,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26900,7 +26900,7 @@ return {
         },
         [33479]= {
             ["skill"]= 33479,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -26920,7 +26920,7 @@ return {
         },
         [45341]= {
             ["skill"]= 45341,
-            ["name"]= "Axe Damage and Accuracy, Impale Chance",
+            ["name"]= "도끼 피해, 정확도, 꿰뚫기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 12% increased Damage with Hits and Ailments",
@@ -26943,7 +26943,7 @@ return {
         },
         [6043]= {
             ["skill"]= 6043,
-            ["name"]= "Axe Damage and Accuracy, Impale Chance",
+            ["name"]= "도끼 피해, 정확도, 꿰뚫기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 12% increased Damage with Hits and Ailments",
@@ -26966,7 +26966,7 @@ return {
         },
         [50340]= {
             ["skill"]= 50340,
-            ["name"]= "Axe Damage and Accuracy",
+            ["name"]= "도끼 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -26986,7 +26986,7 @@ return {
         },
         [60031]= {
             ["skill"]= 60031,
-            ["name"]= "Harvester of Foes",
+            ["name"]= "적의 수확자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AxeNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27013,7 +27013,7 @@ return {
         },
         [9227]= {
             ["skill"]= 9227,
-            ["name"]= "Axe Mastery",
+            ["name"]= "도끼 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupAxe.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27025,7 +27025,7 @@ return {
         },
         [58541]= {
             ["skill"]= 58541,
-            ["name"]= "Mace Damage",
+            ["name"]= "철퇴 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 12% increased Damage with Hits and Ailments"
@@ -27046,7 +27046,7 @@ return {
         },
         [6633]= {
             ["skill"]= 6633,
-            ["name"]= "Mace Damage and Area of Effect",
+            ["name"]= "철퇴 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 10% increased Damage with Hits and Ailments",
@@ -27066,7 +27066,7 @@ return {
         },
         [24772]= {
             ["skill"]= 24772,
-            ["name"]= "Mace Damage and Area of Effect",
+            ["name"]= "철퇴 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 10% increased Damage with Hits and Ailments",
@@ -27086,7 +27086,7 @@ return {
         },
         [26456]= {
             ["skill"]= 26456,
-            ["name"]= "Mace Damage and Attack Speed",
+            ["name"]= "철퇴 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 8% increased Damage with Hits and Ailments",
@@ -27106,7 +27106,7 @@ return {
         },
         [33141]= {
             ["skill"]= 33141,
-            ["name"]= "Mace Mastery",
+            ["name"]= "철퇴 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMace.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27118,7 +27118,7 @@ return {
         },
         [24721]= {
             ["skill"]= 24721,
-            ["name"]= "Ribcage Crusher",
+            ["name"]= "흉골 분쇄자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodyBludgeon.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27146,7 +27146,7 @@ return {
         },
         [37800]= {
             ["skill"]= 37800,
-            ["name"]= "Life Leech",
+            ["name"]= "생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifegainpertarget.png",
             ["stats"]= {
                 "0.6% of Physical Attack Damage Leeched as Life"
@@ -27167,7 +27167,7 @@ return {
         },
         [29547]= {
             ["skill"]= 29547,
-            ["name"]= "Life Leech",
+            ["name"]= "생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifegainpertarget.png",
             ["stats"]= {
                 "0.4% of Physical Attack Damage Leeched as Life",
@@ -27187,7 +27187,7 @@ return {
         },
         [4378]= {
             ["skill"]= 4378,
-            ["name"]= "Life Leech",
+            ["name"]= "생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifegainpertarget.png",
             ["stats"]= {
                 "10% increased Maximum total Life Recovery per second from Leech",
@@ -27204,7 +27204,7 @@ return {
         },
         [35507]= {
             ["skill"]= 35507,
-            ["name"]= "Life Leech",
+            ["name"]= "생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifegainpertarget.png",
             ["stats"]= {
                 "0.6% of Physical Attack Damage Leeched as Life",
@@ -27225,7 +27225,7 @@ return {
         },
         [22356]= {
             ["skill"]= 22356,
-            ["name"]= "Hematophagy",
+            ["name"]= "식혈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleech.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27253,7 +27253,7 @@ return {
         },
         [29019]= {
             ["skill"]= 29019,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27265,7 +27265,7 @@ return {
         },
         [25714]= {
             ["skill"]= 25714,
-            ["name"]= "Mana Regeneration and Increased Mana Cost",
+            ["name"]= "마나 재생, 마나 비용 증가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedManaCostNode.png",
             ["stats"]= {
                 "10% increased Mana Regeneration Rate",
@@ -27283,7 +27283,7 @@ return {
         },
         [26960]= {
             ["skill"]= 26960,
-            ["name"]= "Forethought",
+            ["name"]= "사전 숙고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedManaCostNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27305,7 +27305,7 @@ return {
         },
         [45680]= {
             ["skill"]= 45680,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -27322,7 +27322,7 @@ return {
         },
         [25237]= {
             ["skill"]= 25237,
-            ["name"]= "Mana Regeneration and Reduced Mana Cost",
+            ["name"]= "마나 재생, 마나 비용 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ReducedManaCostNode.png",
             ["stats"]= {
                 "10% increased Mana Regeneration Rate",
@@ -27340,7 +27340,7 @@ return {
         },
         [4444]= {
             ["skill"]= 4444,
-            ["name"]= "Mana Cost Mastery",
+            ["name"]= "마나 비용 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27352,7 +27352,7 @@ return {
         },
         [10835]= {
             ["skill"]= 10835,
-            ["name"]= "Dreamer",
+            ["name"]= "몽상가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Dreamer.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27375,7 +27375,7 @@ return {
         },
         [29033]= {
             ["skill"]= 29033,
-            ["name"]= "Brand Damage and Range",
+            ["name"]= "낙인 피해, 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["stats"]= {
                 "10% increased Brand Damage",
@@ -27395,7 +27395,7 @@ return {
         },
         [51954]= {
             ["skill"]= 51954,
-            ["name"]= "Brand Damage and Range",
+            ["name"]= "낙인 피해, 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["stats"]= {
                 "10% increased Brand Damage",
@@ -27416,7 +27416,7 @@ return {
         },
         [29861]= {
             ["skill"]= 29861,
-            ["name"]= "Explosive Runes",
+            ["name"]= "폭발 룬",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27442,7 +27442,7 @@ return {
         },
         [29292]= {
             ["skill"]= 29292,
-            ["name"]= "Attack Speed and Rage ",
+            ["name"]= "공격 속도, 격노",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Rage.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -27462,7 +27462,7 @@ return {
         },
         [27718]= {
             ["skill"]= 27718,
-            ["name"]= "Attack Speed and Rage ",
+            ["name"]= "공격 속도, 격노",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Rage.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -27482,7 +27482,7 @@ return {
         },
         [12809]= {
             ["skill"]= 12809,
-            ["name"]= "Berserking",
+            ["name"]= "광폭화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/berserking.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27504,7 +27504,7 @@ return {
         },
         [34191]= {
             ["skill"]= 34191,
-            ["name"]= "Impale Effect and Attack Speed",
+            ["name"]= "꿰뚫기 효과, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImapleNode.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -27522,7 +27522,7 @@ return {
         },
         [60529]= {
             ["skill"]= 60529,
-            ["name"]= "Impale Chance and Physical Attack Damage",
+            ["name"]= "꿰뚫기 확률, 물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleNode2.png",
             ["stats"]= {
                 "12% increased Attack Physical Damage",
@@ -27542,7 +27542,7 @@ return {
         },
         [33582]= {
             ["skill"]= 33582,
-            ["name"]= "Forceful Skewering",
+            ["name"]= "강력한 꿰기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ImpaleNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27571,7 +27571,7 @@ return {
         },
         [51219]= {
             ["skill"]= 51219,
-            ["name"]= "Energy Shield Leech",
+            ["name"]= "에너지 보호막 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "0.3% of Spell Damage Leeched as Energy Shield"
@@ -27591,7 +27591,7 @@ return {
         },
         [13232]= {
             ["skill"]= 13232,
-            ["name"]= "Increased Energy Shield Leeched",
+            ["name"]= "에너지 보호막 흡수량 증가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "30% increased total Recovery per second from Energy Shield Leech"
@@ -27608,7 +27608,7 @@ return {
         },
         [9567]= {
             ["skill"]= 9567,
-            ["name"]= "Light Eater",
+            ["name"]= "빛 포식자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SoulSiphoning.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27634,7 +27634,7 @@ return {
         },
         [47312]= {
             ["skill"]= 47312,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "+3% to all Elemental Resistances",
@@ -27651,7 +27651,7 @@ return {
         },
         [55866]= {
             ["skill"]= 55866,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "+3% to all Elemental Resistances",
@@ -27668,7 +27668,7 @@ return {
         },
         [45317]= {
             ["skill"]= 45317,
-            ["name"]= "Ash, Frost and Storm",
+            ["name"]= "재, 서리, 태풍",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ashfrostandstorm.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27698,7 +27698,7 @@ return {
         },
         [13714]= {
             ["skill"]= 13714,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27715,7 +27715,7 @@ return {
         },
         [19939]= {
             ["skill"]= 19939,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27732,7 +27732,7 @@ return {
         },
         [62021]= {
             ["skill"]= 62021,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27748,7 +27748,7 @@ return {
         },
         [65034]= {
             ["skill"]= 65034,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27766,7 +27766,7 @@ return {
         },
         [65167]= {
             ["skill"]= 65167,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27783,7 +27783,7 @@ return {
         },
         [15073]= {
             ["skill"]= 15073,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27799,7 +27799,7 @@ return {
         },
         [42583]= {
             ["skill"]= 42583,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -27817,7 +27817,7 @@ return {
         },
         [61787]= {
             ["skill"]= 61787,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27829,7 +27829,7 @@ return {
         },
         [55485]= {
             ["skill"]= 55485,
-            ["name"]= "Constitution",
+            ["name"]= "체질",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Constitution.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27852,7 +27852,7 @@ return {
         },
         [12702]= {
             ["skill"]= 12702,
-            ["name"]= "Path of the Warrior",
+            ["name"]= "전사의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Warrior.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27878,7 +27878,7 @@ return {
         },
         [46111]= {
             ["skill"]= 46111,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -27896,7 +27896,7 @@ return {
         },
         [32901]= {
             ["skill"]= 32901,
-            ["name"]= "Damage against Cursed Enemies",
+            ["name"]= "저주받은 적 대상 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "15% increased Damage with Hits and Ailments against Cursed Enemies"
@@ -27913,7 +27913,7 @@ return {
         },
         [32314]= {
             ["skill"]= 32314,
-            ["name"]= "Reduced Reservation of Curse Skills",
+            ["name"]= "저주 스킬 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% reduced Reservation of Curse Aura Skills"
@@ -27930,7 +27930,7 @@ return {
         },
         [34591]= {
             ["skill"]= 34591,
-            ["name"]= "Malicious Intent",
+            ["name"]= "악의적인 의도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -27956,7 +27956,7 @@ return {
         },
         [32295]= {
             ["skill"]= 32295,
-            ["name"]= "Curse Mastery",
+            ["name"]= "저주 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryCurse.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -27968,7 +27968,7 @@ return {
         },
         [24865]= {
             ["skill"]= 24865,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -27989,7 +27989,7 @@ return {
         },
         [63976]= {
             ["skill"]= 63976,
-            ["name"]= "Shaper",
+            ["name"]= "쉐이퍼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Shaper.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28015,7 +28015,7 @@ return {
         },
         [12246]= {
             ["skill"]= 12246,
-            ["name"]= "Shield Spell Damage",
+            ["name"]= "방패 주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "12% increased Spell Damage while holding a Shield"
@@ -28033,7 +28033,7 @@ return {
         },
         [43061]= {
             ["skill"]= 43061,
-            ["name"]= "Shield Spell Damage and Spell Block",
+            ["name"]= "방패 주문 피해, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "+3% Chance to Block Spell Damage while holding a Shield",
@@ -28051,7 +28051,7 @@ return {
         },
         [27323]= {
             ["skill"]= 27323,
-            ["name"]= "Shield Spell Damage and Spell Block",
+            ["name"]= "방패 주문 피해, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "+3% Chance to Block Spell Damage while holding a Shield",
@@ -28069,7 +28069,7 @@ return {
         },
         [22577]= {
             ["skill"]= 22577,
-            ["name"]= "Shield Spell Damage, Block Recovery and Energy Shield",
+            ["name"]= "방패 주문 피해, 막기 회복, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "40% increased Block Recovery",
@@ -28087,7 +28087,7 @@ return {
         },
         [6770]= {
             ["skill"]= 6770,
-            ["name"]= "Arcane Guarding",
+            ["name"]= "비전의 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28112,7 +28112,7 @@ return {
         },
         [39858]= {
             ["skill"]= 39858,
-            ["name"]= "Arcane Shield Mastery",
+            ["name"]= "비전 방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -28124,7 +28124,7 @@ return {
         },
         [4397]= {
             ["skill"]= 4397,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -28144,7 +28144,7 @@ return {
         },
         [25763]= {
             ["skill"]= 25763,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -28161,7 +28161,7 @@ return {
         },
         [61259]= {
             ["skill"]= 61259,
-            ["name"]= "Mastermind of Discord",
+            ["name"]= "불화의 지휘자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/PrimevalForce.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28184,7 +28184,7 @@ return {
         },
         [57197]= {
             ["skill"]= 57197,
-            ["name"]= "Heart of Destruction",
+            ["name"]= "파괴의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/PendulumOfDestruction.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28205,7 +28205,7 @@ return {
         },
         [4917]= {
             ["skill"]= 4917,
-            ["name"]= "Bastion of Elements",
+            ["name"]= "원소의 보루",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/IridescentFlesh.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28224,7 +28224,7 @@ return {
         },
         [47873]= {
             ["skill"]= 47873,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageElementalResistances.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28243,7 +28243,7 @@ return {
         },
         [258]= {
             ["skill"]= 258,
-            ["name"]= "Elemancer",
+            ["name"]= "원소술사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElemancerIcon.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28262,7 +28262,7 @@ return {
         },
         [12738]= {
             ["skill"]= 12738,
-            ["name"]= "Elemental Damage, Fire Damage over Time Multiplier",
+            ["name"]= "원소 피해, 지속 화염 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageFreezeShockIgnite.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28281,7 +28281,7 @@ return {
         },
         [58998]= {
             ["skill"]= 58998,
-            ["name"]= "Elemental Damage, Lightning Ailment Effect",
+            ["name"]= "원소 피해, 번개 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageFreezeShockIgnite.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28303,7 +28303,7 @@ return {
         },
         [12475]= {
             ["skill"]= 12475,
-            ["name"]= "Elemental Damage, Cold Ailment Effect",
+            ["name"]= "원소 피해, 냉기 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageFreezeShockIgnite.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28325,7 +28325,7 @@ return {
         },
         [53123]= {
             ["skill"]= 53123,
-            ["name"]= "Shaper of Flames",
+            ["name"]= "화염의 형성자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/IgniteSpecialisation.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28347,7 +28347,7 @@ return {
         },
         [27038]= {
             ["skill"]= 27038,
-            ["name"]= "Shaper of Storms",
+            ["name"]= "폭풍의 형성자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ShockSpecialisation.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28371,7 +28371,7 @@ return {
         },
         [40810]= {
             ["skill"]= 40810,
-            ["name"]= "Shaper of Winter",
+            ["name"]= "겨울의 형성자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ChillSpecialisation.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28395,7 +28395,7 @@ return {
         },
         [37114]= {
             ["skill"]= 37114,
-            ["name"]= "Elemental Damage, Attack and Cast Speed",
+            ["name"]= "원소 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageAttackCasteSpeed.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28414,7 +28414,7 @@ return {
         },
         [19595]= {
             ["skill"]= 19595,
-            ["name"]= "Elemental Damage, Attack and Cast Speed",
+            ["name"]= "원소 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageAttackCasteSpeed.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28433,7 +28433,7 @@ return {
         },
         [6052]= {
             ["skill"]= 6052,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageElementalResistances.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28452,7 +28452,7 @@ return {
         },
         [54279]= {
             ["skill"]= 54279,
-            ["name"]= "Elemental Damage and Resistances",
+            ["name"]= "원소 피해 및 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/ElementalDamageElementalResistances.png",
             ["ascendancyName"]= "Elementalist",
             ["stats"]= {
@@ -28470,7 +28470,7 @@ return {
         },
         [56461]= {
             ["skill"]= 56461,
-            ["name"]= "Liege of the Primordial",
+            ["name"]= "태고의 군주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Elementalist/LiegeOfThePrimordial.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Elementalist",
@@ -28490,7 +28490,7 @@ return {
         },
         [16023]= {
             ["skill"]= 16023,
-            ["name"]= "Elementalist",
+            ["name"]= "엘리멘탈리스트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Elementalist",
             ["isAscendancyStart"]= true,
@@ -28512,7 +28512,7 @@ return {
         },
         [63027]= {
             ["skill"]= 63027,
-            ["name"]= "Exerted Attack Damage",
+            ["name"]= "격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EmpoweredAttackWarcryNode1.png",
             ["stats"]= {
                 "Exerted Attacks deal 20% increased Damage"
@@ -28529,7 +28529,7 @@ return {
         },
         [65400]= {
             ["skill"]= 65400,
-            ["name"]= "Warcry Cooldown Recovery and Exerted Attack Damage",
+            ["name"]= "함성 재사용 대기시간 회복, 격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EmpoweredAttackWarcryNode1.png",
             ["stats"]= {
                 "12% increased Warcry Cooldown Recovery Rate",
@@ -28547,7 +28547,7 @@ return {
         },
         [36200]= {
             ["skill"]= 36200,
-            ["name"]= "Warcry Speed and Exerted Attack Damage",
+            ["name"]= "함성 속도, 격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EmpoweredAttackWarcryNode1.png",
             ["stats"]= {
                 "15% increased Warcry Speed",
@@ -28565,7 +28565,7 @@ return {
         },
         [34973]= {
             ["skill"]= 34973,
-            ["name"]= "Measured Fury",
+            ["name"]= "절제된 광분",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MeasuredFuryNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28587,7 +28587,7 @@ return {
         },
         [59917]= {
             ["skill"]= 59917,
-            ["name"]= "Warcry Mastery",
+            ["name"]= "함성 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WarcryMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -28599,7 +28599,7 @@ return {
         },
         [34423]= {
             ["skill"]= 34423,
-            ["name"]= "Physical Damage and Reflect Damage Taken",
+            ["name"]= "물리 피해, 반사 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "15% reduced Reflected Physical Damage taken",
@@ -28616,7 +28616,7 @@ return {
         },
         [48118]= {
             ["skill"]= 48118,
-            ["name"]= "Physical Damage and Reflect Damage Taken",
+            ["name"]= "물리 피해, 반사 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "15% reduced Reflected Physical Damage taken",
@@ -28634,7 +28634,7 @@ return {
         },
         [25970]= {
             ["skill"]= 25970,
-            ["name"]= "Risk Awareness",
+            ["name"]= "위험 인식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RiskAwarenessNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28656,7 +28656,7 @@ return {
         },
         [12926]= {
             ["skill"]= 12926,
-            ["name"]= "Iron Grip",
+            ["name"]= "강철 손아귀",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneIronGrip.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -28675,7 +28675,7 @@ return {
         },
         [476]= {
             ["skill"]= 476,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -28694,7 +28694,7 @@ return {
         },
         [61262]= {
             ["skill"]= 61262,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -28715,7 +28715,7 @@ return {
         },
         [38148]= {
             ["skill"]= 38148,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage"
@@ -28731,7 +28731,7 @@ return {
         },
         [12852]= {
             ["skill"]= 12852,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -28750,7 +28750,7 @@ return {
         },
         [4184]= {
             ["skill"]= 4184,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -28769,7 +28769,7 @@ return {
         },
         [44983]= {
             ["skill"]= 44983,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "12% increased Fire Damage"
@@ -28786,7 +28786,7 @@ return {
         },
         [34661]= {
             ["skill"]= 34661,
-            ["name"]= "Fire Walker",
+            ["name"]= "화염 보행자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flameborn.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28810,7 +28810,7 @@ return {
         },
         [44955]= {
             ["skill"]= 44955,
-            ["name"]= "Frost Walker",
+            ["name"]= "서리 보행자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/frostborn.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28835,7 +28835,7 @@ return {
         },
         [7938]= {
             ["skill"]= 7938,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -28856,7 +28856,7 @@ return {
         },
         [33783]= {
             ["skill"]= 33783,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -28874,7 +28874,7 @@ return {
         },
         [1031]= {
             ["skill"]= 1031,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -28894,7 +28894,7 @@ return {
         },
         [58604]= {
             ["skill"]= 58604,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "12% increased Lightning Damage"
@@ -28911,7 +28911,7 @@ return {
         },
         [30225]= {
             ["skill"]= 30225,
-            ["name"]= "Lightning Walker",
+            ["name"]= "번개 보행자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stormborn.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28935,7 +28935,7 @@ return {
         },
         [39085]= {
             ["skill"]= 39085,
-            ["name"]= "Elemental Equilibrium",
+            ["name"]= "원소 균형",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneElementalEquilibrium.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -28954,7 +28954,7 @@ return {
         },
         [21650]= {
             ["skill"]= 21650,
-            ["name"]= "Eternal Youth",
+            ["name"]= "영원한 젊음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EternalYouth.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -28973,7 +28973,7 @@ return {
         },
         [24362]= {
             ["skill"]= 24362,
-            ["name"]= "Deep Thoughts",
+            ["name"]= "깊은 생각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/deepthoughts.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -28998,7 +28998,7 @@ return {
         },
         [21958]= {
             ["skill"]= 21958,
-            ["name"]= "Cruel Preparation",
+            ["name"]= "잔혹한 준비",
             ["icon"]= "Art/2DArt/SkillIcons/passives/thickskin.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29022,7 +29022,7 @@ return {
         },
         [33755]= {
             ["skill"]= 33755,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -29038,7 +29038,7 @@ return {
         },
         [14936]= {
             ["skill"]= 14936,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -29055,7 +29055,7 @@ return {
         },
         [29781]= {
             ["skill"]= 29781,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -29071,7 +29071,7 @@ return {
         },
         [60388]= {
             ["skill"]= 60388,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -29088,7 +29088,7 @@ return {
         },
         [2224]= {
             ["skill"]= 2224,
-            ["name"]= "Mana Mastery",
+            ["name"]= "마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLifeMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -29100,7 +29100,7 @@ return {
         },
         [13191]= {
             ["skill"]= 13191,
-            ["name"]= "Skill Duration",
+            ["name"]= "스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/skillduration.png",
             ["stats"]= {
                 "10% increased Skill Effect Duration"
@@ -29117,7 +29117,7 @@ return {
         },
         [7614]= {
             ["skill"]= 7614,
-            ["name"]= "Skill Duration",
+            ["name"]= "스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/skillduration.png",
             ["stats"]= {
                 "10% increased Skill Effect Duration"
@@ -29133,7 +29133,7 @@ return {
         },
         [1006]= {
             ["skill"]= 1006,
-            ["name"]= "Potency of Will",
+            ["name"]= "의지의 잠재력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/potencyofwill.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29154,7 +29154,7 @@ return {
         },
         [19140]= {
             ["skill"]= 19140,
-            ["name"]= "Totem Life and Placement Speed",
+            ["name"]= "토템 생명력, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemlife.png",
             ["stats"]= {
                 "10% increased Totem Life",
@@ -29171,7 +29171,7 @@ return {
         },
         [7786]= {
             ["skill"]= 7786,
-            ["name"]= "Totem Damage and Attack Speed",
+            ["name"]= "토템 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemattackspeed.png",
             ["stats"]= {
                 "12% increased Totem Damage",
@@ -29189,7 +29189,7 @@ return {
         },
         [55648]= {
             ["skill"]= 55648,
-            ["name"]= "Totem Damage and Attack Speed",
+            ["name"]= "토템 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemattackspeed.png",
             ["stats"]= {
                 "12% increased Totem Damage",
@@ -29206,7 +29206,7 @@ return {
         },
         [46291]= {
             ["skill"]= 46291,
-            ["name"]= "Totem Damage and Placement Speed",
+            ["name"]= "토템 피해, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemdamage.png",
             ["stats"]= {
                 "10% increased Totem Damage",
@@ -29224,7 +29224,7 @@ return {
         },
         [544]= {
             ["skill"]= 544,
-            ["name"]= "Surveillance",
+            ["name"]= "감시",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackTotemOffensive.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29249,7 +29249,7 @@ return {
         },
         [61039]= {
             ["skill"]= 61039,
-            ["name"]= "Panopticon",
+            ["name"]= "원형 감옥",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackTotemMultiple.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29274,7 +29274,7 @@ return {
         },
         [11431]= {
             ["skill"]= 11431,
-            ["name"]= "Totem Life and Physical Damage Reduction",
+            ["name"]= "토템 생명력, 물리 피해 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemlife.png",
             ["stats"]= {
                 "15% increased Totem Life",
@@ -29291,7 +29291,7 @@ return {
         },
         [25818]= {
             ["skill"]= 25818,
-            ["name"]= "Totem Mastery",
+            ["name"]= "토템 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackTotemMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -29303,7 +29303,7 @@ return {
         },
         [30825]= {
             ["skill"]= 30825,
-            ["name"]= "Totem Life and Elemental Resistances",
+            ["name"]= "토템 생명력, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemplacementspeed.png",
             ["stats"]= {
                 "15% increased Totem Life",
@@ -29321,7 +29321,7 @@ return {
         },
         [63150]= {
             ["skill"]= 63150,
-            ["name"]= "Ironwood",
+            ["name"]= "철목",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ironwoodtotem.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29347,7 +29347,7 @@ return {
         },
         [24083]= {
             ["skill"]= 24083,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -29370,7 +29370,7 @@ return {
         },
         [38789]= {
             ["skill"]= 38789,
-            ["name"]= "Fire Damage and Burning Damage Multiplier",
+            ["name"]= "화염 피해, 화상 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "+4% to Fire Damage over Time Multiplier",
@@ -29388,7 +29388,7 @@ return {
         },
         [61804]= {
             ["skill"]= 61804,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "12% increased Fire Damage"
@@ -29406,7 +29406,7 @@ return {
         },
         [14040]= {
             ["skill"]= 14040,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "15% increased Fire Damage"
@@ -29423,7 +29423,7 @@ return {
         },
         [18715]= {
             ["skill"]= 18715,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "15% increased Fire Damage"
@@ -29440,7 +29440,7 @@ return {
         },
         [10893]= {
             ["skill"]= 10893,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "15% increased Fire Damage"
@@ -29456,7 +29456,7 @@ return {
         },
         [42465]= {
             ["skill"]= 42465,
-            ["name"]= "Fire Mastery",
+            ["name"]= "화염 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -29468,7 +29468,7 @@ return {
         },
         [13559]= {
             ["skill"]= 13559,
-            ["name"]= "Fire Damage, Ignite Chance and Ignite Duration",
+            ["name"]= "화염 피해, 점화 확률, 점화 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "10% increased Fire Damage",
@@ -29490,7 +29490,7 @@ return {
         },
         [8624]= {
             ["skill"]= 8624,
-            ["name"]= "Fire Damage and Burning Damage Multiplier",
+            ["name"]= "화염 피해, 화상 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamageint.png",
             ["stats"]= {
                 "+4% to Fire Damage over Time Multiplier",
@@ -29507,7 +29507,7 @@ return {
         },
         [11924]= {
             ["skill"]= 11924,
-            ["name"]= "Breath of Flames",
+            ["name"]= "화염의 숨결",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BreathofFlames2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29534,7 +29534,7 @@ return {
         },
         [60501]= {
             ["skill"]= 60501,
-            ["name"]= "Heart of Flame",
+            ["name"]= "화염의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/hellfire.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29560,7 +29560,7 @@ return {
         },
         [44184]= {
             ["skill"]= 44184,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -29581,7 +29581,7 @@ return {
         },
         [34666]= {
             ["skill"]= 34666,
-            ["name"]= "Destroyer",
+            ["name"]= "파괴자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/executioner.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29610,7 +29610,7 @@ return {
         },
         [43303]= {
             ["skill"]= 43303,
-            ["name"]= "Two Handed Melee Damage",
+            ["name"]= "양손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -29632,7 +29632,7 @@ return {
         },
         [30842]= {
             ["skill"]= 30842,
-            ["name"]= "Two Handed Melee Accuracy",
+            ["name"]= "양손 근접 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracy2h.png",
             ["stats"]= {
                 "12% increased Accuracy Rating with Two Handed Melee Weapons"
@@ -29649,7 +29649,7 @@ return {
         },
         [36972]= {
             ["skill"]= 36972,
-            ["name"]= "Two Handed Attack Speed",
+            ["name"]= "양손 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handedspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed with Two Handed Melee Weapons"
@@ -29666,7 +29666,7 @@ return {
         },
         [43412]= {
             ["skill"]= 43412,
-            ["name"]= "Two Handed Melee Damage",
+            ["name"]= "양손 근접 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/2handeddamage.png",
             ["stats"]= {
                 "12% increased Physical Damage with Two Handed Melee Weapons",
@@ -29688,7 +29688,7 @@ return {
         },
         [29171]= {
             ["skill"]= 29171,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 12% increased maximum Life"
@@ -29706,7 +29706,7 @@ return {
         },
         [30658]= {
             ["skill"]= 30658,
-            ["name"]= "Minion Life and Elemental Resistances",
+            ["name"]= "소환수 생명력, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionElementalResistancesNode.png",
             ["stats"]= {
                 "Minions have 8% increased maximum Life",
@@ -29724,7 +29724,7 @@ return {
         },
         [31103]= {
             ["skill"]= 31103,
-            ["name"]= "Minion Life and Physical Damage Reduction",
+            ["name"]= "소환수 생명력, 물리 피해 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 8% increased maximum Life",
@@ -29742,7 +29742,7 @@ return {
         },
         [39559]= {
             ["skill"]= 39559,
-            ["name"]= "Minion Mastery",
+            ["name"]= "소환수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -29754,7 +29754,7 @@ return {
         },
         [25409]= {
             ["skill"]= 25409,
-            ["name"]= "Indomitable Army",
+            ["name"]= "불굴의 군대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeandResistancesofMinions.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29782,7 +29782,7 @@ return {
         },
         [38450]= {
             ["skill"]= 38450,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -29797,7 +29797,7 @@ return {
         },
         [5560]= {
             ["skill"]= 5560,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -29814,7 +29814,7 @@ return {
         },
         [51291]= {
             ["skill"]= 51291,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -29831,7 +29831,7 @@ return {
         },
         [6230]= {
             ["skill"]= 6230,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -29847,7 +29847,7 @@ return {
         },
         [26740]= {
             ["skill"]= 26740,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.3% of Life per second"
@@ -29864,7 +29864,7 @@ return {
         },
         [38048]= {
             ["skill"]= 38048,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.3% of Life per second"
@@ -29881,7 +29881,7 @@ return {
         },
         [55906]= {
             ["skill"]= 55906,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.4% of Life per second"
@@ -29899,7 +29899,7 @@ return {
         },
         [37690]= {
             ["skill"]= 37690,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -29916,7 +29916,7 @@ return {
         },
         [48423]= {
             ["skill"]= 48423,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -29934,7 +29934,7 @@ return {
         },
         [6204]= {
             ["skill"]= 6204,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -29951,7 +29951,7 @@ return {
         },
         [11420]= {
             ["skill"]= 11420,
-            ["name"]= "Arcanist's Dominion",
+            ["name"]= "신비학자의 지배력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalDominion2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -29983,7 +29983,7 @@ return {
         },
         [1696]= {
             ["skill"]= 1696,
-            ["name"]= "Totem Placement Speed and Duration",
+            ["name"]= "토템 설치 속도, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemattackspeed.png",
             ["stats"]= {
                 "20% increased Totem Duration",
@@ -30000,7 +30000,7 @@ return {
         },
         [25732]= {
             ["skill"]= 25732,
-            ["name"]= "Totem Duration, Attack and Cast Speed",
+            ["name"]= "토템 지속시간, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemattackspeed.png",
             ["stats"]= {
                 "20% increased Totem Duration",
@@ -30019,7 +30019,7 @@ return {
         },
         [63933]= {
             ["skill"]= 63933,
-            ["name"]= "Totemic Zeal",
+            ["name"]= "토템의 열의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/totemiczeal.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30042,7 +30042,7 @@ return {
         },
         [41706]= {
             ["skill"]= 41706,
-            ["name"]= "Endurance Charge Duration",
+            ["name"]= "인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "18% increased Endurance Charge Duration"
@@ -30059,7 +30059,7 @@ return {
         },
         [37584]= {
             ["skill"]= 37584,
-            ["name"]= "Endurance Charge Duration",
+            ["name"]= "인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "18% increased Endurance Charge Duration"
@@ -30076,7 +30076,7 @@ return {
         },
         [17383]= {
             ["skill"]= 17383,
-            ["name"]= "Mana and Aura Area of Effect",
+            ["name"]= "마나, 오라 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -30094,7 +30094,7 @@ return {
         },
         [58545]= {
             ["skill"]= 58545,
-            ["name"]= "Mana and Aura Area of Effect",
+            ["name"]= "마나, 오라 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -30112,7 +30112,7 @@ return {
         },
         [14813]= {
             ["skill"]= 14813,
-            ["name"]= "Revelry",
+            ["name"]= "환락",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Revelry.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30137,7 +30137,7 @@ return {
         },
         [4833]= {
             ["skill"]= 4833,
-            ["name"]= "Vigour",
+            ["name"]= "활력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30160,7 +30160,7 @@ return {
         },
         [62662]= {
             ["skill"]= 62662,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "8% increased Physical Damage"
@@ -30177,7 +30177,7 @@ return {
         },
         [17674]= {
             ["skill"]= 17674,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "8% increased Physical Damage"
@@ -30194,7 +30194,7 @@ return {
         },
         [13782]= {
             ["skill"]= 13782,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "8% increased Physical Damage"
@@ -30212,7 +30212,7 @@ return {
         },
         [46578]= {
             ["skill"]= 46578,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -30235,7 +30235,7 @@ return {
         },
         [28330]= {
             ["skill"]= 28330,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -30254,7 +30254,7 @@ return {
         },
         [57061]= {
             ["skill"]= 57061,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -30272,7 +30272,7 @@ return {
         },
         [22061]= {
             ["skill"]= 22061,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "+25 to maximum Mana",
@@ -30289,7 +30289,7 @@ return {
         },
         [5289]= {
             ["skill"]= 5289,
-            ["name"]= "Battle Rouse",
+            ["name"]= "전투 분발",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BattleRouse.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30316,7 +30316,7 @@ return {
         },
         [34009]= {
             ["skill"]= 34009,
-            ["name"]= "Master of the Arena",
+            ["name"]= "투기장의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Meleerange.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30350,7 +30350,7 @@ return {
         },
         [36542]= {
             ["skill"]= 36542,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -30367,7 +30367,7 @@ return {
         },
         [37569]= {
             ["skill"]= 37569,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -30384,7 +30384,7 @@ return {
         },
         [1957]= {
             ["skill"]= 1957,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "4% increased Cast Speed"
@@ -30401,7 +30401,7 @@ return {
         },
         [739]= {
             ["skill"]= 739,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "4% increased Cast Speed"
@@ -30418,7 +30418,7 @@ return {
         },
         [18866]= {
             ["skill"]= 18866,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "4% increased Cast Speed"
@@ -30435,7 +30435,7 @@ return {
         },
         [21934]= {
             ["skill"]= 21934,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "10% increased Spell Damage"
@@ -30452,7 +30452,7 @@ return {
         },
         [36774]= {
             ["skill"]= 36774,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "10% increased Spell Damage"
@@ -30469,7 +30469,7 @@ return {
         },
         [17579]= {
             ["skill"]= 17579,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "10% increased Spell Damage"
@@ -30486,7 +30486,7 @@ return {
         },
         [34031]= {
             ["skill"]= 34031,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -30508,7 +30508,7 @@ return {
         },
         [40867]= {
             ["skill"]= 40867,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -30526,7 +30526,7 @@ return {
         },
         [42911]= {
             ["skill"]= 42911,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -30544,7 +30544,7 @@ return {
         },
         [22473]= {
             ["skill"]= 22473,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -30562,7 +30562,7 @@ return {
         },
         [26585]= {
             ["skill"]= 26585,
-            ["name"]= "Staff Spell Damage and Chaos Resistance",
+            ["name"]= "지팡이 주문 피해, 카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeDefensive.png",
             ["stats"]= {
                 "12% increased Spell Damage while wielding a Staff",
@@ -30582,7 +30582,7 @@ return {
         },
         [40075]= {
             ["skill"]= 40075,
-            ["name"]= "Staff Spell Damage",
+            ["name"]= "지팡이 주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeOffensive.png",
             ["stats"]= {
                 "12% increased Spell Damage while wielding a Staff"
@@ -30603,7 +30603,7 @@ return {
         },
         [49534]= {
             ["skill"]= 49534,
-            ["name"]= "Staff Spell Damage and Spell Block",
+            ["name"]= "지팡이 주문 피해, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeDefensive.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while wielding a Staff",
@@ -30623,7 +30623,7 @@ return {
         },
         [42485]= {
             ["skill"]= 42485,
-            ["name"]= "Staff Spell Damage and Block",
+            ["name"]= "지팡이 주문 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNodeDefensive.png",
             ["stats"]= {
                 "10% increased Spell Damage while wielding a Staff",
@@ -30644,7 +30644,7 @@ return {
         },
         [7918]= {
             ["skill"]= 7918,
-            ["name"]= "Enigmatic Defence",
+            ["name"]= "수수께끼의 방어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30674,7 +30674,7 @@ return {
         },
         [6861]= {
             ["skill"]= 6861,
-            ["name"]= "Arcane Staff Mastery",
+            ["name"]= "비전 지팡이 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StaffMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -30686,7 +30686,7 @@ return {
         },
         [39211]= {
             ["skill"]= 39211,
-            ["name"]= "Physical Attack Damage",
+            ["name"]= "물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "14% increased Attack Physical Damage"
@@ -30702,7 +30702,7 @@ return {
         },
         [51856]= {
             ["skill"]= 51856,
-            ["name"]= "Physical Attack Damage",
+            ["name"]= "물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "12% increased Attack Physical Damage"
@@ -30720,7 +30720,7 @@ return {
         },
         [48513]= {
             ["skill"]= 48513,
-            ["name"]= "Physical Attack Damage",
+            ["name"]= "물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagemelee.png",
             ["stats"]= {
                 "14% increased Attack Physical Damage"
@@ -30737,7 +30737,7 @@ return {
         },
         [5612]= {
             ["skill"]= 5612,
-            ["name"]= "Physical Attack Damage",
+            ["name"]= "물리 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "12% increased Attack Physical Damage"
@@ -30755,7 +30755,7 @@ return {
         },
         [53493]= {
             ["skill"]= 53493,
-            ["name"]= "Annihilation",
+            ["name"]= "전멸",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Annihilation.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30777,7 +30777,7 @@ return {
         },
         [4270]= {
             ["skill"]= 4270,
-            ["name"]= "Brand Duration",
+            ["name"]= "낙인 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand2.png",
             ["stats"]= {
                 "Brand Skills have 15% increased Duration"
@@ -30794,7 +30794,7 @@ return {
         },
         [64355]= {
             ["skill"]= 64355,
-            ["name"]= "Brand Equity",
+            ["name"]= "낙인 자산",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30818,7 +30818,7 @@ return {
         },
         [52655]= {
             ["skill"]= 52655,
-            ["name"]= "Brand Duration",
+            ["name"]= "낙인 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand2.png",
             ["stats"]= {
                 "Brand Skills have 15% increased Duration"
@@ -30835,7 +30835,7 @@ return {
         },
         [23614]= {
             ["skill"]= 23614,
-            ["name"]= "Brand Mastery",
+            ["name"]= "낙인 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBrand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -30847,7 +30847,7 @@ return {
         },
         [35035]= {
             ["skill"]= 35035,
-            ["name"]= "Brand Recall Cooldown Recovery",
+            ["name"]= "낙인 소환 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand2.png",
             ["stats"]= {
                 "Brand Recall has 15% increased Cooldown Recovery Rate"
@@ -30864,7 +30864,7 @@ return {
         },
         [10073]= {
             ["skill"]= 10073,
-            ["name"]= "Armour and Guard Skill Cooldown Recovery",
+            ["name"]= "방어도, 방어 스킬 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "12% increased Armour",
@@ -30881,7 +30881,7 @@ return {
         },
         [49147]= {
             ["skill"]= 49147,
-            ["name"]= "Guard Skill Cooldown Recovery and Duration",
+            ["name"]= "방어 스킬 재사용 대기시간 회복, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dmgreduction.png",
             ["stats"]= {
                 "Guard Skills have 15% increased Cooldown Recovery Rate",
@@ -30899,7 +30899,7 @@ return {
         },
         [49416]= {
             ["skill"]= 49416,
-            ["name"]= "Adamant",
+            ["name"]= "단호함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourGuardsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -30923,7 +30923,7 @@ return {
         },
         [44723]= {
             ["skill"]= 44723,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance for Spells"
@@ -30941,7 +30941,7 @@ return {
         },
         [1346]= {
             ["skill"]= 1346,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance for Spells"
@@ -30959,7 +30959,7 @@ return {
         },
         [16790]= {
             ["skill"]= 16790,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance for Spells"
@@ -30977,7 +30977,7 @@ return {
         },
         [33296]= {
             ["skill"]= 33296,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "12% increased Spell Damage"
@@ -30995,7 +30995,7 @@ return {
         },
         [19782]= {
             ["skill"]= 19782,
-            ["name"]= "Defences with Shield",
+            ["name"]= "방패 착용 시 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "40% increased Defences from Equipped Shield"
@@ -31015,7 +31015,7 @@ return {
         },
         [12236]= {
             ["skill"]= 12236,
-            ["name"]= "Attack Damage with Shield",
+            ["name"]= "방패 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while holding a Shield"
@@ -31033,7 +31033,7 @@ return {
         },
         [46730]= {
             ["skill"]= 46730,
-            ["name"]= "Attack Damage with Shield",
+            ["name"]= "방패 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while holding a Shield"
@@ -31050,7 +31050,7 @@ return {
         },
         [25324]= {
             ["skill"]= 25324,
-            ["name"]= "Attack Damage with Shield",
+            ["name"]= "방패 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while holding a Shield"
@@ -31068,7 +31068,7 @@ return {
         },
         [49538]= {
             ["skill"]= 49538,
-            ["name"]= "Defiance",
+            ["name"]= "저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldwall.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31096,7 +31096,7 @@ return {
         },
         [15167]= {
             ["skill"]= 15167,
-            ["name"]= "Golem Life and Buff Effect",
+            ["name"]= "골렘 생명력, 버프 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GolemsNode.png",
             ["stats"]= {
                 "20% increased Effect of Buffs granted by your Golems",
@@ -31113,7 +31113,7 @@ return {
         },
         [24872]= {
             ["skill"]= 24872,
-            ["name"]= "Golem Life and Buff Effect",
+            ["name"]= "골렘 생명력, 버프 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GolemsNode.png",
             ["stats"]= {
                 "20% increased Effect of Buffs granted by your Golems",
@@ -31131,7 +31131,7 @@ return {
         },
         [34506]= {
             ["skill"]= 34506,
-            ["name"]= "Golem Commander",
+            ["name"]= "골렘 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GolemsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31155,7 +31155,7 @@ return {
         },
         [6982]= {
             ["skill"]= 6982,
-            ["name"]= "Armour and Evasion, Taunt Duration",
+            ["name"]= "방어도 및 회피, 도발 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnETaunt.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31177,7 +31177,7 @@ return {
         },
         [56967]= {
             ["skill"]= 56967,
-            ["name"]= "Worthy Foe",
+            ["name"]= "호적수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/WorthyFoe.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31195,7 +31195,7 @@ return {
         },
         [11412]= {
             ["skill"]= 11412,
-            ["name"]= "Inspirational",
+            ["name"]= "격려",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/Inpirational.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31215,7 +31215,7 @@ return {
         },
         [27604]= {
             ["skill"]= 27604,
-            ["name"]= "First to Strike, Last to Fall",
+            ["name"]= "선수필승",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/FirstStrikeLastFall.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31240,7 +31240,7 @@ return {
         },
         [41433]= {
             ["skill"]= 41433,
-            ["name"]= "Armour and Evasion, Impale Chance",
+            ["name"]= "방어도 및 회피, 꿰뚫기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/ImpalePassive.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31262,7 +31262,7 @@ return {
         },
         [13374]= {
             ["skill"]= 13374,
-            ["name"]= "Master of Metal",
+            ["name"]= "금속의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/ImpalePassiveNotable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31281,7 +31281,7 @@ return {
         },
         [61478]= {
             ["skill"]= 61478,
-            ["name"]= "Armour and Evasion, Taunt Duration",
+            ["name"]= "방어도 및 회피, 도발 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnETaunt.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31303,7 +31303,7 @@ return {
         },
         [60508]= {
             ["skill"]= 60508,
-            ["name"]= "Armour and Evasion, Attack Damage while Fortified",
+            ["name"]= "방어도 및 회피, 방어 상승 상태에서 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnEFortify.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31322,7 +31322,7 @@ return {
         },
         [35185]= {
             ["skill"]= 35185,
-            ["name"]= "Armour and Evasion, Attack Damage while Fortified",
+            ["name"]= "방어도 및 회피, 방어 상승 상태에서 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnEFortify.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31341,7 +31341,7 @@ return {
         },
         [25111]= {
             ["skill"]= 25111,
-            ["name"]= "Armour and Evasion, Aura Effect",
+            ["name"]= "방어도 및 회피, 오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnEAura.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31360,7 +31360,7 @@ return {
         },
         [43725]= {
             ["skill"]= 43725,
-            ["name"]= "Armour and Evasion, Attack Damage",
+            ["name"]= "방어도 및 회피, 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/AnEAttDamage.png",
             ["ascendancyName"]= "Champion",
             ["stats"]= {
@@ -31379,7 +31379,7 @@ return {
         },
         [31700]= {
             ["skill"]= 31700,
-            ["name"]= "Fortitude",
+            ["name"]= "강건함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/Fortitude.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31399,7 +31399,7 @@ return {
         },
         [33940]= {
             ["skill"]= 33940,
-            ["name"]= "Unstoppable Hero",
+            ["name"]= "무적의 영웅",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/Unstopable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31420,7 +31420,7 @@ return {
         },
         [35750]= {
             ["skill"]= 35750,
-            ["name"]= "Conqueror",
+            ["name"]= "정복자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Champion/Conqueror.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Champion",
@@ -31446,7 +31446,7 @@ return {
         },
         [24984]= {
             ["skill"]= 24984,
-            ["name"]= "Champion",
+            ["name"]= "챔피언",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Champion",
             ["isAscendancyStart"]= true,
@@ -31467,7 +31467,7 @@ return {
         },
         [14211]= {
             ["skill"]= 14211,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -31484,7 +31484,7 @@ return {
         },
         [42731]= {
             ["skill"]= 42731,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -31501,7 +31501,7 @@ return {
         },
         [14182]= {
             ["skill"]= 14182,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -31518,7 +31518,7 @@ return {
         },
         [11430]= {
             ["skill"]= 11430,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -31535,7 +31535,7 @@ return {
         },
         [13322]= {
             ["skill"]= 13322,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -31552,7 +31552,7 @@ return {
         },
         [128]= {
             ["skill"]= 128,
-            ["name"]= "Energy Shield Mastery",
+            ["name"]= "에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -31564,7 +31564,7 @@ return {
         },
         [3452]= {
             ["skill"]= 3452,
-            ["name"]= "Foresight",
+            ["name"]= "선견지명",
             ["icon"]= "Art/2DArt/SkillIcons/passives/foresight.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31588,7 +31588,7 @@ return {
         },
         [37078]= {
             ["skill"]= 37078,
-            ["name"]= "Path of the Savant",
+            ["name"]= "학자의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SavantPath.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31614,7 +31614,7 @@ return {
         },
         [22497]= {
             ["skill"]= 22497,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed"
@@ -31630,7 +31630,7 @@ return {
         },
         [8643]= {
             ["skill"]= 8643,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed"
@@ -31648,7 +31648,7 @@ return {
         },
         [63845]= {
             ["skill"]= 63845,
-            ["name"]= "Cast Speed",
+            ["name"]= "시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed"
@@ -31664,7 +31664,7 @@ return {
         },
         [19144]= {
             ["skill"]= 19144,
-            ["name"]= "Sentinel",
+            ["name"]= "파수꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Sentinel.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31690,7 +31690,7 @@ return {
         },
         [16246]= {
             ["skill"]= 16246,
-            ["name"]= "Tranquility",
+            ["name"]= "평온",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SoulPact.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -31715,7 +31715,7 @@ return {
         },
         [57226]= {
             ["skill"]= 57226,
-            ["name"]= "Energy Shield and Mana Regeneration",
+            ["name"]= "에너지 보호막, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+14 to maximum Energy Shield",
@@ -31735,7 +31735,7 @@ return {
         },
         [57264]= {
             ["skill"]= 57264,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "16% increased Spell Damage"
@@ -31754,7 +31754,7 @@ return {
         },
         [54447]= {
             ["skill"]= 54447,
-            ["name"]= "WITCH",
+            ["name"]= "위치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blankInt.png",
             ["stats"]= {},
             ["classStartIndex"]= 3,
@@ -31773,7 +31773,7 @@ return {
         },
         [35568]= {
             ["skill"]= 35568,
-            ["name"]= "Armour, Evasion and Life",
+            ["name"]= "방어도, 회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeArmourAndEvasion.png",
             ["stats"]= {
                 "6% increased Evasion Rating and Armour",
@@ -31793,7 +31793,7 @@ return {
         },
         [59718]= {
             ["skill"]= 59718,
-            ["name"]= "Armour, Evasion and Life",
+            ["name"]= "방어도, 회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeArmourAndEvasion.png",
             ["stats"]= {
                 "6% increased Evasion Rating and Armour",
@@ -31810,7 +31810,7 @@ return {
         },
         [50306]= {
             ["skill"]= 50306,
-            ["name"]= "Armour, Evasion and Life",
+            ["name"]= "방어도, 회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeArmourAndEvasion.png",
             ["stats"]= {
                 "6% increased Evasion Rating and Armour",
@@ -31828,7 +31828,7 @@ return {
         },
         [56001]= {
             ["skill"]= 56001,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -31848,7 +31848,7 @@ return {
         },
         [18302]= {
             ["skill"]= 18302,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -31864,7 +31864,7 @@ return {
         },
         [25933]= {
             ["skill"]= 25933,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -31880,7 +31880,7 @@ return {
         },
         [48438]= {
             ["skill"]= 48438,
-            ["name"]= "Bravery",
+            ["name"]= "기개",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeArmourAndEvasion.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31903,7 +31903,7 @@ return {
         },
         [50360]= {
             ["skill"]= 50360,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -31920,7 +31920,7 @@ return {
         },
         [28265]= {
             ["skill"]= 28265,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -31937,7 +31937,7 @@ return {
         },
         [54776]= {
             ["skill"]= 54776,
-            ["name"]= "Mana Flows",
+            ["name"]= "마나의 흐름",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manaconduit.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -31963,7 +31963,7 @@ return {
         },
         [2292]= {
             ["skill"]= 2292,
-            ["name"]= "Mana and Life",
+            ["name"]= "마나, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -31981,7 +31981,7 @@ return {
         },
         [48362]= {
             ["skill"]= 48362,
-            ["name"]= "Mana and Life",
+            ["name"]= "마나, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "5% increased maximum Life",
@@ -31999,7 +31999,7 @@ return {
         },
         [27203]= {
             ["skill"]= 27203,
-            ["name"]= "Heart and Soul",
+            ["name"]= "심장과 영혼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeartandSoul.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32022,7 +32022,7 @@ return {
         },
         [11659]= {
             ["skill"]= 11659,
-            ["name"]= "Avoid Interruption while Casting, Strength and Dexterity",
+            ["name"]= "시전 중 방해 회피, 힘, 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castavoidinterruption.png",
             ["grantedStrength"]= 10,
             ["grantedDexterity"]= 10,
@@ -32041,7 +32041,7 @@ return {
         },
         [11128]= {
             ["skill"]= 11128,
-            ["name"]= "Avoid Interruption while Casting, Strength and Dexterity",
+            ["name"]= "시전 중 방해 회피, 힘, 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castavoidinterruption.png",
             ["grantedStrength"]= 10,
             ["grantedDexterity"]= 10,
@@ -32061,7 +32061,7 @@ return {
         },
         [8135]= {
             ["skill"]= 8135,
-            ["name"]= "Practical Application",
+            ["name"]= "현실적 응용",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castavoidinterruption.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32087,7 +32087,7 @@ return {
         },
         [39725]= {
             ["skill"]= 39725,
-            ["name"]= "Attack Speed and Accuracy",
+            ["name"]= "공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "6% increased Attack Speed",
@@ -32107,7 +32107,7 @@ return {
         },
         [50986]= {
             ["skill"]= 50986,
-            ["name"]= "DUELIST",
+            ["name"]= "듀얼리스트",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwield.png",
             ["stats"]= {},
             ["classStartIndex"]= 4,
@@ -32126,7 +32126,7 @@ return {
         },
         [47389]= {
             ["skill"]= 47389,
-            ["name"]= "Physical Attack Damage and Life",
+            ["name"]= "물리 공격 피해, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "14% increased Attack Physical Damage",
@@ -32146,7 +32146,7 @@ return {
         },
         [16544]= {
             ["skill"]= 16544,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -32168,7 +32168,7 @@ return {
         },
         [27611]= {
             ["skill"]= 27611,
-            ["name"]= "Lord of the Dead",
+            ["name"]= "망자의 군주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lordofthedead.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32194,7 +32194,7 @@ return {
         },
         [60554]= {
             ["skill"]= 60554,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamage.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage"
@@ -32212,7 +32212,7 @@ return {
         },
         [32024]= {
             ["skill"]= 32024,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionlife.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life"
@@ -32230,7 +32230,7 @@ return {
         },
         [15144]= {
             ["skill"]= 15144,
-            ["name"]= "Attack Speed and Dexterity",
+            ["name"]= "공격 속도, 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["grantedDexterity"]= 5,
             ["stats"]= {
@@ -32251,7 +32251,7 @@ return {
         },
         [55373]= {
             ["skill"]= 55373,
-            ["name"]= "Life and Strength",
+            ["name"]= "생명력, 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["grantedStrength"]= 5,
             ["stats"]= {
@@ -32270,7 +32270,7 @@ return {
         },
         [2151]= {
             ["skill"]= 2151,
-            ["name"]= "Mana Regeneration and Intelligence",
+            ["name"]= "마나 재생, 지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manaregeneration.png",
             ["grantedIntelligence"]= 5,
             ["stats"]= {
@@ -32291,7 +32291,7 @@ return {
         },
         [48828]= {
             ["skill"]= 48828,
-            ["name"]= "Physical Damage and Strength",
+            ["name"]= "물리 피해, 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["grantedStrength"]= 5,
             ["stats"]= {
@@ -32311,7 +32311,7 @@ return {
         },
         [62103]= {
             ["skill"]= 62103,
-            ["name"]= "Projectile Damage and Dexterity",
+            ["name"]= "투사체 피해, 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["grantedDexterity"]= 5,
             ["stats"]= {
@@ -32330,7 +32330,7 @@ return {
         },
         [58833]= {
             ["skill"]= 58833,
-            ["name"]= "Seven",
+            ["name"]= "일곱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/tempdex.png",
             ["stats"]= {},
             ["classStartIndex"]= 0,
@@ -32351,7 +32351,7 @@ return {
         },
         [47062]= {
             ["skill"]= 47062,
-            ["name"]= "Spell Damage and Intelligence",
+            ["name"]= "주문 피해, 지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["grantedIntelligence"]= 5,
             ["stats"]= {
@@ -32370,7 +32370,7 @@ return {
         },
         [18103]= {
             ["skill"]= 18103,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -32387,7 +32387,7 @@ return {
         },
         [1325]= {
             ["skill"]= 1325,
-            ["name"]= "Golem's Blood",
+            ["name"]= "골렘의 피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/golemsblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32411,7 +32411,7 @@ return {
         },
         [54127]= {
             ["skill"]= 54127,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -32427,7 +32427,7 @@ return {
         },
         [29933]= {
             ["skill"]= 29933,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -32444,7 +32444,7 @@ return {
         },
         [31471]= {
             ["skill"]= 31471,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -32461,7 +32461,7 @@ return {
         },
         [11859]= {
             ["skill"]= 11859,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -32479,7 +32479,7 @@ return {
         },
         [19635]= {
             ["skill"]= 19635,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -32504,7 +32504,7 @@ return {
         },
         [7903]= {
             ["skill"]= 7903,
-            ["name"]= "Block and Block Recovery",
+            ["name"]= "막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -32520,7 +32520,7 @@ return {
         },
         [20310]= {
             ["skill"]= 20310,
-            ["name"]= "Block and Block Recovery",
+            ["name"]= "막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -32538,7 +32538,7 @@ return {
         },
         [45887]= {
             ["skill"]= 45887,
-            ["name"]= "Block and Block Recovery",
+            ["name"]= "막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -32556,7 +32556,7 @@ return {
         },
         [36881]= {
             ["skill"]= 36881,
-            ["name"]= "Cold Resistance",
+            ["name"]= "냉기 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/coldresist.png",
             ["stats"]= {
                 "+18% to Cold Resistance"
@@ -32574,7 +32574,7 @@ return {
         },
         [33508]= {
             ["skill"]= 33508,
-            ["name"]= "Fire Resistance",
+            ["name"]= "화염 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/fireresist.png",
             ["stats"]= {
                 "+18% to Fire Resistance"
@@ -32591,7 +32591,7 @@ return {
         },
         [31683]= {
             ["skill"]= 31683,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -32607,7 +32607,7 @@ return {
         },
         [35503]= {
             ["skill"]= 35503,
-            ["name"]= "Lightning Resistance",
+            ["name"]= "번개 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningstr.png",
             ["stats"]= {
                 "+18% to Lightning Resistance"
@@ -32624,7 +32624,7 @@ return {
         },
         [43162]= {
             ["skill"]= 43162,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "6% increased Projectile Damage"
@@ -32642,7 +32642,7 @@ return {
         },
         [39773]= {
             ["skill"]= 39773,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "6% increased Projectile Damage"
@@ -32659,7 +32659,7 @@ return {
         },
         [23122]= {
             ["skill"]= 23122,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "6% increased Projectile Damage"
@@ -32675,7 +32675,7 @@ return {
         },
         [57011]= {
             ["skill"]= 57011,
-            ["name"]= "Stun Duration per Endurance Charge",
+            ["name"]= "인내 충전당 기절 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "5% increased Stun Duration on Enemies per Endurance Charge"
@@ -32692,7 +32692,7 @@ return {
         },
         [65485]= {
             ["skill"]= 65485,
-            ["name"]= "Life Regeneration per Endurance Charge",
+            ["name"]= "인내 충전당 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "Regenerate 0.2% of Life per second per Endurance Charge"
@@ -32709,7 +32709,7 @@ return {
         },
         [32690]= {
             ["skill"]= 32690,
-            ["name"]= "Area of Effect per Endurance Charge",
+            ["name"]= "인내 충전당 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargestr.png",
             ["stats"]= {
                 "3% increased Area of Effect per Endurance Charge"
@@ -32726,7 +32726,7 @@ return {
         },
         [64882]= {
             ["skill"]= 64882,
-            ["name"]= "Disciple of the Unyielding",
+            ["name"]= "완고한 자의 신봉자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnduranceChargeNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32749,7 +32749,7 @@ return {
         },
         [23951]= {
             ["skill"]= 23951,
-            ["name"]= "Movement Speed per Frenzy Charge",
+            ["name"]= "격분 충전당 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "2% increased Movement Speed per Frenzy Charge"
@@ -32766,7 +32766,7 @@ return {
         },
         [57449]= {
             ["skill"]= 57449,
-            ["name"]= "Evasion per Frenzy Charge",
+            ["name"]= "격분 충전당 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "5% increased Evasion Rating per Frenzy Charge"
@@ -32783,7 +32783,7 @@ return {
         },
         [16213]= {
             ["skill"]= 16213,
-            ["name"]= "Attack Speed per Frenzy Charge",
+            ["name"]= "격분 충전당 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "2% increased Attack Speed per Frenzy Charge"
@@ -32800,7 +32800,7 @@ return {
         },
         [58921]= {
             ["skill"]= 58921,
-            ["name"]= "Disciple of the Slaughter",
+            ["name"]= "살육의 신봉자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FrenzyChargeNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32823,7 +32823,7 @@ return {
         },
         [7013]= {
             ["skill"]= 7013,
-            ["name"]= "Frenzy and Endurance Charge Mastery",
+            ["name"]= "격분, 인내 충전 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnduranceFrenzyChargeMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -32835,7 +32835,7 @@ return {
         },
         [15117]= {
             ["skill"]= 15117,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -32852,7 +32852,7 @@ return {
         },
         [53279]= {
             ["skill"]= 53279,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -32870,7 +32870,7 @@ return {
         },
         [61419]= {
             ["skill"]= 61419,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -32886,7 +32886,7 @@ return {
         },
         [20528]= {
             ["skill"]= 20528,
-            ["name"]= "Instability",
+            ["name"]= "불안정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -32909,7 +32909,7 @@ return {
         },
         [8302]= {
             ["skill"]= 8302,
-            ["name"]= "Power Charge Duration",
+            ["name"]= "권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "18% increased Power Charge Duration"
@@ -32926,7 +32926,7 @@ return {
         },
         [56158]= {
             ["skill"]= 56158,
-            ["name"]= "Spell Damage per Power Charge",
+            ["name"]= "권능 충전당 주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "4% increased Spell Damage per Power Charge"
@@ -32942,7 +32942,7 @@ return {
         },
         [32431]= {
             ["skill"]= 32431,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "12% increased Lightning Damage"
@@ -32960,7 +32960,7 @@ return {
         },
         [49588]= {
             ["skill"]= 49588,
-            ["name"]= "Lightning Damage and Shock Chance",
+            ["name"]= "번개 피해, 감전 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Lightning Damage",
@@ -32981,7 +32981,7 @@ return {
         },
         [36121]= {
             ["skill"]= 36121,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "15% increased Lightning Damage"
@@ -32997,7 +32997,7 @@ return {
         },
         [55647]= {
             ["skill"]= 55647,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "15% increased Lightning Damage"
@@ -33014,7 +33014,7 @@ return {
         },
         [57362]= {
             ["skill"]= 57362,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "15% increased Lightning Damage"
@@ -33031,7 +33031,7 @@ return {
         },
         [44355]= {
             ["skill"]= 44355,
-            ["name"]= "Lightning Mastery",
+            ["name"]= "번개 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLightning.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -33043,7 +33043,7 @@ return {
         },
         [61264]= {
             ["skill"]= 61264,
-            ["name"]= "Lightning Damage and Lightning Ailment Effect",
+            ["name"]= "번개 피해, 번개 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Lightning Damage",
@@ -33064,7 +33064,7 @@ return {
         },
         [46469]= {
             ["skill"]= 46469,
-            ["name"]= "Lightning Damage and Lightning Ailment Duration",
+            ["name"]= "번개 피해, 번개 상태 이상 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Lightning Damage",
@@ -33084,7 +33084,7 @@ return {
         },
         [11645]= {
             ["skill"]= 11645,
-            ["name"]= "Breath of Lightning",
+            ["name"]= "번개의 숨결",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BreathofLightening2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33112,7 +33112,7 @@ return {
         },
         [56716]= {
             ["skill"]= 56716,
-            ["name"]= "Heart of Thunder",
+            ["name"]= "천둥의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33138,7 +33138,7 @@ return {
         },
         [4367]= {
             ["skill"]= 4367,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -33163,7 +33163,7 @@ return {
         },
         [62596]= {
             ["skill"]= 62596,
-            ["name"]= "Mystic Talents",
+            ["name"]= "신비한 재능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EyesOfTheSavant.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -33187,7 +33187,7 @@ return {
         },
         [3554]= {
             ["skill"]= 3554,
-            ["name"]= "Essence Glutton",
+            ["name"]= "에센스 포식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/EssenceGlutton.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -33207,7 +33207,7 @@ return {
         },
         [40126]= {
             ["skill"]= 40126,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -33224,7 +33224,7 @@ return {
         },
         [3359]= {
             ["skill"]= 3359,
-            ["name"]= "Curse Cast Speed",
+            ["name"]= "저주 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "Curse Skills have 10% increased Cast Speed"
@@ -33241,7 +33241,7 @@ return {
         },
         [15400]= {
             ["skill"]= 15400,
-            ["name"]= "Skittering Runes",
+            ["name"]= "달리는 룬 문자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SkitteringRunes.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33263,7 +33263,7 @@ return {
         },
         [25456]= {
             ["skill"]= 25456,
-            ["name"]= "Dervish",
+            ["name"]= "수도승",
             ["icon"]= "Art/2DArt/SkillIcons/passives/bladebarrier.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33288,7 +33288,7 @@ return {
         },
         [3009]= {
             ["skill"]= 3009,
-            ["name"]= "Dual Wield Accuracy",
+            ["name"]= "쌍수 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldaccuracy.png",
             ["stats"]= {
                 "12% increased Accuracy Rating while Dual Wielding"
@@ -33305,7 +33305,7 @@ return {
         },
         [24641]= {
             ["skill"]= 24641,
-            ["name"]= "Dual Wield Damage",
+            ["name"]= "쌍수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwieldgreen.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while Dual Wielding"
@@ -33323,7 +33323,7 @@ return {
         },
         [22423]= {
             ["skill"]= 22423,
-            ["name"]= "Dual Wield Damage",
+            ["name"]= "쌍수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwieldgreen.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while Dual Wielding"
@@ -33341,7 +33341,7 @@ return {
         },
         [4565]= {
             ["skill"]= 4565,
-            ["name"]= "Dual Wield Attack Speed",
+            ["name"]= "쌍수 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddual.png",
             ["stats"]= {
                 "4% increased Attack Speed while Dual Wielding"
@@ -33358,7 +33358,7 @@ return {
         },
         [59650]= {
             ["skill"]= 59650,
-            ["name"]= "Energy Shield and Minion Life",
+            ["name"]= "에너지 보호막, 소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+15 to maximum Energy Shield",
@@ -33376,7 +33376,7 @@ return {
         },
         [38900]= {
             ["skill"]= 38900,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -33394,7 +33394,7 @@ return {
         },
         [38805]= {
             ["skill"]= 38805,
-            ["name"]= "Area of Effect",
+            ["name"]= "효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Area of Effect"
@@ -33412,7 +33412,7 @@ return {
         },
         [21075]= {
             ["skill"]= 21075,
-            ["name"]= "Area of Effect Damage",
+            ["name"]= "효과 범위 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/areaofeffect.png",
             ["stats"]= {
                 "10% increased Area Damage"
@@ -33430,7 +33430,7 @@ return {
         },
         [5415]= {
             ["skill"]= 5415,
-            ["name"]= "Minion Damage, Aura Effect",
+            ["name"]= "소환수 피해, 오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/IncreasedMinionDamageIncreasedSkillDuration.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -33449,7 +33449,7 @@ return {
         },
         [11364]= {
             ["skill"]= 11364,
-            ["name"]= "Poison and Bleed Damage",
+            ["name"]= "독, 출혈 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "20% increased Damage with Bleeding",
@@ -33467,7 +33467,7 @@ return {
         },
         [43684]= {
             ["skill"]= 43684,
-            ["name"]= "Poison and Bleed Chance",
+            ["name"]= "독, 출혈 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "Attacks have 20% chance to cause Bleeding",
@@ -33489,7 +33489,7 @@ return {
         },
         [59766]= {
             ["skill"]= 59766,
-            ["name"]= "Dirty Techniques",
+            ["name"]= "더러운 기술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BleedPoison.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33518,7 +33518,7 @@ return {
         },
         [15711]= {
             ["skill"]= 15711,
-            ["name"]= "Blast Radius",
+            ["name"]= "폭발 반경",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33540,7 +33540,7 @@ return {
         },
         [62694]= {
             ["skill"]= 62694,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -33557,7 +33557,7 @@ return {
         },
         [45227]= {
             ["skill"]= 45227,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed"
@@ -33575,7 +33575,7 @@ return {
         },
         [24377]= {
             ["skill"]= 24377,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed"
@@ -33593,7 +33593,7 @@ return {
         },
         [56803]= {
             ["skill"]= 56803,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -33610,7 +33610,7 @@ return {
         },
         [60090]= {
             ["skill"]= 60090,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -33628,7 +33628,7 @@ return {
         },
         [31383]= {
             ["skill"]= 31383,
-            ["name"]= "Damage while you have a Herald",
+            ["name"]= "전령 보유 시 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldReservationNode.png",
             ["stats"]= {
                 "10% increased Damage while affected by a Herald"
@@ -33645,7 +33645,7 @@ return {
         },
         [60989]= {
             ["skill"]= 60989,
-            ["name"]= "Herald Buff Effect",
+            ["name"]= "전령 버프 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldReservationNode.png",
             ["stats"]= {
                 "10% increased Effect of Herald Buffs on you"
@@ -33662,7 +33662,7 @@ return {
         },
         [63039]= {
             ["skill"]= 63039,
-            ["name"]= "Herald Buff Effect",
+            ["name"]= "전령 버프 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldReservationNode.png",
             ["stats"]= {
                 "10% increased Effect of Herald Buffs on you"
@@ -33679,7 +33679,7 @@ return {
         },
         [58611]= {
             ["skill"]= 58611,
-            ["name"]= "Herald Mastery",
+            ["name"]= "전령 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryHeralds.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -33691,7 +33691,7 @@ return {
         },
         [35233]= {
             ["skill"]= 35233,
-            ["name"]= "Discord Artisan",
+            ["name"]= "불화의 장인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldDamageNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -33715,7 +33715,7 @@ return {
         },
         [51213]= {
             ["skill"]= 51213,
-            ["name"]= "Reduced Reservation of Heralds",
+            ["name"]= "전령 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldReservationNode.png",
             ["stats"]= {
                 "5% reduced Reservation of Herald Skills"
@@ -33732,7 +33732,7 @@ return {
         },
         [36107]= {
             ["skill"]= 36107,
-            ["name"]= "Reduced Reservation of Heralds",
+            ["name"]= "전령 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeraldReservationNode.png",
             ["stats"]= {
                 "5% reduced Reservation of Herald Skills"
@@ -33749,7 +33749,7 @@ return {
         },
         [49806]= {
             ["skill"]= 49806,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -33767,7 +33767,7 @@ return {
         },
         [63649]= {
             ["skill"]= 63649,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -33785,7 +33785,7 @@ return {
         },
         [17201]= {
             ["skill"]= 17201,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -33806,7 +33806,7 @@ return {
         },
         [32210]= {
             ["skill"]= 32210,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -33824,7 +33824,7 @@ return {
         },
         [21678]= {
             ["skill"]= 21678,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -33842,7 +33842,7 @@ return {
         },
         [6949]= {
             ["skill"]= 6949,
-            ["name"]= "Energy Shield and Recovery",
+            ["name"]= "에너지 보호막, 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield",
@@ -33860,7 +33860,7 @@ return {
         },
         [19374]= {
             ["skill"]= 19374,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+10 to maximum Energy Shield",
@@ -33878,7 +33878,7 @@ return {
         },
         [55643]= {
             ["skill"]= 55643,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+10 to maximum Energy Shield",
@@ -33895,7 +33895,7 @@ return {
         },
         [40637]= {
             ["skill"]= 40637,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage"
@@ -33911,7 +33911,7 @@ return {
         },
         [9650]= {
             ["skill"]= 9650,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage"
@@ -33928,7 +33928,7 @@ return {
         },
         [25222]= {
             ["skill"]= 25222,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 4% increased Attack Speed",
@@ -33946,7 +33946,7 @@ return {
         },
         [14604]= {
             ["skill"]= 14604,
-            ["name"]= "Mana Mastery",
+            ["name"]= "마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -33958,7 +33958,7 @@ return {
         },
         [50826]= {
             ["skill"]= 50826,
-            ["name"]= "Mana and Spell Block",
+            ["name"]= "마나, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "2% Chance to Block Spell Damage",
@@ -33977,7 +33977,7 @@ return {
         },
         [18174]= {
             ["skill"]= 18174,
-            ["name"]= "Mystic Bulwark",
+            ["name"]= "신비한 방벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaandSpellBlock.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34000,7 +34000,7 @@ return {
         },
         [43000]= {
             ["skill"]= 43000,
-            ["name"]= "Mana and Spell Damage",
+            ["name"]= "마나, 주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "10% increased Spell Damage",
@@ -34019,7 +34019,7 @@ return {
         },
         [12913]= {
             ["skill"]= 12913,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "+20 to maximum Mana",
@@ -34037,7 +34037,7 @@ return {
         },
         [10115]= {
             ["skill"]= 10115,
-            ["name"]= "Prodigal Perfection",
+            ["name"]= "방탕한 완벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaandSpellDamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34060,7 +34060,7 @@ return {
         },
         [16167]= {
             ["skill"]= 16167,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -34080,7 +34080,7 @@ return {
         },
         [10829]= {
             ["skill"]= 10829,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -34102,7 +34102,7 @@ return {
         },
         [48807]= {
             ["skill"]= 48807,
-            ["name"]= "Art of the Gladiator",
+            ["name"]= "검투사의 기교",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newnewattackspeed.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34133,7 +34133,7 @@ return {
         },
         [44578]= {
             ["skill"]= 44578,
-            ["name"]= "Duration Mastery",
+            ["name"]= "지속시간 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryDuration.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -34145,7 +34145,7 @@ return {
         },
         [52099]= {
             ["skill"]= 52099,
-            ["name"]= "Reduced Skill Duration",
+            ["name"]= "스킬 지속시간 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ReducedSkillEffectDurationNode.png",
             ["stats"]= {
                 "5% reduced Skill Effect Duration"
@@ -34162,7 +34162,7 @@ return {
         },
         [14090]= {
             ["skill"]= 14090,
-            ["name"]= "Reduced Skill Duration",
+            ["name"]= "스킬 지속시간 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ReducedSkillEffectDurationNode.png",
             ["stats"]= {
                 "5% reduced Skill Effect Duration"
@@ -34179,7 +34179,7 @@ return {
         },
         [4207]= {
             ["skill"]= 4207,
-            ["name"]= "Window of Opportunity",
+            ["name"]= "기회의 창",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ReducedSkillEffectDurationNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34201,7 +34201,7 @@ return {
         },
         [22893]= {
             ["skill"]= 22893,
-            ["name"]= "Skill Duration",
+            ["name"]= "스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/skillduration.png",
             ["stats"]= {
                 "10% increased Skill Effect Duration"
@@ -34218,7 +34218,7 @@ return {
         },
         [24472]= {
             ["skill"]= 24472,
-            ["name"]= "Skill Duration",
+            ["name"]= "스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/skillduration.png",
             ["stats"]= {
                 "10% increased Skill Effect Duration"
@@ -34235,7 +34235,7 @@ return {
         },
         [53042]= {
             ["skill"]= 53042,
-            ["name"]= "Exceptional Performance",
+            ["name"]= "특출난 솜씨",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ExceptionalPerformance.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34256,7 +34256,7 @@ return {
         },
         [55646]= {
             ["skill"]= 55646,
-            ["name"]= "Minion Damage and Life",
+            ["name"]= "소환수 피해 및 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/IncreasedMinionDamageIncreasedMinionLife.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34274,7 +34274,7 @@ return {
         },
         [48719]= {
             ["skill"]= 48719,
-            ["name"]= "Mistress of Sacrifice",
+            ["name"]= "희생의 여주인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/GiftsOfTheDamned.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34293,7 +34293,7 @@ return {
         },
         [36017]= {
             ["skill"]= 36017,
-            ["name"]= "Commander of Darkness",
+            ["name"]= "어둠의 사령관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/CommandingTheDarkness.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34315,7 +34315,7 @@ return {
         },
         [26298]= {
             ["skill"]= 26298,
-            ["name"]= "Minion Damage, Cast Speed",
+            ["name"]= "소환수 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/CorpseConsumptionNode.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34334,7 +34334,7 @@ return {
         },
         [11490]= {
             ["skill"]= 11490,
-            ["name"]= "Plaguebringer",
+            ["name"]= "역병운반자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/PlagueBringer.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34358,7 +34358,7 @@ return {
         },
         [23509]= {
             ["skill"]= 23509,
-            ["name"]= "Minion Damage, Cast Speed",
+            ["name"]= "소환수 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/CorpseConsumptionNode.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34377,7 +34377,7 @@ return {
         },
         [23572]= {
             ["skill"]= 23572,
-            ["name"]= "Corpse Pact",
+            ["name"]= "시신의 서약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/CorpseConsumptionNotable2.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34402,7 +34402,7 @@ return {
         },
         [18309]= {
             ["skill"]= 18309,
-            ["name"]= "Minion Damage and Life",
+            ["name"]= "소환수 피해 및 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/IncreasedMinionDamageIncreasedMinionLife.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34421,7 +34421,7 @@ return {
         },
         [60547]= {
             ["skill"]= 60547,
-            ["name"]= "Minion Damage and Life",
+            ["name"]= "소환수 피해 및 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/IncreasedMinionDamageIncreasedMinionLife.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34440,7 +34440,7 @@ return {
         },
         [39818]= {
             ["skill"]= 39818,
-            ["name"]= "Minion Damage, Skill Duration",
+            ["name"]= "소환수 피해, 스킬 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/IncreasedMinionDamageIncreasedSkillDuration.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34459,7 +34459,7 @@ return {
         },
         [18574]= {
             ["skill"]= 18574,
-            ["name"]= "Minion Damage, Mana",
+            ["name"]= "소환수 피해, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/ManaNode.png",
             ["ascendancyName"]= "Necromancer",
             ["stats"]= {
@@ -34478,7 +34478,7 @@ return {
         },
         [54159]= {
             ["skill"]= 54159,
-            ["name"]= "Mindless Aggression",
+            ["name"]= "이유 없는 공격성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/GenericMinionNotable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34501,7 +34501,7 @@ return {
         },
         [65153]= {
             ["skill"]= 65153,
-            ["name"]= "Unnatural Strength",
+            ["name"]= "초자연적인 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/OffensiveMinionNotable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34518,7 +34518,7 @@ return {
         },
         [14603]= {
             ["skill"]= 14603,
-            ["name"]= "Bone Barrier",
+            ["name"]= "뼈대 방어막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Necromancer/DefensiveMinionNotable.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Necromancer",
@@ -34538,7 +34538,7 @@ return {
         },
         [60791]= {
             ["skill"]= 60791,
-            ["name"]= "Necromancer",
+            ["name"]= "네크로맨서",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Necromancer",
             ["isAscendancyStart"]= true,
@@ -34559,7 +34559,7 @@ return {
         },
         [49109]= {
             ["skill"]= 49109,
-            ["name"]= "Armour and Evasion",
+            ["name"]= "방어도, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "12% increased Evasion Rating and Armour",
@@ -34577,7 +34577,7 @@ return {
         },
         [17566]= {
             ["skill"]= 17566,
-            ["name"]= "Armour and Evasion",
+            ["name"]= "방어도, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "12% increased Evasion Rating and Armour",
@@ -34595,7 +34595,7 @@ return {
         },
         [49971]= {
             ["skill"]= 49971,
-            ["name"]= "Frenzy Charge Duration",
+            ["name"]= "격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "18% increased Frenzy Charge Duration"
@@ -34611,7 +34611,7 @@ return {
         },
         [11397]= {
             ["skill"]= 11397,
-            ["name"]= "Frenzy Charge Duration",
+            ["name"]= "격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "18% increased Frenzy Charge Duration"
@@ -34627,7 +34627,7 @@ return {
         },
         [21435]= {
             ["skill"]= 21435,
-            ["name"]= "Cloth and Chain",
+            ["name"]= "천과 사슬",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newevadepercentage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34650,7 +34650,7 @@ return {
         },
         [23066]= {
             ["skill"]= 23066,
-            ["name"]= "Savagery",
+            ["name"]= "야만성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34673,7 +34673,7 @@ return {
         },
         [57736]= {
             ["skill"]= 57736,
-            ["name"]= "Aura Effect",
+            ["name"]= "오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraeffect.png",
             ["stats"]= {
                 "6% increased effect of Non-Curse Auras from your Skills"
@@ -34690,7 +34690,7 @@ return {
         },
         [65097]= {
             ["skill"]= 65097,
-            ["name"]= "Leadership",
+            ["name"]= "통솔력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/leadership.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34712,7 +34712,7 @@ return {
         },
         [7594]= {
             ["skill"]= 7594,
-            ["name"]= "Reduced Reservation",
+            ["name"]= "점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manareservationreduction.png",
             ["stats"]= {
                 "4% reduced Reservation of Skills"
@@ -34729,7 +34729,7 @@ return {
         },
         [35179]= {
             ["skill"]= 35179,
-            ["name"]= "Movement Speed",
+            ["name"]= "이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedrunspeeddex.png",
             ["stats"]= {
                 "3% increased Movement Speed"
@@ -34745,7 +34745,7 @@ return {
         },
         [60532]= {
             ["skill"]= 60532,
-            ["name"]= "Movement Speed",
+            ["name"]= "이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedrunspeeddex.png",
             ["stats"]= {
                 "3% increased Movement Speed"
@@ -34761,7 +34761,7 @@ return {
         },
         [9009]= {
             ["skill"]= 9009,
-            ["name"]= "Movement Speed",
+            ["name"]= "이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/increasedrunspeeddex.png",
             ["stats"]= {
                 "3% increased Movement Speed"
@@ -34779,7 +34779,7 @@ return {
         },
         [3992]= {
             ["skill"]= 3992,
-            ["name"]= "Accuracy",
+            ["name"]= "정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating"
@@ -34796,7 +34796,7 @@ return {
         },
         [49807]= {
             ["skill"]= 49807,
-            ["name"]= "Accuracy",
+            ["name"]= "정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating"
@@ -34813,7 +34813,7 @@ return {
         },
         [37575]= {
             ["skill"]= 37575,
-            ["name"]= "Accuracy",
+            ["name"]= "정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating"
@@ -34828,7 +34828,7 @@ return {
         },
         [918]= {
             ["skill"]= 918,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed"
@@ -34844,7 +34844,7 @@ return {
         },
         [28221]= {
             ["skill"]= 28221,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed"
@@ -34862,7 +34862,7 @@ return {
         },
         [24643]= {
             ["skill"]= 24643,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed"
@@ -34879,7 +34879,7 @@ return {
         },
         [48768]= {
             ["skill"]= 48768,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -34895,7 +34895,7 @@ return {
         },
         [45456]= {
             ["skill"]= 45456,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "6% increased Spell Damage"
@@ -34912,7 +34912,7 @@ return {
         },
         [56153]= {
             ["skill"]= 56153,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "6% increased Spell Damage"
@@ -34929,7 +34929,7 @@ return {
         },
         [11688]= {
             ["skill"]= 11688,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "6% increased Spell Damage"
@@ -34947,7 +34947,7 @@ return {
         },
         [18359]= {
             ["skill"]= 18359,
-            ["name"]= "Minion Life and Block",
+            ["name"]= "소환수 생명력, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionblockchance.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life",
@@ -34964,7 +34964,7 @@ return {
         },
         [21973]= {
             ["skill"]= 21973,
-            ["name"]= "Decay Ward",
+            ["name"]= "부패 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionblockchance.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -34987,7 +34987,7 @@ return {
         },
         [34306]= {
             ["skill"]= 34306,
-            ["name"]= "Minion Life and Spell Block",
+            ["name"]= "소환수 생명력, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionblockchance.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life",
@@ -35005,7 +35005,7 @@ return {
         },
         [27929]= {
             ["skill"]= 27929,
-            ["name"]= "Deep Wisdom",
+            ["name"]= "깊은 지혜",
             ["icon"]= "Art/2DArt/SkillIcons/passives/deepwisdom.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35038,7 +35038,7 @@ return {
         },
         [49639]= {
             ["skill"]= 49639,
-            ["name"]= "Supreme Ego",
+            ["name"]= "자만의 정점",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SupremeEgo.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -35061,7 +35061,7 @@ return {
         },
         [19501]= {
             ["skill"]= 19501,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -35080,7 +35080,7 @@ return {
         },
         [40705]= {
             ["skill"]= 40705,
-            ["name"]= "Cold Damage, Cold Ailment Duration",
+            ["name"]= "냉기 피해, 냉기 상태 이상 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "10% increased Cold Damage",
@@ -35101,7 +35101,7 @@ return {
         },
         [36226]= {
             ["skill"]= 36226,
-            ["name"]= "Cold Damage, Cold Damage Over Time Multiplier and Freeze Chance",
+            ["name"]= "냉기 피해, 냉기 지속 피해 배율, 동결 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "+4% to Cold Damage over Time Multiplier",
@@ -35123,7 +35123,7 @@ return {
         },
         [40609]= {
             ["skill"]= 40609,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "15% increased Cold Damage"
@@ -35140,7 +35140,7 @@ return {
         },
         [22090]= {
             ["skill"]= 22090,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "15% increased Cold Damage"
@@ -35157,7 +35157,7 @@ return {
         },
         [5972]= {
             ["skill"]= 5972,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage"
@@ -35175,7 +35175,7 @@ return {
         },
         [36412]= {
             ["skill"]= 36412,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "15% increased Cold Damage"
@@ -35192,7 +35192,7 @@ return {
         },
         [58157]= {
             ["skill"]= 58157,
-            ["name"]= "Cold Mastery",
+            ["name"]= "냉기 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCold.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -35204,7 +35204,7 @@ return {
         },
         [53732]= {
             ["skill"]= 53732,
-            ["name"]= "Cold Damage, Cold Damage Over Time Multiplier, Cold Ailment Effect",
+            ["name"]= "냉기 피해, 냉기 지속 피해 배율, 냉기 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "+4% to Cold Damage over Time Multiplier",
@@ -35226,7 +35226,7 @@ return {
         },
         [21460]= {
             ["skill"]= 21460,
-            ["name"]= "Breath of Rime",
+            ["name"]= "흰서리의 숨결",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BreathofRime2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35255,7 +35255,7 @@ return {
         },
         [8833]= {
             ["skill"]= 8833,
-            ["name"]= "Heart of Ice",
+            ["name"]= "얼음의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/iceheart.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35281,7 +35281,7 @@ return {
         },
         [60002]= {
             ["skill"]= 60002,
-            ["name"]= "Fury Bolts",
+            ["name"]= "광분의 화살",
             ["icon"]= "Art/2DArt/SkillIcons/passives/furybolts.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35308,7 +35308,7 @@ return {
         },
         [52632]= {
             ["skill"]= 52632,
-            ["name"]= "Projectile Damage and Speed",
+            ["name"]= "투사체 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Speed",
@@ -35326,7 +35326,7 @@ return {
         },
         [36222]= {
             ["skill"]= 36222,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "12% increased Projectile Damage"
@@ -35344,7 +35344,7 @@ return {
         },
         [47030]= {
             ["skill"]= 47030,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "12% increased Projectile Damage"
@@ -35361,7 +35361,7 @@ return {
         },
         [30155]= {
             ["skill"]= 30155,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "12% increased Projectile Damage"
@@ -35379,7 +35379,7 @@ return {
         },
         [8544]= {
             ["skill"]= 8544,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -35402,7 +35402,7 @@ return {
         },
         [49343]= {
             ["skill"]= 49343,
-            ["name"]= "Block Chance and Attack Damage with Shield",
+            ["name"]= "막기 확률, 방패 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 8% increased Damage while holding a Shield",
@@ -35421,7 +35421,7 @@ return {
         },
         [36761]= {
             ["skill"]= 36761,
-            ["name"]= "Attack Damage and Attack Speed with Shield",
+            ["name"]= "방패 착용 시 공격 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while holding a Shield",
@@ -35439,7 +35439,7 @@ return {
         },
         [1159]= {
             ["skill"]= 1159,
-            ["name"]= "Attack Damage and Attack Speed with Shield",
+            ["name"]= "방패 착용 시 공격 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while holding a Shield",
@@ -35457,7 +35457,7 @@ return {
         },
         [43413]= {
             ["skill"]= 43413,
-            ["name"]= "Shield Block and Block Recovery",
+            ["name"]= "방패 막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "30% increased Block Recovery",
@@ -35474,7 +35474,7 @@ return {
         },
         [3319]= {
             ["skill"]= 3319,
-            ["name"]= "Shield Block and Block Recovery",
+            ["name"]= "방패 막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "30% increased Block Recovery",
@@ -35492,7 +35492,7 @@ return {
         },
         [12878]= {
             ["skill"]= 12878,
-            ["name"]= "Retaliation",
+            ["name"]= "보복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Retaliation.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35519,7 +35519,7 @@ return {
         },
         [7063]= {
             ["skill"]= 7063,
-            ["name"]= "Shield Defences",
+            ["name"]= "방패 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "50% increased Defences from Equipped Shield"
@@ -35538,7 +35538,7 @@ return {
         },
         [127]= {
             ["skill"]= 127,
-            ["name"]= "Shield Defences",
+            ["name"]= "방패 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldblock.png",
             ["stats"]= {
                 "50% increased Defences from Equipped Shield"
@@ -35558,7 +35558,7 @@ return {
         },
         [15510]= {
             ["skill"]= 15510,
-            ["name"]= "Shield Mastery",
+            ["name"]= "방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -35570,7 +35570,7 @@ return {
         },
         [44207]= {
             ["skill"]= 44207,
-            ["name"]= "Testudo",
+            ["name"]= "귀갑 방패",
             ["icon"]= "Art/2DArt/SkillIcons/passives/barricade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35598,7 +35598,7 @@ return {
         },
         [15437]= {
             ["skill"]= 15437,
-            ["name"]= "Gladiatoral Combat",
+            ["name"]= "검투사의 전투",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HoldingShieldDamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35621,7 +35621,7 @@ return {
         },
         [54144]= {
             ["skill"]= 54144,
-            ["name"]= "Dual Wield Attack and Cast Speed and Block",
+            ["name"]= "쌍수 공격 및 시전 속도, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeDefensive.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding",
@@ -35640,7 +35640,7 @@ return {
         },
         [57457]= {
             ["skill"]= 57457,
-            ["name"]= "Dual Wield Spell Damage and Attack and Cast Speed",
+            ["name"]= "쌍수 주문 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeDefensive.png",
             ["stats"]= {
                 "8% increased Spell Damage while Dual Wielding",
@@ -35660,7 +35660,7 @@ return {
         },
         [13573]= {
             ["skill"]= 13573,
-            ["name"]= "Dual Wield Attack and Cast Speed and Block",
+            ["name"]= "쌍수 공격 및 시전 속도, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeDefensive.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding",
@@ -35679,7 +35679,7 @@ return {
         },
         [31619]= {
             ["skill"]= 31619,
-            ["name"]= "Dual Wield Spell Damage and Spell Block",
+            ["name"]= "쌍수 주문 피해, 주문 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNodeDefensive.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while Dual Wielding",
@@ -35697,7 +35697,7 @@ return {
         },
         [39743]= {
             ["skill"]= 39743,
-            ["name"]= "Mysticism",
+            ["name"]= "신비주의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35723,7 +35723,7 @@ return {
         },
         [44151]= {
             ["skill"]= 44151,
-            ["name"]= "Arcane Dual Wield Mastery",
+            ["name"]= "비전 쌍수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -35735,7 +35735,7 @@ return {
         },
         [41967]= {
             ["skill"]= 41967,
-            ["name"]= "Mana and Flasks",
+            ["name"]= "마나, 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -35754,7 +35754,7 @@ return {
         },
         [17546]= {
             ["skill"]= 17546,
-            ["name"]= "Mana and Flasks",
+            ["name"]= "마나, 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "10% increased maximum Mana",
@@ -35771,7 +35771,7 @@ return {
         },
         [21634]= {
             ["skill"]= 21634,
-            ["name"]= "Arcane Chemistry",
+            ["name"]= "비전의 반응",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArcaneChemistry.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35795,7 +35795,7 @@ return {
         },
         [17849]= {
             ["skill"]= 17849,
-            ["name"]= "Mine Damage",
+            ["name"]= "지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "14% increased Mine Damage"
@@ -35811,7 +35811,7 @@ return {
         },
         [21602]= {
             ["skill"]= 21602,
-            ["name"]= "Destructive Apparatus",
+            ["name"]= "파괴적인 장치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineTrap.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35834,7 +35834,7 @@ return {
         },
         [33911]= {
             ["skill"]= 33911,
-            ["name"]= "Mine Damage and Throwing Speed",
+            ["name"]= "지뢰 피해, 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "10% increased Mine Damage",
@@ -35852,7 +35852,7 @@ return {
         },
         [44543]= {
             ["skill"]= 44543,
-            ["name"]= "Mine Mastery",
+            ["name"]= "지뢰 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -35864,7 +35864,7 @@ return {
         },
         [57615]= {
             ["skill"]= 57615,
-            ["name"]= "Mine Throwing Speed",
+            ["name"]= "지뢰 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "5% increased Mine Throwing Speed"
@@ -35880,7 +35880,7 @@ return {
         },
         [38176]= {
             ["skill"]= 38176,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -35900,7 +35900,7 @@ return {
         },
         [11551]= {
             ["skill"]= 11551,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -35920,7 +35920,7 @@ return {
         },
         [27415]= {
             ["skill"]= 27415,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -35937,7 +35937,7 @@ return {
         },
         [42795]= {
             ["skill"]= 42795,
-            ["name"]= "Arcane Focus",
+            ["name"]= "비전의 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arcane focus.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -35960,7 +35960,7 @@ return {
         },
         [13753]= {
             ["skill"]= 13753,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -35976,7 +35976,7 @@ return {
         },
         [7503]= {
             ["skill"]= 7503,
-            ["name"]= "Energy Shield and Recovery, Mana Regeneration",
+            ["name"]= "에너지 보호막, 회복, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -35996,7 +35996,7 @@ return {
         },
         [4432]= {
             ["skill"]= 4432,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -36012,7 +36012,7 @@ return {
         },
         [65203]= {
             ["skill"]= 65203,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manaregeneration.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -36030,7 +36030,7 @@ return {
         },
         [48514]= {
             ["skill"]= 48514,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manaregeneration.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -36048,7 +36048,7 @@ return {
         },
         [27163]= {
             ["skill"]= 27163,
-            ["name"]= "Arcane Will",
+            ["name"]= "비전의 의지",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaDamageKeystone.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36074,7 +36074,7 @@ return {
         },
         [6580]= {
             ["skill"]= 6580,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -36093,7 +36093,7 @@ return {
         },
         [19506]= {
             ["skill"]= 19506,
-            ["name"]= "Path of the Hunter",
+            ["name"]= "사냥꾼의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Hunter.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36119,7 +36119,7 @@ return {
         },
         [63067]= {
             ["skill"]= 63067,
-            ["name"]= "Wand Damage and Attack Speed",
+            ["name"]= "마법봉 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "10% increased Damage while wielding a Wand",
@@ -36137,7 +36137,7 @@ return {
         },
         [50472]= {
             ["skill"]= 50472,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "14% increased Damage while wielding a Wand"
@@ -36153,7 +36153,7 @@ return {
         },
         [22972]= {
             ["skill"]= 22972,
-            ["name"]= "Wandslinger",
+            ["name"]= "마법봉 투척가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/wandslingersprowess.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36176,7 +36176,7 @@ return {
         },
         [38772]= {
             ["skill"]= 38772,
-            ["name"]= "Stance Skill Reservation",
+            ["name"]= "태세 스킬 점유",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StancesNode.png",
             ["stats"]= {
                 "10% reduced Reservation of Stance Skills"
@@ -36193,7 +36193,7 @@ return {
         },
         [32053]= {
             ["skill"]= 32053,
-            ["name"]= "Area of Effect in Sand Stance and Damage in Blood Stance",
+            ["name"]= "모래 태세 시 효과 범위, 피의 태세 시 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StancesNode.png",
             ["stats"]= {
                 "15% increased Damage while in Blood Stance",
@@ -36214,7 +36214,7 @@ return {
         },
         [19730]= {
             ["skill"]= 19730,
-            ["name"]= "Versatile Stance",
+            ["name"]= "다재다능한 자세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/StancesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36241,7 +36241,7 @@ return {
         },
         [29185]= {
             ["skill"]= 29185,
-            ["name"]= "Two Handed Melee Critical Strike Chance and Accuracy",
+            ["name"]= "양손 근접 치명타 확률, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance2.png",
             ["stats"]= {
                 "6% increased Accuracy Rating with Two Handed Melee Weapons",
@@ -36259,7 +36259,7 @@ return {
         },
         [58803]= {
             ["skill"]= 58803,
-            ["name"]= "Two Handed Melee Critical Strike Multiplier and Accuracy",
+            ["name"]= "양손 근접 치명타 배율, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance2.png",
             ["stats"]= {
                 "6% increased Accuracy Rating with Two Handed Melee Weapons",
@@ -36277,7 +36277,7 @@ return {
         },
         [32059]= {
             ["skill"]= 32059,
-            ["name"]= "Titanic Impacts",
+            ["name"]= "거대한 충격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikemultiplier2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36300,7 +36300,7 @@ return {
         },
         [27283]= {
             ["skill"]= 27283,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -36317,7 +36317,7 @@ return {
         },
         [42133]= {
             ["skill"]= 42133,
-            ["name"]= "Elemental Damage and Reflect Damage Taken",
+            ["name"]= "원소 피해, 반사 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "8% increased Elemental Damage",
@@ -36335,7 +36335,7 @@ return {
         },
         [57259]= {
             ["skill"]= 57259,
-            ["name"]= "Elemental Damage and Reflect Damage Taken",
+            ["name"]= "원소 피해, 반사 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "8% increased Elemental Damage",
@@ -36353,7 +36353,7 @@ return {
         },
         [50690]= {
             ["skill"]= 50690,
-            ["name"]= "Exposure Tolerance",
+            ["name"]= "노출 내성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ExposureToleranceNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36375,7 +36375,7 @@ return {
         },
         [19287]= {
             ["skill"]= 19287,
-            ["name"]= "Life and Life on Kill",
+            ["name"]= "생명력, 처치 시 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -36393,7 +36393,7 @@ return {
         },
         [61875]= {
             ["skill"]= 61875,
-            ["name"]= "Life and Life on Kill",
+            ["name"]= "생명력, 처치 시 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -36411,7 +36411,7 @@ return {
         },
         [49379]= {
             ["skill"]= 49379,
-            ["name"]= "Hired Killer",
+            ["name"]= "청부살인자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HiredKiller2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36433,7 +36433,7 @@ return {
         },
         [56207]= {
             ["skill"]= 56207,
-            ["name"]= "Hardened Scars",
+            ["name"]= "굳어진 상처",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DarkestHour.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -36457,7 +36457,7 @@ return {
         },
         [33545]= {
             ["skill"]= 33545,
-            ["name"]= "Harrier",
+            ["name"]= "해리어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Harrier.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36484,7 +36484,7 @@ return {
         },
         [19711]= {
             ["skill"]= 19711,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -36506,7 +36506,7 @@ return {
         },
         [8948]= {
             ["skill"]= 8948,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -36526,7 +36526,7 @@ return {
         },
         [32091]= {
             ["skill"]= 32091,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36545,7 +36545,7 @@ return {
         },
         [238]= {
             ["skill"]= 238,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -36562,7 +36562,7 @@ return {
         },
         [11497]= {
             ["skill"]= 11497,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -36581,7 +36581,7 @@ return {
         },
         [34483]= {
             ["skill"]= 34483,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -36595,7 +36595,7 @@ return {
         },
         [45175]= {
             ["skill"]= 45175,
-            ["name"]= "Necromantic Aegis",
+            ["name"]= "강령술의 비호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneNecromanticAegis.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -36614,7 +36614,7 @@ return {
         },
         [30471]= {
             ["skill"]= 30471,
-            ["name"]= "True Strike",
+            ["name"]= "정확한 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrueStriker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36636,7 +36636,7 @@ return {
         },
         [34579]= {
             ["skill"]= 34579,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance"
@@ -36653,7 +36653,7 @@ return {
         },
         [40100]= {
             ["skill"]= 40100,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance"
@@ -36670,7 +36670,7 @@ return {
         },
         [53558]= {
             ["skill"]= 53558,
-            ["name"]= "Shield Block",
+            ["name"]= "방패 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "+3% Chance to Block Attack Damage while holding a Shield"
@@ -36687,7 +36687,7 @@ return {
         },
         [2355]= {
             ["skill"]= 2355,
-            ["name"]= "Shield Defences",
+            ["name"]= "방패 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "40% increased Defences from Equipped Shield"
@@ -36707,7 +36707,7 @@ return {
         },
         [7977]= {
             ["skill"]= 7977,
-            ["name"]= "Shield Mastery",
+            ["name"]= "방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -36719,7 +36719,7 @@ return {
         },
         [57900]= {
             ["skill"]= 57900,
-            ["name"]= "Command of Steel",
+            ["name"]= "강철의 명령",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CommandofSteel.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36741,7 +36741,7 @@ return {
         },
         [8930]= {
             ["skill"]= 8930,
-            ["name"]= "Life and Flasks",
+            ["name"]= "생명력, 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskstr.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -36759,7 +36759,7 @@ return {
         },
         [18402]= {
             ["skill"]= 18402,
-            ["name"]= "Life and Flasks",
+            ["name"]= "생명력, 플라스크",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskstr.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -36777,7 +36777,7 @@ return {
         },
         [42041]= {
             ["skill"]= 42041,
-            ["name"]= "Profane Chemistry",
+            ["name"]= "부정한 반응",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProfaneChemistry.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36800,7 +36800,7 @@ return {
         },
         [23540]= {
             ["skill"]= 23540,
-            ["name"]= "Conduit",
+            ["name"]= "도관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneConduit.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -36819,7 +36819,7 @@ return {
         },
         [60204]= {
             ["skill"]= 60204,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36837,7 +36837,7 @@ return {
         },
         [57984]= {
             ["skill"]= 57984,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36856,7 +36856,7 @@ return {
         },
         [17814]= {
             ["skill"]= 17814,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36873,7 +36873,7 @@ return {
         },
         [8348]= {
             ["skill"]= 8348,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36891,7 +36891,7 @@ return {
         },
         [6534]= {
             ["skill"]= 6534,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -36909,7 +36909,7 @@ return {
         },
         [106]= {
             ["skill"]= 106,
-            ["name"]= "Evasion Mastery",
+            ["name"]= "회피 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEvasion.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -36921,7 +36921,7 @@ return {
         },
         [44103]= {
             ["skill"]= 44103,
-            ["name"]= "Reflexes",
+            ["name"]= "반사신경",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -36946,7 +36946,7 @@ return {
         },
         [55954]= {
             ["skill"]= 55954,
-            ["name"]= "Lightning Mastery",
+            ["name"]= "번개 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLightning.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -36958,7 +36958,7 @@ return {
         },
         [13961]= {
             ["skill"]= 13961,
-            ["name"]= "Shock Chance and Lightning Ailment Effect",
+            ["name"]= "감전 확률, 번개 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% chance to Shock",
@@ -36980,7 +36980,7 @@ return {
         },
         [3190]= {
             ["skill"]= 3190,
-            ["name"]= "Damage and Critical Strike Chance against Shocked",
+            ["name"]= "감전된 적 대상 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "15% increased Critical Strike Chance against Shocked Enemies",
@@ -36998,7 +36998,7 @@ return {
         },
         [62697]= {
             ["skill"]= 62697,
-            ["name"]= "Shock Chance, Lightning Ailment Effect and Duration",
+            ["name"]= "감전 확률, 번개 상태 이상 효과, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "5% chance to Shock",
@@ -37022,7 +37022,7 @@ return {
         },
         [26557]= {
             ["skill"]= 26557,
-            ["name"]= "Static Blows",
+            ["name"]= "정전기 타격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/staticshield.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37051,7 +37051,7 @@ return {
         },
         [10661]= {
             ["skill"]= 10661,
-            ["name"]= "Iron Reflexes",
+            ["name"]= "철의 반사신경",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneIronReflexes.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -37070,7 +37070,7 @@ return {
         },
         [42637]= {
             ["skill"]= 42637,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -37090,7 +37090,7 @@ return {
         },
         [30030]= {
             ["skill"]= 30030,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -37110,7 +37110,7 @@ return {
         },
         [38269]= {
             ["skill"]= 38269,
-            ["name"]= "Axe Attack Speed and Rage",
+            ["name"]= "도끼 공격 속도, 분노",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "4% increased Attack Speed with Axes",
@@ -37131,7 +37131,7 @@ return {
         },
         [29543]= {
             ["skill"]= 29543,
-            ["name"]= "Axe Damage and Attack Speed",
+            ["name"]= "도끼 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 8% increased Damage with Hits and Ailments",
@@ -37152,7 +37152,7 @@ return {
         },
         [63156]= {
             ["skill"]= 63156,
-            ["name"]= "Axe Mastery",
+            ["name"]= "도끼 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupAxe.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -37164,7 +37164,7 @@ return {
         },
         [26096]= {
             ["skill"]= 26096,
-            ["name"]= "Hatchet Master",
+            ["name"]= "손도끼의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/hatchetmaster.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37191,7 +37191,7 @@ return {
         },
         [57565]= {
             ["skill"]= 57565,
-            ["name"]= "Minion Damage and Mana",
+            ["name"]= "소환수 피해, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionsandManaNode.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -37209,7 +37209,7 @@ return {
         },
         [2348]= {
             ["skill"]= 2348,
-            ["name"]= "Minion Damage and Mana",
+            ["name"]= "소환수 피해, 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionsandManaNode.png",
             ["stats"]= {
                 "10% increased maximum Mana",
@@ -37227,7 +37227,7 @@ return {
         },
         [44788]= {
             ["skill"]= 44788,
-            ["name"]= "Aligned Spirits",
+            ["name"]= "정렬된 혼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionsandManaNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37251,7 +37251,7 @@ return {
         },
         [52095]= {
             ["skill"]= 52095,
-            ["name"]= "Channelling Damage",
+            ["name"]= "집중 유지 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingDamage.png",
             ["stats"]= {
                 "Channelling Skills deal 14% increased Damage"
@@ -37267,7 +37267,7 @@ return {
         },
         [62094]= {
             ["skill"]= 62094,
-            ["name"]= "Lucidity",
+            ["name"]= "명석함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ConcentrationNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37290,7 +37290,7 @@ return {
         },
         [8296]= {
             ["skill"]= 8296,
-            ["name"]= "Channelling Speed",
+            ["name"]= "집중 유지 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingSpeed.png",
             ["stats"]= {
                 "Channelling Skills have 5% increased Attack and Cast Speed"
@@ -37307,7 +37307,7 @@ return {
         },
         [48823]= {
             ["skill"]= 48823,
-            ["name"]= "Deadly Draw",
+            ["name"]= "치명적인 당기기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/deadlydraw.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37335,7 +37335,7 @@ return {
         },
         [8566]= {
             ["skill"]= 8566,
-            ["name"]= "Physical Bow Damage and Area of Effect",
+            ["name"]= "물리 활 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "10% increased Physical Damage with Bows",
@@ -37354,7 +37354,7 @@ return {
         },
         [34510]= {
             ["skill"]= 34510,
-            ["name"]= "Physical Bow Damage, Chance to Bleed and Faster Bleed",
+            ["name"]= "물리 활 피해, 출혈 확률, 출혈 가속",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "10% increased Physical Damage with Bows",
@@ -37377,7 +37377,7 @@ return {
         },
         [50041]= {
             ["skill"]= 50041,
-            ["name"]= "Physical Bow Damage",
+            ["name"]= "물리 활 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "14% increased Physical Damage with Bows",
@@ -37396,7 +37396,7 @@ return {
         },
         [5815]= {
             ["skill"]= 5815,
-            ["name"]= "Bow Mastery",
+            ["name"]= "활 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -37408,7 +37408,7 @@ return {
         },
         [42720]= {
             ["skill"]= 42720,
-            ["name"]= "Heavy Draw",
+            ["name"]= "묵직한 당기기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heavydraw.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37436,7 +37436,7 @@ return {
         },
         [40135]= {
             ["skill"]= 40135,
-            ["name"]= "Sword Damage",
+            ["name"]= "검 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "Sword Attacks deal 14% increased Damage with Hits and Ailments"
@@ -37455,7 +37455,7 @@ return {
         },
         [9262]= {
             ["skill"]= 9262,
-            ["name"]= "Sword Damage and Melee Range",
+            ["name"]= "검 피해, 근접 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "Sword Attacks deal 10% increased Damage with Hits and Ailments",
@@ -37477,7 +37477,7 @@ return {
         },
         [65093]= {
             ["skill"]= 65093,
-            ["name"]= "Bladedancer",
+            ["name"]= "검무자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SwordNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37506,7 +37506,7 @@ return {
         },
         [46092]= {
             ["skill"]= 46092,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -37528,7 +37528,7 @@ return {
         },
         [18033]= {
             ["skill"]= 18033,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -37549,7 +37549,7 @@ return {
         },
         [9370]= {
             ["skill"]= 9370,
-            ["name"]= "Minion Damage and Movement Speed",
+            ["name"]= "소환수 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions have 4% increased Movement Speed",
@@ -37566,7 +37566,7 @@ return {
         },
         [44360]= {
             ["skill"]= 44360,
-            ["name"]= "Minion Attack and Cast Speed",
+            ["name"]= "소환수 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minionattackspeed.png",
             ["stats"]= {
                 "Minions have 5% increased Attack Speed",
@@ -37584,7 +37584,7 @@ return {
         },
         [6685]= {
             ["skill"]= 6685,
-            ["name"]= "Minion Damage and Movement Speed",
+            ["name"]= "소환수 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/miniondamageBlue.png",
             ["stats"]= {
                 "Minions have 5% increased Movement Speed",
@@ -37602,7 +37602,7 @@ return {
         },
         [33772]= {
             ["skill"]= 33772,
-            ["name"]= "Minion Mastery",
+            ["name"]= "소환수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -37614,7 +37614,7 @@ return {
         },
         [29381]= {
             ["skill"]= 29381,
-            ["name"]= "Ravenous Horde",
+            ["name"]= "탐욕스러운 무리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageofMinionsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37642,7 +37642,7 @@ return {
         },
         [11651]= {
             ["skill"]= 11651,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -37659,7 +37659,7 @@ return {
         },
         [37175]= {
             ["skill"]= 37175,
-            ["name"]= "Damage if Consumed a Corpse",
+            ["name"]= "시체 소비 시 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CorpseDamage.png",
             ["stats"]= {
                 "14% increased Damage if you have Consumed a corpse Recently"
@@ -37679,7 +37679,7 @@ return {
         },
         [36371]= {
             ["skill"]= 36371,
-            ["name"]= "Corpse Life",
+            ["name"]= "시체 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CorpseLife.png",
             ["stats"]= {
                 "Corpses you Spawn have 15% increased Maximum Life"
@@ -37699,7 +37699,7 @@ return {
         },
         [11200]= {
             ["skill"]= 11200,
-            ["name"]= "Corpse Life",
+            ["name"]= "시체 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CorpseLife.png",
             ["stats"]= {
                 "Corpses you Spawn have 15% increased Maximum Life"
@@ -37719,7 +37719,7 @@ return {
         },
         [63720]= {
             ["skill"]= 63720,
-            ["name"]= "Corpses Mastery",
+            ["name"]= "시체 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryCorpses.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -37731,7 +37731,7 @@ return {
         },
         [25439]= {
             ["skill"]= 25439,
-            ["name"]= "Undertaker",
+            ["name"]= "장의사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CorpsesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37758,7 +37758,7 @@ return {
         },
         [16970]= {
             ["skill"]= 16970,
-            ["name"]= "Damage if Consumed a Corpse",
+            ["name"]= "시체 소비 시 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CorpseDamage.png",
             ["stats"]= {
                 "16% increased Damage if you have Consumed a corpse Recently"
@@ -37778,7 +37778,7 @@ return {
         },
         [27659]= {
             ["skill"]= 27659,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -37798,7 +37798,7 @@ return {
         },
         [31137]= {
             ["skill"]= 31137,
-            ["name"]= "Charge on Kill",
+            ["name"]= "처치 시 충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/innerforce.png",
             ["stats"]= {
                 "2% chance to gain a Power, Frenzy or Endurance Charge on Kill"
@@ -37815,7 +37815,7 @@ return {
         },
         [35737]= {
             ["skill"]= 35737,
-            ["name"]= "Charge on Kill",
+            ["name"]= "처치 시 충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/innerforce.png",
             ["stats"]= {
                 "2% chance to gain a Power, Frenzy or Endurance Charge on Kill"
@@ -37832,7 +37832,7 @@ return {
         },
         [47471]= {
             ["skill"]= 47471,
-            ["name"]= "Overcharged",
+            ["name"]= "과충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/innerforce.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37853,7 +37853,7 @@ return {
         },
         [61982]= {
             ["skill"]= 61982,
-            ["name"]= "Grave Intentions",
+            ["name"]= "무덤의 목적",
             ["icon"]= "Art/2DArt/SkillIcons/passives/graveintentions.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -37880,7 +37880,7 @@ return {
         },
         [49047]= {
             ["skill"]= 49047,
-            ["name"]= "Minion Life and Resistances",
+            ["name"]= "소환수 생명력, 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionElementalResistancesNode.png",
             ["stats"]= {
                 "Minions have 10% increased maximum Life",
@@ -37899,7 +37899,7 @@ return {
         },
         [51517]= {
             ["skill"]= 51517,
-            ["name"]= "Minion Life and Resistances",
+            ["name"]= "소환수 생명력, 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionElementalResistancesNode.png",
             ["stats"]= {
                 "Minions have 8% increased maximum Life",
@@ -37918,7 +37918,7 @@ return {
         },
         [29937]= {
             ["skill"]= 29937,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -37940,7 +37940,7 @@ return {
         },
         [48778]= {
             ["skill"]= 48778,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -37960,7 +37960,7 @@ return {
         },
         [51923]= {
             ["skill"]= 51923,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -37979,7 +37979,7 @@ return {
         },
         [41263]= {
             ["skill"]= 41263,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -37993,7 +37993,7 @@ return {
         },
         [20812]= {
             ["skill"]= 20812,
-            ["name"]= "Evasion and Accuracy",
+            ["name"]= "회피, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "8% increased Global Accuracy Rating",
@@ -38012,7 +38012,7 @@ return {
         },
         [61393]= {
             ["skill"]= 61393,
-            ["name"]= "Attack Damage, Critical Strike Chance",
+            ["name"]= "공격 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgCritStrikeMultiplier.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38031,7 +38031,7 @@ return {
         },
         [34484]= {
             ["skill"]= 34484,
-            ["name"]= "Endless Hunger",
+            ["name"]= "끝없는 굶주림",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/EndlessHunger.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38056,7 +38056,7 @@ return {
         },
         [10143]= {
             ["skill"]= 10143,
-            ["name"]= "Brutal Fervour",
+            ["name"]= "잔인한 열정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/BrutalFervor.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38077,7 +38077,7 @@ return {
         },
         [38180]= {
             ["skill"]= 38180,
-            ["name"]= "Impact",
+            ["name"]= "충격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/Impact.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38101,7 +38101,7 @@ return {
         },
         [50845]= {
             ["skill"]= 50845,
-            ["name"]= "Attack Damage, Frenzy and Endurance Charge Duration",
+            ["name"]= "공격 피해, 격분 및 인내 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgFrenzyEnduranceCharge.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38121,7 +38121,7 @@ return {
         },
         [16306]= {
             ["skill"]= 16306,
-            ["name"]= "Masterful Form",
+            ["name"]= "명인의 형태",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/Charges.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38139,7 +38139,7 @@ return {
         },
         [15286]= {
             ["skill"]= 15286,
-            ["name"]= "Attack Damage, Attack Speed",
+            ["name"]= "공격 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgSpeed.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38158,7 +38158,7 @@ return {
         },
         [42293]= {
             ["skill"]= 42293,
-            ["name"]= "Attack Damage, Attack Speed",
+            ["name"]= "공격 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgSpeed.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38177,7 +38177,7 @@ return {
         },
         [34215]= {
             ["skill"]= 34215,
-            ["name"]= "Attack Damage, Life Leech",
+            ["name"]= "공격 피해, 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgLeech.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38199,7 +38199,7 @@ return {
         },
         [45696]= {
             ["skill"]= 45696,
-            ["name"]= "Attack Damage, Life Leech",
+            ["name"]= "공격 피해, 생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgLeech.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38221,7 +38221,7 @@ return {
         },
         [20954]= {
             ["skill"]= 20954,
-            ["name"]= "Attack Damage, Area of Effect",
+            ["name"]= "공격 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/2HdmgAOE.png",
             ["ascendancyName"]= "Slayer",
             ["stats"]= {
@@ -38240,7 +38240,7 @@ return {
         },
         [3184]= {
             ["skill"]= 3184,
-            ["name"]= "Headsman",
+            ["name"]= "참수자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/BaneOfLegends.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38259,7 +38259,7 @@ return {
         },
         [17315]= {
             ["skill"]= 17315,
-            ["name"]= "Overwhelm",
+            ["name"]= "압도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/CriticalAttacks.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38278,7 +38278,7 @@ return {
         },
         [62817]= {
             ["skill"]= 62817,
-            ["name"]= "Bane of Legends",
+            ["name"]= "전설의 파멸",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Slayer/Headman.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Slayer",
@@ -38302,7 +38302,7 @@ return {
         },
         [33795]= {
             ["skill"]= 33795,
-            ["name"]= "Slayer",
+            ["name"]= "슬레이어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Slayer",
             ["isAscendancyStart"]= true,
@@ -38323,7 +38323,7 @@ return {
         },
         [55934]= {
             ["skill"]= 55934,
-            ["name"]= "Cold and Fire Mastery",
+            ["name"]= "냉기, 화염 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupColdFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -38335,7 +38335,7 @@ return {
         },
         [20852]= {
             ["skill"]= 20852,
-            ["name"]= "Fire and Cold Damage",
+            ["name"]= "화염, 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdAndFireHybridNode.png",
             ["stats"]= {
                 "8% increased Fire Damage",
@@ -38353,7 +38353,7 @@ return {
         },
         [6785]= {
             ["skill"]= 6785,
-            ["name"]= "Fire Damage and Fire Skill Critical Multiplier",
+            ["name"]= "화염 피해, 화염 스킬 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamage.png",
             ["stats"]= {
                 "10% increased Fire Damage",
@@ -38371,7 +38371,7 @@ return {
         },
         [36585]= {
             ["skill"]= 36585,
-            ["name"]= "Cold Damage and Cold Skill Critical Strike Chance",
+            ["name"]= "냉기 피해, 냉기 스킬 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "10% increased Cold Damage",
@@ -38389,7 +38389,7 @@ return {
         },
         [42649]= {
             ["skill"]= 42649,
-            ["name"]= "Snowforged",
+            ["name"]= "눈의 대장간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdAndFireHybridNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38414,7 +38414,7 @@ return {
         },
         [49651]= {
             ["skill"]= 49651,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -38435,7 +38435,7 @@ return {
         },
         [41635]= {
             ["skill"]= 41635,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -38455,7 +38455,7 @@ return {
         },
         [27592]= {
             ["skill"]= 27592,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 15,
             ["stats"]= {
@@ -38472,7 +38472,7 @@ return {
         },
         [44924]= {
             ["skill"]= 44924,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 15,
             ["stats"]= {
@@ -38490,7 +38490,7 @@ return {
         },
         [55114]= {
             ["skill"]= 55114,
-            ["name"]= "Utmost Intellect",
+            ["name"]= "최대한의 지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38513,7 +38513,7 @@ return {
         },
         [51786]= {
             ["skill"]= 51786,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -38534,7 +38534,7 @@ return {
         },
         [28574]= {
             ["skill"]= 28574,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -38555,7 +38555,7 @@ return {
         },
         [5296]= {
             ["skill"]= 5296,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -38575,7 +38575,7 @@ return {
         },
         [41476]= {
             ["skill"]= 41476,
-            ["name"]= "Elder Power",
+            ["name"]= "엘더의 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elderpower.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38599,7 +38599,7 @@ return {
         },
         [16243]= {
             ["skill"]= 16243,
-            ["name"]= "Fusillade",
+            ["name"]= "일제 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/fussilade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38622,7 +38622,7 @@ return {
         },
         [52031]= {
             ["skill"]= 52031,
-            ["name"]= "Disintegration",
+            ["name"]= "붕괴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38647,7 +38647,7 @@ return {
         },
         [52848]= {
             ["skill"]= 52848,
-            ["name"]= "Wand Critical Strike Chance and Multiplier",
+            ["name"]= "마법봉 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WandCritical.png",
             ["stats"]= {
                 "30% increased Critical Strike Chance with Wands",
@@ -38665,7 +38665,7 @@ return {
         },
         [27879]= {
             ["skill"]= 27879,
-            ["name"]= "Wand Critical Strike Chance and Multiplier",
+            ["name"]= "마법봉 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WandCritical.png",
             ["stats"]= {
                 "30% increased Critical Strike Chance with Wands",
@@ -38683,7 +38683,7 @@ return {
         },
         [39521]= {
             ["skill"]= 39521,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Wand Attacks deal 12% increased Damage with Hits and Ailments"
@@ -38704,7 +38704,7 @@ return {
         },
         [40840]= {
             ["skill"]= 40840,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Wand Attacks deal 16% increased Damage with Hits and Ailments"
@@ -38724,7 +38724,7 @@ return {
         },
         [49779]= {
             ["skill"]= 49779,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Wand Attacks deal 16% increased Damage with Hits and Ailments"
@@ -38744,7 +38744,7 @@ return {
         },
         [29552]= {
             ["skill"]= 29552,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Wand Attacks deal 16% increased Damage with Hits and Ailments"
@@ -38764,7 +38764,7 @@ return {
         },
         [21030]= {
             ["skill"]= 21030,
-            ["name"]= "Wand Mastery",
+            ["name"]= "마법봉 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupWand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -38776,7 +38776,7 @@ return {
         },
         [48878]= {
             ["skill"]= 48878,
-            ["name"]= "Wand Attack Speed and Accuracy",
+            ["name"]= "마법봉 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "4% increased Attack Speed with Wands",
@@ -38794,7 +38794,7 @@ return {
         },
         [51524]= {
             ["skill"]= 51524,
-            ["name"]= "Wand Attack Speed and Accuracy",
+            ["name"]= "마법봉 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "4% increased Attack Speed with Wands",
@@ -38812,7 +38812,7 @@ return {
         },
         [51146]= {
             ["skill"]= 51146,
-            ["name"]= "Wand Attack Speed and Accuracy",
+            ["name"]= "마법봉 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "4% increased Attack Speed with Wands",
@@ -38830,7 +38830,7 @@ return {
         },
         [31703]= {
             ["skill"]= 31703,
-            ["name"]= "Pain Attunement",
+            ["name"]= "고통의 조율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystonePainAttunement.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -38850,7 +38850,7 @@ return {
         },
         [10348]= {
             ["skill"]= 10348,
-            ["name"]= "Mace Damage and Accuracy",
+            ["name"]= "철퇴 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "Mace or Sceptre Attacks deal 10% increased Damage with Hits and Ailments",
@@ -38871,7 +38871,7 @@ return {
         },
         [24521]= {
             ["skill"]= 24521,
-            ["name"]= "Mace Accuracy and Attack Speed",
+            ["name"]= "철퇴 정확도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "4% increased Attack Speed with Maces or Sceptres",
@@ -38889,7 +38889,7 @@ return {
         },
         [27763]= {
             ["skill"]= 27763,
-            ["name"]= "Mace Accuracy and Attack Speed",
+            ["name"]= "철퇴 정확도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/macedmg.png",
             ["stats"]= {
                 "4% increased Attack Speed with Maces or Sceptres",
@@ -38907,7 +38907,7 @@ return {
         },
         [49969]= {
             ["skill"]= 49969,
-            ["name"]= "Bludgeon Blitz",
+            ["name"]= "둔기 전격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceNotable3.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -38935,7 +38935,7 @@ return {
         },
         [47136]= {
             ["skill"]= 47136,
-            ["name"]= "Mace Mastery",
+            ["name"]= "철퇴 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMace.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -38947,7 +38947,7 @@ return {
         },
         [26365]= {
             ["skill"]= 26365,
-            ["name"]= "Weapon Fire Damage and Ignite Chance",
+            ["name"]= "무기 화염 피해, 점화 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "10% chance to Ignite",
@@ -38969,7 +38969,7 @@ return {
         },
         [12415]= {
             ["skill"]= 12415,
-            ["name"]= "Weapon Fire Damage, Ignite Duration and Ignite Chance",
+            ["name"]= "무기 화염 피해, 점화 지속시간, 점화 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "20% increased Ignite Duration on Enemies",
@@ -38991,7 +38991,7 @@ return {
         },
         [7187]= {
             ["skill"]= 7187,
-            ["name"]= "Weapon Fire Damage and Burning Damage Multiplier",
+            ["name"]= "무기 화염 피해, 화상 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/firedamagestr.png",
             ["stats"]= {
                 "+4% to Fire Damage over Time Multiplier",
@@ -39009,7 +39009,7 @@ return {
         },
         [35101]= {
             ["skill"]= 35101,
-            ["name"]= "Ignite Attacks Mastery",
+            ["name"]= "점화 공격 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39021,7 +39021,7 @@ return {
         },
         [36736]= {
             ["skill"]= 36736,
-            ["name"]= "Burning Brutality",
+            ["name"]= "불타는 잔인함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireAilment.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39048,7 +39048,7 @@ return {
         },
         [20010]= {
             ["skill"]= 20010,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -39068,7 +39068,7 @@ return {
         },
         [9171]= {
             ["skill"]= 9171,
-            ["name"]= "Life Leech",
+            ["name"]= "생명력 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifegainpertarget.png",
             ["stats"]= {
                 "0.4% of Attack Damage Leeched as Life",
@@ -39089,7 +39089,7 @@ return {
         },
         [39530]= {
             ["skill"]= 39530,
-            ["name"]= "Vitality Void",
+            ["name"]= "활력 비우기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleech.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39115,7 +39115,7 @@ return {
         },
         [36704]= {
             ["skill"]= 36704,
-            ["name"]= "Life and Mana Leech",
+            ["name"]= "생명력, 마나 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifemana.png",
             ["stats"]= {
                 "0.4% of Attack Damage Leeched as Life",
@@ -39137,7 +39137,7 @@ return {
         },
         [54872]= {
             ["skill"]= 54872,
-            ["name"]= "Mana Leech",
+            ["name"]= "마나 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaLeechThemedNode.png",
             ["stats"]= {
                 "0.4% of Attack Damage Leeched as Mana",
@@ -39158,7 +39158,7 @@ return {
         },
         [1382]= {
             ["skill"]= 1382,
-            ["name"]= "Spirit Void",
+            ["name"]= "혼백 비우기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minddrinker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39184,7 +39184,7 @@ return {
         },
         [59717]= {
             ["skill"]= 59717,
-            ["name"]= "Mana Mastery",
+            ["name"]= "마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLifeMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39196,7 +39196,7 @@ return {
         },
         [10808]= {
             ["skill"]= 10808,
-            ["name"]= "Vaal Pact",
+            ["name"]= "바알의 계약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/vaalpact.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -39216,7 +39216,7 @@ return {
         },
         [56807]= {
             ["skill"]= 56807,
-            ["name"]= "Dual Wield Damage and Block",
+            ["name"]= "쌍수 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+3% Chance to Block Attack Damage while Dual Wielding",
@@ -39235,7 +39235,7 @@ return {
         },
         [24203]= {
             ["skill"]= 24203,
-            ["name"]= "Dual Wield Damage and Attack Speed",
+            ["name"]= "쌍수 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwield.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while Dual Wielding",
@@ -39253,7 +39253,7 @@ return {
         },
         [59016]= {
             ["skill"]= 59016,
-            ["name"]= "Dual Wield Attack Speed and Block",
+            ["name"]= "쌍수 공격 속도, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddual.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding",
@@ -39270,7 +39270,7 @@ return {
         },
         [35489]= {
             ["skill"]= 35489,
-            ["name"]= "Duel Wield Mastery",
+            ["name"]= "쌍수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDualWield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39282,7 +39282,7 @@ return {
         },
         [33725]= {
             ["skill"]= 33725,
-            ["name"]= "Swagger",
+            ["name"]= "활보",
             ["icon"]= "Art/2DArt/SkillIcons/passives/swagger.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39307,7 +39307,7 @@ return {
         },
         [5408]= {
             ["skill"]= 5408,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -39329,7 +39329,7 @@ return {
         },
         [34907]= {
             ["skill"]= 34907,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -39347,7 +39347,7 @@ return {
         },
         [28424]= {
             ["skill"]= 28424,
-            ["name"]= "Mana and Mana Gain on Killing Blow",
+            ["name"]= "마나, 처치 시 마나 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "10% increased maximum Mana",
@@ -39365,7 +39365,7 @@ return {
         },
         [45067]= {
             ["skill"]= 45067,
-            ["name"]= "Thrill Seeker",
+            ["name"]= "스릴 추구자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ThrillKiller.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39393,7 +39393,7 @@ return {
         },
         [23950]= {
             ["skill"]= 23950,
-            ["name"]= "Wicked Ward",
+            ["name"]= "사악한 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Occultist/EldrichBarrier.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -39412,7 +39412,7 @@ return {
         },
         [12189]= {
             ["skill"]= 12189,
-            ["name"]= "Cast Speed and Spell Critical Strike Chance",
+            ["name"]= "시전 속도, 주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed",
@@ -39429,7 +39429,7 @@ return {
         },
         [5875]= {
             ["skill"]= 5875,
-            ["name"]= "Cast Speed and Spell Critical Strike Chance",
+            ["name"]= "시전 속도, 주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed",
@@ -39447,7 +39447,7 @@ return {
         },
         [9788]= {
             ["skill"]= 9788,
-            ["name"]= "Nimbleness",
+            ["name"]= "기민함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/nimbleness.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39471,7 +39471,7 @@ return {
         },
         [51801]= {
             ["skill"]= 51801,
-            ["name"]= "Spell Area of Effect and Damage",
+            ["name"]= "주문 효과 범위, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["stats"]= {
                 "10% increased Spell Damage",
@@ -39489,7 +39489,7 @@ return {
         },
         [14745]= {
             ["skill"]= 14745,
-            ["name"]= "Spell Area of Effect and Damage",
+            ["name"]= "주문 효과 범위, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/areaofeffect.png",
             ["stats"]= {
                 "10% increased Spell Damage",
@@ -39507,7 +39507,7 @@ return {
         },
         [53573]= {
             ["skill"]= 53573,
-            ["name"]= "Arcane Expanse",
+            ["name"]= "비전의 확장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blastradius.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39535,7 +39535,7 @@ return {
         },
         [37904]= {
             ["skill"]= 37904,
-            ["name"]= "Area Spells Mastery",
+            ["name"]= "범위 주문 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaofEffectSpellsMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39547,7 +39547,7 @@ return {
         },
         [48553]= {
             ["skill"]= 48553,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagespells.png",
             ["stats"]= {
                 "12% increased Spell Damage"
@@ -39564,7 +39564,7 @@ return {
         },
         [37403]= {
             ["skill"]= 37403,
-            ["name"]= "Intensity",
+            ["name"]= "격렬함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IntensifyNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39585,7 +39585,7 @@ return {
         },
         [7356]= {
             ["skill"]= 7356,
-            ["name"]= "Bow Mastery",
+            ["name"]= "활 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39597,7 +39597,7 @@ return {
         },
         [46344]= {
             ["skill"]= 46344,
-            ["name"]= "Bow Damage and Movement Speed",
+            ["name"]= "활 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "12% increased Damage with Bows",
@@ -39616,7 +39616,7 @@ return {
         },
         [29089]= {
             ["skill"]= 29089,
-            ["name"]= "Bow Damage and Evasion",
+            ["name"]= "활 피해, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "12% increased Damage with Bows",
@@ -39635,7 +39635,7 @@ return {
         },
         [36687]= {
             ["skill"]= 36687,
-            ["name"]= "Avatar of the Hunt",
+            ["name"]= "사냥의 화신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AvataroftheHunt2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39660,7 +39660,7 @@ return {
         },
         [930]= {
             ["skill"]= 930,
-            ["name"]= "Bow Damage and Evasion",
+            ["name"]= "활 피해, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -39678,7 +39678,7 @@ return {
         },
         [37671]= {
             ["skill"]= 37671,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -39703,7 +39703,7 @@ return {
         },
         [33310]= {
             ["skill"]= 33310,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -39724,7 +39724,7 @@ return {
         },
         [33166]= {
             ["skill"]= 33166,
-            ["name"]= "Life and Energy Shield Mastery",
+            ["name"]= "생명력, 에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryLifeAndEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -39736,7 +39736,7 @@ return {
         },
         [55247]= {
             ["skill"]= 55247,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -39754,7 +39754,7 @@ return {
         },
         [63799]= {
             ["skill"]= 63799,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -39772,7 +39772,7 @@ return {
         },
         [61320]= {
             ["skill"]= 61320,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -39789,7 +39789,7 @@ return {
         },
         [18865]= {
             ["skill"]= 18865,
-            ["name"]= "Melding",
+            ["name"]= "융합",
             ["icon"]= "Art/2DArt/SkillIcons/passives/melding.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39811,7 +39811,7 @@ return {
         },
         [56589]= {
             ["skill"]= 56589,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -39832,7 +39832,7 @@ return {
         },
         [27709]= {
             ["skill"]= 27709,
-            ["name"]= "Spell Critical Strike Chance and Critical Ignite Damage Multiplier",
+            ["name"]= "주문 치명타 확률, 치명타 점화 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpellCritChanceCritMultiplier.png",
             ["stats"]= {
                 "+5% to Damage over Time Multiplier for Ignite from Critical Strikes",
@@ -39850,7 +39850,7 @@ return {
         },
         [28887]= {
             ["skill"]= 28887,
-            ["name"]= "Spell Critical Strike Chance and Critical Ignite Damage Multiplier",
+            ["name"]= "주문 치명타 확률, 치명타 점화 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpellCritChanceCritMultiplier.png",
             ["stats"]= {
                 "+5% to Damage over Time Multiplier for Ignite from Critical Strikes",
@@ -39868,7 +39868,7 @@ return {
         },
         [38849]= {
             ["skill"]= 38849,
-            ["name"]= "Searing Heat",
+            ["name"]= "타는 듯한 열기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SearingHeat.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -39891,7 +39891,7 @@ return {
         },
         [45035]= {
             ["skill"]= 45035,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "16% increased Projectile Damage"
@@ -39910,7 +39910,7 @@ return {
         },
         [39821]= {
             ["skill"]= 39821,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "18% increased Evasion Rating",
@@ -39930,7 +39930,7 @@ return {
         },
         [50459]= {
             ["skill"]= 50459,
-            ["name"]= "RANGER",
+            ["name"]= "레인저",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blankDex.png",
             ["stats"]= {},
             ["classStartIndex"]= 2,
@@ -39948,7 +39948,7 @@ return {
         },
         [45272]= {
             ["skill"]= 45272,
-            ["name"]= "Physical and Chaos Damage and Life",
+            ["name"]= "물리, 카오스 피해, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageChaosNode.png",
             ["stats"]= {
                 "14% increased Chaos Damage",
@@ -39968,7 +39968,7 @@ return {
         },
         [44683]= {
             ["skill"]= 44683,
-            ["name"]= "SIX",
+            ["name"]= "여섯",
             ["icon"]= "Art/2DArt/SkillIcons/passives/tempint.png",
             ["stats"]= {},
             ["classStartIndex"]= 6,
@@ -39987,7 +39987,7 @@ return {
         },
         [54574]= {
             ["skill"]= 54574,
-            ["name"]= "Trap Damage",
+            ["name"]= "덫 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "16% increased Trap Damage"
@@ -40004,7 +40004,7 @@ return {
         },
         [59605]= {
             ["skill"]= 59605,
-            ["name"]= "Unstable Munitions",
+            ["name"]= "불안정한 탄약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trap2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40027,7 +40027,7 @@ return {
         },
         [54974]= {
             ["skill"]= 54974,
-            ["name"]= "Trap Damage and Trigger Area",
+            ["name"]= "덫 피해, 발동 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "10% increased Trap Damage",
@@ -40045,7 +40045,7 @@ return {
         },
         [4036]= {
             ["skill"]= 4036,
-            ["name"]= "Critical Strike Multiplier",
+            ["name"]= "치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikemultiplier.png",
             ["stats"]= {
                 "+12% to Critical Strike Multiplier"
@@ -40061,7 +40061,7 @@ return {
         },
         [15228]= {
             ["skill"]= 15228,
-            ["name"]= "Critical Strike Multiplier",
+            ["name"]= "치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikemultiplier.png",
             ["stats"]= {
                 "+12% to Critical Strike Multiplier"
@@ -40078,7 +40078,7 @@ return {
         },
         [47306]= {
             ["skill"]= 47306,
-            ["name"]= "Throatseeker",
+            ["name"]= "숨통 노리기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/throatseeker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40099,7 +40099,7 @@ return {
         },
         [36874]= {
             ["skill"]= 36874,
-            ["name"]= "Wisdom of the Glade",
+            ["name"]= "숲의 지혜",
             ["icon"]= "Art/2DArt/SkillIcons/passives/savant.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40121,7 +40121,7 @@ return {
         },
         [23438]= {
             ["skill"]= 23438,
-            ["name"]= "Mana Flasks and Flask Duration",
+            ["name"]= "마나 플라스크, 플라스크 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "10% increased Mana Recovery from Flasks",
@@ -40138,7 +40138,7 @@ return {
         },
         [16602]= {
             ["skill"]= 16602,
-            ["name"]= "Mana Flasks and Flask Duration",
+            ["name"]= "마나 플라스크, 플라스크 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskint.png",
             ["stats"]= {
                 "10% increased Mana Recovery from Flasks",
@@ -40156,7 +40156,7 @@ return {
         },
         [41137]= {
             ["skill"]= 41137,
-            ["name"]= "Aqueous Accelerant",
+            ["name"]= "수성 촉진제",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BenefitsfromHavingaMana.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40179,7 +40179,7 @@ return {
         },
         [23690]= {
             ["skill"]= 23690,
-            ["name"]= "Arcane Vision",
+            ["name"]= "비전의 시야",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arcaneradience.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40201,7 +40201,7 @@ return {
         },
         [43787]= {
             ["skill"]= 43787,
-            ["name"]= "Accuracy and Elemental Resistances",
+            ["name"]= "정확도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -40218,7 +40218,7 @@ return {
         },
         [29379]= {
             ["skill"]= 29379,
-            ["name"]= "Accuracy and Elemental Resistances",
+            ["name"]= "정확도, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -40235,7 +40235,7 @@ return {
         },
         [52230]= {
             ["skill"]= 52230,
-            ["name"]= "Weathered Hunter",
+            ["name"]= "풍파에 시달린 사냥꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40260,7 +40260,7 @@ return {
         },
         [56075]= {
             ["skill"]= 56075,
-            ["name"]= "Eldritch Battery",
+            ["name"]= "섬뜩한 충전기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneEldritchBattery.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -40280,7 +40280,7 @@ return {
         },
         [29454]= {
             ["skill"]= 29454,
-            ["name"]= "Channelling Attack Damage and Speed",
+            ["name"]= "집중 유지 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills deal 10% increased Attack Damage",
@@ -40298,7 +40298,7 @@ return {
         },
         [62744]= {
             ["skill"]= 62744,
-            ["name"]= "Channelling Attack Damage",
+            ["name"]= "집중 유지 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills deal 12% increased Attack Damage"
@@ -40315,7 +40315,7 @@ return {
         },
         [18770]= {
             ["skill"]= 18770,
-            ["name"]= "Channelling Attack Damage and Speed",
+            ["name"]= "집중 유지 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills deal 10% increased Attack Damage",
@@ -40333,7 +40333,7 @@ return {
         },
         [63251]= {
             ["skill"]= 63251,
-            ["name"]= "Charging Offensive",
+            ["name"]= "돌격 공세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40357,7 +40357,7 @@ return {
         },
         [34761]= {
             ["skill"]= 34761,
-            ["name"]= "Channelling Mastery",
+            ["name"]= "집중 유지 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -40369,7 +40369,7 @@ return {
         },
         [38129]= {
             ["skill"]= 38129,
-            ["name"]= "Damage and Energy Shield",
+            ["name"]= "피해, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "14% increased Damage",
@@ -40389,7 +40389,7 @@ return {
         },
         [32345]= {
             ["skill"]= 32345,
-            ["name"]= "Alacrity",
+            ["name"]= "기민성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/grace.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40411,7 +40411,7 @@ return {
         },
         [32710]= {
             ["skill"]= 32710,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -40436,7 +40436,7 @@ return {
         },
         [8620]= {
             ["skill"]= 8620,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNode.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -40453,7 +40453,7 @@ return {
         },
         [27325]= {
             ["skill"]= 27325,
-            ["name"]= "Damage against Marked Enemy",
+            ["name"]= "징표 대상 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNode.png",
             ["stats"]= {
                 "20% increased Damage with Hits and Ailments against Marked Enemy"
@@ -40470,7 +40470,7 @@ return {
         },
         [41595]= {
             ["skill"]= 41595,
-            ["name"]= "Marked for Death",
+            ["name"]= "죽음의 징표",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40495,7 +40495,7 @@ return {
         },
         [19388]= {
             ["skill"]= 19388,
-            ["name"]= "Axe Damage and Accuracy",
+            ["name"]= "도끼 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -40516,7 +40516,7 @@ return {
         },
         [23852]= {
             ["skill"]= 23852,
-            ["name"]= "Axe Damage",
+            ["name"]= "도끼 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 12% increased Damage with Hits and Ailments"
@@ -40537,7 +40537,7 @@ return {
         },
         [32519]= {
             ["skill"]= 32519,
-            ["name"]= "Axe Damage and Critical Strike Chance",
+            ["name"]= "도끼 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -40558,7 +40558,7 @@ return {
         },
         [26188]= {
             ["skill"]= 26188,
-            ["name"]= "Axe Damage and Critical Strike Chance",
+            ["name"]= "도끼 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damageaxe.png",
             ["stats"]= {
                 "Axe Attacks deal 10% increased Damage with Hits and Ailments",
@@ -40579,7 +40579,7 @@ return {
         },
         [52090]= {
             ["skill"]= 52090,
-            ["name"]= "Feller of Foes",
+            ["name"]= "적 벌목꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AxeNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40606,7 +40606,7 @@ return {
         },
         [55192]= {
             ["skill"]= 55192,
-            ["name"]= "Axe Mastery",
+            ["name"]= "도끼 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupAxe.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -40618,7 +40618,7 @@ return {
         },
         [34882]= {
             ["skill"]= 34882,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -40638,7 +40638,7 @@ return {
         },
         [23471]= {
             ["skill"]= 23471,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -40662,7 +40662,7 @@ return {
         },
         [15027]= {
             ["skill"]= 15027,
-            ["name"]= "Beef",
+            ["name"]= "근력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/oxblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40684,7 +40684,7 @@ return {
         },
         [63639]= {
             ["skill"]= 63639,
-            ["name"]= "Damage and Energy Shield",
+            ["name"]= "피해, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "12% increased Damage",
@@ -40703,7 +40703,7 @@ return {
         },
         [64612]= {
             ["skill"]= 64612,
-            ["name"]= "Wand Cold Damage",
+            ["name"]= "마법봉 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Gain 10% of Wand Physical Damage as Extra Cold Damage"
@@ -40720,7 +40720,7 @@ return {
         },
         [32942]= {
             ["skill"]= 32942,
-            ["name"]= "Wand Physical Damage and Attack Speed",
+            ["name"]= "마법봉 물리 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "12% increased Physical Damage with Wands",
@@ -40742,7 +40742,7 @@ return {
         },
         [64239]= {
             ["skill"]= 64239,
-            ["name"]= "Wand Physical Damage",
+            ["name"]= "마법봉 물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "12% increased Physical Damage with Wands",
@@ -40763,7 +40763,7 @@ return {
         },
         [22407]= {
             ["skill"]= 22407,
-            ["name"]= "Wand Physical Damage and Attack Speed",
+            ["name"]= "마법봉 물리 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "12% increased Physical Damage with Wands",
@@ -40785,7 +40785,7 @@ return {
         },
         [63207]= {
             ["skill"]= 63207,
-            ["name"]= "Tempest Blast",
+            ["name"]= "폭풍 강타",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TempestBlast.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40807,7 +40807,7 @@ return {
         },
         [19098]= {
             ["skill"]= 19098,
-            ["name"]= "Wand Fire Damage",
+            ["name"]= "마법봉 화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterywand.png",
             ["stats"]= {
                 "Gain 10% of Wand Physical Damage as Extra Fire Damage"
@@ -40824,7 +40824,7 @@ return {
         },
         [59959]= {
             ["skill"]= 59959,
-            ["name"]= "Wand Mastery",
+            ["name"]= "마법봉 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupWand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -40836,7 +40836,7 @@ return {
         },
         [6615]= {
             ["skill"]= 6615,
-            ["name"]= "Arcing Blows",
+            ["name"]= "전호의 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/sparkingattacks.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40862,7 +40862,7 @@ return {
         },
         [12379]= {
             ["skill"]= 12379,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Lightning Damage"
@@ -40880,7 +40880,7 @@ return {
         },
         [44183]= {
             ["skill"]= 44183,
-            ["name"]= "Lightning Damage and Cast Speed",
+            ["name"]= "번개 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "8% increased Lightning Damage",
@@ -40898,7 +40898,7 @@ return {
         },
         [7555]= {
             ["skill"]= 7555,
-            ["name"]= "Crackling Speed",
+            ["name"]= "치직대는 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40924,7 +40924,7 @@ return {
         },
         [37394]= {
             ["skill"]= 37394,
-            ["name"]= "Lightning Mastery",
+            ["name"]= "번개 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLightning.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -40936,7 +40936,7 @@ return {
         },
         [44339]= {
             ["skill"]= 44339,
-            ["name"]= "Weapon Lightning Damage",
+            ["name"]= "무기 번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "12% increased Lightning Damage with Attack Skills"
@@ -40952,7 +40952,7 @@ return {
         },
         [6363]= {
             ["skill"]= 6363,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -40972,7 +40972,7 @@ return {
         },
         [15085]= {
             ["skill"]= 15085,
-            ["name"]= "Ambidexterity",
+            ["name"]= "양손잡이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ambidexterity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -40998,7 +40998,7 @@ return {
         },
         [54268]= {
             ["skill"]= 54268,
-            ["name"]= "Blade Barrier",
+            ["name"]= "칼날 방어막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41021,7 +41021,7 @@ return {
         },
         [56231]= {
             ["skill"]= 56231,
-            ["name"]= "Dual Wield Damage and Block",
+            ["name"]= "쌍수 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+3% Chance to Block Attack Damage while Dual Wielding",
@@ -41039,7 +41039,7 @@ return {
         },
         [2392]= {
             ["skill"]= 2392,
-            ["name"]= "Dual Wield Damage and Block",
+            ["name"]= "쌍수 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+3% Chance to Block Attack Damage while Dual Wielding",
@@ -41057,7 +41057,7 @@ return {
         },
         [13807]= {
             ["skill"]= 13807,
-            ["name"]= "Dual Wield Damage and Attack Speed",
+            ["name"]= "쌍수 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwieldgreen.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while Dual Wielding",
@@ -41079,7 +41079,7 @@ return {
         },
         [33089]= {
             ["skill"]= 33089,
-            ["name"]= "Dual Wield Damage and Attack Speed",
+            ["name"]= "쌍수 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwieldgreen.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while Dual Wielding",
@@ -41100,7 +41100,7 @@ return {
         },
         [49547]= {
             ["skill"]= 49547,
-            ["name"]= "Dual Wield Damage",
+            ["name"]= "쌍수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagedualwield.png",
             ["stats"]= {
                 "Attack Skills deal 12% increased Damage while Dual Wielding"
@@ -41117,7 +41117,7 @@ return {
         },
         [57782]= {
             ["skill"]= 57782,
-            ["name"]= "Duel Wield Mastery",
+            ["name"]= "쌍수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDualWield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -41129,7 +41129,7 @@ return {
         },
         [24496]= {
             ["skill"]= 24496,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -41147,7 +41147,7 @@ return {
         },
         [39861]= {
             ["skill"]= 39861,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -41166,7 +41166,7 @@ return {
         },
         [33989]= {
             ["skill"]= 33989,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -41180,7 +41180,7 @@ return {
         },
         [21301]= {
             ["skill"]= 21301,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -41200,7 +41200,7 @@ return {
         },
         [17236]= {
             ["skill"]= 17236,
-            ["name"]= "Energy Shield and Energy Shield Recharge Rate",
+            ["name"]= "에너지 보호막, 에너지 보호막 충전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+15 to maximum Energy Shield",
@@ -41217,7 +41217,7 @@ return {
         },
         [7641]= {
             ["skill"]= 7641,
-            ["name"]= "Energy Shield and Energy Shield Recharge Rate",
+            ["name"]= "에너지 보호막, 에너지 보호막 충전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/energyshield.png",
             ["stats"]= {
                 "+15 to maximum Energy Shield",
@@ -41234,7 +41234,7 @@ return {
         },
         [62577]= {
             ["skill"]= 62577,
-            ["name"]= "Essence Surge",
+            ["name"]= "에센스 쇄도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EssenceSurge.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41257,7 +41257,7 @@ return {
         },
         [25789]= {
             ["skill"]= 25789,
-            ["name"]= "Energy Shield Leech",
+            ["name"]= "에너지 보호막 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "0.3% of Spell Damage Leeched as Energy Shield"
@@ -41278,7 +41278,7 @@ return {
         },
         [54452]= {
             ["skill"]= 54452,
-            ["name"]= "Energy Shield Leech",
+            ["name"]= "에너지 보호막 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "0.4% of Spell Damage Leeched as Energy Shield"
@@ -41298,7 +41298,7 @@ return {
         },
         [43328]= {
             ["skill"]= 43328,
-            ["name"]= "Energy Shield Leech",
+            ["name"]= "에너지 보호막 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "0.2% of Spell Damage Leeched as Energy Shield",
@@ -41319,7 +41319,7 @@ return {
         },
         [59699]= {
             ["skill"]= 59699,
-            ["name"]= "Increased Energy Shield Leeched",
+            ["name"]= "에너지 보호막 흡수량 증가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyshieldLeechPassivessmall.png",
             ["stats"]= {
                 "30% increased total Recovery per second from Energy Shield Leech"
@@ -41336,7 +41336,7 @@ return {
         },
         [15852]= {
             ["skill"]= 15852,
-            ["name"]= "Ethereal Feast",
+            ["name"]= "영묘한 연회",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArcaneReaping.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41363,7 +41363,7 @@ return {
         },
         [55107]= {
             ["skill"]= 55107,
-            ["name"]= "Energy Shield Mastery",
+            ["name"]= "에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -41375,7 +41375,7 @@ return {
         },
         [63139]= {
             ["skill"]= 63139,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -41393,7 +41393,7 @@ return {
         },
         [2094]= {
             ["skill"]= 2094,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "14% increased Evasion Rating",
@@ -41412,7 +41412,7 @@ return {
         },
         [41689]= {
             ["skill"]= 41689,
-            ["name"]= "Physical and Chaos Damage",
+            ["name"]= "물리, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageChaosNode.png",
             ["stats"]= {
                 "12% increased Chaos Damage",
@@ -41431,7 +41431,7 @@ return {
         },
         [10153]= {
             ["skill"]= 10153,
-            ["name"]= "Physique",
+            ["name"]= "체격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/oxblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41453,7 +41453,7 @@ return {
         },
         [465]= {
             ["skill"]= 465,
-            ["name"]= "Projectile Damage and Attack Speed",
+            ["name"]= "투사체 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -41472,7 +41472,7 @@ return {
         },
         [444]= {
             ["skill"]= 444,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -41490,7 +41490,7 @@ return {
         },
         [52904]= {
             ["skill"]= 52904,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -41508,7 +41508,7 @@ return {
         },
         [55307]= {
             ["skill"]= 55307,
-            ["name"]= "Fire Damage and Ignite Avoidance",
+            ["name"]= "화염 피해, 점화 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/avoidburning.png",
             ["stats"]= {
                 "30% chance to Avoid being Ignited",
@@ -41529,7 +41529,7 @@ return {
         },
         [64241]= {
             ["skill"]= 64241,
-            ["name"]= "Cold Damage, Freeze and Chill Avoidance",
+            ["name"]= "냉기 피해, 동결, 냉각 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/avoidchilling.png",
             ["stats"]= {
                 "30% chance to Avoid being Chilled",
@@ -41550,7 +41550,7 @@ return {
         },
         [26471]= {
             ["skill"]= 26471,
-            ["name"]= "Lightning Damage and Shock Avoidance",
+            ["name"]= "번개 피해, 감전 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningdex.png",
             ["stats"]= {
                 "30% chance to Avoid being Shocked",
@@ -41571,7 +41571,7 @@ return {
         },
         [15837]= {
             ["skill"]= 15837,
-            ["name"]= "Avoid Status Ailments and Elemental Resistances",
+            ["name"]= "상태 이상 회피, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/crystalskin.png",
             ["stats"]= {
                 "+5% to all Elemental Resistances",
@@ -41594,7 +41594,7 @@ return {
         },
         [40743]= {
             ["skill"]= 40743,
-            ["name"]= "Crystal Skin",
+            ["name"]= "결정 가죽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/diamondskin.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41624,7 +41624,7 @@ return {
         },
         [64501]= {
             ["skill"]= 64501,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -41641,7 +41641,7 @@ return {
         },
         [46136]= {
             ["skill"]= 46136,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -41658,7 +41658,7 @@ return {
         },
         [58649]= {
             ["skill"]= 58649,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -41675,7 +41675,7 @@ return {
         },
         [11334]= {
             ["skill"]= 11334,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -41693,7 +41693,7 @@ return {
         },
         [15549]= {
             ["skill"]= 15549,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -41711,7 +41711,7 @@ return {
         },
         [62069]= {
             ["skill"]= 62069,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "10% increased Trap Damage",
@@ -41729,7 +41729,7 @@ return {
         },
         [31583]= {
             ["skill"]= 31583,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "10% increased Trap Damage",
@@ -41747,7 +41747,7 @@ return {
         },
         [1600]= {
             ["skill"]= 1600,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "10% increased Trap Damage",
@@ -41765,7 +41765,7 @@ return {
         },
         [53759]= {
             ["skill"]= 53759,
-            ["name"]= "Cleansed Thoughts",
+            ["name"]= "정화된 사고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaoticPotential.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -41785,7 +41785,7 @@ return {
         },
         [63754]= {
             ["skill"]= 63754,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -41799,7 +41799,7 @@ return {
         },
         [54142]= {
             ["skill"]= 54142,
-            ["name"]= "Finesse",
+            ["name"]= "수완",
             ["icon"]= "Art/2DArt/SkillIcons/passives/finesse.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41830,7 +41830,7 @@ return {
         },
         [39524]= {
             ["skill"]= 39524,
-            ["name"]= "Critical Ailment Damage Over Time Multiplier",
+            ["name"]= "치명타 상태 이상 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AilmentDamageCritMultiplier.png",
             ["stats"]= {
                 "+14% to Damage over Time Multiplier for Ailments from Critical Strikes"
@@ -41846,7 +41846,7 @@ return {
         },
         [23439]= {
             ["skill"]= 23439,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance"
@@ -41863,7 +41863,7 @@ return {
         },
         [9015]= {
             ["skill"]= 9015,
-            ["name"]= "Dire Torment",
+            ["name"]= "극심한 격통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DireTorment.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -41885,7 +41885,7 @@ return {
         },
         [37147]= {
             ["skill"]= 37147,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -41899,7 +41899,7 @@ return {
         },
         [11239]= {
             ["skill"]= 11239,
-            ["name"]= "Wind Dancer",
+            ["name"]= "바람의 무희",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WindDancer.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -41922,7 +41922,7 @@ return {
         },
         [41307]= {
             ["skill"]= 41307,
-            ["name"]= "Deadly Inclinations",
+            ["name"]= "치명적인 성향",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EyesOfTheDeadly.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -41946,7 +41946,7 @@ return {
         },
         [49605]= {
             ["skill"]= 49605,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -41968,7 +41968,7 @@ return {
         },
         [3726]= {
             ["skill"]= 3726,
-            ["name"]= "Mine Damage and Reduced Reservation",
+            ["name"]= "지뢰 피해, 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineManaReservationNode.png",
             ["stats"]= {
                 "10% increased Mine Damage",
@@ -41986,7 +41986,7 @@ return {
         },
         [40409]= {
             ["skill"]= 40409,
-            ["name"]= "Mine Throwing and Detonation Speed",
+            ["name"]= "지뢰 투척 및 폭발 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "4% increased Mine Throwing Speed",
@@ -42004,7 +42004,7 @@ return {
         },
         [4546]= {
             ["skill"]= 4546,
-            ["name"]= "Mine Throwing and Detonation Speed",
+            ["name"]= "지뢰 투척 및 폭발 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "4% increased Mine Throwing Speed",
@@ -42022,7 +42022,7 @@ return {
         },
         [4995]= {
             ["skill"]= 4995,
-            ["name"]= "Mine Damage and Reduced Reservation",
+            ["name"]= "지뢰 피해, 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineManaReservationNode.png",
             ["stats"]= {
                 "10% increased Mine Damage",
@@ -42040,7 +42040,7 @@ return {
         },
         [9055]= {
             ["skill"]= 9055,
-            ["name"]= "Volatile Mines",
+            ["name"]= "폭발성 지뢰",
             ["icon"]= "Art/2DArt/SkillIcons/passives/volitilemines.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42064,7 +42064,7 @@ return {
         },
         [41027]= {
             ["skill"]= 41027,
-            ["name"]= "Mine Damage and Duration",
+            ["name"]= "지뢰 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "10% increased Mine Damage",
@@ -42083,7 +42083,7 @@ return {
         },
         [63167]= {
             ["skill"]= 63167,
-            ["name"]= "Mine Mastery",
+            ["name"]= "지뢰 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -42095,7 +42095,7 @@ return {
         },
         [48477]= {
             ["skill"]= 48477,
-            ["name"]= "Attack and Cast Speed",
+            ["name"]= "공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -42113,7 +42113,7 @@ return {
         },
         [23507]= {
             ["skill"]= 23507,
-            ["name"]= "Attack and Cast Speed",
+            ["name"]= "공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -42131,7 +42131,7 @@ return {
         },
         [57248]= {
             ["skill"]= 57248,
-            ["name"]= "Attack and Cast Speed",
+            ["name"]= "공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -42149,7 +42149,7 @@ return {
         },
         [45838]= {
             ["skill"]= 45838,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -42167,7 +42167,7 @@ return {
         },
         [8640]= {
             ["skill"]= 8640,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -42184,7 +42184,7 @@ return {
         },
         [27276]= {
             ["skill"]= 27276,
-            ["name"]= "Physical and Chaos Damage",
+            ["name"]= "물리, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageChaosNode.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -42202,7 +42202,7 @@ return {
         },
         [62831]= {
             ["skill"]= 62831,
-            ["name"]= "Physical and Chaos Damage",
+            ["name"]= "물리, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageChaosNode.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -42220,7 +42220,7 @@ return {
         },
         [51220]= {
             ["skill"]= 51220,
-            ["name"]= "Physical and Chaos Damage",
+            ["name"]= "물리, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageChaosNode.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -42238,7 +42238,7 @@ return {
         },
         [52423]= {
             ["skill"]= 52423,
-            ["name"]= "Damage and Critical Strikes against Blinded Enemies",
+            ["name"]= "실명된 적 대상 피해, 치명타",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackBlindNode.png",
             ["stats"]= {
                 "12% increased Damage with Hits and Ailments against Blinded Enemies",
@@ -42259,7 +42259,7 @@ return {
         },
         [35744]= {
             ["skill"]= 35744,
-            ["name"]= "Blind Chance",
+            ["name"]= "실명 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackBlindNode.png",
             ["stats"]= {
                 "5% chance to Blind Enemies on Hit with Attacks"
@@ -42279,7 +42279,7 @@ return {
         },
         [40287]= {
             ["skill"]= 40287,
-            ["name"]= "Damage and Critical Strikes against Blinded Enemies",
+            ["name"]= "실명된 적 대상 피해, 치명타",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackBlindNode.png",
             ["stats"]= {
                 "12% increased Damage with Hits and Ailments against Blinded Enemies",
@@ -42300,7 +42300,7 @@ return {
         },
         [27909]= {
             ["skill"]= 27909,
-            ["name"]= "Attack Blind Mastery",
+            ["name"]= "공격 실명 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackBlindMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -42312,7 +42312,7 @@ return {
         },
         [570]= {
             ["skill"]= 570,
-            ["name"]= "Dazzling Strikes",
+            ["name"]= "눈부신 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackBlindNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42338,7 +42338,7 @@ return {
         },
         [58968]= {
             ["skill"]= 58968,
-            ["name"]= "Chaos Damage Over Time Multiplier",
+            ["name"]= "카오스 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "+6% to Chaos Damage over Time Multiplier"
@@ -42355,7 +42355,7 @@ return {
         },
         [37663]= {
             ["skill"]= 37663,
-            ["name"]= "Chaos Damage Over Time Multiplier",
+            ["name"]= "카오스 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "+6% to Chaos Damage over Time Multiplier"
@@ -42372,7 +42372,7 @@ return {
         },
         [18707]= {
             ["skill"]= 18707,
-            ["name"]= "Method to the Madness",
+            ["name"]= "광기 속의 방법",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MethodMadess.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42400,7 +42400,7 @@ return {
         },
         [55604]= {
             ["skill"]= 55604,
-            ["name"]= "Chaos Mastery",
+            ["name"]= "카오스 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryChaos.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -42412,7 +42412,7 @@ return {
         },
         [1427]= {
             ["skill"]= 1427,
-            ["name"]= "Chaos Resistance",
+            ["name"]= "카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chaosresist.png",
             ["stats"]= {
                 "+12% to Chaos Resistance"
@@ -42429,7 +42429,7 @@ return {
         },
         [51235]= {
             ["skill"]= 51235,
-            ["name"]= "Chaos Resistance",
+            ["name"]= "카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chaosresist.png",
             ["stats"]= {
                 "+12% to Chaos Resistance"
@@ -42446,7 +42446,7 @@ return {
         },
         [35296]= {
             ["skill"]= 35296,
-            ["name"]= "Chaos Resistance and Chaos Damage",
+            ["name"]= "카오스 저항, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageandResist.png",
             ["stats"]= {
                 "8% increased Chaos Damage",
@@ -42465,7 +42465,7 @@ return {
         },
         [6542]= {
             ["skill"]= 6542,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -42483,7 +42483,7 @@ return {
         },
         [60803]= {
             ["skill"]= 60803,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -42501,7 +42501,7 @@ return {
         },
         [94]= {
             ["skill"]= 94,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evade.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -42519,7 +42519,7 @@ return {
         },
         [29870]= {
             ["skill"]= 29870,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -42536,7 +42536,7 @@ return {
         },
         [56149]= {
             ["skill"]= 56149,
-            ["name"]= "Attack Damage",
+            ["name"]= "공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "10% increased Attack Damage"
@@ -42553,7 +42553,7 @@ return {
         },
         [720]= {
             ["skill"]= 720,
-            ["name"]= "Attack Damage",
+            ["name"]= "공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "10% increased Attack Damage"
@@ -42570,7 +42570,7 @@ return {
         },
         [38344]= {
             ["skill"]= 38344,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -42587,7 +42587,7 @@ return {
         },
         [65033]= {
             ["skill"]= 65033,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -42604,7 +42604,7 @@ return {
         },
         [10017]= {
             ["skill"]= 10017,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -42621,7 +42621,7 @@ return {
         },
         [41250]= {
             ["skill"]= 41250,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -42638,7 +42638,7 @@ return {
         },
         [41536]= {
             ["skill"]= 41536,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -42655,7 +42655,7 @@ return {
         },
         [62712]= {
             ["skill"]= 62712,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -42672,7 +42672,7 @@ return {
         },
         [59370]= {
             ["skill"]= 59370,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -42690,7 +42690,7 @@ return {
         },
         [63795]= {
             ["skill"]= 63795,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -42708,7 +42708,7 @@ return {
         },
         [5237]= {
             ["skill"]= 5237,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -42730,7 +42730,7 @@ return {
         },
         [52522]= {
             ["skill"]= 52522,
-            ["name"]= "Mine Critical Strike Chance",
+            ["name"]= "지뢰 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["stats"]= {
                 "30% increased Critical Strike Chance with Mines"
@@ -42747,7 +42747,7 @@ return {
         },
         [11716]= {
             ["skill"]= 11716,
-            ["name"]= "Mine Critical Strike Multiplier",
+            ["name"]= "지뢰 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapcriticalstrike.png",
             ["stats"]= {
                 "+15% to Critical Strike Multiplier with Mines"
@@ -42764,7 +42764,7 @@ return {
         },
         [42744]= {
             ["skill"]= 42744,
-            ["name"]= "Mine Critical Strike Chance and Multiplier",
+            ["name"]= "지뢰 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["stats"]= {
                 "15% increased Critical Strike Chance with Mines",
@@ -42783,7 +42783,7 @@ return {
         },
         [45608]= {
             ["skill"]= 45608,
-            ["name"]= "Successive Detonations",
+            ["name"]= "연속 기폭",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineCriticalStrikesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42809,7 +42809,7 @@ return {
         },
         [12073]= {
             ["skill"]= 12073,
-            ["name"]= "Mine Mastery",
+            ["name"]= "지뢰 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -42821,7 +42821,7 @@ return {
         },
         [21984]= {
             ["skill"]= 21984,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -42841,7 +42841,7 @@ return {
         },
         [22618]= {
             ["skill"]= 22618,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "4% increased maximum Mana"
@@ -42858,7 +42858,7 @@ return {
         },
         [21033]= {
             ["skill"]= 21033,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "4% increased maximum Mana"
@@ -42875,7 +42875,7 @@ return {
         },
         [57199]= {
             ["skill"]= 57199,
-            ["name"]= "Fangs of Frost",
+            ["name"]= "서리의 송곳니",
             ["icon"]= "Art/2DArt/SkillIcons/passives/icebite.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42901,7 +42901,7 @@ return {
         },
         [61327]= {
             ["skill"]= 61327,
-            ["name"]= "Weapon Cold Damage",
+            ["name"]= "무기 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage with Attack Skills"
@@ -42918,7 +42918,7 @@ return {
         },
         [51404]= {
             ["skill"]= 51404,
-            ["name"]= "Weapon Cold Damage",
+            ["name"]= "무기 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage with Attack Skills"
@@ -42934,7 +42934,7 @@ return {
         },
         [23407]= {
             ["skill"]= 23407,
-            ["name"]= "Perfect Agony",
+            ["name"]= "완벽한 고통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CritAilments.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -42956,7 +42956,7 @@ return {
         },
         [64265]= {
             ["skill"]= 64265,
-            ["name"]= "Aura Area of Effect",
+            ["name"]= "오라 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraareaofeffect.png",
             ["stats"]= {
                 "12% increased Area of Effect of Aura Skills"
@@ -42972,7 +42972,7 @@ return {
         },
         [6799]= {
             ["skill"]= 6799,
-            ["name"]= "Charisma",
+            ["name"]= "신비한 매력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/authority.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -42994,7 +42994,7 @@ return {
         },
         [63194]= {
             ["skill"]= 63194,
-            ["name"]= "Reduced Reservation",
+            ["name"]= "점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manareservationreduction.png",
             ["stats"]= {
                 "4% reduced Reservation of Skills"
@@ -43011,7 +43011,7 @@ return {
         },
         [35853]= {
             ["skill"]= 35853,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -43027,7 +43027,7 @@ return {
         },
         [3109]= {
             ["skill"]= 3109,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -43048,7 +43048,7 @@ return {
         },
         [58194]= {
             ["skill"]= 58194,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -43063,7 +43063,7 @@ return {
         },
         [9797]= {
             ["skill"]= 9797,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -43085,7 +43085,7 @@ return {
         },
         [40132]= {
             ["skill"]= 40132,
-            ["name"]= "Evasion",
+            ["name"]= "회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "8% increased Evasion Rating"
@@ -43102,7 +43102,7 @@ return {
         },
         [58854]= {
             ["skill"]= 58854,
-            ["name"]= "Evasion",
+            ["name"]= "회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "8% increased Evasion Rating"
@@ -43119,7 +43119,7 @@ return {
         },
         [46882]= {
             ["skill"]= 46882,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -43139,7 +43139,7 @@ return {
         },
         [12068]= {
             ["skill"]= 12068,
-            ["name"]= "Bow Accuracy and Attack Speed",
+            ["name"]= "활 정확도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "4% increased Attack Speed with Bows",
@@ -43157,7 +43157,7 @@ return {
         },
         [16851]= {
             ["skill"]= 16851,
-            ["name"]= "Bow Damage and Accuracy",
+            ["name"]= "활 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "12% increased Damage with Bows",
@@ -43175,7 +43175,7 @@ return {
         },
         [47743]= {
             ["skill"]= 47743,
-            ["name"]= "Farsight",
+            ["name"]= "원시",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43203,7 +43203,7 @@ return {
         },
         [45033]= {
             ["skill"]= 45033,
-            ["name"]= "Evasion and Phasing",
+            ["name"]= "회피, 위상 전환",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -43224,7 +43224,7 @@ return {
         },
         [53324]= {
             ["skill"]= 53324,
-            ["name"]= "Evasion and Phasing",
+            ["name"]= "회피, 위상 전환",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -43245,7 +43245,7 @@ return {
         },
         [15344]= {
             ["skill"]= 15344,
-            ["name"]= "Freedom of Movement",
+            ["name"]= "이동의 자유",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionAndPhasingNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43272,7 +43272,7 @@ return {
         },
         [3469]= {
             ["skill"]= 3469,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -43294,7 +43294,7 @@ return {
         },
         [35894]= {
             ["skill"]= 35894,
-            ["name"]= "Trickery",
+            ["name"]= "계략",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mentalacuity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43326,7 +43326,7 @@ return {
         },
         [14157]= {
             ["skill"]= 14157,
-            ["name"]= "Dagger Accuracy and Critical Strike Chance",
+            ["name"]= "단검 정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "6% increased Accuracy Rating with Daggers",
@@ -43347,7 +43347,7 @@ return {
         },
         [28758]= {
             ["skill"]= 28758,
-            ["name"]= "Dagger Damage and Critical Strike Chance",
+            ["name"]= "단검 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerint.png",
             ["stats"]= {
                 "Dagger Attacks deal 8% increased Damage with Hits and Ailments",
@@ -43369,7 +43369,7 @@ return {
         },
         [39443]= {
             ["skill"]= 39443,
-            ["name"]= "Dagger Damage and Accuracy",
+            ["name"]= "단검 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerint.png",
             ["stats"]= {
                 "Dagger Attacks deal 10% increased Damage with Hits and Ailments",
@@ -43391,7 +43391,7 @@ return {
         },
         [38829]= {
             ["skill"]= 38829,
-            ["name"]= "Dagger Mastery",
+            ["name"]= "단검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDagger.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -43403,7 +43403,7 @@ return {
         },
         [56276]= {
             ["skill"]= 56276,
-            ["name"]= "Nightstalker",
+            ["name"]= "밤추적자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/nightstalker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43433,7 +43433,7 @@ return {
         },
         [25058]= {
             ["skill"]= 25058,
-            ["name"]= "Blood Siphon",
+            ["name"]= "혈액 착취",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BloodSiphon.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43459,7 +43459,7 @@ return {
         },
         [21835]= {
             ["skill"]= 21835,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -43475,7 +43475,7 @@ return {
         },
         [9877]= {
             ["skill"]= 9877,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -43492,7 +43492,7 @@ return {
         },
         [59009]= {
             ["skill"]= 59009,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -43509,7 +43509,7 @@ return {
         },
         [1891]= {
             ["skill"]= 1891,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -43525,7 +43525,7 @@ return {
         },
         [52157]= {
             ["skill"]= 52157,
-            ["name"]= "Soul Siphon",
+            ["name"]= "영혼 착취",
             ["icon"]= "Art/2DArt/SkillIcons/passives/soulsyphon.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43550,7 +43550,7 @@ return {
         },
         [4011]= {
             ["skill"]= 4011,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -43571,7 +43571,7 @@ return {
         },
         [9355]= {
             ["skill"]= 9355,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -43589,7 +43589,7 @@ return {
         },
         [5823]= {
             ["skill"]= 5823,
-            ["name"]= "Coordination",
+            ["name"]= "조율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Coordination.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43621,7 +43621,7 @@ return {
         },
         [49978]= {
             ["skill"]= 49978,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -43645,7 +43645,7 @@ return {
         },
         [38662]= {
             ["skill"]= 38662,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -43665,7 +43665,7 @@ return {
         },
         [6538]= {
             ["skill"]= 6538,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -43684,7 +43684,7 @@ return {
         },
         [50338]= {
             ["skill"]= 50338,
-            ["name"]= "Ballistic Mastery",
+            ["name"]= "탄도 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/perfectaim.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43714,7 +43714,7 @@ return {
         },
         [65210]= {
             ["skill"]= 65210,
-            ["name"]= "Heart of Oak",
+            ["name"]= "오크의 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HeartoftheOak.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43739,7 +43739,7 @@ return {
         },
         [25178]= {
             ["skill"]= 25178,
-            ["name"]= "Primal Spirit",
+            ["name"]= "원시 혼백",
             ["icon"]= "Art/2DArt/SkillIcons/passives/animalspirit.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43767,7 +43767,7 @@ return {
         },
         [57240]= {
             ["skill"]= 57240,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -43783,7 +43783,7 @@ return {
         },
         [9373]= {
             ["skill"]= 9373,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -43799,7 +43799,7 @@ return {
         },
         [32117]= {
             ["skill"]= 32117,
-            ["name"]= "Stun Avoidance and Movement Speed",
+            ["name"]= "기절 회피, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stundex.png",
             ["stats"]= {
                 "2% increased Movement Speed",
@@ -43817,7 +43817,7 @@ return {
         },
         [48099]= {
             ["skill"]= 48099,
-            ["name"]= "Stun Avoidance and Movement Speed",
+            ["name"]= "기절 회피, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/stundex.png",
             ["stats"]= {
                 "2% increased Movement Speed",
@@ -43834,7 +43834,7 @@ return {
         },
         [55571]= {
             ["skill"]= 55571,
-            ["name"]= "Aura Effect",
+            ["name"]= "오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/auraeffect.png",
             ["stats"]= {
                 "6% increased effect of Non-Curse Auras from your Skills"
@@ -43851,7 +43851,7 @@ return {
         },
         [12143]= {
             ["skill"]= 12143,
-            ["name"]= "Influence",
+            ["name"]= "영향력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/influence.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -43872,7 +43872,7 @@ return {
         },
         [28859]= {
             ["skill"]= 28859,
-            ["name"]= "Reduced Reservation",
+            ["name"]= "점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/manareservationreduction.png",
             ["stats"]= {
                 "4% reduced Reservation of Skills"
@@ -43889,7 +43889,7 @@ return {
         },
         [61306]= {
             ["skill"]= 61306,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -43911,7 +43911,7 @@ return {
         },
         [42178]= {
             ["skill"]= 42178,
-            ["name"]= "Point Blank",
+            ["name"]= "근접 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystonePointBlankArcher.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -43930,7 +43930,7 @@ return {
         },
         [5622]= {
             ["skill"]= 5622,
-            ["name"]= "Dual Wield Critical Strike Chance and Accuracy",
+            ["name"]= "쌍수 치명타 확률, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance2.png",
             ["stats"]= {
                 "6% increased Accuracy Rating while Dual Wielding",
@@ -43947,7 +43947,7 @@ return {
         },
         [25209]= {
             ["skill"]= 25209,
-            ["name"]= "Dual Wield Critical Strike Multiplier and Accuracy",
+            ["name"]= "쌍수 치명타 배율, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikemultiplier2.png",
             ["stats"]= {
                 "6% increased Accuracy Rating while Dual Wielding",
@@ -43965,7 +43965,7 @@ return {
         },
         [30626]= {
             ["skill"]= 30626,
-            ["name"]= "Dual Wield Critical Strike Chance",
+            ["name"]= "쌍수 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance2.png",
             ["stats"]= {
                 "20% increased Attack Critical Strike Chance while Dual Wielding"
@@ -43982,7 +43982,7 @@ return {
         },
         [7997]= {
             ["skill"]= 7997,
-            ["name"]= "Duel Wield Mastery",
+            ["name"]= "쌍수 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDualWield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -43994,7 +43994,7 @@ return {
         },
         [6]= {
             ["skill"]= 6,
-            ["name"]= "Twin Terrors",
+            ["name"]= "쌍수의 공포",
             ["icon"]= "Art/2DArt/SkillIcons/passives/scissorblades.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44016,7 +44016,7 @@ return {
         },
         [22994]= {
             ["skill"]= 22994,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44039,7 +44039,7 @@ return {
         },
         [40400]= {
             ["skill"]= 40400,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44062,7 +44062,7 @@ return {
         },
         [46393]= {
             ["skill"]= 46393,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44084,7 +44084,7 @@ return {
         },
         [25134]= {
             ["skill"]= 25134,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -44101,7 +44101,7 @@ return {
         },
         [20546]= {
             ["skill"]= 20546,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -44120,7 +44120,7 @@ return {
         },
         [31973]= {
             ["skill"]= 31973,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -44137,7 +44137,7 @@ return {
         },
         [14674]= {
             ["skill"]= 14674,
-            ["name"]= "Faster Doom Gain",
+            ["name"]= "빠른 멸망 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "Hexes have 50% increased Doom gain rate"
@@ -44154,7 +44154,7 @@ return {
         },
         [6250]= {
             ["skill"]= 6250,
-            ["name"]= "Curse Cast Speed",
+            ["name"]= "저주 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "Curse Skills have 10% increased Cast Speed"
@@ -44172,7 +44172,7 @@ return {
         },
         [30767]= {
             ["skill"]= 30767,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Corruption.png",
             ["stats"]= {
                 "5% increased Effect of your Curses"
@@ -44189,7 +44189,7 @@ return {
         },
         [2821]= {
             ["skill"]= 2821,
-            ["name"]= "Curse Mastery",
+            ["name"]= "저주 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryCurse.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -44201,7 +44201,7 @@ return {
         },
         [22535]= {
             ["skill"]= 22535,
-            ["name"]= "Whispers of Doom",
+            ["name"]= "멸망의 속삭임",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneWhispersOfDoom.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44224,7 +44224,7 @@ return {
         },
         [61399]= {
             ["skill"]= 61399,
-            ["name"]= "Brand Mastery",
+            ["name"]= "낙인 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBrand.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -44236,7 +44236,7 @@ return {
         },
         [40776]= {
             ["skill"]= 40776,
-            ["name"]= "Brand Damage and Cast Speed",
+            ["name"]= "낙인 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["stats"]= {
                 "3% increased Cast Speed with Brand Skills",
@@ -44258,7 +44258,7 @@ return {
         },
         [53018]= {
             ["skill"]= 53018,
-            ["name"]= "Brand Damage and Duration",
+            ["name"]= "낙인 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["stats"]= {
                 "10% increased Brand Damage",
@@ -44279,7 +44279,7 @@ return {
         },
         [15973]= {
             ["skill"]= 15973,
-            ["name"]= "Brand Damage and Duration",
+            ["name"]= "낙인 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand1.png",
             ["stats"]= {
                 "10% increased Brand Damage",
@@ -44300,7 +44300,7 @@ return {
         },
         [19679]= {
             ["skill"]= 19679,
-            ["name"]= "Brand Range and Brand Recall Cooldown Recovery",
+            ["name"]= "낙인 범위, 낙인 소환 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand3.png",
             ["stats"]= {
                 "Brand Recall has 10% increased Cooldown Recovery Rate",
@@ -44318,7 +44318,7 @@ return {
         },
         [59070]= {
             ["skill"]= 59070,
-            ["name"]= "Brand Range and Brand Recall Cooldown Recovery",
+            ["name"]= "낙인 범위, 낙인 소환 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand3.png",
             ["stats"]= {
                 "Brand Recall has 10% increased Cooldown Recovery Rate",
@@ -44336,7 +44336,7 @@ return {
         },
         [21389]= {
             ["skill"]= 21389,
-            ["name"]= "Runesmith",
+            ["name"]= "룬 대장장이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Brand4.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44360,7 +44360,7 @@ return {
         },
         [64583]= {
             ["skill"]= 64583,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44383,7 +44383,7 @@ return {
         },
         [61288]= {
             ["skill"]= 61288,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44406,7 +44406,7 @@ return {
         },
         [13170]= {
             ["skill"]= 13170,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -44429,7 +44429,7 @@ return {
         },
         [18756]= {
             ["skill"]= 18756,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -44446,7 +44446,7 @@ return {
         },
         [2715]= {
             ["skill"]= 2715,
-            ["name"]= "Quickstep",
+            ["name"]= "빠른 걸음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/quickstep.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44470,7 +44470,7 @@ return {
         },
         [59146]= {
             ["skill"]= 59146,
-            ["name"]= "Attack and Movement Speed",
+            ["name"]= "공격 및 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -44487,7 +44487,7 @@ return {
         },
         [30955]= {
             ["skill"]= 30955,
-            ["name"]= "Attack and Movement Speed",
+            ["name"]= "공격 및 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -44505,7 +44505,7 @@ return {
         },
         [17421]= {
             ["skill"]= 17421,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -44522,7 +44522,7 @@ return {
         },
         [29104]= {
             ["skill"]= 29104,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -44538,7 +44538,7 @@ return {
         },
         [51440]= {
             ["skill"]= 51440,
-            ["name"]= "Druidic Rite",
+            ["name"]= "드루이드 의식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DruidicRite.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44564,7 +44564,7 @@ return {
         },
         [36877]= {
             ["skill"]= 36877,
-            ["name"]= "Trap Damage",
+            ["name"]= "덫 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "14% increased Trap Damage"
@@ -44580,7 +44580,7 @@ return {
         },
         [7136]= {
             ["skill"]= 7136,
-            ["name"]= "Master Sapper",
+            ["name"]= "일급 공병",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mastersapper.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44604,7 +44604,7 @@ return {
         },
         [22488]= {
             ["skill"]= 22488,
-            ["name"]= "Trap Throw Speed and Damage",
+            ["name"]= "덫 투척 속도, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "12% increased Trap Damage",
@@ -44621,7 +44621,7 @@ return {
         },
         [42006]= {
             ["skill"]= 42006,
-            ["name"]= "Mine Damage and Reduced Reservation",
+            ["name"]= "지뢰 피해, 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineManaReservationNode.png",
             ["stats"]= {
                 "8% increased Mine Damage",
@@ -44638,7 +44638,7 @@ return {
         },
         [18661]= {
             ["skill"]= 18661,
-            ["name"]= "Mine Damage and Reduced Reservation",
+            ["name"]= "지뢰 피해, 점유 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineManaReservationNode.png",
             ["stats"]= {
                 "8% increased Mine Damage",
@@ -44656,7 +44656,7 @@ return {
         },
         [44102]= {
             ["skill"]= 44102,
-            ["name"]= "Efficient Explosives",
+            ["name"]= "효율적인 폭약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineManaReservationNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44679,7 +44679,7 @@ return {
         },
         [20611]= {
             ["skill"]= 20611,
-            ["name"]= "Dagger Damage and Leech",
+            ["name"]= "단검 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "Dagger Attacks deal 12% increased Damage with Hits and Ailments",
@@ -44702,7 +44702,7 @@ return {
         },
         [42608]= {
             ["skill"]= 42608,
-            ["name"]= "Dagger Damage and Leech",
+            ["name"]= "단검 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "Dagger Attacks deal 12% increased Damage with Hits and Ailments",
@@ -44726,7 +44726,7 @@ return {
         },
         [44988]= {
             ["skill"]= 44988,
-            ["name"]= "Stabbing Thirst",
+            ["name"]= "찌르는 갈증",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DaggerNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44756,7 +44756,7 @@ return {
         },
         [4502]= {
             ["skill"]= 4502,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -44778,7 +44778,7 @@ return {
         },
         [64217]= {
             ["skill"]= 64217,
-            ["name"]= "Aspect of Stone",
+            ["name"]= "돌의 위상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IgnorePain.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -44801,7 +44801,7 @@ return {
         },
         [34678]= {
             ["skill"]= 34678,
-            ["name"]= "Life and Elemental Ailment Avoidance",
+            ["name"]= "생명력, 원소 상태 이상 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -44822,7 +44822,7 @@ return {
         },
         [26528]= {
             ["skill"]= 26528,
-            ["name"]= "Life and Elemental Ailment Avoidance",
+            ["name"]= "생명력, 원소 상태 이상 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -44842,7 +44842,7 @@ return {
         },
         [58271]= {
             ["skill"]= 58271,
-            ["name"]= "Life and Elemental Ailment Avoidance",
+            ["name"]= "생명력, 원소 상태 이상 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "4% increased maximum Life",
@@ -44863,7 +44863,7 @@ return {
         },
         [2047]= {
             ["skill"]= 2047,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -44875,7 +44875,7 @@ return {
         },
         [19069]= {
             ["skill"]= 19069,
-            ["name"]= "Thick Skin",
+            ["name"]= "두꺼운 가죽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/thickskin.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44900,7 +44900,7 @@ return {
         },
         [60440]= {
             ["skill"]= 60440,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -44923,7 +44923,7 @@ return {
         },
         [31371]= {
             ["skill"]= 31371,
-            ["name"]= "Mine Damage and Area of Effect",
+            ["name"]= "지뢰 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineAreaOfEffectNode.png",
             ["stats"]= {
                 "6% increased Mine Damage",
@@ -44941,7 +44941,7 @@ return {
         },
         [40751]= {
             ["skill"]= 40751,
-            ["name"]= "Mine Damage and Area of Effect",
+            ["name"]= "지뢰 피해, 효과 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineAreaOfEffectNode.png",
             ["stats"]= {
                 "6% increased Mine Damage",
@@ -44959,7 +44959,7 @@ return {
         },
         [6233]= {
             ["skill"]= 6233,
-            ["name"]= "Blast Waves",
+            ["name"]= "폭풍파",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineAreaOfEffectNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -44985,7 +44985,7 @@ return {
         },
         [64709]= {
             ["skill"]= 64709,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -45007,7 +45007,7 @@ return {
         },
         [25766]= {
             ["skill"]= 25766,
-            ["name"]= "Chance to Poison and Poison Damage Multiplier",
+            ["name"]= "독 확률, 독 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "+3% to Damage over Time Multiplier for Poison",
@@ -45028,7 +45028,7 @@ return {
         },
         [32802]= {
             ["skill"]= 32802,
-            ["name"]= "Chaos Damage with Attacks and Poison Damage Multiplier",
+            ["name"]= "공격의 카오스 피해, 독 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "+3% to Damage over Time Multiplier for Poison",
@@ -45047,7 +45047,7 @@ return {
         },
         [16236]= {
             ["skill"]= 16236,
-            ["name"]= "Toxic Strikes",
+            ["name"]= "유독한 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45076,7 +45076,7 @@ return {
         },
         [5018]= {
             ["skill"]= 5018,
-            ["name"]= "Chance to Poison with Spells",
+            ["name"]= "주문의 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PoisonSpellsNode.png",
             ["stats"]= {
                 "10% chance to Poison on Hit with Spell Damage"
@@ -45096,7 +45096,7 @@ return {
         },
         [45810]= {
             ["skill"]= 45810,
-            ["name"]= "Poison Damage and Cast Speed",
+            ["name"]= "독 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed",
@@ -45114,7 +45114,7 @@ return {
         },
         [13168]= {
             ["skill"]= 13168,
-            ["name"]= "Poison Damage and Cast Speed",
+            ["name"]= "독 피해, 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "3% increased Cast Speed",
@@ -45132,7 +45132,7 @@ return {
         },
         [11984]= {
             ["skill"]= 11984,
-            ["name"]= "Poison Damage Multiplier with Spells",
+            ["name"]= "주문의 독 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PoisonSpellsNode.png",
             ["stats"]= {
                 "Spell Skills have +5% to Damage over Time Multiplier for Poison"
@@ -45149,7 +45149,7 @@ return {
         },
         [47245]= {
             ["skill"]= 47245,
-            ["name"]= "Poison Mastery",
+            ["name"]= "독 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryPoison.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -45161,7 +45161,7 @@ return {
         },
         [58032]= {
             ["skill"]= 58032,
-            ["name"]= "Serpentine Spellslinger",
+            ["name"]= "뱀 같은 주문투사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PoisonSpellsNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45188,7 +45188,7 @@ return {
         },
         [3187]= {
             ["skill"]= 3187,
-            ["name"]= "Dual Wield Damage and Attack Speed",
+            ["name"]= "쌍수 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddual.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while Dual Wielding",
@@ -45206,7 +45206,7 @@ return {
         },
         [903]= {
             ["skill"]= 903,
-            ["name"]= "Dual Wield Damage and Accuracy",
+            ["name"]= "쌍수 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddual.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while Dual Wielding",
@@ -45223,7 +45223,7 @@ return {
         },
         [38246]= {
             ["skill"]= 38246,
-            ["name"]= "Aspect of the Panther",
+            ["name"]= "표범의 위상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heartofthepanther.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45248,7 +45248,7 @@ return {
         },
         [30894]= {
             ["skill"]= 30894,
-            ["name"]= "Attack Damage and Speed with Shield",
+            ["name"]= "방패 착용 시 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while holding a Shield",
@@ -45265,7 +45265,7 @@ return {
         },
         [18670]= {
             ["skill"]= 18670,
-            ["name"]= "Attack Damage and Accuracy with Shield",
+            ["name"]= "방패 착용 시 공격 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "Attack Skills deal 10% increased Damage while holding a Shield",
@@ -45283,7 +45283,7 @@ return {
         },
         [15842]= {
             ["skill"]= 15842,
-            ["name"]= "Precise Interception",
+            ["name"]= "정밀한 차단",
             ["icon"]= "Art/2DArt/SkillIcons/passives/preciseinterception.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45311,7 +45311,7 @@ return {
         },
         [41380]= {
             ["skill"]= 41380,
-            ["name"]= "Bow Attack Speed and Accuracy",
+            ["name"]= "활 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "4% increased Attack Speed with Bows",
@@ -45329,7 +45329,7 @@ return {
         },
         [57819]= {
             ["skill"]= 57819,
-            ["name"]= "Bow Attack Speed and Accuracy",
+            ["name"]= "활 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "4% increased Attack Speed with Bows",
@@ -45346,7 +45346,7 @@ return {
         },
         [6654]= {
             ["skill"]= 6654,
-            ["name"]= "Bow Damage and Critical Strike Chance",
+            ["name"]= "활 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "15% increased Damage with Bows",
@@ -45364,7 +45364,7 @@ return {
         },
         [6913]= {
             ["skill"]= 6913,
-            ["name"]= "Bow Damage and Critical Strike Chance",
+            ["name"]= "활 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "15% increased Damage with Bows",
@@ -45383,7 +45383,7 @@ return {
         },
         [42964]= {
             ["skill"]= 42964,
-            ["name"]= "Bow Damage and Attack Speed",
+            ["name"]= "활 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "12% increased Damage with Bows",
@@ -45401,7 +45401,7 @@ return {
         },
         [65224]= {
             ["skill"]= 65224,
-            ["name"]= "Aspect of the Eagle",
+            ["name"]= "독수리의 위상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AspectoftheEagle.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45428,7 +45428,7 @@ return {
         },
         [57194]= {
             ["skill"]= 57194,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -45443,7 +45443,7 @@ return {
         },
         [12161]= {
             ["skill"]= 12161,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -45465,7 +45465,7 @@ return {
         },
         [11455]= {
             ["skill"]= 11455,
-            ["name"]= "Chaos Inoculation",
+            ["name"]= "카오스 면역",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneChaosInoculation.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -45484,7 +45484,7 @@ return {
         },
         [34013]= {
             ["skill"]= 34013,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -45500,7 +45500,7 @@ return {
         },
         [41876]= {
             ["skill"]= 41876,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -45522,7 +45522,7 @@ return {
         },
         [46965]= {
             ["skill"]= 46965,
-            ["name"]= "Saboteur",
+            ["name"]= "사보추어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/saboteur.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45548,7 +45548,7 @@ return {
         },
         [28754]= {
             ["skill"]= 28754,
-            ["name"]= "Assassination",
+            ["name"]= "암살",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newincreasedcritical.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45572,7 +45572,7 @@ return {
         },
         [35283]= {
             ["skill"]= 35283,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance"
@@ -45590,7 +45590,7 @@ return {
         },
         [10763]= {
             ["skill"]= 10763,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance"
@@ -45608,7 +45608,7 @@ return {
         },
         [21575]= {
             ["skill"]= 21575,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -45626,7 +45626,7 @@ return {
         },
         [40644]= {
             ["skill"]= 40644,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/elementaldamage.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -45644,7 +45644,7 @@ return {
         },
         [42686]= {
             ["skill"]= 42686,
-            ["name"]= "Elemental Focus",
+            ["name"]= "원소 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalFocus.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45674,7 +45674,7 @@ return {
         },
         [60949]= {
             ["skill"]= 60949,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "14% increased Trap Damage",
@@ -45693,7 +45693,7 @@ return {
         },
         [7920]= {
             ["skill"]= 7920,
-            ["name"]= "Trap and Mine Throwing Speed",
+            ["name"]= "덫 및 지뢰 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "4% increased Trap Throwing Speed",
@@ -45712,7 +45712,7 @@ return {
         },
         [41518]= {
             ["skill"]= 41518,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -45730,7 +45730,7 @@ return {
         },
         [46289]= {
             ["skill"]= 46289,
-            ["name"]= "Damage Over Time",
+            ["name"]= "지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "10% increased Damage over Time"
@@ -45748,7 +45748,7 @@ return {
         },
         [30338]= {
             ["skill"]= 30338,
-            ["name"]= "Damage Over Time",
+            ["name"]= "지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "10% increased Damage over Time"
@@ -45766,7 +45766,7 @@ return {
         },
         [51212]= {
             ["skill"]= 51212,
-            ["name"]= "Entropy",
+            ["name"]= "엔트로피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Entropy.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45790,7 +45790,7 @@ return {
         },
         [58069]= {
             ["skill"]= 58069,
-            ["name"]= "One Handed Damage",
+            ["name"]= "한손 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/onehandspeed.png",
             ["stats"]= {
                 "Attacks with One Handed Weapons deal 20% increased Damage with Ailments",
@@ -45812,7 +45812,7 @@ return {
         },
         [42623]= {
             ["skill"]= 42623,
-            ["name"]= "One Handed Damage",
+            ["name"]= "한손 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/onehandspeed.png",
             ["stats"]= {
                 "Attacks with One Handed Weapons deal 20% increased Damage with Ailments",
@@ -45834,7 +45834,7 @@ return {
         },
         [30205]= {
             ["skill"]= 30205,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "10% increased Physical Damage"
@@ -45852,7 +45852,7 @@ return {
         },
         [54338]= {
             ["skill"]= 54338,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "10% increased Physical Damage"
@@ -45870,7 +45870,7 @@ return {
         },
         [33903]= {
             ["skill"]= 33903,
-            ["name"]= "Will of Blades",
+            ["name"]= "칼날의 의지",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNotableGreen.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45894,7 +45894,7 @@ return {
         },
         [60737]= {
             ["skill"]= 60737,
-            ["name"]= "Sleight of Hand",
+            ["name"]= "교묘한 손재주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/swashbuckler.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45922,7 +45922,7 @@ return {
         },
         [45593]= {
             ["skill"]= 45593,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -45940,7 +45940,7 @@ return {
         },
         [12801]= {
             ["skill"]= 12801,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -45957,7 +45957,7 @@ return {
         },
         [53114]= {
             ["skill"]= 53114,
-            ["name"]= "Revenge of the Hunted",
+            ["name"]= "사냥감의 복수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/revengeofthehunted.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -45982,7 +45982,7 @@ return {
         },
         [25067]= {
             ["skill"]= 25067,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46000,7 +46000,7 @@ return {
         },
         [31315]= {
             ["skill"]= 31315,
-            ["name"]= "Evasion and Life",
+            ["name"]= "회피, 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46018,7 +46018,7 @@ return {
         },
         [36338]= {
             ["skill"]= 36338,
-            ["name"]= "Life Mastery",
+            ["name"]= "생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupLife.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46030,7 +46030,7 @@ return {
         },
         [18769]= {
             ["skill"]= 18769,
-            ["name"]= "Written in Blood",
+            ["name"]= "혈서",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WritteninBlood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46054,7 +46054,7 @@ return {
         },
         [61653]= {
             ["skill"]= 61653,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -46073,7 +46073,7 @@ return {
         },
         [38190]= {
             ["skill"]= 38190,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -46091,7 +46091,7 @@ return {
         },
         [1822]= {
             ["skill"]= 1822,
-            ["name"]= "Life and Energy Shield",
+            ["name"]= "생명력, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "5% increased maximum Energy Shield",
@@ -46108,7 +46108,7 @@ return {
         },
         [57969]= {
             ["skill"]= 57969,
-            ["name"]= "Life and Energy Shield Mastery",
+            ["name"]= "생명력, 에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryLifeAndEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46120,7 +46120,7 @@ return {
         },
         [6288]= {
             ["skill"]= 6288,
-            ["name"]= "Energy Shield Mastery",
+            ["name"]= "에너지 보호막 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEnergyShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46132,7 +46132,7 @@ return {
         },
         [62795]= {
             ["skill"]= 62795,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46149,7 +46149,7 @@ return {
         },
         [56090]= {
             ["skill"]= 56090,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46167,7 +46167,7 @@ return {
         },
         [49408]= {
             ["skill"]= 49408,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46184,7 +46184,7 @@ return {
         },
         [4219]= {
             ["skill"]= 4219,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -46202,7 +46202,7 @@ return {
         },
         [48698]= {
             ["skill"]= 48698,
-            ["name"]= "Void Barrier",
+            ["name"]= "공허 방어막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newenergyshield.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46228,7 +46228,7 @@ return {
         },
         [8938]= {
             ["skill"]= 8938,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -46248,7 +46248,7 @@ return {
         },
         [30679]= {
             ["skill"]= 30679,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -46271,7 +46271,7 @@ return {
         },
         [36675]= {
             ["skill"]= 36675,
-            ["name"]= "Evasion Mastery",
+            ["name"]= "회피 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEvasion.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46283,7 +46283,7 @@ return {
         },
         [55392]= {
             ["skill"]= 55392,
-            ["name"]= "Armour and Evasion",
+            ["name"]= "방어도, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "12% increased Evasion Rating and Armour"
@@ -46300,7 +46300,7 @@ return {
         },
         [53002]= {
             ["skill"]= 53002,
-            ["name"]= "Armour, Evasion and Onslaught Effect",
+            ["name"]= "방어도, 회피, 맹공 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackDamangeAndEvasionNotableNode.png",
             ["stats"]= {
                 "12% increased Evasion Rating and Armour",
@@ -46321,7 +46321,7 @@ return {
         },
         [4944]= {
             ["skill"]= 4944,
-            ["name"]= "Armour, Evasion and Onslaught Effect",
+            ["name"]= "방어도, 회피, 맹공 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackDamangeAndEvasionNotableNode.png",
             ["stats"]= {
                 "12% increased Evasion Rating and Armour",
@@ -46342,7 +46342,7 @@ return {
         },
         [55085]= {
             ["skill"]= 55085,
-            ["name"]= "Attack Damage, Armour and Evasion",
+            ["name"]= "공격 피해, 방어도, 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "14% increased Attack Damage",
@@ -46360,7 +46360,7 @@ return {
         },
         [18703]= {
             ["skill"]= 18703,
-            ["name"]= "Graceful Assault",
+            ["name"]= "우아한 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackDamangeAndEvasionNotableIcon.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46388,7 +46388,7 @@ return {
         },
         [63439]= {
             ["skill"]= 63439,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 15,
             ["stats"]= {
@@ -46406,7 +46406,7 @@ return {
         },
         [43608]= {
             ["skill"]= 43608,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 15,
             ["stats"]= {
@@ -46424,7 +46424,7 @@ return {
         },
         [63921]= {
             ["skill"]= 63921,
-            ["name"]= "Utmost Swiftness",
+            ["name"]= "최대한의 민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46447,7 +46447,7 @@ return {
         },
         [39447]= {
             ["skill"]= 39447,
-            ["name"]= "Claw Attack Speed and Movement Speed",
+            ["name"]= "클로 공격 속도, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "3% increased Attack Speed with Claws",
@@ -46465,7 +46465,7 @@ return {
         },
         [37776]= {
             ["skill"]= 37776,
-            ["name"]= "Claw Damage and Attack Speed",
+            ["name"]= "클로 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 8% increased Damage with Hits and Ailments",
@@ -46485,7 +46485,7 @@ return {
         },
         [11817]= {
             ["skill"]= 11817,
-            ["name"]= "Claw Mastery",
+            ["name"]= "클로 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupClaw.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46497,7 +46497,7 @@ return {
         },
         [44389]= {
             ["skill"]= 44389,
-            ["name"]= "Claw Attack Speed and Movement Speed",
+            ["name"]= "클로 공격 속도, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "3% increased Attack Speed with Claws",
@@ -46515,7 +46515,7 @@ return {
         },
         [37504]= {
             ["skill"]= 37504,
-            ["name"]= "Claws of the Pride",
+            ["name"]= "긍지의 발톱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawsofthepride.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46545,7 +46545,7 @@ return {
         },
         [44470]= {
             ["skill"]= 44470,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -46559,7 +46559,7 @@ return {
         },
         [64401]= {
             ["skill"]= 64401,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -46577,7 +46577,7 @@ return {
         },
         [59114]= {
             ["skill"]= 59114,
-            ["name"]= "Mana and Mana Regeneration",
+            ["name"]= "마나, 마나 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HalfcurseandHalfmana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -46598,7 +46598,7 @@ return {
         },
         [55558]= {
             ["skill"]= 55558,
-            ["name"]= "Mana and Mana Gain on Killing Blow",
+            ["name"]= "마나, 처치 시 마나 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HalfcurseandHalfmana.png",
             ["stats"]= {
                 "8% increased maximum Mana",
@@ -46616,7 +46616,7 @@ return {
         },
         [51748]= {
             ["skill"]= 51748,
-            ["name"]= "Cursed Concoction",
+            ["name"]= "저주받은 조제",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaandCurses.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46643,7 +46643,7 @@ return {
         },
         [10313]= {
             ["skill"]= 10313,
-            ["name"]= "Mana Mastery",
+            ["name"]= "마나 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupMana.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -46655,7 +46655,7 @@ return {
         },
         [39814]= {
             ["skill"]= 39814,
-            ["name"]= "Trap Damage and Cooldown Recovery",
+            ["name"]= "덫 피해, 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsduration.png",
             ["stats"]= {
                 "10% increased Trap Damage",
@@ -46673,7 +46673,7 @@ return {
         },
         [27190]= {
             ["skill"]= 27190,
-            ["name"]= "Hasty Reconstruction",
+            ["name"]= "성급한 재건",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trap.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46696,7 +46696,7 @@ return {
         },
         [25770]= {
             ["skill"]= 25770,
-            ["name"]= "Trap Damage",
+            ["name"]= "덫 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "14% increased Trap Damage"
@@ -46713,7 +46713,7 @@ return {
         },
         [54600]= {
             ["skill"]= 54600,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -46727,7 +46727,7 @@ return {
         },
         [51233]= {
             ["skill"]= 51233,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -46743,7 +46743,7 @@ return {
         },
         [61305]= {
             ["skill"]= 61305,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -46765,7 +46765,7 @@ return {
         },
         [52714]= {
             ["skill"]= 52714,
-            ["name"]= "Prowess",
+            ["name"]= "기량",
             ["icon"]= "Art/2DArt/SkillIcons/passives/oxblood.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46787,7 +46787,7 @@ return {
         },
         [60180]= {
             ["skill"]= 60180,
-            ["name"]= "Thief's Craft",
+            ["name"]= "도둑의 술책",
             ["icon"]= "Art/2DArt/SkillIcons/passives/savant.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46809,7 +46809,7 @@ return {
         },
         [5616]= {
             ["skill"]= 5616,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -46829,7 +46829,7 @@ return {
         },
         [1529]= {
             ["skill"]= 1529,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -46848,7 +46848,7 @@ return {
         },
         [24452]= {
             ["skill"]= 24452,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -46864,7 +46864,7 @@ return {
         },
         [59585]= {
             ["skill"]= 59585,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -46886,7 +46886,7 @@ return {
         },
         [19210]= {
             ["skill"]= 19210,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "14% increased Physical Damage"
@@ -46903,7 +46903,7 @@ return {
         },
         [43316]= {
             ["skill"]= 43316,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "14% increased Physical Damage"
@@ -46920,7 +46920,7 @@ return {
         },
         [47065]= {
             ["skill"]= 47065,
-            ["name"]= "Master of Force",
+            ["name"]= "힘의 달인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasterofForce.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -46947,7 +46947,7 @@ return {
         },
         [45491]= {
             ["skill"]= 45491,
-            ["name"]= "One Handed Damage",
+            ["name"]= "한손 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/onehandspeed.png",
             ["stats"]= {
                 "Attacks with One Handed Weapons deal 10% increased Damage with Ailments",
@@ -46970,7 +46970,7 @@ return {
         },
         [1571]= {
             ["skill"]= 1571,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -46989,7 +46989,7 @@ return {
         },
         [38072]= {
             ["skill"]= 38072,
-            ["name"]= "Attack Damage and Accuracy",
+            ["name"]= "공격 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["stats"]= {
                 "12% increased Attack Damage",
@@ -47007,7 +47007,7 @@ return {
         },
         [31508]= {
             ["skill"]= 31508,
-            ["name"]= "Aspect of the Lynx",
+            ["name"]= "스라소니의 위상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AspectOfTheLynx.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47036,7 +47036,7 @@ return {
         },
         [1201]= {
             ["skill"]= 1201,
-            ["name"]= "Attack Speed",
+            ["name"]= "공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeed.png",
             ["stats"]= {
                 "4% increased Attack Speed"
@@ -47054,7 +47054,7 @@ return {
         },
         [7085]= {
             ["skill"]= 7085,
-            ["name"]= "Weapon Artistry",
+            ["name"]= "무기의 예술성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blademistress.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47082,7 +47082,7 @@ return {
         },
         [19919]= {
             ["skill"]= 19919,
-            ["name"]= "Elemental Resistances and Attack Speed with Shields",
+            ["name"]= "방패 착용 시 원소 저항, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "4% increased Attack Speed while holding a Shield",
@@ -47100,7 +47100,7 @@ return {
         },
         [62767]= {
             ["skill"]= 62767,
-            ["name"]= "Weapon Elemental Damage and Attack Speed with Shield",
+            ["name"]= "방패 착용 시 무기 원소 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "3% increased Attack Speed while holding a Shield",
@@ -47118,7 +47118,7 @@ return {
         },
         [63138]= {
             ["skill"]= 63138,
-            ["name"]= "Weapon Elemental Damage and Attack Speed with Shield",
+            ["name"]= "방패 착용 시 무기 원소 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "3% increased Attack Speed while holding a Shield",
@@ -47136,7 +47136,7 @@ return {
         },
         [55743]= {
             ["skill"]= 55743,
-            ["name"]= "Elemental Resistance with Shields and Shield Defences",
+            ["name"]= "방패 착용 시 원소 저항, 방패 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["stats"]= {
                 "+6% Elemental Resistances while holding a Shield",
@@ -47157,7 +47157,7 @@ return {
         },
         [6967]= {
             ["skill"]= 6967,
-            ["name"]= "Command of the Elements",
+            ["name"]= "원소의 명령",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldAttackDamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47185,7 +47185,7 @@ return {
         },
         [51883]= {
             ["skill"]= 51883,
-            ["name"]= "Shield Mastery",
+            ["name"]= "방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -47197,7 +47197,7 @@ return {
         },
         [53574]= {
             ["skill"]= 53574,
-            ["name"]= "Curse Cast Speed",
+            ["name"]= "저주 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/castspeed.png",
             ["stats"]= {
                 "Curse Skills have 10% increased Cast Speed"
@@ -47215,7 +47215,7 @@ return {
         },
         [26002]= {
             ["skill"]= 26002,
-            ["name"]= "Critical Strike Chance against Marked Enemy",
+            ["name"]= "징표 대상 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNode.png",
             ["stats"]= {
                 "30% increased Critical Strike Chance against Marked Enemy"
@@ -47232,7 +47232,7 @@ return {
         },
         [7659]= {
             ["skill"]= 7659,
-            ["name"]= "Marked Enemy Reduced Accuracy",
+            ["name"]= "징표 대상 정확도 감소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNode.png",
             ["stats"]= {
                 "Marked Enemy has 10% reduced Accuracy Rating"
@@ -47249,7 +47249,7 @@ return {
         },
         [25738]= {
             ["skill"]= 25738,
-            ["name"]= "Mark the Prey",
+            ["name"]= "사냥감 징표 찍기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47272,7 +47272,7 @@ return {
         },
         [10237]= {
             ["skill"]= 10237,
-            ["name"]= "Mark Mastery",
+            ["name"]= "징표 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MarkMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -47284,7 +47284,7 @@ return {
         },
         [36858]= {
             ["skill"]= 36858,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -47307,7 +47307,7 @@ return {
         },
         [59606]= {
             ["skill"]= 59606,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47331,7 +47331,7 @@ return {
         },
         [46896]= {
             ["skill"]= 46896,
-            ["name"]= "Damage Over Time and Life Regeneration",
+            ["name"]= "지속 피해, 생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "8% increased Damage over Time",
@@ -47349,7 +47349,7 @@ return {
         },
         [4973]= {
             ["skill"]= 4973,
-            ["name"]= "Damage Over Time",
+            ["name"]= "지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "12% increased Damage over Time"
@@ -47366,7 +47366,7 @@ return {
         },
         [5129]= {
             ["skill"]= 5129,
-            ["name"]= "Damage Over Time",
+            ["name"]= "지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTime.png",
             ["stats"]= {
                 "12% increased Damage over Time"
@@ -47383,7 +47383,7 @@ return {
         },
         [58442]= {
             ["skill"]= 58442,
-            ["name"]= "Chaos Mastery",
+            ["name"]= "카오스 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryChaos.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -47395,7 +47395,7 @@ return {
         },
         [9864]= {
             ["skill"]= 9864,
-            ["name"]= "Growth and Decay",
+            ["name"]= "성장과 쇠퇴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/GrowthandDecay.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47419,7 +47419,7 @@ return {
         },
         [59482]= {
             ["skill"]= 59482,
-            ["name"]= "Life Regeneration",
+            ["name"]= "생명력 재생",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifepercentage.png",
             ["stats"]= {
                 "Regenerate 0.8% of Life per second"
@@ -47436,7 +47436,7 @@ return {
         },
         [39718]= {
             ["skill"]= 39718,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47456,7 +47456,7 @@ return {
         },
         [3656]= {
             ["skill"]= 3656,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -47478,7 +47478,7 @@ return {
         },
         [58244]= {
             ["skill"]= 58244,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -47499,7 +47499,7 @@ return {
         },
         [46408]= {
             ["skill"]= 46408,
-            ["name"]= "Fangs of the Viper",
+            ["name"]= "독사의 송곳니",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newnewattackspeed.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47528,7 +47528,7 @@ return {
         },
         [59252]= {
             ["skill"]= 59252,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47548,7 +47548,7 @@ return {
         },
         [13885]= {
             ["skill"]= 13885,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47568,7 +47568,7 @@ return {
         },
         [28012]= {
             ["skill"]= 28012,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47590,7 +47590,7 @@ return {
         },
         [24050]= {
             ["skill"]= 24050,
-            ["name"]= "Coldhearted Calculation",
+            ["name"]= "냉담한 계산",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdheartedCalculation2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47618,7 +47618,7 @@ return {
         },
         [35496]= {
             ["skill"]= 35496,
-            ["name"]= "Projectile Attack Mastery",
+            ["name"]= "투사체 공격 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryProjectiles.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -47630,7 +47630,7 @@ return {
         },
         [11678]= {
             ["skill"]= 11678,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectilesNode.png",
             ["stats"]= {
                 "14% increased Projectile Damage"
@@ -47648,7 +47648,7 @@ return {
         },
         [44306]= {
             ["skill"]= 44306,
-            ["name"]= "Projectile Damage and Speed",
+            ["name"]= "투사체 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectilesNode2.png",
             ["stats"]= {
                 "10% increased Projectile Speed",
@@ -47666,7 +47666,7 @@ return {
         },
         [8458]= {
             ["skill"]= 8458,
-            ["name"]= "Longshot",
+            ["name"]= "장거리 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BarragingProjectilesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47689,7 +47689,7 @@ return {
         },
         [52288]= {
             ["skill"]= 52288,
-            ["name"]= "Projectile Damage and Speed",
+            ["name"]= "투사체 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectilesNode2.png",
             ["stats"]= {
                 "10% reduced Projectile Speed",
@@ -47707,7 +47707,7 @@ return {
         },
         [31513]= {
             ["skill"]= 31513,
-            ["name"]= "Adjacent Animosity",
+            ["name"]= "인접한 적의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ReducedProjectileSpeedNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47730,7 +47730,7 @@ return {
         },
         [61981]= {
             ["skill"]= 61981,
-            ["name"]= "Doom Cast",
+            ["name"]= "멸망 시전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/doomcast.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47754,7 +47754,7 @@ return {
         },
         [43416]= {
             ["skill"]= 43416,
-            ["name"]= "Spell Critical Mastery",
+            ["name"]= "주문 치명타 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCrit.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -47766,7 +47766,7 @@ return {
         },
         [60405]= {
             ["skill"]= 60405,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance for Spells"
@@ -47784,7 +47784,7 @@ return {
         },
         [25757]= {
             ["skill"]= 25757,
-            ["name"]= "Spell Critical Strike Chance",
+            ["name"]= "주문 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/spellcritical.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance for Spells"
@@ -47801,7 +47801,7 @@ return {
         },
         [47507]= {
             ["skill"]= 47507,
-            ["name"]= "Spell Critical Strike Multiplier",
+            ["name"]= "주문 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpellMultiplyer2.png",
             ["stats"]= {
                 "+10% to Critical Strike Multiplier for Spells"
@@ -47818,7 +47818,7 @@ return {
         },
         [49929]= {
             ["skill"]= 49929,
-            ["name"]= "Spell Critical Strike Multiplier",
+            ["name"]= "주문 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SpellMultiplyer2.png",
             ["stats"]= {
                 "+10% to Critical Strike Multiplier for Spells"
@@ -47835,7 +47835,7 @@ return {
         },
         [38995]= {
             ["skill"]= 38995,
-            ["name"]= "Damage, Area and Projectile Speed",
+            ["name"]= "피해, 범위, 투사체 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "8% increased Damage",
@@ -47855,7 +47855,7 @@ return {
         },
         [8012]= {
             ["skill"]= 8012,
-            ["name"]= "Damage, Area and Projectile Speed",
+            ["name"]= "피해, 범위, 투사체 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage_blue.png",
             ["stats"]= {
                 "8% increased Damage",
@@ -47873,7 +47873,7 @@ return {
         },
         [7112]= {
             ["skill"]= 7112,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -47895,7 +47895,7 @@ return {
         },
         [47362]= {
             ["skill"]= 47362,
-            ["name"]= "Evasion, Energy Shield, Life and Resistances",
+            ["name"]= "회피, 에너지 보호막, 생명력, 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -47914,7 +47914,7 @@ return {
         },
         [1767]= {
             ["skill"]= 1767,
-            ["name"]= "Evasion, Energy Shield, Life and Resistances",
+            ["name"]= "회피, 에너지 보호막, 생명력, 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeAndEnergyShield.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -47935,7 +47935,7 @@ return {
         },
         [41989]= {
             ["skill"]= 41989,
-            ["name"]= "Resourcefulness",
+            ["name"]= "자원 활용",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Resourcefulness.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47961,7 +47961,7 @@ return {
         },
         [8001]= {
             ["skill"]= 8001,
-            ["name"]= "Lethal Assault",
+            ["name"]= "치명적인 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LethalAssault.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -47985,7 +47985,7 @@ return {
         },
         [35313]= {
             ["skill"]= 35313,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -47999,7 +47999,7 @@ return {
         },
         [4656]= {
             ["skill"]= 4656,
-            ["name"]= "Sword Attack Speed and Accuracy",
+            ["name"]= "검 공격 속도, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "4% increased Attack Speed with Swords",
@@ -48017,7 +48017,7 @@ return {
         },
         [22217]= {
             ["skill"]= 22217,
-            ["name"]= "Sword Damage and Accuracy",
+            ["name"]= "검 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "Sword Attacks deal 10% increased Damage with Hits and Ailments",
@@ -48039,7 +48039,7 @@ return {
         },
         [6383]= {
             ["skill"]= 6383,
-            ["name"]= "Sword Damage and Accuracy",
+            ["name"]= "검 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damagesword.png",
             ["stats"]= {
                 "Sword Attacks deal 12% increased Damage with Hits and Ailments",
@@ -48060,7 +48060,7 @@ return {
         },
         [59866]= {
             ["skill"]= 59866,
-            ["name"]= "Honed Edge",
+            ["name"]= "연마된 날",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SwordNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48089,7 +48089,7 @@ return {
         },
         [29445]= {
             ["skill"]= 29445,
-            ["name"]= "Sword Mastery",
+            ["name"]= "검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupSword.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48101,7 +48101,7 @@ return {
         },
         [21048]= {
             ["skill"]= 21048,
-            ["name"]= "Weapon Lightning Damage and Lightning Ailment Effect",
+            ["name"]= "무기 번개 피해, 번개 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% increased Effect of Lightning Ailments",
@@ -48122,7 +48122,7 @@ return {
         },
         [10555]= {
             ["skill"]= 10555,
-            ["name"]= "Weapon Lightning Damage and Shock Chance",
+            ["name"]= "무기 번개 피해, 감전 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lightningint.png",
             ["stats"]= {
                 "10% chance to Shock",
@@ -48143,7 +48143,7 @@ return {
         },
         [46471]= {
             ["skill"]= 46471,
-            ["name"]= "Shocking Strikes",
+            ["name"]= "감전의 타격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightingAilment.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48171,7 +48171,7 @@ return {
         },
         [63843]= {
             ["skill"]= 63843,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -48191,7 +48191,7 @@ return {
         },
         [41866]= {
             ["skill"]= 41866,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -48211,7 +48211,7 @@ return {
         },
         [60942]= {
             ["skill"]= 60942,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -48234,7 +48234,7 @@ return {
         },
         [22266]= {
             ["skill"]= 22266,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -48257,7 +48257,7 @@ return {
         },
         [34763]= {
             ["skill"]= 34763,
-            ["name"]= "Damage Over Time and Chaos Damage Over Time Multiplier",
+            ["name"]= "지속 피해, 카오스 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "+3% to Chaos Damage over Time Multiplier",
@@ -48275,7 +48275,7 @@ return {
         },
         [30110]= {
             ["skill"]= 30110,
-            ["name"]= "Damage Over Time and Chaos Damage Over Time Multiplier",
+            ["name"]= "지속 피해, 카오스 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "+3% to Chaos Damage over Time Multiplier",
@@ -48293,7 +48293,7 @@ return {
         },
         [42907]= {
             ["skill"]= 42907,
-            ["name"]= "Damage Over Time and Chaos Damage Over Time Multiplier",
+            ["name"]= "지속 피해, 카오스 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage.png",
             ["stats"]= {
                 "+3% to Chaos Damage over Time Multiplier",
@@ -48311,7 +48311,7 @@ return {
         },
         [53013]= {
             ["skill"]= 53013,
-            ["name"]= "Atrophy",
+            ["name"]= "위축",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamage2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48334,7 +48334,7 @@ return {
         },
         [23616]= {
             ["skill"]= 23616,
-            ["name"]= "Physical and Chaos Damage",
+            ["name"]= "물리, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalChaosRedPurple.png",
             ["stats"]= {
                 "10% increased Chaos Damage",
@@ -48353,7 +48353,7 @@ return {
         },
         [16874]= {
             ["skill"]= 16874,
-            ["name"]= "Physical and Chaos Mastery",
+            ["name"]= "물리, 카오스 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryPhysicalAndChaos.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48365,7 +48365,7 @@ return {
         },
         [21693]= {
             ["skill"]= 21693,
-            ["name"]= "Physical Damage and Attack and Cast Speed",
+            ["name"]= "물리 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "3% increased Attack and Cast Speed",
@@ -48383,7 +48383,7 @@ return {
         },
         [5613]= {
             ["skill"]= 5613,
-            ["name"]= "Physical Damage and Attack and Cast Speed",
+            ["name"]= "물리 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "3% increased Attack and Cast Speed",
@@ -48401,7 +48401,7 @@ return {
         },
         [38539]= {
             ["skill"]= 38539,
-            ["name"]= "Physical Damage and Attack and Cast Speed",
+            ["name"]= "물리 피해, 공격 및 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNode.png",
             ["stats"]= {
                 "3% increased Attack and Cast Speed",
@@ -48419,7 +48419,7 @@ return {
         },
         [54713]= {
             ["skill"]= 54713,
-            ["name"]= "Force Shaper",
+            ["name"]= "힘의 형성자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48442,7 +48442,7 @@ return {
         },
         [4481]= {
             ["skill"]= 4481,
-            ["name"]= "Forces of Nature",
+            ["name"]= "자연의 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ForceOfNature.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48464,7 +48464,7 @@ return {
         },
         [56646]= {
             ["skill"]= 56646,
-            ["name"]= "Weapon Elemental Damage",
+            ["name"]= "무기 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Attack Skills"
@@ -48481,7 +48481,7 @@ return {
         },
         [25511]= {
             ["skill"]= 25511,
-            ["name"]= "Weapon Elemental Damage",
+            ["name"]= "무기 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Attack Skills"
@@ -48498,7 +48498,7 @@ return {
         },
         [27819]= {
             ["skill"]= 27819,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -48512,7 +48512,7 @@ return {
         },
         [32227]= {
             ["skill"]= 32227,
-            ["name"]= "Adder's Touch",
+            ["name"]= "살무사의 접촉",
             ["icon"]= "Art/2DArt/SkillIcons/passives/adderstouch.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48540,7 +48540,7 @@ return {
         },
         [12915]= {
             ["skill"]= 12915,
-            ["name"]= "Dagger Mastery",
+            ["name"]= "단검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDagger.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48552,7 +48552,7 @@ return {
         },
         [64509]= {
             ["skill"]= 64509,
-            ["name"]= "Dagger Damage and Poison Chance",
+            ["name"]= "단검 피해, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "12% increased Damage with Daggers",
@@ -48576,7 +48576,7 @@ return {
         },
         [3863]= {
             ["skill"]= 3863,
-            ["name"]= "Dagger Critical Strike Multiplier and Poison Duration",
+            ["name"]= "단검 치명타 배율, 독 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "+15% to Critical Strike Multiplier with Daggers",
@@ -48597,7 +48597,7 @@ return {
         },
         [20167]= {
             ["skill"]= 20167,
-            ["name"]= "Dagger Damage and Poison Chance",
+            ["name"]= "단검 피해, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "12% increased Damage with Daggers",
@@ -48621,7 +48621,7 @@ return {
         },
         [27962]= {
             ["skill"]= 27962,
-            ["name"]= "Trap Throwing Speed and Trigger Area",
+            ["name"]= "덫 투척 속도, 발동 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "20% increased Trap Trigger Area of Effect",
@@ -48639,7 +48639,7 @@ return {
         },
         [31501]= {
             ["skill"]= 31501,
-            ["name"]= "Trap Throwing Speed and Trigger Area",
+            ["name"]= "덫 투척 속도, 발동 범위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "20% increased Trap Trigger Area of Effect",
@@ -48656,7 +48656,7 @@ return {
         },
         [59556]= {
             ["skill"]= 59556,
-            ["name"]= "Expeditious Munitions",
+            ["name"]= "신속한 탄약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/expeditiousmunitions.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48679,7 +48679,7 @@ return {
         },
         [54868]= {
             ["skill"]= 54868,
-            ["name"]= "Bow Damage",
+            ["name"]= "활 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -48697,7 +48697,7 @@ return {
         },
         [39938]= {
             ["skill"]= 39938,
-            ["name"]= "Bow Damage",
+            ["name"]= "활 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "15% increased Damage with Bows",
@@ -48715,7 +48715,7 @@ return {
         },
         [45360]= {
             ["skill"]= 45360,
-            ["name"]= "Bow Damage, Chance to Poison and Faster Poison",
+            ["name"]= "활 피해, 독 확률, 독 가속",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -48738,7 +48738,7 @@ return {
         },
         [54016]= {
             ["skill"]= 54016,
-            ["name"]= "Bow Mastery",
+            ["name"]= "활 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48750,7 +48750,7 @@ return {
         },
         [9535]= {
             ["skill"]= 9535,
-            ["name"]= "Hunter's Gambit",
+            ["name"]= "사냥꾼의 책략",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectilesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48776,7 +48776,7 @@ return {
         },
         [36801]= {
             ["skill"]= 36801,
-            ["name"]= "Claw Damage and Poison Chance",
+            ["name"]= "클로 피해, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "10% increased Damage with Claws",
@@ -48799,7 +48799,7 @@ return {
         },
         [19228]= {
             ["skill"]= 19228,
-            ["name"]= "Claw Damage and Poison Chance",
+            ["name"]= "클로 피해, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "10% increased Damage with Claws",
@@ -48822,7 +48822,7 @@ return {
         },
         [3362]= {
             ["skill"]= 3362,
-            ["name"]= "Claw Attack Speed and Poison Chance",
+            ["name"]= "클로 공격 속도, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "4% increased Attack Speed with Claws",
@@ -48843,7 +48843,7 @@ return {
         },
         [30021]= {
             ["skill"]= 30021,
-            ["name"]= "Claw Mastery",
+            ["name"]= "클로 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupClaw.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48855,7 +48855,7 @@ return {
         },
         [529]= {
             ["skill"]= 529,
-            ["name"]= "Poisonous Fangs",
+            ["name"]= "독성 송곳니",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ClawNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48883,7 +48883,7 @@ return {
         },
         [16882]= {
             ["skill"]= 16882,
-            ["name"]= "Flask Effect Duration",
+            ["name"]= "플라스크 효과 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskdex.png",
             ["stats"]= {
                 "10% increased Flask Effect Duration"
@@ -48900,7 +48900,7 @@ return {
         },
         [43491]= {
             ["skill"]= 43491,
-            ["name"]= "Flask Charges Used",
+            ["name"]= "플라스크 충전 사용",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskdex.png",
             ["stats"]= {
                 "5% reduced Flask Charges used"
@@ -48917,7 +48917,7 @@ return {
         },
         [14400]= {
             ["skill"]= 14400,
-            ["name"]= "Flask Effect Duration",
+            ["name"]= "플라스크 효과 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskdex.png",
             ["stats"]= {
                 "15% increased Flask Effect Duration"
@@ -48934,7 +48934,7 @@ return {
         },
         [41420]= {
             ["skill"]= 41420,
-            ["name"]= "Natural Remedies",
+            ["name"]= "자연 치유",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FlaskNotableFlasksLastLonger.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -48958,7 +48958,7 @@ return {
         },
         [57196]= {
             ["skill"]= 57196,
-            ["name"]= "Flask Mastery",
+            ["name"]= "플라스크 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryFlasks.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -48970,7 +48970,7 @@ return {
         },
         [33196]= {
             ["skill"]= 33196,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage"
@@ -48988,7 +48988,7 @@ return {
         },
         [13202]= {
             ["skill"]= 13202,
-            ["name"]= "Cold Damage and Cold Ailment Effect",
+            ["name"]= "냉기 피해, 냉기 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "12% increased Cold Damage",
@@ -49009,7 +49009,7 @@ return {
         },
         [17171]= {
             ["skill"]= 17171,
-            ["name"]= "Flash Freeze",
+            ["name"]= "순간 동결",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newcolddamage.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49037,7 +49037,7 @@ return {
         },
         [47774]= {
             ["skill"]= 47774,
-            ["name"]= "Cold Mastery",
+            ["name"]= "냉기 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCold.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -49049,7 +49049,7 @@ return {
         },
         [43385]= {
             ["skill"]= 43385,
-            ["name"]= "Winter Spirit",
+            ["name"]= "겨울의 혼백",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdWeaponDmg.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49071,7 +49071,7 @@ return {
         },
         [58474]= {
             ["skill"]= 58474,
-            ["name"]= "Weapon Cold Damage",
+            ["name"]= "무기 냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "20% of Physical Damage Converted to Cold Damage",
@@ -49089,7 +49089,7 @@ return {
         },
         [35851]= {
             ["skill"]= 35851,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -49106,7 +49106,7 @@ return {
         },
         [60592]= {
             ["skill"]= 60592,
-            ["name"]= "Accuracy and Critical Strike Chance",
+            ["name"]= "정확도, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "10% increased Global Accuracy Rating",
@@ -49123,7 +49123,7 @@ return {
         },
         [47484]= {
             ["skill"]= 47484,
-            ["name"]= "Depth Perception",
+            ["name"]= "날카로운 감각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49148,7 +49148,7 @@ return {
         },
         [9769]= {
             ["skill"]= 9769,
-            ["name"]= "Evasion and Elusive Effect",
+            ["name"]= "회피, 은밀 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElusiveNode.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -49168,7 +49168,7 @@ return {
         },
         [49515]= {
             ["skill"]= 49515,
-            ["name"]= "Evasion and Elusive Effect",
+            ["name"]= "회피, 은밀 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElusiveNode.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -49189,7 +49189,7 @@ return {
         },
         [24067]= {
             ["skill"]= 24067,
-            ["name"]= "No Witnesses",
+            ["name"]= "목격자 없음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElusiveNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49214,7 +49214,7 @@ return {
         },
         [14292]= {
             ["skill"]= 14292,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -49231,7 +49231,7 @@ return {
         },
         [38348]= {
             ["skill"]= 38348,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -49248,7 +49248,7 @@ return {
         },
         [16079]= {
             ["skill"]= 16079,
-            ["name"]= "Evasion Per Frenzy Charge",
+            ["name"]= "격분 충전당 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "4% increased Evasion Rating per Frenzy Charge"
@@ -49265,7 +49265,7 @@ return {
         },
         [21758]= {
             ["skill"]= 21758,
-            ["name"]= "Frenzy Charge Duration",
+            ["name"]= "격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "18% increased Frenzy Charge Duration"
@@ -49281,7 +49281,7 @@ return {
         },
         [60735]= {
             ["skill"]= 60735,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -49296,7 +49296,7 @@ return {
         },
         [48614]= {
             ["skill"]= 48614,
-            ["name"]= "Fervour",
+            ["name"]= "열정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49319,7 +49319,7 @@ return {
         },
         [58210]= {
             ["skill"]= 58210,
-            ["name"]= "Shield Spell Damage",
+            ["name"]= "방패 주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "10% increased Spell Damage while holding a Shield"
@@ -49337,7 +49337,7 @@ return {
         },
         [19008]= {
             ["skill"]= 19008,
-            ["name"]= "Shield Spell Damage and Block",
+            ["name"]= "방패 주문 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "8% increased Spell Damage while holding a Shield",
@@ -49355,7 +49355,7 @@ return {
         },
         [11689]= {
             ["skill"]= 11689,
-            ["name"]= "Shield Spell Damage and Block",
+            ["name"]= "방패 주문 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "8% increased Spell Damage while holding a Shield",
@@ -49373,7 +49373,7 @@ return {
         },
         [62970]= {
             ["skill"]= 62970,
-            ["name"]= "Shield Cast Speed",
+            ["name"]= "방패 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNodeOffensive.png",
             ["stats"]= {
                 "4% increased Cast Speed while holding a Shield"
@@ -49390,7 +49390,7 @@ return {
         },
         [46904]= {
             ["skill"]= 46904,
-            ["name"]= "Arcane Swiftness",
+            ["name"]= "비전의 신속",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49416,7 +49416,7 @@ return {
         },
         [8700]= {
             ["skill"]= 8700,
-            ["name"]= "Arcane Shield Mastery",
+            ["name"]= "비전 방패 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ShieldMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -49428,7 +49428,7 @@ return {
         },
         [56917]= {
             ["skill"]= 56917,
-            ["name"]= "Evasion Mastery",
+            ["name"]= "회피 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEvasion.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -49440,7 +49440,7 @@ return {
         },
         [9786]= {
             ["skill"]= 9786,
-            ["name"]= "Evasion and Movement Speed",
+            ["name"]= "회피, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -49459,7 +49459,7 @@ return {
         },
         [4573]= {
             ["skill"]= 4573,
-            ["name"]= "Evasion and Movement Skill Cooldown Recovery",
+            ["name"]= "회피, 이동 스킬 재사용 대기시간 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "14% increased Evasion Rating",
@@ -49476,7 +49476,7 @@ return {
         },
         [33558]= {
             ["skill"]= 33558,
-            ["name"]= "Evasion and Movement Speed",
+            ["name"]= "회피, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "14% increased Evasion Rating",
@@ -49494,7 +49494,7 @@ return {
         },
         [3309]= {
             ["skill"]= 3309,
-            ["name"]= "Fleetfoot",
+            ["name"]= "질풍의 발",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49523,7 +49523,7 @@ return {
         },
         [19858]= {
             ["skill"]= 19858,
-            ["name"]= "Herbalism",
+            ["name"]= "약초학",
             ["icon"]= "Art/2DArt/SkillIcons/passives/arcaneefficiency.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49546,7 +49546,7 @@ return {
         },
         [36221]= {
             ["skill"]= 36221,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -49563,7 +49563,7 @@ return {
         },
         [9206]= {
             ["skill"]= 9206,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "5% increased maximum Life"
@@ -49581,7 +49581,7 @@ return {
         },
         [37619]= {
             ["skill"]= 37619,
-            ["name"]= "Evasion and Elemental Resistances",
+            ["name"]= "회피, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -49598,7 +49598,7 @@ return {
         },
         [64235]= {
             ["skill"]= 64235,
-            ["name"]= "Evasion and Elemental Resistances",
+            ["name"]= "회피, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -49616,7 +49616,7 @@ return {
         },
         [24133]= {
             ["skill"]= 24133,
-            ["name"]= "Survivalist",
+            ["name"]= "생존주의자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Survivalist.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49645,7 +49645,7 @@ return {
         },
         [13676]= {
             ["skill"]= 13676,
-            ["name"]= "Mine and Trap Mastery",
+            ["name"]= "지뢰, 덫 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineTrapsMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -49657,7 +49657,7 @@ return {
         },
         [2260]= {
             ["skill"]= 2260,
-            ["name"]= "Trap and Mine Critical Strike Chance",
+            ["name"]= "덫 및 지뢰 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Traps",
@@ -49676,7 +49676,7 @@ return {
         },
         [35334]= {
             ["skill"]= 35334,
-            ["name"]= "Trap and Mine Critical Strike Chance",
+            ["name"]= "덫 및 지뢰 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance with Traps",
@@ -49694,7 +49694,7 @@ return {
         },
         [29549]= {
             ["skill"]= 29549,
-            ["name"]= "Trap and Mine Critical Strike Multiplier",
+            ["name"]= "덫 및 지뢰 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapcriticalstrike.png",
             ["stats"]= {
                 "+10% to Critical Strike Multiplier with Traps",
@@ -49712,7 +49712,7 @@ return {
         },
         [61689]= {
             ["skill"]= 61689,
-            ["name"]= "Blast Cascade",
+            ["name"]= "연쇄 폭발",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49738,7 +49738,7 @@ return {
         },
         [1461]= {
             ["skill"]= 1461,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -49760,7 +49760,7 @@ return {
         },
         [32176]= {
             ["skill"]= 32176,
-            ["name"]= "Soul Thief",
+            ["name"]= "영혼 도둑",
             ["icon"]= "Art/2DArt/SkillIcons/passives/newenergyshield.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49788,7 +49788,7 @@ return {
         },
         [60259]= {
             ["skill"]= 60259,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -49806,7 +49806,7 @@ return {
         },
         [11018]= {
             ["skill"]= 11018,
-            ["name"]= "Evasion and Energy Shield",
+            ["name"]= "회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evadepercentage.png",
             ["stats"]= {
                 "10% increased Evasion Rating",
@@ -49823,7 +49823,7 @@ return {
         },
         [25411]= {
             ["skill"]= 25411,
-            ["name"]= "Infused",
+            ["name"]= "주입",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49846,7 +49846,7 @@ return {
         },
         [3537]= {
             ["skill"]= 3537,
-            ["name"]= "Power Charge Duration",
+            ["name"]= "권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "18% increased Power Charge Duration"
@@ -49862,7 +49862,7 @@ return {
         },
         [62177]= {
             ["skill"]= 62177,
-            ["name"]= "Power Charge Duration",
+            ["name"]= "권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargeint.png",
             ["stats"]= {
                 "18% increased Power Charge Duration"
@@ -49879,7 +49879,7 @@ return {
         },
         [53213]= {
             ["skill"]= 53213,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -49896,7 +49896,7 @@ return {
         },
         [27656]= {
             ["skill"]= 27656,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -49914,7 +49914,7 @@ return {
         },
         [61834]= {
             ["skill"]= 61834,
-            ["name"]= "Basic Jewel Socket",
+            ["name"]= "기본 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["stats"]= {},
@@ -49930,7 +49930,7 @@ return {
         },
         [63228]= {
             ["skill"]= 63228,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -49947,7 +49947,7 @@ return {
         },
         [49308]= {
             ["skill"]= 49308,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/mana.png",
             ["stats"]= {
                 "8% increased maximum Mana"
@@ -49963,7 +49963,7 @@ return {
         },
         [42804]= {
             ["skill"]= 42804,
-            ["name"]= "Mind Drinker",
+            ["name"]= "정신 흡수자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minddrinker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -49990,7 +49990,7 @@ return {
         },
         [21893]= {
             ["skill"]= 21893,
-            ["name"]= "Frenzy Charge Duration",
+            ["name"]= "격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "18% increased Frenzy Charge Duration"
@@ -50006,7 +50006,7 @@ return {
         },
         [3314]= {
             ["skill"]= 3314,
-            ["name"]= "Frenzy Charge Duration",
+            ["name"]= "격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["stats"]= {
                 "18% increased Frenzy Charge Duration"
@@ -50023,7 +50023,7 @@ return {
         },
         [40362]= {
             ["skill"]= 40362,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "6% increased maximum Life"
@@ -50040,7 +50040,7 @@ return {
         },
         [25260]= {
             ["skill"]= 25260,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/life1.png",
             ["stats"]= {
                 "6% increased maximum Life"
@@ -50057,7 +50057,7 @@ return {
         },
         [27788]= {
             ["skill"]= 27788,
-            ["name"]= "Blood Drinker",
+            ["name"]= "피 흡수자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/lifeleech.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50084,7 +50084,7 @@ return {
         },
         [42443]= {
             ["skill"]= 42443,
-            ["name"]= "Frenetic",
+            ["name"]= "광란",
             ["icon"]= "Art/2DArt/SkillIcons/passives/chargedex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50107,7 +50107,7 @@ return {
         },
         [51420]= {
             ["skill"]= 51420,
-            ["name"]= "Mana Leech",
+            ["name"]= "마나 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaLeechThemedNode.png",
             ["stats"]= {
                 "0.4% of Attack Damage Leeched as Mana"
@@ -50128,7 +50128,7 @@ return {
         },
         [49481]= {
             ["skill"]= 49481,
-            ["name"]= "Mana Leech",
+            ["name"]= "마나 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ManaLeechThemedNode.png",
             ["stats"]= {
                 "+2 Mana gained for each Enemy hit by your Attacks",
@@ -50146,7 +50146,7 @@ return {
         },
         [65053]= {
             ["skill"]= 65053,
-            ["name"]= "Essence Sap",
+            ["name"]= "정수 진액",
             ["icon"]= "Art/2DArt/SkillIcons/passives/minddrinker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50175,7 +50175,7 @@ return {
         },
         [56814]= {
             ["skill"]= 56814,
-            ["name"]= "Evasion and Blind Duration",
+            ["name"]= "회피, 실명 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "12% increased Evasion Rating",
@@ -50196,7 +50196,7 @@ return {
         },
         [46694]= {
             ["skill"]= 46694,
-            ["name"]= "Evasion and Blind Avoidance",
+            ["name"]= "회피, 실명 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "+100 to Evasion Rating",
@@ -50215,7 +50215,7 @@ return {
         },
         [11850]= {
             ["skill"]= 11850,
-            ["name"]= "Evasion and Blind Chance",
+            ["name"]= "회피, 실명 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "14% increased Evasion Rating",
@@ -50236,7 +50236,7 @@ return {
         },
         [17608]= {
             ["skill"]= 17608,
-            ["name"]= "Silent Steps",
+            ["name"]= "조용한 발걸음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionAndBlindNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50264,7 +50264,7 @@ return {
         },
         [50154]= {
             ["skill"]= 50154,
-            ["name"]= "Evasion Mastery",
+            ["name"]= "회피 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupEvasion.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -50276,7 +50276,7 @@ return {
         },
         [28548]= {
             ["skill"]= 28548,
-            ["name"]= "Shield Spell Block and Block Recovery",
+            ["name"]= "방패 주문 막기, 막기 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/shieldrecovery.png",
             ["stats"]= {
                 "+2% Chance to Block Spell Damage while holding a Shield",
@@ -50293,7 +50293,7 @@ return {
         },
         [37884]= {
             ["skill"]= 37884,
-            ["name"]= "Dual Wield Damage and Block",
+            ["name"]= "쌍수 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+3% Chance to Block Attack Damage while Dual Wielding",
@@ -50311,7 +50311,7 @@ return {
         },
         [53225]= {
             ["skill"]= 53225,
-            ["name"]= "Dual Wield Attack Speed",
+            ["name"]= "쌍수 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldspeedint.png",
             ["stats"]= {
                 "4% increased Attack Speed while Dual Wielding"
@@ -50328,7 +50328,7 @@ return {
         },
         [11784]= {
             ["skill"]= 11784,
-            ["name"]= "Gemini",
+            ["name"]= "쌍둥이자리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/gemini.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50352,7 +50352,7 @@ return {
         },
         [15021]= {
             ["skill"]= 15021,
-            ["name"]= "Shield Block and Shield Defences",
+            ["name"]= "방패 막기, 방패 방어력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/blockstr.png",
             ["stats"]= {
                 "40% increased Defences from Equipped Shield",
@@ -50373,7 +50373,7 @@ return {
         },
         [65308]= {
             ["skill"]= 65308,
-            ["name"]= "Deflection",
+            ["name"]= "편향",
             ["icon"]= "Art/2DArt/SkillIcons/passives/barricade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50400,7 +50400,7 @@ return {
         },
         [64769]= {
             ["skill"]= 64769,
-            ["name"]= "Attack Speed and Poison Chance",
+            ["name"]= "공격 속도, 독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackPoisonNode.png",
             ["stats"]= {
                 "3% increased Attack Speed",
@@ -50422,7 +50422,7 @@ return {
         },
         [23449]= {
             ["skill"]= 23449,
-            ["name"]= "Poison Damage",
+            ["name"]= "독 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackPoisonNode.png",
             ["stats"]= {
                 "+4% to Damage over Time Multiplier for Poison",
@@ -50440,7 +50440,7 @@ return {
         },
         [36849]= {
             ["skill"]= 36849,
-            ["name"]= "Attack Speed and Poison Duration",
+            ["name"]= "공격 속도, 독 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackPoisonNode.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -50458,7 +50458,7 @@ return {
         },
         [7263]= {
             ["skill"]= 7263,
-            ["name"]= "Swift Venoms",
+            ["name"]= "신속한 독",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AttackPoisonNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50489,7 +50489,7 @@ return {
         },
         [34394]= {
             ["skill"]= 34394,
-            ["name"]= "Poison Mastery",
+            ["name"]= "독 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryPoison.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -50501,7 +50501,7 @@ return {
         },
         [9844]= {
             ["skill"]= 9844,
-            ["name"]= "Channelling Attack Speed and Stun Avoidance",
+            ["name"]= "집중 유지 공격 속도, 기절 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills have 4% increased Attack Speed",
@@ -50519,7 +50519,7 @@ return {
         },
         [1513]= {
             ["skill"]= 1513,
-            ["name"]= "Channelling Attack Damage and Speed",
+            ["name"]= "집중 유지 공격 피해, 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills deal 8% increased Attack Damage",
@@ -50536,7 +50536,7 @@ return {
         },
         [46593]= {
             ["skill"]= 46593,
-            ["name"]= "Channelling Attack Speed and Stun Avoidance",
+            ["name"]= "집중 유지 공격 속도, 기절 회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNode.png",
             ["stats"]= {
                 "Channelling Skills have 4% increased Attack Speed",
@@ -50554,7 +50554,7 @@ return {
         },
         [22914]= {
             ["skill"]= 22914,
-            ["name"]= "Channelling Mastery",
+            ["name"]= "집중 유지 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksMasterySymbol.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -50566,7 +50566,7 @@ return {
         },
         [2959]= {
             ["skill"]= 2959,
-            ["name"]= "Unpredictable Offensive",
+            ["name"]= "예측 불가의 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChannellingAttacksNotable2.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50589,7 +50589,7 @@ return {
         },
         [31585]= {
             ["skill"]= 31585,
-            ["name"]= "Careful Conservationist",
+            ["name"]= "신중한 보존가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FlaskNotableCritStrikeRecharge.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50615,7 +50615,7 @@ return {
         },
         [3676]= {
             ["skill"]= 3676,
-            ["name"]= "Flask Charges Gained",
+            ["name"]= "플라스크 충전 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskdex.png",
             ["stats"]= {
                 "10% increased Flask Charges gained"
@@ -50632,7 +50632,7 @@ return {
         },
         [17790]= {
             ["skill"]= 17790,
-            ["name"]= "Flask Charges Gained",
+            ["name"]= "플라스크 충전 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaskdex.png",
             ["stats"]= {
                 "10% increased Flask Charges gained"
@@ -50648,7 +50648,7 @@ return {
         },
         [11811]= {
             ["skill"]= 11811,
-            ["name"]= "Poison Chance",
+            ["name"]= "독 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "15% chance to Poison on Hit"
@@ -50668,7 +50668,7 @@ return {
         },
         [20127]= {
             ["skill"]= 20127,
-            ["name"]= "Poison Damage and Duration",
+            ["name"]= "독 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "5% increased Poison Duration",
@@ -50686,7 +50686,7 @@ return {
         },
         [1648]= {
             ["skill"]= 1648,
-            ["name"]= "Poison Damage and Chance",
+            ["name"]= "독 피해, 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "10% chance to Poison on Hit",
@@ -50707,7 +50707,7 @@ return {
         },
         [3988]= {
             ["skill"]= 3988,
-            ["name"]= "Poison Mastery",
+            ["name"]= "독 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryPoison.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -50719,7 +50719,7 @@ return {
         },
         [31359]= {
             ["skill"]= 31359,
-            ["name"]= "Fatal Toxins",
+            ["name"]= "치명적인 독소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50744,7 +50744,7 @@ return {
         },
         [37785]= {
             ["skill"]= 37785,
-            ["name"]= "Poison Damage and Duration",
+            ["name"]= "독 피해, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Poison.png",
             ["stats"]= {
                 "5% increased Poison Duration",
@@ -50762,7 +50762,7 @@ return {
         },
         [38520]= {
             ["skill"]= 38520,
-            ["name"]= "Claw Accuracy and Critical Strike Multiplier",
+            ["name"]= "클로 정확도, 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "6% increased Accuracy Rating with Claws",
@@ -50780,7 +50780,7 @@ return {
         },
         [47321]= {
             ["skill"]= 47321,
-            ["name"]= "Claw Damage and Critical Strike Chance",
+            ["name"]= "클로 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 10% increased Damage with Hits and Ailments",
@@ -50801,7 +50801,7 @@ return {
         },
         [265]= {
             ["skill"]= 265,
-            ["name"]= "Claw Damage and Critical Strike Chance",
+            ["name"]= "클로 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 10% increased Damage with Hits and Ailments",
@@ -50822,7 +50822,7 @@ return {
         },
         [19016]= {
             ["skill"]= 19016,
-            ["name"]= "Claw Mastery",
+            ["name"]= "클로 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupClaw.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -50834,7 +50834,7 @@ return {
         },
         [56648]= {
             ["skill"]= 56648,
-            ["name"]= "Claws of the Falcon",
+            ["name"]= "매의 발톱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/eagletalons.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50861,7 +50861,7 @@ return {
         },
         [9469]= {
             ["skill"]= 9469,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance"
@@ -50877,7 +50877,7 @@ return {
         },
         [59220]= {
             ["skill"]= 59220,
-            ["name"]= "Critical Strike Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalstrikechance.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance"
@@ -50893,7 +50893,7 @@ return {
         },
         [65502]= {
             ["skill"]= 65502,
-            ["name"]= "Heartseeker",
+            ["name"]= "심장 노리기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heartseeker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50914,7 +50914,7 @@ return {
         },
         [57080]= {
             ["skill"]= 57080,
-            ["name"]= "Accuracy and Attack Speed",
+            ["name"]= "정확도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -50931,7 +50931,7 @@ return {
         },
         [42104]= {
             ["skill"]= 42104,
-            ["name"]= "Accuracy and Attack Speed",
+            ["name"]= "정확도, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["stats"]= {
                 "4% increased Attack Speed",
@@ -50948,7 +50948,7 @@ return {
         },
         [49621]= {
             ["skill"]= 49621,
-            ["name"]= "Acuity",
+            ["name"]= "예민함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracydex.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -50973,7 +50973,7 @@ return {
         },
         [12794]= {
             ["skill"]= 12794,
-            ["name"]= "Bow Critical Strike Chance and Multiplier",
+            ["name"]= "활 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "16% increased Critical Strike Chance with Bows",
@@ -50991,7 +50991,7 @@ return {
         },
         [30455]= {
             ["skill"]= 30455,
-            ["name"]= "Bow Critical Strike Chance and Multiplier",
+            ["name"]= "활 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "16% increased Critical Strike Chance with Bows",
@@ -51008,7 +51008,7 @@ return {
         },
         [28658]= {
             ["skill"]= 28658,
-            ["name"]= "Bow Critical Strike Chance",
+            ["name"]= "활 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance with Bows"
@@ -51024,7 +51024,7 @@ return {
         },
         [14804]= {
             ["skill"]= 14804,
-            ["name"]= "Bow Critical Strike Chance",
+            ["name"]= "활 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Bows"
@@ -51041,7 +51041,7 @@ return {
         },
         [22755]= {
             ["skill"]= 22755,
-            ["name"]= "Bow Mastery",
+            ["name"]= "활 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -51053,7 +51053,7 @@ return {
         },
         [41119]= {
             ["skill"]= 41119,
-            ["name"]= "Lethality",
+            ["name"]= "치명상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/heartpierce.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51078,7 +51078,7 @@ return {
         },
         [58198]= {
             ["skill"]= 58198,
-            ["name"]= "Fingers of Frost",
+            ["name"]= "서리의 손가락",
             ["icon"]= "Art/2DArt/SkillIcons/passives/breathofrime.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51108,7 +51108,7 @@ return {
         },
         [56186]= {
             ["skill"]= 56186,
-            ["name"]= "Cold Damage Over Time Multiplier",
+            ["name"]= "냉기 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "+6% to Cold Damage over Time Multiplier"
@@ -51125,7 +51125,7 @@ return {
         },
         [11162]= {
             ["skill"]= 11162,
-            ["name"]= "Cold Damage Over Time Multiplier",
+            ["name"]= "냉기 지속 피해 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "+6% to Cold Damage over Time Multiplier"
@@ -51142,7 +51142,7 @@ return {
         },
         [44059]= {
             ["skill"]= 44059,
-            ["name"]= "Cold Mastery",
+            ["name"]= "냉기 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupCold.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -51154,7 +51154,7 @@ return {
         },
         [21170]= {
             ["skill"]= 21170,
-            ["name"]= "Cold Damage, Freeze Chance, Cold Ailment Effect",
+            ["name"]= "냉기 피해, 동결 확률, 냉기 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "10% increased Cold Damage",
@@ -51178,7 +51178,7 @@ return {
         },
         [58603]= {
             ["skill"]= 58603,
-            ["name"]= "Cold Damage, Cold Ailment Effect and Duration",
+            ["name"]= "냉기 피해, 냉기 상태 이상 효과, 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/colddamage.png",
             ["stats"]= {
                 "10% increased Cold Damage",
@@ -51200,7 +51200,7 @@ return {
         },
         [53456]= {
             ["skill"]= 53456,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -51222,7 +51222,7 @@ return {
         },
         [18182]= {
             ["skill"]= 18182,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -51243,7 +51243,7 @@ return {
         },
         [56295]= {
             ["skill"]= 56295,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
@@ -51264,7 +51264,7 @@ return {
         },
         [46277]= {
             ["skill"]= 46277,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51285,7 +51285,7 @@ return {
         },
         [49900]= {
             ["skill"]= 49900,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51306,7 +51306,7 @@ return {
         },
         [36287]= {
             ["skill"]= 36287,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51328,7 +51328,7 @@ return {
         },
         [20807]= {
             ["skill"]= 20807,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51351,7 +51351,7 @@ return {
         },
         [12412]= {
             ["skill"]= 12412,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51372,7 +51372,7 @@ return {
         },
         [32555]= {
             ["skill"]= 32555,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -51396,7 +51396,7 @@ return {
         },
         [32763]= {
             ["skill"]= 32763,
-            ["name"]= "Large Jewel Socket",
+            ["name"]= "대형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -51417,7 +51417,7 @@ return {
         },
         [23334]= {
             ["skill"]= 23334,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "4% increased Projectile Damage"
@@ -51434,7 +51434,7 @@ return {
         },
         [6797]= {
             ["skill"]= 6797,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "4% increased Projectile Damage"
@@ -51450,7 +51450,7 @@ return {
         },
         [24426]= {
             ["skill"]= 24426,
-            ["name"]= "Ghost Reaver",
+            ["name"]= "혼 강탈자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ghostreaver.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -51469,7 +51469,7 @@ return {
         },
         [42632]= {
             ["skill"]= 42632,
-            ["name"]= "Totem Critical Strike Chance and Multiplier",
+            ["name"]= "토템 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemCriticalStrikes.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Totem Skills",
@@ -51487,7 +51487,7 @@ return {
         },
         [27444]= {
             ["skill"]= 27444,
-            ["name"]= "Totem Critical Strike Chance and Multiplier",
+            ["name"]= "토템 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemCriticalStrikes.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Totem Skills",
@@ -51504,7 +51504,7 @@ return {
         },
         [4750]= {
             ["skill"]= 4750,
-            ["name"]= "Totem Attack and Placement Speed",
+            ["name"]= "토템 공격 및 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemAttackSpeed.png",
             ["stats"]= {
                 "10% increased Totem Placement speed",
@@ -51522,7 +51522,7 @@ return {
         },
         [58288]= {
             ["skill"]= 58288,
-            ["name"]= "Totem Attack and Placement Speed",
+            ["name"]= "토템 공격 및 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemAttackSpeed.png",
             ["stats"]= {
                 "10% increased Totem Placement speed",
@@ -51539,7 +51539,7 @@ return {
         },
         [63618]= {
             ["skill"]= 63618,
-            ["name"]= "Totem Damage and Placement Speed",
+            ["name"]= "토템 피해, 설치 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemDamage.png",
             ["stats"]= {
                 "10% increased Totem Damage",
@@ -51558,7 +51558,7 @@ return {
         },
         [43846]= {
             ["skill"]= 43846,
-            ["name"]= "Totem mastery",
+            ["name"]= "토템 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -51570,7 +51570,7 @@ return {
         },
         [15290]= {
             ["skill"]= 15290,
-            ["name"]= "Watchtowers",
+            ["name"]= "감시탑",
             ["icon"]= "Art/2DArt/SkillIcons/passives/RangedTotemOffensive.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51596,7 +51596,7 @@ return {
         },
         [54922]= {
             ["skill"]= 54922,
-            ["name"]= "Arrow Dancing",
+            ["name"]= "춤추는 화살",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneArrowDodging.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -51615,7 +51615,7 @@ return {
         },
         [54307]= {
             ["skill"]= 54307,
-            ["name"]= "Acrobatics",
+            ["name"]= "곡예",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystoneAcrobatics.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -51636,7 +51636,7 @@ return {
         },
         [15825]= {
             ["skill"]= 15825,
-            ["name"]= "Dagger Damage and Attack Speed",
+            ["name"]= "단검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "Dagger Attacks deal 10% increased Damage with Hits and Ailments",
@@ -51658,7 +51658,7 @@ return {
         },
         [5802]= {
             ["skill"]= 5802,
-            ["name"]= "Dagger Damage and Attack Speed",
+            ["name"]= "단검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "Dagger Attacks deal 12% increased Damage with Hits and Ailments",
@@ -51680,7 +51680,7 @@ return {
         },
         [34372]= {
             ["skill"]= 34372,
-            ["name"]= "Dagger Mastery",
+            ["name"]= "단검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDagger.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -51692,7 +51692,7 @@ return {
         },
         [3424]= {
             ["skill"]= 3424,
-            ["name"]= "Dagger Damage and Movement Speed",
+            ["name"]= "단검 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterydaggerdex.png",
             ["stats"]= {
                 "Dagger Attacks deal 12% increased Damage with Hits and Ailments",
@@ -51714,7 +51714,7 @@ return {
         },
         [1405]= {
             ["skill"]= 1405,
-            ["name"]= "From the Shadows",
+            ["name"]= "어둠 속에서",
             ["icon"]= "Art/2DArt/SkillIcons/passives/daggerpenetration.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51743,7 +51743,7 @@ return {
         },
         [55414]= {
             ["skill"]= 55414,
-            ["name"]= "Dagger Damage",
+            ["name"]= "단검 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerint.png",
             ["stats"]= {
                 "Dagger Attacks deal 12% increased Damage with Hits and Ailments"
@@ -51765,7 +51765,7 @@ return {
         },
         [22261]= {
             ["skill"]= 22261,
-            ["name"]= "Dagger Damage and Attack Speed",
+            ["name"]= "단검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddagger.png",
             ["stats"]= {
                 "Dagger Attacks deal 8% increased Damage with Hits and Ailments",
@@ -51787,7 +51787,7 @@ return {
         },
         [56174]= {
             ["skill"]= 56174,
-            ["name"]= "Dagger Damage and Attack Speed",
+            ["name"]= "단검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddagger.png",
             ["stats"]= {
                 "Dagger Attacks deal 8% increased Damage with Hits and Ailments",
@@ -51808,7 +51808,7 @@ return {
         },
         [38864]= {
             ["skill"]= 38864,
-            ["name"]= "Dagger Damage and Attack Speed",
+            ["name"]= "단검 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeeddagger.png",
             ["stats"]= {
                 "Dagger Attacks deal 8% increased Damage with Hits and Ailments",
@@ -51830,7 +51830,7 @@ return {
         },
         [47422]= {
             ["skill"]= 47422,
-            ["name"]= "Dagger Critical Strike Chance and Multiplier",
+            ["name"]= "단검 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerdex.png",
             ["stats"]= {
                 "18% increased Critical Strike Chance with Daggers",
@@ -51851,7 +51851,7 @@ return {
         },
         [44134]= {
             ["skill"]= 44134,
-            ["name"]= "Dagger Critical Strike Chance and Multiplier",
+            ["name"]= "단검 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerdex.png",
             ["stats"]= {
                 "18% increased Critical Strike Chance with Daggers",
@@ -51872,7 +51872,7 @@ return {
         },
         [11489]= {
             ["skill"]= 11489,
-            ["name"]= "Dagger Critical Strike Chance and Multiplier",
+            ["name"]= "단검 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticaldaggerdex.png",
             ["stats"]= {
                 "18% increased Critical Strike Chance with Daggers",
@@ -51893,7 +51893,7 @@ return {
         },
         [8920]= {
             ["skill"]= 8920,
-            ["name"]= "Backstabbing",
+            ["name"]= "뒤에서 칼 꽂기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DaggerNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51920,7 +51920,7 @@ return {
         },
         [57001]= {
             ["skill"]= 57001,
-            ["name"]= "Dagger Mastery",
+            ["name"]= "단검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupDagger.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -51932,7 +51932,7 @@ return {
         },
         [36490]= {
             ["skill"]= 36490,
-            ["name"]= "Flaying",
+            ["name"]= "가죽 벗기기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/flaying.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -51961,7 +51961,7 @@ return {
         },
         [50150]= {
             ["skill"]= 50150,
-            ["name"]= "Weapon Elemental Damage, Status Ailment Chance",
+            ["name"]= "무기 원소 피해, 상태 이상 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "5% chance to Freeze, Shock and Ignite",
@@ -51984,7 +51984,7 @@ return {
         },
         [45436]= {
             ["skill"]= 45436,
-            ["name"]= "Weapon Elemental Damage, Status Ailment Chance",
+            ["name"]= "무기 원소 피해, 상태 이상 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "5% chance to Freeze, Shock and Ignite",
@@ -52007,7 +52007,7 @@ return {
         },
         [64878]= {
             ["skill"]= 64878,
-            ["name"]= "Weapon Elemental Damage",
+            ["name"]= "무기 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Attack Skills"
@@ -52025,7 +52025,7 @@ return {
         },
         [30969]= {
             ["skill"]= 30969,
-            ["name"]= "Weapon Elemental Damage",
+            ["name"]= "무기 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Attack Skills"
@@ -52042,7 +52042,7 @@ return {
         },
         [32477]= {
             ["skill"]= 32477,
-            ["name"]= "Weapon Elemental Damage",
+            ["name"]= "무기 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/weaponelementaldamagepercentage.png",
             ["stats"]= {
                 "12% increased Elemental Damage with Attack Skills"
@@ -52059,7 +52059,7 @@ return {
         },
         [36281]= {
             ["skill"]= 36281,
-            ["name"]= "Primeval Force",
+            ["name"]= "태고의 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WeaponElementalNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52083,7 +52083,7 @@ return {
         },
         [8434]= {
             ["skill"]= 8434,
-            ["name"]= "Weapon Elemental Mastery",
+            ["name"]= "무기 원소 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalMastery2.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -52095,7 +52095,7 @@ return {
         },
         [59151]= {
             ["skill"]= 59151,
-            ["name"]= "Brutal Blade",
+            ["name"]= "잔인한 검",
             ["icon"]= "Art/2DArt/SkillIcons/passives/cruelblade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52122,7 +52122,7 @@ return {
         },
         [12720]= {
             ["skill"]= 12720,
-            ["name"]= "Sword Damage and Block",
+            ["name"]= "검 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -52143,7 +52143,7 @@ return {
         },
         [29856]= {
             ["skill"]= 29856,
-            ["name"]= "Sword Damage and Critical Strike Chance",
+            ["name"]= "검 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracysword.png",
             ["stats"]= {
                 "Sword Attacks deal 10% increased Damage with Hits and Ailments",
@@ -52164,7 +52164,7 @@ return {
         },
         [1698]= {
             ["skill"]= 1698,
-            ["name"]= "Sword Critical Strike Chance and Multiplier",
+            ["name"]= "검 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracysword.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Swords",
@@ -52182,7 +52182,7 @@ return {
         },
         [1568]= {
             ["skill"]= 1568,
-            ["name"]= "Fatal Blade",
+            ["name"]= "치명적인 검",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FatalBlade.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52204,7 +52204,7 @@ return {
         },
         [54354]= {
             ["skill"]= 54354,
-            ["name"]= "Sword Damage",
+            ["name"]= "검 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedsworddex.png",
             ["stats"]= {
                 "Sword Attacks deal 12% increased Damage with Hits and Ailments"
@@ -52224,7 +52224,7 @@ return {
         },
         [6108]= {
             ["skill"]= 6108,
-            ["name"]= "Sword Critical Strike Chance and Multiplier",
+            ["name"]= "검 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/accuracysword.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Swords",
@@ -52242,7 +52242,7 @@ return {
         },
         [56509]= {
             ["skill"]= 56509,
-            ["name"]= "Sword Damage and Block",
+            ["name"]= "검 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -52262,7 +52262,7 @@ return {
         },
         [52213]= {
             ["skill"]= 52213,
-            ["name"]= "Sword Damage and Block",
+            ["name"]= "검 피해, 막기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/dualwieldblock.png",
             ["stats"]= {
                 "+2% Chance to Block Attack Damage while Dual Wielding or holding a Shield",
@@ -52282,7 +52282,7 @@ return {
         },
         [2021]= {
             ["skill"]= 2021,
-            ["name"]= "Sword Mastery",
+            ["name"]= "검 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupSword.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -52294,7 +52294,7 @@ return {
         },
         [36225]= {
             ["skill"]= 36225,
-            ["name"]= "Claw Critical Strike Chance and Multiplier",
+            ["name"]= "클로 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ClawCritStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Claws",
@@ -52312,7 +52312,7 @@ return {
         },
         [30745]= {
             ["skill"]= 30745,
-            ["name"]= "Claw Critical Strike Chance and Multiplier",
+            ["name"]= "클로 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ClawCritStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Claws",
@@ -52330,7 +52330,7 @@ return {
         },
         [49568]= {
             ["skill"]= 49568,
-            ["name"]= "Claw Critical Strike Chance and Multiplier",
+            ["name"]= "클로 치명타 확률, 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ClawCritStrikeChanceNode.png",
             ["stats"]= {
                 "20% increased Critical Strike Chance with Claws",
@@ -52348,7 +52348,7 @@ return {
         },
         [17908]= {
             ["skill"]= 17908,
-            ["name"]= "Claw Damage and Attack Speed",
+            ["name"]= "클로 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 8% increased Damage with Hits and Ailments",
@@ -52369,7 +52369,7 @@ return {
         },
         [25775]= {
             ["skill"]= 25775,
-            ["name"]= "Claw Damage and Attack Speed",
+            ["name"]= "클로 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 8% increased Damage with Hits and Ailments",
@@ -52390,7 +52390,7 @@ return {
         },
         [5629]= {
             ["skill"]= 5629,
-            ["name"]= "Claw Damage",
+            ["name"]= "클로 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "Claw Attacks deal 12% increased Damage with Hits and Ailments"
@@ -52411,7 +52411,7 @@ return {
         },
         [35384]= {
             ["skill"]= 35384,
-            ["name"]= "Claw Damage and Attack Speed",
+            ["name"]= "클로 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedclaw.png",
             ["stats"]= {
                 "Claw Attacks deal 8% increased Damage with Hits and Ailments",
@@ -52432,7 +52432,7 @@ return {
         },
         [4868]= {
             ["skill"]= 4868,
-            ["name"]= "Claw Damage and Leech",
+            ["name"]= "클로 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "Claw Attacks deal 12% increased Damage with Hits and Ailments",
@@ -52455,7 +52455,7 @@ return {
         },
         [62182]= {
             ["skill"]= 62182,
-            ["name"]= "Claw Damage and Leech",
+            ["name"]= "클로 피해, 흡수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/clawmasterydex.png",
             ["stats"]= {
                 "Claw Attacks deal 12% increased Damage with Hits and Ailments",
@@ -52478,7 +52478,7 @@ return {
         },
         [15614]= {
             ["skill"]= 15614,
-            ["name"]= "Claws of the Hawk",
+            ["name"]= "매의 발톱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ClawNotable1.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52506,7 +52506,7 @@ return {
         },
         [39979]= {
             ["skill"]= 39979,
-            ["name"]= "Claw Mastery",
+            ["name"]= "클로 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupClaw.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -52518,7 +52518,7 @@ return {
         },
         [54791]= {
             ["skill"]= 54791,
-            ["name"]= "Claws of the Magpie",
+            ["name"]= "까치의 발톱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/eagletalons.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52546,7 +52546,7 @@ return {
         },
         [28503]= {
             ["skill"]= 28503,
-            ["name"]= "Soul Raker",
+            ["name"]= "영혼 갈퀴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/soulraker.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52577,7 +52577,7 @@ return {
         },
         [39665]= {
             ["skill"]= 39665,
-            ["name"]= "Bow Damage and Attack Speed",
+            ["name"]= "활 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52596,7 +52596,7 @@ return {
         },
         [38149]= {
             ["skill"]= 38149,
-            ["name"]= "Bow Damage and Accuracy",
+            ["name"]= "활 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52615,7 +52615,7 @@ return {
         },
         [32514]= {
             ["skill"]= 32514,
-            ["name"]= "Bow Damage and Critical Strike Chance",
+            ["name"]= "활 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52633,7 +52633,7 @@ return {
         },
         [55750]= {
             ["skill"]= 55750,
-            ["name"]= "Bow Damage and Critical Strike Chance",
+            ["name"]= "활 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52651,7 +52651,7 @@ return {
         },
         [2185]= {
             ["skill"]= 2185,
-            ["name"]= "Bow Damage and Attack Speed",
+            ["name"]= "활 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52669,7 +52669,7 @@ return {
         },
         [23912]= {
             ["skill"]= 23912,
-            ["name"]= "Bow Damage and Attack Speed",
+            ["name"]= "활 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/attackspeedbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52688,7 +52688,7 @@ return {
         },
         [12948]= {
             ["skill"]= 12948,
-            ["name"]= "Bow Damage and Critical Strike Multiplier",
+            ["name"]= "활 피해, 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/criticalbow.png",
             ["stats"]= {
                 "10% increased Damage with Bows",
@@ -52707,7 +52707,7 @@ return {
         },
         [64761]= {
             ["skill"]= 64761,
-            ["name"]= "Bow Mastery",
+            ["name"]= "활 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -52719,7 +52719,7 @@ return {
         },
         [51881]= {
             ["skill"]= 51881,
-            ["name"]= "Master Fletcher",
+            ["name"]= "화살 숙련가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/masterfletcher.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52744,7 +52744,7 @@ return {
         },
         [49459]= {
             ["skill"]= 49459,
-            ["name"]= "King of the Hill",
+            ["name"]= "언덕의 왕",
             ["icon"]= "Art/2DArt/SkillIcons/passives/kingofthehill.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52771,7 +52771,7 @@ return {
         },
         [45329]= {
             ["skill"]= 45329,
-            ["name"]= "Trick Shot",
+            ["name"]= "곡예 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChainingProjectiles.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52792,7 +52792,7 @@ return {
         },
         [7069]= {
             ["skill"]= 7069,
-            ["name"]= "Split Shot",
+            ["name"]= "분열 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ForkingProjectilesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52815,7 +52815,7 @@ return {
         },
         [10843]= {
             ["skill"]= 10843,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -52834,7 +52834,7 @@ return {
         },
         [33374]= {
             ["skill"]= 33374,
-            ["name"]= "Projectile Damage and Forking Angle",
+            ["name"]= "투사체 피해, 분산 각도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "10% increased Projectile Damage",
@@ -52852,7 +52852,7 @@ return {
         },
         [31222]= {
             ["skill"]= 31222,
-            ["name"]= "Projectile Damage and Pierce",
+            ["name"]= "투사체 피해, 관통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "Projectiles Pierce an additional Target",
@@ -52870,7 +52870,7 @@ return {
         },
         [38947]= {
             ["skill"]= 38947,
-            ["name"]= "Damage for Chaining Hits and Chain Distance",
+            ["name"]= "연쇄 적중 피해, 연쇄 거리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "15% increased Chaining range",
@@ -52888,7 +52888,7 @@ return {
         },
         [21228]= {
             ["skill"]= 21228,
-            ["name"]= "Piercing Shots",
+            ["name"]= "관통 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/UpwardsFiringProjectilesNotable.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -52909,7 +52909,7 @@ return {
         },
         [54329]= {
             ["skill"]= 54329,
-            ["name"]= "Damage for Chaining Hits and Chain Distance",
+            ["name"]= "연쇄 적중 피해, 연쇄 거리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "15% increased Chaining range",
@@ -52927,7 +52927,7 @@ return {
         },
         [64351]= {
             ["skill"]= 64351,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/projectilespeed.png",
             ["stats"]= {
                 "14% increased Projectile Damage"
@@ -52946,7 +52946,7 @@ return {
         },
         [51953]= {
             ["skill"]= 51953,
-            ["name"]= "Projectile Damage and Forking Angle",
+            ["name"]= "투사체 피해, 분산 각도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "10% increased Projectile Damage",
@@ -52964,7 +52964,7 @@ return {
         },
         [7609]= {
             ["skill"]= 7609,
-            ["name"]= "Projectile Damage and Chance for Extra Fork Projectile",
+            ["name"]= "투사체 피해, 추가 분산 투사체 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "10% increased Projectile Damage",
@@ -52982,7 +52982,7 @@ return {
         },
         [43807]= {
             ["skill"]= 43807,
-            ["name"]= "Projectile Damage per Enemy Pierced",
+            ["name"]= "관통한 적당 투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedProjectileSpeedNode.png",
             ["stats"]= {
                 "Projectiles deal 6% increased Damage for each Enemy Pierced"
@@ -52999,7 +52999,7 @@ return {
         },
         [33777]= {
             ["skill"]= 33777,
-            ["name"]= "Devastating Devices",
+            ["name"]= "참혹한 장치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapcriticalstrike.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -53025,7 +53025,7 @@ return {
         },
         [12824]= {
             ["skill"]= 12824,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "16% increased Trap Damage",
@@ -53042,7 +53042,7 @@ return {
         },
         [45827]= {
             ["skill"]= 45827,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "16% increased Trap Damage",
@@ -53060,7 +53060,7 @@ return {
         },
         [28753]= {
             ["skill"]= 28753,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapdamage.png",
             ["stats"]= {
                 "14% increased Trap Damage",
@@ -53078,7 +53078,7 @@ return {
         },
         [1655]= {
             ["skill"]= 1655,
-            ["name"]= "Trap and Mine Critical Strike Multiplier",
+            ["name"]= "덫 및 지뢰 치명타 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapcriticalstrike.png",
             ["stats"]= {
                 "+15% to Critical Strike Multiplier with Traps",
@@ -53095,7 +53095,7 @@ return {
         },
         [55380]= {
             ["skill"]= 55380,
-            ["name"]= "Clever Construction",
+            ["name"]= "교묘한 구조물",
             ["icon"]= "Art/2DArt/SkillIcons/passives/cleverconstruction.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -53121,7 +53121,7 @@ return {
         },
         [30319]= {
             ["skill"]= 30319,
-            ["name"]= "Trap and Mine Damage and Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "8% increased Trap Damage",
@@ -53141,7 +53141,7 @@ return {
         },
         [8027]= {
             ["skill"]= 8027,
-            ["name"]= "Trap and Mine Critical Strike Chance",
+            ["name"]= "덫 및 지뢰 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsradius.png",
             ["stats"]= {
                 "25% increased Critical Strike Chance with Traps",
@@ -53159,7 +53159,7 @@ return {
         },
         [32432]= {
             ["skill"]= 32432,
-            ["name"]= "Trap and Mine Damage and Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/trapsspeed.png",
             ["stats"]= {
                 "8% increased Trap Damage",
@@ -53179,7 +53179,7 @@ return {
         },
         [65225]= {
             ["skill"]= 65225,
-            ["name"]= "Trap and Mine Mastery",
+            ["name"]= "덫, 지뢰 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MineTrapsMastery.png",
             ["isMastery"]= true,
             ["stats"]= {},
@@ -53191,7 +53191,7 @@ return {
         },
         [21297]= {
             ["skill"]= 21297,
-            ["name"]= "High Explosives",
+            ["name"]= "고성능 폭약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/highexplosives.png",
             ["isNotable"]= true,
             ["recipe"]= {
@@ -53216,7 +53216,7 @@ return {
         },
         [19320]= {
             ["skill"]= 19320,
-            ["name"]= "Acrobatics Improvement",
+            ["name"]= "곡예 향상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "3% chance to Dodge Attack Hits"
@@ -53233,7 +53233,7 @@ return {
         },
         [12401]= {
             ["skill"]= 12401,
-            ["name"]= "Acrobatics Improvement",
+            ["name"]= "곡예 향상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "3% chance to Dodge Attack Hits"
@@ -53249,7 +53249,7 @@ return {
         },
         [56744]= {
             ["skill"]= 56744,
-            ["name"]= "Acrobatics Improvement",
+            ["name"]= "곡예 향상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/evasion.png",
             ["stats"]= {
                 "4% chance to Dodge Attack Hits"
@@ -53265,7 +53265,7 @@ return {
         },
         [57006]= {
             ["skill"]= 57006,
-            ["name"]= "Vengeant Cascade",
+            ["name"]= "복수의 연쇄",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Boomerang.png",
             ["isNotable"]= true,
             ["isBlighted"]= true,
@@ -53287,7 +53287,7 @@ return {
         },
         [14914]= {
             ["skill"]= 14914,
-            ["name"]= "Phase Acrobatics",
+            ["name"]= "위상 곡예",
             ["icon"]= "Art/2DArt/SkillIcons/passives/KeystonePhaseAcrobatics.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -53307,7 +53307,7 @@ return {
         },
         [6910]= {
             ["skill"]= 6910,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -53330,7 +53330,7 @@ return {
         },
         [49684]= {
             ["skill"]= 49684,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -53353,7 +53353,7 @@ return {
         },
         [33753]= {
             ["skill"]= 33753,
-            ["name"]= "Medium Jewel Socket",
+            ["name"]= "중형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -53376,7 +53376,7 @@ return {
         },
         [48132]= {
             ["skill"]= 48132,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -53393,7 +53393,7 @@ return {
         },
         [50179]= {
             ["skill"]= 50179,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -53409,7 +53409,7 @@ return {
         },
         [22748]= {
             ["skill"]= 22748,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -53431,7 +53431,7 @@ return {
         },
         [12850]= {
             ["skill"]= 12850,
-            ["name"]= "Critical Strike Chance, Power Charge Duration",
+            ["name"]= "치명타 확률, 권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53450,7 +53450,7 @@ return {
         },
         [19598]= {
             ["skill"]= 19598,
-            ["name"]= "Toxic Delivery",
+            ["name"]= "맹독성 전달",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/ToxicDelivery.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53468,7 +53468,7 @@ return {
         },
         [33954]= {
             ["skill"]= 33954,
-            ["name"]= "Critical Strike Chance, Damage Over Time",
+            ["name"]= "치명타 확률, 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53487,7 +53487,7 @@ return {
         },
         [1945]= {
             ["skill"]= 1945,
-            ["name"]= "Noxious Strike",
+            ["name"]= "유독한 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/NoxiousStrike.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53512,7 +53512,7 @@ return {
         },
         [43215]= {
             ["skill"]= 43215,
-            ["name"]= "Critical Strike Chance, Elusive Effect",
+            ["name"]= "치명타 확률, 도피 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53534,7 +53534,7 @@ return {
         },
         [28782]= {
             ["skill"]= 28782,
-            ["name"]= "Mistwalker",
+            ["name"]= "안개 속을 걷는 자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/Elusive.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53556,7 +53556,7 @@ return {
         },
         [4242]= {
             ["skill"]= 4242,
-            ["name"]= "Unstable Infusion",
+            ["name"]= "불안정한 주입",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/UnstableInfusion.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53577,7 +53577,7 @@ return {
         },
         [55686]= {
             ["skill"]= 55686,
-            ["name"]= "Critical Strike Chance, Power Charge Duration",
+            ["name"]= "치명타 확률, 권능 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53596,7 +53596,7 @@ return {
         },
         [48239]= {
             ["skill"]= 48239,
-            ["name"]= "Deadly Infusion",
+            ["name"]= "치명적인 주입",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/DeadlyInfusion.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53614,7 +53614,7 @@ return {
         },
         [9014]= {
             ["skill"]= 9014,
-            ["name"]= "Critical Strike Chance and Multiplier",
+            ["name"]= "치명타 확률 및 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53633,7 +53633,7 @@ return {
         },
         [21264]= {
             ["skill"]= 21264,
-            ["name"]= "Ambush and Assassinate",
+            ["name"]= "매복과 암살",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/Ambush.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53658,7 +53658,7 @@ return {
         },
         [6064]= {
             ["skill"]= 6064,
-            ["name"]= "Critical Strike Chance and Multiplier",
+            ["name"]= "치명타 확률 및 배율",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53677,7 +53677,7 @@ return {
         },
         [19083]= {
             ["skill"]= 19083,
-            ["name"]= "Opportunistic",
+            ["name"]= "기회주의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/Assassinate.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Assassin",
@@ -53696,7 +53696,7 @@ return {
         },
         [23024]= {
             ["skill"]= 23024,
-            ["name"]= "Critical Strike Chance, Damage Over Time",
+            ["name"]= "치명타 확률, 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Assassin/SmallNode.png",
             ["ascendancyName"]= "Assassin",
             ["stats"]= {
@@ -53714,7 +53714,7 @@ return {
         },
         [58229]= {
             ["skill"]= 58229,
-            ["name"]= "Assassin",
+            ["name"]= "어쌔신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Assassin",
             ["isAscendancyStart"]= true,
@@ -53735,7 +53735,7 @@ return {
         },
         [35926]= {
             ["skill"]= 35926,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -53750,7 +53750,7 @@ return {
         },
         [18436]= {
             ["skill"]= 18436,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -53772,7 +53772,7 @@ return {
         },
         [36242]= {
             ["skill"]= 36242,
-            ["name"]= "Flask Effect and Duration",
+            ["name"]= "플라스크 효과 및 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectFlaskDuration.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -53791,7 +53791,7 @@ return {
         },
         [6038]= {
             ["skill"]= 6038,
-            ["name"]= "Veteran Bowyer",
+            ["name"]= "노련한 활 제작자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/MasterFletcher.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53813,7 +53813,7 @@ return {
         },
         [32662]= {
             ["skill"]= 32662,
-            ["name"]= "Flask Effect, Chaos Damage",
+            ["name"]= "플라스크 효과, 카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectDamageOverTime.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -53832,7 +53832,7 @@ return {
         },
         [40813]= {
             ["skill"]= 40813,
-            ["name"]= "Nature's Reprisal",
+            ["name"]= "자연의 앙갚음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/MasterHerbalist.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53851,7 +53851,7 @@ return {
         },
         [20480]= {
             ["skill"]= 20480,
-            ["name"]= "Flask Effect, Poison Duration",
+            ["name"]= "플라스크 효과, 중독 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectDamageOverTime.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -53869,7 +53869,7 @@ return {
         },
         [1697]= {
             ["skill"]= 1697,
-            ["name"]= "Master Toxicist",
+            ["name"]= "일류 독술사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/Master Toxicist.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53887,7 +53887,7 @@ return {
         },
         [51101]= {
             ["skill"]= 51101,
-            ["name"]= "Nature's Adrenaline",
+            ["name"]= "자연의 아드레날린",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/NaturesAdrenaline.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53907,7 +53907,7 @@ return {
         },
         [14156]= {
             ["skill"]= 14156,
-            ["name"]= "Flask Effect and Duration",
+            ["name"]= "플라스크 효과 및 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectFlaskDuration.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -53925,7 +53925,7 @@ return {
         },
         [63293]= {
             ["skill"]= 63293,
-            ["name"]= "Master Surgeon",
+            ["name"]= "일류 의사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/MasterSurgeon.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53945,7 +53945,7 @@ return {
         },
         [32640]= {
             ["skill"]= 32640,
-            ["name"]= "Flask Effect and Charges Gained",
+            ["name"]= "플라스크 효과 및 충전 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectElementalResistance.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -53963,7 +53963,7 @@ return {
         },
         [65296]= {
             ["skill"]= 65296,
-            ["name"]= "Nature's Boon",
+            ["name"]= "자연의 은혜",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/AlchemistGift.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -53984,7 +53984,7 @@ return {
         },
         [40631]= {
             ["skill"]= 40631,
-            ["name"]= "Flask Effect and Charges Gained",
+            ["name"]= "플라스크 효과 및 충전 획득",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectElementalResistance.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -54002,7 +54002,7 @@ return {
         },
         [61805]= {
             ["skill"]= 61805,
-            ["name"]= "Master Alchemist",
+            ["name"]= "일류 연금술사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/MasterAlchemist.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Pathfinder",
@@ -54026,7 +54026,7 @@ return {
         },
         [59800]= {
             ["skill"]= 59800,
-            ["name"]= "Flask Effect, Attack Damage",
+            ["name"]= "플라스크 효과, 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PathFinder/FlaskEffectAttackDamage.png",
             ["ascendancyName"]= "Pathfinder",
             ["stats"]= {
@@ -54045,7 +54045,7 @@ return {
         },
         [64111]= {
             ["skill"]= 64111,
-            ["name"]= "Pathfinder",
+            ["name"]= "패스파인더",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Pathfinder",
             ["isAscendancyStart"]= true,
@@ -54066,7 +54066,7 @@ return {
         },
         [37191]= {
             ["skill"]= 37191,
-            ["name"]= "Attack and Cast Speed, Frenzy Charge Duration",
+            ["name"]= "공격 및 시전 속도, 격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/IncreasedFrenzyChargeDuration.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54085,7 +54085,7 @@ return {
         },
         [41891]= {
             ["skill"]= 41891,
-            ["name"]= "Prolonged Pain",
+            ["name"]= "연장된 고통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/TricksterEssenceSurge.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54106,7 +54106,7 @@ return {
         },
         [2336]= {
             ["skill"]= 2336,
-            ["name"]= "Attack and Cast Speed, Damage",
+            ["name"]= "공격 및 시전 속도, 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/DamageOverTime.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54125,7 +54125,7 @@ return {
         },
         [23225]= {
             ["skill"]= 23225,
-            ["name"]= "Weave the Arcane",
+            ["name"]= "비전의 직조",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/SpiritSurge.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54148,7 +54148,7 @@ return {
         },
         [13219]= {
             ["skill"]= 13219,
-            ["name"]= "Attack and Cast Speed, Evasion and Energy Shield",
+            ["name"]= "공격 및 시전 속도, 회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/IncreasedEvasionEnergyShield.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54168,7 +54168,7 @@ return {
         },
         [57331]= {
             ["skill"]= 57331,
-            ["name"]= "Harness the Void",
+            ["name"]= "공허 제어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/HarnessTheVoid.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54189,7 +54189,7 @@ return {
         },
         [58454]= {
             ["skill"]= 58454,
-            ["name"]= "Attack and Cast Speed, Damage Over Time",
+            ["name"]= "공격 및 시전 속도, 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/DamageOverTime.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54208,7 +54208,7 @@ return {
         },
         [32947]= {
             ["skill"]= 32947,
-            ["name"]= "Swift Killer",
+            ["name"]= "재빠른 살인자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/UncontrolledVigour.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54229,7 +54229,7 @@ return {
         },
         [15542]= {
             ["skill"]= 15542,
-            ["name"]= "Attack and Cast Speed, Damage Over Time",
+            ["name"]= "공격 및 시전 속도, 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/DamageOverTime.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54248,7 +54248,7 @@ return {
         },
         [55867]= {
             ["skill"]= 55867,
-            ["name"]= "Patient Reaper",
+            ["name"]= "인내하는 사신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/CorruptedRecovery.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54272,7 +54272,7 @@ return {
         },
         [63908]= {
             ["skill"]= 63908,
-            ["name"]= "Attack and Cast Speed, Evasion and Energy Shield",
+            ["name"]= "공격 및 시전 속도, 회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/IncreasedEvasionEnergyShield.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54292,7 +54292,7 @@ return {
         },
         [28884]= {
             ["skill"]= 28884,
-            ["name"]= "Ghost Dance",
+            ["name"]= "혼의 춤",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/AcrobaticWillpower.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54313,7 +54313,7 @@ return {
         },
         [19587]= {
             ["skill"]= 19587,
-            ["name"]= "Attack and Cast Speed, Evasion and Energy Shield",
+            ["name"]= "공격 및 시전 속도, 회피, 에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/IncreasedEvasionEnergyShield.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54333,7 +54333,7 @@ return {
         },
         [29825]= {
             ["skill"]= 29825,
-            ["name"]= "Escape Artist",
+            ["name"]= "탈출의 명수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/HeedfulRecovery.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Trickster",
@@ -54353,7 +54353,7 @@ return {
         },
         [35598]= {
             ["skill"]= 35598,
-            ["name"]= "Attack and Cast Speed, Maximum Mana",
+            ["name"]= "공격 및 시전 속도, 최대 마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Trickster/IncreasedMana.png",
             ["ascendancyName"]= "Trickster",
             ["stats"]= {
@@ -54372,7 +54372,7 @@ return {
         },
         [55236]= {
             ["skill"]= 55236,
-            ["name"]= "Trickster",
+            ["name"]= "트릭스터",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Trickster",
             ["isAscendancyStart"]= true,
@@ -54393,7 +54393,7 @@ return {
         },
         [36414]= {
             ["skill"]= 36414,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -54407,7 +54407,7 @@ return {
         },
         [56439]= {
             ["skill"]= 56439,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -54421,7 +54421,7 @@ return {
         },
         [33833]= {
             ["skill"]= 33833,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -54437,7 +54437,7 @@ return {
         },
         [11150]= {
             ["skill"]= 11150,
-            ["name"]= "Small Jewel Socket",
+            ["name"]= "소형 주얼 홈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isJewelSocket"]= true,
             ["expansionJewel"]= {
@@ -54459,7 +54459,7 @@ return {
         },
         [64842]= {
             ["skill"]= 64842,
-            ["name"]= "Trap and Mine Damage, Movement Speed",
+            ["name"]= "덫 및 지뢰 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMovementSpeed.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54479,7 +54479,7 @@ return {
         },
         [28535]= {
             ["skill"]= 28535,
-            ["name"]= "Perfect Crime",
+            ["name"]= "완전 범죄",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/PerfectCrime.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54500,7 +54500,7 @@ return {
         },
         [25167]= {
             ["skill"]= 25167,
-            ["name"]= "Trap and Mine Damage, Mine Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 지뢰 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMines.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54520,7 +54520,7 @@ return {
         },
         [39834]= {
             ["skill"]= 39834,
-            ["name"]= "Demolitions Specialist",
+            ["name"]= "폭파 전문가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/DemolitionSpecialist.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54541,7 +54541,7 @@ return {
         },
         [869]= {
             ["skill"]= 869,
-            ["name"]= "Trap and Mine Damage, Trap Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 덫 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMines.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54561,7 +54561,7 @@ return {
         },
         [38918]= {
             ["skill"]= 38918,
-            ["name"]= "Chain Reaction",
+            ["name"]= "연쇄 반응",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ChainReaction.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54580,7 +54580,7 @@ return {
         },
         [16940]= {
             ["skill"]= 16940,
-            ["name"]= "Pyromaniac",
+            ["name"]= "방화광",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/BlindedAssult.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54602,7 +54602,7 @@ return {
         },
         [41081]= {
             ["skill"]= 41081,
-            ["name"]= "Trap and Mine Damage, Movement Speed",
+            ["name"]= "덫 및 지뢰 피해, 이동 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMovementSpeed.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54622,7 +54622,7 @@ return {
         },
         [5087]= {
             ["skill"]= 5087,
-            ["name"]= "Born in the Shadows",
+            ["name"]= "어둠의 자식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ShadowsDarknessBlind.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54645,7 +54645,7 @@ return {
         },
         [63135]= {
             ["skill"]= 63135,
-            ["name"]= "Trap and Mine Damage, Elemental Resistances",
+            ["name"]= "덫 및 지뢰 피해, 원소 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageElementalResistance.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54665,7 +54665,7 @@ return {
         },
         [14103]= {
             ["skill"]= 14103,
-            ["name"]= "Explosives Expert",
+            ["name"]= "폭약 전문가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ExplosivesExpert.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54684,7 +54684,7 @@ return {
         },
         [47366]= {
             ["skill"]= 47366,
-            ["name"]= "Trap and Mine Damage, Mine Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 지뢰 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMines.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54704,7 +54704,7 @@ return {
         },
         [51462]= {
             ["skill"]= 51462,
-            ["name"]= "Bomb Specialist",
+            ["name"]= "폭탄 전문가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/BombSpecialist.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Saboteur",
@@ -54728,7 +54728,7 @@ return {
         },
         [26446]= {
             ["skill"]= 26446,
-            ["name"]= "Trap and Mine Damage, Trap Throwing Speed",
+            ["name"]= "덫 및 지뢰 피해, 덫 투척 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Saboteur/ElementalDamageMines.png",
             ["ascendancyName"]= "Saboteur",
             ["stats"]= {
@@ -54748,7 +54748,7 @@ return {
         },
         [18635]= {
             ["skill"]= 18635,
-            ["name"]= "Saboteur",
+            ["name"]= "사보추어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Saboteur",
             ["isAscendancyStart"]= true,
@@ -54769,7 +54769,7 @@ return {
         },
         [10643]= {
             ["skill"]= 10643,
-            ["name"]= "Position Proxy",
+            ["name"]= "위치 대리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
             ["isProxy"]= true,
             ["stats"]= {},
@@ -54783,7 +54783,7 @@ return {
         },
         [53421]= {
             ["skill"]= 53421,
-            ["name"]= "Evasion, Frenzy Charge Duration",
+            ["name"]= "회피, 격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedFrenzyChargeDuration.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -54802,7 +54802,7 @@ return {
         },
         [33645]= {
             ["skill"]= 33645,
-            ["name"]= "Quartz Infusion",
+            ["name"]= "석영 주입",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/AvatarOfPhasing.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -54826,7 +54826,7 @@ return {
         },
         [15550]= {
             ["skill"]= 15550,
-            ["name"]= "Evasion, Elemental Damage",
+            ["name"]= "회피, 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedElementalDamage.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -54845,7 +54845,7 @@ return {
         },
         [55509]= {
             ["skill"]= 55509,
-            ["name"]= "Avatar of the Veil",
+            ["name"]= "장막의 화신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/QuartzInfusion.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -54867,7 +54867,7 @@ return {
         },
         [31364]= {
             ["skill"]= 31364,
-            ["name"]= "Way of the Poacher",
+            ["name"]= "밀렵자의 길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/AvatarOfFrenzy.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -54888,7 +54888,7 @@ return {
         },
         [5926]= {
             ["skill"]= 5926,
-            ["name"]= "Evasion, Frenzy Charge Duration",
+            ["name"]= "회피, 격분 충전 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedFrenzyChargeDuration.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -54907,7 +54907,7 @@ return {
         },
         [16848]= {
             ["skill"]= 16848,
-            ["name"]= "Avatar of the Slaughter",
+            ["name"]= "살육의 화신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/WayOfThePoacher.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -54927,7 +54927,7 @@ return {
         },
         [27536]= {
             ["skill"]= 27536,
-            ["name"]= "Evasion, Onslaught Effect",
+            ["name"]= "회피, 맹공 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedAttackSpeed.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -54948,7 +54948,7 @@ return {
         },
         [4849]= {
             ["skill"]= 4849,
-            ["name"]= "Rapid Assault",
+            ["name"]= "급속 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/AvatarOfOnslaught.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -54970,7 +54970,7 @@ return {
         },
         [12146]= {
             ["skill"]= 12146,
-            ["name"]= "Evasion, Onslaught Effect",
+            ["name"]= "회피, 맹공 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedAttackSpeed.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -54992,7 +54992,7 @@ return {
         },
         [11597]= {
             ["skill"]= 11597,
-            ["name"]= "Avatar of the Chase",
+            ["name"]= "추격의 화신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/RapidAssault.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Raider",
@@ -55014,7 +55014,7 @@ return {
         },
         [24432]= {
             ["skill"]= 24432,
-            ["name"]= "Evasion, Elemental Damage",
+            ["name"]= "회피, 원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Raider/IncreasedElementalDamage.png",
             ["ascendancyName"]= "Raider",
             ["stats"]= {
@@ -55033,7 +55033,7 @@ return {
         },
         [58427]= {
             ["skill"]= 58427,
-            ["name"]= "Raider",
+            ["name"]= "레이더",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Raider",
             ["isAscendancyStart"]= true,
@@ -55052,7 +55052,7 @@ return {
         },
         [53086]= {
             ["skill"]= 53086,
-            ["name"]= "Projectile Damage, Mark Cast Speed",
+            ["name"]= "투사체 피해, 징표 시전 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAttackSpeed.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55071,7 +55071,7 @@ return {
         },
         [44482]= {
             ["skill"]= 44482,
-            ["name"]= "Rupturing",
+            ["name"]= "파열시키기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/SharpAndVenomous.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55091,7 +55091,7 @@ return {
         },
         [55985]= {
             ["skill"]= 55985,
-            ["name"]= "Projectile Damage, Critical Strike Chance",
+            ["name"]= "투사체 피해, 치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageCrit.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55110,7 +55110,7 @@ return {
         },
         [62136]= {
             ["skill"]= 62136,
-            ["name"]= "Projectile Damage, Mirage Archer Duration",
+            ["name"]= "투사체 피해, 신기루 궁수 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55129,7 +55129,7 @@ return {
         },
         [24848]= {
             ["skill"]= 24848,
-            ["name"]= "Gathering Winds",
+            ["name"]= "몰려드는 바람",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/GatherWinds.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55153,7 +55153,7 @@ return {
         },
         [1729]= {
             ["skill"]= 1729,
-            ["name"]= "Projectile Damage, Mirage Archer Duration",
+            ["name"]= "투사체 피해, 신기루 궁수 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55172,7 +55172,7 @@ return {
         },
         [2872]= {
             ["skill"]= 2872,
-            ["name"]= "Occupying Force",
+            ["name"]= "점령군",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Mirage.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55193,7 +55193,7 @@ return {
         },
         [56134]= {
             ["skill"]= 56134,
-            ["name"]= "Projectile Damage, Accuracy",
+            ["name"]= "투사체 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55212,7 +55212,7 @@ return {
         },
         [64028]= {
             ["skill"]= 64028,
-            ["name"]= "Projectile Damage, Projectile Speed",
+            ["name"]= "투사체 피해, 투사체 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55231,7 +55231,7 @@ return {
         },
         [22852]= {
             ["skill"]= 22852,
-            ["name"]= "Projectile Damage, Attack Speed",
+            ["name"]= "투사체 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAttackSpeed.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55250,7 +55250,7 @@ return {
         },
         [5443]= {
             ["skill"]= 5443,
-            ["name"]= "Focal Point",
+            ["name"]= "집중점",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Mark.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55269,7 +55269,7 @@ return {
         },
         [23169]= {
             ["skill"]= 23169,
-            ["name"]= "Wind Ward",
+            ["name"]= "바람 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProtectiveWinds.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55287,7 +55287,7 @@ return {
         },
         [59837]= {
             ["skill"]= 59837,
-            ["name"]= "Projectile Damage, Attack Speed",
+            ["name"]= "투사체 피해, 공격 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAttackSpeed.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55306,7 +55306,7 @@ return {
         },
         [61627]= {
             ["skill"]= 61627,
-            ["name"]= "Ricochet",
+            ["name"]= "튕겨 쏘기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/Ricochet.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55326,7 +55326,7 @@ return {
         },
         [5082]= {
             ["skill"]= 5082,
-            ["name"]= "Projectile Damage, Accuracy",
+            ["name"]= "투사체 피해, 정확도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55345,7 +55345,7 @@ return {
         },
         [26067]= {
             ["skill"]= 26067,
-            ["name"]= "Endless Munitions",
+            ["name"]= "끝없는 탄약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Additionalprojectile.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55364,7 +55364,7 @@ return {
         },
         [28995]= {
             ["skill"]= 28995,
-            ["name"]= "Projectile Damage, Projectile Speed",
+            ["name"]= "투사체 피해, 투사체 속도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/ProjectileDamageAccuracy.png",
             ["ascendancyName"]= "Deadeye",
             ["stats"]= {
@@ -55383,7 +55383,7 @@ return {
         },
         [45313]= {
             ["skill"]= 45313,
-            ["name"]= "Far Shot",
+            ["name"]= "장거리 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DeadEye/FarShot.png",
             ["isNotable"]= true,
             ["ascendancyName"]= "Deadeye",
@@ -55406,7 +55406,7 @@ return {
         },
         [56856]= {
             ["skill"]= 56856,
-            ["name"]= "Deadeye",
+            ["name"]= "데드아이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/damage.png",
             ["ascendancyName"]= "Deadeye",
             ["isAscendancyStart"]= true,
@@ -55428,7 +55428,7 @@ return {
         },
         [12953]= {
             ["skill"]= 12953,
-            ["name"]= "Disciple of Kitava",
+            ["name"]= "키타바의 신봉자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DiscipleOfKitava.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55443,7 +55443,7 @@ return {
         },
         [3354]= {
             ["skill"]= 3354,
-            ["name"]= "Lone Messenger",
+            ["name"]= "고독한 전달자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LoneMessenger.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55455,7 +55455,7 @@ return {
         },
         [30847]= {
             ["skill"]= 30847,
-            ["name"]= "Nature's Patience",
+            ["name"]= "자연의 인내",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NaturesPatience.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55470,7 +55470,7 @@ return {
         },
         [57280]= {
             ["skill"]= 57280,
-            ["name"]= "Secrets of Suffering",
+            ["name"]= "고통의 비밀",
             ["icon"]= "Art/2DArt/SkillIcons/passives/SecretOfAgony.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55487,7 +55487,7 @@ return {
         },
         [40561]= {
             ["skill"]= 40561,
-            ["name"]= "Kineticism",
+            ["name"]= "역학의 예술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Kineticism.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55503,7 +55503,7 @@ return {
         },
         [32118]= {
             ["skill"]= 32118,
-            ["name"]= "Veteran's Awareness",
+            ["name"]= "노병의 마음가짐",
             ["icon"]= "Art/2DArt/SkillIcons/passives/VeteransAwareness.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55519,7 +55519,7 @@ return {
         },
         [60069]= {
             ["skill"]= 60069,
-            ["name"]= "Hollow Palm Technique",
+            ["name"]= "공허의 손아귀 기술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DragonStyle.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55534,7 +55534,7 @@ return {
         },
         [37081]= {
             ["skill"]= 37081,
-            ["name"]= "Pitfighter",
+            ["name"]= "투사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/Pitfighter.png",
             ["isKeystone"]= true,
             ["stats"]= {
@@ -55546,7 +55546,7 @@ return {
         },
         [44237]= {
             ["skill"]= 44237,
-            ["name"]= "Prodigious Defence",
+            ["name"]= "비범한 방어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55557,7 +55557,7 @@ return {
         },
         [35790]= {
             ["skill"]= 35790,
-            ["name"]= "Advance Guard",
+            ["name"]= "선발대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HoldingShieldDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55568,7 +55568,7 @@ return {
         },
         [36455]= {
             ["skill"]= 36455,
-            ["name"]= "Gladiatorial Combat",
+            ["name"]= "검투사의 전투",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HoldingShieldDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55578,7 +55578,7 @@ return {
         },
         [12806]= {
             ["skill"]= 12806,
-            ["name"]= "Strike Leader",
+            ["name"]= "타격대장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55592,7 +55592,7 @@ return {
         },
         [28384]= {
             ["skill"]= 28384,
-            ["name"]= "Powerful Ward",
+            ["name"]= "강력한 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockSpellDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55602,7 +55602,7 @@ return {
         },
         [9042]= {
             ["skill"]= 9042,
-            ["name"]= "Enduring Ward",
+            ["name"]= "지속하는 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55612,7 +55612,7 @@ return {
         },
         [36807]= {
             ["skill"]= 36807,
-            ["name"]= "Gladiator's Fortitude",
+            ["name"]= "검투사의 기백",
             ["icon"]= "Art/2DArt/SkillIcons/passives/HoldingShieldDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55622,7 +55622,7 @@ return {
         },
         [28398]= {
             ["skill"]= 28398,
-            ["name"]= "Precise Retaliation",
+            ["name"]= "정확한 보복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55635,7 +55635,7 @@ return {
         },
         [23989]= {
             ["skill"]= 23989,
-            ["name"]= "Veteran Defender",
+            ["name"]= "노련한 방어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 15,
@@ -55653,7 +55653,7 @@ return {
         },
         [28015]= {
             ["skill"]= 28015,
-            ["name"]= "Iron Breaker",
+            ["name"]= "무쇠 분쇄기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55666,7 +55666,7 @@ return {
         },
         [56760]= {
             ["skill"]= 56760,
-            ["name"]= "Deep Cuts",
+            ["name"]= "깊은 상처",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55679,7 +55679,7 @@ return {
         },
         [2796]= {
             ["skill"]= 2796,
-            ["name"]= "Master the Fundamentals",
+            ["name"]= "기본기의 달인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55690,7 +55690,7 @@ return {
         },
         [3805]= {
             ["skill"]= 3805,
-            ["name"]= "Force Multiplier",
+            ["name"]= "전력 배가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55700,7 +55700,7 @@ return {
         },
         [981]= {
             ["skill"]= 981,
-            ["name"]= "Furious Assault",
+            ["name"]= "분개한 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55710,7 +55710,7 @@ return {
         },
         [28635]= {
             ["skill"]= 28635,
-            ["name"]= "Vicious Skewering",
+            ["name"]= "포악한 꿰기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55725,7 +55725,7 @@ return {
         },
         [23335]= {
             ["skill"]= 23335,
-            ["name"]= "Grim Oath",
+            ["name"]= "엄숙한 서약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55734,7 +55734,7 @@ return {
         },
         [53318]= {
             ["skill"]= 53318,
-            ["name"]= "Battle-Hardened",
+            ["name"]= "전투 단련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedPhysicalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55744,7 +55744,7 @@ return {
         },
         [62634]= {
             ["skill"]= 62634,
-            ["name"]= "Replenishing Presence",
+            ["name"]= "차오르는 존재감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55754,7 +55754,7 @@ return {
         },
         [29540]= {
             ["skill"]= 29540,
-            ["name"]= "Master of Command",
+            ["name"]= "지휘의 달인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55764,7 +55764,7 @@ return {
         },
         [47393]= {
             ["skill"]= 47393,
-            ["name"]= "First Among Equals",
+            ["name"]= "동등한 자 중 첫째",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55774,7 +55774,7 @@ return {
         },
         [51870]= {
             ["skill"]= 51870,
-            ["name"]= "Purposeful Harbinger",
+            ["name"]= "단호한 선구자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55783,7 +55783,7 @@ return {
         },
         [58221]= {
             ["skill"]= 58221,
-            ["name"]= "Precise Commander",
+            ["name"]= "정밀한 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55793,7 +55793,7 @@ return {
         },
         [59350]= {
             ["skill"]= 59350,
-            ["name"]= "Pure Commander",
+            ["name"]= "순수한 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55805,7 +55805,7 @@ return {
         },
         [61616]= {
             ["skill"]= 61616,
-            ["name"]= "Stalwart Commander",
+            ["name"]= "굳건한 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55816,7 +55816,7 @@ return {
         },
         [28338]= {
             ["skill"]= 28338,
-            ["name"]= "Vengeful Commander",
+            ["name"]= "복수심에 찬 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55827,7 +55827,7 @@ return {
         },
         [63142]= {
             ["skill"]= 63142,
-            ["name"]= "Skullbreaker",
+            ["name"]= "해골 분쇄자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55840,7 +55840,7 @@ return {
         },
         [38633]= {
             ["skill"]= 38633,
-            ["name"]= "Pressure Points",
+            ["name"]= "급소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55850,7 +55850,7 @@ return {
         },
         [2977]= {
             ["skill"]= 2977,
-            ["name"]= "Overwhelming Malice",
+            ["name"]= "압도적인 악의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55862,7 +55862,7 @@ return {
         },
         [60617]= {
             ["skill"]= 60617,
-            ["name"]= "Magnifier",
+            ["name"]= "확대경",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55872,7 +55872,7 @@ return {
         },
         [25966]= {
             ["skill"]= 25966,
-            ["name"]= "Savage Response",
+            ["name"]= "야만적인 응답",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55885,7 +55885,7 @@ return {
         },
         [51541]= {
             ["skill"]= 51541,
-            ["name"]= "Eye of the Storm",
+            ["name"]= "태풍의 눈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55899,7 +55899,7 @@ return {
         },
         [44544]= {
             ["skill"]= 44544,
-            ["name"]= "Basics of Pain",
+            ["name"]= "고통의 밑바닥",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55909,7 +55909,7 @@ return {
         },
         [23238]= {
             ["skill"]= 23238,
-            ["name"]= "Quick Getaway",
+            ["name"]= "신속한 도주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55923,7 +55923,7 @@ return {
         },
         [12149]= {
             ["skill"]= 12149,
-            ["name"]= "Assert Dominance",
+            ["name"]= "지배력 행사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55935,7 +55935,7 @@ return {
         },
         [63969]= {
             ["skill"]= 63969,
-            ["name"]= "Vast Power",
+            ["name"]= "광대한 권능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55945,7 +55945,7 @@ return {
         },
         [11661]= {
             ["skill"]= 11661,
-            ["name"]= "Powerful Assault",
+            ["name"]= "강력한 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55958,7 +55958,7 @@ return {
         },
         [42145]= {
             ["skill"]= 42145,
-            ["name"]= "Intensity",
+            ["name"]= "격렬함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55968,7 +55968,7 @@ return {
         },
         [48550]= {
             ["skill"]= 48550,
-            ["name"]= "Titanic Swings",
+            ["name"]= "거대한 휘두르기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55978,7 +55978,7 @@ return {
         },
         [63607]= {
             ["skill"]= 63607,
-            ["name"]= "Towering Threat",
+            ["name"]= "맹렬한 위협",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -55988,7 +55988,7 @@ return {
         },
         [31440]= {
             ["skill"]= 31440,
-            ["name"]= "Ancestral Echo",
+            ["name"]= "선대의 메아리",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56001,7 +56001,7 @@ return {
         },
         [57212]= {
             ["skill"]= 57212,
-            ["name"]= "Ancestral Reach",
+            ["name"]= "선대의 능력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56012,7 +56012,7 @@ return {
         },
         [60864]= {
             ["skill"]= 60864,
-            ["name"]= "Ancestral Might",
+            ["name"]= "선대의 완력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56023,7 +56023,7 @@ return {
         },
         [56686]= {
             ["skill"]= 56686,
-            ["name"]= "Ancestral Preservation",
+            ["name"]= "선대의 보전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56034,7 +56034,7 @@ return {
         },
         [2004]= {
             ["skill"]= 2004,
-            ["name"]= "Snaring Spirits",
+            ["name"]= "꾀어내는 혼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56047,7 +56047,7 @@ return {
         },
         [57383]= {
             ["skill"]= 57383,
-            ["name"]= "Sleepless Sentries",
+            ["name"]= "쉬지 않는 보초",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56060,7 +56060,7 @@ return {
         },
         [54209]= {
             ["skill"]= 54209,
-            ["name"]= "Ancestral Guidance",
+            ["name"]= "선대의 인도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56070,7 +56070,7 @@ return {
         },
         [13950]= {
             ["skill"]= 13950,
-            ["name"]= "Ancestral Inspiration",
+            ["name"]= "선대의 영감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56083,7 +56083,7 @@ return {
         },
         [54382]= {
             ["skill"]= 54382,
-            ["name"]= "Vital Focus",
+            ["name"]= "필수적인 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56093,7 +56093,7 @@ return {
         },
         [45935]= {
             ["skill"]= 45935,
-            ["name"]= "Rapid Infusion",
+            ["name"]= "급속 주입",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56103,7 +56103,7 @@ return {
         },
         [38275]= {
             ["skill"]= 38275,
-            ["name"]= "Unwavering Focus",
+            ["name"]= "변함없는 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56114,7 +56114,7 @@ return {
         },
         [46264]= {
             ["skill"]= 46264,
-            ["name"]= "Enduring Focus",
+            ["name"]= "지속되는 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56124,7 +56124,7 @@ return {
         },
         [55714]= {
             ["skill"]= 55714,
-            ["name"]= "Precise Focus",
+            ["name"]= "틀림없는 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56134,7 +56134,7 @@ return {
         },
         [35363]= {
             ["skill"]= 35363,
-            ["name"]= "Stoic Focus",
+            ["name"]= "엄격한 집중",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56145,7 +56145,7 @@ return {
         },
         [65117]= {
             ["skill"]= 65117,
-            ["name"]= "Hex Breaker",
+            ["name"]= "저주 파괴자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56155,7 +56155,7 @@ return {
         },
         [15990]= {
             ["skill"]= 15990,
-            ["name"]= "Arcane Adept",
+            ["name"]= "비전 권위자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56169,7 +56169,7 @@ return {
         },
         [56886]= {
             ["skill"]= 56886,
-            ["name"]= "Distilled Perfection",
+            ["name"]= "응축된 완벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecovery.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56180,7 +56180,7 @@ return {
         },
         [25282]= {
             ["skill"]= 25282,
-            ["name"]= "Spiked Concoction",
+            ["name"]= "약을 탄 물약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FlaskDuration.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56193,7 +56193,7 @@ return {
         },
         [5075]= {
             ["skill"]= 5075,
-            ["name"]= "Fasting",
+            ["name"]= "금식",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FlaskDuration.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56203,7 +56203,7 @@ return {
         },
         [41509]= {
             ["skill"]= 41509,
-            ["name"]= "Mender's Wellspring",
+            ["name"]= "땜장이의 원천",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecovery.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56214,7 +56214,7 @@ return {
         },
         [47584]= {
             ["skill"]= 47584,
-            ["name"]= "Special Reserve",
+            ["name"]= "특별한 점유",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecovery.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56224,7 +56224,7 @@ return {
         },
         [62707]= {
             ["skill"]= 62707,
-            ["name"]= "Numbing Elixir",
+            ["name"]= "마비의 묘약",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecovery.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56234,7 +56234,7 @@ return {
         },
         [28744]= {
             ["skill"]= 28744,
-            ["name"]= "Mob Mentality",
+            ["name"]= "집단 사고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56247,7 +56247,7 @@ return {
         },
         [17816]= {
             ["skill"]= 17816,
-            ["name"]= "Cry Wolf",
+            ["name"]= "양치기 소년",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56257,7 +56257,7 @@ return {
         },
         [6696]= {
             ["skill"]= 6696,
-            ["name"]= "Haunting Shout",
+            ["name"]= "소름 돋는 비명",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56269,7 +56269,7 @@ return {
         },
         [36655]= {
             ["skill"]= 36655,
-            ["name"]= "Lead By Example",
+            ["name"]= "솔선수범",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 10,
@@ -56284,7 +56284,7 @@ return {
         },
         [33182]= {
             ["skill"]= 33182,
-            ["name"]= "Provocateur",
+            ["name"]= "선동가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56294,7 +56294,7 @@ return {
         },
         [7107]= {
             ["skill"]= 7107,
-            ["name"]= "Warning Call",
+            ["name"]= "경고 신호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56306,7 +56306,7 @@ return {
         },
         [29450]= {
             ["skill"]= 29450,
-            ["name"]= "Rattling Bellow",
+            ["name"]= "기운찬 고함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNotable.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 20,
@@ -56317,7 +56317,7 @@ return {
         },
         [39006]= {
             ["skill"]= 39006,
-            ["name"]= "Bloodscent",
+            ["name"]= "혈향",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AxeandSwordDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56332,7 +56332,7 @@ return {
         },
         [58189]= {
             ["skill"]= 58189,
-            ["name"]= "Run Through",
+            ["name"]= "달음박질",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AxeandSwordDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56347,7 +56347,7 @@ return {
         },
         [60894]= {
             ["skill"]= 60894,
-            ["name"]= "Wound Aggravation",
+            ["name"]= "상처 악화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AxeandSwordDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56361,7 +56361,7 @@ return {
         },
         [13054]= {
             ["skill"]= 13054,
-            ["name"]= "Overlord",
+            ["name"]= "대군주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceandStaffDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56374,7 +56374,7 @@ return {
         },
         [48925]= {
             ["skill"]= 48925,
-            ["name"]= "Expansive Might",
+            ["name"]= "팽창하는 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceandStaffDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56388,7 +56388,7 @@ return {
         },
         [4205]= {
             ["skill"]= 4205,
-            ["name"]= "Weight Advantage",
+            ["name"]= "중량의 우위",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaceandStaffDamage.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 20,
@@ -56404,7 +56404,7 @@ return {
         },
         [1067]= {
             ["skill"]= 1067,
-            ["name"]= "Wind-up",
+            ["name"]= "마무리 일격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DaggerandClawDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56414,7 +56414,7 @@ return {
         },
         [39738]= {
             ["skill"]= 39738,
-            ["name"]= "Fan of Blades",
+            ["name"]= "칼날 부채",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DaggerandClawDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56424,7 +56424,7 @@ return {
         },
         [57141]= {
             ["skill"]= 57141,
-            ["name"]= "Disease Vector",
+            ["name"]= "질병 매개",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DaggerandClawDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56434,7 +56434,7 @@ return {
         },
         [7343]= {
             ["skill"]= 7343,
-            ["name"]= "Arcing Shot",
+            ["name"]= "전호 사격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BowDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56444,7 +56444,7 @@ return {
         },
         [38563]= {
             ["skill"]= 38563,
-            ["name"]= "Tempered Arrowheads",
+            ["name"]= "단조한 화살촉",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BowDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56458,7 +56458,7 @@ return {
         },
         [20834]= {
             ["skill"]= 20834,
-            ["name"]= "Broadside",
+            ["name"]= "측면 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BowDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56467,7 +56467,7 @@ return {
         },
         [33002]= {
             ["skill"]= 33002,
-            ["name"]= "Explosive Force",
+            ["name"]= "폭발력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WandDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56477,7 +56477,7 @@ return {
         },
         [41056]= {
             ["skill"]= 41056,
-            ["name"]= "Opportunistic Fusilade",
+            ["name"]= "우발적 연속 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WandDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56490,7 +56490,7 @@ return {
         },
         [30622]= {
             ["skill"]= 30622,
-            ["name"]= "Storm's Hand",
+            ["name"]= "태풍의 손",
             ["icon"]= "Art/2DArt/SkillIcons/passives/WandDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56500,7 +56500,7 @@ return {
         },
         [18463]= {
             ["skill"]= 18463,
-            ["name"]= "Battlefield Dominator",
+            ["name"]= "전장의 지배자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56516,7 +56516,7 @@ return {
         },
         [14431]= {
             ["skill"]= 14431,
-            ["name"]= "Martial Mastery",
+            ["name"]= "무술 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 20,
@@ -56528,7 +56528,7 @@ return {
         },
         [61474]= {
             ["skill"]= 61474,
-            ["name"]= "Surefooted Striker",
+            ["name"]= "굳건한 공격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56541,7 +56541,7 @@ return {
         },
         [42687]= {
             ["skill"]= 42687,
-            ["name"]= "Graceful Execution",
+            ["name"]= "품위 있는 처형",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["grantedDexterity"]= 15,
@@ -56555,7 +56555,7 @@ return {
         },
         [6553]= {
             ["skill"]= 6553,
-            ["name"]= "Brutal Infamy",
+            ["name"]= "잔인한 악명",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56568,7 +56568,7 @@ return {
         },
         [20996]= {
             ["skill"]= 20996,
-            ["name"]= "Fearsome Warrior",
+            ["name"]= "무시무시한 전사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TwoHandedMeleeDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56583,7 +56583,7 @@ return {
         },
         [24484]= {
             ["skill"]= 24484,
-            ["name"]= "Combat Rhythm",
+            ["name"]= "전투 리듬",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56596,7 +56596,7 @@ return {
         },
         [62618]= {
             ["skill"]= 62618,
-            ["name"]= "Hit and Run",
+            ["name"]= "치고 빠지기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56609,7 +56609,7 @@ return {
         },
         [23232]= {
             ["skill"]= 23232,
-            ["name"]= "Insatiable Killer",
+            ["name"]= "만족을 모르는 살인자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56620,7 +56620,7 @@ return {
         },
         [24889]= {
             ["skill"]= 24889,
-            ["name"]= "Mage Bane",
+            ["name"]= "마법사의 파멸",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56631,7 +56631,7 @@ return {
         },
         [2655]= {
             ["skill"]= 2655,
-            ["name"]= "Martial Momentum",
+            ["name"]= "전투 기세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56645,7 +56645,7 @@ return {
         },
         [1478]= {
             ["skill"]= 1478,
-            ["name"]= "Deadly Repartee",
+            ["name"]= "신랄한 말재간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56656,7 +56656,7 @@ return {
         },
         [39058]= {
             ["skill"]= 39058,
-            ["name"]= "Quick and Deadly",
+            ["name"]= "빠르고 치명적",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DualWieldingDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56666,7 +56666,7 @@ return {
         },
         [44670]= {
             ["skill"]= 44670,
-            ["name"]= "Smite the Weak",
+            ["name"]= "약자 징벌",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56679,7 +56679,7 @@ return {
         },
         [38790]= {
             ["skill"]= 38790,
-            ["name"]= "Heavy Hitter",
+            ["name"]= "묵직한 타격가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56695,7 +56695,7 @@ return {
         },
         [37]= {
             ["skill"]= 37,
-            ["name"]= "Martial Prowess",
+            ["name"]= "무예 기량",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56710,7 +56710,7 @@ return {
         },
         [41594]= {
             ["skill"]= 41594,
-            ["name"]= "Calamitous",
+            ["name"]= "환란",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56727,7 +56727,7 @@ return {
         },
         [22581]= {
             ["skill"]= 22581,
-            ["name"]= "Devastator",
+            ["name"]= "파괴자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56741,7 +56741,7 @@ return {
         },
         [14518]= {
             ["skill"]= 14518,
-            ["name"]= "Fuel the Fight",
+            ["name"]= "전투 장려",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56755,7 +56755,7 @@ return {
         },
         [41284]= {
             ["skill"]= 41284,
-            ["name"]= "Drive the Destruction",
+            ["name"]= "파괴의 원동력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56770,7 +56770,7 @@ return {
         },
         [26197]= {
             ["skill"]= 26197,
-            ["name"]= "Feed the Fury",
+            ["name"]= "광분 조장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56784,7 +56784,7 @@ return {
         },
         [1066]= {
             ["skill"]= 1066,
-            ["name"]= "Seal Mender",
+            ["name"]= "봉인 땜질",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56793,7 +56793,7 @@ return {
         },
         [784]= {
             ["skill"]= 784,
-            ["name"]= "Conjured Wall",
+            ["name"]= "상상의 벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56806,7 +56806,7 @@ return {
         },
         [20533]= {
             ["skill"]= 20533,
-            ["name"]= "Arcane Heroism",
+            ["name"]= "비전 영웅",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56819,7 +56819,7 @@ return {
         },
         [34205]= {
             ["skill"]= 34205,
-            ["name"]= "Practiced Caster",
+            ["name"]= "숙련된 시전자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56830,7 +56830,7 @@ return {
         },
         [5190]= {
             ["skill"]= 5190,
-            ["name"]= "Burden Projection",
+            ["name"]= "괴로운 예감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56840,7 +56840,7 @@ return {
         },
         [14085]= {
             ["skill"]= 14085,
-            ["name"]= "Thaumophage",
+            ["name"]= "마석 항체",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56855,7 +56855,7 @@ return {
         },
         [32415]= {
             ["skill"]= 32415,
-            ["name"]= "Essence Rush",
+            ["name"]= "정수의 습격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56869,7 +56869,7 @@ return {
         },
         [42648]= {
             ["skill"]= 42648,
-            ["name"]= "Sap Psyche",
+            ["name"]= "무너지는 영체",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56883,7 +56883,7 @@ return {
         },
         [42117]= {
             ["skill"]= 42117,
-            ["name"]= "Sadist",
+            ["name"]= "가학 성애자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56897,7 +56897,7 @@ return {
         },
         [2306]= {
             ["skill"]= 2306,
-            ["name"]= "Corrosive Elements",
+            ["name"]= "부식성 원소",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56914,7 +56914,7 @@ return {
         },
         [7039]= {
             ["skill"]= 7039,
-            ["name"]= "Doryani's Lesson",
+            ["name"]= "도리아니의 교훈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56927,7 +56927,7 @@ return {
         },
         [17255]= {
             ["skill"]= 17255,
-            ["name"]= "Disorienting Display",
+            ["name"]= "혼란스러운 과시",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56940,7 +56940,7 @@ return {
         },
         [17050]= {
             ["skill"]= 17050,
-            ["name"]= "Prismatic Heart",
+            ["name"]= "분광 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56950,7 +56950,7 @@ return {
         },
         [36776]= {
             ["skill"]= 36776,
-            ["name"]= "Widespread Destruction",
+            ["name"]= "광범위 파괴",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedElementalDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56960,7 +56960,7 @@ return {
         },
         [33482]= {
             ["skill"]= 33482,
-            ["name"]= "Master of Fire",
+            ["name"]= "화염의 대가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedFireDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56972,7 +56972,7 @@ return {
         },
         [13790]= {
             ["skill"]= 13790,
-            ["name"]= "Smoking Remains",
+            ["name"]= "그을린 유해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedFireDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56982,7 +56982,7 @@ return {
         },
         [56696]= {
             ["skill"]= 56696,
-            ["name"]= "Cremator",
+            ["name"]= "소각로",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedFireDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -56992,7 +56992,7 @@ return {
         },
         [40870]= {
             ["skill"]= 40870,
-            ["name"]= "Snowstorm",
+            ["name"]= "눈 태풍",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedLightningDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57001,7 +57001,7 @@ return {
         },
         [22607]= {
             ["skill"]= 22607,
-            ["name"]= "Storm Drinker",
+            ["name"]= "태풍 흡수자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedLightningDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57014,7 +57014,7 @@ return {
         },
         [31825]= {
             ["skill"]= 31825,
-            ["name"]= "Paralysis",
+            ["name"]= "마비",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedLightningDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57028,7 +57028,7 @@ return {
         },
         [59646]= {
             ["skill"]= 59646,
-            ["name"]= "Supercharge",
+            ["name"]= "초과 충전",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedLightningDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57037,7 +57037,7 @@ return {
         },
         [6258]= {
             ["skill"]= 6258,
-            ["name"]= "Blanketed Snow",
+            ["name"]= "내려앉은 눈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedColdDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57046,7 +57046,7 @@ return {
         },
         [54436]= {
             ["skill"]= 54436,
-            ["name"]= "Cold to the Core",
+            ["name"]= "뼛속까지 냉기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedColdDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57057,7 +57057,7 @@ return {
         },
         [23113]= {
             ["skill"]= 23113,
-            ["name"]= "Cold-Blooded Killer",
+            ["name"]= "냉혈한 살인자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedColdDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57067,7 +57067,7 @@ return {
         },
         [49273]= {
             ["skill"]= 49273,
-            ["name"]= "Touch of Cruelty",
+            ["name"]= "잔혹한 손길",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57080,7 +57080,7 @@ return {
         },
         [38592]= {
             ["skill"]= 38592,
-            ["name"]= "Unwaveringly Evil",
+            ["name"]= "변함없는 악",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57090,7 +57090,7 @@ return {
         },
         [1494]= {
             ["skill"]= 1494,
-            ["name"]= "Unspeakable Gifts",
+            ["name"]= "형언불가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57099,7 +57099,7 @@ return {
         },
         [40828]= {
             ["skill"]= 40828,
-            ["name"]= "Dark Ideation",
+            ["name"]= "음울한 관념",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57108,7 +57108,7 @@ return {
         },
         [2264]= {
             ["skill"]= 2264,
-            ["name"]= "Unholy Grace",
+            ["name"]= "불경한 은총",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57118,7 +57118,7 @@ return {
         },
         [34595]= {
             ["skill"]= 34595,
-            ["name"]= "Wicked Pall",
+            ["name"]= "사악한 휘장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedChaosDamage.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57128,7 +57128,7 @@ return {
         },
         [58949]= {
             ["skill"]= 58949,
-            ["name"]= "Renewal",
+            ["name"]= "새로운 시작",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57138,7 +57138,7 @@ return {
         },
         [6703]= {
             ["skill"]= 6703,
-            ["name"]= "Raze and Pillage",
+            ["name"]= "파괴와 약탈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57149,7 +57149,7 @@ return {
         },
         [16650]= {
             ["skill"]= 16650,
-            ["name"]= "Rotten Claws",
+            ["name"]= "부패한 발톱",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57158,7 +57158,7 @@ return {
         },
         [55022]= {
             ["skill"]= 55022,
-            ["name"]= "Call to the Slaughter",
+            ["name"]= "살육자 호출",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57169,7 +57169,7 @@ return {
         },
         [11535]= {
             ["skill"]= 11535,
-            ["name"]= "Skeletal Atrophy",
+            ["name"]= "해골의 위축",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57179,7 +57179,7 @@ return {
         },
         [68]= {
             ["skill"]= 68,
-            ["name"]= "Hulking Corpses",
+            ["name"]= "육중한 시신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57189,7 +57189,7 @@ return {
         },
         [41983]= {
             ["skill"]= 41983,
-            ["name"]= "Vicious Bite",
+            ["name"]= "포악한 이빨",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57199,7 +57199,7 @@ return {
         },
         [57892]= {
             ["skill"]= 57892,
-            ["name"]= "Primordial Bond",
+            ["name"]= "태고의 유대",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57210,7 +57210,7 @@ return {
         },
         [29748]= {
             ["skill"]= 29748,
-            ["name"]= "Blowback",
+            ["name"]= "역류",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57222,7 +57222,7 @@ return {
         },
         [45128]= {
             ["skill"]= 45128,
-            ["name"]= "Fan the Flames",
+            ["name"]= "불난 집 부채질",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57231,7 +57231,7 @@ return {
         },
         [408]= {
             ["skill"]= 408,
-            ["name"]= "Cooked Alive",
+            ["name"]= "기진맥진",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57244,7 +57244,7 @@ return {
         },
         [56065]= {
             ["skill"]= 56065,
-            ["name"]= "Burning Bright",
+            ["name"]= "불타는 광채",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57254,7 +57254,7 @@ return {
         },
         [10952]= {
             ["skill"]= 10952,
-            ["name"]= "Wrapped in Flame",
+            ["name"]= "휘감은 화염",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57268,7 +57268,7 @@ return {
         },
         [4942]= {
             ["skill"]= 4942,
-            ["name"]= "Vivid Hues",
+            ["name"]= "선명한 빛깔",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57282,7 +57282,7 @@ return {
         },
         [8258]= {
             ["skill"]= 8258,
-            ["name"]= "Rend",
+            ["name"]= "산산조각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57292,7 +57292,7 @@ return {
         },
         [42338]= {
             ["skill"]= 42338,
-            ["name"]= "Disorienting Wounds",
+            ["name"]= "혼란스러운 상처",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57305,7 +57305,7 @@ return {
         },
         [37384]= {
             ["skill"]= 37384,
-            ["name"]= "Compound Injury",
+            ["name"]= "복합 부상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57314,7 +57314,7 @@ return {
         },
         [9372]= {
             ["skill"]= 9372,
-            ["name"]= "Blood Artist",
+            ["name"]= "피 예술가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 20,
@@ -57328,7 +57328,7 @@ return {
         },
         [18412]= {
             ["skill"]= 18412,
-            ["name"]= "Phlebotomist",
+            ["name"]= "사혈자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57341,7 +57341,7 @@ return {
         },
         [38399]= {
             ["skill"]= 38399,
-            ["name"]= "Septic Spells",
+            ["name"]= "감염 주문",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57355,7 +57355,7 @@ return {
         },
         [36370]= {
             ["skill"]= 36370,
-            ["name"]= "Low Tolerance",
+            ["name"]= "낮은 역치",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57364,7 +57364,7 @@ return {
         },
         [47424]= {
             ["skill"]= 47424,
-            ["name"]= "Steady Torment",
+            ["name"]= "꾸준한 격통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57376,7 +57376,7 @@ return {
         },
         [11995]= {
             ["skill"]= 11995,
-            ["name"]= "Eternal Suffering",
+            ["name"]= "영원한 괴로움",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57389,7 +57389,7 @@ return {
         },
         [61043]= {
             ["skill"]= 61043,
-            ["name"]= "Eldritch Inspiration",
+            ["name"]= "섬뜩한 영감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57400,7 +57400,7 @@ return {
         },
         [19686]= {
             ["skill"]= 19686,
-            ["name"]= "Wasting Affliction",
+            ["name"]= "쓸모없는 고통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57414,7 +57414,7 @@ return {
         },
         [56879]= {
             ["skill"]= 56879,
-            ["name"]= "Haemorrhage",
+            ["name"]= "실혈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57424,7 +57424,7 @@ return {
         },
         [34581]= {
             ["skill"]= 34581,
-            ["name"]= "Flow of Life",
+            ["name"]= "생명의 흐름",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57435,7 +57435,7 @@ return {
         },
         [56070]= {
             ["skill"]= 56070,
-            ["name"]= "Exposure Therapy",
+            ["name"]= "노출 치료",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57445,7 +57445,7 @@ return {
         },
         [28146]= {
             ["skill"]= 28146,
-            ["name"]= "Brush with Death",
+            ["name"]= "스치는 죽음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57456,7 +57456,7 @@ return {
         },
         [65110]= {
             ["skill"]= 65110,
-            ["name"]= "Vile Reinvigoration",
+            ["name"]= "끔찍한 재활",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57470,7 +57470,7 @@ return {
         },
         [10355]= {
             ["skill"]= 10355,
-            ["name"]= "Circling Oblivion",
+            ["name"]= "돌고 도는 망각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57483,7 +57483,7 @@ return {
         },
         [4094]= {
             ["skill"]= 4094,
-            ["name"]= "Brewed for Potency",
+            ["name"]= "잠재력 발산",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57494,7 +57494,7 @@ return {
         },
         [51467]= {
             ["skill"]= 51467,
-            ["name"]= "Astonishing Affliction",
+            ["name"]= "경이적인 고통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57510,7 +57510,7 @@ return {
         },
         [25563]= {
             ["skill"]= 25563,
-            ["name"]= "Cold Conduction",
+            ["name"]= "냉기 전도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57524,7 +57524,7 @@ return {
         },
         [20343]= {
             ["skill"]= 20343,
-            ["name"]= "Inspired Oppression",
+            ["name"]= "탁월한 억압",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57540,7 +57540,7 @@ return {
         },
         [58248]= {
             ["skill"]= 58248,
-            ["name"]= "Chilling Presence",
+            ["name"]= "냉각의 존재감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57552,7 +57552,7 @@ return {
         },
         [18861]= {
             ["skill"]= 18861,
-            ["name"]= "Deep Chill",
+            ["name"]= "깊은 냉각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57565,7 +57565,7 @@ return {
         },
         [39874]= {
             ["skill"]= 39874,
-            ["name"]= "Blast-Freeze",
+            ["name"]= "폭발 동결",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57575,7 +57575,7 @@ return {
         },
         [35430]= {
             ["skill"]= 35430,
-            ["name"]= "Thunderstruck",
+            ["name"]= "벼락 직격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57586,7 +57586,7 @@ return {
         },
         [37478]= {
             ["skill"]= 37478,
-            ["name"]= "Stormrider",
+            ["name"]= "태풍의 기수",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57597,7 +57597,7 @@ return {
         },
         [28682]= {
             ["skill"]= 28682,
-            ["name"]= "Overshock",
+            ["name"]= "과충격",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57611,7 +57611,7 @@ return {
         },
         [42305]= {
             ["skill"]= 42305,
-            ["name"]= "Evil Eye",
+            ["name"]= "사악한 눈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57624,7 +57624,7 @@ return {
         },
         [57104]= {
             ["skill"]= 57104,
-            ["name"]= "Whispers of Death",
+            ["name"]= "죽음의 속삭임",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57637,7 +57637,7 @@ return {
         },
         [61549]= {
             ["skill"]= 61549,
-            ["name"]= "Forbidden Words",
+            ["name"]= "금지된 어록",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57648,7 +57648,7 @@ return {
         },
         [18624]= {
             ["skill"]= 18624,
-            ["name"]= "Dark Discourse",
+            ["name"]= "어둠 담론",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57663,7 +57663,7 @@ return {
         },
         [42929]= {
             ["skill"]= 42929,
-            ["name"]= "Victim Maker",
+            ["name"]= "제물 제조기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57676,7 +57676,7 @@ return {
         },
         [14418]= {
             ["skill"]= 14418,
-            ["name"]= "Master of Fear",
+            ["name"]= "두려움의 주인",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57688,7 +57688,7 @@ return {
         },
         [7279]= {
             ["skill"]= 7279,
-            ["name"]= "Wish for Death",
+            ["name"]= "죽음 갈망",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57701,7 +57701,7 @@ return {
         },
         [28551]= {
             ["skill"]= 28551,
-            ["name"]= "Heraldry",
+            ["name"]= "전령술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57717,7 +57717,7 @@ return {
         },
         [24038]= {
             ["skill"]= 24038,
-            ["name"]= "Endbringer",
+            ["name"]= "종말 인도자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57727,7 +57727,7 @@ return {
         },
         [16952]= {
             ["skill"]= 16952,
-            ["name"]= "Cult-Leader",
+            ["name"]= "교주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57736,7 +57736,7 @@ return {
         },
         [17066]= {
             ["skill"]= 17066,
-            ["name"]= "Empowered Envoy",
+            ["name"]= "전권 대사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57746,7 +57746,7 @@ return {
         },
         [8897]= {
             ["skill"]= 8897,
-            ["name"]= "Dark Messenger",
+            ["name"]= "어둠 전달자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57756,7 +57756,7 @@ return {
         },
         [61998]= {
             ["skill"]= 61998,
-            ["name"]= "Agent of Destruction",
+            ["name"]= "파괴의 요원",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57766,7 +57766,7 @@ return {
         },
         [17905]= {
             ["skill"]= 17905,
-            ["name"]= "Lasting Impression",
+            ["name"]= "불변하는 인상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57776,7 +57776,7 @@ return {
         },
         [65521]= {
             ["skill"]= 65521,
-            ["name"]= "Self-Fulfilling Prophecy",
+            ["name"]= "자기 실현적 예언",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57789,7 +57789,7 @@ return {
         },
         [40402]= {
             ["skill"]= 40402,
-            ["name"]= "Invigorating Portents",
+            ["name"]= "상쾌한 조짐",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57799,7 +57799,7 @@ return {
         },
         [5781]= {
             ["skill"]= 5781,
-            ["name"]= "Pure Agony",
+            ["name"]= "순수한 고통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57809,7 +57809,7 @@ return {
         },
         [24357]= {
             ["skill"]= 24357,
-            ["name"]= "Disciples",
+            ["name"]= "신봉자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57819,7 +57819,7 @@ return {
         },
         [55171]= {
             ["skill"]= 55171,
-            ["name"]= "Dread March",
+            ["name"]= "공포의 행진",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57831,7 +57831,7 @@ return {
         },
         [42126]= {
             ["skill"]= 42126,
-            ["name"]= "Blessed Rebirth",
+            ["name"]= "신성한 부활",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57844,7 +57844,7 @@ return {
         },
         [62318]= {
             ["skill"]= 62318,
-            ["name"]= "Life from Death",
+            ["name"]= "죽음에서의 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57858,7 +57858,7 @@ return {
         },
         [22540]= {
             ["skill"]= 22540,
-            ["name"]= "Feasting Fiends",
+            ["name"]= "연회의 마귀",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57872,7 +57872,7 @@ return {
         },
         [11199]= {
             ["skill"]= 11199,
-            ["name"]= "Bodyguards",
+            ["name"]= "호위병",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57882,7 +57882,7 @@ return {
         },
         [42068]= {
             ["skill"]= 42068,
-            ["name"]= "Follow-Through",
+            ["name"]= "마무리 작업",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57891,7 +57891,7 @@ return {
         },
         [36645]= {
             ["skill"]= 36645,
-            ["name"]= "Streamlined",
+            ["name"]= "간소화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57901,7 +57901,7 @@ return {
         },
         [12400]= {
             ["skill"]= 12400,
-            ["name"]= "Shrieking Bolts",
+            ["name"]= "효시",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57914,7 +57914,7 @@ return {
         },
         [54170]= {
             ["skill"]= 54170,
-            ["name"]= "Eye to Eye",
+            ["name"]= "눈에는 눈",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57924,7 +57924,7 @@ return {
         },
         [53285]= {
             ["skill"]= 53285,
-            ["name"]= "Repeater",
+            ["name"]= "연발",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57934,7 +57934,7 @@ return {
         },
         [13812]= {
             ["skill"]= 13812,
-            ["name"]= "Aerodynamics",
+            ["name"]= "공기 역학",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57945,7 +57945,7 @@ return {
         },
         [26839]= {
             ["skill"]= 26839,
-            ["name"]= "Chip Away",
+            ["name"]= "누그러짐",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57955,7 +57955,7 @@ return {
         },
         [37358]= {
             ["skill"]= 37358,
-            ["name"]= "Seeker Runes",
+            ["name"]= "탐색자의 룬",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57968,7 +57968,7 @@ return {
         },
         [59307]= {
             ["skill"]= 59307,
-            ["name"]= "Remarkable",
+            ["name"]= "비범함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57978,7 +57978,7 @@ return {
         },
         [36276]= {
             ["skill"]= 36276,
-            ["name"]= "Brand Loyalty",
+            ["name"]= "낙인 충성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57987,7 +57987,7 @@ return {
         },
         [42636]= {
             ["skill"]= 42636,
-            ["name"]= "Holy Conquest",
+            ["name"]= "신성한 점령",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -57996,7 +57996,7 @@ return {
         },
         [13392]= {
             ["skill"]= 13392,
-            ["name"]= "Grand Design",
+            ["name"]= "위대한 설계",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58010,7 +58010,7 @@ return {
         },
         [29193]= {
             ["skill"]= 29193,
-            ["name"]= "Set and Forget",
+            ["name"]= "자동 수행",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58022,7 +58022,7 @@ return {
         },
         [54760]= {
             ["skill"]= 54760,
-            ["name"]= "Expert Sabotage",
+            ["name"]= "본격적인 방해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58032,7 +58032,7 @@ return {
         },
         [24645]= {
             ["skill"]= 24645,
-            ["name"]= "Guerilla Tactics",
+            ["name"]= "유격 전술",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58048,7 +58048,7 @@ return {
         },
         [65138]= {
             ["skill"]= 65138,
-            ["name"]= "Expendability",
+            ["name"]= "소모성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58060,7 +58060,7 @@ return {
         },
         [52058]= {
             ["skill"]= 52058,
-            ["name"]= "Arcane Pyrotechnics",
+            ["name"]= "비전 불꽃",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58075,7 +58075,7 @@ return {
         },
         [22434]= {
             ["skill"]= 22434,
-            ["name"]= "Surprise Sabotage",
+            ["name"]= "기습적인 방해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58087,7 +58087,7 @@ return {
         },
         [20383]= {
             ["skill"]= 20383,
-            ["name"]= "Careful Handling",
+            ["name"]= "세심한 취급",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58099,7 +58099,7 @@ return {
         },
         [8949]= {
             ["skill"]= 8949,
-            ["name"]= "Peak Vigour",
+            ["name"]= "절정의 활기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58109,7 +58109,7 @@ return {
         },
         [52844]= {
             ["skill"]= 52844,
-            ["name"]= "Fettle",
+            ["name"]= "원기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58119,7 +58119,7 @@ return {
         },
         [15538]= {
             ["skill"]= 15538,
-            ["name"]= "Feast of Flesh",
+            ["name"]= "육체의 연회",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58133,7 +58133,7 @@ return {
         },
         [62706]= {
             ["skill"]= 62706,
-            ["name"]= "Sublime Sensation",
+            ["name"]= "숭고한 감각",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58143,7 +58143,7 @@ return {
         },
         [19723]= {
             ["skill"]= 19723,
-            ["name"]= "Surging Vitality",
+            ["name"]= "솟구치는 활력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58154,7 +58154,7 @@ return {
         },
         [49694]= {
             ["skill"]= 49694,
-            ["name"]= "Peace Amidst Chaos",
+            ["name"]= "카오스 속의 평화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58165,7 +58165,7 @@ return {
         },
         [40858]= {
             ["skill"]= 40858,
-            ["name"]= "Adrenaline",
+            ["name"]= "아드레날린",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58176,7 +58176,7 @@ return {
         },
         [3723]= {
             ["skill"]= 3723,
-            ["name"]= "Wall of Muscle",
+            ["name"]= "근육 벽",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58186,7 +58186,7 @@ return {
         },
         [12867]= {
             ["skill"]= 12867,
-            ["name"]= "Mindfulness",
+            ["name"]= "열린 사고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58196,7 +58196,7 @@ return {
         },
         [4958]= {
             ["skill"]= 4958,
-            ["name"]= "Liquid Inspiration",
+            ["name"]= "흐르는 영감",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58207,7 +58207,7 @@ return {
         },
         [20968]= {
             ["skill"]= 20968,
-            ["name"]= "Openness",
+            ["name"]= "진솔함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58217,7 +58217,7 @@ return {
         },
         [15175]= {
             ["skill"]= 15175,
-            ["name"]= "Daring Ideas",
+            ["name"]= "대담한 사고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58230,7 +58230,7 @@ return {
         },
         [2220]= {
             ["skill"]= 2220,
-            ["name"]= "Clarity of Purpose",
+            ["name"]= "명료한 목적",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58240,7 +58240,7 @@ return {
         },
         [43834]= {
             ["skill"]= 43834,
-            ["name"]= "Scintillating Idea",
+            ["name"]= "번득이는 사고",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58250,7 +58250,7 @@ return {
         },
         [23884]= {
             ["skill"]= 23884,
-            ["name"]= "Holistic Health",
+            ["name"]= "총체적 건강",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58260,7 +58260,7 @@ return {
         },
         [62160]= {
             ["skill"]= 62160,
-            ["name"]= "Genius",
+            ["name"]= "천재",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58270,7 +58270,7 @@ return {
         },
         [42024]= {
             ["skill"]= 42024,
-            ["name"]= "Improvisor",
+            ["name"]= "임시변통",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58281,7 +58281,7 @@ return {
         },
         [32031]= {
             ["skill"]= 32031,
-            ["name"]= "Stubborn Student",
+            ["name"]= "완고한 연구자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58292,7 +58292,7 @@ return {
         },
         [52544]= {
             ["skill"]= 52544,
-            ["name"]= "Savour the Moment",
+            ["name"]= "찰나의 음미",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58302,7 +58302,7 @@ return {
         },
         [20241]= {
             ["skill"]= 20241,
-            ["name"]= "Energy From Naught",
+            ["name"]= "무한 동력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58311,7 +58311,7 @@ return {
         },
         [33698]= {
             ["skill"]= 33698,
-            ["name"]= "Will Shaper",
+            ["name"]= "의지 형성자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58320,7 +58320,7 @@ return {
         },
         [64782]= {
             ["skill"]= 64782,
-            ["name"]= "Spring Back",
+            ["name"]= "재주 넘기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58331,7 +58331,7 @@ return {
         },
         [11513]= {
             ["skill"]= 11513,
-            ["name"]= "Conservation of Energy",
+            ["name"]= "에너지 보존",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58345,7 +58345,7 @@ return {
         },
         [39331]= {
             ["skill"]= 39331,
-            ["name"]= "Heart of Iron",
+            ["name"]= "무쇠 심장",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58354,7 +58354,7 @@ return {
         },
         [54766]= {
             ["skill"]= 54766,
-            ["name"]= "Prismatic Carapace",
+            ["name"]= "분광 등딱지",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58367,7 +58367,7 @@ return {
         },
         [50820]= {
             ["skill"]= 50820,
-            ["name"]= "Militarism",
+            ["name"]= "상무 정신",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58377,7 +58377,7 @@ return {
         },
         [60647]= {
             ["skill"]= 60647,
-            ["name"]= "Second Skin",
+            ["name"]= "덧씌운 피부",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58388,7 +58388,7 @@ return {
         },
         [14412]= {
             ["skill"]= 14412,
-            ["name"]= "Dragon Hunter",
+            ["name"]= "용 사냥꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58402,7 +58402,7 @@ return {
         },
         [57572]= {
             ["skill"]= 57572,
-            ["name"]= "Enduring Composure",
+            ["name"]= "지속되는 평정",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58415,7 +58415,7 @@ return {
         },
         [42313]= {
             ["skill"]= 42313,
-            ["name"]= "Prismatic Dance",
+            ["name"]= "분광의 춤",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58428,7 +58428,7 @@ return {
         },
         [64259]= {
             ["skill"]= 64259,
-            ["name"]= "Natural Vigour",
+            ["name"]= "자연의 활력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58438,7 +58438,7 @@ return {
         },
         [22704]= {
             ["skill"]= 22704,
-            ["name"]= "Untouchable",
+            ["name"]= "무적의",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58449,7 +58449,7 @@ return {
         },
         [46074]= {
             ["skill"]= 46074,
-            ["name"]= "Shifting Shadow",
+            ["name"]= "변화하는 그림자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["grantedDexterity"]= 20,
@@ -58464,7 +58464,7 @@ return {
         },
         [9245]= {
             ["skill"]= 9245,
-            ["name"]= "Readiness",
+            ["name"]= "준비 태세",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58475,7 +58475,7 @@ return {
         },
         [11318]= {
             ["skill"]= 11318,
-            ["name"]= "Confident Combatant",
+            ["name"]= "대담한 전투원",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58484,7 +58484,7 @@ return {
         },
         [4641]= {
             ["skill"]= 4641,
-            ["name"]= "Flexible Sentry",
+            ["name"]= "유순한 보초",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockSpellDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58499,7 +58499,7 @@ return {
         },
         [58944]= {
             ["skill"]= 58944,
-            ["name"]= "Vicious Guard",
+            ["name"]= "포악한 방어",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58513,7 +58513,7 @@ return {
         },
         [34108]= {
             ["skill"]= 34108,
-            ["name"]= "Mystical Ward",
+            ["name"]= "신비로운 수호",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockSpellDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58527,7 +58527,7 @@ return {
         },
         [11011]= {
             ["skill"]= 11011,
-            ["name"]= "Rote Reinforcement",
+            ["name"]= "암기 강화",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58538,7 +58538,7 @@ return {
         },
         [25450]= {
             ["skill"]= 25450,
-            ["name"]= "Mage Hunter",
+            ["name"]= "마법사 사냥꾼",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockSpellDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58549,7 +58549,7 @@ return {
         },
         [64407]= {
             ["skill"]= 64407,
-            ["name"]= "Riot Queller",
+            ["name"]= "폭동 진압자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58559,7 +58559,7 @@ return {
         },
         [53067]= {
             ["skill"]= 53067,
-            ["name"]= "One with the Shield",
+            ["name"]= "방패와 하나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58573,7 +58573,7 @@ return {
         },
         [23042]= {
             ["skill"]= 23042,
-            ["name"]= "Aerialist",
+            ["name"]= "공중 곡예",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DodgeAtksNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58584,7 +58584,7 @@ return {
         },
         [40181]= {
             ["skill"]= 40181,
-            ["name"]= "Elegant Form",
+            ["name"]= "고상한 형태",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DodgeAtksNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58598,7 +58598,7 @@ return {
         },
         [9276]= {
             ["skill"]= 9276,
-            ["name"]= "Darting Movements",
+            ["name"]= "쏜살같은 이동",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DodgeAtksNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58608,7 +58608,7 @@ return {
         },
         [18155]= {
             ["skill"]= 18155,
-            ["name"]= "No Witnesses",
+            ["name"]= "목격자 없음",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DodgeAtksNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58621,7 +58621,7 @@ return {
         },
         [48803]= {
             ["skill"]= 48803,
-            ["name"]= "Molten One's Mark",
+            ["name"]= "용암 존재의 징표",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58634,7 +58634,7 @@ return {
         },
         [42530]= {
             ["skill"]= 42530,
-            ["name"]= "Fire Attunement",
+            ["name"]= "화염 동조",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58649,7 +58649,7 @@ return {
         },
         [17769]= {
             ["skill"]= 17769,
-            ["name"]= "Pure Might",
+            ["name"]= "타고난 힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNotable.png",
             ["isNotable"]= true,
             ["grantedStrength"]= 20,
@@ -58661,7 +58661,7 @@ return {
         },
         [13549]= {
             ["skill"]= 13549,
-            ["name"]= "Blacksmith",
+            ["name"]= "대장장이",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58675,7 +58675,7 @@ return {
         },
         [1581]= {
             ["skill"]= 1581,
-            ["name"]= "Non-Flammable",
+            ["name"]= "내화성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58689,7 +58689,7 @@ return {
         },
         [38683]= {
             ["skill"]= 38683,
-            ["name"]= "Winter Prowler",
+            ["name"]= "겨울 배회자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58702,7 +58702,7 @@ return {
         },
         [19508]= {
             ["skill"]= 19508,
-            ["name"]= "Hibernator",
+            ["name"]= "동면",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58719,7 +58719,7 @@ return {
         },
         [26322]= {
             ["skill"]= 26322,
-            ["name"]= "Pure Guile",
+            ["name"]= "타고난 교활함",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNotable.png",
             ["isNotable"]= true,
             ["grantedDexterity"]= 20,
@@ -58734,7 +58734,7 @@ return {
         },
         [58904]= {
             ["skill"]= 58904,
-            ["name"]= "Alchemist",
+            ["name"]= "연금술사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58745,7 +58745,7 @@ return {
         },
         [33676]= {
             ["skill"]= 33676,
-            ["name"]= "Antifreeze",
+            ["name"]= "동결 방지",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58759,7 +58759,7 @@ return {
         },
         [44203]= {
             ["skill"]= 44203,
-            ["name"]= "Wizardry",
+            ["name"]= "기묘한 마법",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58772,7 +58772,7 @@ return {
         },
         [22002]= {
             ["skill"]= 22002,
-            ["name"]= "Capacitor",
+            ["name"]= "축전기",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58787,7 +58787,7 @@ return {
         },
         [51421]= {
             ["skill"]= 51421,
-            ["name"]= "Pure Aptitude",
+            ["name"]= "타고난 재능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNotable.png",
             ["isNotable"]= true,
             ["grantedIntelligence"]= 20,
@@ -58799,7 +58799,7 @@ return {
         },
         [10409]= {
             ["skill"]= 10409,
-            ["name"]= "Sage",
+            ["name"]= "현자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58810,7 +58810,7 @@ return {
         },
         [54798]= {
             ["skill"]= 54798,
-            ["name"]= "Insulated",
+            ["name"]= "격리 상태",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58824,7 +58824,7 @@ return {
         },
         [51523]= {
             ["skill"]= 51523,
-            ["name"]= "Born of Chaos",
+            ["name"]= "카오스에서 태어난 자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58836,7 +58836,7 @@ return {
         },
         [21688]= {
             ["skill"]= 21688,
-            ["name"]= "Antivenom",
+            ["name"]= "독소 방지",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58850,7 +58850,7 @@ return {
         },
         [29096]= {
             ["skill"]= 29096,
-            ["name"]= "Rot-Resistant",
+            ["name"]= "부식 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58862,7 +58862,7 @@ return {
         },
         [64717]= {
             ["skill"]= 64717,
-            ["name"]= "Blessed",
+            ["name"]= "축성",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58873,7 +58873,7 @@ return {
         },
         [26179]= {
             ["skill"]= 26179,
-            ["name"]= "Student of Decay",
+            ["name"]= "부패 연구자",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58883,7 +58883,7 @@ return {
         },
         [33]= {
             ["skill"]= 33,
-            ["name"]= "Lord of Drought",
+            ["name"]= "가뭄의 군주",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58893,7 +58893,7 @@ return {
         },
         [25938]= {
             ["skill"]= 25938,
-            ["name"]= "Blizzard Caller",
+            ["name"]= "눈보라 소환사",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58903,7 +58903,7 @@ return {
         },
         [17662]= {
             ["skill"]= 17662,
-            ["name"]= "Tempt the Storm",
+            ["name"]= "태풍 유혹",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58913,7 +58913,7 @@ return {
         },
         [14061]= {
             ["skill"]= 14061,
-            ["name"]= "Misery Everlasting",
+            ["name"]= "영원히 계속되는 불행",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58923,7 +58923,7 @@ return {
         },
         [42601]= {
             ["skill"]= 42601,
-            ["name"]= "Exploit Weakness",
+            ["name"]= "약점 이용",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58933,7 +58933,7 @@ return {
         },
         [33232]= {
             ["skill"]= 33232,
-            ["name"]= "Self-Control",
+            ["name"]= "자기 절제",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58943,7 +58943,7 @@ return {
         },
         [21907]= {
             ["skill"]= 21907,
-            ["name"]= "Uncompromising",
+            ["name"]= "타협 불가",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58956,7 +58956,7 @@ return {
         },
         [60690]= {
             ["skill"]= 60690,
-            ["name"]= "Sublime Form",
+            ["name"]= "숭고한 형상",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58966,7 +58966,7 @@ return {
         },
         [32259]= {
             ["skill"]= 32259,
-            ["name"]= "Summer Commander",
+            ["name"]= "여름 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58976,7 +58976,7 @@ return {
         },
         [31333]= {
             ["skill"]= 31333,
-            ["name"]= "Winter Commander",
+            ["name"]= "겨울 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["stats"]= {
@@ -58986,7 +58986,7 @@ return {
         },
         [907]= {
             ["skill"]= 907,
-            ["name"]= "Grounded Commander",
+            ["name"]= "안정된 지휘관",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNotable.png",
             ["isNotable"]= true,
             ["grantedIntelligence"]= 10,
@@ -58997,7 +58997,7 @@ return {
         },
         [14084]= {
             ["skill"]= 14084,
-            ["name"]= "Axe and Sword Damage",
+            ["name"]= "도끼, 검 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeAxeandSwordDamage.png",
             ["stats"]= {
                 "Axe Attacks deal 12% increased Damage with Hits and Ailments",
@@ -59009,14 +59009,14 @@ return {
         },
         [44810]= {
             ["skill"]= 44810,
-            ["name"]= "Axe and Sword Damage Mastery",
+            ["name"]= "도끼, 검 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupSwordAndAxe.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [51642]= {
             ["skill"]= 51642,
-            ["name"]= "Mace and Staff Damage",
+            ["name"]= "철퇴, 지팡이 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeMaceandStaffDamage.png",
             ["stats"]= {
                 "Staff Attacks deal 12% increased Damage with Hits and Ailments",
@@ -59029,14 +59029,14 @@ return {
         },
         [43130]= {
             ["skill"]= 43130,
-            ["name"]= "Mace and Staff Damage Mastery",
+            ["name"]= "철퇴, 지팡이 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupMaceAndStaff.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [31680]= {
             ["skill"]= 31680,
-            ["name"]= "Dagger and Claw Damage",
+            ["name"]= "단검, 클로 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeDaggerandClawDamage.png",
             ["stats"]= {
                 "Claw Attacks deal 12% increased Damage with Hits and Ailments",
@@ -59049,14 +59049,14 @@ return {
         },
         [42783]= {
             ["skill"]= 42783,
-            ["name"]= "Dagger and Claw Damage Mastery",
+            ["name"]= "단검, 클로 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltDaggerClawDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [18870]= {
             ["skill"]= 18870,
-            ["name"]= "Bow Damage",
+            ["name"]= "활 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeBowDamage.png",
             ["stats"]= {
                 "12% increased Damage with Bows",
@@ -59065,14 +59065,14 @@ return {
         },
         [54935]= {
             ["skill"]= 54935,
-            ["name"]= "Bow Damage Mastery",
+            ["name"]= "활 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupBow.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [41204]= {
             ["skill"]= 41204,
-            ["name"]= "Wand Damage",
+            ["name"]= "마법봉 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeWandDamage.png",
             ["stats"]= {
                 "Wand Attacks deal 12% increased Damage with Hits and Ailments"
@@ -59083,14 +59083,14 @@ return {
         },
         [38334]= {
             ["skill"]= 38334,
-            ["name"]= "Wand Damage Mastery",
+            ["name"]= "마법봉 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupWand.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [58031]= {
             ["skill"]= 58031,
-            ["name"]= "Damage with Two Handed Melee Weapons",
+            ["name"]= "양손 근접 무기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeTwoHandedMeleeDamage.png",
             ["stats"]= {
                 "12% increased Damage with Two Handed Weapons"
@@ -59098,14 +59098,14 @@ return {
         },
         [52606]= {
             ["skill"]= 52606,
-            ["name"]= "Damage with Two Handed Melee Weapons Mastery",
+            ["name"]= "양손 근접 무기 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupTwoHands.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [16404]= {
             ["skill"]= 16404,
-            ["name"]= "Attack Damage while Dual Wielding",
+            ["name"]= "쌍수 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeDualWieldingDamage.png",
             ["stats"]= {
                 "12% increased Attack Damage while Dual Wielding"
@@ -59113,14 +59113,14 @@ return {
         },
         [44100]= {
             ["skill"]= 44100,
-            ["name"]= "Attack Damage while Dual Wielding Mastery",
+            ["name"]= "쌍수 착용 시 공격 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupDualWield.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [14303]= {
             ["skill"]= 14303,
-            ["name"]= "Attack Damage while holding a Shield",
+            ["name"]= "방패 착용 시 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
             ["stats"]= {
                 "12% increased Attack Damage while holding a Shield"
@@ -59128,14 +59128,14 @@ return {
         },
         [25429]= {
             ["skill"]= 25429,
-            ["name"]= "Attack Damage while holding a Shield Mastery",
+            ["name"]= "방패 착용 시 공격 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupShield.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [747]= {
             ["skill"]= 747,
-            ["name"]= "Attack Damage",
+            ["name"]= "공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNode.png",
             ["stats"]= {
                 "10% increased Attack Damage"
@@ -59143,14 +59143,14 @@ return {
         },
         [54888]= {
             ["skill"]= 54888,
-            ["name"]= "Attack Damage Mastery",
+            ["name"]= "공격 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltAttackDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [21845]= {
             ["skill"]= 21845,
-            ["name"]= "Spell Damage",
+            ["name"]= "주문 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNode.png",
             ["stats"]= {
                 "10% increased Spell Damage"
@@ -59158,14 +59158,14 @@ return {
         },
         [21841]= {
             ["skill"]= 21841,
-            ["name"]= "Spell Damage Mastery",
+            ["name"]= "주문 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupCast.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [49465]= {
             ["skill"]= 49465,
-            ["name"]= "Elemental Damage",
+            ["name"]= "원소 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ElementalDamagenode.png",
             ["stats"]= {
                 "10% increased Elemental Damage"
@@ -59173,14 +59173,14 @@ return {
         },
         [44078]= {
             ["skill"]= 44078,
-            ["name"]= "Elemental Damage Mastery",
+            ["name"]= "원소 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryElementalDamage.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [37171]= {
             ["skill"]= 37171,
-            ["name"]= "Physical Damage",
+            ["name"]= "물리 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
             ["stats"]= {
                 "12% increased Physical Damage"
@@ -59188,14 +59188,14 @@ return {
         },
         [58618]= {
             ["skill"]= 58618,
-            ["name"]= "Physical Damage Mastery",
+            ["name"]= "물리 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryPhysicalDamage.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [13146]= {
             ["skill"]= 13146,
-            ["name"]= "Fire Damage",
+            ["name"]= "화염 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamagenode.png",
             ["stats"]= {
                 "12% increased Fire Damage"
@@ -59203,14 +59203,14 @@ return {
         },
         [43904]= {
             ["skill"]= 43904,
-            ["name"]= "Fire Damage Mastery",
+            ["name"]= "화염 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupFire.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [49817]= {
             ["skill"]= 49817,
-            ["name"]= "Lightning Damage",
+            ["name"]= "번개 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningDamagenode.png",
             ["stats"]= {
                 "12% increased Lightning Damage"
@@ -59218,14 +59218,14 @@ return {
         },
         [15015]= {
             ["skill"]= 15015,
-            ["name"]= "Lightning Damage Mastery",
+            ["name"]= "번개 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupLightning.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [41355]= {
             ["skill"]= 41355,
-            ["name"]= "Cold Damage",
+            ["name"]= "냉기 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdDamagenode.png",
             ["stats"]= {
                 "12% increased Cold Damage"
@@ -59233,14 +59233,14 @@ return {
         },
         [37977]= {
             ["skill"]= 37977,
-            ["name"]= "Cold Damage Mastery",
+            ["name"]= "냉기 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupCold.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [46248]= {
             ["skill"]= 46248,
-            ["name"]= "Chaos Damage",
+            ["name"]= "카오스 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamagenode.png",
             ["stats"]= {
                 "12% increased Chaos Damage"
@@ -59248,14 +59248,14 @@ return {
         },
         [12117]= {
             ["skill"]= 12117,
-            ["name"]= "Chaos Damage Mastery",
+            ["name"]= "카오스 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryChaos.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [49331]= {
             ["skill"]= 49331,
-            ["name"]= "Minion Damage",
+            ["name"]= "소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNode.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage"
@@ -59263,14 +59263,14 @@ return {
         },
         [16351]= {
             ["skill"]= 16351,
-            ["name"]= "Minion Damage Mastery",
+            ["name"]= "소환수 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupMinions.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [31549]= {
             ["skill"]= 31549,
-            ["name"]= "Fire Damage over Time",
+            ["name"]= "화염 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNode.png",
             ["stats"]= {
                 "12% increased Burning Damage"
@@ -59278,14 +59278,14 @@ return {
         },
         [57049]= {
             ["skill"]= 57049,
-            ["name"]= "Fire Damage over Time Multiplier Mastery",
+            ["name"]= "화염 지속 피해 배율 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltFireDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [35020]= {
             ["skill"]= 35020,
-            ["name"]= "Chaos Damage over Time",
+            ["name"]= "카오스 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNode.png",
             ["stats"]= {
                 "12% increased Chaos Damage over Time"
@@ -59293,14 +59293,14 @@ return {
         },
         [40036]= {
             ["skill"]= 40036,
-            ["name"]= "Chaos Damage over Time Multiplier Mastery",
+            ["name"]= "카오스 지속 피해 배율 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltChaosDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [14036]= {
             ["skill"]= 14036,
-            ["name"]= "Physical Damage over Time",
+            ["name"]= "물리 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNode.png",
             ["stats"]= {
                 "12% increased Physical Damage over Time"
@@ -59308,14 +59308,14 @@ return {
         },
         [20314]= {
             ["skill"]= 20314,
-            ["name"]= "Physical Damage over Time Multiplier Mastery",
+            ["name"]= "물리 지속 피해 배율 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltBloodMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [39222]= {
             ["skill"]= 39222,
-            ["name"]= "Cold Damage over Time",
+            ["name"]= "냉기 지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdDamageOverTimeNode.png",
             ["stats"]= {
                 "12% increased Cold Damage over Time"
@@ -59323,14 +59323,14 @@ return {
         },
         [40966]= {
             ["skill"]= 40966,
-            ["name"]= "Cold Damage over Time Multiplier Mastery",
+            ["name"]= "냉기 지속 피해 배율 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltColdDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [32169]= {
             ["skill"]= 32169,
-            ["name"]= "Damage over Time",
+            ["name"]= "지속 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DamageOverTimeNode.png",
             ["stats"]= {
                 "10% increased Damage over Time"
@@ -59338,14 +59338,14 @@ return {
         },
         [48978]= {
             ["skill"]= 48978,
-            ["name"]= "Damage over Time Multiplier Mastery",
+            ["name"]= "지속 피해 배율 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltDamageOverTimeMultiplierMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [61851]= {
             ["skill"]= 61851,
-            ["name"]= "Effect of Non-Damaging Ailments",
+            ["name"]= "비피해 상태 이상 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNode.png",
             ["stats"]= {
                 "10% increased Effect of Non-Damaging Ailments"
@@ -59356,14 +59356,14 @@ return {
         },
         [45462]= {
             ["skill"]= 45462,
-            ["name"]= "Effect of Non-Damaging Ailments Mastery",
+            ["name"]= "비피해 상태 이상 효과 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltNonDamagingAilmentsMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [6265]= {
             ["skill"]= 6265,
-            ["name"]= "Aura Effect",
+            ["name"]= "오라 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AuraEffectNode.png",
             ["stats"]= {
                 "3% increased effect of Non-Curse Auras from your Skills"
@@ -59371,14 +59371,14 @@ return {
         },
         [2054]= {
             ["skill"]= 2054,
-            ["name"]= "Aura Effect Mastery",
+            ["name"]= "오라 효과 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryAuras.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [18530]= {
             ["skill"]= 18530,
-            ["name"]= "Curse Effect",
+            ["name"]= "저주 효과",
             ["icon"]= "Art/2DArt/SkillIcons/passives/CurseEffectNode.png",
             ["stats"]= {
                 "3% increased Effect of your Curses"
@@ -59386,14 +59386,14 @@ return {
         },
         [32642]= {
             ["skill"]= 32642,
-            ["name"]= "Curse Effect Mastery",
+            ["name"]= "저주 효과 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryCurse.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [17198]= {
             ["skill"]= 17198,
-            ["name"]= "Damage while you have a Herald",
+            ["name"]= "전령 보유 시 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNode.png",
             ["stats"]= {
                 "10% increased Damage while affected by a Herald"
@@ -59401,14 +59401,14 @@ return {
         },
         [33431]= {
             ["skill"]= 33431,
-            ["name"]= "Damage while you have a Herald Mastery",
+            ["name"]= "전령 보유 시 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltDamageWithHeraldMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [3367]= {
             ["skill"]= 3367,
-            ["name"]= "Minion Damage while you have a Herald",
+            ["name"]= "전령 보유 시 소환수 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNode.png",
             ["stats"]= {
                 "Minions deal 10% increased Damage while you are affected by a Herald"
@@ -59416,14 +59416,14 @@ return {
         },
         [37971]= {
             ["skill"]= 37971,
-            ["name"]= "Minion Damage while you have a Herald Mastery",
+            ["name"]= "전령 보유 시 소환수 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMinionDamageHeraldMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [3870]= {
             ["skill"]= 3870,
-            ["name"]= "Exerted Attack Damage",
+            ["name"]= "격화 공격 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedWarcryNode.png",
             ["stats"]= {
                 "Exerted Attacks deal 20% increased Damage"
@@ -59431,14 +59431,14 @@ return {
         },
         [10118]= {
             ["skill"]= 10118,
-            ["name"]= "Warcry Buff Effect Mastery",
+            ["name"]= "함성 버프 효과 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltWarcryMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [10695]= {
             ["skill"]= 10695,
-            ["name"]= "Critical Chance",
+            ["name"]= "치명타 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNode.png",
             ["stats"]= {
                 "15% increased Critical Strike Chance"
@@ -59446,14 +59446,14 @@ return {
         },
         [2510]= {
             ["skill"]= 2510,
-            ["name"]= "Critical Chance Mastery",
+            ["name"]= "치명타 확률 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupCrit.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [20492]= {
             ["skill"]= 20492,
-            ["name"]= "Minion Life",
+            ["name"]= "소환수 생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNode.png",
             ["stats"]= {
                 "Minions have 12% increased maximum Life"
@@ -59461,14 +59461,14 @@ return {
         },
         [14933]= {
             ["skill"]= 14933,
-            ["name"]= "Minion Life Mastery",
+            ["name"]= "소환수 생명력 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryGroupMinions.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [44483]= {
             ["skill"]= 44483,
-            ["name"]= "Area Damage",
+            ["name"]= "범위 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AreaDmgNode.png",
             ["stats"]= {
                 "10% increased Area Damage"
@@ -59476,14 +59476,14 @@ return {
         },
         [63454]= {
             ["skill"]= 63454,
-            ["name"]= "Area Damage Mastery",
+            ["name"]= "범위 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltAreaDamageMastery.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [1371]= {
             ["skill"]= 1371,
-            ["name"]= "Projectile Damage",
+            ["name"]= "투사체 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ProjectileDmgNode.png",
             ["stats"]= {
                 "10% increased Projectile Damage"
@@ -59491,14 +59491,14 @@ return {
         },
         [7883]= {
             ["skill"]= 7883,
-            ["name"]= "Projectile Damage Mastery",
+            ["name"]= "투사체 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryProjectiles.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [48881]= {
             ["skill"]= 48881,
-            ["name"]= "Trap and Mine Damage",
+            ["name"]= "덫 및 지뢰 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNode.png",
             ["stats"]= {
                 "12% increased Trap Damage",
@@ -59507,14 +59507,14 @@ return {
         },
         [45474]= {
             ["skill"]= 45474,
-            ["name"]= "Trap and Mine Damage Mastery",
+            ["name"]= "덫 및 지뢰 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryTraps.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [46909]= {
             ["skill"]= 46909,
-            ["name"]= "Totem Damage",
+            ["name"]= "토템 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/TotemDmgNode.png",
             ["stats"]= {
                 "12% increased Totem Damage"
@@ -59522,14 +59522,14 @@ return {
         },
         [16808]= {
             ["skill"]= 16808,
-            ["name"]= "Totem Damage Mastery",
+            ["name"]= "토템 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryTotem.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [21126]= {
             ["skill"]= 21126,
-            ["name"]= "Brand Damage",
+            ["name"]= "낙인 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BrandDmgNode.png",
             ["stats"]= {
                 "12% increased Brand Damage"
@@ -59540,14 +59540,14 @@ return {
         },
         [49424]= {
             ["skill"]= 49424,
-            ["name"]= "Brand Damage Mastery",
+            ["name"]= "낙인 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryBrand.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [10493]= {
             ["skill"]= 10493,
-            ["name"]= "Channelling Skill Damage",
+            ["name"]= "집중 유지 스킬 피해",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNode.png",
             ["stats"]= {
                 "Channelling Skills deal 12% increased Damage"
@@ -59555,14 +59555,14 @@ return {
         },
         [10576]= {
             ["skill"]= 10576,
-            ["name"]= "Channelling Skill Damage Mastery",
+            ["name"]= "집중 유지 스킬 피해 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryChannelling.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [27625]= {
             ["skill"]= 27625,
-            ["name"]= "Flask Duration",
+            ["name"]= "플라스크 지속시간",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FlaskDurationnode.png",
             ["stats"]= {
                 "6% increased Flask Effect Duration"
@@ -59570,14 +59570,14 @@ return {
         },
         [27397]= {
             ["skill"]= 27397,
-            ["name"]= "Flask Duration Mastery",
+            ["name"]= "플라스크 지속시간 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryFlasks.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [51042]= {
             ["skill"]= 51042,
-            ["name"]= "Life and Mana recovery from Flasks",
+            ["name"]= "플라스크의 생명력, 마나 회복",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecoverynode.png",
             ["stats"]= {
                 "10% increased Life Recovery from Flasks",
@@ -59586,14 +59586,14 @@ return {
         },
         [45259]= {
             ["skill"]= 45259,
-            ["name"]= "Life and Mana recovery from Flasks Mastery",
+            ["name"]= "플라스크의 생명력, 마나 회복 숙련",
             ["icon"]= "Art/2DArt/SkillIcons/passives/AltMasteryFlasks.png",
             ["isMastery"]= true,
             ["stats"]= {}
         },
         [47192]= {
             ["skill"]= 47192,
-            ["name"]= "Life",
+            ["name"]= "생명력",
             ["icon"]= "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNode.png",
             ["stats"]= {
                 "4% increased maximum Life"
@@ -59601,7 +59601,7 @@ return {
         },
         [38342]= {
             ["skill"]= 38342,
-            ["name"]= "Energy Shield",
+            ["name"]= "에너지 보호막",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EnergyShieldNode.png",
             ["stats"]= {
                 "6% increased maximum Energy Shield"
@@ -59609,7 +59609,7 @@ return {
         },
         [28321]= {
             ["skill"]= 28321,
-            ["name"]= "Mana",
+            ["name"]= "마나",
             ["icon"]= "Art/2DArt/SkillIcons/passives/MaxManaNode.png",
             ["stats"]= {
                 "6% increased maximum Mana"
@@ -59617,7 +59617,7 @@ return {
         },
         [3879]= {
             ["skill"]= 3879,
-            ["name"]= "Armour",
+            ["name"]= "방어도",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ArmourNode.png",
             ["stats"]= {
                 "15% increased Armour"
@@ -59625,7 +59625,7 @@ return {
         },
         [8073]= {
             ["skill"]= 8073,
-            ["name"]= "Evasion",
+            ["name"]= "회피",
             ["icon"]= "Art/2DArt/SkillIcons/passives/EvasionNode.png",
             ["stats"]= {
                 "15% increased Evasion Rating"
@@ -59633,7 +59633,7 @@ return {
         },
         [17271]= {
             ["skill"]= 17271,
-            ["name"]= "Chance to Block Attack Damage",
+            ["name"]= "공격 피해 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockAttackDmgNode.png",
             ["stats"]= {
                 "1% Chance to Block Attack Damage"
@@ -59641,7 +59641,7 @@ return {
         },
         [45180]= {
             ["skill"]= 45180,
-            ["name"]= "Chance to Block Spell Damage",
+            ["name"]= "주문 피해 막기 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/BlockSpellDmgNode.png",
             ["stats"]= {
                 "1% Chance to Block Spell Damage"
@@ -59649,7 +59649,7 @@ return {
         },
         [36551]= {
             ["skill"]= 36551,
-            ["name"]= "Fire Resistance",
+            ["name"]= "화염 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/FireResistNode.png",
             ["stats"]= {
                 "+15% to Fire Resistance"
@@ -59657,7 +59657,7 @@ return {
         },
         [37926]= {
             ["skill"]= 37926,
-            ["name"]= "Cold Resistance",
+            ["name"]= "냉기 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ColdResistNode.png",
             ["stats"]= {
                 "+15% to Cold Resistance"
@@ -59665,7 +59665,7 @@ return {
         },
         [65026]= {
             ["skill"]= 65026,
-            ["name"]= "Lightning Resistance",
+            ["name"]= "번개 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/LightningResistNode.png",
             ["stats"]= {
                 "+15% to Lightning Resistance"
@@ -59673,7 +59673,7 @@ return {
         },
         [28987]= {
             ["skill"]= 28987,
-            ["name"]= "Chaos Resistance",
+            ["name"]= "카오스 저항",
             ["icon"]= "Art/2DArt/SkillIcons/passives/ChaosResistNode.png",
             ["stats"]= {
                 "+12% to Chaos Resistance"
@@ -59681,7 +59681,7 @@ return {
         },
         [45284]= {
             ["skill"]= 45284,
-            ["name"]= "Chance to Dodge Attacks",
+            ["name"]= "공격 회피 확률",
             ["icon"]= "Art/2DArt/SkillIcons/passives/DodgeAtksNode.png",
             ["stats"]= {
                 "1% chance to Dodge Attack Hits"
@@ -59689,7 +59689,7 @@ return {
         },
         [65506]= {
             ["skill"]= 65506,
-            ["name"]= "Strength",
+            ["name"]= "힘",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusstrength.png",
             ["grantedStrength"]= 10,
             ["stats"]= {
@@ -59698,7 +59698,7 @@ return {
         },
         [52919]= {
             ["skill"]= 52919,
-            ["name"]= "Dexterity",
+            ["name"]= "민첩",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusdexterity.png",
             ["grantedDexterity"]= 10,
             ["stats"]= {
@@ -59707,7 +59707,7 @@ return {
         },
         [31472]= {
             ["skill"]= 31472,
-            ["name"]= "Intelligence",
+            ["name"]= "지능",
             ["icon"]= "Art/2DArt/SkillIcons/passives/plusintelligence.png",
             ["grantedIntelligence"]= 10,
             ["stats"]= {
