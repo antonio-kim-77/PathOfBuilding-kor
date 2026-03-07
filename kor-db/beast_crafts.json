@@ -1,0 +1,172 @@
+{
+  "GrantsCatAspectCrafted": {
+    "type": "Suffix",
+    "affix": "of Farrul",
+    "statOrder": [
+      609
+    ],
+    "level": 20,
+    "group": "GrantsCatAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 20 Aspect of the Cat Skill"
+    ]
+  },
+  "GrantsBirdAspectCrafted": {
+    "type": "Suffix",
+    "affix": "of Saqawal",
+    "statOrder": [
+      604
+    ],
+    "level": 20,
+    "group": "GrantsBirdAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 20 Aspect of the Avian Skill"
+    ]
+  },
+  "GrantsSpiderAspectCrafted": {
+    "type": "Suffix",
+    "affix": "of Fenumus",
+    "statOrder": [
+      634
+    ],
+    "level": 20,
+    "group": "GrantsSpiderAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 20 Aspect of the Spider Skill"
+    ]
+  },
+  "GrantsCrabAspectCrafted": {
+    "type": "Suffix",
+    "affix": "of Craiceann",
+    "statOrder": [
+      611
+    ],
+    "level": 20,
+    "group": "GrantsCrabAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "blue_herring",
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 20 Aspect of the Crab Skill"
+    ]
+  },
+  "GrantsCatAspectCrafted30": {
+    "type": "Suffix",
+    "affix": "of Farrul",
+    "statOrder": [
+      609
+    ],
+    "level": 20,
+    "group": "GrantsCatAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 30 Aspect of the Cat Skill"
+    ]
+  },
+  "GrantsBirdAspectCrafted30": {
+    "type": "Suffix",
+    "affix": "of Saqawal",
+    "statOrder": [
+      604
+    ],
+    "level": 20,
+    "group": "GrantsBirdAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 30 Aspect of the Avian Skill"
+    ]
+  },
+  "GrantsSpiderAspectCrafted30": {
+    "type": "Suffix",
+    "affix": "of Fenumus",
+    "statOrder": [
+      634
+    ],
+    "level": 20,
+    "group": "GrantsSpiderAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 30 Aspect of the Spider Skill"
+    ]
+  },
+  "GrantsCrabAspectCrafted30": {
+    "type": "Suffix",
+    "affix": "of Craiceann",
+    "statOrder": [
+      611
+    ],
+    "level": 20,
+    "group": "GrantsCrabAspect",
+    "weightKey": [
+      "default"
+    ],
+    "weightVal": [
+      0
+    ],
+    "modTags": [
+      "blue_herring",
+      "skill"
+    ],
+    "_array": [
+      "Grants Level 30 Aspect of the Crab Skill"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "베나리우스": {
+    "armourMult": 50,
+    "evasionMult": 0,
+    "isUber": true
+  },
+  "세계의 포식자": {
+    "armourMult": 0,
+    "evasionMult": 0,
+    "isUber": true
+  },
+  "작열의 총주교": {
+    "armourMult": 0,
+    "evasionMult": 50,
+    "isUber": true
+  },
+  "메이븐": {
+    "armourMult": 25,
+    "evasionMult": 0,
+    "isUber": true
+  },
+  "사이러스": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": true
+  },
+  "쉐이퍼": {
+    "armourMult": 0,
+    "evasionMult": 33,
+    "isUber": true
+  },
+  "엘더": {
+    "armourMult": 0,
+    "evasionMult": 33,
+    "isUber": true
+  },
+  "검은 별": {
+    "armourMult": 0,
+    "evasionMult": 50,
+    "isUber": false
+  },
+  "무한한 굶주림": {
+    "armourMult": 0,
+    "evasionMult": 0,
+    "isUber": false
+  },
+  "앗지리": {
+    "armourMult": 25,
+    "evasionMult": 50,
+    "isUber": false
+  },
+  "불사조": {
+    "armourMult": 50,
+    "evasionMult": 50,
+    "isUber": false
+  },
+  "히드라": {
+    "armourMult": 50,
+    "evasionMult": 100,
+    "isUber": false
+  },
+  "미노타우로스": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": false
+  },
+  "키메라": {
+    "armourMult": 50,
+    "evasionMult": 50,
+    "isUber": false
+  },
+  "노예술사": {
+    "armourMult": 75,
+    "evasionMult": 33,
+    "isUber": false
+  },
+  "근절자": {
+    "armourMult": 0,
+    "evasionMult": 33,
+    "isUber": false
+  },
+  "구렁이": {
+    "armourMult": 100,
+    "evasionMult": 33,
+    "isUber": false
+  },
+  "정화자": {
+    "armourMult": 75,
+    "evasionMult": 33,
+    "isUber": false
+  },
+  "바란": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": false
+  },
+  "베리타니아": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": false
+  },
+  "알 헤즈민": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": false
+  },
+  "드록스": {
+    "armourMult": 100,
+    "evasionMult": 0,
+    "isUber": false
+  }
+}

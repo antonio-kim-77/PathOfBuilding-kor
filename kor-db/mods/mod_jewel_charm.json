@@ -1,0 +1,5358 @@
+{
+  "AnimalCharmMovementSpeedCannotBeBelowBase": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      3108
+    ],
+    "level": 70,
+    "group": "AnimalCharmMovementSpeedCannotBeBelowBase",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Movement Speed cannot be modified to below Base Value"
+    ]
+  },
+  "AnimalCharmArmourAppliesToElementalDamage1": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      4653
+    ],
+    "level": 81,
+    "group": "AnimalCharmArmourAppliesToElementalDamage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      20,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "2% of Armour applies to Fire, Cold and Lightning Damage taken from Hits"
+    ]
+  },
+  "AnimalCharmArmourAppliesToElementalDamage2": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      4653
+    ],
+    "level": 83,
+    "group": "AnimalCharmArmourAppliesToElementalDamage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      10,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "3% of Armour applies to Fire, Cold and Lightning Damage taken from Hits"
+    ]
+  },
+  "AnimalCharmEnduranceChargeOnStun1": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      5590
+    ],
+    "level": 1,
+    "group": "AnimalCharmEnduranceChargeOnStun",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-19)% chance to gain an Endurance Charge when you Stun an Enemy"
+    ]
+  },
+  "AnimalCharmEnduranceChargeOnStun2": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      5590
+    ],
+    "level": 60,
+    "group": "AnimalCharmEnduranceChargeOnStun",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% chance to gain an Endurance Charge when you Stun an Enemy"
+    ]
+  },
+  "AnimalCharmAreaOfEffectPerEnduranceCharge1": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      4638
+    ],
+    "level": 1,
+    "group": "AnimalCharmAreaOfEffectPerEnduranceCharge",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-4)% increased Area of Effect per Endurance Charge"
+    ]
+  },
+  "AnimalCharmAreaOfEffectPerEnduranceCharge2": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      4638
+    ],
+    "level": 60,
+    "group": "AnimalCharmAreaOfEffectPerEnduranceCharge",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-6)% increased Area of Effect per Endurance Charge"
+    ]
+  },
+  "AnimalCharmEnchangeChargeWhenHit1": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      2664
+    ],
+    "level": 1,
+    "group": "AnimalCharmEnchangeChargeWhenHit",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-19)% chance to gain an Endurance Charge when you are Hit"
+    ]
+  },
+  "AnimalCharmEnchangeChargeWhenHit2": {
+    "type": "Prefix",
+    "affix": "Juggernaut's",
+    "statOrder": [
+      2664
+    ],
+    "level": 60,
+    "group": "AnimalCharmEnchangeChargeWhenHit",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% chance to gain an Endurance Charge when you are Hit"
+    ]
+  },
+  "AnimalCharmChaosResistancePerEnduranceCharge1": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      5642
+    ],
+    "level": 1,
+    "group": "AnimalCharmChaosResistancePerEnduranceCharge",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(2-3)% to Chaos Resistance per Endurance Charge"
+    ]
+  },
+  "AnimalCharmChaosResistancePerEnduranceCharge2": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      5642
+    ],
+    "level": 60,
+    "group": "AnimalCharmChaosResistancePerEnduranceCharge",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(4-5)% to Chaos Resistance per Endurance Charge"
+    ]
+  },
+  "AnimalCharmLIfeRegenerationRate1": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      1490
+    ],
+    "level": 45,
+    "group": "AnimalCharmLIfeRegenerationRate",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% increased Life Regeneration rate"
+    ]
+  },
+  "AnimalCharmLIfeRegenerationRate2": {
+    "type": "Suffix",
+    "affix": "of the Juggernaut",
+    "statOrder": [
+      1490
+    ],
+    "level": 72,
+    "group": "AnimalCharmLIfeRegenerationRate",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-20)% increased Life Regeneration rate"
+    ]
+  },
+  "AnimalCharmTotemTauntEnemiesWhenSummoned": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      10206
+    ],
+    "level": 45,
+    "group": "AnimalCharmTotemTauntEnemiesWhenSummoned",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Totems Taunt Enemies around them for 2 seconds when Summoned"
+    ]
+  },
+  "AnimalCharmTotemRecoup1": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      9638
+    ],
+    "level": 1,
+    "group": "AnimalCharmTotemRecoup",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recoup (5-7)% of Damage Taken by your Totems as Life"
+    ]
+  },
+  "AnimalCharmTotemRecoup2": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      9638
+    ],
+    "level": 60,
+    "group": "AnimalCharmTotemRecoup",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recoup (8-12)% of Damage Taken by your Totems as Life"
+    ]
+  },
+  "AnimalCharmFireExplode": {
+    "type": "Prefix",
+    "affix": "Chieftain's",
+    "statOrder": [
+      6409
+    ],
+    "level": 70,
+    "group": "AnimalCharmFireExplode",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Enemies you or your Totems Kill have 1% chance to Explode, dealing 500% of their maximum Life as Fire Damage"
+    ]
+  },
+  "AnimalCharmAshOnHittingRareUniqueEnemy1": {
+    "type": "Prefix",
+    "affix": "Chieftain's",
+    "statOrder": [
+      4600
+    ],
+    "level": 45,
+    "group": "AnimalCharmAshOnHittingRareUniqueEnemy",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-10)% chance to Cover Rare or Unique Enemies in Ash for 10 Seconds on Hit"
+    ]
+  },
+  "AnimalCharmAshOnHittingRareUniqueEnemy2": {
+    "type": "Prefix",
+    "affix": "Chieftain's",
+    "statOrder": [
+      4600
+    ],
+    "level": 72,
+    "group": "AnimalCharmAshOnHittingRareUniqueEnemy",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(11-20)% chance to Cover Rare or Unique Enemies in Ash for 10 Seconds on Hit"
+    ]
+  },
+  "AnimalCharmStrengthPercent1": {
+    "type": "Prefix",
+    "affix": "Chieftain's",
+    "statOrder": [
+      1097
+    ],
+    "level": 1,
+    "group": "AnimalCharmStrengthPercent",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-5)% increased Strength"
+    ]
+  },
+  "AnimalCharmStrengthPercent2": {
+    "type": "Prefix",
+    "affix": "Chieftain's",
+    "statOrder": [
+      1097
+    ],
+    "level": 60,
+    "group": "AnimalCharmStrengthPercent",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-8)% increased Strength"
+    ]
+  },
+  "AnimalCharmMaximumFireDamageResistance1": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      1536
+    ],
+    "level": 45,
+    "group": "AnimalCharmMaximumFireDamageResistance",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+1% to maximum Fire Resistance"
+    ]
+  },
+  "AnimalCharmMaximumFireDamageResistance2": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      1536
+    ],
+    "level": 72,
+    "group": "AnimalCharmMaximumFireDamageResistance",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+2% to maximum Fire Resistance"
+    ]
+  },
+  "AnimalCharmIgniteDurationOnSelf1": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      1788
+    ],
+    "level": 1,
+    "group": "AnimalCharmIgniteDurationOnSelf",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% reduced Ignite Duration on you"
+    ]
+  },
+  "AnimalCharmIgniteDurationOnSelf2": {
+    "type": "Suffix",
+    "affix": "of the Chieftain",
+    "statOrder": [
+      1788
+    ],
+    "level": 60,
+    "group": "AnimalCharmIgniteDurationOnSelf",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(31-50)% reduced Ignite Duration on you"
+    ]
+  },
+  "AnimalCharmStunImmuneWith25Rage": {
+    "type": "Suffix",
+    "affix": "of the Berserker",
+    "statOrder": [
+      9593
+    ],
+    "level": 45,
+    "group": "AnimalCharmStunImmuneWith25Rage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot be Stunned while you have at least 25 Rage"
+    ]
+  },
+  "AnimalCharmAddedPhysicalDamageIfCritRecently1": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9069
+    ],
+    "level": 1,
+    "group": "AnimalCharmAddedPhysicalDamageIfCritRecently",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Adds (5-7) to (14-17) Physical Damage if you've dealt a Critical Strike Recently"
+    ]
+  },
+  "AnimalCharmAddedPhysicalDamageIfCritRecently2": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9069
+    ],
+    "level": 60,
+    "group": "AnimalCharmAddedPhysicalDamageIfCritRecently",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Adds (8-12) to (18-22) Physical Damage if you've dealt a Critical Strike Recently"
+    ]
+  },
+  "AnimalCharmMaximumRage1": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9587
+    ],
+    "level": 1,
+    "group": "AnimalCharmMaximumRage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(2-3) to Maximum Rage"
+    ]
+  },
+  "AnimalCharmMaximumRage2": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9587
+    ],
+    "level": 60,
+    "group": "AnimalCharmMaximumRage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(4-5) to Maximum Rage"
+    ]
+  },
+  "AnimalCharmWarcriesGrantRage1": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      4970
+    ],
+    "level": 1,
+    "group": "AnimalCharmWarcriesGrantRage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Warcries grant (2-3) Rage per 5 Power if you have less than 25 Rage"
+    ]
+  },
+  "AnimalCharmWarcriesGrantRage2": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      4970
+    ],
+    "level": 60,
+    "group": "AnimalCharmWarcriesGrantRage",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Warcries grant (4-5) Rage per 5 Power if you have less than 25 Rage"
+    ]
+  },
+  "AnimalCharmLeechPercentIsInstant1": {
+    "type": "Suffix",
+    "affix": "of the Berserker",
+    "statOrder": [
+      7208
+    ],
+    "level": 45,
+    "group": "AnimalCharmLeechPercentIsInstant",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-5)% of Leech is Instant"
+    ]
+  },
+  "AnimalCharmLeechPercentIsInstant2": {
+    "type": "Suffix",
+    "affix": "of the Berserker",
+    "statOrder": [
+      7208
+    ],
+    "level": 72,
+    "group": "AnimalCharmLeechPercentIsInstant",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-8)% of Leech is Instant"
+    ]
+  },
+  "AnimalCharmLeechIfKilledRecently1": {
+    "type": "Suffix",
+    "affix": "of the Berserker",
+    "statOrder": [
+      7215
+    ],
+    "level": 1,
+    "group": "AnimalCharmLeechIfKilledRecently",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "1% of Attack Damage Leeched as Life and Mana if you've Killed Recently"
+    ]
+  },
+  "AnimalCharmLeechIfKilledRecently2": {
+    "type": "Suffix",
+    "affix": "of the Berserker",
+    "statOrder": [
+      7215
+    ],
+    "level": 60,
+    "group": "AnimalCharmLeechIfKilledRecently",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "2% of Attack Damage Leeched as Life and Mana if you've Killed Recently"
+    ]
+  },
+  "AnimalCharmCorpseExplodeOnWarcry1": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9258
+    ],
+    "level": 70,
+    "group": "AnimalCharmCorpseExplodeOnWarcry",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Nearby corpses Explode when you Warcry, dealing (3-4)% of their Life as Physical Damage"
+    ]
+  },
+  "AnimalCharmCorpseExplodeOnWarcry2": {
+    "type": "Prefix",
+    "affix": "Berserker's",
+    "statOrder": [
+      9258
+    ],
+    "level": 81,
+    "group": "AnimalCharmCorpseExplodeOnWarcry",
+    "weightKey": [
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Nearby corpses Explode when you Warcry, dealing (5-6)% of their Life as Physical Damage"
+    ]
+  },
+  "AnimalCharmStunImmuneWhileFortified": {
+    "type": "Suffix",
+    "affix": "of the Champion",
+    "statOrder": [
+      5323
+    ],
+    "level": 70,
+    "group": "AnimalCharmStunImmuneWhileFortified",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot be Stunned while Fortified"
+    ]
+  },
+  "AnimalCharmTauntOnHitChance1": {
+    "type": "Prefix",
+    "affix": "Champion's",
+    "statOrder": [
+      3342
+    ],
+    "level": 1,
+    "group": "AnimalCharmTauntOnHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-19)% chance to Taunt on Hit"
+    ]
+  },
+  "AnimalCharmTauntOnHitChance2": {
+    "type": "Prefix",
+    "affix": "Champion's",
+    "statOrder": [
+      3342
+    ],
+    "level": 60,
+    "group": "AnimalCharmTauntOnHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% chance to Taunt on Hit"
+    ]
+  },
+  "AnimalCharmBannersNoReservation": {
+    "type": "Prefix",
+    "affix": "Champion's",
+    "statOrder": [
+      4880
+    ],
+    "level": 45,
+    "group": "AnimalCharmBannersNoReservation",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Banner Skills have no Reservation"
+    ]
+  },
+  "AnimalCharmRecoverBannerStagesOnPlacingBanner1": {
+    "type": "Suffix",
+    "affix": "of the Champion",
+    "statOrder": [
+      9364
+    ],
+    "level": 1,
+    "group": "AnimalCharmRecoverBannerStagesOnPlacingBanner",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "When you leave your Banner's Area, recover (10-15)% of the Valour consumed for that Banner"
+    ]
+  },
+  "AnimalCharmRecoverBannerStagesOnPlacingBanner2": {
+    "type": "Suffix",
+    "affix": "of the Champion",
+    "statOrder": [
+      9364
+    ],
+    "level": 60,
+    "group": "AnimalCharmRecoverBannerStagesOnPlacingBanner",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "When you leave your Banner's Area, recover (16-25)% of the Valour consumed for that Banner"
+    ]
+  },
+  "AnimalCharmGainAdrenalineOnReachingLowLife": {
+    "type": "Prefix",
+    "affix": "Champion's",
+    "statOrder": [
+      6608
+    ],
+    "level": 70,
+    "group": "AnimalCharmGainAdrenalineOnReachingLowLife",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain Adrenaline for 4 seconds when you reach Low Life"
+    ]
+  },
+  "AnimalCharmImpaleLastsForExtraHits": {
+    "type": "Prefix",
+    "affix": "Champion's",
+    "statOrder": [
+      7129
+    ],
+    "level": 81,
+    "group": "AnimalCharmImpaleLastsForExtraHits",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      10,
+      10,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Impales you inflict last 1 additional Hit"
+    ]
+  },
+  "AnimalCharmFortifyOnMeleeHitChance1": {
+    "type": "Suffix",
+    "affix": "of the Champion",
+    "statOrder": [
+      2175
+    ],
+    "level": 45,
+    "group": "AnimalCharmFortifyOnMeleeHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Melee Hits have (5-10)% chance to Fortify"
+    ]
+  },
+  "AnimalCharmFortifyOnMeleeHitChance2": {
+    "type": "Suffix",
+    "affix": "of the Champion",
+    "statOrder": [
+      2175
+    ],
+    "level": 72,
+    "group": "AnimalCharmFortifyOnMeleeHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Melee Hits have (11-20)% chance to Fortify"
+    ]
+  },
+  "AnimalCharmBleedExplode1": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      3393,
+      3393.1
+    ],
+    "level": 70,
+    "group": "AnimalCharmBleedExplode",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Bleeding Enemies you Kill Explode, dealing (2-3)% of",
+      "their Maximum Life as Physical Damage"
+    ]
+  },
+  "AnimalCharmBleedExplode2": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      3393,
+      3393.1
+    ],
+    "level": 81,
+    "group": "AnimalCharmBleedExplode",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      25,
+      25,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Bleeding Enemies you Kill Explode, dealing (4-5)% of",
+      "their Maximum Life as Physical Damage"
+    ]
+  },
+  "AnimalCharmBlindOnHitVsBleedingEnemies1": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      4743
+    ],
+    "level": 1,
+    "group": "AnimalCharmBlindOnHitVsBleedingEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Attack Hits against Bleeding Enemies have (10-19)% chance to Blind"
+    ]
+  },
+  "AnimalCharmBlindOnHitVsBleedingEnemies2": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      4743
+    ],
+    "level": 60,
+    "group": "AnimalCharmBlindOnHitVsBleedingEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Attack Hits against Bleeding Enemies have (20-30)% chance to Blind"
+    ]
+  },
+  "AnimalCharmMaimOnHitVsBlindedEnemies1": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      4744
+    ],
+    "level": 1,
+    "group": "AnimalCharmMaimOnHitVsBlindedEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Attack Hits against Blinded Enemies have (10-19)% chance to Maim"
+    ]
+  },
+  "AnimalCharmMaimOnHitVsBlindedEnemies2": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      4744
+    ],
+    "level": 60,
+    "group": "AnimalCharmMaimOnHitVsBlindedEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Attack Hits against Blinded Enemies have (20-30)% chance to Maim"
+    ]
+  },
+  "AnimalCharmStunImmuneAgainstBlockedHits": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      5314
+    ],
+    "level": 45,
+    "group": "AnimalCharmStunImmuneAgainstBlockedHits",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot be Stunned by Hits you Block"
+    ]
+  },
+  "AnimalCharmMaximumBlock1": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      1899
+    ],
+    "level": 45,
+    "group": "AnimalCharmMaximumBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(1-2)% to maximum Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmMaximumBlock2": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      1899
+    ],
+    "level": 72,
+    "group": "AnimalCharmMaximumBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+3% to maximum Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmOverwhelmIfBlockedinPast20Seconds": {
+    "type": "Prefix",
+    "affix": "Gladiator's",
+    "statOrder": [
+      7044
+    ],
+    "level": 1,
+    "group": "AnimalCharmOverwhelmIfBlockedinPast20Seconds",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Hits ignore Enemy Physical Damage Reduction if you've Blocked in the past 20 seconds"
+    ]
+  },
+  "AnimalCharmArmourAndEvasionPerBlock1": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      4662
+    ],
+    "level": 1,
+    "group": "AnimalCharmArmourAndEvasionPerBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(3-4) to Armour and Evasion Rating per 1% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmArmourAndEvasionPerBlock2": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      4662
+    ],
+    "level": 60,
+    "group": "AnimalCharmArmourAndEvasionPerBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(5-6) to Armour and Evasion Rating per 1% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmAttackBlock1": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      2369
+    ],
+    "level": 1,
+    "group": "AnimalCharmAttackBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(3-4)% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmAttackBlock2": {
+    "type": "Suffix",
+    "affix": "of the Gladiator",
+    "statOrder": [
+      2369
+    ],
+    "level": 60,
+    "group": "AnimalCharmAttackBlock",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(5-6)% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmAttackSpeedOnKillingRareUnique1": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      6629
+    ],
+    "level": 1,
+    "group": "AnimalCharmAttackSpeedOnKillingRareUnique",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (4-7)% increased Attack Speed for 20 seconds when you Kill a Rare or Unique Enemy"
+    ]
+  },
+  "AnimalCharmAttackSpeedOnKillingRareUnique2": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      6629
+    ],
+    "level": 60,
+    "group": "AnimalCharmAttackSpeedOnKillingRareUnique",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (8-12)% increased Attack Speed for 20 seconds when you Kill a Rare or Unique Enemy"
+    ]
+  },
+  "AnimalCharmPhysicalReflectImmune": {
+    "type": "Suffix",
+    "affix": "of the Slayer",
+    "statOrder": [
+      5344
+    ],
+    "level": 45,
+    "group": "AnimalCharmPhysicalReflectImmune",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot take Reflected Physical Damage"
+    ]
+  },
+  "AnimalCharmStunImmuneWhileLeeching": {
+    "type": "Suffix",
+    "affix": "of the Slayer",
+    "statOrder": [
+      3124
+    ],
+    "level": 70,
+    "group": "AnimalCharmStunImmuneWhileLeeching",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot be Stunned while Leeching"
+    ]
+  },
+  "AnimalCharmUnaffectedbyBleedingWhileLeeching": {
+    "type": "Suffix",
+    "affix": "of the Slayer",
+    "statOrder": [
+      10252
+    ],
+    "level": 70,
+    "group": "AnimalCharmUnaffectedbyBleedingWhileLeeching",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "You are Unaffected by Bleeding while Leeching"
+    ]
+  },
+  "AnimalCharmOverkillLeech1": {
+    "type": "Suffix",
+    "affix": "of the Slayer",
+    "statOrder": [
+      3121
+    ],
+    "level": 1,
+    "group": "AnimalCharmOverkillLeech",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(4-7)% of Overkill Damage is Leeched as Life"
+    ]
+  },
+  "AnimalCharmOverkillLeech2": {
+    "type": "Suffix",
+    "affix": "of the Slayer",
+    "statOrder": [
+      3121
+    ],
+    "level": 60,
+    "group": "AnimalCharmOverkillLeech",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(8-12)% of Overkill Damage is Leeched as Life"
+    ]
+  },
+  "AnimalCharmMaximumAmountPerLifeLeech1": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      1637
+    ],
+    "level": 45,
+    "group": "AnimalCharmMaximumAmountPerLifeLeech",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-20)% increased Maximum Recovery per Life Leech"
+    ]
+  },
+  "AnimalCharmMaximumAmountPerLifeLeech2": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      1637
+    ],
+    "level": 72,
+    "group": "AnimalCharmMaximumAmountPerLifeLeech",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(21-30)% increased Maximum Recovery per Life Leech"
+    ]
+  },
+  "AnimalCharmAreaOfEffectIfKilledRecently1": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      4130
+    ],
+    "level": 1,
+    "group": "AnimalCharmAreaOfEffectIfKilledRecently",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(4-7)% increased Area of Effect if you've Killed Recently"
+    ]
+  },
+  "AnimalCharmAreaOfEffectIfKilledRecently2": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      4130
+    ],
+    "level": 60,
+    "group": "AnimalCharmAreaOfEffectIfKilledRecently",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(8-12)% increased Area of Effect if you've Killed Recently"
+    ]
+  },
+  "AnimalCharmCullingStrike": {
+    "type": "Prefix",
+    "affix": "Slayer's",
+    "statOrder": [
+      1950
+    ],
+    "level": 45,
+    "group": "AnimalCharmCullingStrike",
+    "weightKey": [
+      "dex_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Culling Strike"
+    ]
+  },
+  "AnimalCharmStrengthAndIntelligence1": {
+    "type": "Suffix",
+    "affix": "of the Inquisitor",
+    "statOrder": [
+      388
+    ],
+    "level": 1,
+    "group": "AnimalCharmStrengthAndIntelligence",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(20-30) to Strength and Intelligence"
+    ]
+  },
+  "AnimalCharmStrengthAndIntelligence2": {
+    "type": "Suffix",
+    "affix": "of the Inquisitor",
+    "statOrder": [
+      388
+    ],
+    "level": 60,
+    "group": "AnimalCharmStrengthAndIntelligence",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(31-40) to Strength and Intelligence"
+    ]
+  },
+  "AnimalCharmCriticalStrikesNonDamagingAilmentEffect1": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      9313
+    ],
+    "level": 1,
+    "group": "AnimalCharmCriticalStrikesNonDamagingAilmentEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% increased Effect of non-Damaging Ailments you inflict with Critical Strikes"
+    ]
+  },
+  "AnimalCharmCriticalStrikesNonDamagingAilmentEffect2": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      9313
+    ],
+    "level": 60,
+    "group": "AnimalCharmCriticalStrikesNonDamagingAilmentEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(31-40)% increased Effect of non-Damaging Ailments you inflict with Critical Strikes"
+    ]
+  },
+  "AnimalCharmConsecratedGroundLingerDuration": {
+    "type": "Suffix",
+    "affix": "of the Inquisitor",
+    "statOrder": [
+      10481
+    ],
+    "level": 70,
+    "group": "AnimalCharmConsecratedGroundLingerDuration",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Effects of Consecrated Ground you create Linger for 2 seconds"
+    ]
+  },
+  "AnimalCharmConsecratedGroundDamageTaken1": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      5752
+    ],
+    "level": 45,
+    "group": "AnimalCharmConsecratedGroundDamageTaken",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Consecrated Ground you create applies (5-6)% increased Damage taken to Enemies"
+    ]
+  },
+  "AnimalCharmConsecratedGroundDamageTaken2": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      5752
+    ],
+    "level": 72,
+    "group": "AnimalCharmConsecratedGroundDamageTaken",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Consecrated Ground you create applies (7-10)% increased Damage taken to Enemies"
+    ]
+  },
+  "AnimalCharmElementalPenetration1": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      3471
+    ],
+    "level": 1,
+    "group": "AnimalCharmElementalPenetration",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Damage Penetrates (3-4)% of Enemy Elemental Resistances"
+    ]
+  },
+  "AnimalCharmElementalPenetration2": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      3471
+    ],
+    "level": 60,
+    "group": "AnimalCharmElementalPenetration",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Damage Penetrates (5-6)% of Enemy Elemental Resistances"
+    ]
+  },
+  "AnimalCharmConsecratedGroundVsRareUnique1": {
+    "type": "Suffix",
+    "affix": "of the Inquisitor",
+    "statOrder": [
+      5806
+    ],
+    "level": 1,
+    "group": "AnimalCharmConsecratedGroundVsRareUnique",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-19)% chance to create Consecrated Ground when you Hit a Rare or Unique Enemy, lasting 8 seconds"
+    ]
+  },
+  "AnimalCharmConsecratedGroundVsRareUnique2": {
+    "type": "Suffix",
+    "affix": "of the Inquisitor",
+    "statOrder": [
+      5806
+    ],
+    "level": 60,
+    "group": "AnimalCharmConsecratedGroundVsRareUnique",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% chance to create Consecrated Ground when you Hit a Rare or Unique Enemy, lasting 8 seconds"
+    ]
+  },
+  "AnimalCharmCriticalStrikeChanceIfNotCritRecently1": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      5830
+    ],
+    "level": 1,
+    "group": "AnimalCharmCriticalStrikeChanceIfNotCritRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(50-70)% increased Critical Strike Chance if you haven't dealt a Critical Strike Recently"
+    ]
+  },
+  "AnimalCharmCriticalStrikeChanceIfNotCritRecently2": {
+    "type": "Prefix",
+    "affix": "Inquisitor's",
+    "statOrder": [
+      5830
+    ],
+    "level": 60,
+    "group": "AnimalCharmCriticalStrikeChanceIfNotCritRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(71-100)% increased Critical Strike Chance if you haven't dealt a Critical Strike Recently"
+    ]
+  },
+  "AnimalCharmDamageRemovedFromManaBeforeLife1": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      2610
+    ],
+    "level": 70,
+    "group": "AnimalCharmDamageRemovedFromManaBeforeLife",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(1-2)% of Damage is taken from Mana before Life"
+    ]
+  },
+  "AnimalCharmDamageRemovedFromManaBeforeLife2": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      2610
+    ],
+    "level": 81,
+    "group": "AnimalCharmDamageRemovedFromManaBeforeLife",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      25,
+      25,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "3% of Damage is taken from Mana before Life"
+    ]
+  },
+  "AnimalCharmManaReservationEfficiency1": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      2139
+    ],
+    "level": 45,
+    "group": "AnimalCharmManaReservationEfficiency",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(4-7)% increased Mana Reservation Efficiency of Skills"
+    ]
+  },
+  "AnimalCharmManaReservationEfficiency2": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      2139
+    ],
+    "level": 72,
+    "group": "AnimalCharmManaReservationEfficiency",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(8-12)% increased Mana Reservation Efficiency of Skills"
+    ]
+  },
+  "AnimalCharmManaToAddAsExtraEnergyShield1": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      2086
+    ],
+    "level": 1,
+    "group": "AnimalCharmManaToAddAsExtraEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (2-3)% of Maximum Mana as Extra Maximum Energy Shield"
+    ]
+  },
+  "AnimalCharmManaToAddAsExtraEnergyShield2": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      2086
+    ],
+    "level": 60,
+    "group": "AnimalCharmManaToAddAsExtraEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (4-5)% of Maximum Mana as Extra Maximum Energy Shield"
+    ]
+  },
+  "AnimalCharmArcaneSurgeOnHit": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      6624
+    ],
+    "level": 70,
+    "group": "AnimalCharmArcaneSurgeOnHit",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain Arcane Surge when you or your Totems Hit an Enemy with a Spell"
+    ]
+  },
+  "AnimalCharmNonDamagingAilmentEffectOnSelfWithArcaneSurge1": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      4242
+    ],
+    "level": 1,
+    "group": "AnimalCharmNonDamagingAilmentEffectOnSelfWithArcaneSurge",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Non-Damaging Ailments have (20-30)% reduced Effect on you while you have Arcane Surge"
+    ]
+  },
+  "AnimalCharmNonDamagingAilmentEffectOnSelfWithArcaneSurge2": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      4242
+    ],
+    "level": 60,
+    "group": "AnimalCharmNonDamagingAilmentEffectOnSelfWithArcaneSurge",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Non-Damaging Ailments have (31-40)% reduced Effect on you while you have Arcane Surge"
+    ]
+  },
+  "AnimalCharmDamageRemovedFromTotemLifeBeforeSelf1": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      5995
+    ],
+    "level": 1,
+    "group": "AnimalCharmDamageRemovedFromTotemLifeBeforeSelf",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(1-2)% of Damage from Hits is taken from your nearest Totem's Life before you"
+    ]
+  },
+  "AnimalCharmDamageRemovedFromTotemLifeBeforeSelf2": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      5995
+    ],
+    "level": 60,
+    "group": "AnimalCharmDamageRemovedFromTotemLifeBeforeSelf",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "3% of Damage from Hits is taken from your nearest Totem's Life before you"
+    ]
+  },
+  "AnimalCharmMinimumEnduranceAndPowerCharges": {
+    "type": "Suffix",
+    "affix": "of the Hierophant",
+    "statOrder": [
+      1716,
+      1726
+    ],
+    "level": 70,
+    "group": "AnimalCharmMinimumEnduranceAndPowerCharges",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+1 to Minimum Endurance Charges",
+      "+1 to Minimum Power Charges"
+    ]
+  },
+  "AnimalCharmChanceToSummonTwoTotems1": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      5626
+    ],
+    "level": 1,
+    "group": "AnimalCharmChanceToSummonTwoTotems",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Skills that Summon a Totem have (20-30)% chance to Summon two Totems instead of one"
+    ]
+  },
+  "AnimalCharmChanceToSummonTwoTotems2": {
+    "type": "Prefix",
+    "affix": "Hierophant's",
+    "statOrder": [
+      5626
+    ],
+    "level": 60,
+    "group": "AnimalCharmChanceToSummonTwoTotems",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Skills that Summon a Totem have (31-50)% chance to Summon two Totems instead of one"
+    ]
+  },
+  "AnimalCharmBlockChanceIfAttackedRecently1": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      10431
+    ],
+    "level": 1,
+    "group": "AnimalCharmBlockChanceIfAttackedRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "If you've Attacked Recently, you and nearby Allies have +(4-5)% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmBlockChanceIfAttackedRecently2": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      10431
+    ],
+    "level": 60,
+    "group": "AnimalCharmBlockChanceIfAttackedRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "If you've Attacked Recently, you and nearby Allies have +(6-8)% Chance to Block Attack Damage"
+    ]
+  },
+  "AnimalCharmSpellBlockChanceIfCastSpellRecently1": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      10432
+    ],
+    "level": 1,
+    "group": "AnimalCharmSpellBlockChanceIfCastSpellRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "If you've Cast a Spell Recently, you and nearby Allies have +(4-5)% Chance to Block Spell Damage"
+    ]
+  },
+  "AnimalCharmSpellBlockChanceIfCastSpellRecently2": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      10432
+    ],
+    "level": 60,
+    "group": "AnimalCharmSpellBlockChanceIfCastSpellRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "If you've Cast a Spell Recently, you and nearby Allies have +(6-8)% Chance to Block Spell Damage"
+    ]
+  },
+  "AnimalCharmRemoveCursesAndAilmentsEvery10seconds": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      3697
+    ],
+    "level": 45,
+    "group": "AnimalCharmRemoveCursesAndAilmentsEvery10seconds",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Every 4 seconds, remove Curses and Elemental Ailments from you"
+    ]
+  },
+  "AnimalCharmReservedManaGrantedAsArmour1": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      3695
+    ],
+    "level": 45,
+    "group": "AnimalCharmReservedManaGrantedAsArmour",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Grants Armour equal to (3-4)% of your Reserved Mana to you and nearby Allies"
+    ]
+  },
+  "AnimalCharmReservedManaGrantedAsArmour2": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      3695
+    ],
+    "level": 72,
+    "group": "AnimalCharmReservedManaGrantedAsArmour",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Grants Armour equal to (5-6)% of your Reserved Mana to you and nearby Allies"
+    ]
+  },
+  "AnimalCharmEnemiesInLinkBeamCannotInflictElementalAilments": {
+    "type": "Suffix",
+    "affix": "of the Guardian",
+    "statOrder": [
+      7368
+    ],
+    "level": 45,
+    "group": "AnimalCharmEnemiesInLinkBeamCannotInflictElementalAilments",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Enemies in your Link Beams cannot apply Elemental Ailments"
+    ]
+  },
+  "AnimalCharmLifeRegenerationForASecondEvery10Seconds1": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      3698
+    ],
+    "level": 1,
+    "group": "AnimalCharmLifeRegenerationForASecondEvery10Seconds",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Every 4 seconds, Regenerate 10% of Life over one second"
+    ]
+  },
+  "AnimalCharmLifeRegenerationForASecondEvery10Seconds2": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      3698
+    ],
+    "level": 60,
+    "group": "AnimalCharmLifeRegenerationForASecondEvery10Seconds",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Every 4 seconds, Regenerate 20% of Life over one second"
+    ]
+  },
+  "AnimalCharmNearbyEnemiesCannotGainCharges": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      3693
+    ],
+    "level": 45,
+    "group": "AnimalCharmNearbyEnemiesCannotGainCharges",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Nearby Enemies cannot gain Power, Frenzy or Endurance Charges"
+    ]
+  },
+  "AnimalCharmNearbyAlliesHaveOnslaughtIfYouHaveAtLeast5Nearby": {
+    "type": "Prefix",
+    "affix": "Guardian's",
+    "statOrder": [
+      6808
+    ],
+    "level": 45,
+    "group": "AnimalCharmNearbyAlliesHaveOnslaughtIfYouHaveAtLeast5Nearby",
+    "weightKey": [
+      "int_animal_charm",
+      "str_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "While there are at least five nearby Allies, you and nearby Allies have Onslaught"
+    ]
+  },
+  "AnimalCharmExposureExtraResistance1": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      6416
+    ],
+    "level": 1,
+    "group": "AnimalCharmExposureExtraResistance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Exposure you inflict applies an extra -(5-4)% to the affected Resistance"
+    ]
+  },
+  "AnimalCharmExposureExtraResistance2": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      6416
+    ],
+    "level": 60,
+    "group": "AnimalCharmExposureExtraResistance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Exposure you inflict applies an extra -(7-6)% to the affected Resistance"
+    ]
+  },
+  "AnimalCharmAllDamageCanIgnite": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      4531
+    ],
+    "level": 81,
+    "group": "AnimalCharmAllDamageCanIgnite",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      20,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "All Damage can Ignite"
+    ]
+  },
+  "AnimalCharmShockMinimumDamageIncrease1": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      4353
+    ],
+    "level": 45,
+    "group": "AnimalCharmShockMinimumDamageIncrease",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Shocks from your Hits always increase Damage taken by at least (5-7)%"
+    ]
+  },
+  "AnimalCharmShockMinimumDamageIncrease2": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      4353
+    ],
+    "level": 72,
+    "group": "AnimalCharmShockMinimumDamageIncrease",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Shocks from your Hits always increase Damage taken by at least (8-10)%"
+    ]
+  },
+  "AnimalCharmChillMinimumSlow1": {
+    "type": "Suffix",
+    "affix": "of the Elementalist",
+    "statOrder": [
+      4351
+    ],
+    "level": 45,
+    "group": "AnimalCharmChillMinimumSlow",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Chills from your Hits always reduce Action Speed by at least (3-4)%"
+    ]
+  },
+  "AnimalCharmChillMinimumSlow2": {
+    "type": "Suffix",
+    "affix": "of the Elementalist",
+    "statOrder": [
+      4351
+    ],
+    "level": 72,
+    "group": "AnimalCharmChillMinimumSlow",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Chills from your Hits always reduce Action Speed by at least (5-6)%"
+    ]
+  },
+  "AnimalCharmGolemBuffEffect1": {
+    "type": "Suffix",
+    "affix": "of the Elementalist",
+    "statOrder": [
+      6777
+    ],
+    "level": 1,
+    "group": "AnimalCharmGolemBuffEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(15-20)% increased Effect of Buffs granted by your Golems"
+    ]
+  },
+  "AnimalCharmGolemBuffEffect2": {
+    "type": "Suffix",
+    "affix": "of the Elementalist",
+    "statOrder": [
+      6777
+    ],
+    "level": 60,
+    "group": "AnimalCharmGolemBuffEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(21-35)% increased Effect of Buffs granted by your Golems"
+    ]
+  },
+  "AnimalCharmIgniteFreezeShockChance1": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      2714
+    ],
+    "level": 1,
+    "group": "AnimalCharmIgniteFreezeShockChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% chance to Freeze, Shock and Ignite"
+    ]
+  },
+  "AnimalCharmIgniteFreezeShockChance2": {
+    "type": "Prefix",
+    "affix": "Elementalist's",
+    "statOrder": [
+      2714
+    ],
+    "level": 60,
+    "group": "AnimalCharmIgniteFreezeShockChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% chance to Freeze, Shock and Ignite"
+    ]
+  },
+  "AnimalCharmElementalReflectImmune": {
+    "type": "Suffix",
+    "affix": "of the Elementalist",
+    "statOrder": [
+      5343
+    ],
+    "level": 45,
+    "group": "AnimalCharmElementalReflectImmune",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot take Reflected Elemental Damage"
+    ]
+  },
+  "AnimalCharmIgnoreHexproofEnemies": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      2511
+    ],
+    "level": 45,
+    "group": "AnimalCharmIgnoreHexproofEnemies",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Your Hexes can affect Hexproof Enemies"
+    ]
+  },
+  "AnimalCharmChaosExplode1": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      3218
+    ],
+    "level": 70,
+    "group": "AnimalCharmChaosExplode",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cursed Enemies you or your Minions Kill have a (6-10)% chance to Explode, dealing a quarter of their maximum Life as Chaos Damage"
+    ]
+  },
+  "AnimalCharmChaosExplode2": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      3218
+    ],
+    "level": 81,
+    "group": "AnimalCharmChaosExplode",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cursed Enemies you or your Minions Kill have a (11-15)% chance to Explode, dealing a quarter of their maximum Life as Chaos Damage"
+    ]
+  },
+  "AnimalCharmAreaofEffectPerPowerCharge1": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      2040
+    ],
+    "level": 1,
+    "group": "AnimalCharmAreaofEffectPerPowerCharge",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(2-3)% increased Area of Effect per Power Charge"
+    ]
+  },
+  "AnimalCharmAreaofEffectPerPowerCharge2": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      2040
+    ],
+    "level": 60,
+    "group": "AnimalCharmAreaofEffectPerPowerCharge",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "4% increased Area of Effect per Power Charge"
+    ]
+  },
+  "AnimalCharmCurseEffect1": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      2507
+    ],
+    "level": 1,
+    "group": "AnimalCharmCurseEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-5)% increased Effect of your Curses"
+    ]
+  },
+  "AnimalCharmCurseEffect2": {
+    "type": "Prefix",
+    "affix": "Occultist's",
+    "statOrder": [
+      2507
+    ],
+    "level": 60,
+    "group": "AnimalCharmCurseEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-8)% increased Effect of your Curses"
+    ]
+  },
+  "AnimalCharmNearbyEnemiesAreChilled": {
+    "type": "Suffix",
+    "affix": "of the Occultist",
+    "statOrder": [
+      9261
+    ],
+    "level": 70,
+    "group": "AnimalCharmNearbyEnemiesAreChilled",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Nearby Enemies are Chilled"
+    ]
+  },
+  "AnimalCharmEnergyShieldRegeneration1": {
+    "type": "Suffix",
+    "affix": "of the Occultist",
+    "statOrder": [
+      2556
+    ],
+    "level": 1,
+    "group": "AnimalCharmEnergyShieldRegeneration",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (1-1.5)% of Energy Shield per second"
+    ]
+  },
+  "AnimalCharmEnergyShieldRegeneration2": {
+    "type": "Suffix",
+    "affix": "of the Occultist",
+    "statOrder": [
+      2556
+    ],
+    "level": 60,
+    "group": "AnimalCharmEnergyShieldRegeneration",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (2-3)% of Energy Shield per second"
+    ]
+  },
+  "AnimalCharmSpellHinderOnHitChance1": {
+    "type": "Suffix",
+    "affix": "of the Occultist",
+    "statOrder": [
+      9987
+    ],
+    "level": 1,
+    "group": "AnimalCharmSpellHinderOnHitChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-19)% chance to Hinder Enemies on Hit with Spells"
+    ]
+  },
+  "AnimalCharmSpellHinderOnHitChance2": {
+    "type": "Suffix",
+    "affix": "of the Occultist",
+    "statOrder": [
+      9987
+    ],
+    "level": 60,
+    "group": "AnimalCharmSpellHinderOnHitChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% chance to Hinder Enemies on Hit with Spells"
+    ]
+  },
+  "AnimalCharmMinionUnholyMightChance1": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      3291
+    ],
+    "level": 1,
+    "group": "AnimalCharmMinionUnholyMightChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions have (10-19)% chance to gain Unholy Might for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmMinionUnholyMightChance2": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      3291
+    ],
+    "level": 60,
+    "group": "AnimalCharmMinionUnholyMightChance",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions have (20-30)% chance to gain Unholy Might for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmOfferingEffect1": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      1083
+    ],
+    "level": 1,
+    "group": "AnimalCharmOfferingEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Your Offerings have (15-20)% increased Effect on you"
+    ]
+  },
+  "AnimalCharmOfferingEffect2": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      1083
+    ],
+    "level": 60,
+    "group": "AnimalCharmOfferingEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Your Offerings have (21-30)% increased Effect on you"
+    ]
+  },
+  "AnimalCharmRegenerateManaOnConsumeCorpse1": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      9698
+    ],
+    "level": 1,
+    "group": "AnimalCharmRegenerateManaOnConsumeCorpse",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (2-3)% of Mana over 2 seconds when you Consume a corpse"
+    ]
+  },
+  "AnimalCharmRegenerateManaOnConsumeCorpse2": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      9698
+    ],
+    "level": 60,
+    "group": "AnimalCharmRegenerateManaOnConsumeCorpse",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (4-5)% of Mana over 2 seconds when you Consume a corpse"
+    ]
+  },
+  "AnimalCharmRegenerateEnergyShieldOnConsumeCorpse1": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      9697
+    ],
+    "level": 1,
+    "group": "AnimalCharmRegenerateEnergyShieldOnConsumeCorpse",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (2-3)% of Energy Shield over 2 seconds when you Consume a corpse"
+    ]
+  },
+  "AnimalCharmRegenerateEnergyShieldOnConsumeCorpse2": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      9697
+    ],
+    "level": 60,
+    "group": "AnimalCharmRegenerateEnergyShieldOnConsumeCorpse",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Regenerate (4-5)% of Energy Shield over 2 seconds when you Consume a corpse"
+    ]
+  },
+  "AnimalCharmElementalResistancesForAuraAffectedAllies1": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      3982
+    ],
+    "level": 1,
+    "group": "AnimalCharmElementalResistancesForAuraAffectedAllies",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "You and nearby Allies have +(10-14)% to Elemental Resistances"
+    ]
+  },
+  "AnimalCharmElementalResistancesForAuraAffectedAllies2": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      3982
+    ],
+    "level": 60,
+    "group": "AnimalCharmElementalResistancesForAuraAffectedAllies",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "You and nearby Allies have +(15-20)% to Elemental Resistances"
+    ]
+  },
+  "AnimalCharmMinionPhysicalDamageBasedOffHelmetEnergyShield1": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      10483
+    ],
+    "level": 45,
+    "group": "AnimalCharmMinionPhysicalDamageBasedOffHelmetEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions gain Added Physical Damage equal to (3-5)% of Maximum Energy Shield on your Equipped Helmet"
+    ]
+  },
+  "AnimalCharmMinionPhysicalDamageBasedOffHelmetEnergyShield2": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      10483
+    ],
+    "level": 72,
+    "group": "AnimalCharmMinionPhysicalDamageBasedOffHelmetEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions gain Added Physical Damage equal to (6-10)% of Maximum Energy Shield on your Equipped Helmet"
+    ]
+  },
+  "AnimalCharmCorpseLife1": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      8986
+    ],
+    "level": 45,
+    "group": "AnimalCharmCorpseLife",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Corpses you Spawn have (5-10)% increased Maximum Life"
+    ]
+  },
+  "AnimalCharmCorpseLife2": {
+    "type": "Prefix",
+    "affix": "Necromancer's",
+    "statOrder": [
+      8986
+    ],
+    "level": 72,
+    "group": "AnimalCharmCorpseLife",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Corpses you Spawn have (11-20)% increased Maximum Life"
+    ]
+  },
+  "AnimalCharmMinionPhysicalDamageReduction1": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      2185
+    ],
+    "level": 1,
+    "group": "AnimalCharmMinionPhysicalDamageReduction",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions have (5-8)% additional Physical Damage Reduction"
+    ]
+  },
+  "AnimalCharmMinionPhysicalDamageReduction2": {
+    "type": "Suffix",
+    "affix": "of the Necromancer",
+    "statOrder": [
+      2185
+    ],
+    "level": 60,
+    "group": "AnimalCharmMinionPhysicalDamageReduction",
+    "weightKey": [
+      "int_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Minions have (9-12)% additional Physical Damage Reduction"
+    ]
+  },
+  "AnimalCharmPowerChargeOnCriticalStrike1": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      1743
+    ],
+    "level": 1,
+    "group": "AnimalCharmPowerChargeOnCriticalStrike",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% chance to gain a Power Charge on Critical Strike"
+    ]
+  },
+  "AnimalCharmPowerChargeOnCriticalStrike2": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      1743
+    ],
+    "level": 60,
+    "group": "AnimalCharmPowerChargeOnCriticalStrike",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% chance to gain a Power Charge on Critical Strike"
+    ]
+  },
+  "AnimalCharmCriticalStrikeMultiplierPerPowerCharge1": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3194
+    ],
+    "level": 1,
+    "group": "AnimalCharmCriticalStrikeMultiplierPerPowerCharge",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(2-3)% to Critical Strike Multiplier per Power Charge"
+    ]
+  },
+  "AnimalCharmCriticalStrikeMultiplierPerPowerCharge2": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3194
+    ],
+    "level": 60,
+    "group": "AnimalCharmCriticalStrikeMultiplierPerPowerCharge",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(4-5)% to Critical Strike Multiplier per Power Charge"
+    ]
+  },
+  "AnimalCharmAdditionalCriticalStrikeChanceAtMaximumPowerCharges1": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3382
+    ],
+    "level": 1,
+    "group": "AnimalCharmAdditionalCriticalStrikeChanceAtMaximumPowerCharges",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(0.4-0.6)% Critical Strike Chance while at maximum Power Charges"
+    ]
+  },
+  "AnimalCharmAdditionalCriticalStrikeChanceAtMaximumPowerCharges2": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3382
+    ],
+    "level": 60,
+    "group": "AnimalCharmAdditionalCriticalStrikeChanceAtMaximumPowerCharges",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(0.6-1)% Critical Strike Chance while at maximum Power Charges"
+    ]
+  },
+  "AnimalCharmCriticalStrikesHaveCullingStrike": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3352
+    ],
+    "level": 45,
+    "group": "AnimalCharmCriticalStrikesHaveCullingStrike",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Critical Strikes have Culling Strike"
+    ]
+  },
+  "AnimalCharmCriticalStrikeChanceAgainstFullLifeEnemies1": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3678
+    ],
+    "level": 1,
+    "group": "AnimalCharmCriticalStrikeChanceAgainstFullLifeEnemies",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(80-120)% increased Critical Strike Chance against Enemies that are on Full Life"
+    ]
+  },
+  "AnimalCharmCriticalStrikeChanceAgainstFullLifeEnemies2": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      3678
+    ],
+    "level": 60,
+    "group": "AnimalCharmCriticalStrikeChanceAgainstFullLifeEnemies",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(130-160)% increased Critical Strike Chance against Enemies that are on Full Life"
+    ]
+  },
+  "AnimalCharmCriticalStrikeDamageCannotBeReflected": {
+    "type": "Suffix",
+    "affix": "of the Assassin",
+    "statOrder": [
+      5850
+    ],
+    "level": 45,
+    "group": "AnimalCharmCriticalStrikeDamageCannotBeReflected",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Damage from your Critical Strikes cannot be Reflected"
+    ]
+  },
+  "AnimalCharmElusiveEffect1": {
+    "type": "Suffix",
+    "affix": "of the Assassin",
+    "statOrder": [
+      6249
+    ],
+    "level": 45,
+    "group": "AnimalCharmElusiveEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% increased Elusive Effect"
+    ]
+  },
+  "AnimalCharmElusiveEffect2": {
+    "type": "Suffix",
+    "affix": "of the Assassin",
+    "statOrder": [
+      6249
+    ],
+    "level": 72,
+    "group": "AnimalCharmElusiveEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% increased Elusive Effect"
+    ]
+  },
+  "AnimalCharmNoExtraDamageFromCriticalStrikesIfElusive": {
+    "type": "Suffix",
+    "affix": "of the Assassin",
+    "statOrder": [
+      9783
+    ],
+    "level": 70,
+    "group": "AnimalCharmNoExtraDamageFromCriticalStrikesIfElusive",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "You take no Extra Damage from Critical Strikes while Elusive"
+    ]
+  },
+  "AnimalCharmPoisonDurationPerPoisonAppliedRecently1": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      9489,
+      9489.1
+    ],
+    "level": 1,
+    "group": "AnimalCharmPoisonDurationPerPoisonAppliedRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(1-2)% increased Poison Duration for each Poison you have inflicted Recently, up",
+      "to a maximum of 100%"
+    ]
+  },
+  "AnimalCharmPoisonDurationPerPoisonAppliedRecently2": {
+    "type": "Prefix",
+    "affix": "Assassin's",
+    "statOrder": [
+      9489,
+      9489.1
+    ],
+    "level": 60,
+    "group": "AnimalCharmPoisonDurationPerPoisonAppliedRecently",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "3% increased Poison Duration for each Poison you have inflicted Recently, up",
+      "to a maximum of 100%"
+    ]
+  },
+  "AnimalCharmCannotBeBlinded": {
+    "type": "Suffix",
+    "affix": "of the Saboteur",
+    "statOrder": [
+      2887
+    ],
+    "level": 45,
+    "group": "AnimalCharmCannotBeBlinded",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Cannot be Blinded"
+    ]
+  },
+  "AnimalCharmBlindOnHitChance1": {
+    "type": "Suffix",
+    "affix": "of the Saboteur",
+    "statOrder": [
+      2871
+    ],
+    "level": 1,
+    "group": "AnimalCharmBlindOnHitChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-10)% Global chance to Blind Enemies on hit"
+    ]
+  },
+  "AnimalCharmBlindOnHitChance2": {
+    "type": "Suffix",
+    "affix": "of the Saboteur",
+    "statOrder": [
+      2871
+    ],
+    "level": 60,
+    "group": "AnimalCharmBlindOnHitChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(11-15)% Global chance to Blind Enemies on hit"
+    ]
+  },
+  "AnimalCharmMineAuraEffect1": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      9041
+    ],
+    "level": 1,
+    "group": "AnimalCharmMineAuraEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(20-30)% increased Effect of Auras from Mines"
+    ]
+  },
+  "AnimalCharmMineAuraEffect2": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      9041
+    ],
+    "level": 60,
+    "group": "AnimalCharmMineAuraEffect",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(31-50)% increased Effect of Auras from Mines"
+    ]
+  },
+  "AnimalCharmTakeHalfAreaDamageChance1": {
+    "type": "Suffix",
+    "affix": "of the Saboteur",
+    "statOrder": [
+      10150
+    ],
+    "level": 45,
+    "group": "AnimalCharmTakeHalfAreaDamageChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-6)% chance to take 50% less Area Damage from Hits"
+    ]
+  },
+  "AnimalCharmTakeHalfAreaDamageChance2": {
+    "type": "Suffix",
+    "affix": "of the Saboteur",
+    "statOrder": [
+      10150
+    ],
+    "level": 72,
+    "group": "AnimalCharmTakeHalfAreaDamageChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(7-10)% chance to take 50% less Area Damage from Hits"
+    ]
+  },
+  "AnimalCharmChanceFor150%AreaDamage1": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      9405
+    ],
+    "level": 1,
+    "group": "AnimalCharmChanceFor150%AreaDamage",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Hits have (5-6)% chance to deal 50% more Area Damage"
+    ]
+  },
+  "AnimalCharmChanceFor150%AreaDamage2": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      9405
+    ],
+    "level": 60,
+    "group": "AnimalCharmChanceFor150%AreaDamage",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Hits have (7-10)% chance to deal 50% more Area Damage"
+    ]
+  },
+  "AnimalCharmCooldownRecoveryRate1": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      4904
+    ],
+    "level": 70,
+    "group": "AnimalCharmCooldownRecoveryRate",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-8)% increased Cooldown Recovery Rate"
+    ]
+  },
+  "AnimalCharmCooldownRecoveryRate2": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      4904
+    ],
+    "level": 81,
+    "group": "AnimalCharmCooldownRecoveryRate",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      25,
+      25,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(9-12)% increased Cooldown Recovery Rate"
+    ]
+  },
+  "AnimalCharmChanceToThrow4AdditionalTraps1": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      5627
+    ],
+    "level": 1,
+    "group": "AnimalCharmChanceToThrow4AdditionalTraps",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(2-3)% chance to throw up to 4 additional Traps"
+    ]
+  },
+  "AnimalCharmChanceToThrow4AdditionalTraps2": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      5627
+    ],
+    "level": 60,
+    "group": "AnimalCharmChanceToThrow4AdditionalTraps",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(4-5)% chance to throw up to 4 additional Traps"
+    ]
+  },
+  "AnimalCharmCritVsBurningAndShockedEnemies1": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      3100,
+      5816
+    ],
+    "level": 1,
+    "group": "AnimalCharmCritVsBurningAndShockedEnemies",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(10-15)% to Critical Strike Multiplier against Burning Enemies",
+      "(20-30)% increased Critical Strike Chance against Shocked Enemies"
+    ]
+  },
+  "AnimalCharmCritVsBurningAndShockedEnemies2": {
+    "type": "Prefix",
+    "affix": "Saboteur's",
+    "statOrder": [
+      3100,
+      5816
+    ],
+    "level": 60,
+    "group": "AnimalCharmCritVsBurningAndShockedEnemies",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(16-25)% to Critical Strike Multiplier against Burning Enemies",
+      "(31-50)% increased Critical Strike Chance against Shocked Enemies"
+    ]
+  },
+  "AnimalCharmChargeDuration1": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      4902
+    ],
+    "level": 1,
+    "group": "AnimalCharmChargeDuration",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(40-60)% increased Charge Duration"
+    ]
+  },
+  "AnimalCharmChargeDuration2": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      4902
+    ],
+    "level": 60,
+    "group": "AnimalCharmChargeDuration",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(61-100)% increased Charge Duration"
+    ]
+  },
+  "AnimalCharmLifeManaESOnKill1": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1662,
+      1663,
+      1664
+    ],
+    "level": 1,
+    "group": "AnimalCharmLifeManaESOnKill",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recover 1% of Life on Kill",
+      "Recover 1% of Energy Shield on Kill",
+      "Recover 1% of Mana on Kill"
+    ]
+  },
+  "AnimalCharmLifeManaESOnKill2": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1662,
+      1663,
+      1664
+    ],
+    "level": 60,
+    "group": "AnimalCharmLifeManaESOnKill",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recover 2% of Life on Kill",
+      "Recover 2% of Energy Shield on Kill",
+      "Recover 2% of Mana on Kill"
+    ]
+  },
+  "AnimalCharmChanceForEnergyShieldRechargeOnSuppress1": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      3335
+    ],
+    "level": 45,
+    "group": "AnimalCharmChanceForEnergyShieldRechargeOnSuppress",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(5-8)% chance for Energy Shield Recharge to start when you Suppress Spell Damage"
+    ]
+  },
+  "AnimalCharmChanceForEnergyShieldRechargeOnSuppress2": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      3335
+    ],
+    "level": 72,
+    "group": "AnimalCharmChanceForEnergyShieldRechargeOnSuppress",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(9-12)% chance for Energy Shield Recharge to start when you Suppress Spell Damage"
+    ]
+  },
+  "AnimalCharmChanceFor25%NonChaosToAddAsChaosDamage1": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      4268
+    ],
+    "level": 45,
+    "group": "AnimalCharmChanceFor25%NonChaosToAddAsChaosDamage",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(7-13)% chance to gain 25% of Non-Chaos Damage with Hits as Extra Chaos Damage"
+    ]
+  },
+  "AnimalCharmChanceFor25%NonChaosToAddAsChaosDamage2": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      4268
+    ],
+    "level": 72,
+    "group": "AnimalCharmChanceFor25%NonChaosToAddAsChaosDamage",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      125,
+      125,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(17-23)% chance to gain 25% of Non-Chaos Damage with Hits as Extra Chaos Damage"
+    ]
+  },
+  "AnimalCharmEvasionPerEnergyShieldOnHelmet1": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1460
+    ],
+    "level": 1,
+    "group": "AnimalCharmEvasionPerEnergyShieldOnHelmet",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(1-2) to Evasion Rating per 1 Maximum Energy Shield on Equipped Helmet"
+    ]
+  },
+  "AnimalCharmEvasionPerEnergyShieldOnHelmet2": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1460
+    ],
+    "level": 60,
+    "group": "AnimalCharmEvasionPerEnergyShieldOnHelmet",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(3-4) to Evasion Rating per 1 Maximum Energy Shield on Equipped Helmet"
+    ]
+  },
+  "AnimalCharmSpellDamageSuppressedOnFullEnergyShield1": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1059
+    ],
+    "level": 70,
+    "group": "AnimalCharmSpellDamageSuppressedOnFullEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Prevent +(3-4)% of Suppressed Spell Damage while on Full Energy Shield"
+    ]
+  },
+  "AnimalCharmSpellDamageSuppressedOnFullEnergyShield2": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      1059
+    ],
+    "level": 81,
+    "group": "AnimalCharmSpellDamageSuppressedOnFullEnergyShield",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      25,
+      25,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Prevent +(5-6)% of Suppressed Spell Damage while on Full Energy Shield"
+    ]
+  },
+  "AnimalCharmEnergyShieldLeech1": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      1634
+    ],
+    "level": 1,
+    "group": "AnimalCharmEnergyShieldLeech",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(0.5-1)% of Damage Leeched as Energy Shield"
+    ]
+  },
+  "AnimalCharmEnergyShieldLeech2": {
+    "type": "Prefix",
+    "affix": "Trickster's",
+    "statOrder": [
+      1634
+    ],
+    "level": 60,
+    "group": "AnimalCharmEnergyShieldLeech",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(1.1-2)% of Damage Leeched as Energy Shield"
+    ]
+  },
+  "AnimalCharmRecover10PercentManaOnSkillUseChance1": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      3387
+    ],
+    "level": 1,
+    "group": "AnimalCharmRecover10PercentManaOnSkillUseChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(4-6)% chance to Recover 10% of Mana when you use a Skill"
+    ]
+  },
+  "AnimalCharmRecover10PercentManaOnSkillUseChance2": {
+    "type": "Suffix",
+    "affix": "of the Trickster",
+    "statOrder": [
+      3387
+    ],
+    "level": 60,
+    "group": "AnimalCharmRecover10PercentManaOnSkillUseChance",
+    "weightKey": [
+      "int_animal_charm",
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(7-10)% chance to Recover 10% of Mana when you use a Skill"
+    ]
+  },
+  "AnimalCharmNoBarrageSpread": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      9291
+    ],
+    "level": 45,
+    "group": "AnimalCharmNoBarrageSpread",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Projectile Barrages have no spread"
+    ]
+  },
+  "AnimalCharmMarkEffect1": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      2509
+    ],
+    "level": 1,
+    "group": "AnimalCharmMarkEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% increased Effect of your Marks"
+    ]
+  },
+  "AnimalCharmMarkEffect2": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      2509
+    ],
+    "level": 60,
+    "group": "AnimalCharmMarkEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% increased Effect of your Marks"
+    ]
+  },
+  "AnimalCharmProjectileChainFromTerrainChance1": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      1740
+    ],
+    "level": 45,
+    "group": "AnimalCharmProjectileChainFromTerrainChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Projectiles have (7-13)% chance to be able to Chain when colliding with terrain"
+    ]
+  },
+  "AnimalCharmProjectileChainFromTerrainChance2": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      1740
+    ],
+    "level": 72,
+    "group": "AnimalCharmProjectileChainFromTerrainChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Projectiles have (14-20)% chance to be able to Chain when colliding with terrain"
+    ]
+  },
+  "AnimalCharmAdditionalProjectiles": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      1705
+    ],
+    "level": 81,
+    "group": "AnimalCharmAdditionalProjectiles",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      20,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Skills fire an additional Projectile"
+    ]
+  },
+  "AnimalCharmMirageArcherDuration1": {
+    "type": "Suffix",
+    "affix": "of the Deadeye",
+    "statOrder": [
+      9188
+    ],
+    "level": 1,
+    "group": "AnimalCharmMirageArcherDuration",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(30-50)% increased Mirage Archer Duration"
+    ]
+  },
+  "AnimalCharmMirageArcherDuration2": {
+    "type": "Suffix",
+    "affix": "of the Deadeye",
+    "statOrder": [
+      9188
+    ],
+    "level": 60,
+    "group": "AnimalCharmMirageArcherDuration",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(51-100)% increased Mirage Archer Duration"
+    ]
+  },
+  "AnimalCharmProjectileDamageWithDistanceTravelled1": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      3993,
+      3993.1
+    ],
+    "level": 1,
+    "group": "AnimalCharmProjectileDamageWithDistanceTravelled",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Projectiles gain Damage as they travel farther, dealing up",
+      "to (25-40)% increased Damage with Hits to targets"
+    ]
+  },
+  "AnimalCharmProjectileDamageWithDistanceTravelled2": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      3993,
+      3993.1
+    ],
+    "level": 60,
+    "group": "AnimalCharmProjectileDamageWithDistanceTravelled",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Projectiles gain Damage as they travel farther, dealing up",
+      "to (41-60)% increased Damage with Hits to targets"
+    ]
+  },
+  "AnimalCharmLifeOnHitVsBleedingEnemies1": {
+    "type": "Suffix",
+    "affix": "of the Deadeye",
+    "statOrder": [
+      3482
+    ],
+    "level": 1,
+    "group": "AnimalCharmLifeOnHitVsBleedingEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (6-10) Life per Bleeding Enemy Hit"
+    ]
+  },
+  "AnimalCharmLifeOnHitVsBleedingEnemies2": {
+    "type": "Suffix",
+    "affix": "of the Deadeye",
+    "statOrder": [
+      3482
+    ],
+    "level": 60,
+    "group": "AnimalCharmLifeOnHitVsBleedingEnemies",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (11-20) Life per Bleeding Enemy Hit"
+    ]
+  },
+  "AnimalCharmAccuracyIfCritInLast8Seconds1": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      4431
+    ],
+    "level": 1,
+    "group": "AnimalCharmAccuracyIfCritInLast8Seconds",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(7-13)% increased Accuracy Rating if you've dealt a Critical Strike in the past 8 seconds"
+    ]
+  },
+  "AnimalCharmAccuracyIfCritInLast8Seconds2": {
+    "type": "Prefix",
+    "affix": "Deadeye's",
+    "statOrder": [
+      4431
+    ],
+    "level": 60,
+    "group": "AnimalCharmAccuracyIfCritInLast8Seconds",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(14-20)% increased Accuracy Rating if you've dealt a Critical Strike in the past 8 seconds"
+    ]
+  },
+  "AnimalCharmOnslaughtEffect1": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      3202
+    ],
+    "level": 1,
+    "group": "AnimalCharmOnslaughtEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(15-25)% increased Effect of Onslaught on you"
+    ]
+  },
+  "AnimalCharmOnslaughtEffect2": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      3202
+    ],
+    "level": 60,
+    "group": "AnimalCharmOnslaughtEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(26-40)% increased Effect of Onslaught on you"
+    ]
+  },
+  "AnimalCharmPhasingOnKillChance1": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      3377
+    ],
+    "level": 1,
+    "group": "AnimalCharmPhasingOnKillChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% chance to gain Phasing for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmPhasingOnKillChance2": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      3377
+    ],
+    "level": 60,
+    "group": "AnimalCharmPhasingOnKillChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% chance to gain Phasing for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmSpellSuppressionChance1": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      1056
+    ],
+    "level": 1,
+    "group": "AnimalCharmSpellSuppressionChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(5-9)% chance to Suppress Spell Damage"
+    ]
+  },
+  "AnimalCharmSpellSuppressionChance2": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      1056
+    ],
+    "level": 60,
+    "group": "AnimalCharmSpellSuppressionChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "+(10-15)% chance to Suppress Spell Damage"
+    ]
+  },
+  "AnimalCharmAvoidElementalAilmentsChanceWhilePhasing1": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      4843
+    ],
+    "level": 1,
+    "group": "AnimalCharmAvoidElementalAilmentsChanceWhilePhasing",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% chance to Avoid Elemental Ailments while Phasing"
+    ]
+  },
+  "AnimalCharmAvoidElementalAilmentsChanceWhilePhasing2": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      4843
+    ],
+    "level": 60,
+    "group": "AnimalCharmAvoidElementalAilmentsChanceWhilePhasing",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% chance to Avoid Elemental Ailments while Phasing"
+    ]
+  },
+  "AnimalCharmOnslaughtOnKillChance1": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      3292
+    ],
+    "level": 1,
+    "group": "AnimalCharmOnslaughtOnKillChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(10-15)% chance to gain Onslaught for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmOnslaughtOnKillChance2": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      3292
+    ],
+    "level": 60,
+    "group": "AnimalCharmOnslaughtOnKillChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(16-25)% chance to gain Onslaught for 4 seconds on Kill"
+    ]
+  },
+  "AnimalCharmEvasionRatingPerFrenzyCharge1": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      1469
+    ],
+    "level": 1,
+    "group": "AnimalCharmEvasionRatingPerFrenzyCharge",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-5)% increased Evasion Rating per Frenzy Charge"
+    ]
+  },
+  "AnimalCharmEvasionRatingPerFrenzyCharge2": {
+    "type": "Suffix",
+    "affix": "of the Raider",
+    "statOrder": [
+      1469
+    ],
+    "level": 60,
+    "group": "AnimalCharmEvasionRatingPerFrenzyCharge",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-9)% increased Evasion Rating per Frenzy Charge"
+    ]
+  },
+  "AnimalCharmMovementSpeedPerFrenzyCharge": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      1715
+    ],
+    "level": 70,
+    "group": "AnimalCharmMovementSpeedPerFrenzyCharge",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "2% increased Movement Speed per Frenzy Charge"
+    ]
+  },
+  "AnimalCharmFrenzyOnHItChance1": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      1746
+    ],
+    "level": 45,
+    "group": "AnimalCharmFrenzyOnHItChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(3-5)% chance to gain a Frenzy Charge on Hit"
+    ]
+  },
+  "AnimalCharmFrenzyOnHItChance2": {
+    "type": "Prefix",
+    "affix": "Raider's",
+    "statOrder": [
+      1746
+    ],
+    "level": 72,
+    "group": "AnimalCharmFrenzyOnHItChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-8)% chance to gain a Frenzy Charge on Hit"
+    ]
+  },
+  "AnimalCharmFlaskChargesEvery3Seconds": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      3390
+    ],
+    "level": 81,
+    "group": "AnimalCharmFlaskChargesEvery3Seconds",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      20,
+      0
+    ],
+    "modTags": [
+      "flask"
+    ],
+    "_array": [
+      "Flasks gain a Charge every 3 seconds"
+    ]
+  },
+  "AnimalCharmRemoveBleedOnFlaskUse": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      3298
+    ],
+    "level": 45,
+    "group": "AnimalCharmRemoveBleedOnFlaskUse",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Removes Bleeding when you use a Flask"
+    ]
+  },
+  "AnimalCharmMagicUtilityFlaskEffect1": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      2656
+    ],
+    "level": 70,
+    "group": "AnimalCharmMagicUtilityFlaskEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      100,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Magic Utility Flasks applied to you have (6-10)% increased Effect"
+    ]
+  },
+  "AnimalCharmMagicUtilityFlaskEffect2": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      2656
+    ],
+    "level": 81,
+    "group": "AnimalCharmMagicUtilityFlaskEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      50,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Magic Utility Flasks applied to you have (11-15)% increased Effect"
+    ]
+  },
+  "AnimalCharmWitheredOnHitChance1": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      4308
+    ],
+    "level": 45,
+    "group": "AnimalCharmWitheredOnHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(6-10)% chance to inflict Withered for 2 seconds on Hit"
+    ]
+  },
+  "AnimalCharmWitheredOnHitChance2": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      4308
+    ],
+    "level": 72,
+    "group": "AnimalCharmWitheredOnHitChance",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(11-15)% chance to inflict Withered for 2 seconds on Hit"
+    ]
+  },
+  "AnimalCharmRecoverLifeOnFlaskUse1": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      4253
+    ],
+    "level": 45,
+    "group": "AnimalCharmRecoverLifeOnFlaskUse",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recover (2-3)% of Life when you use a Flask"
+    ]
+  },
+  "AnimalCharmRecoverLifeOnFlaskUse2": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      4253
+    ],
+    "level": 72,
+    "group": "AnimalCharmRecoverLifeOnFlaskUse",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      250,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Recover (4-5)% of Life when you use a Flask"
+    ]
+  },
+  "AnimalCharmWitheredEffect1": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      10420
+    ],
+    "level": 1,
+    "group": "AnimalCharmWitheredEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(7-13)% increased Effect of Withered"
+    ]
+  },
+  "AnimalCharmWitheredEffect2": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      10420
+    ],
+    "level": 60,
+    "group": "AnimalCharmWitheredEffect",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "(14-20)% increased Effect of Withered"
+    ]
+  },
+  "AnimalCharmFlaskChargesGainedFromEnemiesWithAilments1": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      4160,
+      4160.1
+    ],
+    "level": 1,
+    "group": "AnimalCharmFlaskChargesGainedFromEnemiesWithAilments",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Enemies you Kill that are affected by Elemental Ailments",
+      "grant (15-25)% increased Flask Charges"
+    ]
+  },
+  "AnimalCharmFlaskChargesGainedFromEnemiesWithAilments2": {
+    "type": "Suffix",
+    "affix": "of the Pathfinder",
+    "statOrder": [
+      4160,
+      4160.1
+    ],
+    "level": 60,
+    "group": "AnimalCharmFlaskChargesGainedFromEnemiesWithAilments",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Enemies you Kill that are affected by Elemental Ailments",
+      "grant (26-40)% increased Flask Charges"
+    ]
+  },
+  "AnimalCharmPhysicalDamageAsRandomElement1": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      2849
+    ],
+    "level": 1,
+    "group": "AnimalCharmPhysicalDamageAsRandomElement",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      1000,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (5-8)% of Physical Damage as Extra Damage of a random Element"
+    ]
+  },
+  "AnimalCharmPhysicalDamageAsRandomElement2": {
+    "type": "Prefix",
+    "affix": "Pathfinder's",
+    "statOrder": [
+      2849
+    ],
+    "level": 60,
+    "group": "AnimalCharmPhysicalDamageAsRandomElement",
+    "weightKey": [
+      "dex_animal_charm",
+      "default"
+    ],
+    "weightVal": [
+      500,
+      0
+    ],
+    "modTags": {},
+    "_array": [
+      "Gain (9-12)% of Physical Damage as Extra Damage of a random Element"
+    ]
+  }
+}
