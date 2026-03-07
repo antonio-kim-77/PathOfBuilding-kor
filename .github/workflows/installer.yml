@@ -26,29 +26,23 @@ jobs:
           $version = $tag -replace '^v', ''
           $distDir = "PathOfBuilding-kor-${version}"
 
-          # Create distribution directory
           New-Item -ItemType Directory -Path $distDir -Force
 
-          # Copy runtime (exe, dlls, lua libs, fonts)
+          # Copy runtime (exe, dlls, SimpleGraphic/, lua/)
           Copy-Item -Path "runtime/*" -Destination $distDir -Recurse -Force
 
-          # Copy source code - must be "src/" to match manifest.cfg path
-          Copy-Item -Path "src" -Destination "$distDir/src" -Recurse -Force
+          # Copy source DIRECTLY into root (next to exe) for portable mode
+          # PoB requires Launch.lua in same directory as the exe
+          Copy-Item -Path "src/*" -Destination $distDir -Recurse -Force
 
-          # Remove files not needed in distribution (per manifest.cfg exclude)
+          # Remove files not needed in distribution (per manifest.cfg)
           $excludeFiles = @(
-            "$distDir/src/HeadlessWrapper.lua",
-            "$distDir/src/LaunchInstall.lua",
-            "$distDir/src/Settings.xml"
+            "$distDir/HeadlessWrapper.lua",
+            "$distDir/LaunchInstall.lua",
+            "$distDir/Settings.xml"
           )
           $excludeDirs = @(
-            "$distDir/src/Export",
-            "$distDir/src/Builds",
-            "$distDir/src/Data/TimelessJewelData/BrutalRestraint.bin",
-            "$distDir/src/Data/TimelessJewelData/ElegantHubris.bin",
-            "$distDir/src/Data/TimelessJewelData/GloriousVanity.bin",
-            "$distDir/src/Data/TimelessJewelData/LethalPride.bin",
-            "$distDir/src/Data/TimelessJewelData/MilitantFaith.bin"
+            "$distDir/Export"
           )
           foreach ($f in $excludeFiles) {
             if (Test-Path $f) { Remove-Item $f -Force }
