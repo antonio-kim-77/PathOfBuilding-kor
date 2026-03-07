@@ -65,17 +65,17 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 			local spec = self.specList[selIndex]
 			if spec then
 				local used, ascUsed, secondaryAscUsed, sockets = spec:CountAllocNodes()
-				tooltip:AddLine(16, "Class: "..spec.curClassName)
-				tooltip:AddLine(16, "Ascendancy: "..spec.curAscendClassName)
-				tooltip:AddLine(16, "Points used: "..used)
+				tooltip:AddLine(16, "직업: "..spec.curClassName)
+				tooltip:AddLine(16, "전직: "..spec.curAscendClassName)
+				tooltip:AddLine(16, "사용 포인트: "..used)
 				if sockets > 0 then
-					tooltip:AddLine(16, "Jewel sockets: "..sockets)
+					tooltip:AddLine(16, "주얼 소켓: "..sockets)
 				end
 				if selIndex ~= self.activeSpec then
 					local calcFunc, calcBase = self.build.calcsTab:GetMiscCalculator()
 					if calcFunc then
 						local output = calcFunc({ spec = spec })
-						self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7Switching to this tree will give you:")
+						self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7이 트리로 전환 시 변경 사항:")
 					end
 					if spec.curClassId == self.build.spec.curClassId then
 						local respec = 0
@@ -108,13 +108,13 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 						end
 					end
 				end
-				tooltip:AddLine(16, "^7Game Version: "..treeVersions[spec.treeVersion].display)
+				tooltip:AddLine(16, "^7게임 버전: "..treeVersions[spec.treeVersion].display)
 			end
 		end
 	end
 
 	-- Compare checkbox
-	self.controls.compareCheck = new("CheckBoxControl", { "LEFT", self.controls.specSelect, "RIGHT" }, { 74, 0, 20 }, "Compare:", function(state)
+	self.controls.compareCheck = new("CheckBoxControl", { "LEFT", self.controls.specSelect, "RIGHT" }, { 74, 0, 20 }, "비교:", function(state)
 		self.isComparing = state
 		self:SetCompareSpec(self.activeCompareSpec)
 		self.controls.compareSelect.shown = state
@@ -137,18 +137,18 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 	self.controls.compareSelect.maxDroppedWidth = 1000
 	self.controls.compareSelect.enableDroppedWidth = true
 	self.controls.compareSelect.enableChangeBoxWidth = true
-	self.controls.reset = new("ButtonControl", { "LEFT", self.controls.compareCheck, "RIGHT" }, { 8, 0, 145, 20 }, "Reset Tree/Tattoos", function()
+	self.controls.reset = new("ButtonControl", { "LEFT", self.controls.compareCheck, "RIGHT" }, { 8, 0, 145, 20 }, "트리/문신 초기화", function()
 		local controls = { }
 		local buttonY = 65
-		controls.warningLabel = new("LabelControl", nil, { 0, 30, 0, 16 }, "^7Warning: resetting your passive tree or removing all tattoos cannot be undone.\n")
-		controls.reset = new("ButtonControl", nil, { -130, buttonY, 100, 20 }, "Reset Tree", function()
+		controls.warningLabel = new("LabelControl", nil, { 0, 30, 0, 16 }, "^7경고: 패시브 트리 초기화 또는 모든 문신 제거는 되돌릴 수 없습니다.\n")
+		controls.reset = new("ButtonControl", nil, { -130, buttonY, 100, 20 }, "트리 초기화", function()
 			self.build.spec:ResetNodes()
 			self.build.spec:BuildAllDependsAndPaths()
 			self.build.spec:AddUndoState()
 			self.build.buildFlag = true
 			main:ClosePopup()
 		end)
-		controls.removeTattoo = new("ButtonControl", nil, { 0, buttonY, 144, 20 }, "Remove All Tattoos", function()
+		controls.removeTattoo = new("ButtonControl", nil, { 0, buttonY, 144, 20 }, "모든 문신 제거", function()
 			for id, node in pairs(self.build.spec.hashOverrides) do --hashOverrides will contain only the nodes that have been tattoo-ed
 				if node.isTattoo then
 					self:RemoveTattooFromNode(self.build.spec.nodes[id])
@@ -158,10 +158,10 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 			self.build.buildFlag = true
 			main:ClosePopup()
 		end)
-		controls.cancel = new("ButtonControl", nil, { 130, buttonY, 100, 20 }, "Cancel", function()
+		controls.cancel = new("ButtonControl", nil, { 130, buttonY, 100, 20 }, "취소", function()
 			main:ClosePopup()
 		end)
-		main:OpenPopup(570, 100, "Reset Tree/Tattoos", controls, nil, "edit", "cancel")
+		main:OpenPopup(570, 100, "트리/문신 초기화", controls, nil, "edit", "cancel")
 	end)
 
 	-- Tree Version Dropdown
@@ -173,7 +173,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 		}
 		t_insert(self.treeVersions, value)
 	end
-	self.controls.versionText = new("LabelControl", { "LEFT", self.controls.reset, "RIGHT" }, { 8, 0, 0, 16 }, "^7Version:")
+	self.controls.versionText = new("LabelControl", { "LEFT", self.controls.reset, "RIGHT" }, { 8, 0, 0, 16 }, "^7버전:")
 	self.controls.versionSelect = new("DropDownControl", { "LEFT", self.controls.versionText, "RIGHT" }, { 8, 0, 100, 20 }, self.treeVersions, function(index, selected)
 		if selected.value ~= self.build.spec.treeVersion then
 			self:OpenVersionConvertPopup(selected.value, true)
@@ -186,7 +186,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 	self.controls.versionSelect.selIndex = #self.treeVersions
 
 	-- Tree Search Textbox
-	self.controls.treeSearch = new("EditControl", { "LEFT", self.controls.versionSelect, "RIGHT" }, { 8, 0, main.portraitMode and 200 or 300, 20 }, "", "Search", "%c", 100, function(buf)
+	self.controls.treeSearch = new("EditControl", { "LEFT", self.controls.versionSelect, "RIGHT" }, { 8, 0, main.portraitMode and 200 or 300, 20 }, "", "검색", "%c", 100, function(buf)
 		self.viewer.searchStr = buf
 		self.searchFlag = buf ~= self.viewer.searchStrSaved
 	end, nil, nil, true)
@@ -194,7 +194,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 
 	self.tradeLeaguesList = { }
 	-- Find Timeless Jewel Button
-	self.controls.findTimelessJewel = new("ButtonControl", { "LEFT", self.controls.treeSearch, "RIGHT" }, { 8, 0, 150, 20 }, "Find Timeless Jewel", function()
+	self.controls.findTimelessJewel = new("ButtonControl", { "LEFT", self.controls.treeSearch, "RIGHT" }, { 8, 0, 150, 20 }, "시간의 주얼 찾기", function()
 		self:FindTimelessJewel()
 	end)
 
@@ -202,7 +202,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 	self.defaultTattoo = { }
 
 	-- Show Node Power Checkbox
-	self.controls.treeHeatMap = new("CheckBoxControl", { "LEFT", self.controls.findTimelessJewel, "RIGHT" }, { 130, 0, 20 }, "Show Node Power:", function(state)
+	self.controls.treeHeatMap = new("CheckBoxControl", { "LEFT", self.controls.findTimelessJewel, "RIGHT" }, { 130, 0, 20 }, "노드 파워 표시:", function(state)
 		self.viewer.showHeatMap = state
 		self.controls.treeHeatMapStatSelect.shown = state
 
@@ -273,7 +273,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 
 	-- Show/Hide Power Report Button
 	self.controls.powerReport = new("ButtonControl", { "LEFT", self.controls.treeHeatMapStatSelect, "RIGHT" }, { 8, 0, 150, 20 },
-		function() return self.controls.powerReportList.shown and "Hide Power Report" or "Show Power Report" end, function()
+		function() return self.controls.powerReportList.shown and "파워 보고서 숨기기" or "파워 보고서 표시" end, function()
 		self.controls.powerReportList.shown = not self.controls.powerReportList.shown
 	end)
 
@@ -330,7 +330,7 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 		self.powerBuilderToastActive = false
 	end
 
-	self.controls.specConvertText = new("LabelControl", { "BOTTOMLEFT", self.controls.specSelect, "TOPLEFT" }, { 0, -14, 0, 16 }, "^7This is an older tree version, which may not be fully compatible with the current game version.")
+	self.controls.specConvertText = new("LabelControl", { "BOTTOMLEFT", self.controls.specSelect, "TOPLEFT" }, { 0, -14, 0, 16 }, "^7이전 버전의 트리로, 현재 게임 버전과 완전히 호환되지 않을 수 있습니다.")
 	self.controls.specConvertText.shown = function()
 		return self.showConvert
 	end
@@ -497,7 +497,7 @@ end
 function TreeTabClass:GetSpecList()
 	local newSpecList = { }
 	for _, spec in ipairs(self.specList) do
-		t_insert(newSpecList, (spec.treeVersion ~= latestTreeVersion and ("["..treeVersions[spec.treeVersion].display.."] ") or "")..(spec.title or "Default"))
+		t_insert(newSpecList, (spec.treeVersion ~= latestTreeVersion and ("["..treeVersions[spec.treeVersion].display.."] ") or "")..(spec.title or "기본"))
 	end
 	return newSpecList
 end
@@ -516,7 +516,7 @@ function TreeTabClass:Load(xml, dbFileName)
 		if type(node) == "table" then
 			if node.elem == "Spec" then
 				if node.attrib.treeVersion and not treeVersions[node.attrib.treeVersion] then
-					main:OpenMessagePopup("Unknown Passive Tree Version", "The build you are trying to load uses an unrecognised version of the passive skill tree.\nYou may need to update the program before loading this build.")
+					main:OpenMessagePopup("알 수 없는 패시브 트리 버전", "로드하려는 빌드가 인식할 수 없는 버전의 패시브 스킬 트리를 사용합니다.\n이 빌드를 로드하기 전에 프로그램을 업데이트해야 할 수 있습니다.")
 					return true
 				end
 				local newSpec = new("PassiveSpec", self.build, node.attrib.treeVersion or defaultTreeVersion)
@@ -617,7 +617,7 @@ function TreeTabClass:ConvertToVersion(version, remove, success, ignoreTreeSubTy
 	end
 	self.modFlag = true
 	if success then
-		main:OpenMessagePopup("Tree Converted", "The tree has been converted to "..treeVersions[version].display..".\nNote that some or all of the passives may have been de-allocated due to changes in the tree.\n\nYou can switch back to the old tree using the tree selector at the bottom left.")
+		main:OpenMessagePopup("트리 변환 완료", "트리가 "..treeVersions[version].display.."(으)로 변환되었습니다.\n트리 변경으로 인해 일부 또는 모든 패시브가 해제되었을 수 있습니다.\n\n좌측 하단의 트리 선택기를 사용하여 이전 트리로 돌아갈 수 있습니다.")
 	end
 end
 
@@ -638,19 +638,19 @@ end
 
 function TreeTabClass:OpenSpecManagePopup()
 	local importTree =
-		new("ButtonControl", nil, {-99, 259, 90, 20}, "Import Tree", function()
+		new("ButtonControl", nil, {-99, 259, 90, 20}, "트리 가져오기", function()
 			self:OpenImportPopup()
 		end)
 	local exportTree =
-		new("ButtonControl", {"LEFT", importTree, "RIGHT"}, {8, 0, 90, 20}, "Export Tree", function()
+		new("ButtonControl", {"LEFT", importTree, "RIGHT"}, {8, 0, 90, 20}, "트리 내보내기", function()
 			self:OpenExportPopup()
 		end)
 
-	main:OpenPopup(370, 290, "Manage Passive Trees", {
+	main:OpenPopup(370, 290, "패시브 트리 관리", {
 		new("PassiveSpecListControl", nil, {0, 50, 350, 200}, self),
 		importTree,
 		exportTree,
-		new("ButtonControl", {"LEFT", exportTree, "RIGHT"}, {8, 0, 90, 20}, "Done", function()
+		new("ButtonControl", {"LEFT", exportTree, "RIGHT"}, {8, 0, 90, 20}, "완료", function()
 			main:ClosePopup()
 		end),
 	})
@@ -658,35 +658,35 @@ end
 
 function TreeTabClass:OpenVersionConvertPopup(version, ignoreTreeSubType)
 	local controls = { }
-	controls.warningLabel = new("LabelControl", nil, {0, 20, 0, 16}, "^7Warning: some or all of the passives may be de-allocated due to changes in the tree.\n\n" ..
-		"Convert will replace your current tree.\nCopy + Convert will backup your current tree.\n")
-	controls.convert = new("ButtonControl", nil, {-125, 105, 100, 20}, "Convert", function()
+	controls.warningLabel = new("LabelControl", nil, {0, 20, 0, 16}, "^7경고: 트리 변경으로 인해 일부 또는 모든 패시브가 해제될 수 있습니다.\n\n" ..
+		"변환은 현재 트리를 대체합니다.\n복사 + 변환은 현재 트리를 백업합니다.\n")
+	controls.convert = new("ButtonControl", nil, {-125, 105, 100, 20}, "변환", function()
 		self:ConvertToVersion(version, true, false, ignoreTreeSubType)
 		main:ClosePopup()
 	end)
-	controls.convertCopy = new("ButtonControl", nil, {0, 105, 125, 20}, "Copy + Convert", function()
+	controls.convertCopy = new("ButtonControl", nil, {0, 105, 125, 20}, "복사 + 변환", function()
 		self:ConvertToVersion(version, false, false, ignoreTreeSubType)
 		main:ClosePopup()
 	end)
-	controls.cancel = new("ButtonControl", nil, {125, 105, 100, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {125, 105, 100, 20}, "취소", function()
 		self.controls.versionSelect:SelByValue(self.build.spec.treeVersion, 'value')
 		main:ClosePopup()
 	end)
-	main:OpenPopup(570, 140, "Convert to Version "..treeVersions[version].display, controls, "convert", "edit")
+	main:OpenPopup(570, 140, "버전 "..treeVersions[version].display.."(으)로 변환", controls, "convert", "edit")
 end
 
 function TreeTabClass:OpenVersionConvertAllPopup(version)
 	local controls = { }
-	controls.warningLabel = new("LabelControl", nil, {0, 20, 0, 16}, "^7Warning: some or all of the passives may be de-allocated due to changes in the tree.\n\n" ..
-		"Convert will replace all trees that are not Version "..treeVersions[version].display..".\nThis action cannot be undone.\n")
-	controls.convert = new("ButtonControl", nil, {-58, 105, 100, 20}, "Convert", function()
+	controls.warningLabel = new("LabelControl", nil, {0, 20, 0, 16}, "^7경고: 트리 변경으로 인해 일부 또는 모든 패시브가 해제될 수 있습니다.\n\n" ..
+		"버전 "..treeVersions[version].display.."이 아닌 모든 트리를 변환합니다.\n이 작업은 되돌릴 수 없습니다.\n")
+	controls.convert = new("ButtonControl", nil, {-58, 105, 100, 20}, "변환", function()
 		self:ConvertAllToVersion(version)
 		main:ClosePopup()
 	end)
-	controls.cancel = new("ButtonControl", nil, {58, 105, 100, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {58, 105, 100, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(570, 140, "Convert all to Version "..treeVersions[version].display, controls, "convert", "edit")
+	main:OpenPopup(570, 140, "모든 트리를 버전 "..treeVersions[version].display.."(으)로 변환", controls, "convert", "edit")
 end
 
 function TreeTabClass:OpenImportPopup()
@@ -750,18 +750,18 @@ function TreeTabClass:OpenImportPopup()
 		return latestTreeVersion .. (alternateType and ("_" .. alternateType:gsub("-", "_")) or "")
 	end
 
-	controls.nameLabel = new("LabelControl", nil, {-180, 20, 0, 16}, "Enter name for this passive tree:")
+	controls.nameLabel = new("LabelControl", nil, {-180, 20, 0, 16}, "이 패시브 트리의 이름을 입력하세요:")
 	controls.name = new("EditControl", nil, {100, 20, 350, 18}, "", nil, nil, nil, function(buf)
 		controls.msg.label = ""
 		controls.import.enabled = buf:match("%S") and controls.edit.buf:match("%S")
 	end)
-	controls.editLabel = new("LabelControl", nil, {-150, 45, 0, 16}, "Enter passive tree link:")
+	controls.editLabel = new("LabelControl", nil, {-150, 45, 0, 16}, "패시브 트리 링크를 입력하세요:")
 	controls.edit = new("EditControl", nil, {100, 45, 350, 18}, "", nil, nil, nil, function(buf)
 		controls.msg.label = ""
 		controls.import.enabled = buf:match("%S") and controls.name.buf:match("%S")
 	end)
 	controls.msg = new("LabelControl", nil, {0, 65, 0, 16}, "")
-	controls.import = new("ButtonControl", nil, {-45, 85, 80, 20}, "Import", function()
+	controls.import = new("ButtonControl", nil, {-45, 85, 80, 20}, "가져오기", function()
 		local treeLink = controls.edit.buf
 		if #treeLink == 0 then
 			return
@@ -769,7 +769,7 @@ function TreeTabClass:OpenImportPopup()
 		-- EG: http://poeurl.com/dABz
 		if treeLink:match("poeurl%.com/") then
 			controls.import.enabled = false
-			controls.msg.label = "Resolving PoEURL link..."
+			controls.msg.label = "PoEURL 링크 확인 중..."
 			local id = LaunchSubScript([[
 				local treeLink = ...
 				local curl = require("lcurl.safe")
@@ -813,25 +813,25 @@ function TreeTabClass:OpenImportPopup()
 		end
 	end)
 	controls.import.enabled = false
-	controls.cancel = new("ButtonControl", nil, {45, 85, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 85, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(580, 115, "Import Tree", controls, "import", "name")
+	main:OpenPopup(580, 115, "트리 가져오기", controls, "import", "name")
 end
 
 function TreeTabClass:OpenExportPopup()
 	local treeLink = self.build.spec:EncodeURL(treeVersions[self.build.spec.treeVersion].url)
 	local popup
 	local controls = { }
-	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "Passive tree link:")
+	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "패시브 트리 링크:")
 	controls.edit = new("EditControl", nil, {0, 40, 350, 18}, treeLink, nil, "%Z")
-	controls.shrink = new("ButtonControl", nil, {-90, 70, 140, 20}, "Shrink with PoEURL", function()
+	controls.shrink = new("ButtonControl", nil, {-90, 70, 140, 20}, "PoEURL로 단축", function()
 		controls.shrink.enabled = false
-		controls.shrink.label = "Shrinking..."
+		controls.shrink.label = "단축 중..."
 		launch:DownloadPage("http://poeurl.com/shrink.php?url="..treeLink, function(response, errMsg)
-			controls.shrink.label = "Done"
+			controls.shrink.label = "완료"
 			if errMsg or not response.body:match("%S") then
-				main:OpenMessagePopup("PoEURL Shortener", "Failed to get PoEURL link. Try again later.")
+				main:OpenMessagePopup("PoEURL 단축", "PoEURL 링크를 가져오지 못했습니다. 나중에 다시 시도하세요.")
 			else
 				treeLink = "http://poeurl.com/"..response.body
 				controls.edit:SetText(treeLink)
@@ -839,13 +839,13 @@ function TreeTabClass:OpenExportPopup()
 			end
 		end)
 	end)
-	controls.copy = new("ButtonControl", nil, {30, 70, 80, 20}, "Copy", function()
+	controls.copy = new("ButtonControl", nil, {30, 70, 80, 20}, "복사", function()
 		Copy(treeLink)
 	end)
-	controls.done = new("ButtonControl", nil, {120, 70, 80, 20}, "Done", function()
+	controls.done = new("ButtonControl", nil, {120, 70, 80, 20}, "완료", function()
 		main:ClosePopup()
 	end)
-	popup = main:OpenPopup(380, 100, "Export Tree", controls, "done", "edit")
+	popup = main:OpenPopup(380, 100, "트리 내보내기", controls, "done", "edit")
 end
 
 function TreeTabClass:ModifyNodePopup(selectedNode)
@@ -933,7 +933,7 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 			end
 		end
 	end
-	controls.save = new("ButtonControl", nil, {-90, 75, 80, 20}, "Add", function()
+	controls.save = new("ButtonControl", nil, {-90, 75, 80, 20}, "추가", function()
 		addModifier(selectedNode)
 		self.build.spec:AddUndoState()
 		self.modFlag = true
@@ -941,7 +941,7 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 		self.defaultTattoo[nodeName] = controls.modSelect.selIndex
 		main:ClosePopup()
 	end)
-	controls.reset = new("ButtonControl", nil, {0, 75, 80, 20}, "Reset Node", function()
+	controls.reset = new("ButtonControl", nil, {0, 75, 80, 20}, "노드 초기화", function()
 		self:RemoveTattooFromNode(selectedNode)
 		self.build.spec:AddUndoState()
 		self.modFlag = true
@@ -949,7 +949,7 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 		self.defaultTattoo[nodeName] = nil
 		main:ClosePopup()
 	end)
-	controls.close = new("ButtonControl", nil, {90, 75, 80, 20}, "Cancel", function()
+	controls.close = new("ButtonControl", nil, {90, 75, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
 
@@ -966,11 +966,11 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 		return count
 	end
 	controls.totalTattoos = new("LabelControl", nil, { 0, 95, 0, 16 }, "^7Tattoo Count: ".. getTattooCount() .."/50" )
-	main:OpenPopup(600, 105, "Replace Modifier of Node", controls, "save")
+	main:OpenPopup(600, 105, "노드 속성 변경", controls, "save")
 	constructUI(modGroups[self.defaultTattoo[nodeName] or 1])
 	
 	-- Show Legacy Tattoos
-	controls.showLegacyTattoo = new("CheckBoxControl", { "LEFT", controls.totalTattoos, "RIGHT" }, { 205, 0, 20 }, "Show Legacy Tattoos:", function(state)
+	controls.showLegacyTattoo = new("CheckBoxControl", { "LEFT", controls.totalTattoos, "RIGHT" }, { 205, 0, 20 }, "레거시 문신 표시:", function(state)
 		self.showLegacyTattoo = state
 		buildMods(selectedNode)
 	end)

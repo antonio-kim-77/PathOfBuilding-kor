@@ -15,12 +15,12 @@ local m_ceil = math.ceil
 local m_floor = math.floor
 local m_modf = math.modf
 
-local rarityDropList = { 
-	{ label = colorCodes.NORMAL.."Normal", rarity = "NORMAL" },
-	{ label = colorCodes.MAGIC.."Magic", rarity = "MAGIC" },
-	{ label = colorCodes.RARE.."Rare", rarity = "RARE" },
-	{ label = colorCodes.UNIQUE.."Unique", rarity = "UNIQUE" },
-	{ label = colorCodes.RELIC.."Relic", rarity = "RELIC" }
+local rarityDropList = {
+	{ label = colorCodes.NORMAL.."일반", rarity = "NORMAL" },
+	{ label = colorCodes.MAGIC.."마법", rarity = "MAGIC" },
+	{ label = colorCodes.RARE.."희귀", rarity = "RARE" },
+	{ label = colorCodes.UNIQUE.."고유", rarity = "UNIQUE" },
+	{ label = colorCodes.RELIC.."유물", rarity = "RELIC" }
 }
 
 local socketDropList = {
@@ -92,19 +92,19 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 			self:AddItemSetTooltip(tooltip, self.itemSets[self.itemSetOrderList[index]])
 		end
 	end
-	self.controls.setLabel = new("LabelControl", {"RIGHT",self.controls.setSelect,"LEFT"}, {-2, 0, 0, 16}, "^7Item set:")
-	self.controls.setManage = new("ButtonControl", {"LEFT",self.controls.setSelect,"RIGHT"}, {4, 0, 90, 20}, "Manage...", function()
+	self.controls.setLabel = new("LabelControl", {"RIGHT",self.controls.setSelect,"LEFT"}, {-2, 0, 0, 16}, "^7아이템 세트:")
+	self.controls.setManage = new("ButtonControl", {"LEFT",self.controls.setSelect,"RIGHT"}, {4, 0, 90, 20}, "관리...", function()
 		self:OpenItemSetManagePopup()
 	end)
 
 	-- Price Items
-	self.controls.priceDisplayItem = new("ButtonControl", {"TOPLEFT",self,"TOPLEFT"}, {96, 32, 310, 20}, "Trade for these items", function()
+	self.controls.priceDisplayItem = new("ButtonControl", {"TOPLEFT",self,"TOPLEFT"}, {96, 32, 310, 20}, "이 아이템 거래", function()
 		self.tradeQuery:PriceItem()
 	end)
 	self.controls.priceDisplayItem.tooltipFunc = function(tooltip)
 		tooltip:Clear()
-		tooltip:AddLine(16, "^7Contains searches from the official trading site to help find")
-		tooltip:AddLine(16, "^7similar or better items for this build")
+		tooltip:AddLine(16, "^7공식 거래 사이트에서 이 빌드에 적합한")
+		tooltip:AddLine(16, "^7유사하거나 더 좋은 아이템을 찾는 검색을 포함합니다")
 	end
 
 	-- Item slots
@@ -178,10 +178,10 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		return #self.controls.specSelect.list > 1
 	end
 	prevSlot = self.controls.specSelect
-	self.controls.specButton = new("ButtonControl", {"LEFT",prevSlot,"RIGHT"}, {4, 0, 90, 20}, "Manage...", function()
+	self.controls.specButton = new("ButtonControl", {"LEFT",prevSlot,"RIGHT"}, {4, 0, 90, 20}, "관리...", function()
 		self.build.treeTab:OpenSpecManagePopup()
 	end)
-	self.controls.specLabel = new("LabelControl", {"RIGHT",prevSlot,"LEFT"}, {-2, 0, 0, 16}, "^7Passive tree:")
+	self.controls.specLabel = new("LabelControl", {"RIGHT",prevSlot,"LEFT"}, {-2, 0, 0, 16}, "^7패시브 트리:")
 
 	self.sockets = { }
 	local socketOrder = { }
@@ -198,7 +198,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		self.sockets[node.id] = socketControl
 		addSlot(socketControl)
 	end
-	self.controls.slotHeader = new("LabelControl", {"BOTTOMLEFT",self.slotAnchor,"TOPLEFT"}, {0, -4, 0, 16}, "^7Equipped items:")
+	self.controls.slotHeader = new("LabelControl", {"BOTTOMLEFT",self.slotAnchor,"TOPLEFT"}, {0, -4, 0, 16}, "^7장착된 아이템:")
 	self.controls.weaponSwap1 = new("ButtonControl", {"BOTTOMRIGHT",self.slotAnchor,"TOPRIGHT"}, {-20, -2, 18, 18}, "I", function()
 		if self.activeItemSet.useSecondWeaponSet then
 			self.activeItemSet.useSecondWeaponSet = false
@@ -239,7 +239,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	self.controls.weaponSwap2.locked = function()
 		return self.activeItemSet.useSecondWeaponSet
 	end
-	self.controls.weaponSwapLabel = new("LabelControl", {"RIGHT",self.controls.weaponSwap1,"LEFT"}, {-4, 0, 0, 14}, "^7Weapon Set:")
+	self.controls.weaponSwapLabel = new("LabelControl", {"RIGHT",self.controls.weaponSwap1,"LEFT"}, {-4, 0, 0, 14}, "^7무기 세트:")
 
 	-- All items list
 	if main.portraitMode then
@@ -249,11 +249,11 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	end
 
 	-- Database selector
-	self.controls.selectDBLabel = new("LabelControl", {"TOPLEFT",self.controls.itemList,"BOTTOMLEFT"}, {0, 14, 0, 16}, "^7Import from:")
+	self.controls.selectDBLabel = new("LabelControl", {"TOPLEFT",self.controls.itemList,"BOTTOMLEFT"}, {0, 14, 0, 16}, "^7가져오기:")
 	self.controls.selectDBLabel.shown = function()
 		return self.height < 980
 	end
-	self.controls.selectDB = new("DropDownControl", {"LEFT",self.controls.selectDBLabel,"RIGHT"}, {4, 0, 150, 18}, { "Uniques", "Rare Templates" })
+	self.controls.selectDB = new("DropDownControl", {"LEFT",self.controls.selectDBLabel,"RIGHT"}, {4, 0, 150, 18}, { "고유 아이템", "희귀 템플릿" })
 
 	-- Unique database
 	self.controls.uniqueDB = new("ItemDBControl", {"TOPLEFT",self.controls.itemList,"BOTTOMLEFT"}, {0, 76, 360, function(c) return m_min(244, self.maxY - select(2, c:GetPos())) end}, self, main.uniqueDB, "UNIQUE")
@@ -273,28 +273,28 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		return not self.controls.selectDBLabel:IsShown() or self.controls.selectDB.selIndex == 2
 	end
 	-- Create/import item
-	self.controls.craftDisplayItem = new("ButtonControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, {20, main.portraitMode and 0 or -20, 120, 20}, "Craft item...", function()
+	self.controls.craftDisplayItem = new("ButtonControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, {20, main.portraitMode and 0 or -20, 120, 20}, "아이템 제작...", function()
 		self:CraftItem()
 	end)
 	self.controls.craftDisplayItem.shown = function()
 		return self.displayItem == nil 
 	end
-	self.controls.newDisplayItem = new("ButtonControl", {"TOPLEFT",self.controls.craftDisplayItem,"TOPRIGHT"}, {8, 0, 120, 20}, "Create custom...", function()
+	self.controls.newDisplayItem = new("ButtonControl", {"TOPLEFT",self.controls.craftDisplayItem,"TOPRIGHT"}, {8, 0, 120, 20}, "커스텀 생성...", function()
 		self:EditDisplayItemText()
 	end)
-	self.controls.displayItemTip = new("LabelControl", {"TOPLEFT",self.controls.craftDisplayItem,"BOTTOMLEFT"}, {0, 8, 100, 16}, 
-[[^7Double-click an item from one of the lists,
-or copy and paste an item from in game
-(hover over the item and Ctrl+C) to view or edit
-the item and add it to your build. You can 
-also clone an item within Path of Building by 
-copying and pasting it with Ctrl+C and Ctrl+V.
+	self.controls.displayItemTip = new("LabelControl", {"TOPLEFT",self.controls.craftDisplayItem,"BOTTOMLEFT"}, {0, 8, 100, 16},
+[[^7목록에서 아이템을 더블클릭하거나,
+게임 내에서 아이템을 복사하여 붙여넣기
+(아이템 위에 마우스를 올리고 Ctrl+C)하여
+아이템을 보거나 편집하고 빌드에 추가할 수 있습니다.
+Path of Building 내에서 Ctrl+C와 Ctrl+V로
+아이템을 복제할 수도 있습니다.
 
-You can Control + Click an item to equip it, or 
-drag it onto the slot.  This will also add it to 
-your build if it's from the unique/template list.
-If there's 2 slots an item can go in, 
-holding Shift will put it in the second.]])
+Ctrl + 클릭으로 아이템을 장착하거나
+슬롯으로 드래그할 수 있습니다. 고유/템플릿
+목록의 아이템인 경우 빌드에도 추가됩니다.
+아이템이 들어갈 수 있는 슬롯이 2개인 경우
+Shift를 누르면 두 번째 슬롯에 넣습니다.]])
 	self.controls.sharedItemList = new("SharedItemListControl", {"TOPLEFT",self.controls.craftDisplayItem, "BOTTOMLEFT"}, {0, 232, 340, 308}, self, true)
 
 	-- Display item
@@ -308,12 +308,12 @@ holding Shift will put it in the second.]])
 		self:AddDisplayItem()
 	end)
 	self.controls.addDisplayItem.label = function()
-		return self.items[self.displayItem.id] and "Save" or "Add to build"
+		return self.items[self.displayItem.id] and "저장" or "빌드에 추가"
 	end
-	self.controls.editDisplayItem = new("ButtonControl", {"LEFT",self.controls.addDisplayItem,"RIGHT"}, {8, 0, 60, 20}, "Edit...", function()
+	self.controls.editDisplayItem = new("ButtonControl", {"LEFT",self.controls.addDisplayItem,"RIGHT"}, {8, 0, 60, 20}, "편집...", function()
 		self:EditDisplayItemText()
 	end)
-	self.controls.removeDisplayItem = new("ButtonControl", {"LEFT",self.controls.editDisplayItem,"RIGHT"}, {8, 0, 60, 20}, "Cancel", function()
+	self.controls.removeDisplayItem = new("ButtonControl", {"LEFT",self.controls.editDisplayItem,"RIGHT"}, {8, 0, 60, 20}, "취소", function()
 		self:SetDisplayItem()
 	end)
 
@@ -446,25 +446,25 @@ holding Shift will put it in the second.]])
 	self.controls.displayItemSectionEnchant = new("Control", {"TOPLEFT",self.controls.displayItemSectionSockets,"BOTTOMLEFT"}, {0, 0, 0, function()
 		return (self.controls.displayItemEnchant:IsShown() or self.controls.displayItemEnchant2:IsShown() or self.controls.displayItemAnoint:IsShown() or self.controls.displayItemAnoint2:IsShown() or self.controls.displayItemCorrupt:IsShown() ) and 28 or 0
 	end})
-	self.controls.displayItemEnchant = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionEnchant,"TOPLEFT"}, {0, 0, 160, 20}, "Apply Enchantment...", function()
+	self.controls.displayItemEnchant = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionEnchant,"TOPLEFT"}, {0, 0, 160, 20}, "인챈트 적용...", function()
 		self:EnchantDisplayItem(1)
 	end)
 	self.controls.displayItemEnchant.shown = function()
 		return self.displayItem and self.displayItem.enchantments
 	end
-	self.controls.displayItemEnchant2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant,"TOPRIGHT",true}, {8, 0, 160, 20}, "Apply Enchantment 2...", function()
+	self.controls.displayItemEnchant2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant,"TOPRIGHT",true}, {8, 0, 160, 20}, "인챈트 2 적용...", function()
 		self:EnchantDisplayItem(2)
 	end)
 	self.controls.displayItemEnchant2.shown = function()
 		return self.displayItem and self.displayItem.enchantments and self.displayItem.canHaveTwoEnchants and #self.displayItem.enchantModLines > 0
 	end
-	self.controls.displayItemAnoint = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant2,"TOPRIGHT",true}, {8, 0, 100, 20}, "Anoint...", function()
+	self.controls.displayItemAnoint = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant2,"TOPRIGHT",true}, {8, 0, 100, 20}, "도유...", function()
 		self:AnointDisplayItem(1)
 	end)
 	self.controls.displayItemAnoint.shown = function()
 		return self.displayItem and isAnointable(self.displayItem)
 	end
-	self.controls.displayItemAnoint2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint,"TOPRIGHT",true}, {8, 0, 100, 20}, "Anoint 2...", function()
+	self.controls.displayItemAnoint2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint,"TOPRIGHT",true}, {8, 0, 100, 20}, "도유 2...", function()
 		self:AnointDisplayItem(2)
 	end)
 	self.controls.displayItemAnoint2.shown = function()
@@ -473,7 +473,7 @@ holding Shift will put it in the second.]])
 			self.displayItem.canHaveTwoEnchants and
 			#self.displayItem.enchantModLines > 0
 	end
-	self.controls.displayItemAnoint3 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint2,"TOPRIGHT",true}, {8, 0, 100, 20}, "Anoint 3...", function()
+	self.controls.displayItemAnoint3 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint2,"TOPRIGHT",true}, {8, 0, 100, 20}, "도유 3...", function()
 		self:AnointDisplayItem(3)
 	end)
 	self.controls.displayItemAnoint3.shown = function()
@@ -482,7 +482,7 @@ holding Shift will put it in the second.]])
 			self.displayItem.canHaveThreeEnchants and
 			#self.displayItem.enchantModLines > 1
 	end
-	self.controls.displayItemAnoint4 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint3,"TOPRIGHT",true}, {8, 0, 100, 20}, "Anoint 4...", function()
+	self.controls.displayItemAnoint4 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint3,"TOPRIGHT",true}, {8, 0, 100, 20}, "도유 4...", function()
 		self:AnointDisplayItem(4)
 	end)
 	self.controls.displayItemAnoint4.shown = function()
@@ -491,7 +491,7 @@ holding Shift will put it in the second.]])
 			self.displayItem.canHaveFourEnchants and
 			#self.displayItem.enchantModLines > 2
 	end
-	self.controls.displayItemCorrupt = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint4,"TOPRIGHT",true}, {8, 10, 100, 20}, "Corrupt...", function()
+	self.controls.displayItemCorrupt = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint4,"TOPRIGHT",true}, {8, 10, 100, 20}, "타락...", function()
 		self:CorruptDisplayItem("Corrupted")
 	end)
 	self.controls.displayItemCorrupt.shown = function()
@@ -505,7 +505,7 @@ holding Shift will put it in the second.]])
 		return self.displayItem and self.displayItem.corruptible
 	end
 	--]]
-	self.controls.displayItemAddImplicit = new("ButtonControl", {"TOPLEFT",self.controls.displayItemCorrupt,"TOPRIGHT",true}, {8, 0, 120, 20}, "Add Implicit...", function()
+	self.controls.displayItemAddImplicit = new("ButtonControl", {"TOPLEFT",self.controls.displayItemCorrupt,"TOPRIGHT",true}, {8, 0, 120, 20}, "암시 부여자 추가...", function()
 		self:AddImplicitToDisplayItem()
 	end)
 	self.controls.displayItemAddImplicit.shown = function()
@@ -516,7 +516,7 @@ holding Shift will put it in the second.]])
 	end
 
 	-- Section: Influence dropdowns
-	local influenceDisplayList = { "Influence" }
+	local influenceDisplayList = { "영향력" }
 	for i, curInfluenceInfo in ipairs(influenceInfo) do
 		influenceDisplayList[i + 1] = curInfluenceInfo.display
 	end
@@ -566,7 +566,7 @@ holding Shift will put it in the second.]])
 	self.controls.displayItemSectionQuality = new("Control", {"TOPLEFT",self.controls.displayItemSectionInfluence,"BOTTOMLEFT"}, {0, 0, 0, function()
 		return (self.controls.displayItemQuality:IsShown() and self.controls.displayItemQualityEdit:IsShown()) and 28 or 0
 	end})
-	self.controls.displayItemQuality = new("LabelControl", {"TOPLEFT",self.controls.displayItemSectionQuality,"TOPRIGHT"}, {-4, 0, 0, 16}, "^7Quality:")
+	self.controls.displayItemQuality = new("LabelControl", {"TOPLEFT",self.controls.displayItemSectionQuality,"TOPRIGHT"}, {-4, 0, 0, 16}, "^7퀄리티:")
 	self.controls.displayItemQuality.shown = function()
 		return self.displayItem and self.displayItem.quality and (self.displayItem.base.type ~= "Amulet" or self.displayItem.base.type ~= "Belt" or self.displayItem.base.type ~= "Jewel" or self.displayItem.base.type ~= "Quiver" or self.displayItem.base.type ~= "Ring" or self.displayItem.type ~= "Graft")
 	end
@@ -585,8 +585,8 @@ holding Shift will put it in the second.]])
 		return (self.controls.displayItemCatalyst:IsShown() or self.controls.displayItemCatalystQualityEdit:IsShown()) and 28 or 0
 	end})
 	self.controls.displayItemCatalyst = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionCatalyst,"TOPRIGHT"}, {0, 0, 250, 20},
-		{"Catalyst","Abrasive (Attack)","Accelerating (Speed)","Fertile (Life & Mana)","Imbued (Caster)","Intrinsic (Attribute)","Noxious (Physical & Chaos Damage)",
-		 "Prismatic (Resistance)","Tempering (Defense)","Turbulent (Elemental)","Unstable (Critical)"},
+		{"촉매","연마 (공격)","가속 (속도)","비옥한 (생명력 & 마나)","주입 (시전)","본질적 (능력치)","유독한 (물리 & 카오스 피해)",
+		 "프리즘 (저항)","강화 (방어)","격동 (원소)","불안정한 (치명타)"},
 		function(index, value)
 			self.displayItem.catalyst = index - 1
 			if not self.displayItem.catalystQuality then
@@ -635,7 +635,7 @@ holding Shift will put it in the second.]])
 		end
 	}
 	
-	self.controls.displayItemClusterJewelNodeCountLabel = new("LabelControl", {"TOPLEFT",self.controls.displayItemClusterJewelSkill,"BOTTOMLEFT"}, {0, 7, 0, 14}, "^7Added Passives:")
+	self.controls.displayItemClusterJewelNodeCountLabel = new("LabelControl", {"TOPLEFT",self.controls.displayItemClusterJewelSkill,"BOTTOMLEFT"}, {0, 7, 0, 14}, "^7추가된 패시브:")
 	self.controls.displayItemClusterJewelNodeCount = new("SliderControl", {"LEFT",self.controls.displayItemClusterJewelNodeCountLabel,"RIGHT"}, {2, 0, 150, 20}, function(val)
 		local divVal = self.controls.displayItemClusterJewelNodeCount:GetDivVal()
 		local clusterJewel = self.displayItem.clusterJewel
@@ -878,11 +878,11 @@ holding Shift will put it in the second.]])
 		drop.slider = slider
 		self.controls["displayItemAffix"..i] = drop
 		self.controls["displayItemAffixLabel"..i] = new("LabelControl", {"RIGHT",drop,"LEFT"}, {-4, 0, 0, 14}, function()
-			return drop.outputTable == "prefixes" and "^7Prefix:" or "^7Suffix:"
+			return drop.outputTable == "prefixes" and "^7접두어:" or "^7접미어:"
 		end)
 		self.controls["displayItemAffixRange"..i] = slider
 		self.controls["displayItemAffixRangeLabel"..i] = new("LabelControl", {"RIGHT",slider,"LEFT"}, {-4, 0, 0, 14}, function()
-			return drop.selIndex > 1 and "^7Roll:" or "^x7F7F7FRoll:"
+			return drop.selIndex > 1 and "^7굴림:" or "^x7F7F7F굴림:"
 		end)
 	end
 
@@ -891,7 +891,7 @@ holding Shift will put it in the second.]])
 	self.controls.displayItemSectionCustom = new("Control", {"TOPLEFT",self.controls.displayItemSectionAffix,"BOTTOMLEFT"}, {0, 0, 0, function()
 		return (self.controls.displayItemAddCustom:IsShown() or self.controls.displayItemAddCrucible:IsShown()) and 28 + self.displayItem.customCount * 22 or 0
 	end})
-	self.controls.displayItemAddCustom = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionCustom,"TOPLEFT"}, {0, 0, 120, 20}, "Add modifier...", function()
+	self.controls.displayItemAddCustom = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionCustom,"TOPLEFT"}, {0, 0, 120, 20}, "속성 부여자 추가...", function()
 		self:AddCustomModifierToDisplayItem()
 	end)
 	self.controls.displayItemAddCustom.shown = function()
@@ -902,7 +902,7 @@ holding Shift will put it in the second.]])
 	-- if the Add modifier button is not shown, take its place, otherwise move it to the right of it
 	self.controls.displayItemAddCrucible = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionCustom,"TOPLEFT"}, {function()
 		return (self.controls.displayItemAddCustom:IsShown() and 128) or 0
-	end, 0, 150, 20}, "Add Crucible mod...", function()
+	end, 0, 150, 20}, "도가니 속성 추가...", function()
 		self:AddCrucibleModifierToDisplayItem()
 	end)
 	self.controls.displayItemAddCrucible.shown = function()
@@ -1237,7 +1237,7 @@ function ItemsTabClass:Draw(viewPort, inputEvents)
 			if event.key == "v" and IsKeyDown("CTRL") then
 				local newItem = Paste()
 				if newItem:find("{ ", 0, true) then
-					main:OpenConfirmPopup("Warning", "\"Advanced Item Descriptions\" (Ctrl+Alt+c) are unsupported.\n\nAbort paste?", "OK", function()
+					main:OpenConfirmPopup("경고", "\"고급 아이템 설명\" (Ctrl+Alt+c)은 지원되지 않습니다.\n\n붙여넣기를 중단하시겠습니까?", "확인", function()
 						self:SetDisplayItem()
 					end)
 				end
@@ -1432,7 +1432,7 @@ function ItemsTabClass:UpdateSockets()
 	-- Update the state of the active socket controls
 	self.lastSlot = self.slots[baseSlots[#baseSlots]]
 	for index, nodeId in ipairs(activeSocketList) do
-		self.sockets[nodeId].label = "Socket #"..index
+		self.sockets[nodeId].label = "소켓 #"..index
 		self.lastSlot = self.sockets[nodeId]
 	end
 end
@@ -1646,7 +1646,7 @@ function ItemsTabClass:SetDisplayItem(item)
 		-- Set both influence dropdowns
 		local influence1 = 1
 		local influence2 = 1
-		local influenceDisplayList = { "Influence" }
+		local influenceDisplayList = { "영향력" }
 		for i, curInfluenceInfo in ipairs((item.canHaveEldritchInfluence or item.type == "Helmet" or item.type == "Body Armour" or item.type == "Gloves" or item.type == "Boots") and itemLib.influenceInfo.all or itemLib.influenceInfo.default) do
 			influenceDisplayList[i + 1] = curInfluenceInfo.display
 		end
@@ -1811,7 +1811,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 		return a < b
 	end)
 	control.selIndex = 1
-	control.list = { "None" }
+	control.list = { "없음" }
 	control.outputTable = outputTable
 	control.outputIndex = outputIndex
 	control.slider.shown = false
@@ -2034,10 +2034,10 @@ function ItemsTabClass:OpenItemSetManagePopup()
 	controls.sharedList = new("SharedItemSetListControl", nil, {155, 50, 300, 200}, self)
 	controls.setList.dragTargetList = { controls.sharedList }
 	controls.sharedList.dragTargetList = { controls.setList }
-	controls.close = new("ButtonControl", nil, {0, 260, 90, 20}, "Done", function()
+	controls.close = new("ButtonControl", nil, {0, 260, 90, 20}, "완료", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(630, 290, "Manage Item Sets", controls)
+	main:OpenPopup(630, 290, "아이템 세트 관리", controls)
 end
 
 -- Opens the item crafting popup
@@ -2095,13 +2095,13 @@ function ItemsTabClass:CraftItem()
 	controls.title.shown = function()
 		return controls.rarity.selIndex >= 3
 	end
-	controls.typeLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {50, 45, 0, 16}, "Type:")
+	controls.typeLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {50, 45, 0, 16}, "유형:")
 	controls.type = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {55, 45, 295, 18}, self.build.data.itemBaseTypeList, function(index, value)
 		controls.base.list = self.build.data.itemBaseLists[self.build.data.itemBaseTypeList[index]]
 		controls.base.selIndex = 1
 	end)
 	controls.type.selIndex = self.lastCraftTypeSel or 1
-	controls.baseLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {50, 70, 0, 16}, "Base:")
+	controls.baseLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {50, 70, 0, 16}, "기반:")
 	controls.base = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {55, 70, 200, 18}, self.build.data.itemBaseLists[self.build.data.itemBaseTypeList[controls.type.selIndex]])
 	controls.base.selIndex = self.lastCraftBaseSel or 1
 	controls.base.tooltipFunc = function(tooltip, mode, index, value)
@@ -2110,7 +2110,7 @@ function ItemsTabClass:CraftItem()
 			self:AddItemTooltip(tooltip, makeItem(value), nil, true)
 		end
 	end
-	controls.save = new("ButtonControl", nil, {-45, 100, 80, 20}, "Create", function()
+	controls.save = new("ButtonControl", nil, {-45, 100, 80, 20}, "생성", function()
 		main:ClosePopup()
 		local item = makeItem(controls.base.list[controls.base.selIndex])
 		self:SetDisplayItem(item)
@@ -2121,10 +2121,10 @@ function ItemsTabClass:CraftItem()
 		self.lastCraftTypeSel = controls.type.selIndex
 		self.lastCraftBaseSel = controls.base.selIndex
 	end)
-	controls.cancel = new("ButtonControl", nil, {45, 100, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 100, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(370, 130, "Craft Item", controls)
+	main:OpenPopup(370, 130, "아이템 제작", controls)
 end
 
 -- Opens the item text editor popup
@@ -2148,7 +2148,7 @@ function ItemsTabClass:EditDisplayItemText(alsoAddItem)
 	end
 	controls.edit.font = "FIXED"
 	controls.edit.pasteFilter = sanitiseText
-	controls.save = new("ButtonControl", nil, {-45, 470, 80, 20}, self.displayItem and "Save" or "Create", function()
+	controls.save = new("ButtonControl", nil, {-45, 470, 80, 20}, self.displayItem and "저장" or "생성", function()
 		local id = self.displayItem and self.displayItem.id
 		self:CreateDisplayItemFromRaw(buildRaw(), not self.displayItem)
 		self.displayItem.id = id
@@ -2167,19 +2167,19 @@ function ItemsTabClass:EditDisplayItemText(alsoAddItem)
 		if item.base then
 			self:AddItemTooltip(tooltip, item, nil, true)
 		else
-			tooltip:AddLine(14, "The item is invalid.")
-			tooltip:AddLine(14, "Check that the item's title and base name are in the correct format.")
-			tooltip:AddLine(14, "For Rare and Unique items, the first 2 lines must be the title and base name. E.g.:")
+			tooltip:AddLine(14, "아이템이 유효하지 않습니다.")
+			tooltip:AddLine(14, "아이템의 제목과 기반 이름이 올바른 형식인지 확인하세요.")
+			tooltip:AddLine(14, "희귀 및 고유 아이템의 경우, 처음 2줄은 제목과 기반 이름이어야 합니다. 예:")
 			tooltip:AddLine(14, "Abberath's Horn")
 			tooltip:AddLine(14, "Goat's Horn")
-			tooltip:AddLine(14, "For Normal and Magic items, the base name must be somewhere in the first line. E.g.:")
+			tooltip:AddLine(14, "일반 및 마법 아이템의 경우, 기반 이름이 첫 번째 줄에 포함되어야 합니다. 예:")
 			tooltip:AddLine(14, "Scholar's Platinum Kris of Joy")
 		end
 	end	
-	controls.cancel = new("ButtonControl", nil, {45, 470, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 470, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(500, 500, self.displayItem and "Edit Item Text" or "Create Custom Item from Text", controls, nil, "edit")
+	main:OpenPopup(500, 500, self.displayItem and "아이템 텍스트 편집" or "텍스트로 커스텀 아이템 생성", controls, nil, "edit")
 end
 
 -- Opens the item enchanting popup
@@ -2266,47 +2266,47 @@ function ItemsTabClass:EnchantDisplayItem(enchantSlot)
 		return item
 	end
 	if haveSkills then
-		controls.skillLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7Skill:")
+		controls.skillLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7스킬:")
 		controls.skill = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 20, 180, 18}, skillList, function(index, value)
 			buildEnchantmentSourceList()
 			buildEnchantmentList()
 			controls.enchantment:SetSel(1)
 		end)
-		controls.allSkills = new("CheckBoxControl", {"TOPLEFT",nil,"TOPLEFT"}, {350, 20, 18}, "All skills:", function(state)
+		controls.allSkills = new("CheckBoxControl", {"TOPLEFT",nil,"TOPLEFT"}, {350, 20, 18}, "모든 스킬:", function(state)
 			buildSkillList(not state)
 			controls.skill:SetSel(1)
 			buildEnchantmentList()
 			controls.enchantment:SetSel(1)
 		end)
-		controls.allSkills.tooltipText = "Show all skills, not just those used by this build."
+		controls.allSkills.tooltipText = "이 빌드에서 사용하는 스킬뿐만 아니라 모든 스킬을 표시합니다."
 		if not next(skillsUsed) then
 			controls.allSkills.state = true
 			controls.allSkills.enabled = false
 		end
 	end
-	controls.enchantmentSourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7Source:")
+	controls.enchantmentSourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7출처:")
 	controls.enchantmentSource = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 45, 180, 18}, enchantmentSourceList, function(index, value)
 		buildEnchantmentList()
 		controls.enchantment:SetSel(m_min(controls.enchantment.selIndex, #enchantmentList))
 	end)
-	controls.enchantmentLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 70, 0, 16}, "^7Enchantment:")
+	controls.enchantmentLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 70, 0, 16}, "^7인챈트:")
 	controls.enchantment = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 70, 440, 18}, enchantmentList)
 	controls.enchantment.tooltipFunc = function(tooltip, mode, index)
 		tooltip:Clear()
 		self:AddItemTooltip(tooltip, enchantItem(index), nil, true)
 	end
-	controls.save = new("ButtonControl", nil, {-88, 100, 80, 20}, "Enchant", function()
+	controls.save = new("ButtonControl", nil, {-88, 100, 80, 20}, "인챈트", function()
 		self:SetDisplayItem(enchantItem())
 		main:ClosePopup()
 	end)
-	controls.remove = new("ButtonControl", nil, {0, 100, 80, 20}, "Remove", function()
+	controls.remove = new("ButtonControl", nil, {0, 100, 80, 20}, "제거", function()
 		self:SetDisplayItem(enchantItem(nil, true))
 		main:ClosePopup()
 	end)
-	controls.close = new("ButtonControl", nil, {88, 100, 80, 20}, "Cancel", function()
+	controls.close = new("ButtonControl", nil, {88, 100, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(550, 130, "Enchant Item", controls)
+	main:OpenPopup(550, 130, "아이템 인챈트", controls)
 end
 
 ---Gets the name of the anointed node on an item
@@ -2356,13 +2356,13 @@ function ItemsTabClass:AppendAnointTooltip(tooltip, node, actionText)
 	end
 
 	if not actionText then
-		actionText = "Anointing"
+		actionText = "도유"
 	end
 
 	local header
 	if node then
 		if self.build.spec.allocNodes[node.id] then
-			tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." changes nothing because this node is already allocated on the tree.")
+			tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 이 노드는 이미 트리에 할당되어 있으므로 변경 사항이 없습니다.")
 			return
 		end
 
@@ -2370,22 +2370,22 @@ function ItemsTabClass:AppendAnointTooltip(tooltip, node, actionText)
 		if curAnoints and #curAnoints > 0 then
 			for _, curAnoint in ipairs(curAnoints) do
 				if curAnoint == node.dn then
-					tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." changes nothing because this node is already anointed.")
+					tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 이 노드는 이미 도유되어 있으므로 변경 사항이 없습니다.")
 					return
 				end
 			end
 		end
 
-		header = "^7"..actionText.." "..node.dn.." will give you: "
+		header = "^7"..actionText.." "..node.dn.." 적용 시 효과: "
 	else
-		header = "^7"..actionText.." nothing will give you: "
+		header = "^7"..actionText.." 없음 적용 시 효과: "
 	end
 	local calcFunc = self.build.calcsTab:GetMiscCalculator()
 	local outputBase = calcFunc({ repSlotName = "Amulet", repItem = self.displayItem })
 	local outputNew = calcFunc({ repSlotName = "Amulet", repItem = self:anointItem(node) })
 	local numChanges = self.build:AddStatComparesToTooltip(tooltip, outputBase, outputNew, header)
 	if node and numChanges == 0 then
-		tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." changes nothing.")
+		tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 변경 사항이 없습니다.")
 	end
 end
 
@@ -2395,9 +2395,9 @@ end
 function ItemsTabClass:AppendAddedNotableTooltip(tooltip, node)
 	local calcFunc, calcBase = self.build.calcsTab:GetMiscCalculator()
 	local outputNew = calcFunc({ addNodes = { [node] = true } })
-	local numChanges = self.build:AddStatComparesToTooltip(tooltip, calcBase, outputNew, "^7Allocating "..node.dn.." will give you: ")
+	local numChanges = self.build:AddStatComparesToTooltip(tooltip, calcBase, outputNew, "^7"..node.dn.." 할당 시 효과: ")
 	if numChanges == 0 then
-		tooltip:AddLine(14, "^7Allocating "..node.dn.." changes nothing.")
+		tooltip:AddLine(14, "^7"..node.dn.." 할당 - 변경 사항이 없습니다.")
 	end
 end
 
@@ -2411,13 +2411,13 @@ function ItemsTabClass:AnointDisplayItem(enchantSlot)
 	local function saveLabel()
 		local node = controls.notableDB.selValue
 		if node then
-			return "Anoint " .. node.dn
+			return "도유 " .. node.dn
 		end
 		local curAnoints = self:getAnoint(self.displayItem)
 		if curAnoints and #curAnoints >= self.anointEnchantSlot then
-			return "Remove "..curAnoints[self.anointEnchantSlot]
+			return "제거 "..curAnoints[self.anointEnchantSlot]
 		end
-		return "No Anoint"
+		return "도유 없음"
 	end
 	local function saveLabelWidth()
 		local label = saveLabel()
@@ -2435,10 +2435,10 @@ function ItemsTabClass:AnointDisplayItem(enchantSlot)
 		tooltip:Clear()
 		self:AppendAnointTooltip(tooltip, controls.notableDB.selValue)
 	end	
-	controls.close = new("ButtonControl", {"TOPLEFT", controls.save, "TOPRIGHT" }, {10, 0, 80, 20}, "Cancel", function()
+	controls.close = new("ButtonControl", {"TOPLEFT", controls.save, "TOPRIGHT" }, {10, 0, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(380, 448, "Anoint Item", controls)
+	main:OpenPopup(380, 448, "아이템 도유", controls)
 end
 
 -- Opens the item corrupting popup
@@ -2472,7 +2472,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 		local selfMod = control.selIndex and control.selIndex > 1 and control.list[control.selIndex].mod
 		local otherMod = other and other.selIndex and other.selIndex > 1 and other.list[other.selIndex].mod
 		wipeTable(control.list)
-		t_insert(control.list, { label = "None" })
+		t_insert(control.list, { label = "없음" })
 		for _, mod in ipairs(implicitList[modType]) do
 			if not otherMod or mod.group ~= otherMod.group then
 				t_insert(control.list, { label = table.concat(mod, "/"), mod = mod })
@@ -2557,7 +2557,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 		controls.implicit4:SetSel(1)
 	end)
 	controls.source.enabled = #sourceList > 1
-	controls.implicitLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 45, 0, 16}, "^7Implicit #1:")
+	controls.implicitLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 45, 0, 16}, "^7암시 부여자 #1:")
 	controls.implicit = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {80, 45, 440, 18}, nil, function()
 		buildList(controls.implicit2, controls.implicit, currentModType)
 	end)
@@ -2572,7 +2572,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 	end
 	controls.implicit.shown = not self.displayItem.implicitsCannotBeChanged
 	controls.implicitLabel.shown = not self.displayItem.implicitsCannotBeChanged
-	controls.implicit2Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 65, 0, 16}, "^7Implicit #2:")
+	controls.implicit2Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 65, 0, 16}, "^7암시 부여자 #2:")
 	controls.implicit2 = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {80, 65, 440, 18}, nil, function()
 		buildList(controls.implicit, controls.implicit2, currentModType)
 	end)
@@ -2587,7 +2587,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 	end
 	controls.implicit2.shown = not self.displayItem.implicitsCannotBeChanged
 	controls.implicit2Label.shown = not self.displayItem.implicitsCannotBeChanged
-	controls.implicit3Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 85, 0, 16}, "^7Implicit #3:")
+	controls.implicit3Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 85, 0, 16}, "^7암시 부여자 #3:")
 	controls.implicit3 = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {80, 65, 440, 18}, nil, function()
 		buildList(controls.implicit4, controls.implicit3, "ScourgeDownside")
 	end)
@@ -2602,7 +2602,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 	end
 	controls.implicit3Label.shown = false
 	controls.implicit3.shown = false
-	controls.implicit4Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 105, 0, 16}, "^7Implicit #4:")
+	controls.implicit4Label = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {75, 105, 0, 16}, "^7암시 부여자 #4:")
 	controls.implicit4 = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {80, 105, 440, 18}, nil, function()
 		buildList(controls.implicit3, controls.implicit4, "ScourgeDownside")
 	end)
@@ -2617,7 +2617,7 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 	end
 	controls.implicit4Label.shown = false
 	controls.implicit4.shown = false
-	controls.implicitCannotBeChangedLabel = new("LabelControl", {"TOPLEFT",nil,"TOPLEFT"}, {20, 45, 0, 20}, "^7This Items Implicits Cannot Be Changed")
+	controls.implicitCannotBeChangedLabel = new("LabelControl", {"TOPLEFT",nil,"TOPLEFT"}, {20, 45, 0, 20}, "^7이 아이템의 암시 부여자는 변경할 수 없습니다")
 	controls.implicitCannotBeChangedLabel.shown = self.displayItem.implicitsCannotBeChanged
 	buildList(controls.implicit, controls.implicit2, currentModType)
 	buildList(controls.implicit2, controls.implicit, currentModType)
@@ -2629,10 +2629,10 @@ function ItemsTabClass:CorruptDisplayItem(modType)
 		tooltip:Clear()
 		self:AddItemTooltip(tooltip, corruptItem(), nil, true)
 	end	
-	controls.close = new("ButtonControl", nil, {45, 99, 80, 20}, "Cancel", function()
+	controls.close = new("ButtonControl", nil, {45, 99, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(540, 129, modType .. " Item", controls)
+	main:OpenPopup(540, 129, modType .. " 아이템", controls)
 end
 
 -- Opens the custom modifier popup
@@ -2791,25 +2791,25 @@ function ItemsTabClass:AddCustomModifierToDisplayItem()
 	end
 	if self.displayItem.type ~= "Tincture" and self.displayItem.type ~= "Graft" then
 		if self.displayItem.type ~= "Jewel" then
-			t_insert(sourceList, { label = "Crafting Bench", sourceId = "MASTER" })
+			t_insert(sourceList, { label = "제작 작업대", sourceId = "MASTER" })
 		end
 		if self.displayItem.type ~= "Jewel" and self.displayItem.type ~= "Flask" and self.displayItem.type ~= "Graft" then
-			t_insert(sourceList, { label = "Essence", sourceId = "ESSENCE" })
-			t_insert(sourceList, { label = "Veiled", sourceId = "VEILED"})
-			t_insert(sourceList, { label = "Beastcraft", sourceId = "BEASTCRAFT" })
+			t_insert(sourceList, { label = "에센스", sourceId = "ESSENCE" })
+			t_insert(sourceList, { label = "장막", sourceId = "VEILED"})
+			t_insert(sourceList, { label = "야수 제작", sourceId = "BEASTCRAFT" })
 		end
 		if self.displayItem.type == "Helmet" or self.displayItem.type == "Body Armour" or self.displayItem.type == "Gloves" or self.displayItem.type == "Boots" then
-			t_insert(sourceList, { label = "Necropolis", sourceId = "NECROPOLIS"})
+			t_insert(sourceList, { label = "네크로폴리스", sourceId = "NECROPOLIS"})
 		end
 		if not self.displayItem.clusterJewel and self.displayItem.type ~= "Flask" and self.displayItem.type ~= "Graft" then
-			t_insert(sourceList, { label = "Delve", sourceId = "DELVE"})
+			t_insert(sourceList, { label = "탐광", sourceId = "DELVE"})
 		end
 		if not self.displayItem.crafted then
-			t_insert(sourceList, { label = "Prefix", sourceId = "PREFIX" })
-			t_insert(sourceList, { label = "Suffix", sourceId = "SUFFIX" })
+			t_insert(sourceList, { label = "접두어", sourceId = "PREFIX" })
+			t_insert(sourceList, { label = "접미어", sourceId = "SUFFIX" })
 		end
 	end
-	t_insert(sourceList, { label = "Custom", sourceId = "CUSTOM" })
+	t_insert(sourceList, { label = "사용자 정의", sourceId = "CUSTOM" })
 	buildMods(sourceList[1].sourceId)
 	local function addModifier()
 		local item = new("Item", self.displayItem:BuildRaw())
@@ -2828,13 +2828,13 @@ function ItemsTabClass:AddCustomModifierToDisplayItem()
 		item:BuildAndParseRaw()
 		return item
 	end
-	controls.sourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7Source:")
+	controls.sourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7출처:")
 	controls.source = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 20, 150, 18}, sourceList, function(index, value)
 		buildMods(value.sourceId)
 		controls.modSelect:SetSel(1)
 	end)
 	controls.source.enabled = #sourceList > 1
-	controls.modSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7Modifier:")
+	controls.modSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7속성 부여자:")
 	controls.modSelect = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 45, 600, 18}, modList)
 	controls.modSelect.shown = function()
 		return sourceList[controls.source.selIndex].sourceId ~= "CUSTOM"
@@ -2852,24 +2852,24 @@ function ItemsTabClass:AddCustomModifierToDisplayItem()
 	controls.custom.shown = function()
 		return sourceList[controls.source.selIndex].sourceId == "CUSTOM"
 	end
-	controls.save = new("ButtonControl", nil, {-45, 75, 80, 20}, "Add", function()
+	controls.save = new("ButtonControl", nil, {-45, 75, 80, 20}, "추가", function()
 		self:SetDisplayItem(addModifier())
 		main:ClosePopup()
 	end)
 	controls.save.tooltipFunc = function(tooltip)
 		tooltip:Clear()
 		self:AddItemTooltip(tooltip, addModifier())
-	end	
-	controls.close = new("ButtonControl", nil, {45, 75, 80, 20}, "Cancel", function()
+	end
+	controls.close = new("ButtonControl", nil, {45, 75, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(710, 105, "Add Modifier to Item", controls, "save", sourceList[controls.source.selIndex].sourceId == "CUSTOM" and "custom")	
+	main:OpenPopup(710, 105, "아이템에 속성 부여자 추가", controls, "save", sourceList[controls.source.selIndex].sourceId == "CUSTOM" and "custom")	
 end
 
 -- Opens the crucible modifier popup
 function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 	local controls = { }
-	local modList = {[1] = {"None"}, [2] = {"None"}, [3] = {"None"}, [4] = {"None"}, [5] = {"None"}}
+	local modList = {[1] = {"없음"}, [2] = {"없음"}, [3] = {"없음"}, [4] = {"없음"}, [5] = {"없음"}}
 	local itemModMap, nodeSelections = { }, { }
 	local function getLabelFromMod(mod)
 		local label = copyTable(mod)
@@ -2926,7 +2926,7 @@ function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 		end
 		for _, tierList in ipairs(modList) do
 			table.sort(tierList, function(a, b)
-				if b ~= "None" then
+				if b ~= "없음" then
 					if a.affixType ~= b.affixType then
 						return a.affixType == "Spawn" and b.affixType == "MergeOnly"
 					else
@@ -2948,7 +2948,7 @@ function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 			modList[5][controls.modSelectNode5.selIndex],
 		}
 		for _, nodeMod in ipairs(listMod) do
-			if nodeMod ~= "None" then
+			if nodeMod ~= "없음" then
 				for index, line in ipairs(nodeMod.mod) do
 					t_insert(item.crucibleModLines, { line = checkLineForAllocates(line, self.build.spec.nodes), modTags = nodeMod.mod.modTags, [nodeMod.type] = true })
 				end
@@ -2964,11 +2964,11 @@ function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 	buildCrucibleMods()
 	local y = 45
 	for i = 1,5 do
-		controls["modSelectNode"..i.."Label"] = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, y, 0, 16}, "^7Node "..i..":")
+		controls["modSelectNode"..i.."Label"] = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, y, 0, 16}, "^7노드 "..i..":")
 		controls["modSelectNode"..i] = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, y, 555, 18}, modList[i])
 		controls["modSelectNode"..i].tooltipFunc = function(tooltip, mode, index, value)
 			tooltip:Clear()
-			if mode ~= "OUT" and value and value ~= "None" then
+			if mode ~= "OUT" and value and value ~= "없음" then
 				for _, line in ipairs(value.mod) do
 					tooltip:AddLine(16, "^7"..checkLineForAllocates(line, self.build.spec.nodes))
 				end
@@ -2985,7 +2985,7 @@ function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 			end
 		end
 	end
-	controls.save = new("ButtonControl", nil, {-45, 157, 80, 20}, "Add", function()
+	controls.save = new("ButtonControl", nil, {-45, 157, 80, 20}, "추가", function()
 		self:SetDisplayItem(addModifier())
 		main:ClosePopup()
 	end)
@@ -2993,10 +2993,10 @@ function ItemsTabClass:AddCrucibleModifierToDisplayItem()
 		tooltip:Clear()
 		self:AddItemTooltip(tooltip, addModifier())
 	end
-	controls.close = new("ButtonControl", nil, {45, 157, 80, 20}, "Cancel", function()
+	controls.close = new("ButtonControl", nil, {45, 157, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(710, 185, "Add Crucible Modifier to Item", controls, "save")
+	main:OpenPopup(710, 185, "아이템에 도가니 속성 부여자 추가", controls, "save")
 end
 
 -- Opens the custom Implicit popup
@@ -3133,17 +3133,17 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 	end
 	if (self.displayItem.rarity ~= "UNIQUE" and self.displayItem.rarity ~= "RELIC") and (self.displayItem.type == "Helmet" or self.displayItem.type == "Body Armour" or self.displayItem.type == "Gloves" or self.displayItem.type == "Boots") then
 		if self.displayItem.cleansing then
-			t_insert(sourceList, { label = "Searing Exarch", sourceId = "EXARCH" })
+			t_insert(sourceList, { label = "작열의 엑자크", sourceId = "EXARCH" })
 		end
 		if self.displayItem.tangle then
-			t_insert(sourceList, { label = "Eater of Worlds", sourceId = "EATER" })
+			t_insert(sourceList, { label = "세계의 포식자", sourceId = "EATER" })
 		end
 	end
 	if self.displayItem.type ~= "Flask" and self.displayItem.type ~= "Jewel" and self.displayItem.type ~= "Graft" then
 		--t_insert(sourceList, { label = "Synth", sourceId = "SYNTHESIS" }) -- synth removed until we get proper support for where the mods go
-		t_insert(sourceList, { label = "Delve", sourceId = "DelveImplicit" })
+		t_insert(sourceList, { label = "탐광", sourceId = "DelveImplicit" })
 	end
-	t_insert(sourceList, { label = "Custom", sourceId = "CUSTOM" })
+	t_insert(sourceList, { label = "사용자 정의", sourceId = "CUSTOM" })
 	buildMods(sourceList[1].sourceId)
 	local function addModifier()
 		local item = new("Item", self.displayItem:BuildRaw())
@@ -3185,7 +3185,7 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 		item:BuildAndParseRaw()
 		return item
 	end
-	controls.sourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7Source:")
+	controls.sourceLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 20, 0, 16}, "^7출처:")
 	controls.source = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 20, 150, 18}, sourceList, function(index, value)
 		if value.sourceId ~= "CUSTOM" then
 			controls.modSelectLabel.y = 70
@@ -3198,7 +3198,7 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 		end
 	end)
 	controls.source.enabled = #sourceList > 1
-	controls.modGroupSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7Type:")
+	controls.modGroupSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 45, 0, 16}, "^7유형:")
 	controls.modGroupSelect = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 45, 600, 18}, modGroups, function(index, value)
 		controls.modSelect.list = modList[value.modListIndex]
 		controls.modSelect:SetSel(1)
@@ -3221,7 +3221,7 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 			self:AddModComparisonTooltip(tooltip, value.mod)
 		end
 	end
-	controls.modSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 70, 0, 16}, "^7Modifier:")
+	controls.modSelectLabel = new("LabelControl", {"TOPRIGHT",nil,"TOPLEFT"}, {95, 70, 0, 16}, "^7속성 부여자:")
 	controls.modSelect = new("DropDownControl", {"TOPLEFT",nil,"TOPLEFT"}, {100, 70, 600, 18}, sourceList[controls.source.selIndex].sourceId ~= "CUSTOM" and modList[modGroups[1].modListIndex] or { })
 	controls.modSelect.shown = function()
 		return sourceList[controls.source.selIndex].sourceId ~= "CUSTOM"
@@ -3239,18 +3239,18 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 	controls.custom.shown = function()
 		return sourceList[controls.source.selIndex].sourceId == "CUSTOM"
 	end
-	controls.save = new("ButtonControl", nil, {-45, 100, 80, 20}, "Add", function()
+	controls.save = new("ButtonControl", nil, {-45, 100, 80, 20}, "추가", function()
 		self:SetDisplayItem(addModifier())
 		main:ClosePopup()
 	end)
 	controls.save.tooltipFunc = function(tooltip)
 		tooltip:Clear()
 		self:AddItemTooltip(tooltip, addModifier())
-	end	
-	controls.close = new("ButtonControl", nil, {45, 100, 80, 20}, "Cancel", function()
+	end
+	controls.close = new("ButtonControl", nil, {45, 100, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(710, 130, "Add Implicit to Item", controls, "save", sourceList[controls.source.selIndex].sourceId == "CUSTOM" and "custom")	
+	main:OpenPopup(710, 130, "아이템에 암시 부여자 추가", controls, "save", sourceList[controls.source.selIndex].sourceId == "CUSTOM" and "custom")	
 end
 
 function ItemsTabClass:AddItemSetTooltip(tooltip, itemSet)

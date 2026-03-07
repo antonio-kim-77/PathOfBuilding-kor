@@ -38,7 +38,7 @@ Below are some common color codes PoB uses:	]]
 	self.controls.edit.height = function()
 		return self.height - 128
 	end
-	self.controls.toggleColorCodes = new("ButtonControl", {"TOPRIGHT",self,"TOPRIGHT"}, {-10, 70, 160, 20}, "Show Color Codes", function()
+	self.controls.toggleColorCodes = new("ButtonControl", {"TOPRIGHT",self,"TOPRIGHT"}, {-10, 70, 160, 20}, "색상 코드 표시", function()
 		self.showColorCodes = not self.showColorCodes
 		self:SetShowColorCodes(self.showColorCodes)
 	end)
@@ -48,10 +48,10 @@ end)
 function NotesTabClass:SetShowColorCodes(setting)
 	self.showColorCodes = setting
 	if setting then
-		self.controls.toggleColorCodes.label = "Hide Color Codes"
+		self.controls.toggleColorCodes.label = "색상 코드 숨기기"
 		self.controls.edit.buf = self.controls.edit.buf:gsub("%^x(%x%x%x%x%x%x)","^_x%1"):gsub("%^(%d)","^_%1")
 	else
-		self.controls.toggleColorCodes.label = "Show Color Codes"
+		self.controls.toggleColorCodes.label = "색상 코드 표시"
 		self.controls.edit.buf = self.controls.edit.buf:gsub("%^_x(%x%x%x%x%x%x)","^x%1"):gsub("%^_(%d)","^%1")
 	end
 end

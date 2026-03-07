@@ -68,7 +68,7 @@ function main:Init()
 				self:SetMode("BUILD", false, data)
 			else
 				local xmlText = Inflate(common.base64.decode(data:gsub("-","+"):gsub("_","/")))
-				self:SetMode("BUILD", false, "Imported Build", xmlText, false, importLink)
+				self:SetMode("BUILD", false, "가져온 빌드", xmlText, false, importLink)
 				self.newModeChangeToTree = true
 			end
 		end)
@@ -77,7 +77,7 @@ function main:Init()
 	end
 
 	if not ignoreBuild then
-		self:SetMode("BUILD", false, "Unnamed build")
+		self:SetMode("BUILD", false, "이름 없는 빌드")
 	end
 	if launch.devMode or (GetScriptPath() == GetRuntimePath() and not launch.installedMode) then
 		-- If running in dev mode or standalone mode, put user data in the script path
@@ -197,13 +197,13 @@ function main:Init()
 	self.anchorMain.y = function()
 		return self.screenH - 4
 	end
-	self.controls.options = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, 0, 68, 20}, "Options", function()
+	self.controls.options = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, 0, 68, 20}, "옵션", function()
 		self:OpenOptionsPopup()
 	end)
-	self.controls.about = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {72, 0, 68, 20}, "About", function()
+	self.controls.about = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {72, 0, 68, 20}, "정보", function()
 		self:OpenAboutPopup()
 	end)
-	self.controls.applyUpdate = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, -24, 140, 20}, "^x50E050Update Ready", function()
+	self.controls.applyUpdate = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, -24, 140, 20}, "^x50E050업데이트 준비됨", function()
 		self:OpenUpdatePopup()
 	end)
 	self.controls.applyUpdate.shown = function()
@@ -216,7 +216,7 @@ function main:Init()
 		return not launch.devMode and (not launch.updateAvailable or launch.updateAvailable == "none")
 	end
 	self.controls.checkUpdate.label = function()
-		return launch.updateCheckRunning and launch.updateProgress or "Check for Update"
+		return launch.updateCheckRunning and launch.updateProgress or "업데이트 확인"
 	end
 	self.controls.checkUpdate.enabled = function()
 		return not launch.updateCheckRunning
@@ -233,7 +233,7 @@ function main:Init()
 	self.controls.devMode.shown = function()
 		return launch.devMode
 	end
-	self.controls.dismissToast = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, function() return -self.mainBarHeight + self.toastHeight end, 80, 20}, "Dismiss", function()
+	self.controls.dismissToast = new("ButtonControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, {0, function() return -self.mainBarHeight + self.toastHeight end, 80, 20}, "닫기", function()
 		self.toastMode = "HIDING"
 		self.toastStart = GetTime()
 	end)
@@ -818,7 +818,7 @@ function main:OpenPathPopup(invalidPath, errMsg, ignoreBuild)
 			controls.save.enabled = false
 		end
 	end)
-	controls.save = new("ButtonControl", { "TOPLEFT", controls.userPath, "TOPLEFT" }, { 0, 26, 206, 20 }, "Save", function()
+	controls.save = new("ButtonControl", { "TOPLEFT", controls.userPath, "TOPLEFT" }, { 0, 26, 206, 20 }, "저장", function()
 		local res, msg = MakeDir(controls.userPath.buf)
 		if not res and msg ~= "No error" then
 			self:OpenMessagePopup("Error", "Couldn't create '"..controls.userPath.buf.."' : "..msg)
@@ -828,7 +828,7 @@ function main:OpenPathPopup(invalidPath, errMsg, ignoreBuild)
 		end
 	end)
 	controls.save.enabled = false
-	controls.cancel = new("ButtonControl", nil, { 0, 0, 0, 0 }, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, { 0, 0, 0, 0 }, "취소", function()
 		-- Do nothing, require user to enter a location
 	end)
 	self:OpenPopup(600, 150, "Change Settings Path", controls, "save", nil, "cancel")
@@ -1122,7 +1122,7 @@ function main:OpenOptionsPopup()
 	-- last line with buttons has more spacing
 	nextRow(1.5)
 
-	controls.save = new("ButtonControl", nil, {-45, currentY, 80, 20}, "Save", function()
+	controls.save = new("ButtonControl", nil, {-45, currentY, 80, 20}, "저장", function()
 		launch.connectionProtocol = tonumber(self.connectionProtocol)
 		if controls.proxyURL.buf:match("%w") then
 			launch.proxyURL = controls.proxyType.list[controls.proxyType.selIndex].scheme .. "://" .. controls.proxyURL.buf
@@ -1147,7 +1147,7 @@ function main:OpenOptionsPopup()
 		main:ClosePopup()
 		main:SaveSettings()
 	end)
-	controls.cancel = new("ButtonControl", nil, {45, currentY, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, currentY, 80, 20}, "취소", function()
 		self.nodePowerTheme = initialNodePowerTheme
 		self.colorPositive = initialColorPositive
 		updateColorCode("POSITIVE", self.colorPositive)
@@ -1178,7 +1178,7 @@ function main:OpenOptionsPopup()
 		main:ClosePopup()
 	end)
 	nextRow(1.5)
-	self:OpenPopup(popupWidth, currentY, "Options", controls, "save", nil, "cancel")
+	self:OpenPopup(popupWidth, currentY, "옵션", controls, "save", nil, "cancel")
 end
 
 function main:SetManifestBranch(branchName)
@@ -1224,17 +1224,17 @@ function main:OpenUpdatePopup()
 	end
 	local controls = { }
 	controls.changeLog = new("TextListControl", nil, {0, 20, 780, 542}, nil, changeList)
-	controls.update = new("ButtonControl", nil, {-45, 570, 80, 20}, "Update", function()
+	controls.update = new("ButtonControl", nil, {-45, 570, 80, 20}, "업데이트", function()
 		self:ClosePopup()
 		local ret = self:CallMode("CanExit", "UPDATE")
 		if ret == nil or ret == true then
 			launch:ApplyUpdate(launch.updateAvailable)
 		end
 	end)
-	controls.cancel = new("ButtonControl", nil, {45, 570, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 570, 80, 20}, "취소", function()
 		self:ClosePopup()
 	end)
-	self:OpenPopup(800, 600, "Update Available", controls)
+	self:OpenPopup(800, 600, "업데이트 가능", controls)
 end
 
 function main:OpenAboutPopup(helpSectionIndex)
@@ -1327,7 +1327,7 @@ function main:OpenAboutPopup(helpSectionIndex)
 		helpSectionIndex = newIndex
 	end
 	local controls = { }
-	controls.close = new("ButtonControl", {"TOPRIGHT",nil,"TOPRIGHT"}, {-10, 10, 50, 20}, "Close", function()
+	controls.close = new("ButtonControl", {"TOPRIGHT",nil,"TOPRIGHT"}, {-10, 10, 50, 20}, "닫기", function()
 		self:ClosePopup()
 	end)
 	controls.version = new("LabelControl", nil, {0, 18, 0, 18}, "^7Path of Building Community Fork v"..launch.versionNumber)
@@ -1347,7 +1347,7 @@ function main:OpenAboutPopup(helpSectionIndex)
 	if helpSectionIndex then
 		controls.changelog.controls.scrollBar.offset = helpSections[helpSectionIndex].height * textSize
 	end
-	self:OpenPopup(popupWidth, 628, "About", controls)
+	self:OpenPopup(popupWidth, 628, "정보", controls)
 end
 
 function main:DrawBackground(viewPort)
@@ -1579,7 +1579,7 @@ function main:OpenConfirmPopup(title, msg, confirmLabel, onConfirm, extraLabel, 
 		end
 		placeButton(confirmWidth, confirmLabel, onConfirm, true)
 		placeButton(extraWidth, extraLabel, onExtra)
-		placeButton(cancelWidth, "Cancel", function() end)
+		placeButton(cancelWidth, "취소", function() end)
 		return self:OpenPopup(m_max(DrawStringWidth(16, "VAR", msg) + 30, totalWidth + 40), 70 + numMsgLines * 16, title, controls, "confirm")
 	else
 		-- Two button layout (original)
@@ -1587,7 +1587,7 @@ function main:OpenConfirmPopup(title, msg, confirmLabel, onConfirm, extraLabel, 
 			main:ClosePopup()
 			onConfirm()
 		end)
-		t_insert(controls, new("ButtonControl", nil, {5 + m_ceil(confirmWidth/2), 40 + numMsgLines * 16, confirmWidth, 20}, "Cancel", function()
+		t_insert(controls, new("ButtonControl", nil, {5 + m_ceil(confirmWidth/2), 40 + numMsgLines * 16, confirmWidth, 20}, "취소", function()
 			main:ClosePopup()
 		end))
 		return self:OpenPopup(m_max(DrawStringWidth(16, "VAR", msg) + 30, 190), 70 + numMsgLines * 16, title, controls, "confirm")
@@ -1596,11 +1596,11 @@ end
 
 function main:OpenNewFolderPopup(path, onClose)
 	local controls = { }
-	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7Enter folder name:")
+	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7폴더 이름을 입력하세요:")
 	controls.edit = new("EditControl", nil, {0, 40, 350, 20}, nil, nil, "\\/:%*%?\"<>|%c", 100, function(buf)
 		controls.create.enabled = buf:match("%S")
 	end)
-	controls.create = new("ButtonControl", nil, {-45, 70, 80, 20}, "Create", function()
+	controls.create = new("ButtonControl", nil, {-45, 70, 80, 20}, "만들기", function()
 		local newFolderName = controls.edit.buf
 		local res, msg = MakeDir(path..newFolderName)
 		if not res then
@@ -1613,13 +1613,13 @@ function main:OpenNewFolderPopup(path, onClose)
 		main:ClosePopup()
 	end)
 	controls.create.enabled = false
-	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "취소", function()
 		if onClose then
 			onClose()
 		end
 		main:ClosePopup()
 	end)
-	main:OpenPopup(370, 100, "New Folder", controls, "create", "edit", "cancel")
+	main:OpenPopup(370, 100, "새 폴더", controls, "create", "edit", "cancel")
 end
 
 -- Show an error popup if a file cannot be read due to cloud provider unavailability.

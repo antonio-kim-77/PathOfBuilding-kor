@@ -10,10 +10,10 @@ local m_max = math.max
 local m_floor = math.floor
 
 local buffModeDropList = {
-	{ label = "Unbuffed", buffMode = "UNBUFFED" },
-	{ label = "Buffed", buffMode = "BUFFED" },
-	{ label = "In Combat", buffMode = "COMBAT" },
-	{ label = "Effective DPS", buffMode = "EFFECTIVE" } 
+	{ label = "버프 없음", buffMode = "UNBUFFED" },
+	{ label = "버프 적용", buffMode = "BUFFED" },
+	{ label = "전투 중", buffMode = "COMBAT" },
+	{ label = "유효 DPS", buffMode = "EFFECTIVE" }
 }
 
 local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Control", function(self, build)
@@ -32,12 +32,12 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 	self.colWidth = 230
 	self.sectionList = { }
 
-	self.controls.search = new("EditControl", {"TOPLEFT",self,"TOPLEFT"}, {4, 5, 260, 20}, "", "Search", "%c", 100, nil, nil, nil, true)
+	self.controls.search = new("EditControl", {"TOPLEFT",self,"TOPLEFT"}, {4, 5, 260, 20}, "", "검색", "%c", 100, nil, nil, nil, true)
 	t_insert(self.controls, self.controls.search)
 
 	-- Special section for skill/mode selection
-	self:NewSection(3, "SkillSelect", 1, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "View Skill Details", data = {
-		{ label = "Socket Group", { controlName = "mainSocketGroup", 
+	self:NewSection(3, "SkillSelect", 1, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "스킬 상세 보기", data = {
+		{ label = "소켓 그룹", { controlName = "mainSocketGroup",
 			control = new("DropDownControl", nil, {0, 0, 300, 16}, nil, function(index, value) 
 				self.input.skill_number = index
 				self:AddUndoState()
@@ -51,14 +51,14 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				end
 			}
 		}, },
-		{ label = "Active Skill", { controlName = "mainSkill", 
+		{ label = "액티브 스킬", { controlName = "mainSkill",
 			control = new("DropDownControl", nil, {0, 0, 300, 16}, nil, function(index, value)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				mainSocketGroup.mainActiveSkillCalcs = index
 				self.build.buildFlag = true
 			end)
 		}, },
-		{ label = "Skill Part", playerFlag = "multiPart", { controlName = "mainSkillPart", 
+		{ label = "스킬 부분", playerFlag = "multiPart", { controlName = "mainSkillPart",
 			control = new("DropDownControl", nil, {0, 0, 250, 16}, nil, function(index, value)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance
@@ -66,7 +66,7 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				self:AddUndoState()
 				self.build.buildFlag = true
 			end)
-		}, },{ label = "Skill Stages", playerFlag = "multiStage", { controlName = "mainSkillStageCount",
+		}, },{ label = "스킬 단계", playerFlag = "multiStage", { controlName = "mainSkillStageCount",
 			control = new("EditControl", nil, {0, 0, 52, 16}, nil, nil, "%D", nil, function(buf)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance
@@ -75,7 +75,7 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				self.build.buildFlag = true
 			end)
 		}, },
-		{ label = "Active Mines", playerFlag = "mine", { controlName = "mainSkillMineCount",
+		{ label = "활성 지뢰", playerFlag = "mine", { controlName = "mainSkillMineCount",
 			control = new("EditControl", nil, {0, 0, 52, 16}, nil, nil, "%D", nil, function(buf)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance
@@ -84,13 +84,13 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				self.build.buildFlag = true
 			end)
 		}, },
-		{ label = "Show Minion Stats", flag = "haveMinion", { controlName = "showMinion", 
+		{ label = "소환수 스탯 표시", flag = "haveMinion", { controlName = "showMinion",
 			control = new("CheckBoxControl", nil, {0, 0, 18}, nil, function(state)
 				self.input.showMinion = state
 				self:AddUndoState()
-			end, "Show stats for the minion instead of the player.")
+			end, "플레이어 대신 소환수의 스탯을 표시합니다.")
 		}, },
-		{ label = "Minion", flag = "minion", { controlName = "mainSkillMinion",
+		{ label = "소환수", flag = "minion", { controlName = "mainSkillMinion",
 			control = new("DropDownControl", nil, {0, 0, 160, 16}, nil, function(index, value)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance
@@ -103,12 +103,12 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				self.build.buildFlag = true
 			end)
 		} },
-		{ label = "Spectre Library", flag = "spectre", { controlName = "mainSkillMinionLibrary",
-			control = new("ButtonControl", nil, {0, 0, 100, 16}, "Manage Spectres...", function()
+		{ label = "망령 라이브러리", flag = "spectre", { controlName = "mainSkillMinionLibrary",
+			control = new("ButtonControl", nil, {0, 0, 100, 16}, "망령 관리...", function()
 				self.build:OpenSpectreLibrary()
 			end)
 		} },
-		{ label = "Minion Skill", flag = "haveMinion", { controlName = "mainSkillMinionSkill",
+		{ label = "소환수 스킬", flag = "haveMinion", { controlName = "mainSkillMinionSkill",
 			control = new("DropDownControl", nil, {0, 0, 200, 16}, nil, function(index, value)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance
@@ -117,24 +117,24 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 				self.build.buildFlag = true
 			end)
 		} },
-		{ label = "Calculation Mode", { 
-			controlName = "mode", 
-			control = new("DropDownControl", nil, {0, 0, 100, 16}, buffModeDropList, function(index, value) 
-				self.input.misc_buffMode = value.buffMode 
+		{ label = "계산 모드", {
+			controlName = "mode",
+			control = new("DropDownControl", nil, {0, 0, 100, 16}, buffModeDropList, function(index, value)
+				self.input.misc_buffMode = value.buffMode
 				self:AddUndoState()
 				self.build.buildFlag = true
 			end, [[
-This controls the calculation of the stats shown in this tab.
-The stats in the sidebar are always shown in Effective DPS mode, regardless of this setting.
+이 탭에 표시되는 스탯의 계산 방식을 제어합니다.
+사이드바의 스탯은 이 설정과 관계없이 항상 유효 DPS 모드로 표시됩니다.
 
-Unbuffed: No auras, buffs, or other support skills or effects will apply. This is equivalent to standing in town.
-Buffed: Aura and buff skills apply. This is equivalent to standing in your hideout with auras and buffs turned on.
-In Combat: Charges and combat buffs such as Onslaught will also apply. This will show your character sheet stats in combat.
-Effective DPS: Curses and enemy properties (such as resistances and status conditions) will also apply. This estimates your true DPS.]]) 
+버프 없음: 오라, 버프 또는 기타 서포트 스킬이나 효과가 적용되지 않습니다. 마을에 서 있는 것과 동일합니다.
+버프 적용: 오라 및 버프 스킬이 적용됩니다. 은신처에서 오라와 버프를 켠 상태와 동일합니다.
+전투 중: 충전 및 맹공과 같은 전투 버프도 적용됩니다. 전투 중 캐릭터 시트 스탯을 표시합니다.
+유효 DPS: 저주 및 적 속성(저항, 상태 이상 등)도 적용됩니다. 실제 DPS를 추정합니다.]])
 		}, },
-		{ label = "Aura and Buff Skills", flag = "buffs", textSize = 12, { format = "{output:BuffList}", { breakdown = "SkillBuffs" } }, },
-		{ label = "Combat Buffs", flag = "combat", textSize = 12, { format = "{output:CombatList}" }, },
-		{ label = "Curses and Debuffs", flag = "effective", textSize = 12, { format = "{output:CurseList}", { breakdown = "SkillDebuffs" } }, },
+		{ label = "오라 및 버프 스킬", flag = "buffs", textSize = 12, { format = "{output:BuffList}", { breakdown = "SkillBuffs" } }, },
+		{ label = "전투 버프", flag = "combat", textSize = 12, { format = "{output:CombatList}" }, },
+		{ label = "저주 및 디버프", flag = "effective", textSize = 12, { format = "{output:CurseList}", { breakdown = "SkillDebuffs" } }, },
 	}}}, function(section)
 		self.build:RefreshSkillSelectControls(section.controls, self.input.skill_number, "Calcs")
 		section.controls.showMinion.state = self.input.showMinion

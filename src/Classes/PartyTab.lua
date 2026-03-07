@@ -56,10 +56,10 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		bufferHeightRight = 434,
 	}
 
-	local notesDesc = [[^7To import a build it must be exported with "Export support" enabled in the import/export tab
-	Auras with the highest effect will take priority, your curses will take priority over a support's
-	
-	All of these effects can be found in the Calcs tab]]
+	local notesDesc = [[^7빌드를 가져오려면 가져오기/내보내기 탭에서 "내보내기 지원"이 활성화된 상태로 내보내야 합니다
+	가장 높은 효과의 오라가 우선 적용되며, 당신의 저주가 서포터의 저주보다 우선합니다
+
+	이 모든 효과는 계산 탭에서 확인할 수 있습니다]]
 	
 	self.controls.notesDesc = new("LabelControl", {"TOPLEFT",self,"TOPLEFT"}, {8, 8, 150, theme.stringHeight}, notesDesc)
 	self.controls.notesDesc.width = function()
@@ -70,7 +70,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		end
 		return width
 	end
-	self.controls.importCodeHeader = new("LabelControl", {"TOPLEFT",self.controls.notesDesc,"BOTTOMLEFT"}, {0, 32, 0, theme.stringHeight}, "^7Enter a build code/URL below:")
+	self.controls.importCodeHeader = new("LabelControl", {"TOPLEFT",self.controls.notesDesc,"BOTTOMLEFT"}, {0, 32, 0, theme.stringHeight}, "^7아래에 빌드 코드/URL을 입력하세요:")
 	self.controls.importCodeHeader.y = function()
 		return theme.lineCounter(self.controls.notesDesc.label) + 4
 	end
@@ -123,7 +123,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 			return
 		end
 
-		self.importCodeDetail = colorCodes.NEGATIVE.."Invalid input"
+		self.importCodeDetail = colorCodes.NEGATIVE.."잘못된 입력"
 		local urlText = buf:gsub("^[%s?]+", ""):gsub("[%s?]+$", "") -- Quick Trim
 		if urlText:match("youtube%.com/redirect%?") or urlText:match("google%.com/url%?") then
 			local nested_url = urlText:gsub(".*[?&]q=([^&]+).*", "%1")
@@ -134,7 +134,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 			if urlText:match(buildSites.websiteList[j].matchURL) then
 				self.controls.importCodeIn.text = urlText
 				self.importCodeValid = true
-				self.importCodeDetail = colorCodes.POSITIVE.."URL is valid ("..buildSites.websiteList[j].label..")"
+				self.importCodeDetail = colorCodes.POSITIVE.."URL이 유효합니다 ("..buildSites.websiteList[j].label..")"
 				self.importCodeSite = j
 				if buf ~= urlText then
 					self.controls.importCodeIn:SetText(urlText, false)
@@ -151,7 +151,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 			Copy(xmlText)
 		end
 		self.importCodeValid = true
-		self.importCodeDetail = colorCodes.POSITIVE.."Code is valid"
+		self.importCodeDetail = colorCodes.POSITIVE.."코드가 유효합니다"
 		self.importCodeXML = xmlText
 	end
 	
@@ -294,8 +294,8 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return self.importCodeDetail or ""
 	end
 	self.controls.importCodeDestination = new("DropDownControl", {"TOPLEFT",self.controls.importCodeIn,"BOTTOMLEFT"}, {0, 4, 160, theme.buttonHeight}, partyDestinations)
-	self.controls.importCodeDestination.tooltipText = "Destination for Import/clear\nCurrently Links Skills do not export"
-	self.controls.importCodeGo = new("ButtonControl", {"LEFT",self.controls.importCodeDestination,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "Import", function()
+	self.controls.importCodeDestination.tooltipText = "가져오기/지우기 대상\n현재 링크 스킬은 내보내기되지 않습니다"
+	self.controls.importCodeGo = new("ButtonControl", {"LEFT",self.controls.importCodeDestination,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "가져오기", function()
 		local importCodeFetching = false
 		if self.importCodeSite and not self.importCodeXML then
 			self.importCodeFetching = true
@@ -323,8 +323,8 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 			self.controls.importCodeGo.onClick()
 		end
 	end
-	self.controls.appendNotReplace = new("CheckBoxControl", {"LEFT",self.controls.importCodeGo,"RIGHT"}, {60, 0, theme.buttonHeight}, "Append", function(state)
-	end, "This sets the import button to append to the current party lists instead of replacing them (curses will still replace)", false)
+	self.controls.appendNotReplace = new("CheckBoxControl", {"LEFT",self.controls.importCodeGo,"RIGHT"}, {60, 0, theme.buttonHeight}, "추가", function(state)
+	end, "가져오기 버튼이 현재 파티 목록을 대체하는 대신 추가하도록 설정합니다 (저주는 여전히 대체됩니다)", false)
 	self.controls.appendNotReplace.x = function()
 		return (self.width > theme.widthThreshold1) and 60 or (-276)
 	end
@@ -332,21 +332,21 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return (self.width > theme.widthThreshold1) and 0 or 24
 	end
 	
-	self.controls.clear = new("ButtonControl", {"LEFT",self.controls.appendNotReplace,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "Clear", function() 
+	self.controls.clear = new("ButtonControl", {"LEFT",self.controls.appendNotReplace,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "지우기", function() 
 		clearInputText()
 		wipeTable(self.enemyModList)
 		self.enemyModList = new("ModList")
 		self.build.buildFlag = true
 	end)
-	self.controls.clear.tooltipText = "^7Clears all the party tab imported data"
+	self.controls.clear.tooltipText = "^7파티 탭에서 가져온 모든 데이터를 지웁니다"
 	
-	self.controls.ShowAdvanceTools = new("CheckBoxControl", {"TOPLEFT",self.controls.importCodeDestination,"BOTTOMLEFT"}, {140, 4, theme.buttonHeight}, "^7Show Advanced Info", function(state)
-	end, "This shows the advanced info like what stats each aura/curse etc are adding, as well as enables the ability to edit them without a re-export\nDo not edit any boxes unless you know what you are doing, use copy/paste or import instead", false)
+	self.controls.ShowAdvanceTools = new("CheckBoxControl", {"TOPLEFT",self.controls.importCodeDestination,"BOTTOMLEFT"}, {140, 4, theme.buttonHeight}, "^7고급 정보 표시", function(state)
+	end, "각 오라/저주 등이 추가하는 스탯과 같은 고급 정보를 표시하며, 다시 내보내기 없이 편집할 수 있습니다\n무엇을 하는지 모르는 경우 상자를 편집하지 마세요, 대신 복사/붙여넣기 또는 가져오기를 사용하세요", false)
 	self.controls.ShowAdvanceTools.y = function()
 		return (self.width > theme.widthThreshold1) and 4 or 28
 	end
 	
-	self.controls.removeEffects = new("ButtonControl", {"LEFT",self.controls.ShowAdvanceTools,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "Disable Party Effects", function() 
+	self.controls.removeEffects = new("ButtonControl", {"LEFT",self.controls.ShowAdvanceTools,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "파티 효과 비활성화", function() 
 		wipeTable(self.actor)
 		wipeTable(self.enemyModList)
 		self.actor = { Aura = {}, Curse = {}, Warcry = { }, Link = {}, modDB = new("ModDB"), output = { } }
@@ -354,9 +354,9 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		self.enemyModList = new("ModList")
 		self.build.buildFlag = true
 	end)
-	self.controls.removeEffects.tooltipText = "^7Removes the effects of the supports, without removing the data\nUse \"rebuild all\" to apply the effects again"
+	self.controls.removeEffects.tooltipText = "^7데이터를 제거하지 않고 서포트 효과를 제거합니다\n효과를 다시 적용하려면 \"모두 재구성\"을 사용하세요"
 	
-	self.controls.rebuild = new("ButtonControl", {"LEFT",self.controls.removeEffects,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "^7Rebuild All", function() 
+	self.controls.rebuild = new("ButtonControl", {"LEFT",self.controls.removeEffects,"RIGHT"}, {8, 0, 160, theme.buttonHeight}, "^7모두 재구성", function() 
 		wipeTable(self.actor)
 		wipeTable(self.enemyModList)
 		self.actor = { Aura = {}, Curse = {}, Warcry = { }, Link = {}, modDB = new("ModDB"), output = { } }
@@ -371,7 +371,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		self:ParseBuffs(self.enemyModList, self.controls.enemyMods.buf, "EnemyMods", self.controls.simpleEnemyMods)
 		self.build.buildFlag = true 
 	end)
-	self.controls.rebuild.tooltipText = "^7Reparse all the inputs incase they have been disabled or they have changed since loading the build or importing"
+	self.controls.rebuild.tooltipText = "^7빌드 로딩이나 가져오기 이후 비활성화되거나 변경된 경우를 대비하여 모든 입력을 다시 분석합니다"
 	self.controls.rebuild.x = function()
 		return (self.width > theme.widthThreshold1) and 8 or (-328)
 	end
@@ -379,7 +379,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return (self.width > theme.widthThreshold1) and 0 or 24
 	end
 
-	self.controls.editAurasLabel = new("LabelControl", {"TOPLEFT",self.controls.ShowAdvanceTools,"TOPLEFT"}, {-140, 40, 0, theme.stringHeight}, "^7Auras")
+	self.controls.editAurasLabel = new("LabelControl", {"TOPLEFT",self.controls.ShowAdvanceTools,"TOPLEFT"}, {-140, 40, 0, theme.stringHeight}, "^7오라")
 	self.controls.editAurasLabel.y = function()
 		return 36 + ((self.width <= theme.widthThreshold1) and 24 or 0)
 	end
@@ -399,7 +399,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return not self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.editWarcriesLabel = new("LabelControl", {"TOPLEFT",self.controls.editAurasLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7Warcry Skills")
+	self.controls.editWarcriesLabel = new("LabelControl", {"TOPLEFT",self.controls.editAurasLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7전쟁함성 스킬")
 	self.controls.editWarcriesLabel.y = function()
 		return self.controls.ShowAdvanceTools.state and (self.controls.editAuras.height() + 8) or (theme.lineCounter(self.controls.simpleAuras.label) + 4)
 	end
@@ -418,7 +418,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return not self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.editLinksLabel = new("LabelControl", {"TOPLEFT",self.controls.editWarcriesLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7Link Skills")
+	self.controls.editLinksLabel = new("LabelControl", {"TOPLEFT",self.controls.editWarcriesLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7링크 스킬")
 	self.controls.editLinksLabel.y = function()
 		return self.controls.ShowAdvanceTools.state and (self.controls.editWarcries.height() + 8) or (theme.lineCounter(self.controls.simpleWarcries.label) + 4)
 	end
@@ -437,7 +437,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return not self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.editPartyMemberStatsLabel = new("LabelControl", {"TOPLEFT",self.controls.notesDesc,"TOPRIGHT"}, {8, 0, 0, theme.stringHeight}, "^7Party Member Stats")
+	self.controls.editPartyMemberStatsLabel = new("LabelControl", {"TOPLEFT",self.controls.notesDesc,"TOPRIGHT"}, {8, 0, 0, theme.stringHeight}, "^7파티원 스탯")
 	self.controls.editPartyMemberStats = new("EditControl", {"TOPLEFT",self.controls.editPartyMemberStatsLabel,"BOTTOMLEFT"}, {0, 2, 0, 0}, "", nil, "^%C\t\n", nil, nil, 14, true)
 	self.controls.editPartyMemberStats.width = function()
 		return self.width / 2 - 16
@@ -449,7 +449,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.enemyCondLabel = new("LabelControl", {"TOPLEFT",self.controls.editPartyMemberStatsLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7Enemy Conditions")
+	self.controls.enemyCondLabel = new("LabelControl", {"TOPLEFT",self.controls.editPartyMemberStatsLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7적 상태이상")
 	self.controls.enemyCondLabel.y = function()
 		return self.controls.ShowAdvanceTools.state and (self.controls.editPartyMemberStats.height() + 8) or 4
 	end
@@ -468,7 +468,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return not self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.enemyModsLabel = new("LabelControl", {"TOPLEFT",self.controls.enemyCondLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7Enemy Modifiers")
+	self.controls.enemyModsLabel = new("LabelControl", {"TOPLEFT",self.controls.enemyCondLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7적 속성 부여자")
 	self.controls.enemyModsLabel.y = function()
 		return self.controls.ShowAdvanceTools.state and (self.controls.enemyCond.height() + 8) or (theme.lineCounter(self.controls.simpleEnemyCond.label) + 4)
 	end
@@ -487,7 +487,7 @@ local PartyTabClass = newClass("PartyTab", "ControlHost", "Control", function(se
 		return not self.controls.ShowAdvanceTools.state
 	end
 
-	self.controls.editCursesLabel = new("LabelControl", {"TOPLEFT",self.controls.enemyModsLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7Curses")
+	self.controls.editCursesLabel = new("LabelControl", {"TOPLEFT",self.controls.enemyModsLabel,"BOTTOMLEFT"}, {0, 8, 0, theme.stringHeight}, "^7저주")
 	self.controls.editCursesLabel.y = function()
 		return self.controls.ShowAdvanceTools.state and (self.controls.enemyMods.height() + 8) or (theme.lineCounter(self.controls.simpleEnemyMods.label) + 4)
 	end

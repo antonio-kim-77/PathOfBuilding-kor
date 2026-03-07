@@ -46,17 +46,17 @@ local ConfigTabClass = newClass("ConfigTab", "UndoHandler", "ControlHost", "Cont
 	self.controls.setSelect.enabled = function()
 		return #self.configSetOrderList > 1
 	end
-	self.controls.setLabel = new("LabelControl", { "RIGHT", self.controls.setSelect, "LEFT" }, { -2, 0, 0, 16 }, "^7Config set:")
-	self.controls.setManage = new("ButtonControl", { "LEFT", self.controls.setSelect, "RIGHT" }, { 4, 0, 90, 20 }, "Manage...", function()
+	self.controls.setLabel = new("LabelControl", { "RIGHT", self.controls.setSelect, "LEFT" }, { -2, 0, 0, 16 }, "^7설정 세트:")
+	self.controls.setManage = new("ButtonControl", { "LEFT", self.controls.setSelect, "RIGHT" }, { 4, 0, 90, 20 }, "관리...", function()
 		self:OpenConfigSetManagePopup()
 	end)
 
-	self.controls.search = new("EditControl", { "TOPLEFT", self.controls.sectionAnchor, "TOPLEFT" }, { 8, 15, 360, 20 }, "", "Search", "%c", 100, function()
+	self.controls.search = new("EditControl", { "TOPLEFT", self.controls.sectionAnchor, "TOPLEFT" }, { 8, 15, 360, 20 }, "", "검색", "%c", 100, function()
 		self:UpdateControls()
 	end, nil, nil, true)
 	self.controls.toggleConfigs = new("ButtonControl", { "LEFT", self.controls.search, "RIGHT" }, { 10, 0, 200, 20 }, function()
 		-- dynamic text
-		return self.toggleConfigs and "Hide Ineligible Configurations" or "Show All Configurations"
+		return self.toggleConfigs and "해당 없는 설정 숨기기" or "모든 설정 표시"
 	end, function()
 		self.toggleConfigs = not self.toggleConfigs
 	end)
@@ -934,9 +934,9 @@ function ConfigTabClass:RestoreUndoState(state)
 end
 
 function ConfigTabClass:OpenConfigSetManagePopup()
-	main:OpenPopup(370, 290, "Manage Config Sets", {
+	main:OpenPopup(370, 290, "설정 세트 관리", {
 		new("ConfigSetListControl", nil, {0, 50, 350, 200}, self),
-		new("ButtonControl", nil, {0, 260, 90, 20}, "Done", function()
+		new("ButtonControl", nil, {0, 260, 90, 20}, "완료", function()
 			main:ClosePopup()
 		end),
 	})
