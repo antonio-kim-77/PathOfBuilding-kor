@@ -32,9 +32,30 @@ jobs:
           # Copy runtime (exe, dlls, lua libs, fonts)
           Copy-Item -Path "runtime/*" -Destination $distDir -Recurse -Force
 
-          # Copy source code
-          New-Item -ItemType Directory -Path "$distDir/lua" -Force
-          Copy-Item -Path "src/*" -Destination "$distDir/lua" -Recurse -Force
+          # Copy source code - must be "src/" to match manifest.cfg path
+          Copy-Item -Path "src" -Destination "$distDir/src" -Recurse -Force
+
+          # Remove files not needed in distribution (per manifest.cfg exclude)
+          $excludeFiles = @(
+            "$distDir/src/HeadlessWrapper.lua",
+            "$distDir/src/LaunchInstall.lua",
+            "$distDir/src/Settings.xml"
+          )
+          $excludeDirs = @(
+            "$distDir/src/Export",
+            "$distDir/src/Builds",
+            "$distDir/src/Data/TimelessJewelData/BrutalRestraint.bin",
+            "$distDir/src/Data/TimelessJewelData/ElegantHubris.bin",
+            "$distDir/src/Data/TimelessJewelData/GloriousVanity.bin",
+            "$distDir/src/Data/TimelessJewelData/LethalPride.bin",
+            "$distDir/src/Data/TimelessJewelData/MilitantFaith.bin"
+          )
+          foreach ($f in $excludeFiles) {
+            if (Test-Path $f) { Remove-Item $f -Force }
+          }
+          foreach ($d in $excludeDirs) {
+            if (Test-Path $d) { Remove-Item $d -Recurse -Force }
+          }
 
           # Copy Korean data
           if (Test-Path "kor-db") {
