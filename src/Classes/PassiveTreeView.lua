@@ -1249,7 +1249,7 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 			local existingMastery = isValueInTable(build.spec.masterySelections, effect.effect)
 			if not existingMastery then
 				effect = build.spec.tree.masteryEffects[effect.effect]
-				for _, line in ipairs(effect.sd) do
+				for _, line in ipairs(effect.sd_kr or effect.sd) do
 					lineCount = lineCount + 1
 					addModInfoToTooltip(mNode, lineCount, line)
 				end
@@ -1264,7 +1264,8 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 	-- This stanza actives for both Mastery and non Mastery tooltips. Proof: add '"Blah "..' to addModInfoToTooltip
 	if mNode.sd[1] and not mNode.allMasteryOptions then
 		tooltip:AddLine(16, "")
-		for i, line in ipairs(mNode.sd) do
+		local displaySd = mNode.sd_kr or mNode.sd
+		for i, line in ipairs(displaySd) do
 			addModInfoToTooltip(mNode, i, masteryColor..line)
 		end
 	end

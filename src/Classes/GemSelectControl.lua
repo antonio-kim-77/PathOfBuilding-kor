@@ -461,7 +461,7 @@ function GemSelectClass:Draw(viewPort, noTooltip)
 					SetDrawColor(colorCodes.INTELLIGENCE)
 				end
 			end
-			local gemText = gemData and gemData.name or "<No matches>"
+			local gemText = gemData and (gemData.korName or gemData.name) or "<No matches>"
 			if gemId and gemId ~= "" then
 				gemText = altQualMap[self:GetQualityType(gemId)] .. gemText
 			end
@@ -590,17 +590,17 @@ function GemSelectClass:AddGemTooltip(gemInstance)
 	if secondary and (not secondary.support or gemInstance.gemData.secondaryEffectName) then
 		local grantedEffect = gemInstance.gemData.VaalGem and secondary or primary
 		local grantedEffectSecondary = gemInstance.gemData.VaalGem and primary or secondary
-		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. altQualMap[gemInstance.qualityId]..grantedEffect.name, "FONTIN SC")
+		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. altQualMap[gemInstance.qualityId]..(grantedEffect.korName or grantedEffect.name), "FONTIN SC")
 		self.tooltip:AddSeparator(10)
 		self.tooltip:AddLine(fontSizeBig, "^x7F7F7F" .. gemInstance.gemData.tagString, "FONTIN SC")
 		self:AddCommonGemInfo(gemInstance, grantedEffect, true)
 		self.tooltip:AddSeparator(10)
-		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. (gemInstance.gemData.secondaryEffectName or grantedEffectSecondary.name), "FONTIN SC")
+		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. (gemInstance.gemData.secondaryEffectName or grantedEffectSecondary.korName or grantedEffectSecondary.name), "FONTIN SC")
 		self.tooltip:AddSeparator(10)
 		self:AddCommonGemInfo(gemInstance, grantedEffectSecondary)
 	else
 		local grantedEffect = gemInstance.gemData.grantedEffect
-		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. altQualMap[gemInstance.qualityId]..grantedEffect.name, "FONTIN SC")
+		self.tooltip:AddLine(fontSizeTitle, colorCodes.GEM .. altQualMap[gemInstance.qualityId]..(grantedEffect.korName or grantedEffect.name), "FONTIN SC")
 		self.tooltip:AddSeparator(10)
 		self.tooltip:AddLine(fontSizeBig, "^x7F7F7F" .. gemInstance.gemData.tagString, "FONTIN SC")
 		self:AddCommonGemInfo(gemInstance, grantedEffect, true, secondary and secondary.support and secondary)

@@ -14,22 +14,22 @@ local NotesTabClass = newClass("NotesTab", "ControlHost", "Control", function(se
 	self.lastContent = ""
 	self.showColorCodes = false
 
-	local notesDesc = [[^7You can use Ctrl +/- (or Ctrl+Scroll) to zoom in and out and Ctrl+0 to reset.
-This field also supports different colors.  Using the caret symbol (^) followed by a Hex code or a number (0-9) will set the color.
-Below are some common color codes PoB uses:	]]
+	local notesDesc = [[^7Ctrl +/- (또는 Ctrl+스크롤)로 확대/축소하고 Ctrl+0으로 초기화할 수 있습니다.
+이 필드는 다양한 색상을 지원합니다. 캐럿 기호(^) 뒤에 16진수 코드 또는 숫자(0-9)를 사용하면 색상이 설정됩니다.
+아래는 PoB에서 사용하는 일반적인 색상 코드입니다:	]]
 	self.controls.notesDesc = new("LabelControl", {"TOPLEFT",self,"TOPLEFT"}, {8, 8, 150, 16}, notesDesc)
-	self.controls.normal = new("ButtonControl", {"TOPLEFT",self.controls.notesDesc,"TOPLEFT"}, {0, 48, 100, 18}, colorCodes.NORMAL.."NORMAL", function() self:SetColor(colorCodes.NORMAL) end)
-	self.controls.magic = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.MAGIC.."MAGIC", function() self:SetColor(colorCodes.MAGIC) end)
-	self.controls.rare = new("ButtonControl", {"TOPLEFT",self.controls.magic,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.RARE.."RARE", function() self:SetColor(colorCodes.RARE) end)
-	self.controls.unique = new("ButtonControl", {"TOPLEFT",self.controls.rare,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.UNIQUE.."UNIQUE", function() self:SetColor(colorCodes.UNIQUE) end)
-	self.controls.fire = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, {0, 18, 100, 18}, colorCodes.FIRE.."FIRE", function() self:SetColor(colorCodes.FIRE) end)
-	self.controls.cold = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.COLD.."COLD", function() self:SetColor(colorCodes.COLD) end)
-	self.controls.lightning = new("ButtonControl", {"TOPLEFT",self.controls.cold,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.LIGHTNING.."LIGHTNING", function() self:SetColor(colorCodes.LIGHTNING) end)
-	self.controls.chaos = new("ButtonControl", {"TOPLEFT",self.controls.lightning,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.CHAOS.."CHAOS", function() self:SetColor(colorCodes.CHAOS) end)
-	self.controls.strength = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, {0, 18, 100, 18}, colorCodes.STRENGTH.."STRENGTH", function() self:SetColor(colorCodes.STRENGTH) end)
-	self.controls.dexterity = new("ButtonControl", {"TOPLEFT",self.controls.strength,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.DEXTERITY.."DEXTERITY", function() self:SetColor(colorCodes.DEXTERITY) end)
-	self.controls.intelligence = new("ButtonControl", {"TOPLEFT",self.controls.dexterity,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.INTELLIGENCE.."INTELLIGENCE", function() self:SetColor(colorCodes.INTELLIGENCE) end)
-	self.controls.default = new("ButtonControl", {"TOPLEFT",self.controls.intelligence,"TOPLEFT"}, {120, 0, 100, 18}, "^7DEFAULT", function() self:SetColor("^7") end)
+	self.controls.normal = new("ButtonControl", {"TOPLEFT",self.controls.notesDesc,"TOPLEFT"}, {0, 48, 100, 18}, colorCodes.NORMAL.."일반", function() self:SetColor(colorCodes.NORMAL) end)
+	self.controls.magic = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.MAGIC.."마법", function() self:SetColor(colorCodes.MAGIC) end)
+	self.controls.rare = new("ButtonControl", {"TOPLEFT",self.controls.magic,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.RARE.."희귀", function() self:SetColor(colorCodes.RARE) end)
+	self.controls.unique = new("ButtonControl", {"TOPLEFT",self.controls.rare,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.UNIQUE.."고유", function() self:SetColor(colorCodes.UNIQUE) end)
+	self.controls.fire = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, {0, 18, 100, 18}, colorCodes.FIRE.."화염", function() self:SetColor(colorCodes.FIRE) end)
+	self.controls.cold = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.COLD.."냉기", function() self:SetColor(colorCodes.COLD) end)
+	self.controls.lightning = new("ButtonControl", {"TOPLEFT",self.controls.cold,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.LIGHTNING.."번개", function() self:SetColor(colorCodes.LIGHTNING) end)
+	self.controls.chaos = new("ButtonControl", {"TOPLEFT",self.controls.lightning,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.CHAOS.."카오스", function() self:SetColor(colorCodes.CHAOS) end)
+	self.controls.strength = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, {0, 18, 100, 18}, colorCodes.STRENGTH.."힘", function() self:SetColor(colorCodes.STRENGTH) end)
+	self.controls.dexterity = new("ButtonControl", {"TOPLEFT",self.controls.strength,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.DEXTERITY.."민첩", function() self:SetColor(colorCodes.DEXTERITY) end)
+	self.controls.intelligence = new("ButtonControl", {"TOPLEFT",self.controls.dexterity,"TOPLEFT"}, {120, 0, 100, 18}, colorCodes.INTELLIGENCE.."지능", function() self:SetColor(colorCodes.INTELLIGENCE) end)
+	self.controls.default = new("ButtonControl", {"TOPLEFT",self.controls.intelligence,"TOPLEFT"}, {120, 0, 100, 18}, "^7기본", function() self:SetColor("^7") end)
 
 	self.controls.edit = new("EditControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, {0, 48, 0, 0}, "", nil, "^%C\t\n", nil, nil, 16, true)
 	self.controls.edit.width = function()

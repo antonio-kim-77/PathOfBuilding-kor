@@ -31,6 +31,12 @@ jobs:
           # Copy runtime (exe, dlls, SimpleGraphic/, lua/)
           Copy-Item -Path "runtime/*" -Destination $distDir -Recurse -Force
 
+          # Rename exe: replace {space} with actual spaces
+          Get-ChildItem "$distDir" -Filter "*{space}*" | ForEach-Object {
+            $newName = $_.Name -replace '\{space\}', ' '
+            Rename-Item $_.FullName $newName
+          }
+
           # Copy source DIRECTLY into root (next to exe) for portable mode
           # PoB requires Launch.lua in same directory as the exe
           Copy-Item -Path "src/*" -Destination $distDir -Recurse -Force

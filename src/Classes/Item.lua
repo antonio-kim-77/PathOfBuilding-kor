@@ -859,6 +859,24 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 	if self.baseName and self.title then
 		self.name = self.title .. ", " .. self.baseName:gsub(" %(.+%)","")
 	end
+	-- Apply Korean item name translations
+	if data.korTrans then
+		if self.title then
+			self.korTitle = data.korTrans.translateItemName(self.title)
+		end
+		if self.baseName then
+			self.korBaseName = data.korTrans.translateBaseType(self.baseName:gsub(" %(.+%)",""))
+		end
+		if self.korTitle or self.korBaseName then
+			local displayTitle = self.korTitle or self.title
+			local displayBase = self.korBaseName or self.baseName:gsub(" %(.+%)","")
+			if self.title then
+				self.korName = displayTitle .. ", " .. displayBase
+			else
+				self.korName = (self.namePrefix or "") .. displayBase .. (self.nameSuffix or "")
+			end
+		end
+	end
 	if self.base and not self.requirements.level then
 		if importedLevelReq and #self.sockets == 0 then
 			-- Requirements on imported items can only be trusted for items with no sockets

@@ -1003,6 +1003,22 @@ for id, gem in pairs(toAddGems) do
     data.gems[id] = gem
 end
 
+-- Apply Korean gem name translations
+local korTrans = LoadModule("Modules/KoreanTranslation")
+data.korTrans = korTrans
+for gemId, gem in pairs(data.gems) do
+	local kr = korTrans.gemNames[gem.name]
+	if kr then
+		gem.korName = kr
+	end
+	if gem.grantedEffect then
+		local krEffect = korTrans.gemNames[gem.grantedEffect.name]
+		if krEffect then
+			gem.grantedEffect.korName = krEffect
+		end
+	end
+end
+
 -- Load minions
 data.minions = { }
 LoadModule("Data/Minions", data.minions, makeSkillMod, makeFlagMod)

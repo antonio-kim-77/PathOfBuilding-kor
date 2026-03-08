@@ -125,7 +125,7 @@ function ItemListClass:GetRowValue(column, index, itemId)
 		else
 			used = "  ^9(Used in '" .. used .. "')"
 		end
-		return colorCodes[item.rarity] .. item.name .. used
+		return colorCodes[item.rarity] .. (item.korName or item.name) .. used
 	end
 end
 

@@ -3258,7 +3258,7 @@ function ItemsTabClass:AddItemSetTooltip(tooltip, itemSet)
 		if not slot.nodeId then
 			local item = self.items[itemSet[slot.slotName].selItemId]
 			if item then
-				tooltip:AddLine(16, s_format("^7%s: %s%s", slot.label, colorCodes[item.rarity], item.name))
+				tooltip:AddLine(16, s_format("^7%s: %s%s", slot.label, colorCodes[item.rarity], item.korName or item.name))
 			end
 		end
 	end
@@ -3349,10 +3349,10 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 	self:SetTooltipHeaderInfluence(tooltip, item)
 	-- Item name
 	if item.title then
-		tooltip:AddLine(fontSizeTitle, rarityCode..item.title, "FONTIN SC")
-		tooltip:AddLine(fontSizeTitle, rarityCode..item.baseName:gsub(" %(.+%)",""),"FONTIN SC")
+		tooltip:AddLine(fontSizeTitle, rarityCode..(item.korTitle or item.title), "FONTIN SC")
+		tooltip:AddLine(fontSizeTitle, rarityCode..(item.korBaseName or item.baseName:gsub(" %(.+%)","")), "FONTIN SC")
 	else
-		tooltip:AddLine(fontSizeTitle, rarityCode..item.namePrefix..item.baseName:gsub(" %(.+%)","")..item.nameSuffix, "FONTIN SC")
+		tooltip:AddLine(fontSizeTitle, rarityCode..item.namePrefix..(item.korBaseName or item.baseName:gsub(" %(.+%)",""))..item.nameSuffix, "FONTIN SC")
 	end
 	for _, curInfluenceInfo in ipairs(influenceInfo) do
 		if item[curInfluenceInfo.key] and not main.showFlavourText then

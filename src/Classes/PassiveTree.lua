@@ -474,6 +474,13 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		if versionNum <= 3.09 and node.passivePointsGranted > 0 then
 			t_insert(node.sd, "Grants "..node.passivePointsGranted.." Passive Skill Point"..(node.passivePointsGranted > 1 and "s" or ""))
 		end
+		-- Build Korean stat descriptions for display
+		if node.sd and data.korTrans then
+			node.sd_kr = { }
+			for i, line in ipairs(node.sd) do
+				node.sd_kr[i] = data.korTrans.translateStat(line)
+			end
+		end
 		node.__index = node
 		node.linkedId = { }
 		nodeMap[node.id] = node	
@@ -495,6 +502,14 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 					if not self.masteryEffects[effect.effect] then
 						self.masteryEffects[effect.effect] = { id = effect.effect, sd = effect.stats }
 						self:ProcessStats(self.masteryEffects[effect.effect])
+						-- Build Korean stat descriptions for mastery effects
+						if data.korTrans then
+							local me = self.masteryEffects[effect.effect]
+							me.sd_kr = { }
+							for i, line in ipairs(me.sd) do
+								me.sd_kr[i] = data.korTrans.translateStat(line)
+							end
+						end
 					else
 						-- Copy multiline stats from an earlier ProcessStats call
 						effect.stats = self.masteryEffects[effect.effect].sd

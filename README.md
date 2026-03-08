@@ -1,5 +1,8 @@
-# Path of Building Community
-## Welcome to Path of Building, an offline build planner for Path of Exile!
+# Path of Building 한글판 (Korean)
+## 패스 오브 엑자일 오프라인 빌드 플래너 — 한국어 번역 버전
+
+> **Path of Building** 한글 버전입니다. UI, 패시브 스킬 트리, 아이템 등이 한국어로 번역되어 있습니다.
+> 원본: [PathOfBuildingCommunity/PathOfBuilding](https://github.com/PathOfBuildingCommunity/PathOfBuilding)
 
 <p float="middle">
   <img alt="Tree tab" src="https://github.com/user-attachments/assets/0826b7ab-84ba-440f-be52-2f216f13e75c" width="48%" />
@@ -47,8 +50,8 @@
   * 공유 코드를 생성하여 다른 사용자와 빌드 공유
   * 자동 업데이트 — 대부분의 업데이트는 몇 초 만에 적용됩니다
 
-## Download
-Head over to the [Releases](https://github.com/PathOfBuildingCommunity/PathOfBuilding/releases) page to download the install wizard or portable zip.
+## 다운로드 / Download
+[Releases](https://github.com/antonio-kim-77/PathOfBuilding-kor/releases) 페이지에서 최신 빌드를 다운로드하세요.
 
 ## Changelog
 You can find the full version history [here](CHANGELOG.md).

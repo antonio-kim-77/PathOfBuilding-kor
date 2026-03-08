@@ -141,6 +141,12 @@ function ItemDBClass:DoesItemMatchFilters(item)
 			if not err and match then
 				found = true
 			end
+			if not found and item.korName then
+				err, match = PCall(string.matchOrPattern, item.korName:lower(), searchStr)
+				if not err and match then
+					found = true
+				end
+			end
 		end
 		if mode == 1 or mode == 3 then
 			for _, line in pairs(item.enchantModLines) do
@@ -302,7 +308,7 @@ end
 
 function ItemDBClass:GetRowValue(column, index, item)
 	if column == 1 then
-		return colorCodes[item.rarity] .. item.name
+		return colorCodes[item.rarity] .. (item.korName or item.name)
 	end
 end
 

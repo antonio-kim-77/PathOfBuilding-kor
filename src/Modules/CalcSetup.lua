@@ -1691,7 +1691,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 					for _, gemInstance in ipairs(group.gemList) do
 						local grantedEffect = gemInstance.gemData and gemInstance.gemData.grantedEffect or gemInstance.grantedEffect
 						if grantedEffect and not grantedEffect.support and gemInstance.enabled then
-							group.displayLabel = (group.displayLabel and group.displayLabel..", " or "") .. grantedEffect.name
+							group.displayLabel = (group.displayLabel and group.displayLabel..", " or "") .. (grantedEffect.korName or grantedEffect.name)
 						end
 					end
 					group.displayLabel = group.displayLabel or "<No active skills>"

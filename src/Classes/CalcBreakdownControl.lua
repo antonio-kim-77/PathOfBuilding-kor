@@ -250,7 +250,7 @@ function CalcBreakdownClass:AddBreakdownSection(sectionData)
 		t_insert(self.sectionList, section)
 		for _, row in pairs(section.rowList) do
 			if row.item then
-				row.sourceLabel = colorCodes[row.item.rarity]..row.item.name
+				row.sourceLabel = colorCodes[row.item.rarity]..(row.item.korName or row.item.name)
 				row.sourceLabelTooltip = function(tooltip)
 					self.calcsTab.build.itemsTab:AddItemTooltip(tooltip, row.item, row.source)
 				end
@@ -396,7 +396,7 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 			local itemId = row.mod.source:match("Item:(%d+):.+")
 			local item = build.itemsTab.items[tonumber(itemId)]
 			if item then
-				row.sourceName = colorCodes[item.rarity]..item.name
+				row.sourceName = colorCodes[item.rarity]..(item.korName or item.name)
 				row.sourceNameTooltip = function(tooltip)
 					build.itemsTab:AddItemTooltip(tooltip, item, row.mod.sourceSlot)
 				end
