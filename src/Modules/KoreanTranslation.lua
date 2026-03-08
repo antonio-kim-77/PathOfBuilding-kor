@@ -9144,8 +9144,59 @@ function KoreanTranslation.translateGem(name)
 	return KoreanTranslation.gemNames[name] or name
 end
 
+-- Pattern-based translation cache (built lazily on first pattern lookup)
+KoreanTranslation._patternCache = nil
+
+local function buildPatternCache()
+	local cache = { }
+	for eng, kor in pairs(KoreanTranslation.statTranslations) do
+		-- Replace all numbers (including decimals and negatives) with a placeholder
+		local pattern = eng:gsub("%-?%d+%.?%d*", "#")
+		if pattern ~= eng then
+			-- This entry has numbers; store it for pattern matching
+			if not cache[pattern] then
+				cache[pattern] = { eng = eng, kor = kor }
+			end
+		end
+	end
+	KoreanTranslation._patternCache = cache
+end
+
+local function extractNumbers(s)
+	local nums = { }
+	for num in s:gmatch("%-?%d+%.?%d*") do
+		nums[#nums + 1] = num
+	end
+	return nums
+end
+
+local function substituteNumbers(template, numbers)
+	local i = 0
+	return template:gsub("%-?%d+%.?%d*", function()
+		i = i + 1
+		return numbers[i] or "0"
+	end)
+end
+
 function KoreanTranslation.translateStat(stat)
-	return KoreanTranslation.statTranslations[stat] or KoreanTranslation.statTranslations[stat:gsub("\n", "\\n")] or stat
+	-- 1. Exact match
+	local result = KoreanTranslation.statTranslations[stat]
+	if result then return result end
+	-- 2. Newline normalization
+	result = KoreanTranslation.statTranslations[stat:gsub("\n", "\\n")]
+	if result then return result end
+	-- 3. Pattern-based matching (for different numbers)
+	if not KoreanTranslation._patternCache then
+		buildPatternCache()
+	end
+	local pattern = stat:gsub("%-?%d+%.?%d*", "#")
+	local cached = KoreanTranslation._patternCache[pattern]
+	if cached then
+		local inputNums = extractNumbers(stat)
+		local translated = substituteNumbers(cached.kor, inputNums)
+		return translated
+	end
+	return stat
 end
 
 function KoreanTranslation.translateItemName(name)

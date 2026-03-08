@@ -474,13 +474,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		if versionNum <= 3.09 and node.passivePointsGranted > 0 then
 			t_insert(node.sd, "Grants "..node.passivePointsGranted.." Passive Skill Point"..(node.passivePointsGranted > 1 and "s" or ""))
 		end
-		-- Build Korean stat descriptions for display
-		if node.sd and data.korTrans then
-			node.sd_kr = { }
-			for i, line in ipairs(node.sd) do
-				node.sd_kr[i] = data.korTrans.translateStat(line)
-			end
-		end
 		node.__index = node
 		node.linkedId = { }
 		nodeMap[node.id] = node	
@@ -695,6 +688,13 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		end
 
 		self:ProcessStats(node)
+		-- Build Korean stat descriptions for display (after ProcessStats splits multiline stats)
+		if node.sd and data.korTrans then
+			node.sd_kr = { }
+			for i, line in ipairs(node.sd) do
+				node.sd_kr[i] = data.korTrans.translateStat(line)
+			end
+		end
 	end
 
 	-- Build ModList for tattoos
