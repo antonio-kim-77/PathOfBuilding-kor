@@ -680,23 +680,23 @@ function TradeQueryGeneratorClass:OnFrame()
 end
 
 local currencyTable = {
-	{ name = "Chaos Orb Equivalent", id = nil },
-	{ name = "Chaos Orb", id = "chaos" },
-	{ name = "Divine Orb", id = "divine" },
-	{ name = "Orb of Alchemy", id = "alch" },
-	{ name = "Orb of Alteration", id = "alt" },
-	{ name = "Chromatic Orb", id = "chrome" },
-	{ name = "Exalted Orb", id = "exalted" },
-	{ name = "Blessed Orb", id = "blessed" },
-	{ name = "Cartographer's Chisel", id = "chisel" },
-	{ name = "Gemcutter's Prism", id = "gcp" },
-	{ name = "Jeweller's Orb", id = "jewellers" },
-	{ name = "Orb of Scouring", id = "scour" },
-	{ name = "Orb of Regret", id = "regret" },
-	{ name = "Orb of Fusing", id = "fusing" },
-	{ name = "Orb of Chance", id = "chance" },
-	{ name = "Regal Orb", id = "regal" },
-	{ name = "Vaal Orb", id = "vaal" }
+	{ name = "카오스 오브 환산", id = nil },
+	{ name = "카오스 오브", id = "chaos" },
+	{ name = "디바인 오브", id = "divine" },
+	{ name = "연금술의 오브", id = "alch" },
+	{ name = "변화의 오브", id = "alt" },
+	{ name = "색채의 오브", id = "chrome" },
+	{ name = "엑잘티드 오브", id = "exalted" },
+	{ name = "신성한 오브", id = "blessed" },
+	{ name = "지도제작자의 끌", id = "chisel" },
+	{ name = "보석 세공사의 프리즘", id = "gcp" },
+	{ name = "주얼러의 오브", id = "jewellers" },
+	{ name = "정련의 오브", id = "scour" },
+	{ name = "후회의 오브", id = "regret" },
+	{ name = "결합의 오브", id = "fusing" },
+	{ name = "기회의 오브", id = "chance" },
+	{ name = "리갈 오브", id = "regal" },
+	{ name = "바알 오브", id = "vaal" }
 }
 
 function TradeQueryGeneratorClass:StartQuery(slot, options)
@@ -1191,7 +1191,7 @@ function TradeQueryGeneratorClass:RequestQuery(slot, context, statWeights, callb
 	end
 
 	for i, stat in ipairs(statWeights) do
-		controls["sortStatType"..tostring(i)] = new("LabelControl", {"TOPLEFT",lastItemAnchor,"BOTTOMLEFT"}, {0, i == 1 and 5 or 3, 70, 16}, i < (#statWeights < 6 and 10 or 5) and s_format("^7%.2f: %s", stat.weightMult, stat.label) or ("+ "..tostring(#statWeights - 4).." Additional Stats"))
+		controls["sortStatType"..tostring(i)] = new("LabelControl", {"TOPLEFT",lastItemAnchor,"BOTTOMLEFT"}, {0, i == 1 and 5 or 3, 70, 16}, i < (#statWeights < 6 and 10 or 5) and s_format("^7%.2f: %s", stat.weightMult, stat.label) or ("+ "..tostring(#statWeights - 4).."개 추가 스탯"))
 		lastItemAnchor = controls["sortStatType"..tostring(i)]
 		popupHeight = popupHeight + 19
 		if i == 1 then

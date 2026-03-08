@@ -1005,7 +1005,7 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 			for i = 2, #nodeDNs do
 				nodeCombo = nodeCombo .. " ^8+^7 " .. nodeDNs[i]
 			end
-			self.itemsTab.build:AddStatComparesToTooltip(tooltip, self.onlyWeightedBaseOutput[row_idx][result_index], evaluationEntry.output, "^8Allocating ^7"..nodeCombo.."^8 will give You:", #nodeDNs + 2)
+			self.itemsTab.build:AddStatComparesToTooltip(tooltip, self.onlyWeightedBaseOutput[row_idx][result_index], evaluationEntry.output, "^7"..nodeCombo.."^8 할당 시 효과:", #nodeDNs + 2)
 		end
 	end
 	controls["resultDropdown"..row_idx].tooltipFunc = function(tooltip, dropdown_mode, dropdown_index, dropdown_display_string)

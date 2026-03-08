@@ -677,18 +677,18 @@ return {
 	{ var = "multiplierWoCExpiredDuration", type = "count", label = "유죄 판결의 파도 지속시간 경과 %:", ifMod = "WaveOfConvictionDurationDotMulti", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:WoCDurationExpired", "BASE", m_min(val, 100), "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "absolutionSkillDamageCountedOnce", type = "check", label = "사면: 스킬 피해 한 번만 계산", ifSkill = "Absolution", includeTransfigured = true, tooltip = "Your Absolution Skill Damage will not be scaled with Count setting.\nBy default it multiplies both minion count and skill hit count which leads to incorrect\nTotal DPS calculation since Absolution cannot inherently shotgun.\nDo not enable if you use Spell Totem support, Spell Cascade support or similar supports", apply = function(val, modList, enemyModList)
+	{ var = "absolutionSkillDamageCountedOnce", type = "check", label = "사면: 스킬 피해 한 번만 계산", ifSkill = "Absolution", includeTransfigured = true, tooltip = "사면 스킬 피해가 수량 설정에 의해 증가하지 않습니다.\n기본적으로 소환수 수와 스킬 적중 수를 모두 곱하여\n사면이 본질적으로 산탄 효과를 가질 수 없으므로 잘못된 총 DPS 계산이 됩니다.\n주문 토템 보조, 주문 연쇄 보조 또는 유사한 보조를 사용하는 경우 활성화하지 마세요", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AbsolutionSkillDamageCountedOnce", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "dominatingBlowSkillDamageCountedOnce", type = "check", label = "지배의 강타: 스킬 피해 한 번만 계산", ifSkill = "Dominating Blow", includeTransfigured = true, tooltip = "Your Dominating Blow Skill Damage will not be scaled with Count setting.\nBy default it multiplies both minion count and skill hit count which leads to incorrect\nTotal DPS calculation since Dominating Blow cannot inherently shotgun.\nDo not enable if you use Spell Totem support, Spell Cascade support or similar supports", apply = function(val, modList, enemyModList)
+	{ var = "dominatingBlowSkillDamageCountedOnce", type = "check", label = "지배의 강타: 스킬 피해 한 번만 계산", ifSkill = "Dominating Blow", includeTransfigured = true, tooltip = "지배의 강타 스킬 피해가 수량 설정에 의해 증가하지 않습니다.\n기본적으로 소환수 수와 스킬 적중 수를 모두 곱하여\n지배의 강타가 본질적으로 산탄 효과를 가질 수 없으므로 잘못된 총 DPS 계산이 됩니다.\n주문 토템 보조, 주문 연쇄 보조 또는 유사한 보조를 사용하는 경우 활성화하지 마세요", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:DominatingBlowSkillDamageCountedOnce", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ label = "용암 방패:", ifSkill = "Molten Shell" },
-	{ var = "MoltenShellDamageMitigated", type = "count", label = "경감된 피해:", tooltip = "Molten Shell reflects damage to the enemy,\nbased on the amount of damage it has mitigated.", ifSkill = "Molten Shell", apply = function(val, modList, enemyModList)
+	{ var = "MoltenShellDamageMitigated", type = "count", label = "경감된 피해:", tooltip = "용암 방패는 경감한 피해량에 따라\n적에게 피해를 반사합니다.", ifSkill = "Molten Shell", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "MoltenShellDamageMitigated", value = val }, "Config", { type = "SkillName", skillName = "Molten Shell" })
 	end },
 	{ label = "바알 용암 방패:", ifSkill = "Vaal Molten Shell" },
-	{ var = "VaalMoltenShellDamageMitigated", type = "count", label = "경감된 피해:", tooltip = "Vaal Molten Shell reflects damage to the enemy,\nbased on the amount of damage it has mitigated in the last second.", ifSkill = "Vaal Molten Shell", apply = function(val, modList, enemyModList)
+	{ var = "VaalMoltenShellDamageMitigated", type = "count", label = "경감된 피해:", tooltip = "바알 용암 방패는 지난 1초 동안 경감한 피해량에 따라\n적에게 피해를 반사합니다.", ifSkill = "Vaal Molten Shell", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "VaalMoltenShellDamageMitigated", value = val }, "Config", { type = "SkillName", skillName = "Molten Shell" })
 	end },
 	{ label = "다중 범위 스킬:", ifSkill = { "Seismic Trap", "Lightning Spire Trap", "Explosive Trap", "Molten Strike" }, includeTransfigured = true },
@@ -900,10 +900,10 @@ return {
 	{ var = "minionsOverrideEnduranceCharges", type = "count", label = "인내 충전 수 (최대가 아닌 경우):", ifFlag = "haveMinion", ifOption = "minionsUseEnduranceCharges", apply = function(val, modList, enemyModList)
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("EnduranceCharges", "OVERRIDE", val, "Config", { type = "Condition", var = "Combat" }) }, "Config")
 	end },
-	{ var = "multiplierRampage", type = "count", label = "광란 처치 수:", ifFlag = "Condition:Rampage", tooltip = "Rampage grants the following, up to 1000 stacks:\n\t1% increased Movement Speed per 20 Rampage\n\t2% increased Damage per 20 Rampage\nYou lose Rampage if you do not get a Kill within 5 seconds.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierRampage", type = "count", label = "광란 처치 수:", ifFlag = "Condition:Rampage", tooltip = "광란은 최대 1000 중첩까지 다음을 부여합니다:\n\t20 광란당 1% 증가된 이동 속도\n\t20 광란당 2% 증가된 피해\n5초 이내에 처치하지 않으면 광란을 잃습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:Rampage", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierSoulEater", type = "count", label = "영혼 포식자 중첩 수:", ifFlag = "Condition:CanHaveSoulEater", tooltip = "Soul Eater grants the following, up to a base of 45 stacks:\n\t5% increased Attack Speed\n\t5% increased Cast Speed\n\t1% increased character size per stack.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierSoulEater", type = "count", label = "영혼 포식자 중첩 수:", ifFlag = "Condition:CanHaveSoulEater", tooltip = "영혼 포식자는 기본 최대 45 중첩까지 다음을 부여합니다:\n\t중첩당 5% 증가된 공격 속도\n\t중첩당 5% 증가된 시전 속도\n\t중첩당 1% 증가된 캐릭터 크기.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SoulEaterStack", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionFocused", type = "check", label = "집중 상태인가요?", ifCond = "Focused", apply = function(val, modList, enemyModList)
@@ -960,29 +960,29 @@ return {
 	{ var = "buffAlchemistsGenius", type = "check", label = "연금술사의 천재성 상태인가요?", ifFlag = "Condition:CanHaveAlchemistGenius", tooltip = "연금술사의 천재성 버프를 활성화합니다:\n플라스크 충전 획득 20% 증가\n플라스크 효과 10% 증가", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AlchemistsGenius", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanHaveAlchemistGenius" })
 	end },
-	{ var = "buffVaalArcLuckyHits", type = "check", label = "바알 전기불꽃의 행운 버프가 있나요?", ifFlag = "Condition:CanBeLucky",  tooltip = "Causes Damage with Arc Hits to be rolled twice, and the maximum roll used.", apply = function(val, modList, enemyModList)
+	{ var = "buffVaalArcLuckyHits", type = "check", label = "바알 전기불꽃의 행운 버프가 있나요?", ifFlag = "Condition:CanBeLucky",  tooltip = "전기불꽃 적중 피해를 두 번 굴려 최대값을 사용합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("LuckyHits", "FLAG", true, "Config", { type = "Condition", varList = { "Combat", "CanBeLucky" } }, { type = "SkillName", skillName = "Arc", includeTransfigured = true })
 	end },
-	{ var = "buffElusive", type = "check", label = "은밀 상태인가요?", ifFlag = "Condition:CanBeElusive", tooltip = "In addition to allowing any 'while Elusive' modifiers to apply,\nthis will enable the Elusive buff itself:\n\t15% Chance to Avoid all Damage from Hits\n\t30% increased Movement Speed\nThe effect of Elusive decays over time.", apply = function(val, modList, enemyModList)
+	{ var = "buffElusive", type = "check", label = "은밀 상태인가요?", ifFlag = "Condition:CanBeElusive", tooltip = "'포착 불가 상태에서' 속성 부여를 적용하는 것 외에도,\n포착 불가 버프 자체를 활성화합니다:\n\t적중으로부터 모든 피해 회피 확률 15%\n\t이동 속도 30% 증가\n포착 불가의 효과는 시간이 지남에 따라 감소합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Elusive", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanBeElusive" })
 		modList:NewMod("Elusive", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanBeElusive" })
 	end },
-	{ var = "overrideBuffElusive", type = "count", label = "은밀 효과 (평균이 아닌 경우):", ifOption = "buffElusive", tooltip = "If you have a guaranteed source of Elusive, the strongest one will apply. \nYou can change this to see various buff values", apply = function(val, modList, enemyModList)
+	{ var = "overrideBuffElusive", type = "count", label = "은밀 효과 (평균이 아닌 경우):", ifOption = "buffElusive", tooltip = "포착 불가의 확정 원천이 있으면 가장 강한 것이 적용됩니다.\n다양한 버프 값을 확인하려면 이 값을 변경하세요", apply = function(val, modList, enemyModList)
 		modList:NewMod("ElusiveEffect", "OVERRIDE", val, "Config", {type = "GlobalEffect", effectType = "Buff" })
 	end },
-	{ var = "buffDivinity", type = "check", label = "신성 상태인가요?", ifCond = "Divinity", tooltip = "This will enable the Divinity buff, which grants:\n\t75% more Elemental Damage\n\t25% less Elemental Damage taken", apply = function(val, modList, enemyModList)
+	{ var = "buffDivinity", type = "check", label = "신성 상태인가요?", ifCond = "Divinity", tooltip = "신성 버프를 활성화합니다:\n\t원소 피해 75% 증폭\n\t받는 원소 피해 25% 감폭", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Divinity", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "multiplierDefiance", type = "count", label = "반항:", ifMult = "Defiance", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:Defiance", "BASE", m_min(val, 10), "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierRage", type = "count", label = "^xFF9922분노:", ifFlag = "Condition:CanGainRage", tooltip = "Base Maximum ^xFF9922Rage ^7is 30, and inherently grants 1% More Attack Damage per 1 ^xFF9922Rage^7\nYou lose 10 ^xFF9922Rage ^7every second if you have not been Hit or gained ^xFF9922Rage ^7in the last 2 seconds.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierRage", type = "count", label = "^xFF9922분노:", ifFlag = "Condition:CanGainRage", tooltip = "기본 최대 ^xFF9922분노^7는 30이며, ^xFF9922분노^7 1당 공격 피해 1% 증폭을 부여합니다.\n최근 2초간 피격당하거나 ^xFF9922분노^7를 획득하지 않으면 매초 ^xFF9922분노^7 10을 잃습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:RageStack", "BASE", val, "Config", { type = "IgnoreCond" }, { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanGainRage" })
 	end },
-	{ var = "buffWildSavagery", type = "check", label = "야생의 잔인함 상태인가요?", ifFlag = "WildSavagery", tooltip = "From Oshabi's Bloodline, grants:\n\t100% increased Physical Damage\n\t10% increased Action Speed\n\tHits ignore Enemy Physical Damage Reduction\n\tCannot be Stunned", apply = function(val, modList, enemyModList)
+	{ var = "buffWildSavagery", type = "check", label = "야생의 잔인함 상태인가요?", ifFlag = "WildSavagery", tooltip = "오샤비의 혈통에서 부여:\n\t물리 피해 100% 증가\n\t행동 속도 10% 증가\n\t적중이 적의 물리 피해 감소를 무시\n\t기절하지 않음", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:WildSavagery", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionLeeching", type = "check", label = "흡수 중인가요?", ifCond = "Leeching", tooltip = "You will automatically be considered to be Leeching if you have '^xE05030Life ^7Leech effects are not removed at Full ^xE05030Life^7',\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionLeeching", type = "check", label = "흡수 중인가요?", ifCond = "Leeching", tooltip = "'^xE05030생명력 ^7흡수 효과가 최대 ^xE05030생명력^7에서 제거되지 않음'이 있으면 자동으로 흡수 중으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Leeching", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionLeechingLife", type = "check", label = "^xE05030생명력^7을 흡수 중인가요?", ifCond = "LeechingLife", implyCond = "Leeching", apply = function(val, modList, enemyModList)
@@ -1001,20 +1001,20 @@ return {
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:LeechingEnergyShield", "FLAG", true, "Config") }, "Config")
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:Leeching", "FLAG", true, "Config") }, "Config")
 	end },
-	{ var = "conditionUsingFlask", type = "check", label = "플라스크가 활성화 중인가요?", ifCond = "UsingFlask", tooltip = "This is automatically enabled if you have a flask active,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsingFlask", type = "check", label = "플라스크가 활성화 중인가요?", ifCond = "UsingFlask", tooltip = "활성화된 플라스크가 있으면 자동으로 활성화되지만,\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsingFlask", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsingTincture", type = "check", label = "팅크처가 활성화 중인가요?", ifCond = "UsingTincture", tooltip = "This is automatically enabled if you have a tincture active,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsingTincture", type = "check", label = "팅크처가 활성화 중인가요?", ifCond = "UsingTincture", tooltip = "활성화된 팅크처가 있으면 자동으로 활성화되지만,\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsingTincture", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierManaBurnStacks", type = "count", label = "마나 연소 중첩:", tooltip = "Mana Burn Applies a 1% of mana degen per stack\nThis also applies Weeping Wounds if the Keystone is Allocated"},
-	{ var = "conditionHaveTotem", type = "check", label = "토템을 소환했나요?", ifCond = "HaveTotem", tooltip = "You will automatically be considered to have a Totem if your main skill is a Totem,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierManaBurnStacks", type = "count", label = "마나 연소 중첩:", tooltip = "마나 연소는 중첩당 마나의 1%를 퇴화시킵니다.\n키스톤이 할당되어 있으면 피눈물의 상처도 적용됩니다"},
+	{ var = "conditionHaveTotem", type = "check", label = "토템을 소환했나요?", ifCond = "HaveTotem", tooltip = "주요 스킬이 토템이면 자동으로 토템을 보유한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HaveTotem", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionSummonedTotemRecently", type = "check", label = "최근에 토템을 소환했나요?", ifCond = "SummonedTotemRecently", tooltip = "You will automatically be considered to have Summoned a Totem Recently if your main skill is a Totem,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionSummonedTotemRecently", type = "check", label = "최근에 토템을 소환했나요?", ifCond = "SummonedTotemRecently", tooltip = "주요 스킬이 토템이면 자동으로 최근에 토템을 소환한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SummonedTotemRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "TotemsSummoned", type = "count", label = "소환된 토템 수 (최대가 아닌 경우):", ifStat = "TotemsSummoned", ifFlag = "totem", implyCond = "HaveTotem", tooltip = "This also implies that you have a Totem summoned.\nThis will affect all 'per Summoned Totem' modifiers, even for non-Totem skills.", apply = function(val, modList, enemyModList)
+	{ var = "TotemsSummoned", type = "count", label = "소환된 토템 수 (최대가 아닌 경우):", ifStat = "TotemsSummoned", ifFlag = "totem", implyCond = "HaveTotem", tooltip = "이것은 토템이 소환된 상태임을 의미합니다.\n토템이 아닌 스킬에도 '소환된 토템당' 속성 부여에 영향을 줍니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("TotemsSummoned", "OVERRIDE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:HaveTotem", "FLAG", val >= 1, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1036,7 +1036,7 @@ return {
 	{ var = "multiplierNonVaalSummonedMinion", type = "count", label = "바알 스킬 외 소환된 소환수 수:", ifMult = "NonVaalSummonedMinion", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:NonVaalSummonedMinion", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionOnConsecratedGround", type = "check", label = "신성한 대지 위에 있나요?", tooltip = "In addition to allowing any 'while on Consecrated Ground' modifiers to apply,\nConsecrated Ground grants 5% ^xE05030Life ^7Regeneration to players and allies.", apply = function(val, modList, enemyModList)
+	{ var = "conditionOnConsecratedGround", type = "check", label = "신성한 대지 위에 있나요?", tooltip = "'신성한 대지 위에서' 속성 부여를 적용하는 것 외에도,\n신성한 대지는 플레이어와 아군에게 ^xE05030생명력 ^7재생 5%를 부여합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnConsecratedGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:OnConsecratedGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" }) })
 	end },
@@ -1049,18 +1049,18 @@ return {
 	{ var = "conditionOnCausticGround", type = "check", label = "부식 대지 위에 있나요?", ifCond = "OnCausticGround", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnCausticGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionOnFungalGround", type = "check", label = "균사 대지 위에 있나요?", ifCond = { "OnFungalGround", "CreateFungalGround" }, tooltip = "Allies on your Fungal Ground gain +25% ^xD02090Chaos ^7Resistance.", apply = function(val, modList, enemyModList)
+	{ var = "conditionOnFungalGround", type = "check", label = "균사 대지 위에 있나요?", ifCond = { "OnFungalGround", "CreateFungalGround" }, tooltip = "균사 대지 위의 아군은 ^xD02090카오스 ^7저항 +25%를 획득합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnFungalGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionOnBurningGround", type = "check", label = "^xB97123불타는 ^7대지 위에 있나요?", ifCond = "OnBurningGround", implyCond = "Burning", tooltip = "This also implies that you are ^xB97123Burning.", apply = function(val, modList, enemyModList)
+	{ var = "conditionOnBurningGround", type = "check", label = "^xB97123불타는 ^7대지 위에 있나요?", ifCond = "OnBurningGround", implyCond = "Burning", tooltip = "이것은 당신이 ^xB97123타고^7 있음을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnBurningGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:Burning", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionOnChilledGround", type = "check", label = "^x3F6DB3냉각된 ^7대지 위에 있나요?", ifCond = "OnChilledGround", implyCond = "Chilled", tooltip = "This also implies that you are ^x3F6DB3Chilled.", apply = function(val, modList, enemyModList)
+	{ var = "conditionOnChilledGround", type = "check", label = "^x3F6DB3냉각된 ^7대지 위에 있나요?", ifCond = "OnChilledGround", implyCond = "Chilled", tooltip = "이것은 당신이 ^x3F6DB3냉각^7 상태임을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnChilledGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:Chilled", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionOnShockedGround", type = "check", label = "^xADAA47감전된 ^7대지 위에 있나요?", ifCond = "OnShockedGround", implyCond = "Shocked", tooltip = "This also implies that you are ^xADAA47Shocked.", apply = function(val, modList, enemyModList)
+	{ var = "conditionOnShockedGround", type = "check", label = "^xADAA47감전된 ^7대지 위에 있나요?", ifCond = "OnShockedGround", implyCond = "Shocked", tooltip = "이것은 당신이 ^xADAA47감전^7 상태임을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:OnShockedGround", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:Shocked", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1070,7 +1070,7 @@ return {
 	{ var = "conditionBurning", type = "check", label = "^xB97123타고^7 있나요?", ifCond = "Burning", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Burning", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionIgnited", type = "check", label = "^xB97123점화^7 상태인가요?", ifCond = "Ignited", implyCond = "Burning", tooltip = "This also implies that you are ^xB97123Burning.", apply = function(val, modList, enemyModList)
+	{ var = "conditionIgnited", type = "check", label = "^xB97123점화^7 상태인가요?", ifCond = "Ignited", implyCond = "Burning", tooltip = "이것은 당신이 ^xB97123타고^7 있음을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Ignited", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionScorched", type = "check", label = "^xB97123그을림^7 상태인가요?", ifCond = "Scorched", apply = function(val, modList, enemyModList)
@@ -1106,10 +1106,10 @@ return {
 	{ var = "conditionCanBeCurseImmune", type = "check", label = "저주 면역인가요?", ifFlag = "Condition:CanBeCurseImmune", apply = function(val, modList, enemyModList)
 		modList:NewMod("AvoidCurse", "BASE", 100, "Config", { type = "Condition", var = "Combat" }, { type = "GlobalEffect", effectType = "Global", unscalable = true })
 	end },
-	{ var = "multiplierPoisonOnSelf", type = "count", label = "자신에 대한 독 수:", ifMult = "PoisonStack", implyCond = "Poisoned", tooltip = "This also implies that you are Poisoned.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierPoisonOnSelf", type = "count", label = "자신에 대한 독 수:", ifMult = "PoisonStack", implyCond = "Poisoned", tooltip = "이것은 당신이 중독 상태임을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:PoisonStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "multiplierWitheredStackCountSelf", type = "countAllowZero", label = "자신에 대한 시들음 중첩 수:", ifFlag = "Condition:CanBeWithered", tooltip = "Withered applies 6% increased ^xD02090Chaos ^7Damage Taken to the self, up to 15 stacks.", defaultPlaceholderState = 15, apply = function(val, modList, enemyModList)
+	{ var = "multiplierWitheredStackCountSelf", type = "countAllowZero", label = "자신에 대한 시들음 중첩 수:", ifFlag = "Condition:CanBeWithered", tooltip = "시들음은 자신에게 최대 15 중첩까지 6% 증가된 ^xD02090카오스 ^7피해를 받게 합니다.", defaultPlaceholderState = 15, apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:WitheredStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "multiplierNearbyEnemies", type = "count", label = "주변 적 수:", ifMult = "NearbyEnemies", apply = function(val, modList, enemyModList)
@@ -1122,21 +1122,21 @@ return {
 		modList:NewMod("Condition:AtMostOneNearbyRareOrUniqueEnemy", "FLAG", val <= 1, "Config", { type = "Condition", var = "Combat" })
 		enemyModList:NewMod("Condition:NearbyRareOrUniqueEnemy", "FLAG", val >= 1, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitRecently", type = "check", label = "최근에 적중했나요?", ifCond = "HitRecently", tooltip = "You will automatically be considered to have Hit Recently if your main skill Hits and is self-cast,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitRecently", type = "check", label = "최근에 적중했나요?", ifCond = "HitRecently", tooltip = "주요 스킬이 적중하고 자가 시전인 경우 자동으로 최근에 적중한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitSpellRecently", type = "check", label = "최근에 주문으로 적중했나요?", ifCond = "HitSpellRecently", implyCond = "HitRecently", tooltip = "This also implies that you have Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitSpellRecently", type = "check", label = "최근에 주문으로 적중했나요?", ifCond = "HitSpellRecently", implyCond = "HitRecently", tooltip = "이것은 최근에 적중한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitSpellRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:HitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionCritRecently", type = "check", label = "최근에 치명타를 가했나요?", ifCond = "CritRecently", implyCond = "SkillCritRecently", tooltip = "This also implies that your Skills have Crit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionCritRecently", type = "check", label = "최근에 치명타를 가했나요?", ifCond = "CritRecently", implyCond = "SkillCritRecently", tooltip = "이것은 최근에 스킬이 치명타를 가한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CritRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:SkillCritRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionSkillCritRecently", type = "check", label = "최근에 스킬이 치명타를 가했나요?", ifCond = "SkillCritRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SkillCritRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionCritWithHeraldSkillRecently", type = "check", label = "최근에 전령 스킬이 치명타를 가했나요?", ifCond = "CritWithHeraldSkillRecently", implyCond = "SkillCritRecently", tooltip = "This also implies that your Skills have Crit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionCritWithHeraldSkillRecently", type = "check", label = "최근에 전령 스킬이 치명타를 가했나요?", ifCond = "CritWithHeraldSkillRecently", implyCond = "SkillCritRecently", tooltip = "이것은 최근에 스킬이 치명타를 가한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CritWithHeraldSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "LostNonVaalBuffRecently", type = "check", label = "최근에 바알이 아닌 방어 스킬 버프를 잃었나요?", ifCond = "LostNonVaalBuffRecently", apply = function(val, modList, enemyModList)
@@ -1145,30 +1145,30 @@ return {
 	{ var = "conditionNonCritRecently", type = "check", label = "최근에 비치명타를 가했나요?", ifCond = "NonCritRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:NonCritRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionChannelling", type = "check", label = "집중 유지 중인가요?", ifCond = "Channelling", tooltip = "You will automatically be considered to be Channeling if your main skill is a channelled skill,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionChannelling", type = "check", label = "집중 유지 중인가요?", ifCond = "Channelling", tooltip = "주요 스킬이 집중 유지 스킬인 경우 자동으로 집중 유지 중인 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Channelling", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierChannelling", type = "count", label = "집중 유지 시간(초):", ifMult = "ChannellingTime", implyCond = "Channelling", tooltip = "This also implies that you are channelling", apply = function(val, modList, enemyModList)
+	{ var = "multiplierChannelling", type = "count", label = "집중 유지 시간(초):", ifMult = "ChannellingTime", implyCond = "Channelling", tooltip = "이것은 집중 유지 중임을 의미합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:ChannellingTime", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:Channelling", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitRecentlyWithWeapon", type = "check", label = "최근에 무기로 적중했나요?", ifCond = "HitRecentlyWithWeapon", tooltip = "This also implies that you have Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitRecentlyWithWeapon", type = "check", label = "최근에 무기로 적중했나요?", ifCond = "HitRecentlyWithWeapon", tooltip = "이것은 최근에 적중한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitRecentlyWithWeapon", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionKilledRecently", type = "check", label = "최근에 처치했나요?", ifCond = "KilledRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:KilledRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierKilledRecently", type = "count", label = "최근 처치한 적 수:", ifMult = "EnemyKilledRecently", implyCond = "KilledRecently", tooltip = "This also implies that you have Killed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierKilledRecently", type = "count", label = "최근 처치한 적 수:", ifMult = "EnemyKilledRecently", implyCond = "KilledRecently", tooltip = "이것은 최근에 처치한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:EnemyKilledRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:KilledRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionKilledLast3Seconds", type = "check", label = "지난 3초간 처치했나요?", ifCond = "KilledLast3Seconds", implyCond = "KilledRecently", tooltip = "This also implies that you have Killed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionKilledLast3Seconds", type = "check", label = "지난 3초간 처치했나요?", ifCond = "KilledLast3Seconds", implyCond = "KilledRecently", tooltip = "이것은 최근에 처치한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:KilledLast3Seconds", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionKilledPoisonedLast2Seconds", type = "check", label = "지난 2초간 중독된 적을 처치했나요?", ifCond = "KilledPoisonedLast2Seconds", implyCond = "KilledRecently", tooltip = "This also implies that you have Killed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionKilledPoisonedLast2Seconds", type = "check", label = "지난 2초간 중독된 적을 처치했나요?", ifCond = "KilledPoisonedLast2Seconds", implyCond = "KilledRecently", tooltip = "이것은 최근에 처치한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:KilledPoisonedLast2Seconds", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionKilledTauntedEnemyRecently", type = "check", label = "최근에 도발된 적을 처치했나요?", ifCond = "KilledTauntedEnemyRecently", implyCondList = {"KilledRecently", "TauntedEnemyRecently" }, tooltip = "This also implies that you have killed and taunted recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionKilledTauntedEnemyRecently", type = "check", label = "최근에 도발된 적을 처치했나요?", ifCond = "KilledTauntedEnemyRecently", implyCondList = {"KilledRecently", "TauntedEnemyRecently" }, tooltip = "이것은 최근에 처치하고 도발한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:KilledTauntedEnemyRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionTotemsNotSummonedInPastTwoSeconds", type = "check", label = "지난 2초간 토템을 소환하지 않았나요?", ifCond = "NoSummonedTotemsInPastTwoSeconds", apply = function(val, modList, enemyModList)
@@ -1180,14 +1180,14 @@ return {
 	{ var = "conditionTotemsHitRecently", type = "check", label = "최근에 토템이 적중했나요?", ifCond = "HitRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:TotemsHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionTotemsHitSpellRecently", type = "check", label = "최근에 토템이 주문으로 적중했나요?", ifCond = "TotemsHitSpellRecently", implyCond = "TotemsHitRecently", tooltip = "This also implies that you Totems have Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionTotemsHitSpellRecently", type = "check", label = "최근에 토템이 주문으로 적중했나요?", ifCond = "TotemsHitSpellRecently", implyCond = "TotemsHitRecently", tooltip = "이것은 토템이 최근에 적중한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:TotemsHitSpellRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:TotemsHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionUsedBrandRecently", type = "check", label = "최근에 낙인 스킬을 사용했나요?", ifCond = "UsedBrandRecently",  apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedBrandRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierTotemsKilledRecently", type = "count", label = "최근 토템이 처치한 적 수:", ifMult = "EnemyKilledByTotemsRecently", implyCond = "TotemsKilledRecently", tooltip = "This also implies that your Totems have Killed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierTotemsKilledRecently", type = "count", label = "최근 토템이 처치한 적 수:", ifMult = "EnemyKilledByTotemsRecently", implyCond = "TotemsKilledRecently", tooltip = "이것은 토템이 최근에 처치한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:EnemyKilledByTotemsRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:TotemsKilledRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1197,7 +1197,7 @@ return {
 	{ var = "conditionMinionsDiedRecently", type = "check", label = "최근에 소환수가 죽었나요?", ifCond = "MinionsDiedRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:MinionsDiedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierMinionsKilledRecently", type = "count", label = "최근 소환수가 처치한 적 수:", ifMult = "EnemyKilledByMinionsRecently", implyCond = "MinionsKilledRecently", tooltip = "This also implies that your Minions have Killed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierMinionsKilledRecently", type = "count", label = "최근 소환수가 처치한 적 수:", ifMult = "EnemyKilledByMinionsRecently", implyCond = "MinionsKilledRecently", tooltip = "이것은 소환수가 최근에 처치한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:EnemyKilledByMinionsRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:MinionsKilledRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1268,38 +1268,38 @@ return {
 	{ var = "conditionGainedFrenzyChargeRecently", type = "check", label = "최근에 격분 충전을 획득했나요?", ifCond = "GainedFrenzyChargeRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:GainedFrenzyChargeRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionBeenSavageHitRecently", type = "check", label = "최근에 격렬한 피격을 당했나요?", ifCond = "BeenSavageHitRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionBeenSavageHitRecently", type = "check", label = "최근에 격렬한 피격을 당했나요?", ifCond = "BeenSavageHitRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BeenSavageHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitByFireDamageRecently", type = "check", label = "최근에 ^xB97123화염 ^7피해를 받았나요?", ifCond = "HitByFireDamageRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitByFireDamageRecently", type = "check", label = "최근에 ^xB97123화염 ^7피해를 받았나요?", ifCond = "HitByFireDamageRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitByFireDamageRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitByColdDamageRecently", type = "check", label = "최근에 ^x3F6DB3냉기 ^7피해를 받았나요?", ifCond = "HitByColdDamageRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitByColdDamageRecently", type = "check", label = "최근에 ^x3F6DB3냉기 ^7피해를 받았나요?", ifCond = "HitByColdDamageRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitByColdDamageRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitByLightningDamageRecently", type = "check", label = "최근에 ^xADAA47번개 ^7피해를 받았나요?", ifCond = "HitByLightningDamageRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitByLightningDamageRecently", type = "check", label = "최근에 ^xADAA47번개 ^7피해를 받았나요?", ifCond = "HitByLightningDamageRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitByLightningDamageRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHitBySpellDamageRecently", type = "check", label = "최근에 주문 피해를 받았나요?", ifCond = "HitBySpellDamageRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitBySpellDamageRecently", type = "check", label = "최근에 주문 피해를 받았나요?", ifCond = "HitBySpellDamageRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HitBySpellDamageRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionTakenFireDamageFromEnemyHitRecently", type = "check", label = "최근에 적의 적중으로 ^xB97123화염 ^7피해를 받았나요?", ifCond = "TakenFireDamageFromEnemyHitRecently", implyCond = "BeenHitRecently", tooltip = "This also implies that you have been Hit Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionTakenFireDamageFromEnemyHitRecently", type = "check", label = "최근에 적의 적중으로 ^xB97123화염 ^7피해를 받았나요?", ifCond = "TakenFireDamageFromEnemyHitRecently", implyCond = "BeenHitRecently", tooltip = "이것은 최근에 피격당한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:TakenFireDamageFromEnemyHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BeenHitRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionBlockedRecently", type = "check", label = "최근에 막기를 했나요?", ifCond = "BlockedRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BlockedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionBlockedAttackRecently", type = "check", label = "최근에 공격을 막았나요?", ifCond = "BlockedAttackRecently", implyCond = "BlockedRecently", tooltip = "This also implies that you have Blocked Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionBlockedAttackRecently", type = "check", label = "최근에 공격을 막았나요?", ifCond = "BlockedAttackRecently", implyCond = "BlockedRecently", tooltip = "이것은 최근에 막기를 한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BlockedAttackRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BlockedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionBlockedSpellRecently", type = "check", label = "최근에 주문을 막았나요?", ifCond = "BlockedSpellRecently", implyCond = "BlockedRecently", tooltip = "This also implies that you have Blocked Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionBlockedSpellRecently", type = "check", label = "최근에 주문을 막았나요?", ifCond = "BlockedSpellRecently", implyCond = "BlockedRecently", tooltip = "이것은 최근에 막기를 한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BlockedSpellRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:BlockedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1333,7 +1333,7 @@ return {
 			modList:NewMod("Condition:IgnitingConflux", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		end
 	end },
-	{ var = "highestDamageType", type = "list", ifFlag = "ChecksHighestDamage", label = "최고 피해 유형 덮어쓰기:", tooltip = "Determines whether modifiers that depend on the highest damage type apply.", list = {{val="NONE",label="기본"},{val="Physical",label="물리"},{val="Lightning",label="번개"},{val="Cold",label="냉기"},{val="Fire",label="화염"},{val="Chaos",label="카오스"}}, apply = function(val, modList, enemyModList)
+	{ var = "highestDamageType", type = "list", ifFlag = "ChecksHighestDamage", label = "최고 피해 유형 덮어쓰기:", tooltip = "최고 피해 유형에 의존하는 속성 부여의 적용 여부를 결정합니다.", list = {{val="NONE",label="기본"},{val="Physical",label="물리"},{val="Lightning",label="번개"},{val="Cold",label="냉기"},{val="Fire",label="화염"},{val="Chaos",label="카오스"}}, apply = function(val, modList, enemyModList)
 		if val ~= "NONE" then
 			modList:NewMod("Condition:"..val.."IsHighestDamageType", "FLAG", true, "Config")
 			modList:NewMod("IsHighestDamageTypeOVERRIDE", "FLAG", true, "Config")
@@ -1354,7 +1354,7 @@ return {
 	{ var = "buffNgamahuFlamesAdvance", type = "check", label = "마그마 타격이 활성화 중인가요?", ifCond = "NgamahuFlamesAdvance", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:NgamahuFlamesAdvance", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffHerEmbrace", type = "check", label = "그녀의 품 안에 있나요?", ifCond = "HerEmbrace", tooltip = "This option is specific to Oni-Goroshi.", apply = function(val, modList, enemyModList)
+	{ var = "buffHerEmbrace", type = "check", label = "그녀의 품 안에 있나요?", ifCond = "HerEmbrace", tooltip = "이 옵션은 오니-고로시 전용입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("HerEmbrace", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanGainHerEmbrace" })
 	end },
 	{ var = "conditionChampionIntimidate", type = "check", label = "투사의 위협이 활성화 중인가요?", ifEnemyCond = "ChampionIntimidate", defaultState = true, apply = function(val, modList, enemyModList)
@@ -1367,18 +1367,18 @@ return {
 		modList:NewMod("Multiplier:SkillUsedRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionAttackedRecently", type = "check", label = "최근에 공격했나요?", ifCond = "AttackedRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.\nYou will automatically be considered to have Attacked Recently if your main skill is an attack,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionAttackedRecently", type = "check", label = "최근에 공격했나요?", ifCond = "AttackedRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.\n주요 스킬이 공격이면 자동으로 최근에 공격한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AttackedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionCastSpellRecently", type = "check", label = "최근에 주문을 시전했나요?", ifCond = "CastSpellRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.\nYou will automatically be considered to have Cast a Spell Recently if your main skill is a spell,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionCastSpellRecently", type = "check", label = "최근에 주문을 시전했나요?", ifCond = "CastSpellRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.\n주요 스킬이 주문이면 자동으로 최근에 주문을 시전한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CastSpellRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierNonInstantSpellCastRecently", type = "count", label = "최근 시전한 즉발이 아닌 주문 수:", ifMult = "NonInstantSpellCastRecently", implyCond = "CastSpellRecently", tooltip = "Only the number of different spells you cast count", apply = function(val, modList, enemyModList)
+	{ var = "multiplierNonInstantSpellCastRecently", type = "count", label = "최근 시전한 즉발이 아닌 주문 수:", ifMult = "NonInstantSpellCastRecently", implyCond = "CastSpellRecently", tooltip = "시전한 서로 다른 주문의 수만 계산됩니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:NonInstantSpellCastRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierAppliedAilmentsRecently", type = "count", label = "최근 적용한 상태 이상 수:", ifMult = "AppliedAilmentsRecently", tooltip = "Number of recently applied ailments", apply = function(val, modList, enemyModList)
+	{ var = "multiplierAppliedAilmentsRecently", type = "count", label = "최근 적용한 상태 이상 수:", ifMult = "AppliedAilmentsRecently", tooltip = "최근 적용한 상태 이상의 수", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:AppliedAilmentsRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionLinkedRecently", type = "check", label = "최근에 연결했나요?", ifCond = "LinkedRecently", apply = function(val, modList, enemyModList)
@@ -1390,44 +1390,44 @@ return {
 	{ var = "conditionCastLast1Seconds", type = "check", label = "지난 1초간 주문을 시전했나요?", ifCond = "CastLast1Seconds", implyCond = "CastSpellRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CastLast1Seconds", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierCastLast8Seconds", type = "count", label = "지난 8초간 시전한 주문 수?", ifMult = "CastLast8Seconds", tooltip = "Only non-instant spells you cast count", apply = function(val, modList, enemyModList)
+	{ var = "multiplierCastLast8Seconds", type = "count", label = "지난 8초간 시전한 주문 수?", ifMult = "CastLast8Seconds", tooltip = "직접 시전한 즉발이 아닌 주문만 계산됩니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:CastLast8Seconds", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "conditionSuppressedRecently", type = "check", label = "최근에 억제했나요?", ifCond = "SuppressedRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SuppressedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierHitsSuppressedRecently", type = "count", label = "최근 억제한 피격 수:", ifMult = "HitsSuppressedRecently", implyCond = "SuppressedRecently", tooltip = "This also implies that you have Suppressed Recently.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierHitsSuppressedRecently", type = "count", label = "최근 억제한 피격 수:", ifMult = "HitsSuppressedRecently", implyCond = "SuppressedRecently", tooltip = "이것은 최근에 억제한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:HitsSuppressedRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:SuppressedRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedFireSkillRecently", type = "check", label = "최근에 ^xB97123화염 ^7스킬을 사용했나요?", ifCond = "UsedFireSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedFireSkillRecently", type = "check", label = "최근에 ^xB97123화염 ^7스킬을 사용했나요?", ifCond = "UsedFireSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedFireSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedColdSkillRecently", type = "check", label = "최근에 ^x3F6DB3냉기 ^7스킬을 사용했나요?", ifCond = "UsedColdSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedColdSkillRecently", type = "check", label = "최근에 ^x3F6DB3냉기 ^7스킬을 사용했나요?", ifCond = "UsedColdSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedColdSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedMinionSkillRecently", type = "check", label = "최근에 소환수 스킬을 사용했나요?", ifCond = "UsedMinionSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.\nYou will automatically be considered to have used a Minion skill Recently if your main skill is a Minion skill,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedMinionSkillRecently", type = "check", label = "최근에 소환수 스킬을 사용했나요?", ifCond = "UsedMinionSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.\n주요 스킬이 소환수 스킬이면 자동으로 최근에 소환수 스킬을 사용한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedMinionSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedTravelSkillRecently", type = "check", label = "최근에 이동 스킬을 사용했나요?", ifCond = "UsedTravelSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently..", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedTravelSkillRecently", type = "check", label = "최근에 이동 스킬을 사용했나요?", ifCond = "UsedTravelSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedTravelSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedMovementSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedDashRecently", type = "check", label = "최근에 질주를 시전했나요?", ifCond = "CastDashRecently", implyCondList = { "UsedTravelSkillRecently", "UsedMovementSkillRecently", "UsedSkillRecently"}, tooltip = "This also implies that you have used a Skill Recently..", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedDashRecently", type = "check", label = "최근에 질주를 시전했나요?", ifCond = "CastDashRecently", implyCondList = { "UsedTravelSkillRecently", "UsedMovementSkillRecently", "UsedSkillRecently"}, tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CastDashRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedTravelSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedMovementSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedMovementSkillRecently", type = "check", label = "최근에 이동 스킬을 사용했나요?", ifCond = "UsedMovementSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.\nYou will automatically be considered to have used a Movement skill Recently if your main skill is a movement skill,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedMovementSkillRecently", type = "check", label = "최근에 이동 스킬을 사용했나요?", ifCond = "UsedMovementSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.\n주요 스킬이 이동 스킬이면 자동으로 최근에 이동 스킬을 사용한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedMovementSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedVaalSkillRecently", type = "check", label = "최근에 바알 스킬을 사용했나요?", ifCond = "UsedVaalSkillRecently", implyCond = "UsedSkillRecently", tooltip = "This also implies that you have used a Skill Recently.\nYou will automatically be considered to have used a Vaal skill Recently if your main skill is a Vaal skill,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedVaalSkillRecently", type = "check", label = "최근에 바알 스킬을 사용했나요?", ifCond = "UsedVaalSkillRecently", implyCond = "UsedSkillRecently", tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.\n주요 스킬이 바알 스킬이면 자동으로 최근에 바알 스킬을 사용한 것으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedVaalSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -1437,10 +1437,10 @@ return {
 	{ var = "conditionSoulGainPrevention", type = "check", label = "영혼 획득 방지 상태인가요?", ifCond = "SoulGainPrevention", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SoulGainPrevention", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionSacrificeMinion", type = "check", label = "공격 시 소환수 희생", ifCond = "SacrificeMinionOnAttack", ifFlag = "Condition:HaveDamageableMinion", defaultState = true, tooltip = "Each Attack is sacrificing a damage minion to grant you extra projectiles.", apply = function(val, modList, enemyModList)
+	{ var = "conditionSacrificeMinion", type = "check", label = "공격 시 소환수 희생", ifCond = "SacrificeMinionOnAttack", ifFlag = "Condition:HaveDamageableMinion", defaultState = true, tooltip = "각 공격마다 피해 소환수를 희생하여 추가 투사체를 부여합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SacrificeMinionOnAttack", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionUsedWarcryRecently", type = "check", label = "최근에 함성을 사용했나요?", {ifFlag = "warcry", ifCond = "UsedWarcryRecently"}, implyCondList = {"UsedWarcryInPast8Seconds", "UsedSkillRecently"}, tooltip = "This also implies that you have used a Skill Recently.", apply = function(val, modList, enemyModList)
+	{ var = "conditionUsedWarcryRecently", type = "check", label = "최근에 함성을 사용했나요?", {ifFlag = "warcry", ifCond = "UsedWarcryRecently"}, implyCondList = {"UsedWarcryInPast8Seconds", "UsedSkillRecently"}, tooltip = "이것은 최근에 스킬을 사용한 것을 의미합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UsedWarcryRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedWarcryInPast8Seconds", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedSkillRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
@@ -1457,7 +1457,7 @@ return {
 	{ var = "multiplierMineDetonatedRecently", type = "count", label = "최근 기폭한 지뢰 수:", ifMult = "MineDetonatedRecently", implyCond = "DetonatedMinesRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:MineDetonatedRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "minesPerThrow", type = "count", label = "투척당 지뢰 수:", ifFlag = "mine", tooltip = "This will override the number of Mines per throw", apply = function(val, modList, enemyModList)
+	{ var = "minesPerThrow", type = "count", label = "투척당 지뢰 수:", ifFlag = "mine", tooltip = "투척당 지뢰 수를 덮어씁니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("MineThrowCount", "OVERRIDE", val, "Config", {type = "Condition", var = "Combat"})
 	end },
 	{ var = "TriggeredTrapsRecently", type = "check", label = "최근에 덫을 발동시켰나요?", ifCond = "TriggeredTrapsRecently", apply = function(val, modList, enemyModList)
@@ -1469,7 +1469,7 @@ return {
 	{ var = "conditionThrownTrapOrMineRecently", type = "check", label = "최근에 덫이나 지뢰를 투척했나요?", ifCond = "TrapOrMineThrownRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:TrapOrMineThrownRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "trapsPerThrow", type = "count", label = "투척당 덫 수:", ifFlag = "trap", tooltip = "This will override the number of Traps per throw", apply = function(val, modList, enemyModList)
+	{ var = "trapsPerThrow", type = "count", label = "투척당 덫 수:", ifFlag = "trap", tooltip = "투척당 덫 수를 덮어씁니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("TrapThrowCount", "OVERRIDE", val, "Config", {type = "Condition", var = "Combat"})
 	end },
 	{ var = "conditionCursedEnemyRecently", type = "check", label = "최근에 적에게 저주를 걸었나요?",  ifCond="CursedEnemyRecently", apply = function(val, modList, enemyModList)
@@ -1484,17 +1484,17 @@ return {
 	{ var = "conditionConsumedCorpseRecently", type = "check", label = "최근에 시체를 소모했나요?", ifCond = "ConsumedCorpseRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ConsumedCorpseRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionConsumedCorpseInPast2Sec", type = "check", label = "지난 2초간 시체를 소모했나요?", ifCond = "ConsumedCorpseInPast2Sec", implyCond = "ConsumedCorpseRecently",tooltip = "This also implies you have 'Consumed a corpse Recently'", apply = function(val, modList, enemyModList)
+	{ var = "conditionConsumedCorpseInPast2Sec", type = "check", label = "지난 2초간 시체를 소모했나요?", ifCond = "ConsumedCorpseInPast2Sec", implyCond = "ConsumedCorpseRecently",tooltip = "이것은 '최근에 시체를 소모'한 것을 의미합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ConsumedCorpseInPast2Sec", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ var = "multiplierCorpseConsumedRecently", type = "count", label = "최근 소모한 시체 수:", ifMult = "CorpseConsumedRecently", implyCond = "ConsumedCorpseRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:CorpseConsumedRecently", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:ConsumedCorpseRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionRavenousCorpseConsumed", type = "check", label = "탐식이 시체를 소모했나요?", ifSkill = "Ravenous", implyCond = "ConsumedCorpseRecently", tooltip = "Corpse must be the same type as the monster you're fighting.\nThis also implies you have 'Consumed a corpse Recently'", apply = function(val, modList, enemyModList)
+	{ var = "conditionRavenousCorpseConsumed", type = "check", label = "탐식이 시체를 소모했나요?", ifSkill = "Ravenous", implyCond = "ConsumedCorpseRecently", tooltip = "시체가 싸우고 있는 몬스터와 같은 유형이어야 합니다.\n이것은 '최근에 시체를 소모'한 것을 의미합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:RavenousCorpseConsumed", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierWarcryUsedRecently", type = "count", label = "최근 사용한 함성 수:", {ifFlag = "warcry", ifMult = "WarcryUsedRecently"}, implyCondList = {"UsedWarcryRecently", "UsedWarcryInPast8Seconds", "UsedSkillRecently"}, tooltip = "This also implies you have 'Used a Warcry Recently', 'Used a Warcry in the past 8 seconds', and 'Used a Skill Recently'", apply = function(val, modList, enemyModList)
+	{ var = "multiplierWarcryUsedRecently", type = "count", label = "최근 사용한 함성 수:", {ifFlag = "warcry", ifMult = "WarcryUsedRecently"}, implyCondList = {"UsedWarcryRecently", "UsedWarcryInPast8Seconds", "UsedSkillRecently"}, tooltip = "이것은 '최근에 함성 사용', '지난 8초간 함성 사용', '최근에 스킬 사용'을 의미합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:WarcryUsedRecently", "BASE", m_min(val, 100), "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedWarcryRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:UsedWarcryInPast8Seconds", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
@@ -1525,18 +1525,18 @@ return {
 	{ var = "multiplierImpalesOnEnemy", type = "countAllowZero", label = "적에 대한 꿰뚫기 수 (최대가 아닌 경우):", ifFlag = "impale", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:ImpaleStacks", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierBleedsOnEnemy", type = "count", label = "적에 대한 출혈 수 (최대가 아닌 경우):", ifFlag = "Condition:HaveCrimsonDance", tooltip = "Sets current number of Bleeds on the enemy if using the Crimson Dance keystone.\nThis also implies that the enemy is Bleeding.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierBleedsOnEnemy", type = "count", label = "적에 대한 출혈 수 (최대가 아닌 경우):", ifFlag = "Condition:HaveCrimsonDance", tooltip = "진홍의 춤 키스톤 사용 시 적에 대한 현재 출혈 수를 설정합니다.\n이것은 적이 출혈 상태임을 의미합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:BleedStacks", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		enemyModList:NewMod("Condition:Bleeding", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "multiplierFragileRegrowth", type = "count", label = "취약한 재생 중첩 수:", ifMult = "FragileRegrowthCount", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:FragileRegrowthCount", "BASE", m_min(val,10), "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionHaveArborix", type = "check", label = "강철 반사 상태인가요?", ifFlag = "Condition:HaveArborix", tooltip = "This option is specific to Arborix.",apply = function(val, modList, enemyModList)
+	{ var = "conditionHaveArborix", type = "check", label = "강철 반사 상태인가요?", ifFlag = "Condition:HaveArborix", tooltip = "이 옵션은 아보릭스 전용입니다.",apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HaveIronReflexes", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Keystone", "LIST", "Iron Reflexes", "Config")
 	end },	
-	{ var = "conditionHaveAugyre", type = "list", label = "오기레 회전 버프:", ifFlag = "Condition:HaveAugyre", list = {{val="EleOverload",label="원소 과부하"},{val="ResTechnique",label="굳건한 기술"}}, tooltip = "This option is specific to Augyre.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHaveAugyre", type = "list", label = "오기레 회전 버프:", ifFlag = "Condition:HaveAugyre", list = {{val="EleOverload",label="원소 과부하"},{val="ResTechnique",label="굳건한 기술"}}, tooltip = "이 옵션은 오기레 전용입니다.", apply = function(val, modList, enemyModList)
 		if val == "EleOverload" then
 			modList:NewMod("Condition:HaveElementalOverload", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 			modList:NewMod("Keystone", "LIST", "Elemental Overload", "Config")
@@ -1545,81 +1545,81 @@ return {
 			modList:NewMod("Keystone", "LIST", "Resolute Technique", "Config")
 		end
 	end },	
-	{ var = "conditionHaveVulconus", type = "check", label = "화염의 화신 상태인가요?", ifFlag = "Condition:HaveVulconus", tooltip = "This option is specific to Vulconus.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHaveVulconus", type = "check", label = "화염의 화신 상태인가요?", ifFlag = "Condition:HaveVulconus", tooltip = "이 옵션은 불카누스 전용입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HaveAvatarOfFire", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Keystone", "LIST", "Avatar of Fire", "Config")
 	end },
-	{ var = "conditionHaveManaStorm", type = "check", label = "마나폭풍 버프가 있나요?", ifFlag = "Condition:HaveManaStorm", tooltip = "This option enables Manastorm's ^xADAA47Lightning ^7Damage Buff.\n(When you cast a Spell, Sacrifice all ^x7070FFMana ^7to gain Added Maximum ^xADAA47Lightning ^7Damage\nequal to 50% of Sacrificed ^x7070FFMana ^7for 4 seconds)", apply = function(val, modList, enemyModList)
+	{ var = "conditionHaveManaStorm", type = "check", label = "마나폭풍 버프가 있나요?", ifFlag = "Condition:HaveManaStorm", tooltip = "이 옵션은 마나폭풍의 ^xADAA47번개 ^7피해 버프를 활성화합니다.\n(주문 시전 시 모든 ^x7070FF마나^7를 희생하여 희생한 ^x7070FF마나^7의\n50%만큼 추가 최대 ^xADAA47번개 ^7피해를 4초 동안 얻습니다)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SacrificeManaForLightning", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "GamblesprintMovementSpeed", type = "list", label = "도박 질주 이동 속도", defaultIndex=5, list={{val=-40,label="-40%"},{val=-20,label="-20%"},{val=0,label="0%"},{val=20,label="20%"},{val=30,label="30%"},{val=40,label="40%"},{val=60,label="60%"},{val=80,label="80%"},{val=100,label="100%"}}, ifFlag = "Condition:HaveGamblesprint", tooltip = "This option sets the Movement Speed from Gamblesprint boots.", apply = function(val, modList, enemyModList)
+	{ var = "GamblesprintMovementSpeed", type = "list", label = "도박 질주 이동 속도", defaultIndex=5, list={{val=-40,label="-40%"},{val=-20,label="-20%"},{val=0,label="0%"},{val=20,label="20%"},{val=30,label="30%"},{val=40,label="40%"},{val=60,label="60%"},{val=80,label="80%"},{val=100,label="100%"}}, ifFlag = "Condition:HaveGamblesprint", tooltip = "이 옵션은 도박 질주 장화의 이동 속도를 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("MovementSpeed", "INC", val, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "HaveGamblesprint" })
 	end },
-	{ var = "EverlastingSacrifice", type = "check", label = "영원한 희생 상태인가요?", ifFlag = "Condition:EverlastingSacrifice", tooltip = "This option enables the Everlasting Sacrifice buff that grants +5% to all maximum resists.", apply = function(val, modList , enemyModList)
+	{ var = "EverlastingSacrifice", type = "check", label = "영원한 희생 상태인가요?", ifFlag = "Condition:EverlastingSacrifice", tooltip = "이 옵션은 모든 최대 저항에 +5%를 부여하는 영원한 희생 버프를 활성화합니다.", apply = function(val, modList , enemyModList)
 		modList:NewMod("ElementalResistMax", "BASE", 5, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "EverlastingSacrifice"})
 		modList:NewMod("ChaosResistMax", "BASE", 5, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "EverlastingSacrifice"})
 	end },
-	{ var = "buffFanaticism", type = "check", label = "광신 상태인가요?", ifFlag = "Condition:CanGainFanaticism", tooltip = "This will enable the Fanaticism buff itself. (Grants 75% more cast speed, reduced skill cost, and increased area of effect)", apply = function(val, modList, enemyModList)
+	{ var = "buffFanaticism", type = "check", label = "광신 상태인가요?", ifFlag = "Condition:CanGainFanaticism", tooltip = "광신 버프를 활성화합니다. (75% 더 빠른 시전 속도, 감소된 스킬 비용, 증가된 효과 범위를 부여합니다)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Fanaticism", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanGainFanaticism" })
 	end },
-	{ var = "conditionHitsAlwaysStun", type = "check", label = "적중이 항상 기절시키나요?", ifFlag = "Condition:maceMasteryStunCullSpecced", tooltip = "This enables the conditional culling strike from the mace mastery.", apply = function(val, modList, enemyModList)
+	{ var = "conditionHitsAlwaysStun", type = "check", label = "적중이 항상 기절시키나요?", ifFlag = "Condition:maceMasteryStunCullSpecced", tooltip = "철퇴 숙련의 조건부 처형 일격을 활성화합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("CullPercent", "MAX", 10, "Config", { type = "Condition", var = "Combat" }, {type = "Condition", var = "maceMasteryStunCullSpecced"})
 	end },
-	{ var = "multiplierPvpTvalueOverride", type = "count", label = "PvP T값 덮어쓰기 (ms):", ifFlag = "isPvP", tooltip = "Tvalue in milliseconds. This overrides the Tvalue of a given skill, for instance any with fixed Tvalues, or modified Tvalues", apply = function(val, modList, enemyModList)
+	{ var = "multiplierPvpTvalueOverride", type = "count", label = "PvP T값 덮어쓰기 (ms):", ifFlag = "isPvP", tooltip = "밀리초 단위의 T값입니다. 고정 T값이나 수정된 T값 등 특정 스킬의 T값을 덮어씁니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("MultiplierPvpTvalueOverride", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierPvpDamage", type = "count", label = "사용자 정의 PvP 피해 배율 %:", ifFlag = "isPvP", tooltip = "This multiplies the damage of a given skill in pvp, for instance any with damage multiplier specific to pvp (from skill or support or item like sire of shards)", apply = function(val, modList, enemyModList)
+	{ var = "multiplierPvpDamage", type = "count", label = "사용자 정의 PvP 피해 배율 %:", ifFlag = "isPvP", tooltip = "PvP에서 특정 스킬의 피해를 곱합니다. 예를 들어 PvP 전용 피해 배율이 있는 스킬, 보조 또는 아이템(파편의 군주 등)", apply = function(val, modList, enemyModList)
 		modList:NewMod("PvpDamageMultiplier", "MORE", val - 100, "Config")
 	end },
-	{ var = "buffAccelerationShrine", type = "check", label = "가속 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Acceleration Shrine buff.\n\t15% increased Action Speed\n\t80% increased Projectile Speed", apply = function(val, modList, enemyModList)
+	{ var = "buffAccelerationShrine", type = "check", label = "가속 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "가속 성소 버프를 활성화합니다.\n\t15% 증가된 행동 속도\n\t80% 증가된 투사체 속도", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AccelerationShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffBrutalShrine", type = "check", label = "잔인한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Brutal Shrine buff.\n\t50% increased Damage\n\tKnocks Enemies Back on Hit\n\t30% increased Stun Duration on Enemies", apply = function(val, modList, enemyModList)
+	{ var = "buffBrutalShrine", type = "check", label = "잔인한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "잔인한 성소 버프를 활성화합니다.\n\t50% 증가된 피해\n\t적중 시 적 밀어내기\n\t적에 대한 30% 증가된 기절 지속시간", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BrutalShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffDiamondShrine", type = "check", label = "다이아몬드 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Diamond Shrine buff.\n\tAll hits are Critical Strikes", apply = function(val, modList, enemyModList)
+	{ var = "buffDiamondShrine", type = "check", label = "다이아몬드 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "다이아몬드 성소 버프를 활성화합니다.\n\t모든 적중이 치명타", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:DiamondShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffDivineShrine", type = "check", label = "신성한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Divine Shrine buff.\n\tCannot be Damaged", apply = function(val, modList, enemyModList)
+	{ var = "buffDivineShrine", type = "check", label = "신성한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "신성한 성소 버프를 활성화합니다.\n\t피해를 받을 수 없음", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:DivineShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffEchoingShrine", type = "check", label = "메아리 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Echoing Shrine buff.\n\t100% more Attack Speed\n\t100% more Cast Speed\n\tSkills Repeat an additional Time", apply = function(val, modList, enemyModList)
+	{ var = "buffEchoingShrine", type = "check", label = "메아리 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "메아리 성소 버프를 활성화합니다.\n\t100%의 더 빠른 공격 속도\n\t100%의 더 빠른 시전 속도\n\t스킬이 추가로 1회 반복", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:EchoingShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffGloomShrine", type = "check", label = "음울한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Gloom Shrine buff.\n\tGain 10% of Non-^xD02090Chaos ^7Damage as extra ^xD02090Chaos ^7Damage\n\tEnemies you Kill have a 40% chance to Explode, dealing a quarter of their maximum ^xE05030Life ^7as ^xD02090Chaos ^7Damage", apply = function(val, modList, enemyModList)
+	{ var = "buffGloomShrine", type = "check", label = "음울한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "음울한 성소 버프를 활성화합니다.\n\t비-^xD02090카오스 ^7피해의 10%를 추가 ^xD02090카오스 ^7피해로 획득\n\t처치한 적이 40% 확률로 폭발하여 최대 ^xE05030생명력^7의 1/4을 ^xD02090카오스 ^7피해로 줌", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:GloomShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffImpenetrableShrine", type = "check", label = "난공불락 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Impenetrable Shrine buff.\n\t100% increased Armour\n\t100% increased ^x33FF77Evasion Rating^7\n\t100% increased maximum ^x88FFFFEnergy Shield", apply = function(val, modList, enemyModList)
+	{ var = "buffImpenetrableShrine", type = "check", label = "난공불락 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "난공불락 성소 버프를 활성화합니다.\n\t100% 증가된 방어구\n\t100% 증가된 ^x33FF77회피^7\n\t100% 증가된 최대 ^x88FFFF에너지 보호막", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ImpenetrableShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffMassiveShrine", type = "check", label = "거대한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Massive Shrine buff.\n\t30% increased Character Size\n\t40% increased Area of Effect\n\t40% increased maximum ^xE05030Life", apply = function(val, modList, enemyModList)
+	{ var = "buffMassiveShrine", type = "check", label = "거대한 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "거대한 성소 버프를 활성화합니다.\n\t30% 증가된 캐릭터 크기\n\t40% 증가된 효과 범위\n\t40% 증가된 최대 ^xE05030생명력", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:MassiveShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffReplenishingShrine", type = "check", label = "보충 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Replenishing Shrine buff.\n\t200% increased ^x7070FFMana ^7Regeneration Rate\n\t6.7% of ^xE05030Life ^7Regenerated per second", apply = function(val, modList, enemyModList)
+	{ var = "buffReplenishingShrine", type = "check", label = "보충 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "보충 성소 버프를 활성화합니다.\n\t200% 증가된 ^x7070FF마나 ^7재생 속도\n\t초당 ^xE05030생명력^7의 6.7% 재생", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ReplenishingShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffResistanceShrine", type = "check", label = "저항 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Resistance Shrine buff.\n\t+50% to all Elemental Resistances\n\t+10% to all maximum Resistances", apply = function(val, modList, enemyModList)
+	{ var = "buffResistanceShrine", type = "check", label = "저항 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "저항 성소 버프를 활성화합니다.\n\t모든 원소 저항 +50%\n\t모든 최대 저항 +10%", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ResistanceShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffResonatingShrine", type = "check", label = "공명 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "This will enable the Resonating Shrine buff.\n\t20% chance to gain a Power, Frenzy or Endurance Charge on Hit\n\t60% chance to gain a Power, Frenzy or Endurance Charge on Kill\n\t+1 to Maximum Power Charges\n\t+1 to Maximum Frenzy Charges\n\t+1 to Maximum Endurance Charges", apply = function(val, modList, enemyModList)
+	{ var = "buffResonatingShrine", type = "check", label = "공명 성소가 있나요?", ifFlag = "Condition:CanHaveRegularShrines", tooltip = "공명 성소 버프를 활성화합니다.\n\t적중 시 20% 확률로 권능, 격분 또는 인내 충전 획득\n\t처치 시 60% 확률로 권능, 격분 또는 인내 충전 획득\n\t최대 권능 충전 +1\n\t최대 격분 충전 +1\n\t최대 인내 충전 +1", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ResonatingShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserAccelerationShrine", type = "check", label = "하급 가속 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Acceleration Shrine buff.\n\t10% increased Action Speed\n\t30% increased Projectile Speed", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserAccelerationShrine", type = "check", label = "하급 가속 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 가속 성소 버프를 활성화합니다.\n\t10% 증가된 행동 속도\n\t30% 증가된 투사체 속도", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserAccelerationShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserBrutalShrine", type = "check", label = "하급 잔인한 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Brutal Shrine buff.\n\t20% increased Damage\n\tKnocks Enemies Back on Hit\n\t20% increased Stun Duration on Enemies", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserBrutalShrine", type = "check", label = "하급 잔인한 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 잔인한 성소 버프를 활성화합니다.\n\t20% 증가된 피해\n\t적중 시 적 밀어내기\n\t적에 대한 20% 증가된 기절 지속시간", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserBrutalShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserImpenetrableShrine", type = "check", label = "하급 난공불락 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Impenetrable Shrine buff.\n\t50% increased Armour\n\t50% increased ^x33FF77Evasion Rating^7\n\t50% increased maximum ^x88FFFFEnergy Shield", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserImpenetrableShrine", type = "check", label = "하급 난공불락 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 난공불락 성소 버프를 활성화합니다.\n\t50% 증가된 방어구\n\t50% 증가된 ^x33FF77회피^7\n\t50% 증가된 최대 ^x88FFFF에너지 보호막", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserImpenetrableShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserMassiveShrine", type = "check", label = "하급 거대한 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Massive Shrine buff.\n\t10% increased Character Size\n\t20% increased Area of Effect\n\t20% increased maximum ^xE05030Life", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserMassiveShrine", type = "check", label = "하급 거대한 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 거대한 성소 버프를 활성화합니다.\n\t10% 증가된 캐릭터 크기\n\t20% 증가된 효과 범위\n\t20% 증가된 최대 ^xE05030생명력", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserMassiveShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserReplenishingShrine", type = "check", label = "하급 보충 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Replenishing Shrine buff.\n\t100% increased ^x7070FFMana ^7Regeneration Rate\n\t3.3% of ^xE05030Life ^7Regenerated per second", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserReplenishingShrine", type = "check", label = "하급 보충 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 보충 성소 버프를 활성화합니다.\n\t100% 증가된 ^x7070FF마나 ^7재생 속도\n\t초당 ^xE05030생명력^7의 3.3% 재생", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserReplenishingShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffLesserResistanceShrine", type = "check", label = "하급 저항 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "This will enable the Lesser Resistance Shrine buff.\n\t+25% to all Elemental Resistances\n\t+2% to all maximum Resistances", apply = function(val, modList, enemyModList)
+	{ var = "buffLesserResistanceShrine", type = "check", label = "하급 저항 성소가 있나요?", ifFlag = "Condition:CanHaveLesserShrines", tooltip = "하급 저항 성소 버프를 활성화합니다.\n\t모든 원소 저항 +25%\n\t모든 최대 저항 +2%", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LesserResistanceShrine", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
 	-- Section: Effective DPS options
@@ -1633,12 +1633,12 @@ return {
 	{ var = "skillPierceCount", type = "count", label = "스킬 관통 횟수:", ifStat = "PiercedCount", ifFlag = "piercing", apply = function(val, modList, enemyModList)
 		modList:NewMod("PiercedCount", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "meleeDistance", type = "count", label = "적과의 근접 거리:", tooltip = "10 units equals 1 metre", ifTagType = "MeleeProximity", ifFlag = "melee", defaultPlaceholderState = 15 },
-	{ var = "projectileDistance", type = "count", label = "투사체 이동 거리:", tooltip = "10 units equals 1 metre", ifTagType = "DistanceRamp", ifFlag = "projectile", defaultPlaceholderState = 40 },
+	{ var = "meleeDistance", type = "count", label = "적과의 근접 거리:", tooltip = "10 단위는 1미터입니다", ifTagType = "MeleeProximity", ifFlag = "melee", defaultPlaceholderState = 15 },
+	{ var = "projectileDistance", type = "count", label = "투사체 이동 거리:", tooltip = "10 단위는 1미터입니다", ifTagType = "DistanceRamp", ifFlag = "projectile", defaultPlaceholderState = 40 },
 	{ var = "conditionAtCloseRange", type = "check", label = "적이 근접 거리에 있나요?", ifCond = "AtCloseRange", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AtCloseRange", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "enemyMultiplierEnemyPresenceSeconds", type = "count", label = "적이 당신의 존재감 안에 있는 시간", tooltip = "Number of seconds the enemy has been in your presence.", ifEnemyMult = "EnemyPresenceSeconds", apply = function(val, modList, enemyModList)
+	{ var = "enemyMultiplierEnemyPresenceSeconds", type = "count", label = "적이 당신의 존재감 안에 있는 시간", tooltip = "적이 당신의 존재감 안에 있었던 시간(초)입니다.", ifEnemyMult = "EnemyPresenceSeconds", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:EnemyPresenceSeconds", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyMoving", type = "check", label = "적이 이동 중인가요?", ifMod = "BleedChance", apply = function(val, modList, enemyModList)
@@ -1650,7 +1650,7 @@ return {
 	{ var = "conditionEnemyLowLife", type = "check", label = "적이 빈사 ^xE05030생명력^7인가요?", ifEnemyCond = "LowLife", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:LowLife", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyCursed", type = "check", label = "적이 저주 상태인가요?", ifEnemyCond = "Cursed", tooltip = "The enemy will automatically be considered to be Cursed if you have at least one curse enabled,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyCursed", type = "check", label = "적이 저주 상태인가요?", ifEnemyCond = "Cursed", tooltip = "저주가 하나 이상 활성화되어 있으면 적이 자동으로 저주 상태로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Cursed", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyStunned", type = "check", label = "적이 기절 상태인가요?", ifEnemyCond = "Stunned", apply = function(val, modList, enemyModList)
@@ -1659,13 +1659,13 @@ return {
 	{ var = "conditionEnemyBleeding", type = "check", label = "적이 출혈 상태인가요?", ifEnemyCond = "Bleeding", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Bleeding", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "overrideBleedStackPotential", type = "count", label = "출혈 중첩 잠재력 덮어쓰기:", ifOption = "conditionEnemyBleeding", tooltip = "Allows you to manually set the Stack Potential value for a skill.\nStack Potential equates to the number of times you are able to inflict a Bleed on an enemy before the duration of your first Bleed expires", apply = function(val, modList, enemyModList)
+	{ var = "overrideBleedStackPotential", type = "count", label = "출혈 중첩 잠재력 덮어쓰기:", ifOption = "conditionEnemyBleeding", tooltip = "스킬의 중첩 잠재력 값을 수동으로 설정할 수 있습니다.\n중첩 잠재력은 첫 번째 출혈의 지속시간이 만료되기 전에 적에게 출혈을 부여할 수 있는 횟수입니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("BleedStackPotentialOverride", "OVERRIDE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionSingleBleed", type = "check", label = "적에 대한 출혈을 단일로 제한?", ifCond = "SingleBleed", tooltip = "This is for Blood Sap Tincture, but will limit you to only applying a single Bleed on the enemy", apply = function(val, modList, enemyModList)
+	{ var = "conditionSingleBleed", type = "check", label = "적에 대한 출혈을 단일로 제한?", ifCond = "SingleBleed", tooltip = "피의 수액 팅크처 전용이지만, 적에 대한 출혈을 하나로 제한합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SingleBleed", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "multiplierRuptureStacks", type = "count", label = "파열 중첩 수?", ifFlag = "Condition:CanInflictRupture", tooltip = "Rupture applies more bleed damage and faster bleeds for 3 seconds, up to 4 stacks", apply = function(val, modList, enemyModList)
+	{ var = "multiplierRuptureStacks", type = "count", label = "파열 중첩 수?", ifFlag = "Condition:CanInflictRupture", tooltip = "파열은 3초 동안 더 많은 출혈 피해와 더 빠른 출혈을 적용하며, 최대 4 중첩입니다", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:RuptureStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyPoisoned", type = "check", label = "적이 중독 상태인가요?", ifEnemyCond = "Poisoned", apply = function(val, modList, enemyModList)
@@ -1674,7 +1674,7 @@ return {
 	{ var = "multiplierPoisonOnEnemy", type = "count", label = "적에 대한 독 수:", ifEnemyMult = "PoisonStack", implyCond = "Poisoned", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:PoisonStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionSinglePoison", type = "check", label = "적에 대한 독을 단일로 제한?", ifCond = "SinglePoison", tooltip = "This is for low tolerance, but will limit you to only applying a single poison on the enemy", apply = function(val, modList, enemyModList)
+	{ var = "conditionSinglePoison", type = "check", label = "적에 대한 독을 단일로 제한?", ifCond = "SinglePoison", tooltip = "낮은 내성 전용이지만, 적에 대한 독을 하나로 제한합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SinglePoison", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "multiplierCurseExpiredOnEnemy", type = "count", label = "적에 대한 저주 만료 %:", ifEnemyMult = "CurseExpired", apply = function(val, modList, enemyModList)
@@ -1683,15 +1683,15 @@ return {
 	{ var = "multiplierCurseDurationExpiredOnEnemy", type = "count", label = "적에 대한 저주 지속시간 경과:", ifEnemyMult = "CurseDurationExpired", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:CurseDurationExpired", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "multiplierWitheredStackCount", type = "count", label = "시들음 중첩 수:", ifFlag = "Condition:CanWither", tooltip = "Withered applies 6% increased ^xD02090Chaos ^7Damage Taken to the enemy, up to 15 stacks.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierWitheredStackCount", type = "count", label = "시들음 중첩 수:", ifFlag = "Condition:CanWither", tooltip = "시들음은 적에게 최대 15 중첩까지 6% 증가된 ^xD02090카오스 ^7피해를 받게 합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:WitheredStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "multiplierCorrosionStackCount", type = "count", label = "부식 중첩 수:", ifFlag = "Condition:CanCorrode", tooltip = "Each stack of Corrosion applies -5000 to total Armour and -1000 to total ^x33FF77Evasion Rating ^7to the enemy.\nCorrosion lasts 4 seconds and refreshes the duration of existing Corrosion stacks\nCorrosion has no stack limit", apply = function(val, modList, enemyModList)
+	{ var = "multiplierCorrosionStackCount", type = "count", label = "부식 중첩 수:", ifFlag = "Condition:CanCorrode", tooltip = "부식 중첩마다 적의 총 방어구에 -5000, 총 ^x33FF77회피^7에 -1000을 적용합니다.\n부식은 4초 동안 지속되며 기존 부식 중첩의 지속시간을 갱신합니다\n부식은 중첩 제한이 없습니다", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:CorrosionStack", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Armour", "BASE", -5000, "Corrosion", { type = "Multiplier", var = "CorrosionStack" }, { type = "ActorCondition", actor = "enemy", var = "CanCorrode" })
 		enemyModList:NewMod("Evasion", "BASE", -1000, "Corrosion", { type = "Multiplier", var = "CorrosionStack" }, { type = "ActorCondition", actor = "enemy", var = "CanCorrode" })
 	end },
-	{ var = "multiplierEnsnaredStackCount", type = "count", label = "올가미 중첩 수:", ifSkill = "Ensnaring Arrow", tooltip = "While ensnared, enemies take increased Projectile Damage from Attack Hits\nEnsnared enemies always count as moving, and have less movement speed while trying to break the snare.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierEnsnaredStackCount", type = "count", label = "올가미 중첩 수:", ifSkill = "Ensnaring Arrow", tooltip = "올가미에 걸린 적은 공격 적중으로부터 증가된 투사체 피해를 받습니다\n올가미에 걸린 적은 항상 이동 중으로 간주되며, 올가미를 벗어나려 할 때 이동 속도가 감소합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:EnsnareStackCount", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:Moving", "FLAG", true, "Config", { type = "MultiplierThreshold", actor = "enemy", var = "EnsnareStackCount", threshold = 1 })
 	end },
@@ -1701,45 +1701,45 @@ return {
 	{ var = "conditionEnemyHindered", type = "check", label = "적이 방해 상태인가요?", ifEnemyCond = "Hindered", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Hindered", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyExcommunicated", type = "check", label = "적이 파문 상태인가요?", ifFlag = "Condition:CanExcommunicate", tooltip = "Excommunicated Enemies cannot deal ^xD02090Chaos ^7Damage.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyExcommunicated", type = "check", label = "적이 파문 상태인가요?", ifFlag = "Condition:CanExcommunicate", tooltip = "파문된 적은 ^xD02090카오스 ^7피해를 줄 수 없습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Excommunicated", "FLAG", true, "Config", { type = "ActorCondition", actor = "enemy", var = "CanExcommunicate" })
 	end },
-	{ var = "conditionEnemyBlinded", type = "check", label = "적이 실명 상태인가요?", tooltip = "In addition to allowing 'against Blinded Enemies' modifiers to apply,\n Blind applies the following effects.\n -20% Accuracy \n -20% ^x33FF77Evasion", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyBlinded", type = "check", label = "적이 실명 상태인가요?", tooltip = "'실명된 적에 대한' 속성 부여를 적용하는 것 외에도,\n실명은 다음 효과를 적용합니다.\n -20% 명중\n -20% ^x33FF77회피", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Blinded", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "overrideBuffBlinded", type = "count", label = "실명 효과 (최대가 아닌 경우):", ifOption = "conditionEnemyBlinded", tooltip = "If you have a guaranteed source of Blind, the strongest one will apply.", apply = function(val, modList, enemyModList)
+	{ var = "overrideBuffBlinded", type = "count", label = "실명 효과 (최대가 아닌 경우):", ifOption = "conditionEnemyBlinded", tooltip = "보장된 실명 원천이 있는 경우, 가장 강한 것이 적용됩니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("BlindEffect", "OVERRIDE", val, "Config", {type = "GlobalEffect", effectType = "Buff" })
 	end },
 	{ var = "conditionEnemyTaunted", type = "check", label = "적이 도발 상태인가요?", ifEnemyCond = "Taunted", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Taunted", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyDebilitated", type = "check", label = "적이 쇠약 상태인가요?", ifMod = "DebilitateChance", tooltip = "Debilitated enemies deal 10% less damage.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyDebilitated", type = "check", label = "적이 쇠약 상태인가요?", ifMod = "DebilitateChance", tooltip = "쇠약 상태의 적은 10% 감폭된 피해를 줍니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Debilitated", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyPacified", type = "check", label = "적이 진정 상태인가요?", ifSkill = "Pacify", tooltip = "Enemies are Pacified after 60% of Pacify's duration has expired", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyPacified", type = "check", label = "적이 진정 상태인가요?", ifSkill = "Pacify", tooltip = "적은 진정의 지속시간 60%가 경과한 후 진정 상태가 됩니다", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Pacified", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyBurning", type = "check", label = "적이 ^xB97123타고^7 있나요?", ifEnemyCond = "Burning", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Burning", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyIgnited", type = "check", label = "적이 ^xB97123점화^7 상태인가요?", ifEnemyCond = "Ignited", implyCond = "Burning", tooltip = "This also implies that the enemy is ^xB97123Burning.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyIgnited", type = "check", label = "적이 ^xB97123점화^7 상태인가요?", ifEnemyCond = "Ignited", implyCond = "Burning", tooltip = "이것은 적이 ^xB97123타고^7 있음을 의미합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Ignited", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "overrideIgniteStackPotential", type = "count", label = "^xB97123점화^7 중첩 잠재력 덮어쓰기:", ifOption = "conditionEnemyIgnited", tooltip = "Allows you to manually set the Stack Potential value for a skill.\nStack Potential equates to the number of times you are able to inflict an Ignite on an enemy before the duration of your first Ignite expires", apply = function(val, modList, enemyModList)
+	{ var = "overrideIgniteStackPotential", type = "count", label = "^xB97123점화^7 중첩 잠재력 덮어쓰기:", ifOption = "conditionEnemyIgnited", tooltip = "스킬의 중첩 잠재력 값을 수동으로 설정할 수 있습니다.\n중첩 잠재력은 첫 번째 점화의 지속시간이 만료되기 전에 적에게 점화를 부여할 수 있는 횟수입니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("IgniteStackPotentialOverride", "OVERRIDE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyScorched", type = "check", ifFlag = "inflictScorch", label = "적이 ^xB97123그을림^7 상태인가요?", tooltip = "^xB97123Scorched ^7enemies have lowered elemental resistances, up to -30%.\nThis option will also allow you to input the effect of ^xB97123Scorched.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyScorched", type = "check", ifFlag = "inflictScorch", label = "적이 ^xB97123그을림^7 상태인가요?", tooltip = "^xB97123그을림 ^7상태의 적은 최대 -30%까지 원소 저항이 감소합니다.\n이 옵션을 통해 ^xB97123그을림^7의 효과를 입력할 수도 있습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Scorched", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:ScorchedConfig", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionScorchedEffect", type = "count", label = "^xB97123그을림^7 효과:", ifOption = "conditionEnemyScorched", tooltip = "This effect will only be applied while you can inflict ^xB97123Scorched.", apply = function(val, modList, enemyModList)
+	{ var = "conditionScorchedEffect", type = "count", label = "^xB97123그을림^7 효과:", ifOption = "conditionEnemyScorched", tooltip = "이 효과는 ^xB97123그을림^7을 부여할 수 있는 동안에만 적용됩니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("ScorchVal", "BASE", val, "Config", { type = "Condition", var = "ScorchedConfig" })
 		enemyModList:NewMod("DesiredScorchVal", "BASE", val, "Scorch", { type = "Condition", var = "ScorchedConfig", neg = true })
 	end },
-	{ var = "ScorchStacks", type = "integer", label = "^xB97123그을림 ^7중첩", ifFlag = "ScorchCanStack", ifOption = "conditionEnemyScorched", defaultPlaceholderState = 1, tooltip = "Amount of stacks of ^xB97123Scorch ^7applied to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "ScorchStacks", type = "integer", label = "^xB97123그을림 ^7중첩", ifFlag = "ScorchCanStack", ifOption = "conditionEnemyScorched", defaultPlaceholderState = 1, tooltip = "적에게 적용된 ^xB97123그을림 ^7중첩 수입니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:ScorchStacks", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyOnScorchedGround", type = "check", label = "적이 ^xB97123그을림 ^7대지 위에 있나요?", tooltip = "This also implies that the enemy is ^xB97123Scorched.", ifEnemyCond = "OnScorchedGround", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnScorchedGround", type = "check", label = "적이 ^xB97123그을림 ^7대지 위에 있나요?", tooltip = "이것은 적이 ^xB97123그을림^7 상태임을 의미합니다.", ifEnemyCond = "OnScorchedGround", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Scorched", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:OnScorchedGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
@@ -1759,7 +1759,7 @@ return {
 		enemyModList:NewMod("Condition:Chilled", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:ChilledByYourHits", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "HoarfrostStacks", type = "count", label = "^x3F6DB3서리 ^7중첩", ifFlag = "HitsCanInflictHoarfrost", tooltip = "Amount of stacks of ^x3F6DB3Hoarfrost ^7applied to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "HoarfrostStacks", type = "count", label = "^x3F6DB3서리 ^7중첩", ifFlag = "HitsCanInflictHoarfrost", tooltip = "적에게 적용된 ^x3F6DB3서리 ^7중첩 수입니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("HoarfrostFreezeDuration", "INC", val * 20, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyFrozen", type = "check", label = "적이 ^x3F6DB3동결^7 상태인가요?", ifEnemyCond = "Frozen", apply = function(val, modList, enemyModList)
@@ -1769,73 +1769,73 @@ return {
 		enemyModList:NewMod("Multiplier:FrozenByYouSeconds", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 		enemyModList:NewMod("Condition:FrozenByYou", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyBrittle", type = "check", ifFlag = "inflictBrittle", label = "적이 ^x3F6DB3균열^7 상태인가요?", tooltip = "Hits against ^x3F6DB3Brittle ^7enemies have up to +6% Critical Strike Chance.\nThis option will also allow you to input the effect of ^x3F6DB3Brittle.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyBrittle", type = "check", ifFlag = "inflictBrittle", label = "적이 ^x3F6DB3균열^7 상태인가요?", tooltip = "^x3F6DB3균열 ^7상태의 적에 대한 적중은 최대 +6% 치명타 확률을 가집니다.\n이 옵션을 통해 ^x3F6DB3균열^7의 효과를 입력할 수도 있습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Brittle", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:BrittleConfig", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionBrittleEffect", type = "count", label = "^x3F6DB3균열^7 효과:", ifOption = "conditionEnemyBrittle", tooltip = "This effect will only be applied while you can inflict ^x3F6DB3Brittle.", apply = function(val, modList, enemyModList)
+	{ var = "conditionBrittleEffect", type = "count", label = "^x3F6DB3균열^7 효과:", ifOption = "conditionEnemyBrittle", tooltip = "이 효과는 ^x3F6DB3균열^7을 부여할 수 있는 동안에만 적용됩니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("BrittleVal", "BASE", val, "Config", { type = "Condition", var = "BrittleConfig" })
 		enemyModList:NewMod("DesiredBrittleVal", "BASE", val, "Brittle", { type = "Condition", var = "BrittleConfig", neg = true })
 	end },
-	{ var = "conditionEnemyOnBrittleGround", type = "check", label = "적이 ^xADAA47균열 ^7대지 위에 있나요?", tooltip = "This also implies that the enemy is ^xADAA47Brittle.", ifEnemyCond = "OnBrittleGround", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnBrittleGround", type = "check", label = "적이 ^xADAA47균열 ^7대지 위에 있나요?", tooltip = "이것은 적이 ^xADAA47균열^7 상태임을 의미합니다.", ifEnemyCond = "OnBrittleGround", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Brittle", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:OnBrittleGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyShocked", type = "check", label = "적이 ^xADAA47감전^7 상태인가요?", tooltip = "In addition to allowing any 'against ^xADAA47Shocked ^7Enemies' modifiers to apply,\nthis will allow you to input the effect of the ^xADAA47Shock ^7applied to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyShocked", type = "check", label = "적이 ^xADAA47감전^7 상태인가요?", tooltip = "'^xADAA47감전 ^7상태의 적에 대한' 속성 부여를 적용하는 것 외에도,\n적에게 적용되는 ^xADAA47감전 ^7효과를 입력할 수 있습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Shocked", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:ShockedConfig", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionShockEffect", type = "count", label = "^xADAA47감전^7 효과:", ifOption = "conditionEnemyShocked", tooltip = "If you have a guaranteed source of ^xADAA47Shock^7,\nthe strongest one will apply instead unless this option would apply a stronger ^xADAA47Shock.", apply = function(val, modList, enemyModList)
+	{ var = "conditionShockEffect", type = "count", label = "^xADAA47감전^7 효과:", ifOption = "conditionEnemyShocked", tooltip = "보장된 ^xADAA47감전^7 원천이 있는 경우,\n이 옵션이 더 강한 ^xADAA47감전^7을 적용하지 않는 한 가장 강한 것이 대신 적용됩니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("ShockVal", "BASE", val, "Shock", { type = "Condition", var = "ShockedConfig" })
 		enemyModList:NewMod("DesiredShockVal", "BASE", val, "Shock", { type = "Condition", var = "ShockedConfig", neg = true })
 	end },
-	{ var = "ShockStacks", type = "count", label = "^xADAA47감전 ^7중첩", ifFlag = "ShockCanStack", ifOption = "conditionEnemyShocked", defaultPlaceholderState = 1, tooltip = "Amount of stacks of ^xADAA47Shock ^7applied to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "ShockStacks", type = "count", label = "^xADAA47감전 ^7중첩", ifFlag = "ShockCanStack", ifOption = "conditionEnemyShocked", defaultPlaceholderState = 1, tooltip = "적에게 적용된 ^xADAA47감전 ^7중첩 수입니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Multiplier:ShockStacks", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyOnShockedGround", type = "check", label = "적이 ^xADAA47감전 ^7대지 위에 있나요?", tooltip = "This also implies that the enemy is ^xADAA47Shocked.", ifEnemyCond = "OnShockedGround", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnShockedGround", type = "check", label = "적이 ^xADAA47감전 ^7대지 위에 있나요?", tooltip = "이것은 적이 ^xADAA47감전^7 상태임을 의미합니다.", ifEnemyCond = "OnShockedGround", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Shocked", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:OnShockedGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemySapped", type = "check", ifFlag = "inflictSap", label = "적이 ^xADAA47수액^7 상태인가요?", tooltip = "^xADAA47Sapped ^7enemies deal less damage, up to 20%.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemySapped", type = "check", ifFlag = "inflictSap", label = "적이 ^xADAA47수액^7 상태인가요?", tooltip = "^xADAA47수액 ^7상태의 적은 최대 20%까지 감폭된 피해를 줍니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Sapped", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:SappedConfig", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionSapEffect", type = "count", label = "^xADAA47수액^7 효과:", ifOption = "conditionEnemySapped", tooltip = "If you have a guaranteed source of ^xADAA47Sap^7,\nthe strongest one will apply instead unless this option would apply a stronger ^xADAA47Sap.", apply = function(val, modList, enemyModList)
+	{ var = "conditionSapEffect", type = "count", label = "^xADAA47수액^7 효과:", ifOption = "conditionEnemySapped", tooltip = "보장된 ^xADAA47수액^7 원천이 있는 경우,\n이 옵션이 더 강한 ^xADAA47수액^7을 적용하지 않는 한 가장 강한 것이 대신 적용됩니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("SapVal", "BASE", val, "Sap", { type = "Condition", var = "SappedConfig" })
 		enemyModList:NewMod("DesiredSapVal", "BASE", val, "Sap", { type = "Condition", var = "SappedConfig", neg = true })
 	end },
-	{ var = "conditionEnemyOnSappedGround", type = "check", label = "적이 ^xADAA47수액 ^7대지 위에 있나요?", tooltip = "This also implies that the enemy is ^xADAA47Sapped.", ifEnemyCond = "OnSappedGround", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnSappedGround", type = "check", label = "적이 ^xADAA47수액 ^7대지 위에 있나요?", tooltip = "이것은 적이 ^xADAA47수액^7 상태임을 의미합니다.", ifEnemyCond = "OnSappedGround", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Sapped", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("Condition:OnSappedGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "multiplierFreezeShockIgniteOnEnemy", type = "count", label = "적에 대한 ^x3F6DB3동결 ^7/ ^xADAA47감전 ^7/ ^xB97123점화 ^7수:", ifMult = "FreezeShockIgniteOnEnemy", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:FreezeShockIgniteOnEnemy", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyFireExposure", type = "check", label = "적이 ^xB97123화염^7에 노출되었나요?", ifFlag = "applyFireExposure", tooltip = "This applies -10% ^xB97123Fire Resistance ^7to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyFireExposure", type = "check", label = "적이 ^xB97123화염^7에 노출되었나요?", ifFlag = "applyFireExposure", tooltip = "적에게 -10% ^xB97123화염 저항^7을 적용합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("FireExposure", "BASE", -10, "Config", { type = "Condition", var = "Effective" }, { type = "ActorCondition", actor = "enemy", var = "CanApplyFireExposure" })
 	end },
-	{ var = "conditionEnemyColdExposure", type = "check", label = "적이 ^x3F6DB3냉기^7에 노출되었나요?", ifFlag = "applyColdExposure", tooltip = "This applies -10% ^x3F6DB3Cold Resistance ^7to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyColdExposure", type = "check", label = "적이 ^x3F6DB3냉기^7에 노출되었나요?", ifFlag = "applyColdExposure", tooltip = "적에게 -10% ^x3F6DB3냉기 저항^7을 적용합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("ColdExposure", "BASE", -10, "Config", { type = "Condition", var = "Effective" }, { type = "ActorCondition", actor = "enemy", var = "CanApplyColdExposure" })
 	end },
-	{ var = "conditionEnemyLightningExposure", type = "check", label = "적이 ^xADAA47번개^7에 노출되었나요?", ifFlag = "applyLightningExposure", tooltip = "This applies -10% ^xADAA47Lightning Resistance ^7to the enemy.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyLightningExposure", type = "check", label = "적이 ^xADAA47번개^7에 노출되었나요?", ifFlag = "applyLightningExposure", tooltip = "적에게 -10% ^xADAA47번개 저항^7을 적용합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("LightningExposure", "BASE", -10, "Config", { type = "Condition", var = "Effective" }, { type = "ActorCondition", actor = "enemy", var = "CanApplyLightningExposure" })
 	end },
-	{ var = "conditionEnemyIntimidated", type = "check", label = "적이 위협 상태인가요?", tooltip = "Intimidated enemies take 10% increased Attack Damage.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyIntimidated", type = "check", label = "적이 위협 상태인가요?", tooltip = "위협 상태의 적은 10% 증가된 공격 피해를 받습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Intimidated", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyCrushed", type = "check", label = "적이 분쇄 상태인가요?", tooltip = "Crushed enemies have 15% reduced Physical Damage Reduction.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyCrushed", type = "check", label = "적이 분쇄 상태인가요?", tooltip = "분쇄 상태의 적은 15% 감소된 물리 피해 감소를 가집니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Crushed", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionNearLinkedTarget", type = "check", label = "적이 연결된 대상 근처에 있나요?", ifEnemyCond = "NearLinkedTarget", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:NearLinkedTarget", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyUnnerved", type = "check", label = "적이 불안 상태인가요?", tooltip = "Unnerved enemies take 10% increased Spell Damage.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyUnnerved", type = "check", label = "적이 불안 상태인가요?", tooltip = "불안 상태의 적은 10% 증가된 주문 피해를 받습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:Unnerved", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyCoveredInAsh", type = "check", label = "적이 재로 덮여 있나요?", tooltip = "Covered in Ash applies the following to the enemy:\n\t20% increased ^xB97123Fire ^7Damage taken\n\t20% less Movement Speed", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyCoveredInAsh", type = "check", label = "적이 재로 덮여 있나요?", tooltip = "재로 덮임은 적에게 다음을 적용합니다:\n\t20% 증가된 ^xB97123화염 ^7피해 받음\n\t20% 감폭된 이동 속도", apply = function(val, modList, enemyModList)
 		modList:NewMod("CoveredInAshEffect", "BASE", 20, "Covered in Ash")
 	end },
-	{ var = "conditionEnemyCoveredInFrost", type = "check", label = "적이 서리로 덮여 있나요?", tooltip = "Covered in Frost applies the following to the enemy:\n\t20% increased ^x3F6DB3Cold ^7Damage taken\n\t50% less Critical Strike Chance", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyCoveredInFrost", type = "check", label = "적이 서리로 덮여 있나요?", tooltip = "서리로 덮임은 적에게 다음을 적용합니다:\n\t20% 증가된 ^x3F6DB3냉기 ^7피해 받음\n\t50% 감폭된 치명타 확률", apply = function(val, modList, enemyModList)
 		modList:NewMod("CoveredInFrostEffect", "BASE", 20, "Covered in Frost")
 	end },
 	{ var = "conditionEnemyOnConsecratedGround", type = "check", label = "적이 신성한 대지 위에 있나요?", ifEnemyCond = "OnConsecratedGround", apply = function(val, modList, enemyModList)
@@ -1844,7 +1844,7 @@ return {
 	{ var = "conditionEnemyHaveEnergyShield", type = "check", label = "적이 ^x88FFFF에너지 보호막^7이 있나요?", ifEnemyCond = "HaveEnergyShield", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:HaveEnergyShield", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyOnProfaneGround", type = "check", label = "적이 불경한 대지 위에 있나요?", ifFlag = "Condition:CreateProfaneGround", tooltip = "Enemies on Profane Ground receive the following modifiers:\n\t10% increased Effect of Curses\n\t100% increased chance to be Critically Hit", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnProfaneGround", type = "check", label = "적이 불경한 대지 위에 있나요?", ifFlag = "Condition:CreateProfaneGround", tooltip = "불경한 대지 위의 적은 다음 속성 부여를 받습니다:\n\t10% 증가된 저주 효과\n\t100% 증가된 치명타를 받을 확률", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:OnProfaneGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 		enemyModList:NewMod("CurseEffectOnSelf", "INC", 10, "Config", { type = "Condition", var = "OnProfaneGround" })
 		enemyModList:NewMod("SelfCritChance", "INC", 100, "Config", { type = "Condition", var = "OnProfaneGround" })
@@ -1852,7 +1852,7 @@ return {
 	{ var = "multiplierEnemyAffectedByGraspingVines", type = "count", label = "적에게 영향을 주는 넝쿨 수:", ifMult = "GraspingVinesAffectingEnemy", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:GraspingVinesAffectingEnemy", "BASE", val, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyOnFungalGround", type = "check", label = "적이 균사 대지 위에 있나요?", ifCond = { "OnFungalGround", "CreateFungalGround" }, tooltip = "Enemies on your Fungal Ground have -10% to all Resistances.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyOnFungalGround", type = "check", label = "적이 균사 대지 위에 있나요?", ifCond = { "OnFungalGround", "CreateFungalGround" }, tooltip = "균사 대지 위의 적은 모든 저항이 -10%입니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:OnFungalGround", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "conditionEnemyInChillingArea", type = "check", label = "적이 ^x3F6DB3냉각 ^7지역에 있나요?", ifEnemyCond = "InChillingArea", apply = function(val, modList, enemyModList)
@@ -1876,20 +1876,20 @@ return {
 	{ var = "enemyInRFOrScorchingRay", type = "check", label = "적이 정의의 화염 또는 작열 광선 안에 있나요:", ifCond = "InRFOrScorchingRay", ifSkill = { "Righteous Fire", "Scorching Ray" }, includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:InRFOrScorchingRay", "FLAG", true, "Config")
 	end },
-	{ var = "EEIgnoreHitDamage", type = "check", label = "스킬 적중 피해 무시?", ifFlag = "ElementalEquilibrium", tooltip = "This option prevents EE from being reset by the hit damage of your main skill." },
-	{ var = "conditionBetweenYouAndLinkedTarget", type = "check", label = "적이 연결 광선 안에 있나요?", ifEnemyCond = "BetweenYouAndLinkedTarget", tooltip = "This option sets whether an enemy is between you and your linked target.", apply = function(val, modList, enemyModList)
+	{ var = "EEIgnoreHitDamage", type = "check", label = "스킬 적중 피해 무시?", ifFlag = "ElementalEquilibrium", tooltip = "이 옵션은 주요 스킬의 적중 피해로 원소 평형이 초기화되는 것을 방지합니다." },
+	{ var = "conditionBetweenYouAndLinkedTarget", type = "check", label = "적이 연결 광선 안에 있나요?", ifEnemyCond = "BetweenYouAndLinkedTarget", tooltip = "적이 당신과 연결된 대상 사이에 있는지 설정합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:BetweenYouAndLinkedTarget", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
-	{ var = "conditionEnemyFireResZero", type = "check", label = "적이 ^xB97123화염 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "This option sets whether or not the enemy has hit you with ^xB97123Fire Damage^7 in the last 4 seconds.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyFireResZero", type = "check", label = "적이 ^xB97123화염 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "적이 지난 4초 이내에 ^xB97123화염 피해^7로 당신을 적중했는지 설정합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("FireResist", "OVERRIDE", 0, "Config", { type = "Condition", var = "Effective"}, { type = "ActorCondition", actor = "enemy", var = "HaveTrickstersSmile" })
 	end },
-	{ var = "conditionEnemyColdResZero", type = "check", label = "적이 ^x3F6DB3냉기 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "This option sets whether or not the enemy has hit you with ^x3F6DB3Cold Damage^7 in the last 4 seconds.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyColdResZero", type = "check", label = "적이 ^x3F6DB3냉기 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "적이 지난 4초 이내에 ^x3F6DB3냉기 피해^7로 당신을 적중했는지 설정합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("ColdResist", "OVERRIDE", 0, "Config", { type = "Condition", var = "Effective"}, { type = "ActorCondition", actor = "enemy", var = "HaveTrickstersSmile" })
 	end },
-	{ var = "conditionEnemyLightningResZero", type = "check", label = "적이 ^xADAA47번개 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "This option sets whether or not the enemy has hit you with ^xADAA47Lightning Damage^7 in the last 4 seconds.", apply = function(val, modList, enemyModList)
+	{ var = "conditionEnemyLightningResZero", type = "check", label = "적이 ^xADAA47번개 피해^7로 공격했나요?", ifFlag = "Condition:HaveTrickstersSmile", tooltip = "적이 지난 4초 이내에 ^xADAA47번개 피해^7로 당신을 적중했는지 설정합니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("LightningResist", "OVERRIDE", 0, "Config", { type = "Condition", var = "Effective"}, { type = "ActorCondition", actor = "enemy", var = "HaveTrickstersSmile" })
 	end },
-	{ var = "maniaDebuffsCount", type = "countAllowZero", label = "광기 중첩 수", ifFlag = "Condition:CanInflictMania", defaultState = 15, tooltip = "Mania Stacks apply:\n\t4% inc Damage Taken per stack\n\t2% reduced Action Speed per stack\n\t10% reduced ^xE05030Life ^7and ^x88FFFFEnergy Shield ^7Recovery Rate per stack", apply = function(val, modList, enemyModList)
+	{ var = "maniaDebuffsCount", type = "countAllowZero", label = "광기 중첩 수", ifFlag = "Condition:CanInflictMania", defaultState = 15, tooltip = "광기 중첩 효과:\n\t중첩당 4% 증가된 받는 피해\n\t중첩당 2% 감소된 행동 속도\n\t중첩당 10% 감소된 ^xE05030생명력 ^7및 ^x88FFFF에너지 보호막 ^7회복 속도", apply = function(val, modList, enemyModList)
 		val = m_min(val, 15)
 		enemyModList:NewMod("DamageTaken", "INC", val * 4, val.." Mania Stacks", { type = "GlobalEffect", effectType = "Debuff" }, { type = "Condition", var = "AfflictedByMania" })
 		enemyModList:NewMod("ActionSpeed", "INC", -val * 2, val.." Mania Stacks", { type = "GlobalEffect", effectType = "Debuff" }, { type = "Condition", var = "AfflictedByMania" })
@@ -1898,8 +1898,8 @@ return {
 	end },
 	-- Section: Enemy Stats
 	{ section = "적 상태", col = 3 },
-	{ var = "enemyLevel", type = "count", label = "적 레벨:", tooltip = "This overrides the default enemy level used to estimate your hit and ^x33FF77evade ^7chance.\n\nThe default level for normal enemies and standard bosses is 83.\nTheir default level is capped by your character level.\n\nThe default level for pinnacle bosses is 84, and the default level for uber pinnacle bosses is 85.\nTheir default level is not capped by your character level." },
-	{ var = "conditionEnemyRareOrUnique", type = "check", label = "적이 희귀 또는 고유인가요?", ifEnemyCond = "EnemyRareOrUnique", tooltip = "The enemy will automatically be considered to be Unique if they are a Boss,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "enemyLevel", type = "count", label = "적 레벨:", tooltip = "적중 및 ^x33FF77회피 ^7확률을 추정하는 데 사용되는 기본 적 레벨을 덮어씁니다.\n\n일반 적과 일반 보스의 기본 레벨은 83입니다.\n기본 레벨은 캐릭터 레벨에 의해 제한됩니다.\n\n정점 보스의 기본 레벨은 84이고, 우버 정점 보스의 기본 레벨은 85입니다.\n이들의 기본 레벨은 캐릭터 레벨에 의해 제한되지 않습니다." },
+	{ var = "conditionEnemyRareOrUnique", type = "check", label = "적이 희귀 또는 고유인가요?", ifEnemyCond = "EnemyRareOrUnique", tooltip = "적이 보스인 경우 자동으로 고유로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:RareOrUnique", "FLAG", true, "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ var = "enemyIsBoss", type = "list", label = "적이 보스인가요?", defaultIndex = 3, tooltip = data.enemyIsBossTooltip, list = {{val="None",label="아니오"},{val="Boss",label="일반 보스"},{val="Pinnacle",label="수호자/정점 보스"},{val="Uber",label="우버 정점 보스"}}, apply = function(val, modList, enemyModList, build)
@@ -2039,7 +2039,7 @@ return {
 			build.configTab.varControls['enemyEvasion']:SetPlaceholder(round(data.monsterEvasionTable[defaultLevel] * (data.bossStats.UberEvasionMean/100)), true)
 		end
 	end },
-	{ var = "deliriousPercentage", type = "list", label = "환영 효과:", list = {{val=0,label="없음"},{val="20Percent",label="20% 환영"},{val="40Percent",label="40% 환영"},{val="60Percent",label="60% 환영"},{val="80Percent",label="80% 환영"},{val="100Percent",label="100% 환영"}}, tooltip = "Delirium scales enemy 'less Damage Taken' as well as enemy 'increased Damage dealt'\nAt 100% effect:\nEnemies Deal 30% Increased Damage\nEnemies take 80% Less Damage", apply = function(val, modList, enemyModList)
+	{ var = "deliriousPercentage", type = "list", label = "환영 효과:", list = {{val=0,label="없음"},{val="20Percent",label="20% 환영"},{val="40Percent",label="40% 환영"},{val="60Percent",label="60% 환영"},{val="80Percent",label="80% 환영"},{val="100Percent",label="100% 환영"}}, tooltip = "환영은 적의 '감폭된 받는 피해'와 적의 '증가된 가하는 피해'를 조절합니다\n100% 효과 시:\n적이 30% 증가된 피해를 가함\n적이 80% 감폭된 피해를 받음", apply = function(val, modList, enemyModList)
 		if val == "20Percent" then
 			enemyModList:NewMod("DamageTaken", "MORE", -16, "20% Delirious")
 			enemyModList:NewMod("Damage", "INC", 6, "20% Delirious")
@@ -2076,7 +2076,7 @@ return {
 	{ var = "enemyChaosResist", type = "integer", label = "적 ^xD02090카오스 저항:", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("ChaosResist", "BASE", val, "EnemyConfig")
 	end },
-	{ var = "enemyMaxResist", type = "check", label = "적 최대 저항이 항상 75%", tooltip = "Enemy Maximum resistance is increased by the resistance configurations \nThis locks it at the default value", apply = function(val, modList, enemyModList)
+	{ var = "enemyMaxResist", type = "check", label = "적 최대 저항이 항상 75%", tooltip = "적 최대 저항은 저항 설정에 의해 증가합니다\n이 옵션은 기본값으로 고정합니다", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("DoNotChangeMaxResFromConfig", "FLAG", true, "EnemyConfig")
 	end },
 	{ var = "enemyBlockChance", type = "countAllowZero", label = "적 막기 확률:", apply = function(val, modList, enemyModList)
@@ -2168,8 +2168,8 @@ return {
 			build.configTab.varControls['enemyDamageType'].enabled = true
 		end
 	end },
-	{ var = "enemyDamageRollRange", type = "integer", label = "적 스킬 판정 범위 %:", ifFlag = "BossSkillActive", tooltip = "The percentage of the roll range the enemy hits for \n eg at 100% the enemy deals its maximum damage", defaultPlaceholderState = 70, hideIfInvalid = true },
-	{ var = "enemyDamageType", type = "list", label = "적 피해 유형:", tooltip = "Controls which types of damage the EHP calculation uses:\n\tAverage: uses the Average of all typed damage types (except Damage Over Time and Untyped)\n\nIf a specific damage type is selected, that will be the only type used.", list = {
+	{ var = "enemyDamageRollRange", type = "integer", label = "적 스킬 판정 범위 %:", ifFlag = "BossSkillActive", tooltip = "적이 적중하는 판정 범위의 비율입니다\n 예: 100%에서 적은 최대 피해를 줍니다", defaultPlaceholderState = 70, hideIfInvalid = true },
+	{ var = "enemyDamageType", type = "list", label = "적 피해 유형:", tooltip = "EHP 계산에 사용되는 피해 유형을 제어합니다:\n\t평균: 모든 유형의 피해 유형 평균을 사용합니다 (지속 피해와 미분류 제외)\n\n특정 피해 유형을 선택하면 해당 유형만 사용됩니다.", list = {
 		{val="Average",label="평균"},
 		{val="Untyped",label="미분류"},
 		{val="DamageOverTime",label="지속 피해"},
@@ -2179,12 +2179,12 @@ return {
 		{val="SpellProjectile",label="투사체 주문"}
 	} },
 	{ var = "enemySpeed", type = "countAllowZero", label = "적 공격/시전 시간 (ms):", defaultPlaceholderState = 700 },
-	{ var = "enemyMultiplierPvpDamage", type = "count", label = "사용자 정의 PvP 피해 배율 %:", ifFlag = "isPvP", tooltip = "This multiplies the damage of a given skill in pvp, for instance any with damage multiplier specific to pvp (from skill or support or item like sire of shards)", apply = function(val, modList, enemyModList)
+	{ var = "enemyMultiplierPvpDamage", type = "count", label = "사용자 정의 PvP 피해 배율 %:", ifFlag = "isPvP", tooltip = "PvP에서 특정 스킬의 피해를 곱합니다. 예를 들어 PvP 전용 피해 배율이 있는 스킬, 보조 또는 아이템(파편의 군주 등)", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("MultiplierPvpDamage", "BASE", val, "Config")
 	end },
 	{ var = "enemyCritChance", type = "countAllowZero", label = "적 치명타 확률:", defaultPlaceholderState = 5 },
 	{ var = "enemyCritDamage", type = "countAllowZero", label = "적 치명타 배율:", defaultPlaceholderState = data.monsterConstants["base_critical_strike_multiplier"] - 100 },
-	{ var = "enemyPhysicalDamage", type = "countAllowZero", label = "적 스킬 물리 피해:", tooltip = "This overrides the default damage amount used to estimate your damage reduction from armour.\nThe default is 1.5 times the enemy's base damage, which is the same value\nused in-game to calculate the estimate shown on the character sheet.", defaultPlaceholderState = 7 },
+	{ var = "enemyPhysicalDamage", type = "countAllowZero", label = "적 스킬 물리 피해:", tooltip = "방어구로 인한 피해 감소를 추정하는 데 사용되는 기본 피해량을 덮어씁니다.\n기본값은 적 기본 피해의 1.5배이며, 이는 게임 내에서\n캐릭터 시트에 표시되는 추정치를 계산하는 데 사용되는 것과 동일한 값입니다.", defaultPlaceholderState = 7 },
 	{ var = "enemyPhysicalOverwhelm", type = "countAllowZero", label = "적 스킬 물리 압도:"},
 	{ var = "enemyLightningDamage", type = "countAllowZero", label = "적 스킬 ^xADAA47번개 피해:"},
 	{ var = "enemyLightningPen", type = "countAllowZero", label = "적 스킬 ^xADAA47번개 관통:"},
