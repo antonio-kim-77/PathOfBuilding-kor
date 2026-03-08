@@ -709,7 +709,11 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 		self.skillsTab.build:AddRequirementsToTooltip(self.tooltip, reqLevel, reqStr, reqDex, reqInt)
 	end
 	if grantedEffect.description then
-		local wrap = main:WrapString(grantedEffect.description, 16, m_max(DrawStringWidth(16, "VAR", gemInstance.gemData.tagString), 400))
+		local desc = grantedEffect.description
+		if data and data.korTrans and data.korTrans.gemDescriptions then
+			desc = data.korTrans.gemDescriptions[desc] or desc
+		end
+		local wrap = main:WrapString(desc, 16, m_max(DrawStringWidth(16, "VAR", gemInstance.gemData.tagString), 400))
 		for _, line in ipairs(wrap) do
 			self.tooltip:AddLine(fontSizeBig, colorCodes.GEM..line, "FONTIN SC")
 		end
@@ -725,6 +729,11 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 		local descriptions, lineMap = self.skillsTab.build.data.describeStats(stats, grantedEffect.statDescriptionScope)
 		for _, line in ipairs(descriptions) do
 			local source = grantedEffect.statMap[lineMap[line]] or self.skillsTab.build.data.skillStatMap[lineMap[line]]
+			-- Apply Korean stat translation
+			local displayLine = line
+			if data and data.korTrans then
+				displayLine = data.korTrans.translateStat(line)
+			end
 			if source then
 				if launch.devModeAlt then
 					local devText = lineMap[line]
@@ -734,16 +743,16 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 						end
 						devText = modLib.formatMod(source[1])
 					end
-					line = line .. " ^2" .. devText
+					displayLine = displayLine .. " ^2" .. devText
 				end
-				self.tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. line, "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. displayLine, "FONTIN SC")
 			else
 				if launch.devModeAlt then
-					line = line .. " ^1" .. lineMap[line]
+					displayLine = displayLine .. " ^1" .. lineMap[line]
 				end
-				local line = colorCodes.UNSUPPORTED .. line
-				line = main.notSupportedModTooltips and (line .. main.notSupportedTooltipText) or line
-				self.tooltip:AddLine(fontSizeBig, line, "FONTIN SC")
+				local uline = colorCodes.UNSUPPORTED .. displayLine
+				uline = main.notSupportedModTooltips and (uline .. main.notSupportedTooltipText) or uline
+				self.tooltip:AddLine(fontSizeBig, uline, "FONTIN SC")
 			end
 		end
 	end
