@@ -92,12 +92,12 @@ function TradeQueryClass:PullLeagueList()
 		self.hostName .. "api/leagues?type=main&compact=1",
 		function(response, errMsg)
 			if errMsg then
-				self:SetNotice(self.controls.pbNotice, "Error: " .. tostring(errMsg))
-				return "POE ERROR", "Error: "..errMsg
+				self:SetNotice(self.controls.pbNotice, "오류: " .. tostring(errMsg))
+				return "POE ERROR", "오류: "..errMsg
 			else
 				local json_data = dkjson.decode(response.body)
 				if not json_data then
-					self:SetNotice(self.controls.pbNotice, "Failed to Get PoE League List response")
+					self:SetNotice(self.controls.pbNotice, "PoE 리그 목록 응답을 가져오지 못했습니다")
 					return
 				end
 				table.sort(json_data, function(a, b)
@@ -141,7 +141,7 @@ function TradeQueryClass:PullPoENinjaCurrencyConversion(league)
 	local now = get_time()
 	-- Limit PoE Ninja Currency Conversion request to 1 per hour
 	if (now - self.lastCurrencyConversionRequest) < 3600 then
-		self:SetNotice(self.controls.pbNotice, "PoE Ninja Rate Limit Exceeded: " .. tostring(3600 - (now - self.lastCurrencyConversionRequest)))
+		self:SetNotice(self.controls.pbNotice, "PoE Ninja 속도 제한 초과: " .. tostring(3600 - (now - self.lastCurrencyConversionRequest)))
 		return
 	end
 	-- We are getting currency short-names from Poe API before getting PoeNinja rates
@@ -149,7 +149,7 @@ function TradeQueryClass:PullPoENinjaCurrencyConversion(league)
 	-- once per hour at most and the Poe API response is already Cloudflare cached
 	self:FetchCurrencyConversionTable(function(data, errMsg)
 		if errMsg then
-			self:SetNotice(self.controls.pbNotice, "Error: " .. tostring(errMsg))
+			self:SetNotice(self.controls.pbNotice, "오류: " .. tostring(errMsg))
 			return
 		end
 		self.pbCurrencyConversion[league] = { }
@@ -158,12 +158,12 @@ function TradeQueryClass:PullPoENinjaCurrencyConversion(league)
 			"https://poe.ninja/api/data/CurrencyRates?league=" .. urlEncode(league),
 			function(response, errMsg)
 				if errMsg then
-					self:SetNotice(self.controls.pbNotice, "Error: " .. tostring(errMsg))
+					self:SetNotice(self.controls.pbNotice, "오류: " .. tostring(errMsg))
 					return
 				end
 				local json_data = dkjson.decode(response.body)
 				if not json_data then
-					self:SetNotice(self.controls.pbNotice, "Failed to Get PoE Ninja response")
+					self:SetNotice(self.controls.pbNotice, "PoE Ninja 응답을 가져오지 못했습니다")
 					return
 				end
 				self:PriceBuilderProcessPoENinjaResponse(json_data, self.controls)
@@ -191,18 +191,18 @@ function TradeQueryClass:PriceBuilderProcessPoENinjaResponse(resp)
 			end
 		end
 	else
-		self:SetNotice(self.controls.pbNotice, "PoE Ninja JSON Processing Error")
+		self:SetNotice(self.controls.pbNotice, "PoE Ninja JSON 처리 오류")
 	end
 end
 
 local function initStatSortSelectionList(list)
 	t_insert(list,  {
-		label = "Full DPS",
+		label = "전체 DPS",
 		stat = "FullDPS",
 		weightMult = 1.0,
 	})
 	t_insert(list,  {
-		label = "Effective Hit Pool",
+		label = "유효 히트 풀",
 		stat = "TotalEHP",
 		weightMult = 0.5,
 	})
@@ -243,43 +243,43 @@ function TradeQueryClass:PriceItem()
 		return #self.itemsTab.itemSetOrderList > 1
 	end
 
-	self.controls.poesessidButton = new("ButtonControl", {"TOPLEFT", self.controls.setSelect, "TOPLEFT"}, {0, row_height + row_vertical_padding, 188, row_height}, function() return main.POESESSID ~= "" and "^2Session Mode" or colorCodes.WARNING.."No Session Mode" end, function()
+	self.controls.poesessidButton = new("ButtonControl", {"TOPLEFT", self.controls.setSelect, "TOPLEFT"}, {0, row_height + row_vertical_padding, 188, row_height}, function() return main.POESESSID ~= "" and "^2세션 모드" or colorCodes.WARNING.."세션 모드 없음" end, function()
 		local poesessid_controls = {}
 		poesessid_controls.sessionInput = new("EditControl", nil, {0, 18, 350, 18}, main.POESESSID, nil, "%X", 32)
 		poesessid_controls.sessionInput:SetProtected(true)
-		poesessid_controls.sessionInput.placeholder = "Enter your session ID here"
-		poesessid_controls.sessionInput.tooltipText = "You can get this from your web browser's cookies while logged into the Path of Exile website."
-		poesessid_controls.save = new("ButtonControl", {"TOPRIGHT", poesessid_controls.sessionInput, "TOP"}, {-8, 24, 90, row_height}, "Save", function()
+		poesessid_controls.sessionInput.placeholder = "여기에 세션 ID를 입력하세요"
+		poesessid_controls.sessionInput.tooltipText = "Path of Exile 웹사이트에 로그인한 상태에서 웹 브라우저의 쿠키에서 가져올 수 있습니다."
+		poesessid_controls.save = new("ButtonControl", {"TOPRIGHT", poesessid_controls.sessionInput, "TOP"}, {-8, 24, 90, row_height}, "저장", function()
 			main.POESESSID = poesessid_controls.sessionInput.buf
 			main:ClosePopup()
 			main:SaveSettings()
 			self:UpdateRealms()
 		end)
 		poesessid_controls.save.enabled = function() return #poesessid_controls.sessionInput.buf == 32 or poesessid_controls.sessionInput.buf == "" end
-		poesessid_controls.cancel = new("ButtonControl", {"TOPLEFT", poesessid_controls.sessionInput, "TOP"}, {8, 24, 90, row_height}, "Cancel", function()
+		poesessid_controls.cancel = new("ButtonControl", {"TOPLEFT", poesessid_controls.sessionInput, "TOP"}, {8, 24, 90, row_height}, "취소", function()
 			main:ClosePopup()
 		end)
-		main:OpenPopup(364, 72, "Change session ID", poesessid_controls)
+		main:OpenPopup(364, 72, "세션 ID 변경", poesessid_controls)
 	end)
 	self.controls.poesessidButton.tooltipText = [[
-The Trader feature supports two modes of operation depending on the POESESSID availability.
-You can click this button to enter your POESESSID.
+거래 기능은 POESESSID 사용 여부에 따라 두 가지 모드로 작동합니다.
+이 버튼을 클릭하여 POESESSID를 입력할 수 있습니다.
 
-^2Session Mode^7
-- Requires POESESSID.
-- You can search, compare, and quickly import items without leaving Path of Building.
-- You can generate and perform searches for the private leagues you are participating.
+^2세션 모드^7
+- POESESSID가 필요합니다.
+- Path of Building을 벗어나지 않고 아이템을 검색, 비교, 빠르게 가져올 수 있습니다.
+- 참여 중인 비공개 리그에 대한 검색을 생성하고 수행할 수 있습니다.
 
-^xFF9922No Session Mode^7
-- Doesn't require POESESSID.
-- You cannot search and compare items in Path of Building.
-- You can generate weighted search URLs but have to visit the trade site and manually import items.
-- You can only generate weighted searches for public leagues. (Generated searches can be modified
-on trade site to work on other leagues and realms)]]
+^xFF9922세션 모드 없음^7
+- POESESSID가 필요하지 않습니다.
+- Path of Building에서 아이템을 검색하고 비교할 수 없습니다.
+- 가중치 검색 URL을 생성할 수 있지만 거래 사이트를 방문하여 수동으로 아이템을 가져와야 합니다.
+- 공개 리그에 대해서만 가중치 검색을 생성할 수 있습니다. (생성된 검색은 거래 사이트에서
+다른 리그와 렐름에 맞게 수정할 수 있습니다)]]
 
 -- Fetches Box
 	self.maxFetchPerSearchDefault = 2
-	self.controls.fetchCountEdit = new("EditControl", {"TOPRIGHT", nil, "TOPRIGHT"}, {-12, 19, 154, row_height}, "", "Fetch Pages", "%D", 3, function(buf)
+	self.controls.fetchCountEdit = new("EditControl", {"TOPRIGHT", nil, "TOPRIGHT"}, {-12, 19, 154, row_height}, "", "페이지 가져오기", "%D", 3, function(buf)
 		self.maxFetchPages = m_min(m_max(tonumber(buf) or self.maxFetchPerSearchDefault, 1), 10)
 		self.tradeQueryRequests.maxFetchPerSearch = 10 * self.maxFetchPages
 		self.controls.fetchCountEdit.focusValue = self.maxFetchPages
@@ -292,9 +292,9 @@ on trade site to work on other leagues and realms)]]
 	end
 	self.controls.fetchCountEdit.tooltipFunc = function(tooltip)
 		tooltip:Clear()
-		tooltip:AddLine(16, "Specify maximum number of item pages to retrieve per search from PoE Trade.")
-		tooltip:AddLine(16, "Each page fetches up to 10 items.")
-		tooltip:AddLine(16, "Acceptable Range is: 1 to 10")
+		tooltip:AddLine(16, "PoE 거래소에서 검색당 가져올 최대 아이템 페이지 수를 지정합니다.")
+		tooltip:AddLine(16, "각 페이지는 최대 10개의 아이템을 가져옵니다.")
+		tooltip:AddLine(16, "허용 범위: 1 ~ 10")
 	end
 
 	-- Stat sort popup button
@@ -303,23 +303,23 @@ on trade site to work on other leagues and realms)]]
 		self.statSortSelectionList = { }
 		initStatSortSelectionList(self.statSortSelectionList)
 	end
-	self.controls.StatWeightMultipliersButton = new("ButtonControl", {"TOPRIGHT", self.controls.fetchCountEdit, "BOTTOMRIGHT"}, {0, row_vertical_padding, 150, row_height}, "^7Adjust search weights", function()
+	self.controls.StatWeightMultipliersButton = new("ButtonControl", {"TOPRIGHT", self.controls.fetchCountEdit, "BOTTOMRIGHT"}, {0, row_vertical_padding, 150, row_height}, "^7검색 가중치 조정", function()
 		self.itemsTab.modFlag = true
 		self:SetStatWeights()
 	end)
 	self.controls.StatWeightMultipliersButton.tooltipFunc = function(tooltip)
 		tooltip:Clear()
-		tooltip:AddLine(16, "Sorts the weights by the stats selected multiplied by a value")
-		tooltip:AddLine(16, "Currently sorting by:")
+		tooltip:AddLine(16, "선택한 스탯에 값을 곱하여 가중치를 정렬합니다")
+		tooltip:AddLine(16, "현재 정렬 기준:")
 		for _, stat in ipairs(self.statSortSelectionList) do
 			tooltip:AddLine(16, s_format("%s: %.2f", stat.label, stat.weightMult))
 		end
 	end
 	self.sortModes = {
-		StatValue = "(Highest) Stat Value",
-		StatValuePrice = "Stat Value / Price",
-		Price = "(Lowest) Price",
-		Weight = "(Highest) Weighted Sum",
+		StatValue = "(최고) 스탯 값",
+		StatValuePrice = "스탯 값 / 가격",
+		Price = "(최저) 가격",
+		Weight = "(최고) 가중치 합",
 	}
 	-- Item sort dropdown
 	self.itemSortSelectionList = {
@@ -335,26 +335,26 @@ on trade site to work on other leagues and realms)]]
 		end
 	end)
 	self.controls.itemSortSelection.tooltipText =
-[[Weighted Sum searches will always sort using descending weighted sum
-Additional post filtering options can be done these include:
-Highest Stat Value - Sort from highest to lowest Stat Value change of equipping item
-Highest Stat Value / Price - Sorts from highest to lowest Stat Value per currency
-Lowest Price - Sorts from lowest to highest price of retrieved items
-Highest Weight - Displays the order retrieved from trade]]
+[[가중치 합 검색은 항상 내림차순 가중치 합으로 정렬됩니다
+추가 후처리 필터링 옵션:
+최고 스탯 값 - 아이템 장착 시 스탯 값 변화를 높은 순에서 낮은 순으로 정렬
+최고 스탯 값 / 가격 - 화폐 대비 스탯 값을 높은 순에서 낮은 순으로 정렬
+최저 가격 - 검색된 아이템의 가격을 낮은 순에서 높은 순으로 정렬
+최고 가중치 - 거래소에서 검색된 순서대로 표시]]
 	self.controls.itemSortSelection:SetSel(self.pbItemSortSelectionIndex)
-	self.controls.itemSortSelectionLabel = new("LabelControl", {"TOPRIGHT", self.controls.itemSortSelection, "TOPLEFT"}, {-4, 0, 60, 16}, "^7Sort By:")
+	self.controls.itemSortSelectionLabel = new("LabelControl", {"TOPRIGHT", self.controls.itemSortSelection, "TOPLEFT"}, {-4, 0, 60, 16}, "^7정렬:")
 
 	-- Use Enchant in DPS sorting
-	self.controls.enchantInSort = new("CheckBoxControl", {"TOPRIGHT",self.controls.fetchCountEdit,"TOPLEFT"}, {-8, 0, row_height}, "Include Enchants:", function(state)
+	self.controls.enchantInSort = new("CheckBoxControl", {"TOPRIGHT",self.controls.fetchCountEdit,"TOPLEFT"}, {-8, 0, row_height}, "인챈트 포함:", function(state)
 		self.enchantInSort = state
 		for row_idx, _ in pairs(self.resultTbl) do
 			self:UpdateControlsWithItems(row_idx)
 		end
 	end)
-	self.controls.enchantInSort.tooltipText = "This includes enchants in sorting that occurs after trade results have been retrieved"
+	self.controls.enchantInSort.tooltipText = "거래 결과를 가져온 후 정렬 시 인챈트를 포함합니다"
 
 	-- Realm selection
-	self.controls.realmLabel = new("LabelControl", {"LEFT", self.controls.setSelect, "RIGHT"}, {18, 0, 20, row_height - 4}, "^7Realm:")
+	self.controls.realmLabel = new("LabelControl", {"LEFT", self.controls.setSelect, "RIGHT"}, {18, 0, 20, row_height - 4}, "^7렐름:")
 	self.controls.realm = new("DropDownControl", {"LEFT", self.controls.realmLabel, "RIGHT"}, {6, 0, 150, row_height}, self.realmDropList, function(index, value)
 		self.pbRealmIndex = index
 		self.pbRealm = self.realmIds[value]
@@ -371,7 +371,7 @@ Highest Weight - Displays the order retrieved from trade]]
 		else
 			self.tradeQueryRequests:FetchLeagues(self.pbRealm, function(leagues, errMsg)
 				if errMsg then
-					self:SetNotice(self.controls.pbNotice, "Error while fetching league list: "..errMsg)
+					self:SetNotice(self.controls.pbNotice, "리그 목록 가져오기 오류: "..errMsg)
 					return
 				end
 				local sorted_leagues = { }
@@ -395,7 +395,7 @@ Highest Weight - Displays the order retrieved from trade]]
 	end
 
 	-- League selection
-	self.controls.leagueLabel = new("LabelControl", {"TOPRIGHT", self.controls.realmLabel, "TOPRIGHT"}, {0, row_height + row_vertical_padding, 20, row_height - 4}, "^7League:")
+	self.controls.leagueLabel = new("LabelControl", {"TOPRIGHT", self.controls.realmLabel, "TOPRIGHT"}, {0, row_height + row_vertical_padding, 20, row_height - 4}, "^7리그:")
 	self.controls.league = new("DropDownControl", {"LEFT", self.controls.leagueLabel, "RIGHT"}, {6, 0, 150, row_height}, self.itemsTab.leagueDropList, function(index, value)
 		self.pbLeagueIndex = index
 		self.pbLeague = value
@@ -474,7 +474,7 @@ Highest Weight - Displays the order retrieved from trade]]
 		end
 	end
 
-	self.controls.otherTradesLabel = new("LabelControl", top_pane_alignment_ref, {0, (#slotTables+1)*(row_height + row_vertical_padding), 100, 16}, "^8Other trades:")
+	self.controls.otherTradesLabel = new("LabelControl", top_pane_alignment_ref, {0, (#slotTables+1)*(row_height + row_vertical_padding), 100, 16}, "^8기타 거래:")
 	self.controls.otherTradesLabel.shown = function()
 		return hideRowFunc(self, #slotTables+1)
 	end
@@ -503,14 +503,14 @@ Highest Weight - Displays the order retrieved from trade]]
 		end
 	end
 	self.controls.fullPrice = new("LabelControl", {"BOTTOM", nil, "BOTTOM"}, {0, -row_height - pane_margins_vertical - row_vertical_padding, pane_width - 2 * pane_margins_horizontal, row_height}, "")
-	self.controls.close = new("ButtonControl", {"BOTTOM", nil, "BOTTOM"}, {0, -pane_margins_vertical, 90, row_height}, "Done", function()
+	self.controls.close = new("ButtonControl", {"BOTTOM", nil, "BOTTOM"}, {0, -pane_margins_vertical, 90, row_height}, "완료", function()
 		main:ClosePopup()
 		-- there's a case where if you have a socket(s) allocated, open TradeQuery, close it, dealloc, then open TradeQuery again
 		-- the deallocated socket controls were still showing, so this will remove all dynamically created controls from items
 		wipeItemControls()
 	end)
 
-	self.controls.updateCurrencyConversion = new("ButtonControl", {"BOTTOMLEFT", nil, "BOTTOMLEFT"}, {pane_margins_horizontal, -pane_margins_vertical, 240, row_height}, "Get Currency Conversion Rates", function()
+	self.controls.updateCurrencyConversion = new("ButtonControl", {"BOTTOMLEFT", nil, "BOTTOMLEFT"}, {pane_margins_horizontal, -pane_margins_vertical, 240, row_height}, "화폐 환산 비율 가져오기", function()
 		self:PullPoENinjaCurrencyConversion(self.pbLeague)
 	end)
 	self.controls.pbNotice = new("LabelControl",  {"BOTTOMRIGHT", nil, "BOTTOMRIGHT"}, {-row_height - pane_margins_vertical - row_vertical_padding, -pane_margins_vertical, 300, row_height}, "")
@@ -521,7 +521,7 @@ Highest Weight - Displays the order retrieved from trade]]
 		self.controls.scrollBar:SetContentDimension(self.pane_height-100, self.effective_rows_height)
 		self.controls.sectionAnchor.y = -self.controls.scrollBar.offset
 	end
-	main:OpenPopup(pane_width, self.pane_height, "Trader", self.controls, nil, nil, "close", (scrollBarShown and scrollBarFunc or nil))
+	main:OpenPopup(pane_width, self.pane_height, "거래", self.controls, nil, nil, "close", (scrollBarShown and scrollBarFunc or nil))
 end
 
 -- Popup to set stat weight multipliers for sorting
@@ -551,7 +551,7 @@ function TradeQueryClass:SetStatWeights(previousSelectionList)
 	controls.SliderLabel = new("LabelControl", { "TOPLEFT", nil, "TOPRIGHT" }, {-410, 20, 0, 16}, "^7"..statList[1].stat.label..":")
 	controls.Slider = new("SliderControl", { "TOPLEFT", controls.SliderLabel, "TOPRIGHT" }, {20, 0, 150, 16}, function(value)
 		if value == 0 then
-			controls.SliderValue.label = "^7Disabled"
+			controls.SliderValue.label = "^7비활성"
 			statList[sliderController.index].stat.weightMult = 0
 			statList[sliderController.index].label = s_format("%d      :  ", 0)..statList[sliderController.index].stat.label
 		else
@@ -560,7 +560,7 @@ function TradeQueryClass:SetStatWeights(previousSelectionList)
 			statList[sliderController.index].label = s_format("%.2f :  ", 0.01 + value * 0.99)..statList[sliderController.index].stat.label
 		end
 	end)
-	controls.SliderValue = new("LabelControl", { "TOPLEFT", controls.Slider, "TOPRIGHT" }, {20, 0, 0, 16}, "^7Disabled")
+	controls.SliderValue = new("LabelControl", { "TOPLEFT", controls.Slider, "TOPRIGHT" }, {20, 0, 0, 16}, "^7비활성")
 	controls.Slider.tooltip.realDraw = controls.Slider.tooltip.Draw
 	controls.Slider.tooltip.Draw = function(self, x, y, width, height, viewPort)
 		local sliderOffsetX = round(184 * (1 - controls.Slider.val))
@@ -586,7 +586,7 @@ function TradeQueryClass:SetStatWeights(previousSelectionList)
 		end
 	end
 
-	controls.finalise = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, {-90, -10, 80, 20}, "Save", function()
+	controls.finalise = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, {-90, -10, 80, 20}, "저장", function()
 		main:ClosePopup()
 
 		-- used in ItemsTab to save to xml under TradeSearchWeights node
@@ -604,13 +604,13 @@ function TradeQueryClass:SetStatWeights(previousSelectionList)
 			self:UpdateControlsWithItems(row_idx)
 		end
     end)
-	controls.cancel = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, { 0, -10, 80, 20 }, "Cancel", function()
+	controls.cancel = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, { 0, -10, 80, 20 }, "취소", function()
 		if previousSelectionList and #previousSelectionList > 0 then
 			self.statSortSelectionList = copyTable(previousSelectionList, true)
 		end
 		main:ClosePopup()
 	end)
-	controls.reset = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, { 90, -10, 80, 20 }, "Reset", function()
+	controls.reset = new("ButtonControl", { "BOTTOM", nil, "BOTTOM" }, { 90, -10, 80, 20 }, "초기화", function()
 		local previousSelection = { }
 		if isSameAsDefaultList(self.statSortSelectionList) then
 			previousSelection = copyTable(previousSelectionList, true)
@@ -622,23 +622,23 @@ function TradeQueryClass:SetStatWeights(previousSelectionList)
 		main:ClosePopup()
 		self:SetStatWeights(previousSelection)
 	end)
-	main:OpenPopup(420, popupHeight, "Stat Weight Multipliers", controls)
+	main:OpenPopup(420, popupHeight, "스탯 가중치 배율", controls)
 end
 
 -- Method to update the Currency Conversion button label
 function TradeQueryClass:SetCurrencyConversionButton()
-	local currencyLabel = "Update Currency Conversion Rates"
+	local currencyLabel = "화폐 환산 비율 업데이트"
 	self.pbFileTimestampDiff[self.controls.league.selIndex] = nil
 	if self.pbLeague == nil then
 		return
 	end
 	if self.pbRealm ~= "pc" then
-		self.controls.updateCurrencyConversion.label = "Currency Rates are not available"
+		self.controls.updateCurrencyConversion.label = "화폐 비율을 사용할 수 없습니다"
 		self.controls.updateCurrencyConversion.enabled = false
 		self.controls.updateCurrencyConversion.tooltipFunc = function(tooltip)
 			tooltip:Clear()
-			tooltip:AddLine(16, "Currency Conversion rates are pulled from PoE Ninja")
-			tooltip:AddLine(16, "The data is only available for the PC realm.")
+			tooltip:AddLine(16, "화폐 환산 비율은 PoE Ninja에서 가져옵니다")
+			tooltip:AddLine(16, "해당 데이터는 PC 렐름에서만 사용 가능합니다.")
 		end
 		return
 	end
@@ -651,13 +651,13 @@ function TradeQueryClass:SetCurrencyConversionButton()
 		self.pbFileTimestampDiff[self.controls.league.selIndex] = get_time() - self.lastCurrencyFileTime[self.controls.league.selIndex]
 		if self.pbFileTimestampDiff[self.controls.league.selIndex] < 3600 then
 			-- Less than 1 hour (60 * 60 = 3600)
-			currencyLabel = "Currency Rates are very recent"
+			currencyLabel = "화폐 비율이 매우 최신입니다"
 		elseif self.pbFileTimestampDiff[self.controls.league.selIndex] < (24 * 3600) then
 			-- Less than 1 day
-			currencyLabel = "Currency Rates are recent"
+			currencyLabel = "화폐 비율이 최신입니다"
 		end
 	else
-		currencyLabel = "Get Currency Conversion Rates"
+		currencyLabel = "화폐 환산 비율 가져오기"
 	end
 	self.controls.updateCurrencyConversion.label = currencyLabel
 	self.controls.updateCurrencyConversion.enabled = function()
@@ -669,19 +669,19 @@ function TradeQueryClass:SetCurrencyConversionButton()
 			self.pbFileTimestampDiff[self.controls.league.selIndex] = get_time() - self.lastCurrencyFileTime[self.controls.league.selIndex]
 		end
 		if self.pbFileTimestampDiff[self.controls.league.selIndex] == nil or self.pbFileTimestampDiff[self.controls.league.selIndex] >= 3600 then
-			tooltip:AddLine(16, "Currency Conversion rates are pulled from PoE Ninja")
-			tooltip:AddLine(16, "Updates are limited to once per hour and not necessary more than once per day")
+			tooltip:AddLine(16, "화폐 환산 비율은 PoE Ninja에서 가져옵니다")
+			tooltip:AddLine(16, "업데이트는 시간당 1회로 제한되며 하루에 1회 이상은 불필요합니다")
 		elseif self.pbFileTimestampDiff[self.controls.league.selIndex] ~= nil and self.pbFileTimestampDiff[self.controls.league.selIndex] < 3600 then
-			tooltip:AddLine(16, "Conversion Rates are less than an hour old (" .. tostring(self.pbFileTimestampDiff[self.controls.league.selIndex]) .. " seconds old)")
+			tooltip:AddLine(16, "환산 비율이 1시간 미만입니다 (" .. tostring(self.pbFileTimestampDiff[self.controls.league.selIndex]) .. "초 전)")
 		end
 	end
 end
 
 -- Method to set the notice message in upper right of PoB Trader pane
 function TradeQueryClass:SetNotice(notice_control, msg)
-	if msg:find("No Matching Results") then
+	if msg:find("No Matching Results") or msg:find("일치하는 결과 없음") then
 		msg = colorCodes.WARNING .. msg
-	elseif msg:find("Error") then
+	elseif msg:find("Error") or msg:find("오류") then
 		msg = colorCodes.NEGATIVE .. msg
 	end
 	notice_control.label = msg
@@ -755,11 +755,11 @@ function TradeQueryClass:UpdateControlsWithItems(row_idx)
 	local sortMode = self.itemSortSelectionList[self.pbItemSortSelectionIndex]
 	local sortedItems, errMsg = self:SortFetchResults(row_idx, sortMode)
 	if errMsg == "MissingConversionRates" then
-		self:SetNotice(self.controls.pbNotice, "^4Price sorting is not available, falling back to Stat Value sort.")
+		self:SetNotice(self.controls.pbNotice, "^4가격 정렬을 사용할 수 없어 스탯 값 정렬로 대체합니다.")
 		sortedItems, errMsg = self:SortFetchResults(row_idx, self.sortModes.StatValue)
 	end
 	if errMsg then
-		self:SetNotice(self.controls.pbNotice, "Error: " .. errMsg)
+		self:SetNotice(self.controls.pbNotice, "오류: " .. errMsg)
 		return
 	else
 		self:SetNotice(self.controls.pbNotice, "")
@@ -768,12 +768,12 @@ function TradeQueryClass:UpdateControlsWithItems(row_idx)
 	self.sortedResultTbl[row_idx] = sortedItems
 	local pb_index = self.sortedResultTbl[row_idx][1].index
 	self.itemIndexTbl[row_idx] = pb_index
-	self.controls["priceButton".. row_idx].tooltipText = "Sorted by " .. self.itemSortSelectionList[self.pbItemSortSelectionIndex]
+	self.controls["priceButton".. row_idx].tooltipText = "정렬 기준: " .. self.itemSortSelectionList[self.pbItemSortSelectionIndex]
 	self.totalPrice[row_idx] = {
 		currency = self.resultTbl[row_idx][pb_index].currency,
 		amount = self.resultTbl[row_idx][pb_index].amount,
 	}
-	self.controls.fullPrice.label = "Total Price: " .. self:GetTotalPriceString()
+	self.controls.fullPrice.label = "총 가격: " .. self:GetTotalPriceString()
 	local dropdownLabels = {}
 	for result_index = 1, #self.resultTbl[row_idx] do
 		local pb_index = self.sortedResultTbl[row_idx][result_index].index
@@ -791,7 +791,7 @@ function TradeQueryClass:SetFetchResultReturn(row_idx, index)
 			currency = self.resultTbl[row_idx][index].currency,
 			amount = self.resultTbl[row_idx][index].amount,
 		}
-		self.controls.fullPrice.label = "Total Price: " .. self:GetTotalPriceString()
+		self.controls.fullPrice.label = "총 가격: " .. self:GetTotalPriceString()
 	end
 end
 
@@ -878,7 +878,7 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 	local activeSlot = slotTbl.nodeId and self.itemsTab.sockets[slotTbl.nodeId] or slotTbl.slotName and (self.itemsTab.slots[slotTbl.slotName] or slotTbl.fullName and self.itemsTab.slots[slotTbl.fullName]) -- fullName for Abyssal Sockets
 	local nameColor = slotTbl.unique and colorCodes.UNIQUE or "^7"
 	controls["name"..row_idx] = new("LabelControl", top_pane_alignment_ref, {0, row_idx*(row_height + row_vertical_padding), 100, row_height - 4}, nameColor..slotTbl.slotName)
-	controls["bestButton"..row_idx] = new("ButtonControl", { "LEFT", controls["name"..row_idx], "LEFT"}, {100 + 8, 0, 80, row_height}, "Find best", function()
+	controls["bestButton"..row_idx] = new("ButtonControl", { "LEFT", controls["name"..row_idx], "LEFT"}, {100 + 8, 0, 80, row_height}, "최적 검색", function()
 		self.tradeQueryGenerator:RequestQuery(activeSlot, { slotTbl = slotTbl, controls = controls, row_idx = row_idx }, self.statSortSelectionList, function(context, query, errMsg)
 			if errMsg then
 				self:SetNotice(context.controls.pbNotice, colorCodes.NEGATIVE .. errMsg)
@@ -892,19 +892,19 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 				controls["uri"..context.row_idx]:SetText(url, true)
 				return
 			end
-			context.controls["priceButton"..context.row_idx].label = "Searching..."
+			context.controls["priceButton"..context.row_idx].label = "검색 중..."
 			self.tradeQueryRequests:SearchWithQueryWeightAdjusted(self.pbRealm, self.pbLeague, query,
 				function(items, errMsg)
 					if errMsg then
 						self:SetNotice(context.controls.pbNotice, colorCodes.NEGATIVE .. errMsg)
-						context.controls["priceButton"..context.row_idx].label =  "Price Item"
+						context.controls["priceButton"..context.row_idx].label =  "아이템 가격"
 						return
 					else
 						self:SetNotice(context.controls.pbNotice, "")
 					end
 					self.resultTbl[context.row_idx] = items
 					self:UpdateControlsWithItems(context.row_idx)
-					context.controls["priceButton"..context.row_idx].label =  "Price Item"
+					context.controls["priceButton"..context.row_idx].label =  "아이템 가격"
 				end,
 				{
 					callbackQueryId = function(queryId)
@@ -917,7 +917,7 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 	end)
 	controls["bestButton"..row_idx].shown = function() return not self.resultTbl[row_idx] end
 	controls["bestButton"..row_idx].enabled = function() return self.pbLeague end
-	controls["bestButton"..row_idx].tooltipText = "Creates a weighted search to find the highest Stat Value items for this slot."
+	controls["bestButton"..row_idx].tooltipText = "이 슬롯에 대해 가장 높은 스탯 값의 아이템을 찾기 위한 가중치 검색을 생성합니다."
 	local pbURL
 	controls["uri"..row_idx] = new("EditControl", { "TOPLEFT", controls["bestButton"..row_idx], "TOPRIGHT"}, {8, 0, 514, row_height}, nil, nil, "^%C\t\n", nil, function(buf)
 		local subpath = buf:match(self.hostName .. "trade/search/(.+)$") or ""
@@ -936,53 +936,53 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 			activeSlotRef = self.itemsTab.activeItemSet[slotTbl.nodeId]
 		end
 	end, nil)
-	controls["uri"..row_idx]:SetPlaceholder("Paste trade URL here...")
+	controls["uri"..row_idx]:SetPlaceholder("여기에 거래 URL을 붙여넣으세요...")
 	if pbURL and pbURL ~= "" then
 		controls["uri"..row_idx]:SetText(pbURL, true)
 	end
 	controls["uri"..row_idx].tooltipFunc = function(tooltip)
 		tooltip:Clear()
 		if controls["uri"..row_idx].buf:find('^'..self.hostName..'trade/search/') ~= nil then
-			tooltip:AddLine(16, "Control + click to open in web-browser")
+			tooltip:AddLine(16, "Ctrl + 클릭으로 웹 브라우저에서 열기")
 		end
 	end
-	controls["priceButton"..row_idx] = new("ButtonControl", { "TOPLEFT", controls["uri"..row_idx], "TOPRIGHT"}, {8, 0, 100, row_height}, "Price Item",
+	controls["priceButton"..row_idx] = new("ButtonControl", { "TOPLEFT", controls["uri"..row_idx], "TOPRIGHT"}, {8, 0, 100, row_height}, "아이템 가격",
 		function()
-			controls["priceButton"..row_idx].label = "Searching..."
+			controls["priceButton"..row_idx].label = "검색 중..."
 			self.tradeQueryRequests:SearchWithURL(controls["uri"..row_idx].buf, function(items, errMsg)
 				if errMsg then
-					self:SetNotice(controls.pbNotice, "Error: " .. errMsg)
+					self:SetNotice(controls.pbNotice, "오류: " .. errMsg)
 				else
 					self:SetNotice(controls.pbNotice, "")
 					self.resultTbl[row_idx] = items
 					self:UpdateControlsWithItems(row_idx)
 				end
-				controls["priceButton"..row_idx].label = "Price Item"
+				controls["priceButton"..row_idx].label = "아이템 가격"
 			end)
 		end)
 	controls["priceButton"..row_idx].enabled = function()
 		local poesessidAvailable = main.POESESSID and main.POESESSID ~= ""
 		local validURL = controls["uri"..row_idx].validURL
-		local isSearching = controls["priceButton"..row_idx].label == "Searching..."
+		local isSearching = controls["priceButton"..row_idx].label == "검색 중..."
 		return poesessidAvailable and validURL and not isSearching
 	end
 	controls["priceButton"..row_idx].tooltipFunc = function(tooltip)
 		tooltip:Clear()
 		if not main.POESESSID or main.POESESSID == "" then
-			tooltip:AddLine(16, "You must set your POESESSID to use search feature")
+			tooltip:AddLine(16, "검색 기능을 사용하려면 POESESSID를 설정해야 합니다")
 		elseif not controls["uri"..row_idx].validURL then
-			tooltip:AddLine(16, "Enter a valid trade URL")
+			tooltip:AddLine(16, "유효한 거래 URL을 입력하세요")
 		end
 	end
 	local clampItemIndex = function(index)
 		return m_min(m_max(index or 1, 1), self.sortedResultTbl[row_idx] and #self.sortedResultTbl[row_idx] or 1)
 	end
-	controls["changeButton"..row_idx] = new("ButtonControl", { "LEFT", controls["name"..row_idx], "LEFT"}, {100 + 8, 0, 80, row_height}, "<< Search", function()
+	controls["changeButton"..row_idx] = new("ButtonControl", { "LEFT", controls["name"..row_idx], "LEFT"}, {100 + 8, 0, 80, row_height}, "<< 검색", function()
 		self.itemIndexTbl[row_idx] = nil
 		self.sortedResultTbl[row_idx] = nil
 		self.resultTbl[row_idx] = nil
 		self.totalPrice[row_idx] = nil
-		self.controls.fullPrice.label = "Total Price: " .. self:GetTotalPriceString()
+		self.controls.fullPrice.label = "총 가격: " .. self:GetTotalPriceString()
 	end)
 	controls["changeButton"..row_idx].shown = function() return self.resultTbl[row_idx] end
 	local dropdownLabels = {}
@@ -1016,9 +1016,9 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 		self.itemsTab:AddItemTooltip(tooltip, item, slotTbl)
 		addMegalomaniacCompareToTooltipIfApplicable(tooltip, pb_index)
 		tooltip:AddSeparator(10)
-		tooltip:AddLine(16, string.format("^7Price: %s %s", result.amount, result.currency))
+		tooltip:AddLine(16, string.format("^7가격: %s %s", result.amount, result.currency))
 	end
-	controls["importButton"..row_idx] = new("ButtonControl", { "TOPLEFT", controls["resultDropdown"..row_idx], "TOPRIGHT"}, {8, 0, 100, row_height}, "Import Item", function()
+	controls["importButton"..row_idx] = new("ButtonControl", { "TOPLEFT", controls["resultDropdown"..row_idx], "TOPRIGHT"}, {8, 0, 100, row_height}, "아이템 가져오기", function()
 		self.itemsTab:CreateDisplayItemFromRaw(self.resultTbl[row_idx][self.itemIndexTbl[row_idx]].item_string)
 		local item = self.itemsTab.displayItem
 		-- pass "true" to not auto equip it as we will have our own logic
@@ -1050,7 +1050,7 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 	end
 	-- Whisper so we can copy to clipboard
 	controls["whisperButton"..row_idx] = new("ButtonControl", { "TOPLEFT", controls["importButton"..row_idx], "TOPRIGHT"}, {8, 0, 185, row_height}, function()
-		return self.totalPrice[row_idx] and "Whisper for " .. self.totalPrice[row_idx].amount .. " " .. self.totalPrice[row_idx].currency or "Whisper"
+		return self.totalPrice[row_idx] and "귓속말 " .. self.totalPrice[row_idx].amount .. " " .. self.totalPrice[row_idx].currency or "귓속말"
 	end, function()
 		Copy(self.resultTbl[row_idx][self.itemIndexTbl[row_idx]].whisper)
 	end)
@@ -1061,7 +1061,7 @@ function TradeQueryClass:PriceItemRowDisplay(row_idx, top_pane_alignment_ref, ro
 		tooltip:Clear()
 		if self.itemIndexTbl[row_idx] and self.resultTbl[row_idx][self.itemIndexTbl[row_idx]].item_string then
 			tooltip.center = true
-			tooltip:AddLine(16, "Copies the item purchase whisper to the clipboard")
+			tooltip:AddLine(16, "아이템 구매 귓속말을 클립보드에 복사합니다")
 		end
 	end
 end
@@ -1110,7 +1110,7 @@ function TradeQueryClass:UpdateRealms()
 		ConPrintf("Fetching realms and leagues using POESESSID")
 		self.tradeQueryRequests:FetchRealmsAndLeaguesHTML(function(data, errMsg)
 			if errMsg then
-				self:SetNotice(self.controls.pbNotice, "Error while fetching league list: "..errMsg)
+				self:SetNotice(self.controls.pbNotice, "리그 목록 가져오기 오류: "..errMsg)
 				return
 			end
 			local leagues = data.leagues

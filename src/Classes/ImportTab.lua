@@ -26,7 +26,7 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
 	self.build = build
 
 	self.charImportMode = "GETACCOUNTNAME"
-	self.charImportStatus = "Idle"
+	self.charImportStatus = "대기 중"
 	self.controls.sectionCharImport = new("SectionControl", {"TOPLEFT",self,"TOPLEFT"}, {10, 18, 650, 250}, "캐릭터 가져오기")
 	self.controls.charImportStatusLabel = new("LabelControl", {"TOPLEFT",self.controls.sectionCharImport,"TOPLEFT"}, {6, 14, 200, 16}, function()
 		return "^7캐릭터 가져오기 상태: "..self.charImportStatus
@@ -106,14 +106,14 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
 	self.controls.sessionHeader = new("LabelControl", {"TOPLEFT",self.controls.sectionCharImport,"TOPLEFT"}, {6, 40, 200, 14})
 	self.controls.sessionHeader.label = function()
 		return [[
-^7The list of characters on ']]..self.controls.accountName.buf..[[' couldn't be retrieved. This may be because:
-1. You are missing the discriminator at the end of the account name e.g. #1234
-2. You entered a character name instead of an account name or
-3. This account's characters tab is hidden (this is the default setting).
-If this is your account, you can either:
-1. Uncheck "Hide Characters" in your privacy settings or
-2. Enter a POESESSID below.
-You can get this from your web browser's cookies while logged into the Path of Exile website.
+^7']]..self.controls.accountName.buf..[[' 계정의 캐릭터 목록을 가져올 수 없습니다. 원인:
+1. 계정 이름 끝에 구분자가 누락되었습니다 (예: #1234)
+2. 계정 이름 대신 캐릭터 이름을 입력했습니다
+3. 이 계정의 캐릭터 탭이 숨겨져 있습니다 (기본 설정).
+본인 계정이라면:
+1. 개인정보 설정에서 "캐릭터 숨기기"를 해제하거나
+2. 아래에 POESESSID를 입력하세요.
+Path of Exile 웹사이트에 로그인한 상태에서 웹 브라우저의 쿠키에서 가져올 수 있습니다.
 		]]
 	end
 	self.controls.sessionHeader.shown = function()
@@ -124,7 +124,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 	end)
 	self.controls.sessionCancel = new("ButtonControl", {"LEFT",self.controls.sessionRetry,"RIGHT"}, {8, 0, 60, 20}, "취소", function()
 		self.charImportMode = "GETACCOUNTNAME"
-		self.charImportStatus = "Idle"
+		self.charImportStatus = "대기 중"
 	end)
 	self.controls.sessionPrivacySettings = new("ButtonControl", {"LEFT",self.controls.sessionCancel,"RIGHT"}, {8, 0, 120, 20}, "개인정보 설정", function()
 		OpenURL('https://www.pathofexile.com/my-account/privacy')
@@ -180,7 +180,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 
 	self.controls.charClose = new("ButtonControl", {"TOPLEFT",self.controls.charImportHeader,"BOTTOMLEFT"}, {0, 90, 60, 20}, "닫기", function()
 		self.charImportMode = "GETACCOUNTNAME"
-		self.charImportStatus = "Idle"
+		self.charImportStatus = "대기 중"
 	end)
 
 	-- Build import/export
@@ -271,7 +271,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 			self.controls.importCodeMode.selIndex = 2
 		end
 
-		self.importCodeDetail = colorCodes.NEGATIVE.."Invalid input"
+		self.importCodeDetail = colorCodes.NEGATIVE.."잘못된 입력"
 		local urlText = buf:gsub("^[%s?]+", ""):gsub("[%s?]+$", "") -- Quick Trim
 		if urlText:match("youtube%.com/redirect%?") or urlText:match("google%.com/url%?") then
 			local nested_url = urlText:gsub(".*[?&]q=([^&]+).*", "%1")
@@ -282,7 +282,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 			if urlText:match(buildSites.websiteList[j].matchURL) then
 				self.controls.importCodeIn.text = urlText
 				self.importCodeValid = true
-				self.importCodeDetail = colorCodes.POSITIVE.."URL is valid ("..buildSites.websiteList[j].label..")"
+				self.importCodeDetail = colorCodes.POSITIVE.."유효한 URL ("..buildSites.websiteList[j].label..")"
 				self.importCodeSite = j
 				if buf ~= urlText then
 					self.controls.importCodeIn:SetText(urlText, false)
@@ -299,7 +299,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 			Copy(xmlText)
 		end
 		self.importCodeValid = true
-		self.importCodeDetail = colorCodes.POSITIVE.."Code is valid"
+		self.importCodeDetail = colorCodes.POSITIVE.."유효한 코드"
 		self.importCodeXML = xmlText
 	end
 
@@ -316,7 +316,7 @@ You can get this from your web browser's cookies while logged into the Path of E
 			end)
 		else
 			self.build:Shutdown()
-			self.build:Init(false, "Imported build", self.importCodeXML, false, self.importCodeSite and self.controls.importCodeIn.buf or nil)
+			self.build:Init(false, "가져온 빌드", self.importCodeXML, false, self.importCodeSite and self.controls.importCodeIn.buf or nil)
 			self.build.viewMode = "TREE"
 		end
 	end
@@ -496,7 +496,7 @@ function ImportTabClass:DownloadCharacterList()
 				})
 			end
 			t_insert(self.controls.charSelectLeague.list, {
-				label = "All",
+				label = "전체",
 			})
 			if self.controls.charSelectLeague.selIndex > #self.controls.charSelectLeague.list then
 				self.controls.charSelectLeague.selIndex = 1
@@ -590,7 +590,7 @@ end
 
 function ImportTabClass:DownloadPassiveTree()
 	self.charImportMode = "IMPORTING"
-	self.charImportStatus = "Retrieving character passive tree..."
+	self.charImportStatus = "캐릭터 패시브 트리 가져오는 중..."
 	local realm = realmList[self.controls.accountRealm.selIndex]
 	local accountName = self.controls.accountName.buf
 	local sessionID = #self.controls.sessionInput.buf == 32 and self.controls.sessionInput.buf or (main.gameAccounts[accountName] and main.gameAccounts[accountName].sessionID)
@@ -599,7 +599,7 @@ function ImportTabClass:DownloadPassiveTree()
 	launch:DownloadPage(realm.hostName.."character-window/get-passive-skills?accountName="..accountName:gsub("#", "%%23").."&character="..urlEncode(charData.name).."&realm="..realm.realmCode, function(response, errMsg)
 		self.charImportMode = "SELECTCHAR"
 		if errMsg then
-			self.charImportStatus = colorCodes.NEGATIVE.."Error importing character data, try again ("..errMsg:gsub("\n"," ")..")"
+			self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터 가져오기 오류, 다시 시도하세요 ("..errMsg:gsub("\n"," ")..")"
 			return
 		elseif response.body == "false" then
 			self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터를 가져오지 못했습니다. 다시 시도하세요."
@@ -612,7 +612,7 @@ end
 
 function ImportTabClass:DownloadItems()
 	self.charImportMode = "IMPORTING"
-	self.charImportStatus = "Retrieving character items..."
+	self.charImportStatus = "캐릭터 아이템 가져오는 중..."
 	local realm = realmList[self.controls.accountRealm.selIndex]
 	local accountName = self.controls.accountName.buf
 	local sessionID = #self.controls.sessionInput.buf == 32 and self.controls.sessionInput.buf or (main.gameAccounts[accountName] and main.gameAccounts[accountName].sessionID)
@@ -621,7 +621,7 @@ function ImportTabClass:DownloadItems()
 	launch:DownloadPage(realm.hostName.."character-window/get-items?accountName="..accountName:gsub("#", "%%23").."&character="..urlEncode(charData.name).."&realm="..realm.realmCode, function(response, errMsg)
 		self.charImportMode = "SELECTCHAR"
 		if errMsg then
-			self.charImportStatus = colorCodes.NEGATIVE.."Error importing character data, try again ("..errMsg:gsub("\n"," ")..")"
+			self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터 가져오기 오류, 다시 시도하세요 ("..errMsg:gsub("\n"," ")..")"
 			return
 		elseif response.body == "false" then
 			self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터를 가져오지 못했습니다. 다시 시도하세요."
@@ -662,10 +662,10 @@ function ImportTabClass:ImportPassiveTreeAndJewels(json, charData)
 	end
 
 	if errMsg then
-		self.charImportStatus = colorCodes.NEGATIVE.."Error processing character data, try again later."
+		self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터 처리 오류, 나중에 다시 시도하세요."
 		return
 	end
-	self.charImportStatus = colorCodes.POSITIVE.."Passive tree and jewels successfully imported."
+	self.charImportStatus = colorCodes.POSITIVE.."패시브 트리와 주얼을 성공적으로 가져왔습니다."
 	self.build.spec.jewel_data = copyTable(charPassiveData.jewel_data)
 	self.build.spec.extended_hashes = copyTable(charPassiveData.hashes_ex)
 	--ConPrintTable(charPassiveData)
@@ -735,7 +735,7 @@ function ImportTabClass:ImportItemsAndSkills(json)
 	--out:close()
 	local charItemData, errMsg = self:ProcessJSON(json)
 	if errMsg then
-		self.charImportStatus = colorCodes.NEGATIVE.."Error processing character data, try again later."
+		self.charImportStatus = colorCodes.NEGATIVE.."캐릭터 데이터 처리 오류, 나중에 다시 시도하세요."
 		return
 	end
 	if self.controls.charImportItemsClearItems.state then
@@ -759,7 +759,7 @@ function ImportTabClass:ImportItemsAndSkills(json)
 		end
 		wipeTable(self.build.skillsTab.socketGroupList)
 	end
-	self.charImportStatus = colorCodes.POSITIVE.."Items and skills successfully imported."
+	self.charImportStatus = colorCodes.POSITIVE.."아이템과 스킬을 성공적으로 가져왔습니다."
 	--ConPrintTable(charItemData)
 	for _, itemData in pairs(charItemData.items) do
 		self:ImportItem(itemData)

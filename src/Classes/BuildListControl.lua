@@ -74,7 +74,7 @@ end
 
 function BuildListClass:RenameBuild(build, copyOnName)
 	local controls = { }
-	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7Enter the new name for this "..(build.folderName and "folder:" or "build:"))
+	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7"..(build.folderName and "이 폴더의 새 이름을 입력하세요:" or "이 빌드의 새 이름을 입력하세요:"))
 	controls.edit = new("EditControl", nil, {0, 40, 350, 20}, build.folderName or build.buildName, nil, "\\/:%*%?\"<>|%c", 100, function(buf)
 		controls.save.enabled = false
 		if build.folderName then
@@ -97,7 +97,7 @@ function BuildListClass:RenameBuild(build, copyOnName)
 			end
 		end
 	end)
-	controls.save = new("ButtonControl", nil, {-45, 70, 80, 20}, "Save", function()
+	controls.save = new("ButtonControl", nil, {-45, 70, 80, 20}, "저장", function()
 		local newBuildName = controls.edit.buf
 		if build.folderName then
 			if copyOnName then
@@ -105,7 +105,7 @@ function BuildListClass:RenameBuild(build, copyOnName)
 			else
 				local res, msg = os.rename(build.fullFileName, main.buildPath..build.subPath..newBuildName)
 				if not res then
-					main:OpenMessagePopup("Error", "Couldn't rename '"..build.fullFileName.."' to '"..newBuildName.."': "..msg)
+					main:OpenMessagePopup("오류", "'"..build.fullFileName.."'을(를) '"..newBuildName.."'(으)로 이름을 변경할 수 없습니다: "..msg)
 					return
 				end
 			end
@@ -115,13 +115,13 @@ function BuildListClass:RenameBuild(build, copyOnName)
 			if copyOnName then
 				local res, msg = copyFile(build.fullFileName, main.buildPath..build.subPath..newFileName)
 				if not res then
-					main:OpenMessagePopup("Error", "Couldn't copy build: "..msg)
+					main:OpenMessagePopup("오류", "빌드를 복사할 수 없습니다: "..msg)
 					return
 				end
 			else
 				local res, msg = os.rename(build.fullFileName, main.buildPath..build.subPath..newFileName)
 				if not res then
-					main:OpenMessagePopup("Error", "Couldn't rename '"..build.fullFileName.."' to '"..newFileName.."': "..msg)
+					main:OpenMessagePopup("오류", "'"..build.fullFileName.."'을(를) '"..newFileName.."'(으)로 이름을 변경할 수 없습니다: "..msg)
 					return
 				end
 			end
@@ -132,17 +132,17 @@ function BuildListClass:RenameBuild(build, copyOnName)
 		self.listMode:SelectControl(self)
 	end)
 	controls.save.enabled = false
-	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "취소", function()
 		main:ClosePopup()
 		self.listMode:SelectControl(self)
 	end)
-	main:OpenPopup(370, 100, (copyOnName and "Copy " or "Rename ")..(build.folderName and "Folder" or "Build"), controls, "save", "edit")	
+	main:OpenPopup(370, 100, (copyOnName and "복사 - " or "이름 변경 - ")..(build.folderName and "폴더" or "빌드"), controls, "save", "edit")
 end
 
 function BuildListClass:DeleteBuild(build)
 	if build.folderName then
 		if NewFileSearch(build.fullFileName.."/*") or NewFileSearch(build.fullFileName.."/*", true) then
-			main:OpenConfirmPopup("Confirm Folder Delete", "The folder is not empty.\nAre you sure you want to delete folder:\n"..build.folderName.."\nThis cannot be undone.", "Delete", function()
+			main:OpenConfirmPopup("폴더 삭제 확인", "폴더가 비어 있지 않습니다.\n정말 다음 폴더를 삭제하시겠습니까:\n"..build.folderName.."\n이 작업은 되돌릴 수 없습니다.", "삭제", function()
 				RemoveDir(build.fullFileName, true)
 				self.listMode:BuildList()
 				self.selIndex = nil
@@ -151,7 +151,7 @@ function BuildListClass:DeleteBuild(build)
 		else
 			local res, msg = RemoveDir(build.fullFileName)
 			if not res then
-				main:OpenMessagePopup("Error", "Couldn't delete '"..build.fullFileName.."': "..msg)
+				main:OpenMessagePopup("오류", "'"..build.fullFileName.."'을(를) 삭제할 수 없습니다: "..msg)
 				return
 			end
 			self.listMode:BuildList()
@@ -159,7 +159,7 @@ function BuildListClass:DeleteBuild(build)
 			self.selValue = nil
 		end
 	else
-		main:OpenConfirmPopup("Confirm Delete", "Are you sure you want to delete build:\n"..build.buildName.."\nThis cannot be undone.", "Delete", function()
+		main:OpenConfirmPopup("삭제 확인", "정말 다음 빌드를 삭제하시겠습니까:\n"..build.buildName.."\n이 작업은 되돌릴 수 없습니다.", "삭제", function()
 			os.remove(build.fullFileName)
 			self.listMode:BuildList()
 			self.selIndex = nil

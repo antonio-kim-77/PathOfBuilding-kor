@@ -11,14 +11,14 @@ local s_format = string.format
 local SharedItemSetListClass = newClass("SharedItemSetListControl", "ListControl", function(self, anchor, rect, itemsTab)
 	self.ListControl(anchor, rect, 16, "VERTICAL", true, main.sharedItemSetList)
 	self.itemsTab = itemsTab
-	self.defaultText = "^x7F7F7FThis is a list of item sets that will be shared\nbetween all of your builds.\nYou can add sets to this list by dragging them\nfrom the build's set list."
-	self.controls.delete = new("ButtonControl", {"BOTTOMLEFT",self,"TOP"}, {2, -4, 60, 18}, "Delete", function()
+	self.defaultText = "^x7F7F7F이 목록은 모든 빌드에서 공유되는 아이템 세트\n목록입니다.\n빌드의 세트 목록에서 드래그하여 이 목록에 세트를\n추가할 수 있습니다."
+	self.controls.delete = new("ButtonControl", {"BOTTOMLEFT",self,"TOP"}, {2, -4, 60, 18}, "삭제", function()
 		self:OnSelDelete(self.selIndex, self.selValue)
 	end)
 	self.controls.delete.enabled = function()
 		return self.selValue ~= nil
 	end
-	self.controls.rename = new("ButtonControl", {"BOTTOMRIGHT",self,"TOP"}, {-2, -4, 60, 18}, "Rename", function()
+	self.controls.rename = new("ButtonControl", {"BOTTOMRIGHT",self,"TOP"}, {-2, -4, 60, 18}, "이름 변경", function()
 		self:RenameSet(self.selValue)
 	end)
 	self.controls.rename.enabled = function()
@@ -28,20 +28,20 @@ end)
 
 function SharedItemSetListClass:RenameSet(sharedItemSet)
 	local controls = { }
-	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7Enter name for this item set:")
+	controls.label = new("LabelControl", nil, {0, 20, 0, 16}, "^7이 아이템 세트의 이름을 입력하세요:")
 	controls.edit = new("EditControl", nil, {0, 40, 350, 20}, sharedItemSet.title, nil, nil, 100, function(buf)
 		controls.save.enabled = buf:match("%S")
 	end)
-	controls.save = new("ButtonControl", nil, {-45, 70, 80, 20}, "Save", function()
+	controls.save = new("ButtonControl", nil, {-45, 70, 80, 20}, "저장", function()
 		sharedItemSet.title = controls.edit.buf
 		self.itemsTab.modFlag = true
 		main:ClosePopup()
 	end)
 	controls.save.enabled = false
-	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "Cancel", function()
+	controls.cancel = new("ButtonControl", nil, {45, 70, 80, 20}, "취소", function()
 		main:ClosePopup()
 	end)
-	main:OpenPopup(370, 100, sharedItemSet.title and "Rename" or "Set Name", controls, "save", "edit")
+	main:OpenPopup(370, 100, sharedItemSet.title and "이름 변경" or "세트 이름", controls, "save", "edit")
 end
 
 function SharedItemSetListClass:GetRowValue(column, index, sharedItemSet)
@@ -95,7 +95,7 @@ function SharedItemSetListClass:ReceiveDrag(type, value, source)
 end
 
 function SharedItemSetListClass:OnSelDelete(index, sharedItemSet)
-	main:OpenConfirmPopup("Delete Item Set", "Are you sure you want to delete '"..(sharedItemSet.title or "Default").."' from the shared item set list?", "Delete", function()
+	main:OpenConfirmPopup("아이템 세트 삭제", "'"..(sharedItemSet.title or "Default").."'을(를) 공유 아이템 세트 목록에서 정말 삭제하시겠습니까?", "삭제", function()
 		t_remove(self.list, index)
 		self.selIndex = nil
 		self.selValue = nil

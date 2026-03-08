@@ -48,10 +48,10 @@ local function bossSkillsTooltip(tooltip, mode, index, value)
 	tooltip:Clear()
 	if applyModes[mode] then
 		tooltip:AddLine(14, [[
-^7Used to fill in defaults for specific boss skills if the boss config is not set
+^7보스 설정이 되어 있지 않을 때 특정 보스 스킬의 기본값을 채우는 데 사용됩니다
 
-Bosses' damage is modified by roll range configuration, defaulted at a 70% roll, at the normal monster level for your character level (capped at 85)
-Fill in the exact damage numbers if more precision is needed]])
+보스의 피해는 판정 범위 설정에 의해 조정되며, 기본 70% 판정값으로 캐릭터 레벨에 맞는 일반 몬스터 레벨을 사용합니다 (85 상한)
+더 정확한 값이 필요하면 정확한 피해 수치를 직접 입력하세요]])
 		if value.val ~= "None" then
 			tooltip:AddLine(14, '\n^7'..value.val..": "..data.bossSkills[value.val].tooltip)
 		end
@@ -59,15 +59,15 @@ Fill in the exact damage numbers if more precision is needed]])
 end
 
 local function LowLifeTooltip(modList, build)
-	local out = 'You will automatically be considered to be on Low ^xE05030Life ^7if you have at least '..100 - build.calcsTab.mainOutput.LowLifePercentage..'% ^xE05030Life ^7reserved'
-	out = out..'\nbut you can use this option to force it if necessary.'
+	local out = '^xE05030생명력 ^7을 '..100 - build.calcsTab.mainOutput.LowLifePercentage..'% 이상 점유하면 자동으로 저생명력으로 간주됩니다'
+	out = out..'\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.'
 	return out
 end
 
 local function FullLifeTooltip(modList, build)
-	local out = 'You can be considered to be on Full ^xE05030Life ^7if you have at least '..build.calcsTab.mainOutput.FullLifePercentage..'% ^xE05030Life ^7left.'
-	out = out..'\nYou will automatically be considered to be on Full ^xE05030Life ^7if you have Chaos Inoculation,'
-	out = out..'\nbut you can use this option to force it if necessary.'
+	local out = '^xE05030생명력 ^7이 '..build.calcsTab.mainOutput.FullLifePercentage..'% 이상 남아 있으면 최대 생명력으로 간주될 수 있습니다.'
+	out = out..'\n카오스 접종이 있으면 자동으로 최대 ^xE05030생명력^7으로 간주됩니다,'
+	out = out..'\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.'
 	return out
 end
 
@@ -152,11 +152,11 @@ return {
 		{ label = "리슬라사의 영혼", val = "Ryslatha" },
 		{ label = "샤카리의 영혼", val = "Shakari" },
 	} },
-	{ var = "detonateDeadCorpseLife", type = "count", label = "적 시체 ^xE05030생명력:", ifSkillData = "explodeCorpse", tooltip = "Sets the maximum ^xE05030life ^7of the target corpse for Detonate Dead and similar skills.\nFor reference, a level 70 monster has "..data.monsterLifeTable[70].." base ^xE05030life^7, and a level 80 monster has "..data.monsterLifeTable[80]..".", apply = function(val, modList, enemyModList)
+	{ var = "detonateDeadCorpseLife", type = "count", label = "적 시체 ^xE05030생명력:", ifSkillData = "explodeCorpse", tooltip = "시체 폭발 및 유사 스킬에 사용할 대상 시체의 최대 ^xE05030생명력^7을 설정합니다.\n참고: 레벨 70 몬스터의 기본 ^xE05030생명력^7은 "..data.monsterLifeTable[70].."이고, 레벨 80 몬스터는 "..data.monsterLifeTable[80].."입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "corpseLife", value = val }, "Config")
 	end },
 	{ var = "conditionStationary", type = "count", label = "정지 상태 시간", ifCond = "Stationary",
-		tooltip = "Applies mods that use `while stationary` and `per / every second while stationary`",
+		tooltip = "'정지 상태에서' 및 '정지 상태에서 초당' 효과를 적용합니다",
 		apply = function(val, modList, enemyModList)
 		if type(val) == "boolean" then
 			-- Backwards compatibility with older versions that set this condition as a boolean
@@ -180,13 +180,13 @@ return {
 	{ var = "conditionFullMana", type = "check", label = "항상 최대 ^x7070FF마나^7인가요?", ifCond = "FullMana", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:FullMana", "FLAG", true, "Config")
 	end },
-	{ var = "conditionLowMana", type = "check", label = "항상 최저 ^x7070FF마나^7인가요?", ifCond = "LowMana", tooltip = "You will automatically be considered to be on Low ^x7070FFMana ^7if you have at least 50% ^x7070FFmana ^7reserved,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionLowMana", type = "check", label = "항상 최저 ^x7070FF마나^7인가요?", ifCond = "LowMana", tooltip = "^x7070FF마나^7를 50% 이상 점유하면 자동으로 저마나로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LowMana", "FLAG", true, "Config")
 	end },
 	{ var = "conditionFullEnergyShield", type = "check", label = "항상 최대 ^x88FFFF에너지 보호막^7인가요?", ifCond = "FullEnergyShield", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:FullEnergyShield", "FLAG", true, "Config")
 	end },
-	{ var = "conditionLowEnergyShield", type = "check", label = "항상 최저 ^x88FFFF에너지 보호막^7인가요?", ifCond = "LowEnergyShield", tooltip = "You will automatically be considered to be on Low ^x88FFFFEnergy Shield ^7if you have at least 50% ^x88FFFFES ^7reserved,\nbut you can use this option to force it if necessary.", apply = function(val, modList, enemyModList)
+	{ var = "conditionLowEnergyShield", type = "check", label = "항상 최저 ^x88FFFF에너지 보호막^7인가요?", ifCond = "LowEnergyShield", tooltip = "^x88FFFF에너지 보호막^7을 50% 이상 점유하면 자동으로 최저 에너지 보호막으로 간주됩니다.\n필요한 경우 이 옵션으로 강제 설정할 수 있습니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:LowEnergyShield", "FLAG", true, "Config")
 	end },
 	{ var = "conditionHaveEnergyShield", type = "check", label = "항상 ^x88FFFF에너지 보호막^7이 있나요?", ifCond = "HaveEnergyShield", apply = function(val, modList, enemyModList)
@@ -204,32 +204,32 @@ return {
 	{ var = "minionsConditionCreatedRecently", type = "check", label = "최근 소환수를 생성했나요?", ifCond = "MinionsCreatedRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:MinionsCreatedRecently", "FLAG", true, "Config")
 	end },
-	{ var = "ailmentMode", type = "list", label = "상태 이상 계산 모드:", tooltip = "Controls how the base damage for applying Ailments is calculated:\n\tAverage: damage is based on the average application, including both crits and non-crits\n\tCrits Only: damage is based solely on Ailments inflicted with crits", list = {{val="AVERAGE",label="평균"},{val="CRIT",label="치명타만"}} },
-	{ var = "physMode", type = "list", label = "무작위 원소 모드:", ifFlag = "randomPhys", tooltip = "Controls how modifiers which choose a random element will function.\n\tAverage: Modifiers will grant one third of their value to ^xB97123Fire^7, ^x3F6DB3Cold^7, and ^xADAA47Lightning ^7simultaneously\n\t^xB97123Fire ^7/ ^x3F6DB3Cold ^7/ ^xADAA47Lightning^7: Modifiers will grant their full value as the specified element\nIf a modifier chooses between just two elements, the full value can only be given as those two elements.", list = {{val="AVERAGE",label="평균"},{val="FIRE",label="^xB97123화염"},{val="COLD",label="^x3F6DB3냉기"},{val="LIGHTNING",label="^xADAA47번개"}} },
-	{ var = "lifeRegenMode", type = "list", label = "^xE05030생명력 ^7재생 계산 모드:", ifCond = { "LifeRegenBurstAvg", "LifeRegenBurstFull" }, tooltip = "Controls how ^xE05030life ^7regeneration is calculated:\n\tMinimum: does not include burst regen\n\tAverage: includes burst regen, averaged based on uptime\n\tBurst: includes full burst regen", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="FULL",label="순간"}}, apply = function(val, modList, enemyModList)
+	{ var = "ailmentMode", type = "list", label = "상태 이상 계산 모드:", tooltip = "상태 이상 적용의 기본 피해 계산 방식을 제어합니다:\n\t평균: 치명타와 비치명타를 모두 포함한 평균 적용 기반 피해\n\t치명타만: 치명타로 부여된 상태 이상만 기반 피해", list = {{val="AVERAGE",label="평균"},{val="CRIT",label="치명타만"}} },
+	{ var = "physMode", type = "list", label = "무작위 원소 모드:", ifFlag = "randomPhys", tooltip = "무작위 원소를 선택하는 속성 부여의 작동 방식을 제어합니다.\n\t평균: ^xB97123화염^7, ^x3F6DB3냉기^7, ^xADAA47번개^7에 동시에 값의 1/3을 부여합니다\n\t^xB97123화염 ^7/ ^x3F6DB3냉기 ^7/ ^xADAA47번개^7: 지정된 원소로 전체 값을 부여합니다\n두 원소만 선택하는 속성 부여의 경우, 해당 두 원소로만 전체 값을 부여할 수 있습니다.", list = {{val="AVERAGE",label="평균"},{val="FIRE",label="^xB97123화염"},{val="COLD",label="^x3F6DB3냉기"},{val="LIGHTNING",label="^xADAA47번개"}} },
+	{ var = "lifeRegenMode", type = "list", label = "^xE05030생명력 ^7재생 계산 모드:", ifCond = { "LifeRegenBurstAvg", "LifeRegenBurstFull" }, tooltip = "^xE05030생명력 ^7재생 계산 방식을 제어합니다:\n\t최소: 순간 재생을 포함하지 않음\n\t평균: 순간 재생을 가동 시간 기반으로 평균화하여 포함\n\t순간: 전체 순간 재생을 포함", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="FULL",label="순간"}}, apply = function(val, modList, enemyModList)
 		if val == "AVERAGE" then
 			modList:NewMod("Condition:LifeRegenBurstAvg", "FLAG", true, "Config")
 		elseif val == "FULL" then
 			modList:NewMod("Condition:LifeRegenBurstFull", "FLAG", true, "Config")
 		end
 	end },
-	{ var = "resourceGainMode", type = "list", label = "자원 획득 계산 모드:", ifCond = "AverageResourceGain", defaultIndex = 2, tooltip = "Controls how resource on hit/kill is calculated:\n\tMinimum: does not include chances\n\tAverage: includes chance gains, averaged based on uptime\n\tMaximum: treats all chances as certain", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대"}}, apply = function(val, modList, enemyModList)
+	{ var = "resourceGainMode", type = "list", label = "자원 획득 계산 모드:", ifCond = "AverageResourceGain", defaultIndex = 2, tooltip = "적중/처치 시 자원 획득 계산 방식을 제어합니다:\n\t최소: 확률을 포함하지 않음\n\t평균: 확률 획득을 가동 시간 기반으로 평균화하여 포함\n\t최대: 모든 확률을 확정으로 처리", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대"}}, apply = function(val, modList, enemyModList)
 		if val == "AVERAGE" then
 			modList:NewMod("Condition:AverageResourceGain", "FLAG", true, "Config")
 		elseif val == "MAX" then
 			modList:NewMod("Condition:MaxResourceGain", "FLAG", true, "Config")
 		end
 	end },
-	{ var = "EHPUnluckyWorstOf", type = "list", label = "유효 생명력 불운 계산:", tooltip = "Sets the EHP calc to pretend its unlucky and reduce the effects of random events such as\n\tBlock/Spell Block Chance\n\tDodge/Spell Dodge Chance\n\tSpell Suppression Chance\n\tAvoidance Chance", list = {{val=1,label="평균"},{val=2,label="불운"},{val=4,label="매우 불운"}} },
-	{ var = "DisableEHPGainOnBlock", type = "check", label = "피격 시 유효 생명력 획득 비활성화:", ifMod = {"LifeOnBlock", "ManaOnBlock", "EnergyShieldOnBlock", "EnergyShieldOnSpellBlock", "LifeOnSuppress", "EnergyShieldOnSuppress", "MissingLifeBeforeEnemyHit", "MissingManaBeforeEnemyHit"}, tooltip = "Sets the EHP calc to not apply gain on block, suppress or Defiance of Destiny effects"},
-	{ var = "armourCalculationMode", type = "list", label = "방어구 계산 모드:", ifCond = { "ArmourMax", "ArmourAvg" }, tooltip = "Controls how Defending with Double Armour is calculated:\n\tMinimum: never Defend with Double Armour\n\tAverage: Damage Reduction from Defending with Double Armour is proportional to chance\n\tMaximum: always Defend with Double Armour\nThis setting has no effect if you have 100% chance to Defend with Double Armour.", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대"}}, apply = function(val, modList, enemyModList)
+	{ var = "EHPUnluckyWorstOf", type = "list", label = "유효 생명력 불운 계산:", tooltip = "유효 생명력 계산에서 불운 효과를 적용하여 다음과 같은 무작위 이벤트의 효과를 줄입니다:\n\t막기/주문 막기 확률\n\t회피/주문 회피 확률\n\t주문 억제 확률\n\t회피 확률", list = {{val=1,label="평균"},{val=2,label="불운"},{val=4,label="매우 불운"}} },
+	{ var = "DisableEHPGainOnBlock", type = "check", label = "피격 시 유효 생명력 획득 비활성화:", ifMod = {"LifeOnBlock", "ManaOnBlock", "EnergyShieldOnBlock", "EnergyShieldOnSpellBlock", "LifeOnSuppress", "EnergyShieldOnSuppress", "MissingLifeBeforeEnemyHit", "MissingManaBeforeEnemyHit"}, tooltip = "유효 생명력 계산에서 막기, 억제 또는 운명의 반항 효과로 인한 획득을 적용하지 않습니다"},
+	{ var = "armourCalculationMode", type = "list", label = "방어구 계산 모드:", ifCond = { "ArmourMax", "ArmourAvg" }, tooltip = "이중 방어구로 방어 시 계산 방식을 제어합니다:\n\t최소: 이중 방어구로 방어하지 않음\n\t평균: 이중 방어구로 방어 시 피해 감소가 확률에 비례\n\t최대: 항상 이중 방어구로 방어\n이중 방어구로 방어할 확률이 100%이면 이 설정은 효과가 없습니다.", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대"}}, apply = function(val, modList, enemyModList)
 		if val == "MAX" then
 			modList:NewMod("Condition:ArmourMax", "FLAG", true, "Config")
 		elseif val == "AVERAGE" then
 			modList:NewMod("Condition:ArmourAvg", "FLAG", true, "Config")
 		end
 	end },
-	{ var = "warcryMode", type = "list", label = "강화/증폭 계산 모드:", ifSkill = { "Fist of War", "Infernal Cry", "Ancestral Cry", "Enduring Cry", "General's Cry", "Intimidating Cry", "Rallying Cry", "Seismic Cry", "Battlemage's Cry", "Vengeful Cry" }, tooltip = "Controls how exerted attacks from Warcries are calculated:\nAverage: Averages out Warcry usage with cast time, attack speed and warcry cooldown.\nMax Hit: Shows maximum hit for lining up all warcries.", list = {{val="AVERAGE",label="평균"},{val="MAX",label="최대 적중"}}, apply = function(val, modList, enemyModList)
+	{ var = "warcryMode", type = "list", label = "강화/증폭 계산 모드:", ifSkill = { "Fist of War", "Infernal Cry", "Ancestral Cry", "Enduring Cry", "General's Cry", "Intimidating Cry", "Rallying Cry", "Seismic Cry", "Battlemage's Cry", "Vengeful Cry" }, tooltip = "함성에 의한 강화 공격 계산 방식을 제어합니다:\n평균: 시전 시간, 공격 속도, 함성 재사용 대기시간을 평균화합니다.\n최대 적중: 모든 함성을 동시 사용한 최대 적중을 표시합니다.", list = {{val="AVERAGE",label="평균"},{val="MAX",label="최대 적중"}}, apply = function(val, modList, enemyModList)
 		if val == "MAX" then
 			modList:NewMod("Condition:WarcryMaxHit", "FLAG", true, "Config")
 		end
@@ -237,17 +237,17 @@ return {
 	{ var = "EVBypass", type = "check", label = "황제의 경계심 우회 비활성화", ifCond = "EVBypass", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:EVBypass", "FLAG", true, "Config")
 	end },
-	{ var = "ignoreItemDisablers", type = "check", label = "아이템 비활성화 하지 않기", ifTagType = "DisablesItem", tooltip = "Ignore the effects of things which disable items, like Bringer of Rain" },
-	{ var = "ignoreJewelLimits", type = "check", label = "주얼 제한 무시", tooltip = "Ignore the limits on jewels" },
-	{ var = "overrideEmptyRedSockets", type = "count", label = "빈 ^xE05030빨강^7 소켓 수", ifMult = "EmptyRedSocketsInAnySlot",  tooltip = "This option allows you to override the default calculation for the number of Empty ^xE05030Red^7 Sockets.\nThe default calculation assumes enabled gems in skill socket groups fill the item in socket order disregarding gem colour.\nLeave blank for default calculation." },
-	{ var = "overrideEmptyGreenSockets", type = "count", label = "빈 ^x70FF70녹색^7 소켓 수", ifMult = "EmptyGreenSocketsInAnySlot", tooltip = "This option allows you to override the default calculation for the number of Empty ^x70FF70Green^7 Sockets.\nThe default calculation assumes enabled gems in skill socket groups fill the item in socket order disregarding gem colour.\nLeave blank for default calculation." },
-	{ var = "overrideEmptyBlueSockets", type = "count", label = "빈 ^x7070FF파랑^7 소켓 수", ifMult = "EmptyBlueSocketsInAnySlot", tooltip = "This option allows you to override the default calculation for the number of Empty ^x7070FFBlue^7 Sockets.\nThe default calculation assumes enabled gems in skill socket groups fill the item in socket order disregarding gem colour.\nLeave blank for default calculation." },
-	{ var = "overrideEmptyWhiteSockets", type = "count", label = "빈 흰색 소켓 수", ifMult = "EmptyWhiteSocketsInAnySlot", tooltip = "This option allows you to override the default calculation for the number of Empty White Sockets.\nThe default calculation assumes enabled gems in skill socket groups fill the item in socket order disregarding gem colour.\nLeave blank for default calculation." },
+	{ var = "ignoreItemDisablers", type = "check", label = "아이템 비활성화 하지 않기", ifTagType = "DisablesItem", tooltip = "비의 인도자 등 아이템을 비활성화하는 효과를 무시합니다" },
+	{ var = "ignoreJewelLimits", type = "check", label = "주얼 제한 무시", tooltip = "주얼의 제한을 무시합니다" },
+	{ var = "overrideEmptyRedSockets", type = "count", label = "빈 ^xE05030빨강^7 소켓 수", ifMult = "EmptyRedSocketsInAnySlot",  tooltip = "빈 ^xE05030빨강^7 소켓 수의 기본 계산을 덮어쓸 수 있습니다.\n기본 계산은 스킬 소켓 그룹의 활성화된 젬이 젬 색상에 관계없이 소켓 순서대로 아이템을 채우는 것으로 가정합니다.\n기본 계산을 사용하려면 비워두세요." },
+	{ var = "overrideEmptyGreenSockets", type = "count", label = "빈 ^x70FF70녹색^7 소켓 수", ifMult = "EmptyGreenSocketsInAnySlot", tooltip = "빈 ^x70FF70녹색^7 소켓 수의 기본 계산을 덮어쓸 수 있습니다.\n기본 계산은 스킬 소켓 그룹의 활성화된 젬이 젬 색상에 관계없이 소켓 순서대로 아이템을 채우는 것으로 가정합니다.\n기본 계산을 사용하려면 비워두세요." },
+	{ var = "overrideEmptyBlueSockets", type = "count", label = "빈 ^x7070FF파랑^7 소켓 수", ifMult = "EmptyBlueSocketsInAnySlot", tooltip = "빈 ^x7070FF파랑^7 소켓 수의 기본 계산을 덮어쓸 수 있습니다.\n기본 계산은 스킬 소켓 그룹의 활성화된 젬이 젬 색상에 관계없이 소켓 순서대로 아이템을 채우는 것으로 가정합니다.\n기본 계산을 사용하려면 비워두세요." },
+	{ var = "overrideEmptyWhiteSockets", type = "count", label = "빈 흰색 소켓 수", ifMult = "EmptyWhiteSocketsInAnySlot", tooltip = "빈 흰색 소켓 수의 기본 계산을 덮어쓸 수 있습니다.\n기본 계산은 스킬 소켓 그룹의 활성화된 젬이 젬 색상에 관계없이 소켓 순서대로 아이템을 채우는 것으로 가정합니다.\n기본 계산을 사용하려면 비워두세요." },
 
 	-- Section: Skill-specific options
 	{ section = "스킬 옵션", col = 2 },
 	{ label = "비전 보호막:", ifSkill = "Arcane Cloak"},
-	{ var = "arcaneCloakUsedRecentlyCheck", type = "check", label = "최근 소모한 ^x7070FF마나^7에 포함?", ifSkill = "Arcane Cloak", tooltip = "When enabled, the mana spent by Arcane Cloak used at full mana \nwill be added to the value provided in # of ^x7070FFMana ^7spent Recently.", apply = function(val, modList, enemyModList)
+	{ var = "arcaneCloakUsedRecentlyCheck", type = "check", label = "최근 소모한 ^x7070FF마나^7에 포함?", ifSkill = "Arcane Cloak", tooltip = "활성화하면, 최대 마나에서 비전 보호막이 소모한 마나가\n최근 소모한 ^x7070FF마나 ^7양에 추가됩니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ArcaneCloakUsedRecently", "FLAG", true, "Config")
 	end },
 	{ label = "조류의 화신:", ifSkill = "Aspect of the Avian" },
@@ -279,7 +279,7 @@ return {
 	{ var = "bannerPlanted", type = "check", label = "깃발을 꽂았나요?", ifSkill = { "Dread Banner", "War Banner", "Defiance Banner" }, apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BannerPlanted", "FLAG", true, "Config")
 	end },
-	{ var = "bannerValour", type = "count", label = "깃발 무훈:", tooltip = "The amount of valour consumed for the placed banner", ifSkill = { "Dread Banner", "War Banner", "Defiance Banner" }, apply = function(val, modList, enemyModList)
+	{ var = "bannerValour", type = "count", label = "깃발 무훈:", tooltip = "설치한 깃발에 소모된 무훈의 양", ifSkill = { "Dread Banner", "War Banner", "Defiance Banner" }, apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:ValourStacks", "BASE", val, "Config", { type = "IgnoreCond" }, { type = "Condition", var = "Combat" })
 	end },
 	{ label = "나무 껍질:", ifSkill = "Barkskin" },
@@ -299,7 +299,7 @@ return {
 		modList:NewMod("Condition:BladestormInSandstorm", "FLAG", true, "Config", { type = "SkillName", skillName = "Bladestorm", includeTransfigured = true })
 	end },
 	{ label = "피의 성찬:", ifSkill = "Blood Sacrament" },
-	{ var = "bloodSacramentReservationEHP", type = "check", label = "스킬 점유를 유효 생명력에 포함?", ifSkill = "Blood Sacrament", tooltip = "Use this option to disable the skill reservation factoring into eHP calculations",apply = function(val, modList, enemyModList)
+	{ var = "bloodSacramentReservationEHP", type = "check", label = "스킬 점유를 유효 생명력에 포함?", ifSkill = "Blood Sacrament", tooltip = "스킬 점유가 유효 생명력 계산에 반영되지 않도록 하려면 이 옵션을 사용하세요",apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:BloodSacramentReservationEHP", "FLAG", true, "Config")
 	end },
 	{ label = "낙인 스킬:", ifSkill = { "Armageddon Brand", "Storm Brand", "Arcanist Brand", "Penance Brand", "Wintertide Brand" }, includeTransfigured = true }, -- I barely resisted the temptation to label this "Generic Brand:"
@@ -333,7 +333,7 @@ return {
 		modList:NewMod("Condition:StoneEqualCarrionGolem", "FLAG", true, "Config")
 	end },
 	{ label = "근접 전투:", ifSkill = "Close Combat" },
-	{ var = "closeCombatCombatRush", type = "check", label = "전투 돌진이 활성화 중인가요?", ifSkill = "Close Combat", tooltip = "Combat Rush grants 20% more Attack Speed to Travel Skills not Supported by Close Combat.",apply = function(val, modList, enemyModList)
+	{ var = "closeCombatCombatRush", type = "check", label = "전투 돌진이 활성화 중인가요?", ifSkill = "Close Combat", tooltip = "전투 돌진은 근접 전투의 보조를 받지 않는 이동 스킬에 20%의 공격 속도 증폭을 부여합니다.",apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:CombatRushActive", "FLAG", true, "Config")
 	end },
 	{ label = "한파:", ifSkill = "Cold Snap", includeTransfigured = true },
@@ -351,7 +351,7 @@ return {
 		modList:NewMod("Multiplier:CorruptingCryStageAfterFirst", "BASE", m_min(val-1, 9), "Config", { type = "Condition", var = "Effective" })
 	end },
 	{ label = "잔혹:", ifSkill = "Cruelty" },
-	{ var = "overrideCruelty", type = "count", label = "피해 % (최대가 아닌 경우):", ifSkill = "Cruelty", tooltip = "Cruelty is a buff provided by Cruelty Support which grants\nup to 40% more damage over time to the skills it supports.", apply = function(val, modList, enemyModList)
+	{ var = "overrideCruelty", type = "count", label = "피해 % (최대가 아닌 경우):", ifSkill = "Cruelty", tooltip = "잔혹은 잔혹 보조가 제공하는 버프로,\n보조하는 스킬에 최대 40%의 지속 피해 증폭을 부여합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Cruelty", "OVERRIDE", m_min(val, 40), "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ label = "회오리:", ifSkill = "Cyclone", includeTransfigured = true },
@@ -359,7 +359,7 @@ return {
 		modList:NewMod("Condition:ChannellingCyclone", "FLAG", true, "Config")
 	end },
 	{ label = "어둠의 서약:", ifSkill = "Dark Pact" },
-	{ var = "darkPactSkeletonLife", type = "count", label = "해골 ^xE05030생명력:", ifSkill = "Dark Pact", tooltip = "Sets the maximum ^xE05030Life ^7of the Skeleton that is being targeted.", apply = function(val, modList, enemyModList)
+	{ var = "darkPactSkeletonLife", type = "count", label = "해골 ^xE05030생명력:", ifSkill = "Dark Pact", tooltip = "대상이 되는 해골의 최대 ^xE05030생명력^7을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "skeletonLife", value = val }, "Config", { type = "SkillName", skillName = "Dark Pact" })
 	end },
 	{ label = "파멸 폭발:", ifSkill = "Doom Blast" },
@@ -381,7 +381,7 @@ return {
 	{ var = "embraceMadnessActive", type = "check", label = "광기 수용이 활성화 중인가요?", ifSkill = "Embrace Madness", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AffectedByGloriousMadness", "FLAG", true, "Config")
 	end },
-	{ var = "touchedDebuffsCount", type = "countAllowZero", label = "영광의 광기 중첩", ifOption = "embraceMadnessActive", defaultState = 10, tooltip = "Glorious Madness Stacks grants:\n\tEroding Touch: 6% inc Damage Taken per stack\n\tParalysing Touch: 6% reduced Action Speed per stack\n\tDiluting Touch: 9% reduced Flask charges gained and 9% reduced Flask Effect per stack\n\tWasting Touch: 9% reduced ^xE05030Life ^7and ^x88FFFFEnergy Shield ^7recovery rate per stack", apply = function(val, modList, enemyModList)
+	{ var = "touchedDebuffsCount", type = "countAllowZero", label = "영광의 광기 중첩", ifOption = "embraceMadnessActive", defaultState = 10, tooltip = "영광의 광기 중첩 효과:\n\t부식의 손길: 중첩당 받는 피해 6% 증가\n\t마비의 손길: 중첩당 행동 속도 6% 감소\n\t희석의 손길: 중첩당 플라스크 충전 획득 9% 감소 및 플라스크 효과 9% 감소\n\t소모의 손길: 중첩당 ^xE05030생명력 ^7및 ^x88FFFF에너지 보호막 ^7회복 속도 9% 감소", apply = function(val, modList, enemyModList)
 		val = m_min(val, 10)
 		modList:NewMod("DamageTaken", "INC", val * 6, val.." Eroding Touch Stacks", { type = "GlobalEffect", effectType = "Debuff" }, { type = "Condition", var = "AffectedByGloriousMadness" })
 		modList:NewMod("ActionSpeed", "INC", -val * 6, val.." Paralysing Touch Stacks", { type = "GlobalEffect", effectType = "Debuff" }, { type = "Condition", var = "AffectedByGloriousMadness" })
@@ -391,7 +391,7 @@ return {
 		modList:NewMod("EnergyShieldRecoveryRate", "INC", -val * 9, val.." Wasting Touch Stacks", { type = "GlobalEffect", effectType = "Debuff" }, { type = "Condition", var = "AffectedByGloriousMadness" })
 	end },
 	{ label = "광란의 포식:", ifSkill = "Feeding Frenzy" },
-	{ var = "feedingFrenzyFeedingFrenzyActive", type = "check", label = "광란의 포식이 활성화 중인가요?", ifSkill = "Feeding Frenzy", tooltip = "Feeding Frenzy grants:\n\t10% more Minion Damage\n\t10% increased Minion Movement Speed\n\t10% increased Minion Attack and Cast Speed", apply = function(val, modList, enemyModList)
+	{ var = "feedingFrenzyFeedingFrenzyActive", type = "check", label = "광란의 포식이 활성화 중인가요?", ifSkill = "Feeding Frenzy", tooltip = "광란의 포식 효과:\n\t소환수 피해 10% 증폭\n\t소환수 이동 속도 10% 증가\n\t소환수 공격 및 시전 속도 10% 증가", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:FeedingFrenzyActive", "FLAG", true, "Config")
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Damage", "MORE", 10, "Feeding Frenzy") }, "Config")
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("MovementSpeed", "INC", 10, "Feeding Frenzy") }, "Config")
@@ -414,11 +414,11 @@ return {
 		modList:NewMod("Multiplier:FrostShieldStage", "BASE", val, "Config")
 	end },
 	{ label = "시간의 상급 전령:", ifSkill =  "Summon Greater Harbinger of Time" },
-	{ var = "greaterHarbingerOfTimeSlipstream", type = "check", label = "역류가 활성화 중인가요?:", ifSkill =  "Summon Greater Harbinger of Time", tooltip = "Greater Harbinger of Time Slipstream buff grants:\n10% increased Action Speed\nBuff affects the player and allies\nBuff has a base duration of 8s with a 10s Cooldown", apply = function(val, modList, enemyModList)
+	{ var = "greaterHarbingerOfTimeSlipstream", type = "check", label = "역류가 활성화 중인가요?:", ifSkill =  "Summon Greater Harbinger of Time", tooltip = "시간의 상급 전령 역류 버프 효과:\n행동 속도 10% 증가\n버프가 플레이어와 아군에게 영향\n기본 지속시간 8초, 재사용 대기시간 10초", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:GreaterHarbingerOfTime", "FLAG", true, "Config")
 	end },
 	{ label = "시간의 전령:", ifSkill =  "Summon Harbinger of Time" },
-	{ var = "harbingerOfTimeSlipstream", type = "check", label = "역류가 활성화 중인가요?:", ifSkill =  "Summon Harbinger of Time", tooltip = "Harbinger of Time Slipstream buff grants:\n10% increased Action Speed\nBuff affects the player, allies and enemies in a small radius\nBuff has a base duration of 8s with a 20s Cooldown", apply = function(val, modList, enemyModList)
+	{ var = "harbingerOfTimeSlipstream", type = "check", label = "역류가 활성화 중인가요?:", ifSkill =  "Summon Harbinger of Time", tooltip = "시간의 전령 역류 버프 효과:\n행동 속도 10% 증가\n버프가 플레이어, 아군 및 인근 적에게 영향\n기본 지속시간 8초, 재사용 대기시간 20초", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:HarbingerOfTime", "FLAG", true, "Config")
 	end },
 	{ label = "사술:", ifSkillFlag = "hex", ifMult = "MaxDoom" },
@@ -430,7 +430,7 @@ return {
 		modList:NewMod("Multiplier:VirulenceStack", "BASE", val, "Config")
 	end },
 	{ label = "재의 전령:", ifSkill = "Herald of Ash" },
-	{ var = "hoaOverkill", type = "count", label = "초과 피해:", tooltip = "Herald of Ash's base ^xB97123Burning ^7damage is equal to 25% of Overkill damage.", ifSkill = "Herald of Ash", apply = function(val, modList, enemyModList)
+	{ var = "hoaOverkill", type = "count", label = "초과 피해:", tooltip = "재의 전령의 기본 ^xB97123화상 ^7피해는 초과 피해의 25%입니다.", ifSkill = "Herald of Ash", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "hoaOverkill", value = val }, "Config", { type = "SkillName", skillName = "Herald of Ash" })
 	end },
 	{ label = "벌떼의 전령:", ifSkill = "Herald of the Hive" },
@@ -464,7 +464,7 @@ return {
 		modList:NewMod("IntuitiveLinkSourceRate", "BASE", val, "Config")
 	end },
 	{ label = "마나 결속:", ifSkill = "Manabond" },
-	{ var = "manabondMissingUnreservedManaPercentage", type = "count", label = "비점유 ^x7070FF마나^7 부족 %:", tooltip = "Ignores values outside the 0-100 range, defaults to 100% if not specified. \nA more realistic value would be to match your Arcane Cloak spend %.", ifSkill = "Manabond", apply = function(val, modList, enemyModList)
+	{ var = "manabondMissingUnreservedManaPercentage", type = "count", label = "비점유 ^x7070FF마나^7 부족 %:", tooltip = "0-100 범위를 벗어난 값은 무시되며, 지정하지 않으면 기본값 100%입니다.\n더 현실적인 값은 비전 보호막 소모 %에 맞추는 것입니다.", ifSkill = "Manabond", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "ManabondMissingUnreservedManaPercentage", value = m_max(m_min(val,100), 0) }, "Config", { type = "SkillName", skillName = "Manabond" })
 	end },
 	{ label = "육체 방패:", ifSkill = "Meat Shield" },
@@ -472,7 +472,7 @@ return {
 		modList:NewMod("Condition:MeatShieldEnemyNearYou", "FLAG", true, "Config")
 	end },
 	{ label = "안개의 반영:", ifSkill = "Misty Reflection" },
-	{ var = "enemyHitMistyReflection", type = "check", label = "적이 안개의 반영에 맞았나요?", ifSkill = "Misty Reflection", tooltip = "Misty Reflection debuff lasts 4 seconds and makes enemies have:\n\t30% increased Damage Taken\n\tDeal 30% less Damage", apply = function(val, modList, enemyModList)
+	{ var = "enemyHitMistyReflection", type = "check", label = "적이 안개의 반영에 맞았나요?", ifSkill = "Misty Reflection", tooltip = "안개의 반영 디버프는 4초간 지속되며 적에게 다음 효과를 부여합니다:\n\t받는 피해 30% 증가\n\t주는 피해 30% 감폭", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("Condition:MistyReflection", "FLAG", true, "Config")
 	end },
 	{ label = "추진력:", ifSkill = "Momentum" },
@@ -491,7 +491,7 @@ return {
 		end
 	end },
 	{ label = "관통상:", ifSkill = "Perforate", includeTransfigured = true },
-	{ var = "perforateSpikeOverlap", type = "count", label = "겹치는 가시 수:", tooltip = "Affects the DPS of Perforate in Blood Stance.\nMaximum is limited by the number of Spikes of Perforate.", ifSkill = "Perforate", includeTransfigured = true, apply = function(val, modList, enemyModList)
+	{ var = "perforateSpikeOverlap", type = "count", label = "겹치는 가시 수:", tooltip = "피의 자세에서 관통상의 DPS에 영향을 줍니다.\n최대치는 관통상의 가시 수에 의해 제한됩니다.", ifSkill = "Perforate", includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:PerforateSpikeOverlap", "BASE", val, "Config", { type = "SkillName", skillName = "Perforate", includeTransfigured = true })
 	end },
 	{ label = "물리 에기스:", ifSkill = "Physical Aegis" },
@@ -513,17 +513,17 @@ return {
 		modList:NewMod("Multiplier:RageSacrificedStacks", "BASE", val, "Config")
 	end },
 	{ label = "환영 소환:", ifSkill = "Raise Spectre", includeTransfigured = true },
-	{ var = "raiseSpectreEnableBuffs", type = "check", defaultState = true, label = "버프 활성화:", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "Enable any buff skills that your spectres have.", apply = function(val, modList, enemyModList)
+	{ var = "raiseSpectreEnableBuffs", type = "check", defaultState = true, label = "버프 활성화:", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "환영이 가진 버프 스킬을 활성화합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "enable", value = true }, "Config", { type = "SkillType", skillType = SkillType.Buff }, { type = "SkillName", skillName = "Raise Spectre", includeTransfigured = true, summonSkill = true })
 	end },
-	{ var = "raiseSpectreEnableCurses", type = "check", defaultState = true, label = "저주 활성화:", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "Enable any curse skills that your spectres have.", apply = function(val, modList, enemyModList)
+	{ var = "raiseSpectreEnableCurses", type = "check", defaultState = true, label = "저주 활성화:", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "환영이 가진 저주 스킬을 활성화합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "enable", value = true }, "Config", { type = "SkillType", skillType = SkillType.Hex }, { type = "SkillName", skillName = "Raise Spectre", includeTransfigured = true, summonSkill = true })
 		modList:NewMod("SkillData", "LIST", { key = "enable", value = true }, "Config", { type = "SkillType", skillType = SkillType.Mark }, { type = "SkillName", skillName = "Raise Spectre", includeTransfigured = true, summonSkill = true })
 	end },
 	{ var = "conditionSummonedSpectreInPast8Sec", type = "check", label = "지난 8초간 환영을 소환했나요?", ifCond = "SummonedSpectreInPast8Sec", ifSkill = "Raise Spectre", includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SummonedSpectreInPast8Sec", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "raiseSpectreBladeVortexBladeCount", type = "count", label = "칼날 소용돌이 칼날 수:", ifSkill = {"DemonModularBladeVortexSpectre","GhostPirateBladeVortexSpectre"}, tooltip = "Sets the blade count for Blade Vortex skills used by spectres.\nDefault is 1; maximum is 5.", apply = function(val, modList, enemyModList)
+	{ var = "raiseSpectreBladeVortexBladeCount", type = "count", label = "칼날 소용돌이 칼날 수:", ifSkill = {"DemonModularBladeVortexSpectre","GhostPirateBladeVortexSpectre"}, tooltip = "환영이 사용하는 칼날 소용돌이 스킬의 칼날 수를 설정합니다.\n기본값은 1이며 최대값은 5입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "dpsMultiplier", value = val }, "Config", { type = "SkillId", skillId = "DemonModularBladeVortexSpectre" })
 		modList:NewMod("SkillData", "LIST", { key = "dpsMultiplier", value = val }, "Config", { type = "SkillId", skillId = "GhostPirateBladeVortexSpectre" })
 	end },
@@ -540,7 +540,7 @@ return {
 		modList:NewMod("SkillData", "LIST", { key = "enable", value = false }, "Config", { type = "SkillId", skillId = "ABTTAzmeriShepherdSpellDamage" })
 	end },
 	{ label = "거미 소환:", ifSkill = "Raise Spiders" },
-	{ var = "raiseSpidersSpiderCount", type = "count", label = "거미 수:", ifSkill = "Raise Spiders", tooltip = "Sets the number of active Spiders.\nThe base maximum number of Spiders is 20.", apply = function(val, modList, enemyModList)
+	{ var = "raiseSpidersSpiderCount", type = "count", label = "거미 수:", ifSkill = "Raise Spiders", tooltip = "활성 거미 수를 설정합니다.\n거미의 기본 최대 수는 20입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:RaisedSpiderConfig", "BASE", val, "Config")
 		modList:NewMod("Multiplier:RaisedSpider", "BASE", 1, "Config", { type = "Multiplier", var = "RaisedSpiderConfig", limitStat = "ActiveSpiderLimit" })
 	end },
@@ -548,11 +548,11 @@ return {
 	{ var = "conditionSummonedZombieInPast8Sec", type = "check", label = "지난 8초간 좀비를 소환했나요?", ifCond = "SummonedZombieInPast8Sec", ifSkill = "Raise Zombie", includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SummonedZombieInPast8Sec", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "animateWeaponLingeringBlade", type = "check", label = "잔존 칼날을 소환 중인가요?", ifSkill = "Animate Weapon", tooltip = "Enables additional damage given to Lingering Blades\nThe exact weapon is unknown but should be similar to Glass Shank", apply = function(val, modList, enemyModList)
+	{ var = "animateWeaponLingeringBlade", type = "check", label = "잔존 칼날을 소환 중인가요?", ifSkill = "Animate Weapon", tooltip = "잔존 칼날에 부여되는 추가 피해를 활성화합니다.\n정확한 무기는 알 수 없지만 유리 칼과 유사합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AnimatingLingeringBlades", "FLAG", true, "Config")
 	end },
 	{ label = "파편 발리스타:", ifSkill = "Shrapnel Ballista", includeTransfigured = true },
-	{ var = "ShrapnelBallistaProjectileOverlap", type = "count", label = "산탄 투사체 수:", tooltip = "Maximum is limited by the number of Projectiles., default of 1, if Arrow nova then default of maximum projectiles", ifSkill = "Shrapnel Ballista", includeTransfigured = true, apply = function(val, modList, enemyModList)
+	{ var = "ShrapnelBallistaProjectileOverlap", type = "count", label = "산탄 투사체 수:", tooltip = "최대치는 투사체 수에 의해 제한됩니다. 기본값 1, 화살 회오리의 경우 최대 투사체 수가 기본값", ifSkill = "Shrapnel Ballista", includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "ShrapnelBallistaProjectileOverlap", value = val }, "Config", { type = "SkillName", skillName = "Shrapnel Ballista", includeTransfigured = true })
 	end },
 	{ label = "권능의 인장:", ifSkill = "Sigil of Power" },
@@ -560,21 +560,21 @@ return {
 		modList:NewMod("Multiplier:SigilOfPowerStage", "BASE", val, "Config")
 	end },
 	{ label = "흡수 덫:", ifSkill = "Siphoning Trap" },
-	{ var = "siphoningTrapAffectedEnemies", type = "count", label = "영향받는 적 수:", ifSkill = "Siphoning Trap", tooltip = "Sets the number of enemies affected by Siphoning Trap.", apply = function(val, modList, enemyModList)
+	{ var = "siphoningTrapAffectedEnemies", type = "count", label = "영향받는 적 수:", ifSkill = "Siphoning Trap", tooltip = "흡수 덫에 영향받는 적 수를 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:EnemyAffectedBySiphoningTrap", "BASE", val, "Config")
 		modList:NewMod("Condition:SiphoningTrapSiphoning", "FLAG", true, "Config")
 	end },
 	{ label = "저격:", ifSkill = "Snipe" },
-	{ var = "configSnipeStages", type = "count", label = "저격 단계 수:", ifSkill = "Snipe", tooltip = "Sets the number of stages reached before releasing Snipe.", apply = function(val, modList, enemyModList)
+	{ var = "configSnipeStages", type = "count", label = "저격 단계 수:", ifSkill = "Snipe", tooltip = "저격을 발사하기 전 도달한 단계 수를 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SnipeStage", "BASE", val, "Config")
 	end },
 	{ label = "유령 호랑이:", ifSkill = "Summon Spectral Tiger" },
-	{ var = "configSpectralTigerCount", type = "count", label = "활성 유령 호랑이 수:", ifSkill = "Summon Spectral Tiger", defaultPlaceholderState = 5, tooltip = "Sets the number of active Spectral Tigers.\nThe base maximum number of Spectral Tigers is 5.", apply = function(val, modList, enemyModList)
+	{ var = "configSpectralTigerCount", type = "count", label = "활성 유령 호랑이 수:", ifSkill = "Summon Spectral Tiger", defaultPlaceholderState = 5, tooltip = "활성 유령 호랑이 수를 설정합니다.\n유령 호랑이의 기본 최대 수는 5입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SpectralTigerConfig", "BASE", val, "Config")
 		modList:NewMod("Multiplier:SpectralTigerCount", "BASE", 1, "Config", { type = "Multiplier", var = "SpectralTigerConfig", limitStat = "ActiveTigerLimit" })
 	end },
 	{ label = "유령 늑대:", ifSkill = "Summon Spectral Wolf" },
-	{ var = "configSpectralWolfCount", type = "count", label = "활성 유령 늑대 수:", ifSkill = "Summon Spectral Wolf", tooltip = "Sets the number of active Spectral Wolves.\nThe base maximum number of Spectral Wolves is 10.", apply = function(val, modList, enemyModList)
+	{ var = "configSpectralWolfCount", type = "count", label = "활성 유령 늑대 수:", ifSkill = "Summon Spectral Wolf", tooltip = "활성 유령 늑대 수를 설정합니다.\n유령 늑대의 기본 최대 수는 10입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SpectralWolfConfig", "BASE", val, "Config")
 		modList:NewMod("Multiplier:SpectralWolfCount", "BASE", 1, "Config", { type = "Multiplier", var = "SpectralWolfConfig", limitStat = "ActiveWolfLimit" })
 	end },
@@ -591,7 +591,7 @@ return {
 	{ var = "shardsConsumed", type = "count", label = "소모한 강철 파편:", ifSkill = { "Splitting Steel of Ammunition", "Shattering Steel of Ammunition", "Lancing Steel", "Shrapnel Ballista of Steel" }, apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SteelShardConsumed", "BASE", m_min(val, 12), "Config")
 	end },
-	{ var = "steelWards", type = "count", label = "강철 방벽:", ifSkill = "Shattering Steel of Ammunition", tooltip = "Steel Wards are gained from using Shattering Steel of Ammunition with at least 2 Steel Shards.\nYou can have up to 6 Steel Wards, and each grants +8% chance to Block Projectile Attack Damage.", apply = function(val, modList, enemyModList)
+	{ var = "steelWards", type = "count", label = "강철 방벽:", ifSkill = "Shattering Steel of Ammunition", tooltip = "강철 방벽은 탄약의 파쇄 강철에 강철 파편 2개 이상을 사용하여 획득합니다.\n최대 6개의 강철 방벽을 보유할 수 있으며, 각각 투사체 공격 피해 막기 확률 +8%를 부여합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:SteelWardCount", "BASE", val, "Config")
 	end },
 	{ label = "폭풍 비:", ifSkill = "Storm Rain" },
@@ -629,11 +629,11 @@ return {
 		modList:NewMod("Multiplier:NearbyBleedingEnemies", "BASE", val, "Config" )
 	end },
 	{ label = "회오리 사격:", ifSkill = "Tornado Shot" },
-	{ var = "tornadoShotSecondaryHitChance", type = "count", label = "두 번째 투사체 적중 확률 %:", tooltip = "Override to the percent chance for the secondary projectiles to hit, default of 60% or 80% with helm enchant. (20% per secondary projectile)", ifSkill = "Tornado Shot", apply = function(val, modList, enemyModList)
+	{ var = "tornadoShotSecondaryHitChance", type = "count", label = "두 번째 투사체 적중 확률 %:", tooltip = "보조 투사체의 적중 확률(%)을 덮어씁니다. 기본값 60%, 투구 인챈트 시 80%입니다. (보조 투사체당 20%)", ifSkill = "Tornado Shot", apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "tornadoShotSecondaryHitChance", value = val }, "Config", { type = "SkillName", skillName = "Tornado Shot" })
 	end },
 	{ label = "독성 비:", ifSkill = "Toxic Rain", includeTransfigured = true },
-	{ var = "toxicRainPodOverlap", type = "count", label = "겹치는 포드 수:", tooltip = "Maximum is limited by the number of Projectiles.", ifSkill = "Toxic Rain", includeTransfigured = true, apply = function(val, modList, enemyModList)
+	{ var = "toxicRainPodOverlap", type = "count", label = "겹치는 포드 수:", tooltip = "최대치는 투사체 수에 의해 제한됩니다.", ifSkill = "Toxic Rain", includeTransfigured = true, apply = function(val, modList, enemyModList)
 		modList:NewMod("SkillData", "LIST", { key = "podOverlapMultiplier", value = val }, "Config", { type = "SkillName", skillName = "Toxic Rain", includeTransfigured = true })
 	end },
 	{ label = "외상:", ifFlag = "HasTrauma" },
@@ -641,7 +641,7 @@ return {
 		modList:NewMod("Multiplier:TraumaStacks", "BASE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
 	{ label = "삼위일체 보조:", ifSkill = "Trinity" },
-	{ var = "configResonanceCount", type = "count", label = "최저 공명 수:", ifSkill = "Trinity", tooltip = "Sets the amount of resonance on the lowest element.", apply = function(val, modList, enemyModList)
+	{ var = "configResonanceCount", type = "count", label = "최저 공명 수:", ifSkill = "Trinity", tooltip = "가장 낮은 원소의 공명 수를 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:ResonanceCount", "BASE", m_max(m_min(val, 50), 0), "Config")
 	end },
 	{ label = "경첩 해제:", ifSkill = "Unhinge" },
@@ -661,7 +661,7 @@ return {
 		modList:NewMod("Condition:CastOnFrostbolt", "FLAG", true, "Config", { type = "SkillName", skillName = "Vortex of Projection" })
 	end },
 	{ label = "함성 스킬:", ifFlag = "UsesWarcryPower" },
-	{ var = "multiplierWarcryPower", type = "count", label = "함성 위력:", ifFlag = "UsesWarcryPower", tooltip = "Power determines how strong your Warcry buffs will be, and is based on the total strength of nearby enemies.\nPower is assumed to be 20 if your target is a Boss, but you can override it here if necessary.\n\tEach Normal enemy grants 1 Power\n\tEach Magic enemy grants 2 Power\n\tEach Rare enemy grants 10 Power\n\tEach Unique enemy grants 20 Power", apply = function(val, modList, enemyModList)
+	{ var = "multiplierWarcryPower", type = "count", label = "함성 위력:", ifFlag = "UsesWarcryPower", tooltip = "위력은 함성 버프의 강도를 결정하며, 인근 적의 총 강도에 기반합니다.\n대상이 보스이면 위력은 20으로 간주되지만, 필요한 경우 여기서 덮어쓸 수 있습니다.\n\t일반 적은 위력 1 부여\n\t마법 적은 위력 2 부여\n\t희귀 적은 위력 10 부여\n\t고유 적은 위력 20 부여", apply = function(val, modList, enemyModList)
 		modList:NewMod("WarcryPower", "OVERRIDE", val, "Config")
 	end },
 	{ label = "유죄 판결의 파도:", ifSkill = "Wave of Conviction" },
@@ -693,16 +693,16 @@ return {
 	end },
 	{ label = "다중 범위 스킬:", ifSkill = { "Seismic Trap", "Lightning Spire Trap", "Explosive Trap", "Molten Strike" }, includeTransfigured = true },
 	{ var = "enemySizePreset", type = "list", label = "적 크기 프리셋:", ifSkill = { "Seismic Trap", "Lightning Spire Trap", "Explosive Trap", "Molten Strike" }, includeTransfigured = true, defaultIndex = 2, tooltip = [[
-Configure the radius of an enemy hitbox which is used in calculating some area multi-hitting (shotgunning) effects.
+적 히트박스 반경을 설정하여 일부 범위 다중 적중(산탄) 효과 계산에 사용합니다.
 
-Small sets the radius to 2.
-	Most monsters and the players' character are this size.
-Medium sets the radius to 3.
-	This is the size of most humanoid bosses (i.e. The Maven; The Shaper; Izaro)
-Large sets the radius to 5.
-	This is the size of some larger bosses (i.e. King Kaom; Vaal Oversoul)
-Huge sets the radius to 11.
-	This is the size of some of the largest bosses (i.e. Nucleus of the Maven; Tsoagoth, The Brine King)]], list = {{val="Small",label="소형"},{val="Medium",label="중형"},{val="Large",label="대형"},{val="Huge",label="초대형"}}, apply = function(val, modList, enemyModList, build)
+소형은 반경을 2로 설정합니다.
+	대부분의 몬스터와 플레이어 캐릭터가 이 크기입니다.
+중형은 반경을 3으로 설정합니다.
+	대부분의 인간형 보스 크기입니다 (예: 메이븐, 쉐이퍼, 이자로)
+대형은 반경을 5로 설정합니다.
+	일부 큰 보스의 크기입니다 (예: 왕 카옴, 바알 대군주)
+초대형은 반경을 11로 설정합니다.
+	일부 가장 큰 보스의 크기입니다 (예: 메이븐의 핵, 소금왕 트소아고스)]], list = {{val="Small",label="소형"},{val="Medium",label="중형"},{val="Large",label="대형"},{val="Huge",label="초대형"}}, apply = function(val, modList, enemyModList, build)
 		if val == "Small" then
 			build.configTab.varControls['enemyRadius']:SetPlaceholder(2, false)
 			modList:NewMod("EnemyRadius", "BASE", 2, "Config")
@@ -717,13 +717,13 @@ Huge sets the radius to 11.
 			modList:NewMod("EnemyRadius", "BASE", 11, "Config")
 		end
 	end },
-	{ var = "enemyRadius", type = "integer", label = "적 반경:", ifSkill = { "Seismic Trap", "Lightning Spire Trap", "Explosive Trap", "Molten Strike" }, includeTransfigured = true, tooltip = "Configure the radius of an enemy hitbox to calculate some area overlapping (shotgunning) effects.", apply = function(val, modList, enemyModList)
+	{ var = "enemyRadius", type = "integer", label = "적 반경:", ifSkill = { "Seismic Trap", "Lightning Spire Trap", "Explosive Trap", "Molten Strike" }, includeTransfigured = true, tooltip = "적 히트박스 반경을 설정하여 일부 범위 겹침(산탄) 효과를 계산합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("EnemyRadius", "OVERRIDE", m_max(val, 1), "Config")
 	end },
-	{ var = "TotalSpectreLife", type = "integer", label = "환영 총 생명력:", ifMod = "takenFromSpectresBeforeYou", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "The total life of your Spectres that can be taken before yours (used by jinxed juju)", apply = function(val, modList, enemyModList)
+	{ var = "TotalSpectreLife", type = "integer", label = "환영 총 생명력:", ifMod = "takenFromSpectresBeforeYou", ifSkill = "Raise Spectre", includeTransfigured = true, tooltip = "당신보다 먼저 피해를 받을 수 있는 환영의 총 생명력입니다 (저주받은 주주에 사용)", apply = function(val, modList, enemyModList)
 		modList:NewMod("TotalSpectreLife", "BASE", val, "Config")
 	end },
-	{ var = "TotalTotemLife", type = "integer", label = "토템 총 생명력:", ifOption = "conditionHaveTotem", ifMod = "takenFromTotemsBeforeYou", tooltip = "The total life of your Totems (excluding Vaal Rejuvenation Totem) that can be taken before yours (used by totem mastery)", apply = function(val, modList, enemyModList)
+	{ var = "TotalTotemLife", type = "integer", label = "토템 총 생명력:", ifOption = "conditionHaveTotem", ifMod = "takenFromTotemsBeforeYou", tooltip = "당신보다 먼저 피해를 받을 수 있는 토템의 총 생명력입니다 (바알 회춘 토템 제외, 토템 특화에 사용)", apply = function(val, modList, enemyModList)
 		modList:NewMod("TotalTotemLife", "BASE", val, "Config")
 	end },
 	{ var = "TotalRadianceSentinelLife", type = "integer", label = "광휘의 파수꾼 총 생명력", ifMod = "takenFromRadianceSentinelBeforeYou", apply = function(val, modList, enemyModList)
@@ -732,19 +732,19 @@ Huge sets the radius to 11.
 	{ var = "TotalVoidSpawnLife", type = "integer", label = "공허 생성체 총 생명력", ifMod = "takenFromVoidSpawnBeforeYou", apply = function(val, modList, enemyModList)
 		modList:NewMod("TotalVoidSpawnLife", "BASE", val, "Config")
 	end },
-	{ var = "TotalVaalRejuvenationTotemLife", type = "integer", label = "바알 회춘 토템 총 생명력:", ifSkill = { "Vaal Rejuvenation Totem" }, ifMod = "takenFromVaalRejuvenationTotemsBeforeYou", tooltip = "The total life of your Vaal Rejuvenation Totems that can be taken before yours", apply = function(val, modList, enemyModList)
+	{ var = "TotalVaalRejuvenationTotemLife", type = "integer", label = "바알 회춘 토템 총 생명력:", ifSkill = { "Vaal Rejuvenation Totem" }, ifMod = "takenFromVaalRejuvenationTotemsBeforeYou", tooltip = "당신보다 먼저 피해를 받을 수 있는 바알 회춘 토템의 총 생명력입니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("TotalVaalRejuvenationTotemLife", "BASE", val, "Config")
 	end },
 	{ label = "^xAF6025공포의 균형 ^7저주 비활성화:", ifCond = { "SelfCastConductivity", "SelfCastDespair", "SelfCastElementalWeakness", "SelfCastEnfeeble", "SelfCastFlammability", "SelfCastFrostbite", "SelfCastPunishment", "SelfCastTemporalChains", "SelfCastVulnerability" } },
-	{ var = "balanceOfTerrorSelfCastConductivity", type = "check", label = "전도성 자기 자신만", ifSkill = "Conductivity", ifCond = "SelfCastConductivity", tooltip = "Counts Conductivity as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastDespair", type = "check", label = "절망 자기 자신만", ifSkill = "Despair", ifCond = "SelfCastDespair", tooltip = "Counts Despair as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastElementalWeakness", type = "check", label = "원소 약화 자기 자신만", ifSkill = "Elemental Weakness", ifCond = "SelfCastElementalWeakness", tooltip = "Counts Elemental Weakness as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastEnfeeble", type = "check", label = "허약화 자기 자신만", ifSkill = "Enfeeble", ifCond = "SelfCastEnfeeble", tooltip = "Counts Enfeeble as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastFlammability", type = "check", label = "인화성 자기 자신만", ifSkill = "Flammability", ifCond = "SelfCastFlammability", tooltip = "Counts Flammability as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastFrostbite", type = "check", label = "동상 자기 자신만", ifSkill = "Frostbite", ifCond = "SelfCastFrostbite", tooltip = "Counts Frostbite as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastPunishment", type = "check", label = "응징 자기 자신만", ifSkill = "Punishment", ifCond = "SelfCastPunishment", tooltip = "Counts Punishment as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastTemporalChains", type = "check", label = "시간의 사슬 자기 자신만", ifSkill = "Temporal Chains", ifCond = "SelfCastTemporalChains", tooltip = "Counts Temporal Chains as self-cast for Balance of Terror without applying it to enemies." },
-	{ var = "balanceOfTerrorSelfCastVulnerability", type = "check", label = "취약성 자기 자신만", ifSkill = "Vulnerability", ifCond = "SelfCastVulnerability", tooltip = "Counts Vulnerability as self-cast for Balance of Terror without applying it to enemies." },
+	{ var = "balanceOfTerrorSelfCastConductivity", type = "check", label = "전도성 자기 자신만", ifSkill = "Conductivity", ifCond = "SelfCastConductivity", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 전도성을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastDespair", type = "check", label = "절망 자기 자신만", ifSkill = "Despair", ifCond = "SelfCastDespair", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 절망을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastElementalWeakness", type = "check", label = "원소 약화 자기 자신만", ifSkill = "Elemental Weakness", ifCond = "SelfCastElementalWeakness", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 원소 약화를 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastEnfeeble", type = "check", label = "허약화 자기 자신만", ifSkill = "Enfeeble", ifCond = "SelfCastEnfeeble", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 허약화를 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastFlammability", type = "check", label = "인화성 자기 자신만", ifSkill = "Flammability", ifCond = "SelfCastFlammability", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 인화성을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastFrostbite", type = "check", label = "동상 자기 자신만", ifSkill = "Frostbite", ifCond = "SelfCastFrostbite", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 동상을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastPunishment", type = "check", label = "응징 자기 자신만", ifSkill = "Punishment", ifCond = "SelfCastPunishment", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 응징을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastTemporalChains", type = "check", label = "시간의 사슬 자기 자신만", ifSkill = "Temporal Chains", ifCond = "SelfCastTemporalChains", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 시간의 사슬을 자가 시전으로 계산합니다." },
+	{ var = "balanceOfTerrorSelfCastVulnerability", type = "check", label = "취약성 자기 자신만", ifSkill = "Vulnerability", ifCond = "SelfCastVulnerability", tooltip = "적에게 적용하지 않고 공포의 균형을 위해 취약성을 자가 시전으로 계산합니다." },
 	-- Section: Map modifiers/curses
 	{ section = "지도 속성 부여 및 플레이어 디버프", col = 2 },
 	{ var = "multiplierSextant", type = "count", label = "해당 지역에 영향을 주는 육분의 수", ifMult = "Sextant", apply = function(val, modList, enemyModList)
@@ -767,43 +767,43 @@ Huge sets the radius to 11.
 		modList:NewMod("HasPvpScaling", "FLAG", true, "Config")
 	end },
 	{ label = "플레이어에 걸린 저주:" },
-	{ var = "playerCursedWithAssassinsMark", type = "count", label = "암살자의 표식:", tooltip = "Sets the level of Assassin's Mark to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithAssassinsMark", type = "count", label = "암살자의 표식:", tooltip = "플레이어에게 적용할 암살자의 표식 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "AssassinsMark", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithConductivity", type = "count", label = "전도성:", tooltip = "Sets the level of Conductivity to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithConductivity", type = "count", label = "전도성:", tooltip = "플레이어에게 적용할 전도성 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Conductivity", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithDespair", type = "count", label = "절망:", tooltip = "Sets the level of Despair to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithDespair", type = "count", label = "절망:", tooltip = "플레이어에게 적용할 절망 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Despair", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithElementalWeakness", type = "count", label = "원소 약화:", tooltip = "Sets the level of Elemental Weakness to apply to the player.\nIn mid tier maps, 'of Elemental Weakness' applies level 10.\nIn high tier maps, 'of Elemental Weakness' applies level 15.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithElementalWeakness", type = "count", label = "원소 약화:", tooltip = "플레이어에게 적용할 원소 약화 레벨을 설정합니다.\n중간 등급 지도에서 '원소 약화'는 레벨 10이 적용됩니다.\n높은 등급 지도에서 '원소 약화'는 레벨 15가 적용됩니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "ElementalWeakness", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithEnfeeble", type = "count", label = "허약화:", tooltip = "Sets the level of Enfeeble to apply to the player.\nIn mid tier maps, 'of Enfeeblement' applies level 10.\nIn high tier maps, 'of Enfeeblement' applies level 15.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithEnfeeble", type = "count", label = "허약화:", tooltip = "플레이어에게 적용할 허약화 레벨을 설정합니다.\n중간 등급 지도에서 '허약화'는 레벨 10이 적용됩니다.\n높은 등급 지도에서 '허약화'는 레벨 15가 적용됩니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Enfeeble", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithFlammability", type = "count", label = "인화성:", tooltip = "Sets the level of Flammability to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithFlammability", type = "count", label = "인화성:", tooltip = "플레이어에게 적용할 인화성 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Flammability", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithFrostbite", type = "count", label = "동상:", tooltip = "Sets the level of Frostbite to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithFrostbite", type = "count", label = "동상:", tooltip = "플레이어에게 적용할 동상 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Frostbite", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithPoachersMark", type = "count", label = "밀렵꾼의 표식:", tooltip = "Sets the level of Poacher's Mark to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithPoachersMark", type = "count", label = "밀렵꾼의 표식:", tooltip = "플레이어에게 적용할 밀렵꾼의 표식 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "PoachersMark", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithProjectileWeakness", type = "count", label = "투사체 약화:", tooltip = "Sets the level of Projectile Weakness to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithProjectileWeakness", type = "count", label = "투사체 약화:", tooltip = "플레이어에게 적용할 투사체 약화 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "ProjectileWeakness", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithPunishment", type = "count", label = "응징:", tooltip = "Sets the level of Punishment to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithPunishment", type = "count", label = "응징:", tooltip = "플레이어에게 적용할 응징 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Punishment", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithTemporalChains", type = "count", label = "시간의 사슬:", tooltip = "Sets the level of Temporal Chains to apply to the player.\nIn mid tier maps, 'of Temporal Chains' applies level 10.\nIn high tier maps, 'of Temporal Chains' applies level 15.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithTemporalChains", type = "count", label = "시간의 사슬:", tooltip = "플레이어에게 적용할 시간의 사슬 레벨을 설정합니다.\n중간 등급 지도에서 '시간의 사슬'은 레벨 10이 적용됩니다.\n높은 등급 지도에서 '시간의 사슬'은 레벨 15가 적용됩니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "TemporalChains", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithVulnerability", type = "count", label = "취약성:", tooltip = "Sets the level of Vulnerability to apply to the player.\nIn mid tier maps, 'of Vulnerability' applies level 10.\nIn high tier maps, 'of Vulnerability' applies level 15.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithVulnerability", type = "count", label = "취약성:", tooltip = "플레이어에게 적용할 취약성 레벨을 설정합니다.\n중간 등급 지도에서 '취약성'은 레벨 10이 적용됩니다.\n높은 등급 지도에서 '취약성'은 레벨 15가 적용됩니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "Vulnerability", level = val, applyToPlayer = true })
 	end },
-	{ var = "playerCursedWithWarlordsMark", type = "count", label = "전쟁군주의 표식:", tooltip = "Sets the level of Warlord's Mark to apply to the player.", apply = function(val, modList, enemyModList)
+	{ var = "playerCursedWithWarlordsMark", type = "count", label = "전쟁군주의 표식:", tooltip = "플레이어에게 적용할 전쟁군주의 표식 레벨을 설정합니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("ExtraCurse", "LIST", { skillId = "WarlordsMark", level = val, applyToPlayer = true })
 	end },
 
@@ -845,7 +845,7 @@ Huge sets the radius to 11.
 	{ var = "overrideBlitzCharges", type = "count", label = "전격 충전 수 (최대가 아닌 경우):", ifOption = "useBlitzCharges", apply = function(val, modList, enemyModList)
 		modList:NewMod("BlitzCharges", "OVERRIDE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "multiplierGaleForce", type = "count", label = "돌풍의 힘 수:", ifFlag = "Condition:CanGainGaleForce", tooltip = "Base maximum Gale Force is 10.", apply = function(val, modList, enemyModList)
+	{ var = "multiplierGaleForce", type = "count", label = "돌풍의 힘 수:", ifFlag = "Condition:CanGainGaleForce", tooltip = "돌풍의 힘 기본 최대치는 10입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("Multiplier:GaleForce", "BASE", val, "Config", { type = "IgnoreCond" }, { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanGainGaleForce" })
 	end },
 	{ var = "overrideInspirationCharges", type = "countAllowZero", label = "영감 충전 수 (최대가 아닌 경우):", ifMult = "InspirationCharge", apply = function(val, modList, enemyModList)
@@ -874,8 +874,8 @@ Huge sets the radius to 11.
 			modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:alwaysFinalRepeat", "FLAG", true, "Config") })
 		end
 	end },
-	{ var = "ruthlessSupportMode", type = "list", label = "무자비 보조 모드:", ifSkill = "Ruthless", tooltip = "Controls how the hit/ailment effect of Ruthless Support is calculated:\n\tAverage: damage is based on the average application\n\tMax Effect: damage is based on maximum effect", list = {{val="AVERAGE",label="평균"},{val="MAX",label="최대 효과"}} },
-	{ var = "ChanceToIgnoreEnemyPhysicalDamageReductionMode", type = "list", label = "물리 피해 감소 무시 확률 모드:", ifMod = "ChanceToIgnoreEnemyPhysicalDamageReduction", tooltip = "Controls how the chance on hit to ignore enemy physical damage reduction is calculated:\n\tMinimum: never ignores unless chance is at least 100%\n\tAverage: damage is based on the average application\n\tMax Effect: always ignores if you have any chance", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대 효과"}}, defaultIndex = 2 },
+	{ var = "ruthlessSupportMode", type = "list", label = "무자비 보조 모드:", ifSkill = "Ruthless", tooltip = "무자비 보조의 적중/상태 이상 효과 계산 방식을 제어합니다:\n\t평균: 평균 적용 기반 피해\n\t최대 효과: 최대 효과 기반 피해", list = {{val="AVERAGE",label="평균"},{val="MAX",label="최대 효과"}} },
+	{ var = "ChanceToIgnoreEnemyPhysicalDamageReductionMode", type = "list", label = "물리 피해 감소 무시 확률 모드:", ifMod = "ChanceToIgnoreEnemyPhysicalDamageReduction", tooltip = "적중 시 적의 물리 피해 감소를 무시할 확률 계산 방식을 제어합니다:\n\t최소: 확률이 100% 이상이 아니면 무시하지 않음\n\t평균: 평균 적용 기반 피해\n\t최대 효과: 확률이 있으면 항상 무시", list = {{val="MIN",label="최소"},{val="AVERAGE",label="평균"},{val="MAX",label="최대 효과"}}, defaultIndex = 2 },
 	{ var = "overrideBloodCharges", type = "countAllowZero", label = "핏빛 충전 수 (최대가 아닌 경우):", ifMult = "BloodCharge", apply = function(val, modList, enemyModList)
 		modList:NewMod("BloodCharges", "OVERRIDE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
@@ -913,30 +913,30 @@ Huge sets the radius to 11.
 		modList:NewMod("Condition:Lifetap", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("FlaskLifeRecovery", "INC", 20, "Lifetap")
 	end },
-	{ var = "buffOnslaught", type = "check", label = "맹공 상태인가요?", tooltip = "In addition to allowing any 'while you have Onslaught' modifiers to apply,\nthis will enable the Onslaught buff itself. (Grants 20% increased Attack, Cast, and Movement Speed)", apply = function(val, modList, enemyModList)
+	{ var = "buffOnslaught", type = "check", label = "맹공 상태인가요?", tooltip = "'맹공 상태에서' 속성 부여를 적용하는 것 외에도,\n맹공 버프 자체를 활성화합니다. (공격, 시전, 이동 속도 20% 증가)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Onslaught", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffArcaneSurge", type = "check", label = "비전 쇄도 상태인가요?", tooltip = "In addition to allowing any 'while you have Arcane Surge' modifiers to apply,\nthis will enable the Arcane Surge buff itself. (Grants 20% increased cast speed and 30% increased Mana Regeneration rate)", apply = function(val, modList, enemyModList)
+	{ var = "buffArcaneSurge", type = "check", label = "비전 쇄도 상태인가요?", tooltip = "'비전 쇄도 상태에서' 속성 부여를 적용하는 것 외에도,\n비전 쇄도 버프 자체를 활성화합니다. (시전 속도 20% 증가 및 마나 재생 속도 30% 증가)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ArcaneSurge", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "minionBuffOnslaught", type = "check", label = "소환수가 맹공 상태인가요?", ifFlag = "haveMinion", tooltip = "In addition to allowing any 'while your minions have Onslaught' modifiers to apply,\nthis will enable the Onslaught buff itself. (Grants 20% increased Attack, Cast, and Movement Speed)", apply = function(val, modList, enemyModList)
+	{ var = "minionBuffOnslaught", type = "check", label = "소환수가 맹공 상태인가요?", ifFlag = "haveMinion", tooltip = "'소환수가 맹공 상태에서' 속성 부여를 적용하는 것 외에도,\n맹공 버프 자체를 활성화합니다. (공격, 시전, 이동 속도 20% 증가)", apply = function(val, modList, enemyModList)
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:Onslaught", "FLAG", true, "Config", { type = "Condition", var = "Combat" }) })
 	end },
-	{ var = "buffUnholyMight", type = "check", label = "사악한 힘 상태인가요?", tooltip = "This will enable the Unholy Might buff.\n(Grants 100% of Physical Damage converted to ^xD02090Chaos ^7Damage)\n(25% chance to apply Wither on Hit)", apply = function(val, modList, enemyModList)
+	{ var = "buffUnholyMight", type = "check", label = "사악한 힘 상태인가요?", tooltip = "불경한 힘 버프를 활성화합니다.\n(물리 피해의 100%를 ^xD02090카오스 ^7피해로 전환)\n(적중 시 25% 확률로 시들음 적용)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:UnholyMight", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 		modList:NewMod("Condition:CanWither", "FLAG", true, "Unholy Might", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "minionbuffUnholyMight", type = "check", label = "소환수가 사악한 힘 상태인가요?", ifFlag = "haveMinion", tooltip = "This will enable the Unholy Might buff on your minions.\n(Grants 100% of Physical Damage converted to ^xD02090Chaos ^7Damage)\n(25% chance to apply Wither on Hit)", apply = function(val, modList, enemyModList)
+	{ var = "minionbuffUnholyMight", type = "check", label = "소환수가 사악한 힘 상태인가요?", ifFlag = "haveMinion", tooltip = "소환수에 불경한 힘 버프를 활성화합니다.\n(물리 피해의 100%를 ^xD02090카오스 ^7피해로 전환)\n(적중 시 25% 확률로 시들음 적용)", apply = function(val, modList, enemyModList)
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:UnholyMight", "FLAG", true, "Config", { type = "Condition", var = "Combat" }) })
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:CanWither", "FLAG", true, "Unholy Might", { type = "Condition", var = "Combat" }) })
 	end },
-	{ var = "buffChaoticMight", type = "check", label = "혼돈의 힘 상태인가요?", tooltip = "This will enable the Chaotic Might buff.\n(Grants 30% of Physical Damage as Extra ^xD02090Chaos ^7Damage)", apply = function(val, modList, enemyModList)
+	{ var = "buffChaoticMight", type = "check", label = "혼돈의 힘 상태인가요?", tooltip = "혼돈의 힘 버프를 활성화합니다.\n(물리 피해의 30%를 추가 ^xD02090카오스 ^7피해로 획득)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:ChaoticMight", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffSacrificialZeal", type = "check", label = "희생적 열정 상태인가요?", ifFlag = "SacrificialZeal", tooltip = "This will enable the Sacrificial Zeal buff.\n(Grants 25% of the skill's mana cost as Physical Damage and causes you to take physical damage over time equal to a percentage of the skill's mana cost.)", apply = function(val, modList, enemyModList)
+	{ var = "buffSacrificialZeal", type = "check", label = "희생적 열정 상태인가요?", ifFlag = "SacrificialZeal", tooltip = "희생적 열정 버프를 활성화합니다.\n(스킬 마나 비용의 25%를 물리 피해로 부여하고, 스킬 마나 비용의 일정 비율에 해당하는 물리 지속 피해를 받습니다.)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:SacrificialZeal", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "minionbuffChaoticMight", type = "check", label = "소환수가 혼돈의 힘 상태인가요?", ifFlag = "haveMinion", tooltip = "This will enable the Chaotic Might buff on your minions.\n(Grants 30% of Physical Damage as Extra ^xD02090Chaos ^7Damage)", apply = function(val, modList, enemyModList)
+	{ var = "minionbuffChaoticMight", type = "check", label = "소환수가 혼돈의 힘 상태인가요?", ifFlag = "haveMinion", tooltip = "소환수에 혼돈의 힘 버프를 활성화합니다.\n(물리 피해의 30%를 추가 ^xD02090카오스 ^7피해로 획득)", apply = function(val, modList, enemyModList)
 		modList:NewMod("MinionModifier", "LIST", { mod = modLib.createMod("Condition:ChaoticMight", "FLAG", true, "Config", { type = "Condition", var = "Combat" }) })
 	end },
 	{ var = "buffPhasing", type = "check", label = "위상 상태인가요?", ifCond = "Phasing", apply = function(val, modList, enemyModList)
@@ -945,19 +945,19 @@ Huge sets the radius to 11.
 	{ var = "buffFortification", type = "check", label = "방어 상승 상태인가요?", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Fortified", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "overrideFortification", type = "count", label = "방어 상승 중첩 수 (최대가 아닌 경우):", ifFlag = "Condition:Fortified", tooltip = "You have 1% less damage taken from hits per stack of fortification:\nHas a default cap of 20 stacks.", apply = function(val, modList, enemyModList)
+	{ var = "overrideFortification", type = "count", label = "방어 상승 중첩 수 (최대가 아닌 경우):", ifFlag = "Condition:Fortified", tooltip = "방어 상승 중첩당 적중으로부터 받는 피해 1% 감폭:\n기본 상한은 20 중첩입니다.", apply = function(val, modList, enemyModList)
 		modList:NewMod("FortificationStacks", "OVERRIDE", val, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffTailwind", type = "check", label = "순풍 상태인가요?", tooltip = "In addition to allowing any 'while you have Tailwind' modifiers to apply,\nthis will enable the Tailwind buff itself. (Grants 8% increased Action Speed)", apply = function(val, modList, enemyModList)
+	{ var = "buffTailwind", type = "check", label = "순풍 상태인가요?", tooltip = "'순풍 상태에서' 속성 부여를 적용하는 것 외에도,\n순풍 버프 자체를 활성화합니다. (행동 속도 8% 증가)", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Tailwind", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffAdrenaline", type = "check", label = "아드레날린 상태인가요?", tooltip = "This will enable the Adrenaline buff, which grants:\n\t100% increased Damage\n\t25% increased Attack, Cast and Movement Speed\n\t10% additional Physical Damage Reduction", apply = function(val, modList, enemyModList)
+	{ var = "buffAdrenaline", type = "check", label = "아드레날린 상태인가요?", tooltip = "아드레날린 버프를 활성화합니다:\n\t피해 100% 증가\n\t공격, 시전, 이동 속도 25% 증가\n\t물리 피해 감소 10% 추가", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:Adrenaline", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "conditionChangedStanceLastSecond", type = "check", label = "지난 1초간 자세를 변경했나요?", ifCond = "StanceChangeLastSecond", tooltip = "'Changing Stance' occurs by activating a Stance skill while it's toggled on", apply = function(val, modList, enemyModList)
+	{ var = "conditionChangedStanceLastSecond", type = "check", label = "지난 1초간 자세를 변경했나요?", ifCond = "StanceChangeLastSecond", tooltip = "'자세 변경'은 자세 스킬이 켜진 상태에서 다시 활성화하면 발생합니다", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:StanceChangeLastSecond", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
-	{ var = "buffAlchemistsGenius", type = "check", label = "연금술사의 천재성 상태인가요?", ifFlag = "Condition:CanHaveAlchemistGenius", tooltip = "This will enable the Alchemist's Genius buff:\n20% increased Flask Charges gained\n10% increased effect of Flasks", apply = function(val, modList, enemyModList)
+	{ var = "buffAlchemistsGenius", type = "check", label = "연금술사의 천재성 상태인가요?", ifFlag = "Condition:CanHaveAlchemistGenius", tooltip = "연금술사의 천재성 버프를 활성화합니다:\n플라스크 충전 획득 20% 증가\n플라스크 효과 10% 증가", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:AlchemistsGenius", "FLAG", true, "Config", { type = "Condition", var = "Combat" }, { type = "Condition", var = "CanHaveAlchemistGenius" })
 	end },
 	{ var = "buffVaalArcLuckyHits", type = "check", label = "바알 전기불꽃의 행운 버프가 있나요?", ifFlag = "Condition:CanBeLucky",  tooltip = "Causes Damage with Arc Hits to be rolled twice, and the maximum roll used.", apply = function(val, modList, enemyModList)

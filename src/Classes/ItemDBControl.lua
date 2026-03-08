@@ -24,9 +24,9 @@ local ItemDBClass = newClass("ItemDBControl", "ListControl", function(self, anch
 	self.sortOrder = { }
 	self.sortMode = "NAME"
 	self.leaguesAndTypesLoaded = false
-	self.leagueList = { "Any league", "No league" }
-	self.typeList = { "Any type", "Armour", "Jewellery", "One Handed Melee", "Two Handed Melee" }
-	self.slotList = { "Any slot", "Weapon 1", "Weapon 2", "Helmet", "Body Armour", "Gloves", "Boots", "Amulet", "Ring", "Belt", "Jewel", "Flask", "Graft 1", "Graft 2" }
+	self.leagueList = { "모든 리그", "리그 없음" }
+	self.typeList = { "모든 유형", "방어구", "장신구", "한손 근접", "양손 근접" }
+	self.slotList = { "모든 슬롯", "무기 1", "무기 2", "투구", "갑옷", "장갑", "장화", "목걸이", "반지", "허리띠", "주얼", "플라스크", "이식 1", "이식 2" }
 	local baseY = dbType == "RARE" and -22 or -62
 	self.controls.slot = new("DropDownControl", {"BOTTOMLEFT",self,"TOPLEFT"}, {0, baseY, 179, 18}, self.slotList, function(index, value)
 		self.listBuildFlag = true
@@ -41,17 +41,17 @@ local ItemDBClass = newClass("ItemDBControl", "ListControl", function(self, anch
 		self.controls.league = new("DropDownControl", {"LEFT",self.controls.sort,"RIGHT"}, {2, 0, 179, 18}, self.leagueList, function(index, value)
 			self.listBuildFlag = true
 		end)
-		self.controls.requirement = new("DropDownControl", {"LEFT",self.controls.sort,"BOTTOMLEFT"}, {0, 11, 179, 18}, { "Any requirements", "Current level", "Current attributes", "Current useable" }, function(index, value)
+		self.controls.requirement = new("DropDownControl", {"LEFT",self.controls.sort,"BOTTOMLEFT"}, {0, 11, 179, 18}, { "모든 요구사항", "현재 레벨", "현재 능력치", "현재 사용 가능" }, function(index, value)
 			self.listBuildFlag = true
 		end)
-		self.controls.obtainable = new("DropDownControl", {"LEFT",self.controls.requirement,"RIGHT"}, {2, 0, 179, 18}, { "Obtainable", "Any source", "Unobtainable", "Vendor Recipe", "Upgraded", "Boss Item", "Corruption"}, function(index, value)
+		self.controls.obtainable = new("DropDownControl", {"LEFT",self.controls.requirement,"RIGHT"}, {2, 0, 179, 18}, { "획득 가능", "모든 출처", "획득 불가", "상인 레시피", "업그레이드", "보스 아이템", "타락"}, function(index, value)
 			self.listBuildFlag = true
 		end)
 	end
 	self.controls.search = new("EditControl", {"BOTTOMLEFT",self,"TOPLEFT"}, {0, -2, 258, 18}, "", "Search", "%c", 100, function()
 		self.listBuildFlag = true
 	end, nil, nil, true)
-	self.controls.searchMode = new("DropDownControl", {"LEFT",self.controls.search,"RIGHT"}, {2, 0, 100, 18}, { "Anywhere", "Names", "Modifiers" }, function(index, value)
+	self.controls.searchMode = new("DropDownControl", {"LEFT",self.controls.search,"RIGHT"}, {2, 0, 100, 18}, { "전체", "이름", "속성 부여" }, function(index, value)
 		self.listBuildFlag = true
 	end)
 	self:BuildSortOrder()
@@ -276,7 +276,7 @@ function ItemDBClass:ListBuilder()
 	end)
 
 	self.list = list
-	self.defaultText = "^7No items found that match those filters."
+	self.defaultText = "^7해당 필터에 맞는 아이템을 찾을 수 없습니다."
 end
 
 function ItemDBClass:Draw(viewPort)

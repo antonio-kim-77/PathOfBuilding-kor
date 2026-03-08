@@ -10,10 +10,10 @@ local t_remove = table.remove
 local SharedItemListClass = newClass("SharedItemListControl", "ListControl", function(self, anchor, rect, itemsTab, forceTooltip)
 	self.ListControl(anchor, rect, 16, "VERTICAL", true, main.sharedItemList, forceTooltip)
 	self.itemsTab = itemsTab
-	self.label = "^7Shared items:"
-	self.defaultText = "^x7F7F7FThis is a list of items that will be shared between all of\nyour builds.\nYou can add items to this list by dragging them from\none of the other lists."
+	self.label = "^7공유 아이템:"
+	self.defaultText = "^x7F7F7F이 목록은 모든 빌드에서 공유되는 아이템 목록입니다.\n다른 목록에서 아이템을 드래그하여 이 목록에 추가할 수\n있습니다."
 	self.dragTargetList = { }
-	self.controls.delete = new("ButtonControl", {"BOTTOMRIGHT",self,"TOPRIGHT"}, {0, -2, 60, 18}, "Delete", function()
+	self.controls.delete = new("ButtonControl", {"BOTTOMRIGHT",self,"TOPRIGHT"}, {0, -2, 60, 18}, "삭제", function()
 		self:OnSelDelete(self.selIndex, self.selValue)
 	end)
 	self.controls.delete.enabled = function()
@@ -64,7 +64,7 @@ function SharedItemListClass:OnSelCopy(index, item)
 end
 
 function SharedItemListClass:OnSelDelete(index, item)
-	main:OpenConfirmPopup("Delete Item", "Are you sure you want to remove '"..item.name.."' from the shared item list?", "Delete", function()
+	main:OpenConfirmPopup("아이템 삭제", "'"..item.name.."'을(를) 공유 아이템 목록에서 정말 제거하시겠습니까?", "삭제", function()
 		t_remove(self.list, index)
 		self.selIndex = nil
 		self.selValue = nil
