@@ -32,4 +32,16 @@ jobs:
         run: cd src; luajit HeadlessWrapper.lua
       - run: git config --global --add safe.directory $(pwd)
       - name: Check if the generated ModCache is different
-        run: git diff --exit-code src/Data/ModCache.lua
+        id: check_diff
+        run: |
+          if git diff --exit-code src/Data/ModCache.lua; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      - name: Upload regenerated ModCache
+        if: steps.check_diff.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ModCache
+          path: src/Data/ModCache.lua
