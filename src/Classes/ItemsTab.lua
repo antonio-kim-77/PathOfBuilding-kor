@@ -2362,7 +2362,7 @@ function ItemsTabClass:AppendAnointTooltip(tooltip, node, actionText)
 	local header
 	if node then
 		if self.build.spec.allocNodes[node.id] then
-			tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 이 노드는 이미 트리에 할당되어 있으므로 변경 사항이 없습니다.")
+			tooltip:AddLine(14, "^7"..actionText.." "..(node.dn_kr or node.dn).." - 이 노드는 이미 트리에 할당되어 있으므로 변경 사항이 없습니다.")
 			return
 		end
 
@@ -2370,13 +2370,13 @@ function ItemsTabClass:AppendAnointTooltip(tooltip, node, actionText)
 		if curAnoints and #curAnoints > 0 then
 			for _, curAnoint in ipairs(curAnoints) do
 				if curAnoint == node.dn then
-					tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 이 노드는 이미 도유되어 있으므로 변경 사항이 없습니다.")
+					tooltip:AddLine(14, "^7"..actionText.." "..(node.dn_kr or node.dn).." - 이 노드는 이미 도유되어 있으므로 변경 사항이 없습니다.")
 					return
 				end
 			end
 		end
 
-		header = "^7"..actionText.." "..node.dn.." 적용 시 효과: "
+		header = "^7"..actionText.." "..(node.dn_kr or node.dn).." 적용 시 효과: "
 	else
 		header = "^7"..actionText.." 없음 적용 시 효과: "
 	end
@@ -2385,7 +2385,7 @@ function ItemsTabClass:AppendAnointTooltip(tooltip, node, actionText)
 	local outputNew = calcFunc({ repSlotName = "Amulet", repItem = self:anointItem(node) })
 	local numChanges = self.build:AddStatComparesToTooltip(tooltip, outputBase, outputNew, header)
 	if node and numChanges == 0 then
-		tooltip:AddLine(14, "^7"..actionText.." "..node.dn.." - 변경 사항이 없습니다.")
+		tooltip:AddLine(14, "^7"..actionText.." "..(node.dn_kr or node.dn).." - 변경 사항이 없습니다.")
 	end
 end
 
@@ -2395,9 +2395,9 @@ end
 function ItemsTabClass:AppendAddedNotableTooltip(tooltip, node)
 	local calcFunc, calcBase = self.build.calcsTab:GetMiscCalculator()
 	local outputNew = calcFunc({ addNodes = { [node] = true } })
-	local numChanges = self.build:AddStatComparesToTooltip(tooltip, calcBase, outputNew, "^7"..node.dn.." 할당 시 효과: ")
+	local numChanges = self.build:AddStatComparesToTooltip(tooltip, calcBase, outputNew, "^7"..(node.dn_kr or node.dn).." 할당 시 효과: ")
 	if numChanges == 0 then
-		tooltip:AddLine(14, "^7"..node.dn.." 할당 - 변경 사항이 없습니다.")
+		tooltip:AddLine(14, "^7"..(node.dn_kr or node.dn).." 할당 - 변경 사항이 없습니다.")
 	end
 end
 
@@ -2411,7 +2411,7 @@ function ItemsTabClass:AnointDisplayItem(enchantSlot)
 	local function saveLabel()
 		local node = controls.notableDB.selValue
 		if node then
-			return "도유 " .. node.dn
+			return "도유 " .. (node.dn_kr or node.dn)
 		end
 		local curAnoints = self:getAnoint(self.displayItem)
 		if curAnoints and #curAnoints >= self.anointEnchantSlot then
@@ -3607,8 +3607,8 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 			for _, name in ipairs(item.jewelData.clusterJewelNotables) do
 				local node = self.build.spec.tree.clusterNodeMap[name]
 				if node then
-					tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. node.dn, "FONTIN SC")
-					for _, stat in ipairs(node.sd) do
+					tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. (node.dn_kr or node.dn), "FONTIN SC")
+					for _, stat in ipairs(node.sd_kr or node.sd) do
 						tooltip:AddLine(fontSizeBig, "^x7F7F7F"..stat, "FONTIN SC")
 					end
 				end
@@ -3616,8 +3616,8 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 		elseif item.jewelData.clusterJewelKeystone then
 			local node = self.build.spec.tree.clusterNodeMap[item.jewelData.clusterJewelKeystone]
 			if node then
-				tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. node.dn, "FONTIN SC")
-				for _, stat in ipairs(node.sd) do
+				tooltip:AddLine(fontSizeBig, colorCodes.MAGIC .. (node.dn_kr or node.dn), "FONTIN SC")
+				for _, stat in ipairs(node.sd_kr or node.sd) do
 					tooltip:AddLine(fontSizeBig, "^x7F7F7F"..stat, "FONTIN SC")
 				end
 			end

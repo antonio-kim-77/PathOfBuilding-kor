@@ -878,7 +878,7 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 					t_insert(descriptionsAndReminders, node.reminderText[1])
 				end
 				t_insert(modGroups, {
-				label = node.dn .. "                                                " .. table.concat(node.sd, ","),
+				label = (node.dn_kr or node.dn) .. "                                                " .. table.concat(node.sd_kr or node.sd, ","),
 				descriptions = descriptionsAndReminders,
 				id = id,
 				})
@@ -1090,7 +1090,7 @@ function TreeTabClass:BuildPowerReportList(currentStat)
 			end
 
 			t_insert(report, {
-				name = node.dn,
+				name = node.dn_kr or node.dn,
 				power = nodePower,
 				powerStr = nodePowerStr,
 				pathPower = pathPower,
@@ -1121,7 +1121,7 @@ function TreeTabClass:BuildPowerReportList(currentStat)
 			end
 
 			t_insert(report, {
-				name = node.dn,
+				name = node.dn_kr or node.dn,
 				power = nodePower,
 				powerStr = nodePowerStr,
 				pathPower = 0,

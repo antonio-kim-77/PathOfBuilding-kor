@@ -57,9 +57,15 @@ function NotableDBClass:DoesNotableMatchFilters(node)
 		local found = false
 		local mode = self.controls.searchMode.selIndex
 		if mode == 1 or mode == 2 then
-			local err, match = PCall(string.matchOrPattern, node.dn:lower(), searchStr)
+			local err, match = PCall(string.matchOrPattern, (node.dn_kr or node.dn):lower(), searchStr)
 			if not err and match then
 				found = true
+			end
+			if not found then
+				err, match = PCall(string.matchOrPattern, node.dn:lower(), searchStr)
+				if not err and match then
+					found = true
+				end
 			end
 		end
 		if mode == 1 or mode == 3 then
@@ -227,12 +233,12 @@ function NotableDBClass:GetRowValue(column, index, node)
 				local scaledPower = node.measuredPower / self.sortMaxPower
 				local powerRed = scaledPower * (0xFF - 0x80) + 0x80
 				local powerColor = s_format("^x%X8080", powerRed)
-				return powerColor..node.dn
+				return powerColor..(node.dn_kr or node.dn)
 			else
-				return "^x808080"..node.dn
+				return "^x808080"..(node.dn_kr or node.dn)
 			end
 		else
-			return colorCodes.CRAFTED..node.dn
+			return colorCodes.CRAFTED..(node.dn_kr or node.dn)
 		end
 	end
 end

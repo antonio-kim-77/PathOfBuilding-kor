@@ -408,7 +408,7 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 			if nodeId then
 				local nodeIdNumber = tonumber(nodeId)
 				local node = build.spec.nodes[nodeIdNumber] or build.spec.tree.nodes[nodeIdNumber] or build.latestTree.nodes[nodeIdNumber]
-				row.sourceName = node.dn
+				row.sourceName = node.dn_kr or node.dn
 				row.sourceNameNode = node
 			elseif tattooNodeId then
 				row.sourceName = build.spec.tree.tattoo.idMap[tattooNodeId]

@@ -111,8 +111,18 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			class.classes = class.ascendancies
 		end
 		class.classes[0] = { name = "None" }
+		-- Restore English class name for internal calculations
+		if data.korTrans and data.korTrans.nodeNamesToEng and data.korTrans.nodeNamesToEng[class.name] then
+			class.name_kr = class.name
+			class.name = data.korTrans.nodeNamesToEng[class.name]
+		end
 		self.classNameMap[class.name] = classId
 		for ascendClassId, ascendClass in pairs(class.classes) do
+			-- Restore English ascendancy name for internal use
+			if data.korTrans and data.korTrans.nodeNamesToEng and ascendClass.name and data.korTrans.nodeNamesToEng[ascendClass.name] then
+				ascendClass.name_kr = ascendClass.name
+				ascendClass.name = data.korTrans.nodeNamesToEng[ascendClass.name]
+			end
 			self.ascendNameMap[ascendClass.id or ascendClass.name] = {
 				classId = classId,
 				class = class,
@@ -466,7 +476,13 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			node.g = node.group
 			node.o = node.orbit
 			node.oidx = node.orbitIndex
-			node.dn = node.name
+			-- Restore English display name for internal calculations; keep Korean for UI
+			if data.korTrans and data.korTrans.nodeNamesToEng and data.korTrans.nodeNamesToEng[node.name] then
+				node.dn = data.korTrans.nodeNamesToEng[node.name]
+				node.dn_kr = node.name
+			else
+				node.dn = node.name
+			end
 			node.sd = node.stats
 			node.passivePointsGranted = node.grantedPassivePoints or 0
 		end

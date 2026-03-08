@@ -1049,11 +1049,18 @@ function PassiveTreeViewClass:DoesNodeMatchSearchParams(node)
 		return false
 	end
 
-	-- Check node name
+	-- Check node name (search both English and Korean names)
 	err, needMatches = PCall(search, node.dn:lower(), needMatches)
 	if err then return false end
 	if #needMatches == 0 then
 		return true
+	end
+	if node.dn_kr then
+		err, needMatches = PCall(search, node.dn_kr:lower(), needMatches)
+		if err then return false end
+		if #needMatches == 0 then
+			return true
+		end
 	end
 
 	-- Check node description
@@ -1111,9 +1118,9 @@ function PassiveTreeViewClass:AddNodeName(tooltip, node, build)
 	else
 		tooltip.tooltipHeader = tooltipMap[node.type] or "UNKNOWN"
 	end
-	local nodeName = node.dn
+	local nodeName = node.dn_kr or node.dn
 	if main.showFlavourText then
-		nodeName = "^xF8E6CA" .. node.dn
+		nodeName = "^xF8E6CA" .. (node.dn_kr or node.dn)
 	end
 	tooltip.center = true
 	tooltip:AddLine(24, nodeName..(launch.devModeAlt and " ["..node.id.."]" or ""), "FONTIN")
