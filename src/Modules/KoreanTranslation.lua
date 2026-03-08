@@ -9145,7 +9145,7 @@ function KoreanTranslation.translateGem(name)
 end
 
 function KoreanTranslation.translateStat(stat)
-	return KoreanTranslation.statTranslations[stat] or stat
+	return KoreanTranslation.statTranslations[stat] or KoreanTranslation.statTranslations[stat:gsub("\n", "\\n")] or stat
 end
 
 function KoreanTranslation.translateItemName(name)
