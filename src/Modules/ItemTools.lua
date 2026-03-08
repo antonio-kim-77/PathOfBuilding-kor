@@ -121,6 +121,13 @@ end
 
 function itemLib.formatModLine(modLine, dbMode)
 	local line = (not dbMode and modLine.range and itemLib.applyRange(modLine.line, modLine.range, modLine.valueScalar)) or modLine.line
+	-- Apply Korean translation for display
+	if data and data.korTrans then
+		local translated = data.korTrans.translateStat(line)
+		if translated ~= line then
+			line = translated
+		end
+	end
 	if line:match("^%+?0%%? ") or (line:match(" %+?0%%? ") and not line:match("0 to [1-9]")) or line:match(" 0%-0 ") or line:match(" 0 to 0 ") then -- Hack to hide 0-value modifiers
 		return
 	end
