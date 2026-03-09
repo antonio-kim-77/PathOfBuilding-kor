@@ -176,14 +176,14 @@ function CalcBreakdownClass:AddBreakdownSection(sectionData)
 		local section = {
 			type = "TABLE",
 			rowList = breakdown.reservations,
-			colList = { 
-				{ label = "Skill", key = "skillName" },
-				{ label = "Base", key = "base" },
-				{ label = "MCM", key = "mult" },
-				{ label = "More/less", key = "more" },
-				{ label = "Inc/red", key = "inc" },
-				{ label = "Efficiency", key = "efficiency" },
-				{ label = "Reservation", key = "total" },
+			colList = {
+				{ label = "스킬", key = "skillName" },
+				{ label = "기본", key = "base" },
+				{ label = "비용배율", key = "mult" },
+				{ label = "증폭/감폭", key = "more" },
+				{ label = "증가/감소", key = "inc" },
+				{ label = "효율", key = "efficiency" },
+				{ label = "점유", key = "total" },
 			}
 		}
 		t_insert(self.sectionList, section)
@@ -193,15 +193,15 @@ function CalcBreakdownClass:AddBreakdownSection(sectionData)
 		local section = {
 			type = "TABLE",
 			rowList = breakdown.damageTypes,
-			colList = { 
-				{ label = "From", key = "source", right = true },
-				{ label = "Base", key = "base" },
-				{ label = "Inc/red", key = "inc" },
-				{ label = "More/less", key = "more" },
-				{ label = "Converted Damage", key = "convSrc" },
-				{ label = "Total", key = "total" },
-				{ label = "Conversion", key = "convDst" },
-				{ label = "Gain", key = "gainDst" },
+			colList = {
+				{ label = "출처", key = "source", right = true },
+				{ label = "기본", key = "base" },
+				{ label = "증가/감소", key = "inc" },
+				{ label = "증폭/감폭", key = "more" },
+				{ label = "전환 피해", key = "convSrc" },
+				{ label = "합계", key = "total" },
+				{ label = "전환", key = "convDst" },
+				{ label = "획득", key = "gainDst" },
 			}
 		}
 		t_insert(self.sectionList, section)
@@ -214,9 +214,9 @@ function CalcBreakdownClass:AddBreakdownSection(sectionData)
 		if (sectionData.gearOnly) then
 			-- Only show basic table for gear and base ES/Armour/Evasion value
 			colList = {
-				{ label = "Value", key = "base", right = true },
-				{ label = "Source", key = "source" },
-				{ label = "Name", key = "sourceLabel" },
+				{ label = "값", key = "base", right = true },
+				{ label = "출처", key = "source" },
+				{ label = "이름", key = "sourceLabel" },
 			}
 
 			rowList = {}
@@ -227,12 +227,12 @@ function CalcBreakdownClass:AddBreakdownSection(sectionData)
 			end
 		else
 			colList = {
-				{ label = "Base", key = "base", right = true },
-				{ label = "Inc/red", key = "inc" },
-				{ label = "More/less", key = "more" },
-				{ label = "Total", key = "total", right = true },
-				{ label = "Source", key = "source" },
-				{ label = "Name", key = "sourceLabel" },
+				{ label = "기본", key = "base", right = true },
+				{ label = "증가/감소", key = "inc" },
+				{ label = "증폭/감폭", key = "more" },
+				{ label = "합계", key = "total", right = true },
+				{ label = "출처", key = "source" },
+				{ label = "이름", key = "sourceLabel" },
 			}
 
 			rowList = breakdown.slots
@@ -295,13 +295,13 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 		type = "TABLE",
 		label = sectionData.label,
 		rowList = rowList,
-		colList = { 
-			{ label = "Value", key = "displayValue" },
-			{ label = "Stat", key = "name" },
-			{ label = "Skill types", key = "flags" },
-			{ label = "Notes", key = "tags" },
-			{ label = "Source", key = "source" },
-			{ label = "Source Name", key = "sourceName" },
+		colList = {
+			{ label = "값", key = "displayValue" },
+			{ label = "능력치", key = "name" },
+			{ label = "스킬 유형", key = "flags" },
+			{ label = "비고", key = "tags" },
+			{ label = "출처", key = "source" },
+			{ label = "출처 이름", key = "sourceName" },
 		},
 	}
 	t_insert(self.sectionList, section)
@@ -385,7 +385,7 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 		if not modList and not sectionData.modSource then
 			-- No modifier source specified, add the source type to the table
 			row.sourceTooltip = function(tooltip)
-				tooltip:AddLine(16, "Total from "..sourceType..":")
+				tooltip:AddLine(16, sourceType.."의 합계:")
 				for _, line in ipairs(sourceTotals[sourceType]) do
 					tooltip:AddLine(14, line)
 				end
@@ -506,31 +506,31 @@ end
 
 function CalcBreakdownClass:FormatModValue(value, modType)
 	if modType == "BASE" then
-		return string.format("%+g base", value)
+		return string.format("%+g 기본", value)
 	elseif modType == "INC" then
 		if value >= 0 then
-			return value.."% increased"
+			return value.."% 증가"
 		else
-			return -value.."% reduced"
+			return -value.."% 감소"
 		end
 	elseif modType == "MORE" then
 		if value >= 0 then
-			return value.."% more"
+			return value.."% 증폭"
 		else
-			return -value.."% less"
+			return -value.."% 감폭"
 		end
 	elseif modType == "OVERRIDE" then
-		return "Override: "..value
+		return "재정의: "..value
 	elseif modType == "FLAG" then
-		return value and "True" or "False"
+		return value and "참" or "거짓"
 	elseif modType == "LIST" then
 		if value.mod then
-			return "Modifier: "..self:FormatModName(value.mod.name)
+			return "수정자: "..self:FormatModName(value.mod.name)
 		else
 			return "?"
 		end
 	else
-		return value		
+		return value
 	end
 end
 

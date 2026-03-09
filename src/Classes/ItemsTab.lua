@@ -35,16 +35,16 @@ local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armour", "Gloves", "
 local influenceInfo = itemLib.influenceInfo.all
 
 local catalystQualityFormat = {
-	"^x7F7F7FQuality (Attack Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Speed Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Life and Mana Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Caster Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Attribute Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Physical and Chaos Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Resistance Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Defense Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Elemental Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Critical Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
+	"^x7F7F7F퀄리티 (공격 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (속도 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (생명력 및 마나 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (시전 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (능력치 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (물리 및 카오스 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (저항 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (방어 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (원소 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
+	"^x7F7F7F퀄리티 (치명타 속성): "..colorCodes.MAGIC.."+%d%% (증강)",
 }
 
 local flavourLookup = {}
@@ -3356,14 +3356,14 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 	end
 	for _, curInfluenceInfo in ipairs(influenceInfo) do
 		if item[curInfluenceInfo.key] and not main.showFlavourText then
-			tooltip:AddLine(fontSizeBig, curInfluenceInfo.color..curInfluenceInfo.display.." Item", "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, curInfluenceInfo.color..curInfluenceInfo.display.." 아이템", "FONTIN SC")
 		end
 	end
 	if item.fractured and not main.showFlavourText then
-		tooltip:AddLine(fontSizeBig, colorCodes.FRACTURED.."Fractured Item")
+		tooltip:AddLine(fontSizeBig, colorCodes.FRACTURED.."분열 아이템")
 	end
 	if item.synthesised and not main.showFlavourText then
-		tooltip:AddLine(fontSizeBig, colorCodes.CRAFTED.."Synthesised Item")
+		tooltip:AddLine(fontSizeBig, colorCodes.CRAFTED.."결합 아이템")
 	end
 	tooltip:AddSeparator(10)
 
@@ -3371,19 +3371,19 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 	if dbMode then
 		if item.variantList then
 			if #item.variantList == 1 then
-				tooltip:AddLine(fontSizeBig, "^xFFFF30Variant: "..item.variantList[1], "FONTIN SC")
+				tooltip:AddLine(fontSizeBig, "^xFFFF30변형: "..item.variantList[1], "FONTIN SC")
 			else
-				tooltip:AddLine(fontSizeBig, "^xFFFF30Variant: "..item.variantList[item.variant].." ("..#item.variantList.." variants)", "FONTIN SC")
+				tooltip:AddLine(fontSizeBig, "^xFFFF30변형: "..item.variantList[item.variant].." ("..#item.variantList.."개 변형)", "FONTIN SC")
 			end
 		end
 		if item.league then
-			tooltip:AddLine(fontSizeBig, "^xFF5555Exclusive to: "..item.league, "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, "^xFF5555한정: "..item.league, "FONTIN SC")
 		end
 		if item.unreleased then
-			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."Not yet available", "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."아직 사용 불가", "FONTIN SC")
 		end
 		if item.source then
-			tooltip:AddLine(fontSizeBig, colorCodes.SOURCE.."Source: "..self:FormatItemSource(item.source), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, colorCodes.SOURCE.."출처: "..self:FormatItemSource(item.source), "FONTIN SC")
 		end
 		if item.upgradePaths then
 			for _, path in ipairs(item.upgradePaths) do
@@ -3401,90 +3401,90 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 		local weaponData = item.weaponData[slotNum]
 		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F%s", self.build.data.weaponTypeInfo[base.type].label or base.subType or base.type), "FONTIN SC")
 		if item.quality > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F퀄리티: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
 		end
 		local totalDamageTypes = 0
 		if weaponData.PhysicalDPS then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FPhysical Damage: "..colorCodes.MAGIC.."%d-%d (%.1f DPS)", weaponData.PhysicalMin, weaponData.PhysicalMax, weaponData.PhysicalDPS), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F물리 피해: "..colorCodes.MAGIC.."%d-%d (%.1f DPS)", weaponData.PhysicalMin, weaponData.PhysicalMax, weaponData.PhysicalDPS), "FONTIN SC")
 			totalDamageTypes = totalDamageTypes + 1
 		end
 		if weaponData.ElementalDPS then
 			local elemLine
 			for _, var in ipairs({"Fire","Cold","Lightning"}) do
 				if weaponData[var.."DPS"] then
-					elemLine = elemLine and elemLine.."^x7F7F7F, " or "^x7F7F7FElemental Damage: "
+					elemLine = elemLine and elemLine.."^x7F7F7F, " or "^x7F7F7F원소 피해: "
 					elemLine = elemLine..s_format("%s%d-%d", colorCodes[var:upper()], weaponData[var.."Min"], weaponData[var.."Max"])
 				end
 			end
 			tooltip:AddLine(fontSizeBig, elemLine, "FONTIN SC")
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FElemental DPS: "..colorCodes.MAGIC.."%.1f", weaponData.ElementalDPS), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F원소 DPS: "..colorCodes.MAGIC.."%.1f", weaponData.ElementalDPS), "FONTIN SC")
 			totalDamageTypes = totalDamageTypes + 1	
 		end
 		if weaponData.ChaosDPS then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FChaos Damage: "..colorCodes.CHAOS.."%d-%d "..colorCodes.MAGIC.."(%.1f DPS)", weaponData.ChaosMin, weaponData.ChaosMax, weaponData.ChaosDPS), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F카오스 피해: "..colorCodes.CHAOS.."%d-%d "..colorCodes.MAGIC.."(%.1f DPS)", weaponData.ChaosMin, weaponData.ChaosMax, weaponData.ChaosDPS), "FONTIN SC")
 			totalDamageTypes = totalDamageTypes + 1
 		end
 		if totalDamageTypes > 1 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FTotal DPS: "..colorCodes.MAGIC.."%.1f", weaponData.TotalDPS), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F총 DPS: "..colorCodes.MAGIC.."%.1f", weaponData.TotalDPS), "FONTIN SC")
 		end
-		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FCritical Strike Chance: %s%.2f%%", main:StatColor(weaponData.CritChance, base.weapon.CritChanceBase), weaponData.CritChance), "FONTIN SC")
-		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FAttacks per Second: %s%.2f", main:StatColor(weaponData.AttackRate, base.weapon.AttackRateBase), weaponData.AttackRate), "FONTIN SC")
+		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F치명타 확률: %s%.2f%%", main:StatColor(weaponData.CritChance, base.weapon.CritChanceBase), weaponData.CritChance), "FONTIN SC")
+		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F초당 공격 횟수: %s%.2f", main:StatColor(weaponData.AttackRate, base.weapon.AttackRateBase), weaponData.AttackRate), "FONTIN SC")
 		if weaponData.range < 120 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FWeapon Range: %s%.1f ^x7F7F7Fmetres", main:StatColor(weaponData.range, base.weapon.Range), weaponData.range / 10), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F무기 범위: %s%.1f ^x7F7F7F미터", main:StatColor(weaponData.range, base.weapon.Range), weaponData.range / 10), "FONTIN SC")
 		end
 	elseif base.armour then
 		-- Armour-specific info
 		local armourData = item.armourData
 		if item.quality > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F퀄리티: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
 		end
 		if base.armour.BlockChance and armourData.BlockChance > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FChance to Block: %s%d%%", main:StatColor(armourData.BlockChance, base.armour.BlockChance), armourData.BlockChance), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F막기 확률: %s%d%%", main:StatColor(armourData.BlockChance, base.armour.BlockChance), armourData.BlockChance), "FONTIN SC")
 		end
 		if armourData.Armour > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FArmour: %s%d", main:StatColor(armourData.Armour, base.armour.ArmourBase), armourData.Armour), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F방어도: %s%d", main:StatColor(armourData.Armour, base.armour.ArmourBase), armourData.Armour), "FONTIN SC")
 		end
 		if armourData.Evasion > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FEvasion Rating: %s%d", main:StatColor(armourData.Evasion, base.armour.EvasionBase), armourData.Evasion), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F회피: %s%d", main:StatColor(armourData.Evasion, base.armour.EvasionBase), armourData.Evasion), "FONTIN SC")
 		end
 		if armourData.EnergyShield > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FEnergy Shield: %s%d", main:StatColor(armourData.EnergyShield, base.armour.EnergyShieldBase), armourData.EnergyShield), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F에너지 보호막: %s%d", main:StatColor(armourData.EnergyShield, base.armour.EnergyShieldBase), armourData.EnergyShield), "FONTIN SC")
 		end
 		if armourData.Ward > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FWard: %s%d", main:StatColor(armourData.Ward, base.armour.WardBase), armourData.Ward), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F결계: %s%d", main:StatColor(armourData.Ward, base.armour.WardBase), armourData.Ward), "FONTIN SC")
 		end
 	elseif base.flask then
 		-- Flask-specific info
 		local flaskData = item.flaskData
 		if item.quality > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F퀄리티: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
 		end
 		if flaskData.lifeTotal then
 			if flaskData.lifeGradual ~= 0 then
-				tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FRecovers %s%d ^x7F7F7FLife over %s%.1f0 ^x7F7F7FSeconds",
+				tooltip:AddLine(fontSizeBig, s_format("%s%d ^x7F7F7F생명력을 %s%.1f0^x7F7F7F초에 걸쳐 회복",
 					main:StatColor(flaskData.lifeTotal, base.flask.life), flaskData.lifeGradual,
 					main:StatColor(flaskData.duration, base.flask.duration), flaskData.duration
 					), "FONTIN SC")
 			end
 			if flaskData.lifeInstant ~= 0 then
-				tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FRecovers %s%d ^x7F7F7FLife instantly", main:StatColor(flaskData.lifeTotal, base.flask.life), flaskData.lifeInstant), "FONTIN SC")
+				tooltip:AddLine(fontSizeBig, s_format("%s%d ^x7F7F7F생명력을 즉시 회복", main:StatColor(flaskData.lifeTotal, base.flask.life), flaskData.lifeInstant), "FONTIN SC")
 			end
 		end
 		if flaskData.manaTotal then
 			if flaskData.manaGradual ~= 0 then
-				tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FRecovers %s%d ^x7F7F7FMana over %s%.1f0 ^x7F7F7FSeconds",
+				tooltip:AddLine(fontSizeBig, s_format("%s%d ^x7F7F7F마나를 %s%.1f0^x7F7F7F초에 걸쳐 회복",
 					main:StatColor(flaskData.manaTotal, base.flask.mana), flaskData.manaGradual,
 					main:StatColor(flaskData.duration, base.flask.duration), flaskData.duration
 					), "FONTIN SC")
 			end
 			if flaskData.manaInstant ~= 0 then
-				tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FRecovers %s%d ^x7F7F7FMana instantly", main:StatColor(flaskData.manaTotal, base.flask.mana), flaskData.manaInstant), "FONTIN SC")
+				tooltip:AddLine(fontSizeBig, s_format("%s%d ^x7F7F7F마나를 즉시 회복", main:StatColor(flaskData.manaTotal, base.flask.mana), flaskData.manaInstant), "FONTIN SC")
 			end
 		end
 		if not flaskData.lifeTotal and not flaskData.manaTotal then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FLasts %s%.2f ^x7F7F7FSeconds", main:StatColor(flaskData.duration, base.flask.duration), flaskData.duration), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("%s%.2f^x7F7F7F초 지속", main:StatColor(flaskData.duration, base.flask.duration), flaskData.duration), "FONTIN SC")
 		end
-		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FConsumes %s%d ^x7F7F7Fof %s%d ^x7F7F7FCharges on use",
+		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F사용 시 %s%d^x7F7F7F/%s%d ^x7F7F7F충전 소모",
 			main:StatColor(flaskData.chargesUsed, base.flask.chargesUsed), flaskData.chargesUsed,
 			main:StatColor(flaskData.chargesMax, base.flask.chargesMax), flaskData.chargesMax
 		), "FONTIN SC")
@@ -3502,11 +3502,11 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 		local tinctureData = item.tinctureData
 		
 		if item.quality and item.quality > 0 then
-			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F퀄리티: "..colorCodes.MAGIC.."+%d%%", item.quality), "FONTIN SC")
 		end
 
-		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7FInflicts Mana Burn every %s%.2f ^x7F7F7FSeconds", main:StatColor(tinctureData.manaBurn, base.tincture.manaBurn), tinctureData.manaBurn), "FONTIN SC")
-		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F%s%.2f ^x7F7F7FSecond Cooldown When Deactivated", main:StatColor(tinctureData.cooldown, base.tincture.cooldown), tinctureData.cooldown), "FONTIN SC")
+		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F%s%.2f^x7F7F7F초마다 마나 연소 부여", main:StatColor(tinctureData.manaBurn, base.tincture.manaBurn), tinctureData.manaBurn), "FONTIN SC")
+		tooltip:AddLine(fontSizeBig, s_format("^x7F7F7F비활성화 시 %s%.2f^x7F7F7F초 재사용 대기시간", main:StatColor(tinctureData.cooldown, base.tincture.cooldown), tinctureData.cooldown), "FONTIN SC")
 		for _, modLine in pairs(item.buffModLines) do
 			if modLine.extra then
 				local line = colorCodes.UNSUPPORTED..modLine.line
@@ -3519,13 +3519,13 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 	elseif item.type == "Jewel" then
 		-- Jewel-specific info
 		if item.limit then
-			tooltip:AddLine(fontSizeBig, "^x7F7F7FLimited to: ^7"..item.limit, "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, "^x7F7F7F제한: ^7"..item.limit, "FONTIN SC")
 		end
 		if item.classRestriction then
-			tooltip:AddLine(fontSizeBig, "^x7F7F7FRequires Class "..(self.build.spec.curClassName == item.classRestriction and colorCodes.POSITIVE or colorCodes.NEGATIVE)..item.classRestriction, "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, "^x7F7F7F직업 요구: "..(self.build.spec.curClassName == item.classRestriction and colorCodes.POSITIVE or colorCodes.NEGATIVE)..item.classRestriction, "FONTIN SC")
 		end
 		if item.jewelRadiusLabel then
-			tooltip:AddLine(fontSizeBig, "^x7F7F7FRadius: ^7"..item.jewelRadiusLabel, "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, "^x7F7F7F반경: ^7"..item.jewelRadiusLabel, "FONTIN SC")
 		end
 		if item.jewelRadiusData and slot and item.jewelRadiusData[slot.nodeId] then
 			local radiusData = item.jewelRadiusData[slot.nodeId]
@@ -3537,7 +3537,7 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 				end
 			end
 			if line then
-				tooltip:AddLine(fontSizeBig, "^x7F7F7FAttributes in Radius: "..line, "FONTIN SC")
+				tooltip:AddLine(fontSizeBig, "^x7F7F7F반경 내 능력치: "..line, "FONTIN SC")
 			end
 		end
 	end
@@ -3574,7 +3574,7 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 			end
 			line = line .. code .. socket.color
 		end
-		tooltip:AddLine(fontSizeBig, "^x7F7F7FSockets: "..line, "FONTIN SC")
+		tooltip:AddLine(fontSizeBig, "^x7F7F7F소켓: "..line, "FONTIN SC")
 	end
 	tooltip:AddSeparator(10)
 
@@ -3631,13 +3631,13 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 			tooltip:AddSeparator(10)
 		end
 		if item.split then
-			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."Split", "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."분열", "FONTIN SC")
 		end
 		if item.mirrored then
-			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."Mirrored", "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."복제", "FONTIN SC")
 		end
 		if item.corrupted then
-			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."Corrupted", "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, colorCodes.NEGATIVE.."타락", "FONTIN SC")
 		end
 		tooltip:AddSeparator(14)
 	end

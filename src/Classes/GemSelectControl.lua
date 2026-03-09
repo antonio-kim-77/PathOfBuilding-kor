@@ -11,12 +11,12 @@ local m_min = math.min
 local m_max = math.max
 local m_floor = math.floor
 
-local toolTipText = "Prefix tag searches with a colon and exclude tags with a dash. e.g. :fire:lightning:-cold:area"
+local toolTipText = "태그 검색은 콜론(:)으로 시작하고, 제외할 태그는 대시(-)를 붙이세요. 예: :fire:lightning:-cold:area"
 local altQualMap = {
 	["Default"] = "",
-	["Alternate1"] = "Anomalous ",
-	["Alternate2"] = "Divergent ",
-	["Alternate3"] = "Phantasmal ",
+	["Alternate1"] = "기묘한 ",
+	["Alternate2"] = "분기하는 ",
+	["Alternate3"] = "환영의 ",
 }
 
 local GemSelectClass = newClass("GemSelectControl", "EditControl", function(self, anchor, rect, skillsTab, index, changeFunc, forceTooltip)
@@ -461,7 +461,7 @@ function GemSelectClass:Draw(viewPort, noTooltip)
 					SetDrawColor(colorCodes.INTELLIGENCE)
 				end
 			end
-			local gemText = gemData and (gemData.korName or gemData.name) or "<No matches>"
+			local gemText = gemData and (gemData.korName or gemData.name) or "<일치 항목 없음>"
 			if gemId and gemId ~= "" then
 				gemText = altQualMap[self:GetQualityType(gemId)] .. gemText
 			end
@@ -501,7 +501,7 @@ function GemSelectClass:Draw(viewPort, noTooltip)
 					}
 				self:AddGemTooltip(gemInstance)
 				self.tooltip:AddSeparator(10)
-				self.skillsTab.build:AddStatComparesToTooltip(self.tooltip, calcBase, output, "^7Selecting this gem will give you:")
+				self.skillsTab.build:AddStatComparesToTooltip(self.tooltip, calcBase, output, "^7이 젬을 선택하면:")
 				self.tooltip:Draw(x, y + height + 2 + (self.hoverSel - 1) * (height - 4) - scrollBar.offset, width, height - 4, viewPort)
 			end
 		end
@@ -542,11 +542,11 @@ function GemSelectClass:Draw(viewPort, noTooltip)
 			if cursorX > (x + width - 18) then
 				colorS = 1
 				self.tooltip:Clear()
-				self.tooltip:AddLine(16, "Only show Support gems")
+				self.tooltip:AddLine(16, "보조 젬만 표시")
 			elseif (cursorX > (x + width - 40) and cursorX < (cursorX + width - 20)) then
 				colorA = 1
 				self.tooltip:Clear()
-				self.tooltip:AddLine(16, "Only show Active gems")
+				self.tooltip:AddLine(16, "액티브 젬만 표시")
 			end
 
 			-- support shortcut
@@ -612,15 +612,15 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 	local displayInstance = gemInstance.displayEffect or gemInstance
 	local grantedEffectLevel = grantedEffect.levels[displayInstance.level] or { }
 	if addReq then
-		self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FLevel: ^7%d%s%s",
+		self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F레벨: ^7%d%s%s",
 			gemInstance.level,
 			((displayInstance.level > gemInstance.level) and " (" .. colorCodes.MAGIC .. "+" .. (displayInstance.level - gemInstance.level) .. "^7)") or ((displayInstance.level < gemInstance.level) and " (" .. colorCodes.WARNING .. "-" .. (gemInstance.level - displayInstance.level) .. "^7)") or "",
-			(gemInstance.level >= gemInstance.gemData.naturalMaxLevel) and " (Max)" or ""
+			(gemInstance.level >= gemInstance.gemData.naturalMaxLevel) and " (최대)" or ""
 		), "FONTIN SC")
 	end
 	if grantedEffect.support then
 		if grantedEffectLevel.manaMultiplier then
-			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FCost & Reservation Multiplier: ^7%d%%", grantedEffectLevel.manaMultiplier + 100), "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F비용 및 점유 배율: ^7%d%%", grantedEffectLevel.manaMultiplier + 100), "FONTIN SC")
 		end
 		local reservation
 		for name, res in pairs(self.reservationMap) do
@@ -629,12 +629,12 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 			end
 		end
 		if reservation then
-			self.tooltip:AddLine(fontSizeBig, "^x7F7F7FReservation Override: ^7"..reservation, "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, "^x7F7F7F점유 재정의: ^7"..reservation, "FONTIN SC")
 		end
 		if grantedEffectLevel.cooldown then
-			local string = string.format("^x7F7F7FCooldown Time: ^7%.2f sec", grantedEffectLevel.cooldown)
+			local string = string.format("^x7F7F7F재사용 대기시간: ^7%.2f초", grantedEffectLevel.cooldown)
 			if grantedEffectLevel.storedUses and grantedEffectLevel.storedUses > 1 then
-				string = string .. string.format(" (%d uses)", grantedEffectLevel.storedUses)
+				string = string .. string.format(" (%d회 사용)", grantedEffectLevel.storedUses)
 			end
 			self.tooltip:AddLine(fontSizeBig, string, "FONTIN SC")
 		end
@@ -646,7 +646,7 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 			end
 		end
 		if reservation then
-			self.tooltip:AddLine(fontSizeBig, "^x7F7F7FReservation: ^7" .. reservation, "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, "^x7F7F7F점유: ^7" .. reservation, "FONTIN SC")
 		end
 		local cost
 		for _, res in ipairs(self.costs) do
@@ -655,47 +655,47 @@ function GemSelectClass:AddCommonGemInfo(gemInstance, grantedEffect, addReq, mer
 			end
 		end
 		if cost then
-			self.tooltip:AddLine(fontSizeBig, "^x7F7F7FCost: ^7"..cost, "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, "^x7F7F7F비용: ^7"..cost, "FONTIN SC")
 		end
 		if grantedEffectLevel.cooldown then
-			local string = string.format("^x7F7F7FCooldown Time: ^7%.2f sec", grantedEffectLevel.cooldown, "FONTIN SC")
+			local string = string.format("^x7F7F7F재사용 대기시간: ^7%.2f초", grantedEffectLevel.cooldown, "FONTIN SC")
 			if grantedEffectLevel.storedUses and grantedEffectLevel.storedUses > 1 then
-				string = string .. string.format(" (%d uses)", grantedEffectLevel.storedUses)
+				string = string .. string.format(" (%d회 사용)", grantedEffectLevel.storedUses)
 			end
 			self.tooltip:AddLine(fontSizeBig, string, "FONTIN SC")
 		end
 		if grantedEffectLevel.vaalStoredUses then
-			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FCan Store ^7%d ^x7F7F7FUse (%d Souls)", grantedEffectLevel.vaalStoredUses, grantedEffectLevel.vaalStoredUses * grantedEffectLevel.cost.Soul), "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F저장 가능 ^7%d^x7F7F7F회 사용 (%d 영혼)", grantedEffectLevel.vaalStoredUses, grantedEffectLevel.vaalStoredUses * grantedEffectLevel.cost.Soul), "FONTIN SC")
 		end
 		if grantedEffectLevel.soulPreventionDuration then
-			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FSoul Gain Prevention: ^7%d sec", grantedEffectLevel.soulPreventionDuration), "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F영혼 획득 방지: ^7%d초", grantedEffectLevel.soulPreventionDuration), "FONTIN SC")
 		end
 		if gemInstance.gemData.tags.attack then
 			if grantedEffectLevel.attackSpeedMultiplier then
-				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FAttack Speed: ^7%d%% of base", grantedEffectLevel.attackSpeedMultiplier + 100), "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F공격 속도: ^7기본의 %d%%", grantedEffectLevel.attackSpeedMultiplier + 100), "FONTIN SC")
 			end
 			if grantedEffectLevel.attackTime then
-				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FAttack Time: ^7%.2f sec", grantedEffectLevel.attackTime / 1000), "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F공격 시간: ^7%.2f초", grantedEffectLevel.attackTime / 1000), "FONTIN SC")
 			end
 			if grantedEffectLevel.baseMultiplier then
-				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FAttack Damage: ^7%g%% of base", grantedEffectLevel.baseMultiplier * 100), "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F공격 피해: ^7기본의 %g%%", grantedEffectLevel.baseMultiplier * 100), "FONTIN SC")
 			end
 		else
 			if grantedEffect.castTime > 0 then
-				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FCast Time: ^7%.2f sec", grantedEffect.castTime), "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F시전 시간: ^7%.2f초", grantedEffect.castTime), "FONTIN SC")
 			else
-				self.tooltip:AddLine(fontSizeBig, "^x7F7F7FCast Time: ^7Instant", "FONTIN SC")
+				self.tooltip:AddLine(fontSizeBig, "^x7F7F7F시전 시간: ^7즉시", "FONTIN SC")
 			end
 		end
 		if grantedEffectLevel.critChance then
-			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FCritical Strike Chance: ^7%.2f%%", grantedEffectLevel.critChance), "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F치명타 확률: ^7%.2f%%", grantedEffectLevel.critChance), "FONTIN SC")
 		end
 		if grantedEffectLevel.damageEffectiveness then
-			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FEffectiveness of Added Damage: ^7%d%%", grantedEffectLevel.damageEffectiveness * 100), "FONTIN SC")
+			self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F추가 피해 효율: ^7%d%%", grantedEffectLevel.damageEffectiveness * 100), "FONTIN SC")
 		end
 	end
 	if addReq and displayInstance.quality > 0 then
-		self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7FQuality: "..colorCodes.MAGIC.."+%d%%^7%s",
+		self.tooltip:AddLine(fontSizeBig, string.format("^x7F7F7F퀄리티: "..colorCodes.MAGIC.."+%d%%^7%s",
 			gemInstance.quality,
 			(displayInstance.quality > gemInstance.quality) and " ("..colorCodes.MAGIC.."+"..(displayInstance.quality - gemInstance.quality).."^7)" or ""
 		), "FONTIN SC")

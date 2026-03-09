@@ -1796,7 +1796,7 @@ do
 	local req = { }
 	function buildMode:AddRequirementsToTooltip(tooltip, level, str, dex, int, strBase, dexBase, intBase)
 		if level and level > 0 then
-			t_insert(req, s_format("^x7F7F7FLevel %s%d", main:StatColor(level, nil, self.characterLevel), level))
+			t_insert(req, s_format("^x7F7F7F레벨 %s%d", main:StatColor(level, nil, self.characterLevel), level))
 		end
 		-- Convert normal attributes to Omni attributes
 		if self.calcsTab.mainEnv.modDB:Flag(nil, "OmniscienceRequirements") then
@@ -1809,22 +1809,22 @@ do
 			end
 			local omni = math.floor(highestAttribute * (100/omniSatisfy))
 			if omni and (omni > 0 or omni > self.calcsTab.mainOutput.Omni) then
-				t_insert(req, s_format("%s%d ^x7F7F7FOmni", main:StatColor(omni, 0, self.calcsTab.mainOutput.Omni), omni))
+				t_insert(req, s_format("%s%d ^x7F7F7F전지", main:StatColor(omni, 0, self.calcsTab.mainOutput.Omni), omni))
 			end
-		else 
+		else
 			if str and (str > 14 or str > self.calcsTab.mainOutput.Str) then
-				t_insert(req, s_format("%s%d ^x7F7F7FStr", main:StatColor(str, strBase, self.calcsTab.mainOutput.Str), str))
+				t_insert(req, s_format("%s%d ^x7F7F7F힘", main:StatColor(str, strBase, self.calcsTab.mainOutput.Str), str))
 			end
 			if dex and (dex > 14 or dex > self.calcsTab.mainOutput.Dex) then
-				t_insert(req, s_format("%s%d ^x7F7F7FDex", main:StatColor(dex, dexBase, self.calcsTab.mainOutput.Dex), dex))
+				t_insert(req, s_format("%s%d ^x7F7F7F민첩", main:StatColor(dex, dexBase, self.calcsTab.mainOutput.Dex), dex))
 			end
 			if int and (int > 14 or int > self.calcsTab.mainOutput.Int) then
-				t_insert(req, s_format("%s%d ^x7F7F7FInt", main:StatColor(int, intBase, self.calcsTab.mainOutput.Int), int))
+				t_insert(req, s_format("%s%d ^x7F7F7F지능", main:StatColor(int, intBase, self.calcsTab.mainOutput.Int), int))
 			end
 		end
 		if req[1] then
 			local fontSizeBig = main.showFlavourText and 18 or 16
-			tooltip:AddLine(fontSizeBig, "^x7F7F7FRequires "..table.concat(req, "^x7F7F7F, "), "FONTIN SC")
+			tooltip:AddLine(fontSizeBig, "^x7F7F7F요구사항 "..table.concat(req, "^x7F7F7F, "), "FONTIN SC")
 			tooltip:AddSeparator(10)
 		end
 		wipeTable(req)
