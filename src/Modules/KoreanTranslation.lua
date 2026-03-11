@@ -2790,10 +2790,8 @@ KoreanTranslation.statTranslations = {
 	["1% of Damage dealt by your Totems is Leeched to you as Life"] = "Totems가 가하는 피해의 1%를 생명력로 흡수",
 	["1% of Elemental Damage Leeched as Energy Shield"] = "원소 피해의 1%를 에너지 보호막로 흡수",
 	["1% of Energy Shield Regenerated per second"] = "초당 에너지 보호막의 1% 재생",
-	["1% of Energy Shield Regenerated per second for each
-Enemy you or your Minions have Killed Recently, up to 10%"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 최대 10%",
-	["1% of Energy Shield Regenerated per second for each
-Enemy you or your Minions have Killed Recently, up to 30%"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 최대 30%",
+	["1% of Energy Shield Regenerated per second for each\nEnemy you or your Minions have Killed Recently, up to 10%"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 최대 10%",
+	["1% of Energy Shield Regenerated per second for each\nEnemy you or your Minions have Killed Recently, up to 30%"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 최대 30%",
 	["1% of Energy Shield Regenerated per second for each\\nEnemy you or your Minions have Killed Recently, up to 10%"] = "최근 당신 또는 당신의 소환수가 처치한 적 하나당\\n초당 에너지 보호막의 1% 재생, 최대 10%",
 	["1% of Energy Shield Regenerated per second for each\\nEnemy you or your Minions have Killed Recently, up to 30%"] = "최근 당신 또는 당신의 소환수가 처치한 적 하나당\\n초당 에너지 보호막의 1% 재생, 최대 30%",
 	["1% of Fire Damage Leeched as Life"] = "화염 피해의 1%를 생명력로 흡수",
@@ -5774,11 +5772,7 @@ Enemy you or your Minions have Killed Recently, up to 30%"] = "당신 또는 소
 	["40% more Damage"] = "피해 40% 증폭",
 	["40% more Damage over Time"] = "지속 피해 40% 증폭",
 	["40% more Elemental Damage if you've Crit in the past 8 seconds"] = "지난 8초 이내에 치명타를 준 경우 원소 피해 40% 증폭",
-	["40% more Elemental Damage if you've Crit in the past 8 seconds
-No Critical Strike Multiplier
-No Damage Multiplier for Ailments from Critical Strikes"] = "지난 8초 이내에 치명타를 준 경우 원소 피해 40% 증폭
-치명타 배율 없음
-치명타로 인한 상태 이상의 피해 배율 없음",
+	["40% more Elemental Damage if you've Crit in the past 8 seconds\nNo Critical Strike Multiplier\nNo Damage Multiplier for Ailments from Critical Strikes"] = "지난 8초 이내에 치명타를 준 경우 원소 피해 40% 증폭\n치명타 배율 없음\n치명타로 인한 상태 이상의 피해 배율 없음",
 	["40% more Elemental Damage if you've Crit in the past 8 seconds\\nNo Critical Strike Multiplier\\nNo Damage Multiplier for Ailments from Critical Strikes"] = "지난 8초 내에 치명타를 가한 경우 원소 피해 40% 증폭\\n치명타 배율 없음\\n치명타의 상태 이상에 대한 피해 배율 없음",
 	["40% more Elemental Damage if you've dealt a Crit in the past 8 seconds\\nNo Critical Strike Multiplier\\nAilments never count as being from Critical Strikes"] = "지난 8초 내 치명타 적중 시 원소 피해 40% 증폭\\n치명타 배율 없음\\n상태 이상이 치명타로 간주되지 않음",
 	["40% more Elemental Damage if you've dealt a Crit in the past 8 seconds\\nYour Critical Strikes do not deal extra Damage\\nAilments never count as being from Critical Strikes"] = "지난 8초 내 치명타 적중 시 원소 피해 40% 증폭\\n치명타가 추가 피해를 주지 않음\\n상태 이상이 치명타로 간주되지 않음",
@@ -6087,8 +6081,7 @@ No Damage Multiplier for Ailments from Critical Strikes"] = "지난 8초 이내�
 	["50% increased Ignite Duration on you"] = "본인에 대한 점화 지속시간 50% 증가",
 	["50% increased Impale Duration"] = "꿰뚫기 지속시간 50% 증가",
 	["50% increased Life Leeched per second"] = "초당 흡수한 생명력 50% 증가",
-	["50% increased Life Recovery Rate if you've taken Fire
-Damage from an Enemy Hit Recently"] = "최근 적 타격으로 화염 피해를 받은 경우 생명력 회복 속도 50% 증가",
+	["50% increased Life Recovery Rate if you've taken Fire\nDamage from an Enemy Hit Recently"] = "최근 적 타격으로 화염 피해를 받은 경우 생명력 회복 속도 50% 증가",
 	["50% increased Life Recovery Rate if you've taken Fire Damage from an Enemy Hit Recently"] = "최근에 생명력 회복 속도 50% 증가",
 	["50% increased Life Recovery Rate if you've taken Fire\\nDamage from an Enemy Hit Recently"] = "최근 적의 적중으로 화염 피해를 받은 경우\\n생명력 회복 속도 50% 증가",
 	["50% increased Life Recovery from Flasks used when on Low Life"] = "낮은 생명력 시 플라스크 생명력 회복 50% 증가",
@@ -7128,11 +7121,7 @@ Damage from an Enemy Hit Recently"] = "최근 적 타격으로 화염 피해를 
 	["Attribute Requirements can be satisfied by (##)% of Omniscience"] = "능력치 요구 사항 can be satisfied by (##)% of Omniscience",
 	["Aura Buffs from Skills have 10% increased Effect on you for each Herald affecting you"] = "for each Herald affecting you 본인에 대한 오라 버프 효과 10% 증가",
 	["Aura Buffs from Skills have 8% increased Effect on you for each Herald affecting you, up to 40%"] = "for each Herald affecting you, up to 40% 본인에 대한 오라 버프 효과 8% 증가",
-	["Auras from your Skills can only affect you
-Aura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve
-40% more Mana Reservation of Skills"] = "스킬의 오라가 당신에게만 영향
-오라 스킬이 보유하는 최대 마나 2%당 오라 효과 1% 증폭
-스킬의 마나 보유량 40% 증폭",
+	["Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Skills"] = "스킬의 오라가 당신에게만 영향\n오라 스킬이 보유하는 최대 마나 2%당 오라 효과 1% 증폭\n스킬의 마나 보유량 40% 증폭",
 	["Auras from your Skills can only affect you\\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\\n40% more Mana Reservation of Aura Skills"] = "본인 스킬의 오라가 본인에게만 영향\\n오라 스킬이 점유하는 최대 마나 2%당 오라 효과 1% 증폭\\n오라 스킬의 마나 점유 40% 증폭",
 	["Auras from your Skills can only affect you\\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\\n40% more Mana Reservation of Skills"] = "당신의 스킬로 인한 오라는 자신에게만 적용\\n오라 스킬은 점유하는 최대 마나 2%당 오라 효과 1% 증폭\\n스킬의 마나 점유 40% 증폭",
 	["Auras from your Skills can only affect you\\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\\n40% more Mana Reserved"] = "당신의 스킬로 인한 오라는 자신에게만 적용\\n오라 스킬은 점유하는 최대 마나 2%당 오라 효과 1% 증폭\\n마나 점유 40% 증폭",
@@ -7140,8 +7129,7 @@ Aura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve
 	["Auras from your Skills grant 0.1% of Life Regenerated per second to\\nyou and Allies"] = "본인 스킬의 오라가 본인과 아군에게 0.1% of Life Regenerated per second 부여",
 	["Auras from your Skills grant 0.2% of Life Regenerated per second to you and Allies"] = "본인 스킬의 오라가 본인과 아군에게 초당 생명력의 0.2% 재생 부여",
 	["Auras from your Skills grant 0.2% of Life Regenerated per second to\\nyou and Allies"] = "본인 스킬의 오라가 본인과 아군에게 0.2% of Life Regenerated per second 부여",
-	["Auras from your Skills grant 0.2% of Maximum Life Regenerated per second to
-you and Allies"] = "스킬의 오라가 당신과 동료에게 초당 최대 생명력의 0.2% 재생 부여",
+	["Auras from your Skills grant 0.2% of Maximum Life Regenerated per second to\nyou and Allies"] = "스킬의 오라가 당신과 동료에게 초당 최대 생명력의 0.2% 재생 부여",
 	["Auras from your Skills grant 0.2% of Maximum Life Regenerated per second to\\nyou and Allies"] = "당신의 스킬로 인한 오라가 당신과 동료에게\\n초당 최대 생명력의 0.2% 재생 부여",
 	["Auras from your Skills grant 2% increased Attack and Cast\\nSpeed to you and Allies"] = "본인 스킬의 오라가 본인과 아군에게 2% 증가 Attack and 시전 속도 부여",
 	["Auras from your Skills grant 3% increased Attack and Cast Speed to you and Allies"] = "본인 스킬의 오라가 본인과 아군에게 공격 및 시전 속도 3% 증가 부여",
@@ -7411,9 +7399,7 @@ you and Allies"] = "스킬의 오라가 당신과 동료에게 초당 최대 생
 	["Cannot Evade enemy Attacks\\nCannot be Stunned"] = "적의 공격을 회피할 수 없음\\n기절 면역",
 	["Cannot Gain Energy Shield"] = "에너지 보호막 획득 불가",
 	["Cannot Ignite, Chill, Freeze or Shock"] = "점화, 냉각, 동결, 감전 불가",
-	["Cannot Ignite, Chill, Freeze or Shock
-Critical Strikes inflict Scorch, Brittle and Sapped"] = "점화, 냉각, 동결, 감전 불가
-치명타가 그을림, 취성, 약화 부여",
+	["Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped"] = "점화, 냉각, 동결, 감전 불가\n치명타가 그을림, 취성, 약화 부여",
 	["Cannot Ignite, Chill, Freeze or Shock\\nCritical Strikes inflict Scorch, Brittle and Sapped"] = "점화, 냉각, 동결 또는 감전을 유발할 수 없음\\n치명타가 그을림, 취약화 및 쇠약을 유발",
 	["Cannot Inflict Wither on targets that are not on Full Life"] = "Cannot Inflict 시들음 의 targets that are not 의 Full 생명력",
 	["Cannot Knock Enemies Back"] = "적을 밀쳐내지 못함",
@@ -7423,15 +7409,9 @@ Critical Strikes inflict Scorch, Brittle and Sapped"] = "점화, 냉각, 동결,
 	["Cannot Leech Mana"] = "Cannot 흡수 마나",
 	["Cannot Leech or Regenerate Mana"] = "Cannot 흡수 or 재생 마나",
 	["Cannot Leech when on Low Life"] = "Cannot 흡수 when 의 Low 생명력",
-	["Cannot Recover Energy Shield to above Armour
-3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second"] = "에너지 보호막을 방어도 이상으로 회복 불가
-최근 타격으로 방지한 물리 피해의 3%를 초당 에너지 보호막으로 재생",
+	["Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second"] = "에너지 보호막을 방어도 이상으로 회복 불가\n최근 타격으로 방지한 물리 피해의 3%를 초당 에너지 보호막으로 재생",
 	["Cannot Recover Energy Shield to above Armour\\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second"] = "에너지 보호막을 방어도 이상으로 회복할 수 없음\\n최근 적중으로 방지한 물리 피해의 3%를 초당 에너지 보호막으로 재생",
-	["Cannot Recover Energy Shield to above Evasion Rating
-Every 2 seconds, gain a Ghost Shroud, up to a maximum of 3
-When Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating"] = "에너지 보호막을 회피 등급 이상으로 회복 불가
-2초마다 유령 장막 획득, 최대 3개
-타격받으면 유령 장막을 잃고 회피 등급의 3%와 동일한 에너지 보호막 회복",
+	["Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating"] = "에너지 보호막을 회피 등급 이상으로 회복 불가\n2초마다 유령 장막 획득, 최대 3개\n타격받으면 유령 장막을 잃고 회피 등급의 3%와 동일한 에너지 보호막 회복",
 	["Cannot Recover Energy Shield to above Evasion Rating\\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\\nWhen Hit, lose a Ghost Shroud and Recover Energy Shield equal to 4% of Evasion Rating"] = "에너지 보호막을 회피도 이상으로 회복할 수 없음\\n2초마다 유령 수의를 하나 획득, 최대 3개\\n피격 시, 유령 수의를 하나 잃고 회피도의 4%만큼 에너지 보호막 회복",
 	["Cannot Recover Energy Shield to above Evasion Rating\\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating"] = "에너지 보호막을 회피도 이상으로 회복할 수 없음\\n2초마다 유령 수의를 하나 획득, 최대 3개\\n피격 시, 유령 수의를 하나 잃고 회피도의 3%만큼 에너지 보호막 회복",
 	["Cannot Summon Mirage Archers while near your Mirage Archers"] = "신기루 궁수 근처에서 신기루 궁수 소환 불가",
@@ -7521,24 +7501,14 @@ When Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasi
 	["Chain Hook has +0.1 metres to radius per 12 Rage"] = "체인 후크의 격노 12당 범위 +0.1m",
 	["Chance to Block Attack Damage is Lucky"] = "공격 피해 막기 확률이 행운",
 	["Chance to Block Attack Damage is Unlucky"] = "공격 피해 막기 확률이 불운",
-	["Chance to Block Attack Damage is doubled
-Chance to Block Spell Damage is doubled
-You take 50% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배
-주문 피해 막기 확률 2배
-막은 타격의 피해의 50%를 받음",
-	["Chance to Block Attack Damage is doubled
-Chance to Block Spell Damage is doubled
-You take 65% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배
-주문 피해 막기 확률 2배
-막은 타격의 피해의 65%를 받음",
+	["Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 50% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배\n주문 피해 막기 확률 2배\n막은 타격의 피해의 50%를 받음",
+	["Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배\n주문 피해 막기 확률 2배\n막은 타격의 피해의 65%를 받음",
 	["Chance to Block Attack Damage is doubled\\nChance to Block Spell Damage is doubled\\nYou take 50% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배\\n주문 피해 막기 확률 2배\\n막은 적중의 피해의 50%를 받음",
 	["Chance to Block Attack Damage is doubled\\nChance to Block Spell Damage is doubled\\nYou take 65% of Damage from Blocked Hits"] = "공격 피해 막기 확률 2배\\n주문 피해 막기 확률 2배\\n막은 적중의 피해의 65%를 받음",
 	["Chance to Block Attack or Spell Damage is Lucky if you've Blocked Recently"] = "최근 막기 성공 시 공격 또는 주문 피해 막기 확률이 행운",
 	["Chance to Block Spell Damage is Lucky"] = "주문 피해 막기 확률이 행운",
 	["Chance to Block Spell Damage is Unlucky"] = "주문 피해 막기 확률이 불운",
-	["Chance to Block Spell Damage is equal to Chance to Block Attack Damage
-Maximum Chance to Block Spell Damage is equal to Maximum Chance to Block Attack Damage"] = "주문 피해 막기 확률이 공격 피해 막기 확률과 동일
-최대 주문 피해 막기 확률이 최대 공격 피해 막기 확률과 동일",
+	["Chance to Block Spell Damage is equal to Chance to Block Attack Damage\nMaximum Chance to Block Spell Damage is equal to Maximum Chance to Block Attack Damage"] = "주문 피해 막기 확률이 공격 피해 막기 확률과 동일\n최대 주문 피해 막기 확률이 최대 공격 피해 막기 확률과 동일",
 	["Chance to Block Spell Damage is equal to Chance to Block Attack Damage\\nMaximum Chance to Block Spell Damage is equal to Maximum Chance to Block Attack Damage"] = "주문 피해 막기 확률이 공격 피해 막기 확률과 동일\\n최대 주문 피해 막기 확률이 최대 공격 피해 막기 확률과 동일",
 	["Chance to Block is Lucky"] = "막기 확률이 행운",
 	["Chance to Block is Unlucky"] = "막기 확률이 불운",
@@ -7722,21 +7692,16 @@ Maximum Chance to Block Spell Damage is equal to Maximum Chance to Block Attack 
 	["Consecrated Ground from Holy Flame Totem applies 9% increased Damage taken to Enemies"] = "신성한 화염 토템의 신성한 대지가 적에게 받는 피해 9% 증가 적용",
 	["Consecrated Ground from Purifying Flame applies 6% increased Damage taken to Enemies"] = "정화의 불꽃의 신성한 대지가 적에게 받는 피해 6% 증가 적용",
 	["Consecrated Ground from Purifying Flame applies 9% increased Damage taken to Enemies"] = "정화의 불꽃의 신성한 대지가 적에게 받는 피해 9% 증가 적용",
-	["Consecrated Ground you create also grants
-50% reduced duration of Damaging Ailments on you"] = "생성한 신성한 대지가 피해를 주는 상태 이상의 지속시간 50% 감소도 부여",
+	["Consecrated Ground you create also grants\n50% reduced duration of Damaging Ailments on you"] = "생성한 신성한 대지가 피해를 주는 상태 이상의 지속시간 50% 감소도 부여",
 	["Consecrated Ground you create also grants\\n50% reduced duration of Damaging Ailments on you"] = "당신이 생성하는 신성한 대지가 추가로\\n당신에게 걸린 피해를 주는 상태 이상의 지속시간 50% 감소 부여",
 	["Consecrated Ground you create applies 10% increased Damage taken to Enemies"] = "본인이 생성한 신성한 땅이 적에게 받는 피해 10% 증가 적용",
 	["Consecrated Ground you create applies 15% increased Damage taken to Enemies"] = "생성한 신성한 대지가 적에게 받는 피해 15% 증가 적용",
 	["Consecrated Ground you create applies 8% increased Damage taken to Enemies"] = "생성한 신성한 대지가 적에게 받는 피해 8% 증가 적용",
-	["Consecrated Ground you create causes Life Regeneration to
-also Recover Energy Shield for you and Allies"] = "생성한 신성한 대지에서 생명력 재생이
-당신과 동료의 에너지 보호막도 회복",
+	["Consecrated Ground you create causes Life Regeneration to\nalso Recover Energy Shield for you and Allies"] = "생성한 신성한 대지에서 생명력 재생이\n당신과 동료의 에너지 보호막도 회복",
 	["Consecrated Ground you create causes Life Regeneration to\\nalso Recover Energy Shield for you and Allies"] = "당신이 생성하는 신성한 대지가 당신과 동료의\\n생명력 재생이 에너지 보호막도 회복하도록 함",
 	["Consecrated Ground you create grants 30% increased Accuracy Rating to you and Allies"] = "생성한 신성한 대지가 당신과 동료에게 명중 등급 30% 증가 부여",
 	["Consecrated Ground you create grants 40% increased Damage to you and Allies"] = "생성한 신성한 대지가 당신과 동료에게 피해 40% 증가 부여",
-	["Consecrated Ground you create grants Immunity to Elemental Ailments
-to you and Allies"] = "생성한 신성한 대지가 당신과 동료에게
-원소 상태 이상 면역 부여",
+	["Consecrated Ground you create grants Immunity to Elemental Ailments\nto you and Allies"] = "생성한 신성한 대지가 당신과 동료에게\n원소 상태 이상 면역 부여",
 	["Consecrated Ground you create grants Immunity to Elemental Ailments\\nto you and Allies"] = "당신이 생성하는 신성한 대지가 당신과 동료에게\\n원소 상태 이상 면역 부여",
 	["Consecrated Path deals 25% increased Damage"] = "신성한 길 피해 25% 증가",
 	["Consecrated Path deals 40% increased Damage"] = "신성한 길 피해 40% 증가",
@@ -7924,11 +7889,7 @@ to you and Allies"] = "생성한 신성한 대지가 당신과 동료에게
 	["Damage of Enemies Hitting you is Unlucky while you are on Low Life"] = "저 생명력 시 적의 타격 피해가 불운",
 	["Damage of Enemies Hitting you is Unlucky while you have a Magic Ring Equipped"] = "피해 of 적 Hitting you is Unlucky while you have a Magic Ring 장착한",
 	["Damage of Hits against you is Lucky"] = "피해 of Hits against you is Lucky",
-	["Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier
-Critical Strikes do not deal extra Damage
-Non-Critical Strikes cannot inflict Ailments"] = "상태 이상의 지속 피해 배율이 치명타 배율과 동일
-치명타가 추가 피해를 주지 않음
-비치명타가 상태 이상을 가할 수 없음",
+	["Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments"] = "상태 이상의 지속 피해 배율이 치명타 배율과 동일\n치명타가 추가 피해를 주지 않음\n비치명타가 상태 이상을 가할 수 없음",
 	["Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\\nCritical Strikes do not deal extra Damage\\nAilments never count as being from Critical Strikes"] = "상태 이상의 지속 피해 배율이 치명타 배율과 동일\\n치명타가 추가 피해를 주지 않음\\n상태 이상이 치명타로 간주되지 않음",
 	["Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\\nCritical Strikes do not deal extra Damage\\nNon-Critical Strikes cannot inflict Ailments"] = "상태 이상의 지속 피해 배율이 치명타 배율과 동일\\n치명타가 추가 피해를 주지 않음\\n비치명타가 상태 이상을 유발할 수 없음",
 	["Damage penetrates 25% Cold Resistance while affected by Herald of Ice"] = "얼음의 전령 적용 시 냉기 저항 25% 관통",
@@ -7951,11 +7912,9 @@ Non-Critical Strikes cannot inflict Ailments"] = "상태 이상의 지속 피해
 	["Damage with Weapons Penetrates 8% Cold Resistance"] = "피해 with Weapons가 냉기 저항 8% 관통",
 	["Damage with Weapons Penetrates 8% Fire Resistance"] = "피해 with Weapons가 화염 저항 8% 관통",
 	["Damage with Weapons Penetrates 8% Lightning Resistance"] = "피해 with Weapons가 번개 저항 8% 관통",
-	["Damageable Minions deal 30% increased Damage for each second they have been alive,
-up to a maximum of 150%"] = "피해를 받을 수 있는 소환수가 생존 초당 피해 30% 증가, 최대 150%",
+	["Damageable Minions deal 30% increased Damage for each second they have been alive,\nup to a maximum of 150%"] = "피해를 받을 수 있는 소환수가 생존 초당 피해 30% 증가, 최대 150%",
 	["Damageable Minions deal 30% increased Damage for each second they have been alive,\\nup to a maximum of 150%"] = "피해를 받는 소환수는 생존한 초당 피해 30% 증가,\\n최대 150%",
-	["Damageable Minions take 5% increased Damage for each second they have been alive,
-up to a maximum of 50%"] = "피해를 받을 수 있는 소환수가 생존 초당 받는 피해 5% 증가, 최대 50%",
+	["Damageable Minions take 5% increased Damage for each second they have been alive,\nup to a maximum of 50%"] = "피해를 받을 수 있는 소환수가 생존 초당 받는 피해 5% 증가, 최대 50%",
 	["Damageable Minions take 5% increased Damage for each second they have been alive,\\nup to a maximum of 50%"] = "피해를 받는 소환수는 생존한 초당 받는 피해 5% 증가,\\n최대 50%",
 	["Damaging Ailments Cannot Be inflicted on you while you already have one"] = "피해를 주는 상태 이상이 이미 있을 때 추가로 부여되지 않음",
 	["Damaging Ailments deal damage (#–#)% faster"] = "Damaging 상태 이상 deal damage (#–#)% faster",
@@ -8106,9 +8065,7 @@ up to a maximum of 50%"] = "피해를 받을 수 있는 소환수가 생존 초�
 	["Eldritch Battery during Effect"] = "Eldritch Battery 효과 중",
 	["Elemental Ailments are inflicted on you instead of Linked targets"] = "연결된 대상 대신 당신에게 원소 상태 이상 부여",
 	["Elemental Ailments cannot be inflicted on you if you have an Equipped Body Armour with no Socketed Gems"] = "장착한 갑옷에 보석이 없으면 원소 상태 이상이 부여되지 않음",
-	["Elemental Ailments caused by your Skills spread to other nearby Enemies
-Radius: 18"] = "스킬로 인한 원소 상태 이상이 근처의 다른 적에게 전파
-반경: 18",
+	["Elemental Ailments caused by your Skills spread to other nearby Enemies\nRadius: 18"] = "스킬로 인한 원소 상태 이상이 근처의 다른 적에게 전파\n반경: 18",
 	["Elemental Ailments caused by your Skills spread to other nearby Enemies\\nRadius: 18"] = "당신의 스킬로 유발한 원소 상태 이상이 인근의 다른 적에게 전이\\n범위: 18",
 	["Elemental Ailments inflicted on Enemies Exposed by you have 20% increased Duration"] = "당신이 노출시킨 적에게 유발한 원소 상태 이상의 지속시간 20% 증가",
 	["Elemental Ailments you inflict are Reflected to you"] = "가한 원소 상태 이상이 당신에게 반사",
@@ -8183,11 +8140,9 @@ Radius: 18"] = "스킬로 인한 원소 상태 이상이 근처의 다른 적에
 	["Enemies Shocked by your Hits are Chilled"] = "타격으로 감전된 적이 냉각됨",
 	["Enemies Shocked or Frozen by you take 5% increased Elemental Damage"] = "감전 또는 동결시킨 적이 원소 피해 5% 증가하여 받음",
 	["Enemies Taunted by you cannot Evade Attacks"] = "도발한 적이 공격을 회피할 수 없음",
-	["Enemies Taunted by you deal 10% less Damage with Hits and
-Ailments against other targets"] = "도발한 적이 다른 대상에게 타격 및 상태 이상으로 10% 감폭된 피해",
+	["Enemies Taunted by you deal 10% less Damage with Hits and\nAilments against other targets"] = "도발한 적이 다른 대상에게 타격 및 상태 이상으로 10% 감폭된 피해",
 	["Enemies Taunted by you deal 10% less Damage with Hits and\\nAilments against other targets"] = "당신이 도발한 적이 다른 대상에 대한 적중 및\\n상태 이상의 피해 10% 감폭",
-	["Enemies Taunted by you deal 20% less Damage with Hits and
-Ailments against other targets"] = "도발한 적이 다른 대상에게 타격 및 상태 이상으로 20% 감폭된 피해",
+	["Enemies Taunted by you deal 20% less Damage with Hits and\nAilments against other targets"] = "도발한 적이 다른 대상에게 타격 및 상태 이상으로 20% 감폭된 피해",
 	["Enemies Taunted by you deal 20% less Damage with Hits and\\nAilments against other targets"] = "당신이 도발한 적이 다른 대상에 대한 적중 및\\n상태 이상의 피해 20% 감폭",
 	["Enemies Taunted by you deal 5% less Area Damage"] = "적 Taunted by you의 Area 피해 5% 감폭",
 	["Enemies Taunted by you take 10% increased Damage"] = "도발한 적이 받는 피해 10% 증가",
@@ -8230,10 +8185,7 @@ Ailments against other targets"] = "도발한 적이 다른 대상에게 타격 
 	["Enemies killed explode dealing #% of their Life as Fire Damage"] = "적 killed explode dealing #% of their 생명력 as 화염 피해",
 	["Enemies killed near Corpses affected by your Curses explode, dealing"] = "사용자의 저주에 영향받는 시체 근처에서 적 처치 시 폭발,",
 	["Enemies near Corpses affected by your Curses are Blinded"] = "적 near 시체 affected by your 저주s are 실명ed",
-	["Enemies near corpses affected by your Curses are Blinded
-Enemies Killed near corpses affected by your Curses explode, dealing
-5% of their Life as Physical Damage"] = "저주가 적용된 시체 근처의 적이 실명
-저주가 적용된 시체 근처에서 처치한 적이 폭발, 생명력의 5%를 물리 피해로",
+	["Enemies near corpses affected by your Curses are Blinded\nEnemies Killed near corpses affected by your Curses explode, dealing\n5% of their Life as Physical Damage"] = "저주가 적용된 시체 근처의 적이 실명\n저주가 적용된 시체 근처에서 처치한 적이 폭발, 생명력의 5%를 물리 피해로",
 	["Enemies near corpses affected by your Curses are Blinded\\nEnemies Killed near corpses affected by your Curses explode, dealing 3% of their Life as Physical Damage"] = "당신의 저주에 영향을 받는 시체 인근의 적 실명\\n당신의 저주에 영향을 받는 시체 인근에서 처치된 적이 폭발하여 생명력의 3%를 물리 피해로 줌",
 	["Enemies near corpses affected by your Curses are Blinded\\nEnemies Killed near corpses affected by your Curses explode, dealing\\n5% of their Life as Physical Damage"] = "당신의 저주에 영향을 받는 시체 인근의 적 실명\\n당신의 저주에 영향을 받는 시체 인근에서 처치된 적이 폭발하여\\n생명력의 5%를 물리 피해로 줌",
 	["Enemies near corpses you Spawned Recently are Chilled and Shocked"] = "최근 생성한 시체 근처의 적이 냉각 및 감전됨",
@@ -8275,8 +8227,7 @@ Enemies Killed near corpses affected by your Curses explode, dealing
 	["Enemies you Kill have 5% chance to Explode, dealing 500% of their maximum Life as Fire Damage"] = "처치한 적이 5% 확률로 폭발, 최대 생명력의 500%를 화염 피해로",
 	["Enemies you Kill have a 10% chance to Explode, dealing a quarter of their maximum Life as Chaos Damage"] = "처치한 적이 10% 확률로 폭발, 최대 생명력의 4분의 1을 카오스 피해로",
 	["Enemies you Kill have a 30% chance to Explode, dealing a quarter of their maximum Life as Chaos Damage"] = "처치한 적이 30% 확률로 폭발, 최대 생명력의 4분의 1을 카오스 피해로",
-	["Enemies you Kill that are affected by Elemental Ailments
-grant 100% increased Flask Charges"] = "원소 상태 이상이 적용된 적 처치 시 플라스크 충전 100% 증가",
+	["Enemies you Kill that are affected by Elemental Ailments\ngrant 100% increased Flask Charges"] = "원소 상태 이상이 적용된 적 처치 시 플라스크 충전 100% 증가",
 	["Enemies you Kill that are affected by Elemental Ailments\\ngrant 100% increased Flask Charges"] = "원소 상태 이상에 걸린 적 처치 시\\n플라스크 충전 획득량 100% 증가",
 	["Enemies you Kill that are affected by Elemental Status Ailments"] = "원소 상태 이상이 적용된 적 처치",
 	["Enemies you Kill while affected by Glorious Madness have a #% chance to Explode, dealing a quarter of their Life as Chaos Damage"] = "적 you Kill while affected by Glorious Madness have a #% chance to Explode, dealing a quarter of their 생명력 as 카오스 피해",
@@ -8299,21 +8250,10 @@ grant 100% increased Flask Charges"] = "원소 상태 이상이 적용된 적 �
 	["Energy Shield Leech Effects from Attacks are not removed at Full Energy Shield"] = "에너지 보호막 흡수 효과 공격으로 are not removed at Full 에너지 보호막",
 	["Energy Shield Leech effects are not removed when Energy Shield is Filled"] = "에너지 보호막이 가득 차도 흡수 효과가 제거되지 않음",
 	["Energy Shield Recharge is not delayed by Damage during Effect"] = "에너지 보호막 재충전 is not delayed by 피해 효과 중",
-	["Energy Shield Recharge is not interrupted by Damage if
-Recharge began Recently
-50% less Energy Shield Regeneration Rate
-50% less Maximum total Energy Shield Recovery per Second from Leech"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음
-에너지 보호막 재생 속도 50% 감폭
-흡수로 인한 초당 최대 총 에너지 보호막 회복 50% 감폭",
-	["Energy Shield Recharge is not interrupted by Damage if
-Recharge began Recently
-50% less Energy Shield Regeneration Rate
-50% less Maximum total Recovery per Second from Energy Shield Leech"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음
-에너지 보호막 재생 속도 50% 감폭
-에너지 보호막 흡수로 인한 초당 최대 총 회복 50% 감폭",
+	["Energy Shield Recharge is not interrupted by Damage if\nRecharge began Recently\n50% less Energy Shield Regeneration Rate\n50% less Maximum total Energy Shield Recovery per Second from Leech"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음\n에너지 보호막 재생 속도 50% 감폭\n흡수로 인한 초당 최대 총 에너지 보호막 회복 50% 감폭",
+	["Energy Shield Recharge is not interrupted by Damage if\nRecharge began Recently\n50% less Energy Shield Regeneration Rate\n50% less Maximum total Recovery per Second from Energy Shield Leech"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음\n에너지 보호막 재생 속도 50% 감폭\n에너지 보호막 흡수로 인한 초당 최대 총 회복 50% 감폭",
 	["Energy Shield Recharge is not interrupted by Damage if Recharge"] = "재충전 시 피해에 의해 에너지 보호막 재충전이 중단되지 않음",
-	["Energy Shield Recharge is not interrupted by Damage if Recharge
-began Recently"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음",
+	["Energy Shield Recharge is not interrupted by Damage if Recharge\nbegan Recently"] = "최근 재충전이 시작된 경우 피해에 의해 에너지 보호막 재충전이 중단되지 않음",
 	["Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\\n40% less Energy Shield Recharge Rate"] = "최근에 시작된 에너지 보호막 충전이 피해로 중단되지 않음\\n에너지 보호막 충전 속도 40% 감폭",
 	["Energy Shield Recharge is not interrupted by Damage if Recharge\\nbegan Recently"] = "최근 에너지 보호막 충전이 시작된 경우\\n피해로 충전이 중단되지 않음",
 	["Energy Shield Recharge is not interrupted by Damage if\\nRecharge began Recently\\n50% less Energy Shield Regeneration Rate\\n50% less Maximum total Energy Shield Recovery per Second from Leech"] = "최근 에너지 보호막 충전이 시작된 경우\\n피해로 충전이 중단되지 않음\\n에너지 보호막 재생 속도 50% 감폭\\n흡수로 인한 초당 최대 총 에너지 보호막 회복 50% 감폭",
@@ -8331,9 +8271,7 @@ began Recently"] = "최근 재충전이 시작된 경우 피해에 의해 에너
 	["Equip a Wildwood Rucksack which has 20 Inventory Slots"] = "인벤토리 슬롯 20개의 야생림 배낭 장착",
 	["Eternal Youth"] = "영원한 젊음",
 	["Ethereal Knives fires Projectiles in a circle"] = "미사일 단검이 원형으로 투사체 발사",
-	["Evasion Rating is Doubled against Projectile Attacks
-25% less Evasion Rating against Melee Attacks"] = "투사체 공격에 대한 회피 등급 2배
-근접 공격에 대한 회피 등급 25% 감폭",
+	["Evasion Rating is Doubled against Projectile Attacks\n25% less Evasion Rating against Melee Attacks"] = "투사체 공격에 대한 회피 등급 2배\n근접 공격에 대한 회피 등급 25% 감폭",
 	["Evasion Rating is Doubled against Projectile Attacks\\n25% less Evasion Rating against Melee Attacks"] = "투사체 공격에 대한 회피도 2배\\n근접 공격에 대한 회피도 25% 감폭",
 	["Evasion Rating is increased by Overcapped Cold Resistance"] = "초과된 냉기 저항만큼 회피 등급 증가",
 	["Evasion Rating is increased by Uncapped Cold Resistance"] = "Evasi의 Rating is 증가 by Uncapped 냉기 저항",
@@ -8343,37 +8281,19 @@ began Recently"] = "최근 재충전이 시작된 경우 피해에 의해 에너
 	["Every # seconds, gain Avatar of Fire for # seconds"] = "Every # 초, gain 화염의 화신 #초 동안",
 	["Every # seconds, gain one of the following for # seconds:"] = "Every # 초, gain 의e of the following #초 동안:",
 	["Every 10 seconds, gain 100% increased Elemental Damage for 4 seconds"] = "10초마다 4초 동안 원소 피해 100% 증가",
-	["Every 10 seconds, gain 100% of Physical Damage
-as Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안 물리 피해의 100%를 추가 화염 피해로 획득",
+	["Every 10 seconds, gain 100% of Physical Damage\nas Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안 물리 피해의 100%를 추가 화염 피해로 획득",
 	["Every 10 seconds, gain 100% of Physical Damage\\nas Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안\\n물리 피해의 100%를 추가 화염 피해로 획득",
 	["Every 10 seconds, gain 25% increased Area of Effect of Area Skills for 4 seconds"] = "10초마다 4초 동안 범위 스킬의 효과 범위 25% 증가",
-	["Every 10 seconds, gain 30% of Physical Damage
-as Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안 물리 피해의 30%를 추가 화염 피해로 획득",
+	["Every 10 seconds, gain 30% of Physical Damage\nas Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안 물리 피해의 30%를 추가 화염 피해로 획득",
 	["Every 10 seconds, gain 30% of Physical Damage\\nas Extra Fire Damage for 4 seconds"] = "10초마다 4초 동안\\n물리 피해의 30%를 추가 화염 피해로 획득",
 	["Every 10 seconds, gain 70% of Physical Damage as Extra Fire Damage for 3 seconds"] = "10초마다 3초 동안 물리 피해의 70%를 추가 화염 피해로 획득",
 	["Every 10 seconds, take no Damage over Time for 5 seconds"] = "10초마다 5초 동안 지속 피해를 받지 않음",
-	["Every 10 seconds:
-Take 40% less Damage from Hits for 5 seconds
-Take 40% less Damage over Time for 5 seconds"] = "10초마다:
-5초 동안 타격으로 받는 피해 40% 감폭
-5초 동안 지속 피해 40% 감폭",
-	["Every 10 seconds:
-Take 50% less Damage from Hits for 5 seconds
-Take 50% less Damage over Time for 5 seconds"] = "10초마다:
-5초 동안 타격으로 받는 피해 50% 감폭
-5초 동안 지속 피해 50% 감폭",
+	["Every 10 seconds:\nTake 40% less Damage from Hits for 5 seconds\nTake 40% less Damage over Time for 5 seconds"] = "10초마다:\n5초 동안 타격으로 받는 피해 40% 감폭\n5초 동안 지속 피해 40% 감폭",
+	["Every 10 seconds:\nTake 50% less Damage from Hits for 5 seconds\nTake 50% less Damage over Time for 5 seconds"] = "10초마다:\n5초 동안 타격으로 받는 피해 50% 감폭\n5초 동안 지속 피해 50% 감폭",
 	["Every 10 seconds:\\nTake 40% less Damage from Hits for 5 seconds\\nTake 40% less Damage over Time for 5 seconds"] = "10초마다:\\n5초 동안 적중으로 인한 피해 40% 감폭\\n5초 동안 지속 피해 40% 감폭",
 	["Every 10 seconds:\\nTake 50% less Damage from Hits for 5 seconds\\nTake 50% less Damage over Time for 5 seconds"] = "10초마다:\\n5초 동안 적중으로 인한 피해 50% 감폭\\n5초 동안 지속 피해 50% 감폭",
 	["Every 14 seconds:"] = "14초마다:",
-	["Every 14 seconds:
-Gain Chilling Conflux for 4 seconds
-Gain Shocking Conflux for 4 seconds
-Gain Igniting Conflux for 4 seconds
-Gain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "14초마다:
-4초 동안 냉각 합류 획득
-4초 동안 감전 합류 획득
-4초 동안 점화 합류 획득
-2초 동안 냉각, 감전, 점화 합류 획득",
+	["Every 14 seconds:\nGain Chilling Conflux for 4 seconds\nGain Shocking Conflux for 4 seconds\nGain Igniting Conflux for 4 seconds\nGain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "14초마다:\n4초 동안 냉각 합류 획득\n4초 동안 감전 합류 획득\n4초 동안 점화 합류 획득\n2초 동안 냉각, 감전, 점화 합류 획득",
 	["Every 14 seconds:\\nGain Chilling Conflux for 4 seconds\\nGain Shocking Conflux for 4 seconds\\nGain Igniting Conflux for 4 seconds\\nGain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "14초마다:\\n4초 동안 냉각 합류 획득\\n4초 동안 감전 합류 획득\\n4초 동안 점화 합류 획득\\n2초 동안 냉각, 감전, 점화 합류 획득",
 	["Every 2 seconds, gain a Ghost Shroud, up to a maximum of 3"] = "2초마다 유령 장막 획득, 최대 3개",
 	["Every 3 seconds, Consume a nearby Corpse to Recover 10% of Life"] = "3초마다 근처 시체를 소모하여 생명력의 10% 회복",
@@ -8403,9 +8323,7 @@ Gain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "14초마다:
 	["Every Rage also grants 1% increased Attack Speed"] = "분노가 공격 속도 1% 증가도 부여",
 	["Every Rage also grants 1% increased Stun Threshold"] = "분노가 기절 한계치 1% 증가도 부여",
 	["Every fourth Retaliation Skill you use always Critically Strikes"] = "4번째 사용하는 보복 스킬이 항상 치명타",
-	["Every second, Consume a nearby Corpse to Recover 5% of Life and Mana
-10% more Damage taken if you haven't Consumed a Corpse Recently"] = "매초 근처 시체를 소모하여 생명력 및 마나의 5% 회복
-최근 시체를 소모하지 않은 경우 받는 피해 10% 증폭",
+	["Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently"] = "매초 근처 시체를 소모하여 생명력 및 마나의 5% 회복\n최근 시체를 소모하지 않은 경우 받는 피해 10% 증폭",
 	["Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\\n10% more Damage taken if you haven't Consumed a Corpse Recently"] = "매초, 인근 시체를 소모하여 생명력과 마나의 5% 회복\\n최근 시체를 소모하지 않은 경우 받는 피해 10% 증폭",
 	["Every second, gain a Ghost Shroud, up to a maximum of 3"] = "매초 유령 장막 획득, 최대 3개",
 	["Every second, inflict Withered on nearby Enemies for 15 seconds"] = "매초 근처의 적에게 15초 동안 시듦 부여",
@@ -8477,18 +8395,14 @@ Gain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "14초마다:
 	["Flamethrower Trap has an additional Flame"] = "화염방사 덫에 추가 화염 1개",
 	["Flammability can affect Hexproof Enemies"] = "인화성이 저주 면역인 적에게 효과 발휘",
 	["Flammability has no Reservation if Cast as an Aura"] = "Flammability has no Reservati의 if Cast as an 오라",
-	["Flasks adjacent to active Tinctures gain 2 charges when you Hit an
-Enemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크에 인접한 플라스크가 근접 무기로 적 타격 시 충전 2개 획득, 초당 1회 이하",
+	["Flasks adjacent to active Tinctures gain 2 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크에 인접한 플라스크가 근접 무기로 적 타격 시 충전 2개 획득, 초당 1회 이하",
 	["Flasks adjacent to active Tinctures gain 2 charges when you Hit an\\nEnemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크처에 인접한 플라스크는 근접 무기로 적을 적중 시\\n충전 2 획득, 1초에 한 번 이하",
-	["Flasks adjacent to active Tinctures gain 3 charges when you Hit an
-Enemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크에 인접한 플라스크가 근접 무기로 적 타격 시 충전 3개 획득, 초당 1회 이하",
+	["Flasks adjacent to active Tinctures gain 3 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크에 인접한 플라스크가 근접 무기로 적 타격 시 충전 3개 획득, 초당 1회 이하",
 	["Flasks adjacent to active Tinctures gain 3 charges when you Hit an\\nEnemy with a Melee Weapon, no more than once every second"] = "활성화된 팅크처에 인접한 플라스크는 근접 무기로 적을 적중 시\\n충전 3 획득, 1초에 한 번 이하",
 	["Flasks adjacent to applied Tincture gain 3 charges when you Hit an Enemy with a Weapon, no more than once every second"] = "적용된 팅크에 인접한 플라스크가 무기로 적 타격 시 충전 3개 획득, 초당 1회 이하",
-	["Flasks adjacent to applied Tincture have 10% increased Effect when
-used if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 타격한 경우 적용된 팅크에 인접한 플라스크 사용 시 효과 10% 증가",
+	["Flasks adjacent to applied Tincture have 10% increased Effect when\nused if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 타격한 경우 적용된 팅크에 인접한 플라스크 사용 시 효과 10% 증가",
 	["Flasks adjacent to applied Tincture have 10% increased Effect when\\nused if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 적중한 경우 적용된 팅크처에 인접한 플라스크의\\n사용 시 효과 10% 증가",
-	["Flasks adjacent to applied Tincture have 30% increased Effect when
-used if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 타격한 경우 적용된 팅크에 인접한 플라스크 사용 시 효과 30% 증가",
+	["Flasks adjacent to applied Tincture have 30% increased Effect when\nused if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 타격한 경우 적용된 팅크에 인접한 플라스크 사용 시 효과 30% 증가",
 	["Flasks adjacent to applied Tincture have 30% increased Effect when used if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 타격한 경우 적용된 팅크에 인접한 플라스크 사용 시 효과 30% 증가",
 	["Flasks adjacent to applied Tincture have 30% increased Effect when\\nused if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 적중한 경우 적용된 팅크처에 인접한 플라스크의\\n사용 시 효과 30% 증가",
 	["Flasks applied to you have #% Increased Effect"] = "플라스크 applied 시전자에게 have #% Increased 효과",
@@ -8522,8 +8436,7 @@ used if you've Hit an enemy with a Weapon Recently"] = "최근 무기로 적을 
 	["For each nearby corpse, Regenerate # Life per Second"] = "For 각 nearby corpse, 재생 # 생명력 당 Sec의d",
 	["For each nearby corpse, Regenerate #% Life per second, up to #%"] = "For 각 nearby corpse, 재생 #% 생명력 초당, 최대 #%",
 	["For each nearby corpse, you and nearby Allies Regenerate 0.2% of Energy Shield per second, up to 2.0% per second"] = "근처 시체당 당신과 근처 동료가 초당 에너지 보호막의 0.2% 재생, 최대 초당 2.0%",
-	["For each nearby corpse, you and nearby Allies Regenerate 5 Mana
-per second, up to 50 per second"] = "근처 시체당 당신과 근처 동료가 초당 마나 5 재생, 최대 초당 50",
+	["For each nearby corpse, you and nearby Allies Regenerate 5 Mana\nper second, up to 50 per second"] = "근처 시체당 당신과 근처 동료가 초당 마나 5 재생, 최대 초당 50",
 	["For each nearby corpse, you and nearby Allies Regenerate 5 Mana\\nper second, up to 50 per second"] = "인근 시체 하나당 당신과 인근 동료의\\n초당 마나 5 재생, 최대 초당 50",
 	["For each nearby corpse, you and nearby Allies deal 1% more Damage, up to a maximum of 10%"] = "근처 시체당 당신과 근처 동료의 피해 1% 증폭, 최대 10%",
 	["Forbidden Rite fires an additional Projectile"] = "금지된 의식이 추가 투사체 1개 발사",
@@ -8624,15 +8537,9 @@ per second, up to 50 per second"] = "근처 시체당 당신과 근처 동료가
 	["Gain 1 Endurance Charge every second if you've been Hit Recently"] = "최근 타격받은 경우 매초 인내 충전 1개 획득",
 	["Gain 1 Endurance Charge every second if you've used a Warcry Recently"] = "최근 전투 함성을 사용한 경우 매초 인내 충전 1개 획득",
 	["Gain 1 Fanatic Charge every second if you've Attacked in the past second"] = "지난 1초 이내에 공격한 경우 매초 광신 충전 1개 획득",
-	["Gain 1 Gale Force when you use a Skill
-10% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득
-강풍당 순풍의 효과 10% 증가",
-	["Gain 1 Gale Force when you use a Skill
-15% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득
-강풍당 순풍의 효과 15% 증가",
-	["Gain 1 Gale Force when you use a Skill
-5% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득
-강풍당 순풍의 효과 5% 증가",
+	["Gain 1 Gale Force when you use a Skill\n10% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득\n강풍당 순풍의 효과 10% 증가",
+	["Gain 1 Gale Force when you use a Skill\n15% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득\n강풍당 순풍의 효과 15% 증가",
+	["Gain 1 Gale Force when you use a Skill\n5% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 강풍 1 획득\n강풍당 순풍의 효과 5% 증가",
 	["Gain 1 Gale Force when you use a Skill\\n10% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 질풍의 힘 1 획득\\n질풍의 힘 하나당 당신에 대한 순풍 효과 10% 증가",
 	["Gain 1 Gale Force when you use a Skill\\n15% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 질풍의 힘 1 획득\\n질풍의 힘 하나당 당신에 대한 순풍 효과 15% 증가",
 	["Gain 1 Gale Force when you use a Skill\\n5% increased Effect of Tailwind on you per Gale Force"] = "스킬 사용 시 질풍의 힘 1 획득\\n질풍의 힘 하나당 당신에 대한 순풍 효과 5% 증가",
@@ -8643,9 +8550,7 @@ per second, up to 50 per second"] = "근처 시체당 당신과 근처 동료가
 	["Gain 1 Rage on Melee Hit, no more than once every 0.3 seconds"] = "근접 적중 시 0.3초당 최대 1회 격노 1 획득",
 	["Gain 1 Rage when you Kill an Enemy"] = "적 처치 시 분노 1 획득",
 	["Gain 1 Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each Ailment type\\nLose all Unbound Fury when Hit\\n3% increased Attack Speed per Unbound Fury"] = "적중으로 적에게 원소 상태 이상을 유발할 때 속박되지 않은 분노 1 획득, 상태 이상 유형별로 0.2초당 최대 1번\\n피격 시 속박되지 않은 분노 모두 상실\\n속박되지 않은 분노 하나당 공격 속도 3% 증가",
-	["Gain 1 Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each type of Ailment
-Cannot gain Unbound Fury while Unbound"] = "적에게 타격으로 원소 상태 이상 부여 시 해방된 분노 1 획득, 각 상태 이상 유형당 0.2초에 1회 이하
-해방 상태에서 해방된 분노 획득 불가",
+	["Gain 1 Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each type of Ailment\nCannot gain Unbound Fury while Unbound"] = "적에게 타격으로 원소 상태 이상 부여 시 해방된 분노 1 획득, 각 상태 이상 유형당 0.2초에 1회 이하\n해방 상태에서 해방된 분노 획득 불가",
 	["Gain 1 Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each type of Ailment\\nCannot gain Unbound Fury while Unbound"] = "적중으로 적에게 원소 상태 이상을 유발할 때 속박되지 않은 분노 1 획득, 상태 이상 유형별로 0.2초당 최대 1번\\n속박 해제 상태에서 속박되지 않은 분노를 획득할 수 없음",
 	["Gain 1 Vaal Soul per second"] = "초당 바알 영혼 1개 획득",
 	["Gain 10 Life per Enemy Hit with Attacks"] = "공격으로 적 타격 시 생명력 10 획득",
@@ -8674,11 +8579,7 @@ Cannot gain Unbound Fury while Unbound"] = "적에게 타격으로 원소 상태
 	["Gain 15% of Missing Unreserved Life before being Hit by an Enemy"] = "적에게 타격받기 전 미보유 생명력의 15% 획득",
 	["Gain 15% of Physical Damage as Extra Damage of a random Element"] = "물리 피해의 15%를 무작위 원소의 추가 피해로 획득",
 	["Gain 15% of Physical Damage as Extra Fire Damage if you or your Totems have Killed Recently"] = "당신 또는 토템이 최근 적을 처치한 경우 물리 피해의 15%를 추가 화염 피해로 획득",
-	["Gain 2 Grasping Vines each second while stationary
-2% chance to deal Double Damage per Grasping Vine
-1% less Damage taken per Grasping Vine"] = "정지 시 매초 덩굴 2개 획득
-덩굴당 이중 피해 확률 2%
-덩굴당 받는 피해 1% 감폭",
+	["Gain 2 Grasping Vines each second while stationary\n2% chance to deal Double Damage per Grasping Vine\n1% less Damage taken per Grasping Vine"] = "정지 시 매초 덩굴 2개 획득\n덩굴당 이중 피해 확률 2%\n덩굴당 받는 피해 1% 감폭",
 	["Gain 2 Grasping Vines each second while stationary\\n2% chance to deal Double Damage per Grasping Vine\\n1% less Damage taken per Grasping Vine"] = "정지 상태에서 매초 붙잡는 덩굴 2개 획득\\n붙잡는 덩굴 하나당 이중 피해를 줄 확률 2%\\n붙잡는 덩굴 하나당 받는 피해 1% 감폭",
 	["Gain 2 Mana per Enemy Hit with Attacks"] = "공격으로 적 타격 시 마나 2 획득",
 	["Gain 2 Rage on Attack Hit"] = "공격 타격 시 분노 2 획득",
@@ -8692,8 +8593,7 @@ Cannot gain Unbound Fury while Unbound"] = "적에게 타격으로 원소 상태
 	["Gain 20% increased Movement Speed for 20 seconds when you Kill an Enemy"] = "적 처치 시 20초 동안 이동 속도 20% 증가",
 	["Gain 20% of Maximum Life as Extra Maximum Energy Shield"] = "최대 생명력의 20%를 추가 최대 에너지 보호막로 획득",
 	["Gain 20% of Maximum Mana as Extra Maximum Energy Shield"] = "최대 마나의 20%를 추가 최대 에너지 보호막로 획득",
-	["Gain 20% of Physical Damage as Extra Chaos Damage against
-Poisoned Enemies"] = "중독된 적에 대해 물리 피해의 20%를 추가 카오스 피해로 획득",
+	["Gain 20% of Physical Damage as Extra Chaos Damage against\nPoisoned Enemies"] = "중독된 적에 대해 물리 피해의 20%를 추가 카오스 피해로 획득",
 	["Gain 20% of Physical Damage as Extra Chaos Damage against\\nPoisoned Enemies"] = "중독된 적에 대해\\n물리 피해의 20%를 추가 카오스 피해로 획득",
 	["Gain 20% of Physical Damage as Extra Fire Damage if you or your Totems have Killed Recently"] = "당신 또는 토템이 최근 적을 처치한 경우 물리 피해의 20%를 추가 화염 피해로 획득",
 	["Gain 20% of Wand Physical Damage as Extra Lightning Damage"] = "마법봉 물리 피해의 20%를 추가 번개 피해로 획득",
@@ -8749,8 +8649,7 @@ Poisoned Enemies"] = "중독된 적에 대해 물리 피해의 20%를 추가 카
 	["Gain Adrenaline for 10 seconds when you reach Low Life"] = "저 생명력에 도달하면 10초 동안 아드레날린 획득",
 	["Gain Adrenaline for 20 seconds when Ward Breaks"] = "수호가 깨지면 20초 동안 아드레날린 획득",
 	["Gain Adrenaline for 20 seconds when you reach Low Life"] = "저 생명력에 도달하면 20초 동안 아드레날린 획득",
-	["Gain Adrenaline for 20 seconds when you reach Low Life if you
-do not have Adrenaline"] = "아드레날린이 없을 때 저 생명력에 도달하면 20초 동안 아드레날린 획득",
+	["Gain Adrenaline for 20 seconds when you reach Low Life if you\ndo not have Adrenaline"] = "아드레날린이 없을 때 저 생명력에 도달하면 20초 동안 아드레날린 획득",
 	["Gain Adrenaline for 20 seconds when you reach Low Life if you\\ndo not have Adrenaline"] = "아드레날린이 없는 상태에서 저생명력에 도달 시\\n20초 동안 아드레날린 획득",
 	["Gain Adrenaline for 5 seconds on Kill"] = "적 처치 시 5초 동안 아드레날린 획득",
 	["Gain Adrenaline when Stunned, for 2 seconds per 100ms of Stun Duration"] = "기절 시 기절 지속시간 100ms당 2초 동안 아드레날린 획득",
@@ -8770,8 +8669,7 @@ do not have Adrenaline"] = "아드레날린이 없을 때 저 생명력에 도�
 	["Gain Chilling Conflux for 4 seconds"] = "4초 동안 냉각 합류 획득",
 	["Gain Chilling, Shocking and Igniting Conflux for 2 seconds"] = "2초 동안 냉각, 감전, 점화 합류 획득",
 	["Gain Convergence when you Hit a Unique Enemy, no more than once every 8 seconds"] = "고유 적 타격 시 집중 획득, 8초에 1회 이하",
-	["Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no
-more than once every 0.3 seconds"] = "적 타격으로 생명력을 잃으면 10초 동안 반항 획득, 0.3초에 1회 이하",
+	["Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no\nmore than once every 0.3 seconds"] = "적 타격으로 생명력을 잃으면 10초 동안 반항 획득, 0.3초에 1회 이하",
 	["Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no more than once every 0.3 seconds"] = "적 타격으로 생명력을 잃으면 10초 동안 반항 획득, 0.3초에 1회 이하",
 	["Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no\\nmore than once every 0.3 seconds"] = "적의 적중으로 생명력을 잃으면 10초 동안 저항 획득,\\n0.3초에 한 번 이하",
 	["Gain Elemental Conflux for 4 seconds when you Kill a Rare or Unique Enemy"] = "희귀 또는 고유 적 처치 시 4초 동안 원소 합류 획득",
@@ -8896,8 +8794,7 @@ more than once every 0.3 seconds"] = "적 타격으로 생명력을 잃으면 10
 	["Grace has 50% increased Aura Effect while you have no Frenzy Charges"] = "격분 충전이 없을 때 우아함의 오라 효과 50% 증가",
 	["Grace has 50% increased Mana Reservation Efficiency"] = "Grace의 마나 점유 효율 50% 증가",
 	["Grace has no Reservation"] = "우아함에 점유가 없음",
-	["Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of
-each of the following types, if possible:"] = "가능할 경우 다음 유형의 플라스크에서 각 충전 3개를 소모하여 사용하는 비집중 유지 스킬에 보너스 부여:",
+	["Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of\neach of the following types, if possible:"] = "가능할 경우 다음 유형의 플라스크에서 각 충전 3개를 소모하여 사용하는 비집중 유지 스킬에 보너스 부여:",
 	["Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of\\neach of the following types, if possible:"] = "가능하다면 아래 유형의 플라스크에서 각각 충전 3개를 소모하여\\n비집중 유지 스킬에 보너스 부여:",
 	["Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of\\neach of the following types, if possible: Life, Mana, Hybrid"] = "가능하다면 생명력, 마나, 하이브리드 플라스크에서 각각 충전 3개를 소모하여\\n비집중 유지 스킬에 보너스 부여",
 	["Grants # Life per Enemy Hit"] = "Grants # 생명력 당 적 Hit",
@@ -9000,12 +8897,10 @@ each of the following types, if possible:"] = "가능할 경우 다음 유형의
 	["Grants a random Divination buff for # seconds when used"] = "Grants a random Divinati의 buff #초 동안 사용 시",
 	["Grants all bonuses of Unallocated Small Passive Skills in Radius"] = "Grants all b의uses of Unallocated Small 패시브 스킬 in 범위",
 	["Grants level 20 Penance Mark"] = "참회의 표식 레벨 20 부여",
-	["Grants maximum Energy Shield equal to 10% of your Reserved Mana to
-you and nearby Allies"] = "보유 마나의 10%와 동일한 최대 에너지 보호막을 당신과 근처 동료에게 부여",
+	["Grants maximum Energy Shield equal to 10% of your Reserved Mana to\nyou and nearby Allies"] = "보유 마나의 10%와 동일한 최대 에너지 보호막을 당신과 근처 동료에게 부여",
 	["Grants maximum Energy Shield equal to 10% of your Reserved Mana to\\nyou and nearby Allies"] = "당신과 인근 동료에게 점유한 마나의 10%만큼\\n최대 에너지 보호막 부여",
 	["Grants maximum Energy Shield equal to 15% of your Reserved Mana to"] = "보유 마나의 15%와 동일한 최대 에너지 보호막 부여",
-	["Grants maximum Energy Shield equal to 15% of your Reserved Mana to
-you and nearby Allies"] = "보유 마나의 15%와 동일한 최대 에너지 보호막을 당신과 근처 동료에게 부여",
+	["Grants maximum Energy Shield equal to 15% of your Reserved Mana to\nyou and nearby Allies"] = "보유 마나의 15%와 동일한 최대 에너지 보호막을 당신과 근처 동료에게 부여",
 	["Grants maximum Energy Shield equal to 15% of your Reserved Mana to\\nyou and nearby Allies"] = "당신과 인근 동료에게 점유한 마나의 15%만큼\\n최대 에너지 보호막 부여",
 	["Ground Slam has a 16% increased angle"] = "대지 강타의 각도 16% 증가",
 	["Ground Slam has a 24% increased angle"] = "대지 강타의 각도 24% 증가",
@@ -9131,9 +9026,7 @@ you and nearby Allies"] = "보유 마나의 15%와 동일한 최대 에너지 �
 	["Hits ignore Enemy Monster Fire Resistance while you are Ignited"] = "Hits ignore 적 M의ster 화염 저항 while you are 점화d",
 	["Hits ignore Enemy Monster Physical Damage Reduction if you've Blocked in the past 20 seconds"] = "지난 20초 동안 막기 성공 시 타격이 적 몬스터의 물리 피해 감소 무시",
 	["Hits that Stun Enemies have Culling Strike"] = "적을 기절시키는 타격에 마무리 일격",
-	["Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements
-Exposure inflicted this way applies -25% to Resistances"] = "원소 피해를 주는 타격이 해당 원소의 노출을 제거하고 다른 원소의 노출을 부여
-이 방식으로 부여된 노출이 저항에 -25% 적용",
+	["Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances"] = "원소 피해를 주는 타격이 해당 원소의 노출을 제거하고 다른 원소의 노출을 부여\n이 방식으로 부여된 노출이 저항에 -25% 적용",
 	["Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\\nExposure inflicted this way applies -25% to Resistances"] = "원소 피해를 주는 적중이 해당 원소의 노출을 제거하고 다른 원소의 노출을 부여\\n이 방법으로 부여된 노출은 저항 -25% 적용",
 	["Hits that deal Fire Damage have Culling Strike"] = "화염 피해를 가하는 적중에 마무리 일격",
 	["Hits that fail to Freeze due to insufficient Freeze Duration inflict Hoarfrost"] = "동결 지속시간 부족으로 동결에 실패한 타격이 서리꽃 부여",
@@ -9190,18 +9083,15 @@ Exposure inflicted this way applies -25% to Resistances"] = "원소 피해를 �
 	["If Diamond Flask Charges are consumed, 250% increased Critical Strike Chance"] = "다이아몬드 플라스크 충전이 소모되면 치명타 확률 250% 증가",
 	["If you Consumed a Corpse Recently, you and nearby Allies regenerate #% of Life per second"] = "If you C의sumed a 시체 최근, you and nearby 아군 regenerate #% of 생명력 초당",
 	["If you have Blocked Recently, you and nearby Allies Regenerate #% of Life per second"] = "If you have 막기ed 최근, you and nearby 아군 재생 #% of 생명력 초당",
-	["If you've Attacked Recently, you
-and nearby Allies have +10% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +10%",
+	["If you've Attacked Recently, you\nand nearby Allies have +10% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +10%",
 	["If you've Attacked Recently, you and nearby Allies have +10% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +10%",
 	["If you've Attacked Recently, you and nearby Allies have +15% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +15%",
 	["If you've Attacked Recently, you and nearby Allies have +25% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +25%",
 	["If you've Attacked Recently, you and nearby Allies have +7% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과 근처 동료의 공격 피해 막기 확률 +7%",
 	["If you've Attacked Recently, you\\nand nearby Allies have +10% Chance to Block Attack Damage"] = "최근 공격한 경우 당신과\\n인근 동료의 공격 피해 막기 확률 +10%",
-	["If you've Blocked in the past 10 seconds, you
-and nearby Allies cannot be Stunned"] = "지난 10초 이내에 막기 성공 시 당신과 근처 동료가 기절하지 않음",
+	["If you've Blocked in the past 10 seconds, you\nand nearby Allies cannot be Stunned"] = "지난 10초 이내에 막기 성공 시 당신과 근처 동료가 기절하지 않음",
 	["If you've Blocked in the past 10 seconds, you\\nand nearby Allies cannot be Stunned"] = "지난 10초 내에 막기에 성공한 경우\\n당신과 인근 동료가 기절하지 않음",
-	["If you've Cast a Spell Recently, you
-and nearby Allies have +10% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과 근처 동료의 주문 피해 막기 확률 +10%",
+	["If you've Cast a Spell Recently, you\nand nearby Allies have +10% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과 근처 동료의 주문 피해 막기 확률 +10%",
 	["If you've Cast a Spell Recently, you and nearby Allies have +10% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과 근처 동료의 주문 피해 막기 확률 +10%",
 	["If you've Cast a Spell Recently, you and nearby Allies have +15% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과 근처 동료의 주문 피해 막기 확률 +15%",
 	["If you've Cast a Spell Recently, you and nearby Allies have +25% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과 근처 동료의 주문 피해 막기 확률 +25%",
@@ -9209,13 +9099,10 @@ and nearby Allies have +10% Chance to Block Spell Damage"] = "최근 주문을 �
 	["If you've Cast a Spell Recently, you\\nand nearby Allies have +10% Chance to Block Spell Damage"] = "최근 주문을 시전한 경우 당신과\\n인근 동료의 주문 피해 막기 확률 +10%",
 	["If you've Consumed a corpse Recently, you and your Minions have 30% increased Area of Effect"] = "최근 시체를 소모한 경우 당신과 소환수의 효과 범위 30% 증가",
 	["If you've Hit an Enemy Recently, you and nearby Allies Regenerate 3.0% of Life per second"] = "최근 적을 타격한 경우 당신과 근처 동료가 초당 생명력의 3% 재생",
-	["If you've Impaled an Enemy Recently, you
-and nearby Allies have +1000 to Armour"] = "최근 적을 꿰뚫은 경우 당신과 근처 동료의 방어도 +1000",
+	["If you've Impaled an Enemy Recently, you\nand nearby Allies have +1000 to Armour"] = "최근 적을 꿰뚫은 경우 당신과 근처 동료의 방어도 +1000",
 	["If you've Impaled an Enemy Recently, you\\nand nearby Allies have +1000 to Armour"] = "최근 적에게 관통상을 부여한 경우\\n당신과 인근 동료의 방어도 +1000",
-	["If you've Warcried Recently, you and nearby allies
-have 10% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 공격 속도 10% 증가",
-	["If you've Warcried Recently, you and nearby allies
-have 20% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 공격 속도 20% 증가",
+	["If you've Warcried Recently, you and nearby allies\nhave 10% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 공격 속도 10% 증가",
+	["If you've Warcried Recently, you and nearby allies\nhave 20% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 공격 속도 20% 증가",
 	["If you've Warcried Recently, you and nearby allies deal 30% increased Damage"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 피해 30% 증가",
 	["If you've Warcried Recently, you and nearby allies have 10% increased Attack, Cast and Movement Speed"] = "최근 전투 함성을 사용한 경우 당신과 근처 동료의 공격, 시전, 이동 속도 10% 증가",
 	["If you've Warcried Recently, you and nearby allies\\nhave 10% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 당신과 인근 동료의\\n공격 속도 10% 증가",
@@ -9278,8 +9165,7 @@ have 20% increased Attack Speed"] = "최근 전투 함성을 사용한 경우 �
 	["Incinerate has 16% increased Area of Effect"] = "소각의 효과 범위 16% 증가",
 	["Incinerate has 24% increased Area of Effect"] = "소각의 효과 범위 24% 증가",
 	["Increase to Cast Speed from Arcane Surge also applies to Movement Speed"] = "Increase to 시전 속도 from 신비한 쇄도 also applies to 이동 속도",
-	["Increases and Reductions to Armour also apply to Energy
-Shield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소가 에너지 보호막 재충전 속도에도 20%의 값으로 적용",
+	["Increases and Reductions to Armour also apply to Energy\nShield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소가 에너지 보호막 재충전 속도에도 20%의 값으로 적용",
 	["Increases and Reductions to Armour also apply to Energy Shield Recharge rate at 20% of their value"] = "방어도의 증가 및 감소가 에너지 보호막 재충전 속도에도 20%의 값으로 적용",
 	["Increases and Reductions to Armour also apply to Energy\\nShield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소가 그 수치의 20%만큼\\n에너지 보호막 충전 속도에도 적용",
 	["Increases and Reductions to Cast Speed also Apply to Trap Throwing Speed"] = "Increases and Reducti의s to 시전 속도 also Apply to Trap Throwing Speed",
@@ -9321,8 +9207,7 @@ Shield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소�
 	["Inflict Hallowing Flame on Melee Hit"] = "근접 타격 시 신성한 불꽃 부여",
 	["Inflict Socketed Hexes on Enemies that trigger your Traps"] = "Inflict 장착된 Hexes 의 적 that trigger your Traps",
 	["Inflict Withered for # seconds on Hit with this Weapon"] = "Inflict 시들음ed #초 동안 적중 시 이 무기로",
-	["Inflict a Grasping Vine on Hit against Enemies with fewer than
-8 Grasping Vines during Effect of any Life Flask"] = "생명력 플라스크 효과 중 덩굴 8개 미만인 적 타격 시 덩굴 부여",
+	["Inflict a Grasping Vine on Hit against Enemies with fewer than\n8 Grasping Vines during Effect of any Life Flask"] = "생명력 플라스크 효과 중 덩굴 8개 미만인 적 타격 시 덩굴 부여",
 	["Inflict a Grasping Vine on Hit against Enemies with fewer than\\n8 Grasping Vines during Effect of any Life Flask"] = "생명력 플라스크 효과 중 붙잡는 덩굴이 8개 미만인\\n적 적중 시 붙잡는 덩굴 부여",
 	["Inflict non-Damaging Ailments as though dealing (##)% more Damage"] = "Inflict n의-Damaging 상태 이상 as though dealing (##)% more 피해",
 	["Inflicts Mana Burn on you when you Hit an Enemy with a Melee Weapon"] = "Inflicts 마나 Burn 의 you when you Hit an 적 with a Melee Weap의",
@@ -9343,9 +9228,7 @@ Shield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소�
 	["Intelligence from Passives in Radius is Transformed to Dexterity"] = "지능 from 패시브 in 범위 is Transformed to 민첩",
 	["Intelligence from Passives in Radius is Transformed to Strength"] = "지능 from 패시브 in 범위 is Transformed to 힘",
 	["Intelligence is added to Accuracy Rating with Wands"] = "지능이 마법봉 명중 등급에 추가",
-	["Intelligence provides no inherent bonus to Energy Shield
-2% reduced Duration of Elemental Ailments on you per 15 Intelligence"] = "지능이 에너지 보호막에 고유 보너스를 제공하지 않음
-지능 15당 원소 상태 이상 지속시간 2% 감소",
+	["Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence"] = "지능이 에너지 보호막에 고유 보너스를 제공하지 않음\n지능 15당 원소 상태 이상 지속시간 2% 감소",
 	["Intelligence provides no inherent bonus to Energy Shield\\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence"] = "지능이 에너지 보호막에 대한 고유 보너스를 제공하지 않음\\n지능 15당 당신에게 걸린 원소 상태 이상의 지속시간 2% 감소",
 	["Intelligence provides no inherent bonus to Maximum Mana"] = "지능이 최대 마나에 고유 보너스를 제공하지 않음",
 	["Intimidate Enemies for 4 seconds on Block while holding a Shield"] = "방패 보유 시 막기 성공 시 4초 동안 적 위협",
@@ -9385,21 +9268,9 @@ Shield Recharge Rate at 20% of their value"] = "방어도의 증가 및 감소�
 	["Lancing Steel has 30% chance to count as consuming Steel Shards without Consuming them"] = "관통하는 강철이 강철 파편을 소모하지 않고 소모한 것으로 간주할 확률 30%",
 	["Leech #% of Expected Ignite Damage as Life when you Ignite an Enemy during Effect"] = "흡수 #% of Expected 점화 피해 as 생명력 when you 점화 an 적 효과 중",
 	["Leech Energy Shield instead of Life"] = "흡수 에너지 보호막 instead of 생명력",
-	["Leech Energy Shield instead of Life
-Maximum total Energy Shield Recovery per second from Leech is doubled
-50% less Energy Shield Recharge Rate"] = "생명력 대신 에너지 보호막 흡수
-흡수로 인한 초당 최대 총 에너지 보호막 회복 2배
-에너지 보호막 재충전 속도 50% 감폭",
-	["Leech Energy Shield instead of Life
-Maximum total Energy Shield Recovery per second from Leech is doubled
-Cannot Recharge Energy Shield"] = "생명력 대신 에너지 보호막 흡수
-흡수로 인한 초당 최대 총 에너지 보호막 회복 2배
-에너지 보호막 재충전 불가",
-	["Leech Energy Shield instead of Life
-Maximum total Recovery per second from Energy Shield Leech is doubled
-50% less Energy Shield Recharge Rate"] = "생명력 대신 에너지 보호막 흡수
-에너지 보호막 흡수로 인한 초당 최대 총 회복 2배
-에너지 보호막 재충전 속도 50% 감폭",
+	["Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\n50% less Energy Shield Recharge Rate"] = "생명력 대신 에너지 보호막 흡수\n흡수로 인한 초당 최대 총 에너지 보호막 회복 2배\n에너지 보호막 재충전 속도 50% 감폭",
+	["Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\nCannot Recharge Energy Shield"] = "생명력 대신 에너지 보호막 흡수\n흡수로 인한 초당 최대 총 에너지 보호막 회복 2배\n에너지 보호막 재충전 불가",
+	["Leech Energy Shield instead of Life\nMaximum total Recovery per second from Energy Shield Leech is doubled\n50% less Energy Shield Recharge Rate"] = "생명력 대신 에너지 보호막 흡수\n에너지 보호막 흡수로 인한 초당 최대 총 회복 2배\n에너지 보호막 재충전 속도 50% 감폭",
 	["Leech Energy Shield instead of Life\\nMaximum total Energy Shield Recovery per second from Leech is doubled\\n50% less Energy Shield Recharge Rate"] = "생명력 대신 에너지 보호막 흡수\\n흡수로 인한 초당 최대 총 에너지 보호막 회복 2배\\n에너지 보호막 충전 속도 50% 감폭",
 	["Leech Energy Shield instead of Life\\nMaximum total Energy Shield Recovery per second from Leech is doubled\\n50% less Energy Shield Regeneration Rate\\nCannot Recharge Energy Shield"] = "생명력 대신 에너지 보호막 흡수\\n흡수로 인한 초당 최대 총 에너지 보호막 회복 2배\\n에너지 보호막 재생 속도 50% 감폭\\n에너지 보호막을 충전할 수 없음",
 	["Leech Energy Shield instead of Life\\nMaximum total Energy Shield Recovery per second from Leech is doubled\\nCannot Recharge Energy Shield"] = "생명력 대신 에너지 보호막 흡수\\n흡수로 인한 초당 최대 총 에너지 보호막 회복 2배\\n에너지 보호막을 충전할 수 없음",
@@ -9417,9 +9288,7 @@ Maximum total Recovery per second from Energy Shield Leech is doubled
 	["Leftmost (##) Magic Utility Flasks constantly apply their Flask Effects to you"] = "Leftmost (##) Magic Utility 플라스크 c의stantly apply their 플라스크 효과s 시전자에게",
 	["Level: #"] = "레벨: #",
 	["LevelReq: #"] = "레벨Req: #",
-	["Life Flask Effects are not removed when Unreserved Life is Filled
-Life Flask Effects do not Queue"] = "미보유 생명력이 채워져도 생명력 플라스크 효과가 제거되지 않음
-생명력 플라스크 효과가 대기열에 들어가지 않음",
+	["Life Flask Effects are not removed when Unreserved Life is Filled\nLife Flask Effects do not Queue"] = "미보유 생명력이 채워져도 생명력 플라스크 효과가 제거되지 않음\n생명력 플라스크 효과가 대기열에 들어가지 않음",
 	["Life Flask Effects are not removed when Unreserved Life is Filled\\nLife Flask Effects do not Queue"] = "비점유 생명력이 가득 차도 생명력 플라스크 효과가 제거되지 않음\\n생명력 플라스크 효과가 대기열에 들어가지 않음",
 	["Life Flasks gain (##) charges every # seconds"] = "생명력 플라스크 gain (##) charges 매 # 초",
 	["Life Flasks gain 1 Charge every 3 seconds"] = "생명력 플라스크가 3초마다 충전 1개 획득",
@@ -9433,21 +9302,11 @@ Life Flask Effects do not Queue"] = "미보유 생명력이 채워져도 생명�
 	["Life Leech effects are not removed when Unreserved Life is Filled"] = "비점유 생명력이 가득 찬 경우에도 생명력 흡수 효과가 제거되지 않음",
 	["Life Leech from Exerted Attacks is instant"] = "생명력 흡수 from Exerted 공격 is instant",
 	["Life Leech from Hits with this Weapon is instant"] = "생명력 흡수 적중으로 이 무기로 is instant",
-	["Life Leech from Melee Damage is Instant
-Cannot Recover Life other than from Leech"] = "근접 피해의 생명력 흡수가 즉시 적용
-흡수 외 생명력 회복 불가",
+	["Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech"] = "근접 피해의 생명력 흡수가 즉시 적용\n흡수 외 생명력 회복 불가",
 	["Life Leech from Melee Damage is Instant\\nCannot Recover Life other than from Leech"] = "근접 피해로 인한 생명력 흡수가 즉시 적용\\n흡수 이외의 방법으로 생명력을 회복할 수 없음",
 	["Life Leech is applied to Energy Shield instead"] = "생명력 흡수가 에너지 보호막에 대신 적용",
-	["Life Leeched per Second is doubled
-Maximum total Recovery per second from Life Leech is doubled
-Life Regeneration has no effect"] = "초당 흡수한 생명력 2배
-생명력 흡수로 인한 초당 최대 총 회복 2배
-생명력 재생 효과 없음",
-	["Life Leeched per Second is doubled.
-Maximum total Recovery per second from Life Leech is doubled.
-Life Regeneration has no effect."] = "초당 흡수한 생명력 2배
-생명력 흡수로 인한 초당 최대 총 회복 2배
-생명력 재생 효과 없음",
+	["Life Leeched per Second is doubled\nMaximum total Recovery per second from Life Leech is doubled\nLife Regeneration has no effect"] = "초당 흡수한 생명력 2배\n생명력 흡수로 인한 초당 최대 총 회복 2배\n생명력 재생 효과 없음",
+	["Life Leeched per Second is doubled.\nMaximum total Recovery per second from Life Leech is doubled.\nLife Regeneration has no effect."] = "초당 흡수한 생명력 2배\n생명력 흡수로 인한 초당 최대 총 회복 2배\n생명력 재생 효과 없음",
 	["Life Leeched per Second is doubled.\\nMaximum total Recovery per second from Life Leech is doubled.\\nLife Regeneration has no effect."] = "초당 흡수하는 생명력 2배.\\n생명력 흡수로 인한 초당 최대 총 회복 2배.\\n생명력 재생 효과 없음.",
 	["Life Leeched per Second is doubled.\\nMaximum total Recovery per second from Life Leech is doubled.\\nLife Regeneration has no effect.\\nEnergy Shield Recharge and Regeneration have no effect."] = "초당 흡수하는 생명력 2배.\\n생명력 흡수로 인한 초당 최대 총 회복 2배.\\n생명력 재생 효과 없음.\\n에너지 보호막 충전 및 재생 효과 없음.",
 	["Life Leeched per Second is doubled\\nMaximum total Recovery per second from Life Leech is doubled\\nLife Regeneration has no effect"] = "초당 흡수하는 생명력 2배\\n생명력 흡수로 인한 초당 최대 총 회복 2배\\n생명력 재생 효과 없음",
@@ -9459,9 +9318,7 @@ Life Regeneration has no effect."] = "초당 흡수한 생명력 2배
 	["Life and Mana Leech are instant during effect"] = "생명력 and 마나 흡수 are instant 효과 중",
 	["Life and Mana Leech from Critical Strikes are instant"] = "생명력 and 마나 흡수 from 치명타s are instant",
 	["Life that would be lost by taking Damage is instead Reserved"] = "피해로 잃을 생명력이 대신 점유됨",
-	["Life that would be lost by taking Damage is instead Reserved
-until you take no Damage to Life for 1 second"] = "피해로 잃을 생명력이 대신 보유됨
-1초 동안 생명력에 피해를 받지 않을 때까지",
+	["Life that would be lost by taking Damage is instead Reserved\nuntil you take no Damage to Life for 1 second"] = "피해로 잃을 생명력이 대신 보유됨\n1초 동안 생명력에 피해를 받지 않을 때까지",
 	["Life that would be lost by taking Damage is instead Reserved\\nuntil you take no Damage to Life for 1 second"] = "피해를 받아 잃게 될 생명력이 대신 점유됨\\n1초 동안 생명력에 피해를 받지 않으면 해제",
 	["Light Radius is based on Energy Shield instead of Life"] = "빛 반경이 생명력 대신 에너지 보호막 기준",
 	["Lightning Arrow hits 1 additional Enemy"] = "번개 화살이 추가 적 1명 적중",
@@ -9550,9 +9407,7 @@ until you take no Damage to Life for 1 second"] = "피해로 잃을 생명력이
 	["Lose all Power Charges on Critical Strike"] = "Lose all 권능 충전 치명타 시",
 	["Lose all Power Charges on reaching Maximum Power Charges"] = "Lose all 권능 충전 의 r각ing 최대 권능 충전",
 	["Lose all Power Charges when you Block"] = "Lose all 권능 충전 막기 시",
-	["Lose all Rage on reaching Maximum Rage and gain Wild Savagery
-for 1 second per 10 Rage lost this way"] = "분노가 최대에 도달하면 모든 분노를 잃고
-이 방식으로 잃은 분노 10당 1초 동안 야생의 잔인성 획득",
+	["Lose all Rage on reaching Maximum Rage and gain Wild Savagery\nfor 1 second per 10 Rage lost this way"] = "분노가 최대에 도달하면 모든 분노를 잃고\n이 방식으로 잃은 분노 10당 1초 동안 야생의 잔인성 획득",
 	["Lose all Rage on reaching Maximum Rage and gain Wild Savagery\\nfor 1 second per 10 Rage lost this way"] = "최대 격노에 도달 시 모든 격노를 잃고\\n이 방법으로 잃은 격노 10당 1초 동안 야생의 사나움 획득",
 	["Lose an Endurance Charge each second"] = "Lose an 인내 충전 각 초",
 	["Lose no Experience when you die because a Linked target died"] = "연결된 대상이 사망해서 사망 시 경험치를 잃지 않음",
@@ -9586,9 +9441,7 @@ for 1 second per 10 Rage lost this way"] = "분노가 최대에 도달하면 모
 	["Malevolence has 50% increased Mana Reservation Efficiency"] = "Malevolence의 마나 점유 효율 50% 증가",
 	["Malevolence has no Reservation"] = "악의에 점유가 없음",
 	["Mana Flask Effects are not removed when Unreserved Mana is Filled"] = "마나 플라스크 효과s are not removed when Unreserved 마나 is Filled",
-	["Mana Flask Effects are not removed when Unreserved Mana is Filled
-Mana Flask Effects do not Queue"] = "미보유 마나가 채워져도 마나 플라스크 효과가 제거되지 않음
-마나 플라스크 효과가 대기열에 들어가지 않음",
+	["Mana Flask Effects are not removed when Unreserved Mana is Filled\nMana Flask Effects do not Queue"] = "미보유 마나가 채워져도 마나 플라스크 효과가 제거되지 않음\n마나 플라스크 효과가 대기열에 들어가지 않음",
 	["Mana Flask Effects are not removed when Unreserved Mana is Filled\\nMana Flask Effects do not Queue"] = "비점유 마나가 가득 차도 마나 플라스크 효과가 제거되지 않음\\n마나 플라스크 효과가 대기열에 들어가지 않음",
 	["Mana Flask Effects do not Queue"] = "마나 플라스크 효과s do not Queue",
 	["Mana Flasks gain (##) charges every # seconds"] = "마나 플라스크 gain (##) charges 매 # 초",
@@ -9627,9 +9480,7 @@ Mana Flask Effects do not Queue"] = "미보유 마나가 채워져도 마나 플
 	["Maximum Critical Strike Chance is #%"] = "최대 치명타 확률 is #%",
 	["Maximum Effect of Shock is 2% increased Damage taken"] = "감전의 최대 효과가 받는 피해 2% 증가",
 	["Maximum Endurance, Frenzy and Power Charges is #"] = "최대 Endurance, Frenzy and 권능 충전 is #",
-	["Maximum Energy Shield is 0
-While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "최대 에너지 보호막 0
-생명력이 최대가 아닐 때 초당 마나의 20%를 희생하여 그만큼 생명력 회복",
+	["Maximum Energy Shield is 0\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "최대 에너지 보호막 0\n생명력이 최대가 아닐 때 초당 마나의 20%를 희생하여 그만큼 생명력 회복",
 	["Maximum Energy Shield is 0\\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "최대 에너지 보호막 0\\n최대 생명력이 아닌 동안, 초당 마나의 20%를 희생하여 해당 수치만큼 생명력 회복",
 	["Maximum Energy Shield is increased by Chance to Block Spell Damage"] = "주문 피해 막기 확률만큼 최대 에너지 보호막 증가",
 	["Maximum Life becomes 1, Immune to Chaos Damage"] = "최대 생명력이 1이 되고, 카오스 피해 면역",
@@ -9659,9 +9510,7 @@ While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Li
 	["Melee Critical Strikes have #% chance to cause Bleeding"] = "Melee 치명타s have #% chance to cause 출혈",
 	["Melee Hits Fortify"] = "근접 타격 시 강화",
 	["Melee Hits count as Rampage Kills"] = "Melee Hits count as 포효 Kills",
-	["Melee Hits count as Rampage Kills
-Rampage"] = "근접 타격이 대학살 처치로 간주
-대학살",
+	["Melee Hits count as Rampage Kills\nRampage"] = "근접 타격이 대학살 처치로 간주\n대학살",
 	["Melee Hits count as Rampage Kills\\nRampage"] = "근접 적중이 난동 처치로 간주\\n난동",
 	["Melee Hits from Strike Skills Fortify"] = "Melee Hits from Strike 스킬 요새화",
 	["Melee Hits have 50% chance to Fortify"] = "근접 타격이 50% 확률로 강화",
@@ -9685,8 +9534,7 @@ Rampage"] = "근접 타격이 대학살 처치로 간주
 	["Mine Damage Penetrates 4% Elemental Resistances"] = "Mine Damage가 원소 저항 4% 관통",
 	["Mine Damage Penetrates 5% Elemental Resistances"] = "Mine Damage가 원소 저항 5% 관통",
 	["Mines Hinder Enemies near them for 2 seconds when they Land"] = "지뢰 착지 시 근처의 적을 2초 동안 방해",
-	["Mines Hinder Enemies near them for 2 seconds when they Land,
-reducing Movement Speed by 40%"] = "지뢰 착지 시 근처의 적을 2초 동안 방해, 이동 속도 40% 감소",
+	["Mines Hinder Enemies near them for 2 seconds when they Land,\nreducing Movement Speed by 40%"] = "지뢰 착지 시 근처의 적을 2초 동안 방해, 이동 속도 40% 감소",
 	["Mines Hinder Enemies near them for 2 seconds when they Land,\\nreducing Movement Speed by 40%"] = "지뢰가 착지할 때 인근의 적을 2초 동안 방해하여\\n이동 속도 40% 감소",
 	["Mines can be Detonated an additional time"] = "Mines can be Det의ated an 추가 time",
 	["Mines cannot be Damaged"] = "지뢰가 피해를 받지 않음",
@@ -9902,8 +9750,7 @@ reducing Movement Speed by 40%"] = "지뢰 착지 시 근처의 적을 2초 동�
 	["Minions have a 20% chance to Impale on Hit with Attacks"] = "소환수의 공격 타격 시 꿰뚫기 확률 20%",
 	["Minions have the same maximum number of Endurance, Frenzy and Power Charges as you"] = "Mini의s have the same 최대 수 Endurance, Frenzy and 권능 충전 as you",
 	["Minions' Accuracy Rating is equal to yours"] = "소환수의 명중 등급이 당신과 동일",
-	["Minions' Base Attack Critical Strike Chance is equal to the Critical
-Strike Chance of your Main Hand Weapon"] = "소환수의 기본 공격 치명타 확률이 주 무기의 치명타 확률과 동일",
+	["Minions' Base Attack Critical Strike Chance is equal to the Critical\nStrike Chance of your Main Hand Weapon"] = "소환수의 기본 공격 치명타 확률이 주 무기의 치명타 확률과 동일",
 	["Minions' Base Attack Critical Strike Chance is equal to the Critical Strike Chance of your Main Hand Weapon"] = "Mini의s' Base 공격 치명타 확률 is equal to the 치명타 확률 of your Main Hand Weap의",
 	["Minions' Base Attack Critical Strike Chance is equal to the Critical\\nStrike Chance of your Main Hand Weapon"] = "소환수의 기본 공격 치명타 확률이 주무기의\\n치명타 확률과 동일",
 	["Minions' Hits can only Kill Ignited Enemies"] = "Mini의s' Hits can 의ly Kill 점화d 적",
@@ -9918,22 +9765,16 @@ Strike Chance of your Main Hand Weapon"] = "소환수의 기본 공격 치명타
 	["Modifiers to Attributes instead Apply to Omniscience"] = "능력치 속성 부여가 전지에 적용",
 	["Modifiers to Chance to Avoid being Shocked apply to all Elemental Ailments"] = "감전 회피 확률 속성 부여가 모든 원소 상태 이상에 적용",
 	["Modifiers to Chance to Suppress Spell Damage also apply to Chance to Avoid Elemental Ailments at #% of their Value"] = "Modifiers to Chance to Suppress 주문 피해 also apply to Chance to Avoid 원소 상태 이상 at #% of their Value",
-	["Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value
-Maximum Chance to Dodge Spell Hits is 75%"] = "주문 피해 억제 확률 수정치가 대신 50%의 값으로 주문 타격 회피 확률에 적용
-최대 주문 타격 회피 확률 75%",
+	["Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits is 75%"] = "주문 피해 억제 확률 수정치가 대신 50%의 값으로 주문 타격 회피 확률에 적용\n최대 주문 타격 회피 확률 75%",
 	["Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\\nMaximum Chance to Dodge Spell Hits is 75%"] = "주문 피해 억제 확률에 대한 수정치가 대신 그 수치의 50%만큼\\n주문 적중 회피 확률에 적용\\n최대 주문 적중 회피 확률 75%",
 	["Modifiers to Claw Attack Speed also apply to Unarmed Attack Speed with Melee Skills"] = "Modifiers to 클로 공격 속도 also apply to Unarmed 공격 속도 with Melee 스킬",
 	["Modifiers to Claw Critical Strike Chance also apply to Unarmed Critical Strike Chance with Melee Skills"] = "Modifiers to 클로 치명타 확률 also apply to Unarmed 치명타 확률 with Melee 스킬",
 	["Modifiers to Claw Damage also apply to Unarmed Attack Damage with Melee Skills"] = "Modifiers to 클로 피해 also apply to Unarmed 공격 피해 with Melee 스킬",
 	["Modifiers to Critical Strike Multiplier also apply to Damage Multiplier for Ailments from Critical Strikes at 30% of their value"] = "치명타 배율에 대한 수정치가 그 수치의 30%만큼\\n치명타의 상태 이상 피해 배율에도 적용",
-	["Modifiers to Critical Strike Multiplier also apply to Damage Multiplier for Ailments from Critical Strikes at 30% of their value
-30% less Damage with Hits"] = "치명타 배율 수정치가 30%의 값으로 치명타로 인한 상태 이상의 피해 배율에도 적용
-타격 피해 30% 감폭",
+	["Modifiers to Critical Strike Multiplier also apply to Damage Multiplier for Ailments from Critical Strikes at 30% of their value\n30% less Damage with Hits"] = "치명타 배율 수정치가 30%의 값으로 치명타로 인한 상태 이상의 피해 배율에도 적용\n타격 피해 30% 감폭",
 	["Modifiers to Critical Strike Multiplier also apply to Damage Multiplier for Ailments from Critical Strikes at 30% of their value\\n30% less Damage with Hits"] = "치명타 배율에 대한 수정치가 그 수치의 30%만큼\\n치명타의 상태 이상 피해 배율에도 적용\\n적중 피해 30% 감폭",
 	["Modifiers to Critical Strike Multiplier also apply to Damage over Time Multiplier for Ailments from Critical Strikes at 30% of their value"] = "치명타 배율에 대한 수정치가 그 수치의 30%만큼\\n치명타의 상태 이상 지속 피해 배율에도 적용",
-	["Modifiers to Critical Strike Multiplier also apply to Damage over Time Multiplier for Ailments from Critical Strikes at 50% of their value
-30% less Damage with Hits"] = "치명타 배율 수정치가 50%의 값으로 치명타로 인한 상태 이상의 지속 피해 배율에도 적용
-타격 피해 30% 감폭",
+	["Modifiers to Critical Strike Multiplier also apply to Damage over Time Multiplier for Ailments from Critical Strikes at 50% of their value\n30% less Damage with Hits"] = "치명타 배율 수정치가 50%의 값으로 치명타로 인한 상태 이상의 지속 피해 배율에도 적용\n타격 피해 30% 감폭",
 	["Modifiers to Critical Strike Multiplier also apply to Damage over Time Multiplier for Ailments from Critical Strikes at 50% of their value\\n30% less Damage with Hits"] = "치명타 배율에 대한 수정치가 그 수치의 50%만큼\\n치명타의 상태 이상 지속 피해 배율에도 적용\\n적중 피해 30% 감폭",
 	["Modifiers to Fire Resistance also apply to Cold and Lightning Resistances at 50% of their Value"] = "화염 저항 수정치가 냉기 및 번개 저항에도 50%의 값으로 적용",
 	["Modifiers to Ignite Duration on you apply to all Elemental Ailments"] = "Modifiers to 점화 Durati의 의 you apply to all 원소 상태 이상",
@@ -9941,8 +9782,7 @@ Maximum Chance to Dodge Spell Hits is 75%"] = "주문 피해 억제 확률 수�
 	["Modifiers to Minimum Endurance Charges instead apply to Minimum Brutal Charges"] = "Modifiers to Minimum 인내 충전 instead apply to Minimum Brutal 충전",
 	["Modifiers to Minimum Frenzy Charges instead apply to Minimum Affliction Charges"] = "최소 격앙 충전 속성 부여가 최소 고통 충전에 적용",
 	["Modifiers to Minimum Power Charges instead apply to Minimum Absorption Charges"] = "최소 권능 충전 속성 부여가 최소 흡수 충전에 적용",
-	["Modifiers to number of Projectiles instead apply
-to the number of targets Projectiles Split towards"] = "투사체 수 수정치가 대신 투사체가 분열하는 대상 수에 적용",
+	["Modifiers to number of Projectiles instead apply\nto the number of targets Projectiles Split towards"] = "투사체 수 수정치가 대신 투사체가 분열하는 대상 수에 적용",
 	["Modifiers to number of Projectiles instead apply to the number of targets Projectiles Split towards"] = "Modifiers to 수 투사체 instead apply to the 수 targets 투사체 Split towards",
 	["Modifiers to number of Projectiles instead apply\\nto the number of targets Projectiles Split towards"] = "투사체 수에 대한 수정치가 대신\\n투사체가 분열하는 대상 수에 적용",
 	["Molten Shell has 25% increased Skill Effect Duration"] = "용암 방패의 스킬 효과 지속시간 25% 증가",
@@ -10038,13 +9878,11 @@ to the number of targets Projectiles Split towards"] = "투사체 수 수정치�
 	["Nearby Enemies take 8% increased Elemental Damage"] = "근처 적이 원소 피해 8% 증가하여 받음",
 	["Nearby Enemies' Chaos Resistance is 0"] = "근처 적의 카오스 저항 0",
 	["Nearby Enemy Monsters have at least 20% of Life Reserved"] = "근처 적 몬스터의 생명력이 최소 20% 보유",
-	["Nearby Enemy Monsters have no Fire Resistance against
-Damage over Time while you are Stationary"] = "정지 시 근처 적 몬스터가 지속 피해에 대한 화염 저항 없음",
+	["Nearby Enemy Monsters have no Fire Resistance against\nDamage over Time while you are Stationary"] = "정지 시 근처 적 몬스터가 지속 피해에 대한 화염 저항 없음",
 	["Nearby Enemy Monsters have no Fire Resistance against\\nDamage over Time while you are Stationary"] = "정지 상태에서 인근 적 몬스터의\\n지속 피해에 대한 화염 저항 없음",
 	["Nearby Enemy Monsters' Action Speed is at most 90% of base value"] = "근처 적 몬스터의 동작 속도가 기본값의 최대 90%",
 	["Nearby Enemy Monsters' Action Speed is at most 92% of base value"] = "근처 적 몬스터의 동작 속도가 기본값의 최대 92%",
-	["Nearby Enemy Monsters' Fire Resistance against
-Damage over Time is -20% while you are Stationary"] = "정지 시 근처 적 몬스터의 지속 피해에 대한 화염 저항 -20%",
+	["Nearby Enemy Monsters' Fire Resistance against\nDamage over Time is -20% while you are Stationary"] = "정지 시 근처 적 몬스터의 지속 피해에 대한 화염 저항 -20%",
 	["Nearby Enemy Monsters' Fire Resistance against\\nDamage over Time is -20% while you are Stationary"] = "정지 상태에서 인근 적 몬스터의\\n지속 피해에 대한 화염 저항 -20%",
 	["Nearby Hindered Enemies deal 15% reduced Damage over Time"] = "근처의 방해받는 적의 지속 피해 15% 감소",
 	["Nearby allies Recover #% of your Maximum Life when you Die"] = "주변 allies Recover #% of your 최대 생명력 when you Die",
@@ -10085,10 +9923,8 @@ Damage over Time is -20% while you are Stationary"] = "정지 시 근처 적 몬
 	["Non-Travel Attack Skills Repeat an additional Time"] = "비이동 공격 스킬이 추가로 1회 반복",
 	["Non-Unique Flasks applied to you have 10% increased Effect"] = "적용된 비고유 플라스크의 효과 10% 증가",
 	["Non-Unique Jewels cause Increases and Reductions to other Damage Types in a Large Radius to be Transformed to apply to Fire Damage"] = "비고유 보석이 대형 반경의 다른 피해 유형 증가 및 감소를 화염 피해에 적용되도록 변환",
-	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to
-also grant +3 to Strength"] = "비고유 보석이 대형 반경의 소형 및 주목할 만한 패시브 스킬에 힘 +3도 부여",
-	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to
-also grant +4 to Strength"] = "비고유 보석이 대형 반경의 소형 및 주목할 만한 패시브 스킬에 힘 +4도 부여",
+	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\nalso grant +3 to Strength"] = "비고유 보석이 대형 반경의 소형 및 주목할 만한 패시브 스킬에 힘 +3도 부여",
+	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\nalso grant +4 to Strength"] = "비고유 보석이 대형 반경의 소형 및 주목할 만한 패시브 스킬에 힘 +4도 부여",
 	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\\nalso grant +3 to Strength"] = "고유하지 않은 주얼이 대범위 내의 소형 및 주목할 만한 패시브 스킬이\\n힘 +3을 추가 부여하도록 함",
 	["Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\\nalso grant +4 to Strength"] = "고유하지 않은 주얼이 대범위 내의 소형 및 주목할 만한 패시브 스킬이\\n힘 +4를 추가 부여하도록 함",
 	["Non-Unique Utility Flasks you Use apply to Linked Targets"] = "사용하는 비고유 유틸리티 플라스크가 연결된 대상에게 적용",
@@ -10274,17 +10110,14 @@ also grant +4 to Strength"] = "비고유 보석이 대형 반경의 소형 및 �
 	["Projectiles deal 15% increased Damage with Hits and Ailments for each remaining Chain"] = "남은 연쇄당 투사체 타격 및 상태 이상 피해 15% 증가",
 	["Projectiles deal 20% increased Damage for each Enemy Pierced"] = "관통한 적당 투사체 피해 20% 증가",
 	["Projectiles deal 20% increased Damage for each time they have Chained"] = "연쇄 횟수당 투사체 피해 20% 증가",
-	["Projectiles deal 20% increased Damage with Hits and Ailments for
-each remaining Chain, up to a maximum of 100%"] = "남은 연쇄당 투사체 타격 및 상태 이상 피해 20% 증가, 최대 100%",
+	["Projectiles deal 20% increased Damage with Hits and Ailments for\neach remaining Chain, up to a maximum of 100%"] = "남은 연쇄당 투사체 타격 및 상태 이상 피해 20% 증가, 최대 100%",
 	["Projectiles deal 20% increased Damage with Hits and Ailments for each Enemy Pierced"] = "관통한 적당 투사체 타격 및 상태 이상 피해 20% 증가",
 	["Projectiles deal 20% increased Damage with Hits and Ailments for each time they have Chained"] = "연쇄 횟수당 투사체 타격 및 상태 이상 피해 20% 증가",
 	["Projectiles deal 20% increased Damage with Hits and Ailments for\\neach remaining Chain, up to a maximum of 100%"] = "투사체가 남은 연쇄 하나당 적중 및 상태 이상의 피해 20% 증가,\\n최대 100%",
-	["Projectiles deal 20% increased Damage with Hits to targets at the start
-of their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 시 대상에게 타격 피해 20% 증가, 이동 거리가 멀어질수록 0%로 감소",
+	["Projectiles deal 20% increased Damage with Hits to targets at the start\nof their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 시 대상에게 타격 피해 20% 증가, 이동 거리가 멀어질수록 0%로 감소",
 	["Projectiles deal 20% increased Damage with Hits to targets at the start\\nof their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 지점의 대상에게 적중 피해 20% 증가,\\n멀리 이동할수록 0%로 감소",
 	["Projectiles deal 35% increased Damage with Hits against nearby Enemies"] = "근처 적에 대한 투사체 타격 피해 35% 증가",
-	["Projectiles deal 40% increased Damage with Hits to targets at the start
-of their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 시 대상에게 타격 피해 40% 증가, 이동 거리가 멀어질수록 0%로 감소",
+	["Projectiles deal 40% increased Damage with Hits to targets at the start\nof their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 시 대상에게 타격 피해 40% 증가, 이동 거리가 멀어질수록 0%로 감소",
 	["Projectiles deal 40% increased Damage with Hits to targets at the start\\nof their movement, reducing to 0% as they travel farther"] = "투사체가 이동 시작 지점의 대상에게 적중 피해 40% 증가,\\n멀리 이동할수록 0%로 감소",
 	["Projectiles deal 6% increased Damage for each Enemy Pierced"] = "관통한 적당 투사체 피해 6% 증가",
 	["Projectiles from Attacks Fork"] = "공격의 투사체가 분기",
@@ -10294,16 +10127,11 @@ of their movement, reducing to 0% as they travel farther"] = "투사체가 이�
 	["Projectiles from Attacks have #% chance to inflict Bleeding on Hit while you have a Bestial Minion"] = "투사체 공격으로 have #% chance to inflict 출혈 적중 시 while you have a Bestial Mini의",
 	["Projectiles from Spells cannot Pierce"] = "투사체 from 주문 cannot Pierce",
 	["Projectiles gain (##)% of Non-Chaos Damage as extra Chaos Damage per Chain"] = "투사체 gain (##)% of N의-카오스 피해 as extra 카오스 피해 당 Chain",
-	["Projectiles gain Damage as they travel farther, dealing up
-to 20% more Damage with Hits and Ailments"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 타격 및 상태 이상 피해 최대 20% 증폭",
-	["Projectiles gain Damage as they travel farther, dealing up
-to 30% more Damage with Hits and Ailments"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 타격 및 상태 이상 피해 최대 30% 증폭",
-	["Projectiles gain Damage as they travel farther, dealing up
-to 40% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 40% 증가",
-	["Projectiles gain Damage as they travel farther, dealing up
-to 50% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 50% 증가",
-	["Projectiles gain Damage as they travel farther, dealing up
-to 60% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 60% 증가",
+	["Projectiles gain Damage as they travel farther, dealing up\nto 20% more Damage with Hits and Ailments"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 타격 및 상태 이상 피해 최대 20% 증폭",
+	["Projectiles gain Damage as they travel farther, dealing up\nto 30% more Damage with Hits and Ailments"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 타격 및 상태 이상 피해 최대 30% 증폭",
+	["Projectiles gain Damage as they travel farther, dealing up\nto 40% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 40% 증가",
+	["Projectiles gain Damage as they travel farther, dealing up\nto 50% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 50% 증가",
+	["Projectiles gain Damage as they travel farther, dealing up\nto 60% increased Damage with Hits to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 타격 피해 최대 60% 증가",
 	["Projectiles gain Damage as they travel farther, dealing up to 20% more Damage to targets"] = "투사체가 이동 거리가 멀어질수록 피해 증가, 대상에게 최대 20% 증폭된 피해",
 	["Projectiles gain Damage as they travel farther, dealing up\\nto 20% more Damage with Hits and Ailments"] = "투사체가 멀리 이동할수록 피해 증가,\\n적중 및 상태 이상의 피해 최대 20% 증폭",
 	["Projectiles gain Damage as they travel farther, dealing up\\nto 30% more Damage with Hits and Ailments"] = "투사체가 멀리 이동할수록 피해 증가,\\n적중 및 상태 이상의 피해 최대 30% 증폭",
@@ -10579,8 +10407,7 @@ to 60% increased Damage with Hits to targets"] = "투사체가 이동 거리가 
 	["Regenerate 1 Energy Shield per second per 10 Intelligence"] = "지능 10당 초당 에너지 보호막 1 재생",
 	["Regenerate 1 Life per second for each 1% Uncapped Fire Resistance"] = "1% Uncapped Fire Resistance마다 초당 생명력 1 재생",
 	["Regenerate 1% of Energy Shield per second"] = "초당 에너지 보호막의 1% 재생",
-	["Regenerate 1% of Energy Shield per second for each
-Enemy you or your Minions have Killed Recently, up to 10% per second"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 초당 최대 10%",
+	["Regenerate 1% of Energy Shield per second for each\nEnemy you or your Minions have Killed Recently, up to 10% per second"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 1% 재생, 초당 최대 10%",
 	["Regenerate 1% of Energy Shield per second for each\\nEnemy you or your Minions have Killed Recently, up to 10% per second"] = "최근 당신 또는 당신의 소환수가 처치한 적 하나당\\n초당 에너지 보호막의 1% 재생, 최대 초당 10%",
 	["Regenerate 1% of Energy Shield per second if you've Cursed an Enemy Recently"] = "최근에 초당 에너지 보호막의 1% 재생",
 	["Regenerate 1% of Energy Shield per second if you've Killed an Enemy Recently"] = "최근에 초당 에너지 보호막의 1% 재생",
@@ -10607,8 +10434,7 @@ Enemy you or your Minions have Killed Recently, up to 10% per second"] = "당신
 	["Regenerate 15 Mana per second if you've used a Movement Skill Recently"] = "최근 Movement 스킬 사용 시 초당 마나 15 재생",
 	["Regenerate 2 Mana per second"] = "초당 마나 2 재생",
 	["Regenerate 2% of Energy Shield per second"] = "초당 에너지 보호막의 2% 재생",
-	["Regenerate 2% of Energy Shield per second for each
-Enemy you or your Minions have Killed Recently, up to 10% per second"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 2% 재생, 초당 최대 10%",
+	["Regenerate 2% of Energy Shield per second for each\nEnemy you or your Minions have Killed Recently, up to 10% per second"] = "당신 또는 소환수가 최근 처치한 적당 초당 에너지 보호막의 2% 재생, 초당 최대 10%",
 	["Regenerate 2% of Energy Shield per second for each\\nEnemy you or your Minions have Killed Recently, up to 10% per second"] = "최근 당신 또는 당신의 소환수가 처치한 적 하나당\\n초당 에너지 보호막의 2% 재생, 최대 초당 10%",
 	["Regenerate 2% of Energy Shield per second if you've Killed an Enemy Recently"] = "최근에 초당 에너지 보호막의 2% 재생",
 	["Regenerate 2% of Life per Second for each Trap Triggered Recently, up to 10% per second"] = "초당 Second for each Trap Triggered 최근, up to 10%당 생명력의 2% 재생",
@@ -10668,26 +10494,12 @@ Enemy you or your Minions have Killed Recently, up to 10% per second"] = "당신
 	["Removes Elemental Ailments when you use a Flask"] = "플라스크 사용 시 원소 상태 이상 제거",
 	["Removes all Burning when used"] = "Removes all Burning 사용 시",
 	["Removes all Energy Shield"] = "모든 에너지 보호막 제거",
-	["Removes all Energy Shield
-While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "모든 에너지 보호막 제거
-생명력이 최대가 아닐 때 초당 마나의 20%를 희생하여 그만큼 생명력 회복",
+	["Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "모든 에너지 보호막 제거\n생명력이 최대가 아닐 때 초당 마나의 20%를 희생하여 그만큼 생명력 회복",
 	["Removes all Energy Shield\\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"] = "모든 에너지 보호막 제거\\n최대 생명력이 아닌 동안, 초당 마나의 20%를 희생하여 해당 수치만큼 생명력 회복",
 	["Removes all Mana"] = "모든 마나 제거",
 	["Removes all but one Life on use"] = "Removes all but 의e 생명력 의 use",
-	["Removes all mana
-10% more maximum Life
-Skills Cost Life instead of Mana
-Skills Reserve Life instead of Mana"] = "모든 마나 제거
-최대 생명력 10% 증폭
-스킬이 마나 대신 생명력 소모
-스킬이 마나 대신 생명력 보유",
-	["Removes all mana
-Skills Cost Life instead of Mana
-Skills Reserve Life instead of Mana
-Spend Life instead of Mana for effects of Skills"] = "모든 마나 제거
-스킬이 마나 대신 생명력 소모
-스킬이 마나 대신 생명력 보유
-스킬 효과에 마나 대신 생명력 소비",
+	["Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana"] = "모든 마나 제거\n최대 생명력 10% 증폭\n스킬이 마나 대신 생명력 소모\n스킬이 마나 대신 생명력 보유",
+	["Removes all mana\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana\nSpend Life instead of Mana for effects of Skills"] = "모든 마나 제거\n스킬이 마나 대신 생명력 소모\n스킬이 마나 대신 생명력 보유\n스킬 효과에 마나 대신 생명력 소비",
 	["Removes all mana. Spend Life instead of Mana for Skills"] = "모든 마나 제거. 스킬에 마나 대신 생명력 소모",
 	["Removes all mana\\n10% more maximum Life\\nSkills Cost Life instead of Mana\\nSkills Reserve Life instead of Mana"] = "모든 마나 제거\\n최대 생명력 10% 증폭\\n스킬이 마나 대신 생명력 소모\\n스킬이 마나 대신 생명력 점유",
 	["Removes all mana\\nSkills Cost Life instead of Mana\\nSkills Reserve Life instead of Mana\\nSpend Life instead of Mana for effects of Skills"] = "모든 마나 제거\\n스킬이 마나 대신 생명력 소모\\n스킬이 마나 대신 생명력 점유\\n스킬 효과에 마나 대신 생명력 소비",
@@ -10939,11 +10751,7 @@ Spend Life instead of Mana for effects of Skills"] = "모든 마나 제거
 	["Skills supported by Unleash have +1 to maximum number of Seals"] = "해방 보조를 받는 스킬의 최대 봉인 수 +1",
 	["Skills supported by Unleash have +3 to maximum number of Seals"] = "해방 보조를 받는 스킬의 최대 봉인 수 +3",
 	["Skills that Summon a Totem have 30% chance to Summon two Totems instead of one"] = "토템을 소환하는 스킬이 30% 확률로 1개 대신 2개 소환",
-	["Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments
-Your Critical Strikes do not deal extra Damage
-Ailments never count as being from Critical Strikes"] = "지난 8초 이내에 치명타를 준 스킬이 타격 및 상태 이상으로 원소 피해 40% 증폭
-치명타가 추가 피해를 주지 않음
-상태 이상이 치명타로 인한 것으로 간주되지 않음",
+	["Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes"] = "지난 8초 이내에 치명타를 준 스킬이 타격 및 상태 이상으로 원소 피해 40% 증폭\n치명타가 추가 피해를 주지 않음\n상태 이상이 치명타로 인한 것으로 간주되지 않음",
 	["Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\\nYour Critical Strikes do not deal extra Damage\\nAilments never count as being from Critical Strikes"] = "지난 8초 내에 치명타를 가한 스킬의 적중 및 상태 이상의 원소 피해 40% 증폭\\n치명타가 추가 피해를 주지 않음\\n상태 이상이 치명타로 간주되지 않음",
 	["Skills that leave Lingering Blades have +10 to Maximum Lingering Blades"] = "잔류하는 칼날을 남기는 스킬의 최대 잔류 칼날 수 +10",
 	["Skills that leave Lingering Blades have 20% chance to leave two Lingering Blades instead of one"] = "잔류하는 칼날을 남기는 스킬이 20% 확률로 1개 대신 2개의 칼날을 남김",
@@ -11145,11 +10953,7 @@ Ailments never count as being from Critical Strikes"] = "지난 8초 이내에 �
 	["Spells you cast yourself gain Added Physical Damage equal to 80% of Life Cost, if Life Cost is not higher than the maximum you could spend"] = "생명력 비용이 최대 소비 가능량 이하일 경우 직접 시전한 주문이 생명력 비용의 80%와 동일한 추가 물리 피해 획득",
 	["Spend Energy Shield before Mana for Skill Costs"] = "스킬 비용으로 마나 전에 에너지 보호막 소모",
 	["Spend Energy Shield before Mana for Skill Costs\\nEnergy Shield protects Mana instead of Life\\n50% less Energy Shield Recharge Rate"] = "스킬 비용으로 마나 전에 에너지 보호막 소모\\n에너지 보호막이 생명력 대신 마나를 보호\\n에너지 보호막 충전 속도 50% 감폭",
-	["Spend Energy Shield before Mana for Skill Mana Costs
-Energy Shield protects Mana instead of Life
-50% less Energy Shield Recharge Rate"] = "스킬 마나 비용에 마나 전에 에너지 보호막 소비
-에너지 보호막이 생명력 대신 마나 보호
-에너지 보호막 재충전 속도 50% 감폭",
+	["Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate"] = "스킬 마나 비용에 마나 전에 에너지 보호막 소비\n에너지 보호막이 생명력 대신 마나 보호\n에너지 보호막 재충전 속도 50% 감폭",
 	["Spend Energy Shield before Mana for Skill Mana Costs\\nEnergy Shield protects Mana instead of Life\\n50% less Energy Shield Recharge Rate"] = "스킬의 마나 비용에 마나 전에 에너지 보호막 소비\\n에너지 보호막이 생명력 대신 마나 보호\\n에너지 보호막 충전 속도 50% 감폭",
 	["Spend Energy Shield before Mana for Skill Mana Costs\\nEnergy Shield protects Mana instead of Life\\n50% less Energy Shield Regeneration Rate\\n50% less Energy Shield Recharge Rate"] = "스킬의 마나 비용에 마나 전에 에너지 보호막 소비\\n에너지 보호막이 생명력 대신 마나 보호\\n에너지 보호막 재생 속도 50% 감폭\\n에너지 보호막 충전 속도 50% 감폭",
 	["Spirit Offering grants +12% to Critical Strike Multiplier"] = "영혼 공물이 치명타 배율 +12% 부여",
@@ -11319,9 +11123,7 @@ Energy Shield protects Mana instead of Life
 	["Take 15% less Physical Damage with at least one Uulgraft grafted to you"] = "울그래프트가 1개 이상 접목된 경우 물리 피해 15% 감폭",
 	["Take 25% less Damage"] = "받는 피해 25% 감폭",
 	["Take 40% less Damage from Hits"] = "타격으로 받는 피해 40% 감폭",
-	["Take 50% less Damage over Time if you've started taking Damage over Time in the past second
-100% more Duration of Ailments on you"] = "지난 1초 이내에 지속 피해를 받기 시작한 경우 지속 피해 50% 감폭
-상태 이상 지속시간 100% 증폭",
+	["Take 50% less Damage over Time if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you"] = "지난 1초 이내에 지속 피해를 받기 시작한 경우 지속 피해 50% 감폭\n상태 이상 지속시간 100% 증폭",
 	["Take 50% less Damage over Time if you've started taking Damage over Time in the past second\\n100% more Duration of Ailments on you"] = "지난 1초 내에 지속 피해를 받기 시작한 경우 지속 피해 50% 감폭\\n당신에게 걸린 상태 이상의 지속시간 100% 증폭",
 	["Take 8% reduced Elemental Damage while on Consecrated Ground"] = "신성한 대지 위에서 원소 피해 8% 감소",
 	["Take no Burning Damage if you've stopped taking Burning Damage Recently"] = "Take no 점화 피해 if you've stopped taking 점화 피해 최근",
@@ -11408,24 +11210,14 @@ Energy Shield protects Mana instead of Life
 	["Tinctures applied to you have 8% increased Effect"] = "적용된 팅크의 효과 8% 증가",
 	["Tinctures deactivate when you have 12 or more Mana Burn"] = "마나 연소가 12 이상일 때 팅크 비활성화",
 	["Tinctures have 40% increased effect while at or above 10 stacks of Mana Burn"] = "마나 연소가 10 이상일 때 팅크의 효과 40% 증가",
-	["Tinctures inflict Weeping Wounds instead of Mana Burn
-Effects that interact with Mana Burn interact with Weeping Wounds instead"] = "팅크가 마나 연소 대신 피흘리는 상처를 부여
-마나 연소와 상호작용하는 효과가 대신 피흘리는 상처와 상호작용",
+	["Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead"] = "팅크가 마나 연소 대신 피흘리는 상처를 부여\n마나 연소와 상호작용하는 효과가 대신 피흘리는 상처와 상호작용",
 	["Tinctures inflict Weeping Wounds instead of Mana Burn\\nEffects that interact with Mana Burn interact with Weeping Wounds instead"] = "팅크처가 마나 연소 대신 흐르는 상처를 유발\\n마나 연소와 상호작용하는 효과가 대신 흐르는 상처와 상호작용",
 	["Tornado Shot fires an additional secondary Projectile"] = "회오리 화살이 추가 보조 투사체 1개 발사",
 	["Tornado has 20% increased Movement Speed"] = "토네이도의 이동 속도 20% 증가",
 	["Tornado has 30% increased Movement Speed"] = "토네이도의 이동 속도 30% 증가",
 	["Total Recovery per second from Life Leech is Doubled"] = "Total 회복 초당 from 생명력 흡수 is Doubled",
-	["Total Recovery per second from Life Leech is doubled
-Maximum total Life Recovery per second from Leech is doubled
-Life Regeneration has no effect"] = "생명력 흡수로 인한 초당 총 회복 2배
-흡수로 인한 초당 최대 총 생명력 회복 2배
-생명력 재생 효과 없음",
-	["Total Recovery per second from Life Leech is doubled
-Maximum total Life Recovery per second from Leech is doubled
-You have no Life Regeneration"] = "생명력 흡수로 인한 초당 총 회복 2배
-흡수로 인한 초당 최대 총 생명력 회복 2배
-생명력 재생 없음",
+	["Total Recovery per second from Life Leech is doubled\nMaximum total Life Recovery per second from Leech is doubled\nLife Regeneration has no effect"] = "생명력 흡수로 인한 초당 총 회복 2배\n흡수로 인한 초당 최대 총 생명력 회복 2배\n생명력 재생 효과 없음",
+	["Total Recovery per second from Life Leech is doubled\nMaximum total Life Recovery per second from Leech is doubled\nYou have no Life Regeneration"] = "생명력 흡수로 인한 초당 총 회복 2배\n흡수로 인한 초당 최대 총 생명력 회복 2배\n생명력 재생 없음",
 	["Total Recovery per second from Life Leech is doubled\\nMaximum total Life Recovery per second from Leech is doubled\\nLife Regeneration has no effect"] = "생명력 흡수로 인한 초당 총 회복 2배\\n흡수로 인한 초당 최대 총 생명력 회복 2배\\n생명력 재생 효과 없음",
 	["Total Recovery per second from Life Leech is doubled\\nMaximum total Life Recovery per second from Leech is doubled\\nLife Regeneration has no effect\\nEnergy Shield Recharge and Regeneration have no effect"] = "생명력 흡수로 인한 초당 총 회복 2배\\n흡수로 인한 초당 최대 총 생명력 회복 2배\\n생명력 재생 효과 없음\\n에너지 보호막 충전 및 재생 효과 없음",
 	["Total Recovery per second from Life Leech is doubled\\nMaximum total Life Recovery per second from Leech is doubled\\nYou can't Recharge Energy Shield\\nYou can't Regenerate Energy Shield"] = "생명력 흡수로 인한 초당 총 회복 2배\\n흡수로 인한 초당 최대 총 생명력 회복 2배\\n에너지 보호막을 충전할 수 없음\\n에너지 보호막을 재생할 수 없음",
@@ -11433,8 +11225,7 @@ You have no Life Regeneration"] = "생명력 흡수로 인한 초당 총 회복 
 	["Totems Hinder Enemies near them when Summoned"] = "토템 소환 시 근처의 적을 방해",
 	["Totems Hinder Enemies near them when Summoned, with 25% reduced Movement Speed"] = "토템 소환 시 근처의 적을 방해, 이동 속도 25% 감소",
 	["Totems Reflect #% of their maximum Life as Fire Damage to nearby Enemies when Hit"] = "토템 Reflect #% of their 최대 생명력 as 화염 피해 to nearby 적 피격 시",
-	["Totems Reflect 15% of their maximum Life as Fire Damage to
-nearby Enemies when Hit"] = "타격받으면 토템이 최대 생명력의 15%를 화염 피해로 근처 적에게 반사",
+	["Totems Reflect 15% of their maximum Life as Fire Damage to\nnearby Enemies when Hit"] = "타격받으면 토템이 최대 생명력의 15%를 화염 피해로 근처 적에게 반사",
 	["Totems Reflect 15% of their maximum Life as Fire Damage to\\nnearby Enemies when Hit"] = "토템이 피격 시 최대 생명력의 15%를\\n화염 피해로 인근 적에게 반사",
 	["Totems Reflect 8% of their maximum Life as Fire Damage to"] = "토템이 최대 생명력의 8%를 화염 피해로 반사",
 	["Totems Regenerate 1 Life per second per 4 of your Life Recovery per second from Regeneration"] = "재생으로 인한 초당 생명력 회복 4당 토템이 초당 생명력 1 재생",
@@ -11564,13 +11355,11 @@ nearby Enemies when Hit"] = "타격받으면 토템이 최대 생명력의 15%�
 	["Trigger Level 20 Raise Spiders on Kill"] = "적 처치 시 거미 소환 레벨 20 발동",
 	["Trigger Level 20 Summon Spectral Tiger on Critical Strike"] = "치명타 시 유령 호랑이 소환 레벨 20 발동",
 	["Trigger Level 20 Summon Spectral Wolf on Critical Strike"] = "치명타 시 유령 늑대 소환 레벨 20 발동",
-	["Trigger Level 20 Tawhoa's Chosen when you Attack with
-a Non-Vaal Slam or Strike Skill near an Enemy"] = "적 근처에서 비바알 강타 또는 타격 스킬로 공격 시 타후아의 선택 레벨 20 발동",
+	["Trigger Level 20 Tawhoa's Chosen when you Attack with\na Non-Vaal Slam or Strike Skill near an Enemy"] = "적 근처에서 비바알 강타 또는 타격 스킬로 공격 시 타후아의 선택 레벨 20 발동",
 	["Trigger Level 20 Tawhoa's Chosen when you Attack with a Non-Vaal Slam Skill near an Enemy"] = "적 근처에서 비바알 강타 스킬로 공격 시 타후아의 선택 레벨 20 발동",
 	["Trigger Level 20 Tawhoa's Chosen when you Attack with\\na Non-Vaal Slam or Strike Skill near an Enemy"] = "적 인근에서 바알이 아닌 강타 또는 타격 스킬로 공격 시\\n레벨 20 타후아의 선택 발동",
 	["Trigger Level 20 Ward Shatter when your Ward Breaks"] = "수호가 깨지면 수호 산산조각 레벨 20 발동",
-	["Trigger Level 30 Assassin's Mark on Attack Critical Strike against
-a Rare or Unique Enemy and you have no Mark"] = "표식이 없을 때 희귀 또는 고유 적에 대한 공격 치명타 시 암살자의 표식 레벨 30 발동",
+	["Trigger Level 30 Assassin's Mark on Attack Critical Strike against\na Rare or Unique Enemy and you have no Mark"] = "표식이 없을 때 희귀 또는 고유 적에 대한 공격 치명타 시 암살자의 표식 레벨 30 발동",
 	["Trigger Level 30 Assassin's Mark on Attack Critical Strike against\\na Rare or Unique Enemy and you have no Mark"] = "표식이 없는 상태에서 희귀 또는 고유 적에 대한 공격 치명타 시\\n레벨 30 암살자의 표식 발동",
 	["Trigger Level 30 Shade Form when Hit"] = "타격받으면 그림자 형상 레벨 30 발동",
 	["Trigger Socketed Curse Spell when you Cast a Curse Spell, with a # second Cooldown"] = "Trigger 장착된 저주 주문 when you Cast a 저주 주문, with a # 초 재사용 대기시간",
@@ -11605,11 +11394,9 @@ a Rare or Unique Enemy and you have no Mark"] = "표식이 없을 때 희귀 또
 	["Trigger a Socketed Warcry Skill on losing Endurance Charges, with a # second Cooldown"] = "Trigger a 장착된 전투 함성 스킬 의 losing 인내 충전, with a # 초 재사용 대기시간",
 	["Trigger level # Consecrate when you deal a Critical Strike"] = "Trigger level # C의secrate when you deal a 치명타",
 	["Trigger level # Suspend in Time on Casting a Spell"] = "Trigger level # Suspend in Time 의 Casting a 주문",
-	["Trigger level 20 Summon Spirit of Kahuturoa Skill when you take
-a Critical Strike from a Unique Enemy"] = "고유 적에게 치명타를 받으면 카후투로아의 영혼 소환 레벨 20 발동",
+	["Trigger level 20 Summon Spirit of Kahuturoa Skill when you take\na Critical Strike from a Unique Enemy"] = "고유 적에게 치명타를 받으면 카후투로아의 영혼 소환 레벨 20 발동",
 	["Trigger level 20 Summon Spirit of Kahuturoa Skill when you take\\na Critical Strike from a Unique Enemy"] = "고유 적의 치명타를 받을 때\\n레벨 20 카후투로아의 영혼 소환 스킬 발동",
-	["Trigger level 20 Summon Spirit of Kaom Skill when a Totem dies while
-a Unique Enemy is in your Presence"] = "고유 적이 존재할 때 토템 사망 시 카옴의 영혼 소환 레벨 20 발동",
+	["Trigger level 20 Summon Spirit of Kaom Skill when a Totem dies while\na Unique Enemy is in your Presence"] = "고유 적이 존재할 때 토템 사망 시 카옴의 영혼 소환 레벨 20 발동",
 	["Trigger level 20 Summon Spirit of Kaom Skill when a Totem dies while\\na Unique Enemy is in your Presence"] = "고유 적이 당신의 존재 범위 내에 있을 때 토템이 사망하면\\n레벨 20 카옴의 영혼 소환 스킬 발동",
 	["Trigger level 20 Summon Spirit of Kiloava Skill when you Block Damage from a Unique Enemy"] = "고유 적의 피해를 막으면 킬로아바의 영혼 소환 레벨 20 발동",
 	["Trigger level 20 Summon Spirit of Rakiata Skill on Critical Strike against Marked Unique Enemy"] = "표식이 찍힌 고유 적에 대한 치명타 시 라키아타의 영혼 소환 레벨 20 발동",
@@ -11628,12 +11415,8 @@ a Unique Enemy is in your Presence"] = "고유 적이 존재할 때 토템 사�
 	["Triggers Level # Reflection when Equipped"] = "Triggers 레벨 # Reflecti의 when 장착한",
 	["Triggers Level # Summon Arbalists when Equipped"] = "Triggers 레벨 # Summ의 Arbalists when 장착한",
 	["Triggers Level 20 Abberath's Fury"] = "에이브래스의 분노 레벨 20 발동",
-	["Triggers Level 20 Primal Aegis when Allocated
-Primal Aegis can take 100 Damage per Allocated Notable Passive Skill"] = "할당 시 원시의 이지스 레벨 20 발동
-원시의 이지스가 할당된 주목할 만한 패시브 스킬당 피해 100 흡수 가능",
-	["Triggers Level 20 Primal Aegis when Allocated
-Primal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill"] = "할당 시 원시의 이지스 레벨 20 발동
-원시의 이지스가 할당된 주목할 만한 패시브 스킬당 원소 피해 75 흡수 가능",
+	["Triggers Level 20 Primal Aegis when Allocated\nPrimal Aegis can take 100 Damage per Allocated Notable Passive Skill"] = "할당 시 원시의 이지스 레벨 20 발동\n원시의 이지스가 할당된 주목할 만한 패시브 스킬당 피해 100 흡수 가능",
+	["Triggers Level 20 Primal Aegis when Allocated\nPrimal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill"] = "할당 시 원시의 이지스 레벨 20 발동\n원시의 이지스가 할당된 주목할 만한 패시브 스킬당 원소 피해 75 흡수 가능",
 	["Triggers Level 20 Primal Aegis when Allocated\\nPrimal Aegis can take 100 Damage per Allocated Notable Passive Skill"] = "할당 시 레벨 20 원시 보호막 발동\\n원시 보호막은 할당된 주목할 만한 패시브 스킬당 피해 100을 받을 수 있음",
 	["Triggers Level 20 Primal Aegis when Allocated\\nPrimal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill"] = "할당 시 레벨 20 원시 보호막 발동\\n원시 보호막은 할당된 주목할 만한 패시브 스킬당 원소 피해 75를 받을 수 있음",
 	["Triggers Level 20 Summon Triggerbots when Allocated"] = "할당 시 트리거봇 소환 레벨 20 발동",
@@ -11652,8 +11435,7 @@ Primal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill"] 
 	["Unaffected by Shock while Leeching Energy Shield"] = "Unaffected by 감전 흡수 중 에너지 보호막",
 	["Unaffected by Shocked Ground"] = "감전 지대의 영향을 받지 않음",
 	["Unaffected by Temporal Chains"] = "시간의 사슬에 영향받지 않음",
-	["Unattached Brands gain 20% increased Brand Attachment Range per
-second, up to a maximum of 100%"] = "미부착 낙인이 초당 낙인 부착 범위 20% 증가, 최대 100%",
+	["Unattached Brands gain 20% increased Brand Attachment Range per\nsecond, up to a maximum of 100%"] = "미부착 낙인이 초당 낙인 부착 범위 20% 증가, 최대 100%",
 	["Unattached Brands gain 20% increased Brand Attachment Range per second"] = "미부착 낙인이 초당 낙인 부착 범위 20% 증가",
 	["Unattached Brands gain 20% increased Brand Attachment Range per second, up to 100%"] = "미부착 낙인이 초당 낙인 부착 범위 20% 증가, 최대 100%",
 	["Unattached Brands gain 20% increased Brand Attachment Range per\\nsecond, up to a maximum of 100%"] = "부착되지 않은 낙인이 초당 낙인 부착 범위 20% 증가,\\n최대 100%",
@@ -11683,9 +11465,7 @@ second, up to a maximum of 100%"] = "미부착 낙인이 초당 낙인 부착 �
 	["Used when you use a Life Flask"] = "생명력 플라스크 사용 시 사용",
 	["Uses both hand slots"] = "양손 슬롯 사용",
 	["Using Warcries is Instant"] = "전투 함성 즉시 사용",
-	["Using Warcries is Instant
-Warcries share their Cooldown"] = "전투 함성 즉시 사용
-전투 함성이 재사용 대기시간을 공유",
+	["Using Warcries is Instant\nWarcries share their Cooldown"] = "전투 함성 즉시 사용\n전투 함성이 재사용 대기시간을 공유",
 	["Using Warcries is Instant\\nWarcries share their Cooldown"] = "전투 함성 사용이 즉시 적용\\n전투 함성이 재사용 대기시간 공유",
 	["Utility Flasks are Disabled"] = "유틸리티 플라스크 비활성화",
 	["Utility Flasks can gain Charges During their Flask Effect"] = "유틸리티 플라스크 효과 중 충전 획득 가능",
@@ -11819,12 +11599,8 @@ Warcries share their Cooldown"] = "전투 함성 즉시 사용
 	["Warcries Exert 2 additional Attacks"] = "함성이 추가 공격 2회 강화",
 	["Warcries Exert twice as many Attacks"] = "전투 함성이 2배의 공격에 영향",
 	["Warcries Knock Back and Interrupt Enemies in a smaller Area"] = "Warcries Knock Back and Interrupt 적 in a smaller Area",
-	["Warcries Sacrifice 10 Rage if you have at least 25 Rage
-Exerted Attacks deal 50% more Attack Damage if a Warcry Sacrificed Rage Recently"] = "분노가 25 이상일 때 전투 함성이 분노 10 희생
-최근 전투 함성이 분노를 희생한 경우 영향 받은 공격의 공격 피해 50% 증폭",
-	["Warcries Sacrifice 10 Rage if you have at least 25 Rage
-Exerted Attacks deal 50% more Damage if a Warcry Sacrificed Rage Recently"] = "분노가 25 이상일 때 전투 함성이 분노 10 희생
-최근 전투 함성이 분노를 희생한 경우 영향 받은 공격의 피해 50% 증폭",
+	["Warcries Sacrifice 10 Rage if you have at least 25 Rage\nExerted Attacks deal 50% more Attack Damage if a Warcry Sacrificed Rage Recently"] = "분노가 25 이상일 때 전투 함성이 분노 10 희생\n최근 전투 함성이 분노를 희생한 경우 영향 받은 공격의 공격 피해 50% 증폭",
+	["Warcries Sacrifice 10 Rage if you have at least 25 Rage\nExerted Attacks deal 50% more Damage if a Warcry Sacrificed Rage Recently"] = "분노가 25 이상일 때 전투 함성이 분노 10 희생\n최근 전투 함성이 분노를 희생한 경우 영향 받은 공격의 피해 50% 증폭",
 	["Warcries Sacrifice 10 Rage if you have at least 25 Rage\\nExerted Attacks deal 50% more Attack Damage if a Warcry Sacrificed Rage Recently"] = "격노가 25 이상일 때 전투 함성이 격노 10 희생\\n최근 전투 함성이 격노를 희생한 경우 분발한 공격의 공격 피해 50% 증폭",
 	["Warcries Sacrifice 10 Rage if you have at least 25 Rage\\nExerted Attacks deal 50% more Damage if a Warcry Sacrificed Rage Recently"] = "격노가 25 이상일 때 전투 함성이 격노 10 희생\\n최근 전투 함성이 격노를 희생한 경우 분발한 공격의 피해 50% 증폭",
 	["Warcries cannot Exert Travel Skills"] = "전투 함성이 이동 스킬에 영향을 줄 수 없음",
@@ -11841,9 +11617,7 @@ Exerted Attacks deal 50% more Damage if a Warcry Sacrificed Rage Recently"] = "�
 	["Warcries have a minimum of 10 Power"] = "전투 함성의 최소 위력 10",
 	["Warcries have infinite Power"] = "전투 함성의 위력 무한",
 	["Warcries have minimum of 10 Power"] = "전투 함성의 최소 위력 10",
-	["Warcries no longer Exert Attacks
-Warcries also grant their buffs to nearby allies"] = "전투 함성이 더 이상 공격에 영향을 주지 않음
-전투 함성이 근처 동료에게도 버프 부여",
+	["Warcries no longer Exert Attacks\nWarcries also grant their buffs to nearby allies"] = "전투 함성이 더 이상 공격에 영향을 주지 않음\n전투 함성이 근처 동료에게도 버프 부여",
 	["Warcries no longer Exert Attacks\\nWarcries also grant their buffs to nearby allies"] = "전투 함성이 더 이상 공격을 분발시키지 않음\\n전투 함성이 인근 동료에게도 버프 부여",
 	["Warcry Skills have 15% increased Area of Effect"] = "Warcry 스킬의 효과 범위 15% 증가",
 	["Warcry Skills have 20% increased Area of Effect"] = "Warcry 스킬의 효과 범위 20% 증가",
@@ -11876,8 +11650,7 @@ Warcries also grant their buffs to nearby allies"] = "전투 함성이 더 이�
 	["When you Kill a Shocked Enemy, inflict an equivalent Shock on each nearby Enemy"] = "When you Kill a 감전ed 적, inflict an equivalent 감전 의 각 nearby 적",
 	["When you Kill an Enemy Cursed with a Non-Aura Hex, become Immune to"] = "When you Kill an 적 저주d with a N의-오라 Hex, become Immune to",
 	["When you Kill an Enemy, for each Curse on that Enemy, gain 4%"] = "적 처치 시 해당 적의 저주당 4% 획득",
-	["When you Kill an Enemy, for each Curse on that Enemy, gain 8%
-of Non-Chaos Damage as extra Chaos Damage for 4 seconds"] = "적 처치 시 해당 적의 저주당 비카오스 피해의 8%를 4초 동안 추가 카오스 피해로",
+	["When you Kill an Enemy, for each Curse on that Enemy, gain 8%\nof Non-Chaos Damage as extra Chaos Damage for 4 seconds"] = "적 처치 시 해당 적의 저주당 비카오스 피해의 8%를 4초 동안 추가 카오스 피해로",
 	["When you Kill an Enemy, for each Curse on that Enemy, gain 8%\\nof Non-Chaos Damage as extra Chaos Damage for 4 seconds"] = "적 처치 시, 해당 적에게 걸린 저주 하나당\\n4초 동안 비카오스 피해의 8%를 추가 카오스 피해로 획득",
 	["When you Kill an Ignited Enemy, inflict an equivalent Ignite on each nearby Enemy"] = "When you Kill an 점화d 적, inflict an equivalent 점화 의 각 nearby 적",
 	["When you Warcry, you and nearby Allies gain Onslaught for 4 seconds"] = "전투 함성 시 당신과 근처 동료에게 4초 동안 맹공 부여",
@@ -11889,29 +11662,14 @@ of Non-Chaos Damage as extra Chaos Damage for 4 seconds"] = "적 처치 시 해�
 	["When you leave your Banner's Area, recover 30% of the Valour consumed for that Banner"] = "깃발 범위를 벗어나면 해당 깃발에 소모한 용맹의 30% 회복",
 	["When you lose Temporal Chains you gain maximum Rage"] = "When you lose Temporal Chains you gain 최대 Rage",
 	["When you or your Totems Kill a Burning Enemy, 20% chance for you"] = "당신 또는 토템이 점화 중인 적 처치 시 20% 확률로",
-	["When you or your Totems Kill a Burning Enemy, 20% chance for you
-and your Totems to each gain an Endurance Charge"] = "당신 또는 토템이 점화 중인 적 처치 시 20% 확률로
-당신과 토템이 각각 인내 충전 획득",
+	["When you or your Totems Kill a Burning Enemy, 20% chance for you\nand your Totems to each gain an Endurance Charge"] = "당신 또는 토템이 점화 중인 적 처치 시 20% 확률로\n당신과 토템이 각각 인내 충전 획득",
 	["When you or your Totems Kill a Burning Enemy, 20% chance for you\\nand your Totems to each gain an Endurance Charge"] = "당신 또는 토템이 불타는 적을 처치 시\\n당신과 토템 각각 인내 충전 획득 확률 20%",
-	["When you place a Banner, you and nearby Allies recover 0.5% of Life for
-each Stage the Banner has"] = "깃발 설치 시 깃발의 단계당 당신과 근처 동료가 생명력의 0.5% 회복",
+	["When you place a Banner, you and nearby Allies recover 0.5% of Life for\neach Stage the Banner has"] = "깃발 설치 시 깃발의 단계당 당신과 근처 동료가 생명력의 0.5% 회복",
 	["When you place a Banner, you and nearby Allies recover 0.5% of Life for\\neach Stage the Banner has"] = "깃발을 설치할 때 깃발의 단계 하나당\\n당신과 인근 동료가 생명력의 0.5% 회복",
 	["When you take a Savage Hit, lose Baryatic Tension to recover that much Life, up to maximum"] = "큰 타격을 받으면 바리아틱 긴장을 잃어 그만큼 생명력 회복, 최대까지",
-	["When your Hits Impale Enemies, also Impale other Enemies near them
-Inflict 4 additional Impales on Enemies you Impale
-Enemies cannot be Impaled for 4 seconds after you Impale them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기
-꿰뚫은 적에게 추가 4회 꿰뚫기 부여
-꿰뚫은 후 4초 동안 적에게 꿰뚫기 불가",
-	["When your Hits Impale Enemies, also Impale other Enemies near them
-Inflict 4 additional Impales on Enemies you Impale
-For 4 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기
-꿰뚫은 적에게 추가 4회 꿰뚫기 부여
-꿰뚫은 후 4초 동안 다시 꿰뚫기 및 꿰뚫기 호출 불가",
-	["When your Hits Impale Enemies, also Impale other Enemies near them
-Inflict 5 additional Impales on Enemies you Impale
-For 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기
-꿰뚫은 적에게 추가 5회 꿰뚫기 부여
-꿰뚫은 후 5초 동안 다시 꿰뚫기 및 꿰뚫기 호출 불가",
+	["When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 4 additional Impales on Enemies you Impale\nEnemies cannot be Impaled for 4 seconds after you Impale them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기\n꿰뚫은 적에게 추가 4회 꿰뚫기 부여\n꿰뚫은 후 4초 동안 적에게 꿰뚫기 불가",
+	["When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 4 additional Impales on Enemies you Impale\nFor 4 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기\n꿰뚫은 적에게 추가 4회 꿰뚫기 부여\n꿰뚫은 후 4초 동안 다시 꿰뚫기 및 꿰뚫기 호출 불가",
+	["When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"] = "타격으로 적을 꿰뚫으면 근처의 다른 적도 꿰뚫기\n꿰뚫은 적에게 추가 5회 꿰뚫기 부여\n꿰뚫은 후 5초 동안 다시 꿰뚫기 및 꿰뚫기 호출 불가",
 	["When your Hits Impale Enemies, also Impale other Enemies near them\\nInflict 4 additional Impales on Enemies you Impale\\nEnemies cannot be Impaled for 4 seconds after you Impale them"] = "적중이 적에게 관통상을 부여할 때, 인근의 다른 적에게도 관통상 부여\\n관통상을 부여한 적에게 추가 관통상 4회 부여\\n관통상을 부여한 후 4초 동안 해당 적에게 관통상을 부여할 수 없음",
 	["When your Hits Impale Enemies, also Impale other Enemies near them\\nInflict 4 additional Impales on Enemies you Impale\\nFor 4 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"] = "적중이 적에게 관통상을 부여할 때, 인근의 다른 적에게도 관통상 부여\\n관통상을 부여한 적에게 추가 관통상 4회 부여\\n관통상 부여 후 4초 동안 다시 관통상을 부여할 수 없으며, 관통상을 소환할 수 없음",
 	["When your Hits Impale Enemies, also Impale other Enemies near them\\nInflict 4 additional Impales on Enemies you Impale\\nImpale Damage dealt to Enemies Impaled by you Overwhelms 20% Physical Damage Reduction"] = "적중이 적에게 관통상을 부여할 때, 인근의 다른 적에게도 관통상 부여\\n관통상을 부여한 적에게 추가 관통상 4회 부여\\n당신이 관통상을 부여한 적에 대한 관통상 피해가 물리 피해 감소 20% 압도",
@@ -12060,19 +11818,15 @@ For 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impale
 	["You Regenerate 0.5% of Mana per second per Totem"] = "토템당 초당 마나의 0.5% 재생",
 	["You always Ignite while Burning"] = "You always 점화 while Burning",
 	["You and Allies affected by Auras from your Skills deal 30% increased Damage"] = "스킬 오라의 영향을 받는 당신과 동료의 피해 30% 증가",
-	["You and Allies affected by Auras from your Skills have +20%
-to Elemental Resistances"] = "스킬 오라의 영향을 받는 당신과 동료의 원소 저항 +20%",
+	["You and Allies affected by Auras from your Skills have +20%\nto Elemental Resistances"] = "스킬 오라의 영향을 받는 당신과 동료의 원소 저항 +20%",
 	["You and Allies affected by Auras from your Skills have +20%\\nto Elemental Resistances"] = "당신의 스킬로 인한 오라에 영향을 받는 당신과 동료의\\n원소 저항 +20%",
 	["You and Allies affected by your Aura Skills deal 20% increased Damage"] = "오라 스킬의 영향을 받는 당신과 동료의 피해 20% 증가",
 	["You and Allies affected by your Aura Skills deal 30% increased Damage"] = "오라 스킬의 영향을 받는 당신과 동료의 피해 30% 증가",
 	["You and Allies affected by your Aura Skills have +20% to all Elemental Resistances"] = "오라 스킬의 영향을 받는 당신과 동료의 모든 원소 저항 +20%",
 	["You and Allies affected by your Auras have +20% to all Elemental Resistances"] = "오라의 영향을 받는 당신과 동료의 모든 원소 저항 +20%",
-	["You and Allies affected by your placed Banners Regenerate 0.1% of
- Life per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 생명력의 0.1% 재생",
-	["You and Allies affected by your placed Banners Regenerate 0.1% of
-Life per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 생명력의 0.1% 재생",
-	["You and Allies affected by your placed Banners Regenerate 0.1% of
-maximum Life per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 최대 생명력의 0.1% 재생",
+	["You and Allies affected by your placed Banners Regenerate 0.1% of\nLife per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 생명력의 0.1% 재생",
+	["You and Allies affected by your placed Banners Regenerate 0.1% of\nLife per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 생명력의 0.1% 재생",
+	["You and Allies affected by your placed Banners Regenerate 0.1% of\nmaximum Life per second for each Stage"] = "설치된 깃발의 영향을 받는 당신과 동료가 단계당 초당 최대 생명력의 0.1% 재생",
 	["You and Allies affected by your placed Banners Regenerate 0.1% of\\n Life per second for each Stage"] = "당신이 설치한 깃발에 영향을 받는 당신과 동료가\\n단계당 초당 생명력의 0.1% 재생",
 	["You and Allies affected by your placed Banners Regenerate 0.1% of\\nLife per second for each Stage"] = "당신이 설치한 깃발에 영향을 받는 당신과 동료가\\n단계당 초당 생명력의 0.1% 재생",
 	["You and Allies affected by your placed Banners Regenerate 0.1% of\\nmaximum Life per second for each Stage"] = "당신이 설치한 깃발에 영향을 받는 당신과 동료가\\n단계당 초당 최대 생명력의 0.1% 재생",
@@ -12090,11 +11844,9 @@ maximum Life per second for each Stage"] = "설치된 깃발의 영향을 받는
 	["You and nearby Allies cannot be Stunned if you've Blocked Recently"] = "최근 막기 성공 시 당신과 근처 동료가 기절하지 않음",
 	["You and nearby Allies deal 30% increased Damage"] = "당신과 근처 동료의 피해 30% 증가",
 	["You and nearby Allies deal 35% increased Damage"] = "당신과 근처 동료의 피해 35% 증가",
-	["You and nearby Allies deal 4 to 8 added Physical Damage for
-each Impale on Enemy"] = "적의 꿰뚫기당 당신과 근처 동료가 4~8의 추가 물리 피해",
+	["You and nearby Allies deal 4 to 8 added Physical Damage for\neach Impale on Enemy"] = "적의 꿰뚫기당 당신과 근처 동료가 4~8의 추가 물리 피해",
 	["You and nearby Allies deal 4 to 8 added Physical Damage for\\neach Impale on Enemy"] = "당신과 인근 동료가 적의 관통상 하나당\\n4~8의 추가 물리 피해",
-	["You and nearby Allies deal 6 to 12 added Physical Damage for
-each Impale on Enemy"] = "적의 꿰뚫기당 당신과 근처 동료가 6~12의 추가 물리 피해",
+	["You and nearby Allies deal 6 to 12 added Physical Damage for\neach Impale on Enemy"] = "적의 꿰뚫기당 당신과 근처 동료가 6~12의 추가 물리 피해",
 	["You and nearby Allies deal 6 to 12 added Physical Damage for\\neach Impale on Enemy"] = "당신과 인근 동료가 적의 관통상 하나당\\n6~12의 추가 물리 피해",
 	["You and nearby Allies have #% increased Mana Regeneration Rate"] = "You and nearby 아군 have #% 증가 마나 Regenerati의 Rate",
 	["You and nearby Allies have +10% to Critical Strike Multiplier"] = "당신과 근처 동료의 치명타 배율 +10%",
@@ -12149,13 +11901,9 @@ each Impale on Enemy"] = "적의 꿰뚫기당 당신과 근처 동료가 6~12의
 	["You can inflict an additional Scorch on each Enemy"] = "각 적에게 추가 그을림 부여 가능",
 	["You can only deal Damage with this Weapon or Ignite"] = "You can 의ly deal 피해 이 무기로 or 점화",
 	["You can only have one Herald\\n50% more Effect of Herald Buffs on you\\n100% more Damage with Hits from Herald Skills\\n50% more Damage Over Time with Herald Skills\\nMinions from Herald Skills deal 25% more Damage\\nYour Aura Skills are Disabled"] = "전령을 하나만 보유 가능\\n본인에 대한 전령 버프 효과 50% 증폭\\n전령 스킬 적중 피해 100% 증폭\\n전령 스킬 지속 피해 50% 증폭\\n전령 스킬 소환수 피해 25% 증폭\\n오라 스킬 비활성화",
-	["You can only have one Non-Banner Aura on you from your Skills
-Non-Banner Aura Skills reserve no Mana"] = "스킬로 인한 비깃발 오라를 1개만 보유 가능
-비깃발 오라 스킬의 마나 보유량 없음",
+	["You can only have one Non-Banner Aura on you from your Skills\nNon-Banner Aura Skills reserve no Mana"] = "스킬로 인한 비깃발 오라를 1개만 보유 가능\n비깃발 오라 스킬의 마나 보유량 없음",
 	["You can only have one Non-Banner Aura on you from your Skills\\nNon-Banner Aura Skills reserve no Mana"] = "스킬에서 비깃발 오라는 하나만 적용 가능\\n비깃발 오라 스킬이 마나를 점유하지 않음",
-	["You can only have one Non-Banner Aura with no Duration on you from your Skills
-Non-Banner, Non-Mine Aura Skills reserve no Mana"] = "스킬로 인한 지속시간 없는 비깃발 오라를 1개만 보유 가능
-비깃발, 비지뢰 오라 스킬의 마나 보유량 없음",
+	["You can only have one Non-Banner Aura with no Duration on you from your Skills\nNon-Banner, Non-Mine Aura Skills reserve no Mana"] = "스킬로 인한 지속시간 없는 비깃발 오라를 1개만 보유 가능\n비깃발, 비지뢰 오라 스킬의 마나 보유량 없음",
 	["You can only have one Non-Banner Aura with no Duration on you from your Skills\\nNon-Banner, Non-Mine Aura Skills reserve no Mana"] = "스킬에서 지속시간이 없는 비깃발 오라는 하나만 적용 가능\\n비깃발, 비지뢰 오라 스킬이 마나를 점유하지 않음",
 	["You can only have one Permanent Aura on you from your Skills\\nAuras from your Skills do not affect Allies\\nAuras from your Skills have 50% more Effect on you\\n50% more Mana Reserved"] = "본인 스킬의 영구 오라를 하나만 보유 가능\\n본인 스킬의 오라가 아군에게 영향을 주지 않음\\n본인 스킬의 오라가 본인에게 50% 증폭 효과\\n마나 점유 50% 증폭",
 	["You can only have one Permanent Aura on you from your Skills\\nAuras from your Skills do not affect Allies\\nAuras from your Skills have 50% more Effect on you\\n50% more Reservation of Skills"] = "본인 스킬의 영구 오라를 하나만 보유 가능\\n본인 스킬의 오라가 아군에게 영향을 주지 않음\\n본인 스킬의 오라가 본인에게 50% 증폭 효과\\n스킬 점유 50% 증폭",
@@ -12377,9 +12125,7 @@ Non-Banner, Non-Mine Aura Skills reserve no Mana"] = "스킬로 인한 지속시
 	["Your Spells have Culling Strike"] = "Your 주문 have 도태의 일격",
 	["Your Warcries are disabled"] = "함성 비활성화",
 	["Your Warcries attempt to shake extra items from Corpses"] = "함성이 시체에서 추가 아이템을 흔들어 냄",
-	["Your Warcries do not grant Buffs or Charges to You
-100% more Warcry Duration"] = "전투 함성이 당신에게 버프 또는 충전을 부여하지 않음
-전투 함성 지속시간 100% 증폭",
+	["Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration"] = "전투 함성이 당신에게 버프 또는 충전을 부여하지 않음\n전투 함성 지속시간 100% 증폭",
 	["Your Warcries do not grant Buffs or Charges to You\\n100% more Warcry Duration"] = "전투 함성이 당신에게 버프 또는 충전을 부여하지 않음\\n전투 함성 지속시간 100% 증폭",
 	["Your Warcries inflict Hallowing Flame"] = "함성이 성화 화염 부여",
 	["Your Warcries open Chests"] = "함성이 상자를 열음",
