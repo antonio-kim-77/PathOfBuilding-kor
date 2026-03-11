@@ -29,45 +29,45 @@ local groupSlotDropList = {
 
 local defaultGemLevelList = {
 	{
-		label = "Normal Maximum",
-		description = "All gems default to their highest valid non-corrupted gem level.",
+		label = "일반 최대",
+		description = "모든 젬이 타락하지 않은 가장 높은 유효 젬 레벨로 기본 설정됩니다.",
 		gemLevel = "normalMaximum",
 	},
 	{
-		label = "Corrupted Maximum",
-		description = [[Normal gems default to their highest valid corrupted gem level.
-Awakened gems default to their highest valid non-corrupted gem level.]],
+		label = "타락 최대",
+		description = [[일반 젬은 타락한 가장 높은 유효 젬 레벨로 기본 설정됩니다.
+각성 젬은 타락하지 않은 가장 높은 유효 젬 레벨로 기본 설정됩니다.]],
 		gemLevel = "corruptedMaximum",
 	},
 	{
-		label = "Awakened Maximum",
-		description = "All gems default to their highest valid corrupted gem level.",
+		label = "각성 최대",
+		description = "모든 젬이 타락한 가장 높은 유효 젬 레벨로 기본 설정됩니다.",
 		gemLevel = "awakenedMaximum",
 	},
 	{
-		label = "Match Character Level",
-		description = [[All gems default to their highest valid non-corrupted gem level that your character meets the level requirement for.
-This hides gems with a minimum level requirement above your character level, preventing them from showing up in the dropdown list.]],
+		label = "캐릭터 레벨 맞춤",
+		description = [[모든 젬이 캐릭터가 레벨 요구 사항을 충족하는 가장 높은 유효 비타락 젬 레벨로 기본 설정됩니다.
+캐릭터 레벨보다 높은 최소 레벨 요구 사항을 가진 젬은 드롭다운 목록에 표시되지 않습니다.]],
 		gemLevel = "characterLevel",
 	},
 }
 
 local showSupportGemTypeList = {
-	{ label = "All", show = "ALL" },
-	{ label = "Non-Awakened", show = "NORMAL" },
-	{ label = "Awakened", show = "AWAKENED" },
+	{ label = "전체", show = "ALL" },
+	{ label = "비각성", show = "NORMAL" },
+	{ label = "각성", show = "AWAKENED" },
 }
 
 local sortGemTypeList = {
-	{ label = "Full DPS", type = "FullDPS" },
-	{ label = "Combined DPS", type = "CombinedDPS" },
-	{ label = "Hit DPS", type = "TotalDPS" },
-	{ label = "Average Hit", type = "AverageDamage" },
-	{ label = "DoT DPS", type = "TotalDot" },
-	{ label = "Bleed DPS", type = "BleedDPS" },
-	{ label = "Ignite DPS", type = "IgniteDPS" },
-	{ label = "Poison DPS", type = "TotalPoisonDPS" },
-	{ label = "Effective Hit Pool", type = "TotalEHP" },
+	{ label = "전체 DPS", type = "FullDPS" },
+	{ label = "합산 DPS", type = "CombinedDPS" },
+	{ label = "적중 DPS", type = "TotalDPS" },
+	{ label = "평균 적중", type = "AverageDamage" },
+	{ label = "지속 DPS", type = "TotalDot" },
+	{ label = "출혈 DPS", type = "BleedDPS" },
+	{ label = "점화 DPS", type = "IgniteDPS" },
+	{ label = "중독 DPS", type = "TotalPoisonDPS" },
+	{ label = "유효 생존력", type = "TotalEHP" },
 }
 
 local alternateGemQualityList ={
@@ -757,7 +757,7 @@ function SkillsTabClass:CreateGemSlot(index)
 		local addQualityLines = function(qualityList, grantedEffect)
 			tooltip:AddLine(18, colorCodes.GEM..(grantedEffect.korName or grantedEffect.name))
 			-- Hardcoded to use 20% quality instead of grabbing from gem, this is for consistency and so we always show something
-			tooltip:AddLine(16, colorCodes.NORMAL.."At +20% Quality:")
+			tooltip:AddLine(16, colorCodes.NORMAL.."+20% 품질 시:")
 			for k, qual in pairs(qualityList) do
 				-- Do the stats one at a time because we're not guaranteed to get the descriptions in the same order we look at them here
 				local stats = { }
@@ -798,7 +798,7 @@ function SkillsTabClass:CreateGemSlot(index)
 				local output = calcFunc()
 				self.displayGroup.gemList[index].qualityId = tempQual
 				tooltip:AddSeparator(10)
-				self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7Switching to this quality variant will give you:")
+				self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7이 품질 변형으로 전환 시:")
 			end
 		end
 	end
@@ -829,7 +829,7 @@ function SkillsTabClass:CreateGemSlot(index)
 					self.displayGroup.gemList[index].quality = 20
 					local output = calcFunc()
 					self.displayGroup.gemList[index].quality = storedQuality
-					self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7Setting to 20 quality will give you:")
+					self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7품질 20으로 설정 시:")
 				end
 			end
 		end
